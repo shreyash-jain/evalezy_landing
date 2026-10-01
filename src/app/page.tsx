@@ -11,6 +11,7 @@ import { PenCircle, PenUnderline, TickList } from "@/components/Pen";
 import { BulkCheckPanel, CheckedCopyStack, ReviewPanel, RubricCard, ScoreTableVsCopy, UploadDialog } from "@/components/Visuals";
 import { ApiTabs, CopyAnatomy, PriceCalculator } from "@/components/Interactive";
 import { DemoForm } from "@/components/DemoForm";
+import { ClientMarquee } from "@/components/ClientLogos";
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE },
@@ -85,6 +86,11 @@ export default function Home() {
           </div>
           <CheckedCopyStack />
         </div>
+      </section>
+
+      {/* ------------------------------------------------------------ CLIENTS (Vacademy's) */}
+      <section className="border-t border-line bg-white py-12 md:py-14">
+        <ClientMarquee />
       </section>
 
       {/* ------------------------------------------------------------ PROBLEM STRIP */}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageShell, pageMetadata } from "@/components/PageShell";
 import { LogoMark } from "@/components/Logo";
+import { ClientGrid } from "@/components/ClientLogos";
 
 const PATH = "/about/";
 export const metadata = pageMetadata(PATH);
@@ -12,7 +13,7 @@ export default function Page() {
       path={PATH}
       eyebrow="About"
       h1="We built the red pen we wished teachers had."
-      lede="Evalezy comes from the team behind Vacademy, a learning and assessment platform for institutes in India. Online tests were already easy to check. Handwritten copies were not: they still went home in a teacher's bag every weekend."
+      lede="Evalezy comes from the team behind Vacademy, a learning and assessment platform used by schools, online academies and training institutes across 5 countries. Online tests were already easy to check. Handwritten copies were not: they still went home in a teacher's bag every weekend."
       secondary={null}
     >
       <section className="wrap grid gap-12 py-14 md:py-20 lg:grid-cols-[1.2fr_0.8fr]">
@@ -57,6 +58,15 @@ export default function Page() {
             <ArrowRight className="h-5 w-5 text-pen" />
           </Link>
         </aside>
+      </section>
+      <section className="border-t border-line bg-white">
+        <div className="wrap py-14 md:py-20">
+          <h2 className="h-section max-w-3xl text-ink">Institutes on Vacademy</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
+            Schools, online academies and training institutes across 5 countries run on Vacademy, the platform Evalezy is part of.
+          </p>
+          <div className="mt-10"><ClientGrid /></div>
+        </div>
       </section>
     </PageShell>
   );

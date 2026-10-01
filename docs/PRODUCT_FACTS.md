@@ -65,6 +65,15 @@ evaluation endpoints authenticate with teacher JWTs or the internal service toke
 surface yet. The endpoint list on /api/ (`src/content/api.ts`) is the proposed public contract. Keep the page
 worded as "API access is enabled per account" until keys exist.
 
+## Customers **(owner, 1 Oct 2026)**
+
+- The owner asked to show "the same clients as Vacademy": the 25 logos on the vacademy.io homepage, whose own line is
+  "Trusted by schools, online academies and training institutes across 5 countries". List: `src/content/clients.ts`.
+- These institutes use **Vacademy**, the platform Evalezy is part of. They are not confirmed users of AI copy checking,
+  so they are always framed as Vacademy's ("built by the team behind Vacademy, used by … across 5 countries"), never
+  as "Evalezy customers", never next to Evalezy results, and never in structured data as reviews or customers.
+  If an institute does use Evalezy, the owner can say so per institute.
+
 ## Never claim
 
 - An accuracy percentage, "99% accurate", "better than teachers". No measured accuracy figures exist.
@@ -74,7 +83,8 @@ worded as "API access is enabled per account" until keys exist.
   "send us samples".
 - Instant results, or a throughput above the figures above.
 - SOC 2 / ISO certifications, on-premise deployment, or data residency guarantees.
-- Named customers, testimonials or numbers of copies checked. None are supplied yet.
+- Named Evalezy customers, testimonials, results or numbers of copies checked. None are supplied yet. (Vacademy's client
+  logos may be shown, framed as in "Customers" above.)
 - A free trial or free pages. None is defined. **(owner — decide)**
 - Competitor facts. No competitor list was supplied; comparisons are against approaches (manual checking,
   on-screen marking, general chatbots), not named vendors.

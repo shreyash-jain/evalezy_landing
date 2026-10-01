@@ -50,7 +50,7 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
     faqs: [
       { q: "Is there an API?", a: "Yes. Create assessments, set evaluation criteria, send answer sheets by file upload or URL, and get marks, feedback and the checked PDF from a status endpoint or a webhook. API access is enabled per account; request it on the demo page." },
       { q: "Who can see the answer sheets?", a: "Copies and marks live inside your institute's account. Students see their own results only after release. See the data and privacy page for details." },
-      { q: "Who is behind Evalezy?", a: "Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by institutes in India. Evalezy is the AI checking engine of that platform, offered on its own." },
+      { q: "Who is behind Evalezy?", a: "Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by schools, online academies and training institutes across 5 countries. Evalezy is the AI checking engine of that platform, offered on its own." },
     ],
   },
 ];

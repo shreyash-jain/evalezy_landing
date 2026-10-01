@@ -17,6 +17,7 @@ Price₹1 / page
 One upload200 copies
 Failed checksFree
 
+Page one of a Class IX Social Science answer copy checked by Evalezy: red ticks on correct answers, crosses with the correct answer written beside wrong ones, marks per question in the margin and the total 38/80 circled at the top
 Read from the sheet
 Aditi Sharma
 Roll 14 · Class IX-B
@@ -29,6 +30,36 @@ Running
 
 Reviewed by Ms. Rao
 2 marks changed · ready to release
+
+Evalezy is built by the team behind Vacademy, the learning platform used by schools, online academies and training institutes across 5 countries.
+- SSDC
+- Code Circle
+- Aanandham
+- The 7Cs
+- VET Education
+- Edu Stream
+- Five SAP
+- Jump Start
+- Read on Rent
+- StemX
+- Enark Uplift
+- Shiksha Nation
+- Dzumo
+
+- Agilore Global
+- Be Bright
+- Brahm Varchas
+- Dumbee
+- Elevate
+- HCCA
+- The Learning Bridge
+- Oui Académie
+- Sreedhar's TTS
+- Smart AI Academy
+- Suchbliss
+- Vasco Maritime Career Institute
+
+Pause logos
 
 The pile
 After every exam, a teacher carries home a stack of copies and gives up evenings and weekends to check them.
@@ -53,9 +84,9 @@ Q21 | 1.5 / 2 | Partially correct |
 Q30 | 0.5 / 3 | Partially correct |
 
 A number per question. The student never sees where on the page they went wrong.
-What Evalezy returns the copy itself
+What Evalezy returns the copy itself Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the marginA 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained
 
-1 2 3 4 5
+Page one of the sample answer copy checked by Evalezy 1 2 3 4 5
 
 - 1 The total, circled Marks are added up and the total is circled at the top right of page one, the way a teacher does. Here: 38 out of 80.
 - 2 A tick on what earned marks Correct answers get a red tick on the line itself, drawn with a slightly uneven hand so it reads as pen, not stamp.
@@ -113,7 +144,6 @@ Need review
 Failed
 1
 
--
 - 2 copies could not be matched to a student. Pick the student to check them.
 File | Read from the sheet | Status |
 
@@ -210,7 +240,6 @@ No name, a weak match or two close names? The copy waits for you to pick. It is 
 Teachers have the last word
 Marks are a draft until released. A teacher's edit is never overwritten, even if the copy is checked again.
 
--
 - 1–8 minutes a copy, several at once. First results in about 10 minutes.
 100 copies in about 2–3 hours. Upload in the evening, review in the morning.
 Diagrams are judged by labels and explanation only; keep a teacher on those.
@@ -425,6 +454,8 @@ Red-pen checked copy
 Evalezy does not stop at a score. It writes back onto the student's pages: a tick where marks were earned, a cross with the correct answer where they were not, a short note where an answer fell short, marks in the margin and the total circled on page one.
 Book a demo See a real checked copy
 
+Page two of a checked copy: ticks, a 0/1 with 'Wrong answer. Correct: Mohenjo-daro', 1.5/2 with a note on what the definition missed, and 2/2 with 'Good.'
+
 ## Students learn from the page, not the number.
 On the left, what most AI graders return. On the right, two crops from a real copy checked by Evalezy.
 What most AI graders returnQ | Score | Remark |
@@ -436,11 +467,11 @@ Q21 | 1.5 / 2 | Partially correct |
 Q30 | 0.5 / 3 | Partially correct |
 
 A number per question. The student never sees where on the page they went wrong.
-What Evalezy returns the copy itself
+What Evalezy returns the copy itself Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the marginA 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained
 
 ## Anatomy of a checked page
 Tap a number to see what each mark means.
-1 2 3 4 5
+Page one of the sample answer copy checked by Evalezy 1 2 3 4 5
 
 - 1 The total, circled Marks are added up and the total is circled at the top right of page one, the way a teacher does. Here: 38 out of 80.
 - 2 A tick on what earned marks Correct answers get a red tick on the line itself, drawn with a slightly uneven hand so it reads as pen, not stamp.
@@ -457,11 +488,15 @@ Marks are given in half-mark steps against the question's criteria. When an answ
 - One clear note per deduction, never a wall of text
 - Short, kind praise where an answer is complete
 
+Two answers on the copy: 1.5/2 with the note 'Q21: Methodology and purpose of Social Science not mentioned.' and 2/2 with 'Good.'
+
 Long answers
 
 ## Notes on what a long answer missed.
 On 3- and 5-mark answers, the note names the gap: a missing part, a missing example, a list where an explanation was asked for. It sits right under the answer, in the same red pen.
 The note is written for the student, not the teacher: what to add next time.
+
+A long answer marked 3.5/5 with the note: 'How to Produce' lacks production techniques; 'What' lacks detail on goods.
 
 ## The marks on every copy
 
@@ -545,7 +580,6 @@ Need review
 Failed
 1
 
--
 - 2 copies could not be matched to a student. Pick the student to check them.
 File | Read from the sheet | Status |
 
@@ -1203,7 +1237,7 @@ Pricing
 $0.01 a page outside India. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not.
 Book a demo
 
-The sample copy on this site
+The 7-page sample copyThe sample copy on this site
 7 pages × ₹1
 ₹7
 38 questions marked, every page annotated. $0.07 outside India.
@@ -1329,6 +1363,7 @@ Book a demo Download the PDF
 - 5
 - 6
 - 7
+Page 1 of 7 of the sample answer copy checked by Evalezy. Section A, one-mark answers: ticks, crosses with the correct answer beside them, and the total 38/80 circled at the top.
 
 Page 1 of 7
 Section A, one-mark answers: ticks, crosses with the correct answer beside them, and the total 38/80 circled at the top.
@@ -1582,7 +1617,7 @@ Who can see the answer sheets? +
 Copies and marks live inside your institute's account. Students see their own results only after release. See the data and privacy page for details.
 
 Who is behind Evalezy? +
-Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by institutes in India. Evalezy is the AI checking engine of that platform, offered on its own.
+Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by schools, online academies and training institutes across 5 countries. Evalezy is the AI checking engine of that platform, offered on its own.
 
 ## From the blog
 Guides
@@ -1652,7 +1687,7 @@ URL: https://evalezy.com/about/
 About
 
 # We built the red pen we wished teachers had.
-Evalezy comes from the team behind Vacademy, a learning and assessment platform for institutes in India. Online tests were already easy to check. Handwritten copies were not: they still went home in a teacher's bag every weekend.
+Evalezy comes from the team behind Vacademy, a learning and assessment platform used by schools, online academies and training institutes across 5 countries. Online tests were already easy to check. Handwritten copies were not: they still went home in a teacher's bag every weekend.
 Book a demo
 
 ## Why the copy, not the score
@@ -1671,6 +1706,35 @@ Evalezy
 A Vacademy product · Vidyayatan Technologies LLP
 
 Vacademy The learning and assessment platform Evalezy is part of See a checked copy 7 real pages, checked by Evalezy
+
+## Institutes on Vacademy
+Schools, online academies and training institutes across 5 countries run on Vacademy, the platform Evalezy is part of.
+
+- SSDC
+- Code Circle
+- Aanandham
+- The 7Cs
+- VET Education
+- Edu Stream
+- Five SAP
+- Jump Start
+- Read on Rent
+- StemX
+- Enark Uplift
+- Shiksha Nation
+- Dzumo
+- Agilore Global
+- Be Bright
+- Brahm Varchas
+- Dumbee
+- Elevate
+- HCCA
+- The Learning Bridge
+- Oui Académie
+- Sreedhar's TTS
+- Smart AI Academy
+- Suchbliss
+- Vasco Maritime Career Institute
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1701,6 +1765,36 @@ WhatsApp +91 99933 36616 hello@evalezy.com
 What are you looking for?Check copies API access Both
 Full name Work email Phone +91+1+44+971+65+61+977+880+94 Your role Choose onePrincipal / DirectorOwner / FounderExam controller / Academic headTeacher / FacultyDeveloper / ProductOtherSchool / institute Pages checked per month Not sure yetUnder 1,0001,000–5,0005,000–20,00020,000–1,00,000Over 1,00,000
 Anything we should know? (optional) Book my demo We usually reply within one working day. Your details stay with us.
+
+Evalezy is built by the team behind Vacademy, the learning platform used by schools, online academies and training institutes across 5 countries.
+- SSDC
+- Code Circle
+- Aanandham
+- The 7Cs
+- VET Education
+- Edu Stream
+- Five SAP
+- Jump Start
+- Read on Rent
+- StemX
+- Enark Uplift
+- Shiksha Nation
+- Dzumo
+
+- Agilore Global
+- Be Bright
+- Brahm Varchas
+- Dumbee
+- Elevate
+- HCCA
+- The Learning Bridge
+- Oui Académie
+- Sreedhar's TTS
+- Smart AI Academy
+- Suchbliss
+- Vasco Maritime Career Institute
+
+Pause logos
 
 
 ---
@@ -1736,7 +1830,6 @@ Need review
 Failed
 1
 
--
 - 2 copies could not be matched to a student. Pick the student to check them.
 File | Read from the sheet | Status |
 
@@ -1851,7 +1944,6 @@ Need review
 Failed
 1
 
--
 - 2 copies could not be matched to a student. Pick the student to check them.
 File | Read from the sheet | Status |
 
@@ -1964,7 +2056,6 @@ Need review
 Failed
 1
 
--
 - 2 copies could not be matched to a student. Pick the student to check them.
 File | Read from the sheet | Status |
 
@@ -2391,7 +2482,7 @@ Q21 | 1.5 / 2 | Partially correct |
 Q30 | 0.5 / 3 | Partially correct |
 
 A number per question. The student never sees where on the page they went wrong.
-What Evalezy returns the copy itself
+What Evalezy returns the copy itself Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the marginA 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained
 
 Other comparisons
 Evalezy vs on-screen marking (OSM) Evalezy vs ChatGPT
@@ -2462,7 +2553,7 @@ Q21 | 1.5 / 2 | Partially correct |
 Q30 | 0.5 / 3 | Partially correct |
 
 A number per question. The student never sees where on the page they went wrong.
-What Evalezy returns the copy itself
+What Evalezy returns the copy itself Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the marginA 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained
 
 Other comparisons
 Evalezy vs checking by hand Evalezy vs ChatGPT
@@ -2534,7 +2625,7 @@ Q21 | 1.5 / 2 | Partially correct |
 Q30 | 0.5 / 3 | Partially correct |
 
 A number per question. The student never sees where on the page they went wrong.
-What Evalezy returns the copy itself
+What Evalezy returns the copy itself Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the marginA 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained
 
 Other comparisons
 Evalezy vs checking by hand Evalezy vs on-screen marking (OSM)

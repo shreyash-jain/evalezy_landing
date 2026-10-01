@@ -3,6 +3,7 @@ import { pageMetadata } from "@/components/PageShell";
 import { Breadcrumbs } from "@/components/ui";
 import { DemoForm } from "@/components/DemoForm";
 import { TickList } from "@/components/Pen";
+import { ClientMarquee } from "@/components/ClientLogos";
 import { SALES_EMAIL, WHATSAPP_DISPLAY, whatsappHref } from "@/lib/site";
 
 const PATH = "/demo/";
@@ -45,6 +46,9 @@ export default function Page() {
           <DemoForm origin="demo-page" />
         </div>
       </div>
+      <section className="relative border-t border-line bg-white py-12">
+        <ClientMarquee />
+      </section>
     </main>
   );
 }

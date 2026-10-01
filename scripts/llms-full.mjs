@@ -18,13 +18,16 @@ function textOf(html) {
   return decode(
     main
       .replace(/<script[\s\S]*?<\/script>/g, "")
+      .replace(/<li[^>]*aria-hidden="true"[^>]*>[\s\S]*?<\/li>/g, "")
+      .replace(/<ul[^>]*data-llms-skip[^>]*>[\s\S]*?<\/ul>/g, "")
+      .replace(/<img[^>]*\balt="([^"]+)"[^>]*>/g, "$1")
       .replace(/<style[\s\S]*?<\/style>/g, "")
       .replace(/<(h1|h2|h3)[^>]*>/g, (_, t) => `\n\n${"#".repeat(Number(t[1]) + 0)} `)
       .replace(/<\/(h1|h2|h3)>/g, "\n")
       .replace(/<li[^>]*>/g, "\n- ").replace(/<\/(p|div|section|article|tr|details|summary|table|thead|tbody|ol|ul)>/g, "\n")
       .replace(/<\/(td|th)>/g, " | ").replace(/<br\s*\/?>/g, "\n").replace(/<\/(a|span|button)>/g, "$& ")
       .replace(/<[^>]+>/g, "")
-      .replace(/[ \t]+/g, " ").replace(/ *\n */g, "\n").replace(/\n{3,}/g, "\n\n"),
+      .replace(/[ \t]+/g, " ").replace(/ *\n */g, "\n").replace(/^- *$/gm, "").replace(/\n{3,}/g, "\n\n"),
   ).trim();
 }
 
