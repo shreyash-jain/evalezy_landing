@@ -37,6 +37,9 @@ to your section). Never edit `brochure.css` or another page's file.
 ## Classes (brochure.css)
 Type: `.eyebrow .display .h1 .h2 .h3 .h4 .lede .muted .small .tiny .hand .hand-ink .mono .marker`.
 Layout: `.row .col .grow .grid2 .grid3 .grid4 .center .end .mt1…mt6 .auto`.
+Elevation: use only `box-shadow: var(--lift)` (cards, UI panels), `var(--sheet)` (paper photos) or `var(--lift-ink)`
+(on navy pages). Never a blurred box-shadow, `filter`, `mask-image` or `backdrop-filter`: Chrome prints them as
+soft-masked layers that some PDF viewers draw as solid grey boxes. `node build.mjs` fails on them.
 Components: `.card` (`.tight`, `.ink`, `.pen`), `.shadow`, `.paper-shot` (photo of paper with shadow), `.chip`
 (`.ok .warn .pen .ghost`), `.icon-badge`, `.num-badge` (`.pen`), `ul.ticks`, `ul.crosses`, `.stat` (`.v` + `.k`),
 `table.t` inside `.table-wrap` (`td.num` for numbers), `.code` + `.code-label` (spans `.k .s .c .n` for colour),

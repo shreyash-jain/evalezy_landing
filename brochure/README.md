@@ -29,3 +29,8 @@ Then copy `out/Evalezy-Brochure.pdf` here and stamp the metadata (see the pypdf 
   hidden, crop it to the page, and place it with `right:0; bottom:0`.
 - **Variable fonts embed as Type 3.** The CSS therefore uses the static `assets/fonts/*-NNN.ttf` instances.
   Check with `pdffonts Evalezy-Brochure.pdf`: only brand fonts should be listed, all of them CID TrueType.
+- **No soft masks.** A blurred `box-shadow`, any `filter`, `mask-image` or `backdrop-filter` makes Chrome print a
+  soft-masked layer. Some PDF viewers (the one in the owner's editor, 1 Oct 2026) ignore the mask and paint a solid
+  grey box over the page. Use the crisp shadow tokens `--lift`, `--sheet` and `--lift-ink` from `brochure.css`;
+  `build.mjs` flags anything else. To check a PDF, `python3 /tmp/smask_audit.py`-style: count `/SMask` in
+  ExtGStates, which should be 0.

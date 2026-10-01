@@ -13,14 +13,14 @@
     .p-09 .sheet {
       position: relative; margin-right: -1mm; color: var(--ink); background-color: #fffdf8; border-radius: 1.2mm;
       transform: rotate(-1.2deg); transform-origin: 50% 0;
-      box-shadow: 0 0.5mm 1mm rgba(0,0,0,.25), 0 10mm 20mm -8mm rgba(0,0,0,.6);
+      box-shadow: var(--lift-ink);
       padding: 7mm 5mm 5mm 15mm;
       background-image:
         linear-gradient(90deg, transparent 0, transparent 11mm, rgba(214,28,40,.38) 11mm, rgba(214,28,40,.38) 11.3mm, transparent 11.3mm),
         repeating-linear-gradient(180deg, transparent 0, transparent 5.15mm, rgba(42,68,168,.13) 5.15mm, rgba(42,68,168,.13) 5.4mm);
       background-position: 0 1.6mm;
     }
-    .p-09 .tape { position: absolute; top: -3.4mm; left: 50%; width: 26mm; height: 7.4mm; transform: translateX(-50%) rotate(2.4deg); background: linear-gradient(180deg, #f3ead2, #e9dcb9); opacity: .94; box-shadow: 0 0.3mm 0.8mm rgba(0,0,0,.25); }
+    .p-09 .tape { position: absolute; top: -3.4mm; left: 50%; width: 26mm; height: 7.4mm; transform: translateX(-50%) rotate(2.4deg); background: linear-gradient(180deg, #f3ead2, #e9dcb9); opacity: .94; }
     .p-09 .sheet .title { position: relative; top: 1.7mm; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 17.5pt; line-height: 10.8mm; }
     .p-09 .sheet ol { list-style: none; counter-reset: lim; }
     .p-09 .sheet li { position: relative; font-size: 8.8pt; line-height: 5.4mm; color: var(--slate-700); }
@@ -31,7 +31,7 @@
     .p-09 .privacy { display: flex; flex-direction: column; background: rgba(255,255,255,.05); border: 0.3mm solid rgba(255,255,255,.12); border-radius: 3.6mm; padding: 5mm; }
     .p-09 .privacy .ticks { gap: 2.6mm; font-size: 8.2pt; line-height: 1.45; color: #c3cbe0; }
     .p-09 .privacy .crosses { font-size: 8.2pt; line-height: 1.45; color: #c3cbe0; }
-    .p-09 .privacy .crosses li::before { filter: brightness(1.6); }
+    .p-09 .privacy .crosses li::before { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 5.5 C 9 9.4, 14.6 14.8, 19.2 19' fill='none' stroke='%23A7B1CC' stroke-width='2.8' stroke-linecap='round'/><path d='M18.6 4.8 C 14.6 9, 9.4 14.6, 5.4 19.4' fill='none' stroke='%23A7B1CC' stroke-width='2.8' stroke-linecap='round'/></svg>"); }
   </style>
   <div class="dots-dark bgdots" data-bleed></div>
   <header class="pg-head" style="position:relative">

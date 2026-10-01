@@ -5,7 +5,7 @@
     .p-06 .band.flip { grid-template-columns: 1fr 96mm; }
     .p-06 .shot { position: relative; }
     .p-06 .shot img.ui { width: 100%; border-radius: 2.6mm; }
-    .p-06 .shot.card-shadow img.ui { box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.08), 0 9mm 18mm -9mm rgba(15, 26, 58, 0.45); }
+    .p-06 .shot.card-shadow img.ui { box-shadow: var(--lift); }
     .p-06 .step-no { display: flex; align-items: center; gap: 2.4mm; }
     .p-06 .step-no .num-badge { width: 7mm; height: 7mm; font-size: 8.6pt; }
     .p-06 .txt .h3 { font-size: 13.5pt; margin-top: 2.2mm; }
@@ -18,7 +18,7 @@
     /* question paper import: the product screen, rebuilt in HTML so its numbers match the real paper
        (Sections A–E of the Class IX mock: 20 + 12 + 18 + 20 + 10 = 80 marks, 38 questions) */
     .p-06 .pimport { padding-left: 39mm; }
-    .p-06 .pimport .sheet { position: absolute; left: 0; top: 9mm; width: 32mm; background: #fffdf8; border: 0.3mm solid var(--line); border-radius: 1.6mm; padding: 3.4mm 2.6mm 4mm; text-align: center; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.06), 0 7mm 12mm -7mm rgba(15, 26, 58, 0.35); }
+    .p-06 .pimport .sheet { position: absolute; left: 0; top: 9mm; width: 32mm; background: #fffdf8; border: 0.3mm solid var(--line); border-radius: 1.6mm; padding: 3.4mm 2.6mm 4mm; text-align: center; box-shadow: var(--sheet); }
     .p-06 .sheet .t { font-weight: 700; font-size: 7.8pt; line-height: 1.25; color: var(--ink); }
     .p-06 .sheet .s { font-size: 6.8pt; line-height: 1.35; color: #62748e; margin-top: 0.6mm; }
     .p-06 .sheet .s + .s { margin-top: 0; }

@@ -39,6 +39,13 @@
   --slate-500: #667085;
   --slate-400: #98a2b3;
   --mx: 16mm; /* side margin */
+  /* Elevation, print-safe. NEVER use a blurred box-shadow, filter or mask in this brochure: Chrome prints them as
+     soft-masked layers and some PDF viewers ignore the mask and paint a solid grey box (seen 1 Oct 2026).
+     Crisp shadows (blur 0) print as plain vector shapes. build.mjs fails the build on any blurred shadow. */
+  --edge: 0 0 0 0.25mm rgba(15, 26, 58, 0.1);
+  --lift: var(--edge), 0 1.4mm 0 -0.2mm rgba(15, 26, 58, 0.08);          /* cards and UI panels */
+  --sheet: var(--edge), 1.2mm 1.6mm 0 0 rgba(15, 26, 58, 0.1);           /* paper photos, stacked-sheet feel */
+  --lift-ink: 0 0 0 0.25mm rgba(255, 255, 255, 0.08), 1.2mm 1.6mm 0 0 rgba(0, 0, 0, 0.32); /* on navy pages */
 }
 
 @page { size: A4; margin: 0; }
@@ -136,8 +143,8 @@ strong { font-weight: 650; color: var(--ink); }
 .card.ink { background: var(--ink); border-color: var(--ink); color: #fff; }
 .card.pen { border: 0.5mm solid rgba(214, 28, 40, 0.35); }
 .ink .card { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.12); color: #fff; }
-.shadow { box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.08), 0 8mm 16mm -8mm rgba(15, 26, 58, 0.45); }
-.paper-shot { background: #fff; border-radius: 1.5mm; overflow: hidden; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.1), 0 10mm 20mm -10mm rgba(15, 26, 58, 0.55); }
+.shadow { box-shadow: var(--lift); }
+.paper-shot { background: #fff; border-radius: 1.5mm; overflow: hidden; box-shadow: var(--sheet); }
 
 .chip { display: inline-flex; align-items: center; gap: 1.5mm; border-radius: 99px; padding: 0.9mm 2.6mm; font-size: 7.4pt; font-weight: 650; background: var(--paper-2); color: var(--ink); }
 .chip.ok { background: var(--ok-50); color: var(--ok); }
@@ -194,7 +201,7 @@ table.t .num { font-family: "JBMono"; font-size: 8pt; text-align: right; white-s
 .method.put { background: var(--warn-50); color: var(--warn); }
 
 /* Callout pins on images */
-.pin { position: absolute; transform: translate(-50%, -50%); width: 6.6mm; height: 6.6mm; border-radius: 50%; background: var(--ink); color: #fff; font-size: 8pt; font-weight: 700; display: grid; place-items: center; box-shadow: 0 0 0 1mm rgba(255, 255, 255, 0.9), 0 1mm 3mm rgba(0, 0, 0, 0.35); }
+.pin { position: absolute; transform: translate(-50%, -50%); width: 6.6mm; height: 6.6mm; border-radius: 50%; background: var(--ink); color: #fff; font-size: 8pt; font-weight: 700; display: grid; place-items: center; box-shadow: 0 0 0 1mm rgba(255, 255, 255, 0.92), 0 0 0 1.3mm rgba(15, 26, 58, 0.22); }
 
 .divider { height: 0.3mm; background: var(--line); }
 .ink .divider { background: rgba(255, 255, 255, 0.12); }

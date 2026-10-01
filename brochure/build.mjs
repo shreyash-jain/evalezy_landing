@@ -90,6 +90,22 @@ const report = await page.evaluate(() => {
         if (el.scrollHeight > el.clientHeight + 2 || el.scrollWidth > el.clientWidth + 2) out.push(`${label}: <${el.tagName.toLowerCase()} class="${el.className.toString().slice(0, 50)}"> clips its content (${el.scrollWidth}x${el.scrollHeight} in ${el.clientWidth}x${el.clientHeight})`);
       }
     });
+    // Soft masks: a blurred box-shadow / text-shadow, any filter, mask or backdrop-filter is printed by Chrome as a
+    // soft-masked layer, and some PDF viewers ignore the mask and paint a solid grey box. Use var(--lift) etc.
+    [pg, ...pg.querySelectorAll("*")].forEach((el) => {
+      for (const pseudo of [null, "::before", "::after"]) {
+        const cs = getComputedStyle(el, pseudo);
+        if (pseudo && (cs.content === "none" || cs.content === "normal")) continue;
+        const what = `<${el.tagName.toLowerCase()} class="${(el.className.baseVal ?? el.className).toString().slice(0, 40)}">${pseudo || ""}`;
+        const blurred = (v) => v && v !== "none" && v.split(/,(?![^(]*\))/).some((layer) => { const n = layer.replace(/rgba?\([^)]*\)/g, "").match(/-?[\d.]+px/g) || []; return n.length >= 3 && parseFloat(n[2]) > 0; });
+        if (!el.matches("section.page") && blurred(cs.boxShadow)) out.push(`${label}: ${what} has a blurred box-shadow (${cs.boxShadow.slice(0, 60)}…); use var(--lift)/--sheet/--lift-ink`);
+        if (blurred(cs.textShadow)) out.push(`${label}: ${what} has a blurred text-shadow`);
+        if (cs.filter !== "none") out.push(`${label}: ${what} uses filter: ${cs.filter}`);
+        if (cs.backdropFilter && cs.backdropFilter !== "none") out.push(`${label}: ${what} uses backdrop-filter`);
+        if ((cs.maskImage && cs.maskImage !== "none") || (cs.webkitMaskImage && cs.webkitMaskImage !== "none")) out.push(`${label}: ${what} uses a mask-image`);
+        if (cs.mixBlendMode && cs.mixBlendMode !== "normal") out.push(`${label}: ${what} uses mix-blend-mode: ${cs.mixBlendMode}`);
+      }
+    });
     // In print, an image that crosses the page's bottom edge is pushed whole onto the next page (and clipped
     // away there), even inside data-bleed. Flatten such art into an in-page image instead (see 01-cover.html).
     pg.querySelectorAll("img").forEach((im) => { const r = im.getBoundingClientRect(); if (r.bottom > pr.bottom + 0.5) out.push(`${label}: image crosses the page bottom by ${Math.round(r.bottom - pr.bottom)}px and will vanish in the PDF: ${im.getAttribute("src")}`); });
