@@ -26,7 +26,7 @@ Matched
 
 Bulk check
 Running
-186 of 200 copies checked
+194 of 200 copies checked
 
 Reviewed by Ms. Rao
 2 marks changed · ready to release
@@ -133,7 +133,7 @@ Copies
 200
 
 Checked
-186
+194
 
 In progress
 3
@@ -198,7 +198,7 @@ Used for every student in this assessment
 Aditi Sharma · IX-B · Roll 14
 Social Science · Half-Yearly Mock 4
 
-38/80
+38.5/80
 38 of 38 questions
 
 Q30 · Factors affecting climate
@@ -210,8 +210,8 @@ Only weather elements listed; no factors of climate explained.
 Edit marks Criteria breakdown
 
 Q21 · Define social science
-Edited 1.5 / 2
-Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+Edited 2 / 2
+Teacher changed 1.5 → 2. Kept even if the copy is checked again.
 
 Students see nothing until you release Release result
 
@@ -569,7 +569,7 @@ Copies
 200
 
 Checked
-186
+194
 
 In progress
 3
@@ -671,10 +671,9 @@ question-paper.pdf
 
 - Q1–20 Write the correct answer (1 mark each) 20
 - Q21–26 Very short answer questions 12
-- Q27–31 Short answer questions 15
-- Q32–35 Long answer questions 20
-- Q36–37 Case-based questions 10
-- Q38 Map work 3
+- Q27–32 Short answer questions 18
+- Q33–36 Long answer questions 20
+- Q37–38 Case-based questions 10
 Edit any question or mark before you check copies.
 
 What gets read
@@ -794,7 +793,7 @@ Each criterion says what a good answer does: names the factors, explains the eff
 Aditi Sharma · IX-B · Roll 14
 Social Science · Half-Yearly Mock 4
 
-38/80
+38.5/80
 38 of 38 questions
 
 Q30 · Factors affecting climate
@@ -806,8 +805,8 @@ Only weather elements listed; no factors of climate explained.
 Edit marks Criteria breakdown
 
 Q21 · Define social science
-Edited 1.5 / 2
-Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+Edited 2 / 2
+Teacher changed 1.5 → 2. Kept even if the copy is checked again.
 
 Students see nothing until you release Release result
 
@@ -855,7 +854,7 @@ Book a demo See a real checked copy
 Aditi Sharma · IX-B · Roll 14
 Social Science · Half-Yearly Mock 4
 
-38/80
+38.5/80
 38 of 38 questions
 
 Q30 · Factors affecting climate
@@ -867,8 +866,8 @@ Only weather elements listed; no factors of climate explained.
 Edit marks Criteria breakdown
 
 Q21 · Define social science
-Edited 1.5 / 2
-Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+Edited 2 / 2
+Teacher changed 1.5 → 2. Kept even if the copy is checked again.
 
 Students see nothing until you release Release result
 
@@ -1297,7 +1296,7 @@ Example | Copies | Pages each | Cost (India) | Cost (elsewhere) |
 One section, unit test | 40 | 4 | ₹160 | $1.60 |
 Four sections, half-yearly | 160 | 8 | ₹1,280 | $12.80 |
 Coaching weekly test | 300 | 6 | ₹1,800 | $18.00 |
-UPSC daily answer (a month) | 13,000 | 3 | ₹39,000 | $390.00 |
+UPSC daily answer (a month) | 13,000 | 4 | ₹52,000 | $520.00 |
 
 Indian prices exclude GST.
 
@@ -1353,7 +1352,7 @@ URL: https://evalezy.com/sample/
 Sample checked copy
 
 # A real answer sheet, checked by Evalezy.
-A Class IX Social Science half-yearly mock test: 80 marks, 38 questions, 7 pages of a spiral notebook photographed on a phone. Every tick, cross, note and mark below was written by Evalezy. Final score: 38/80.
+A Class IX Social Science half-yearly mock test: 80 marks, 38 questions, 7 pages of a spiral notebook photographed on a phone. Every tick, cross, note and mark below was written by Evalezy, unedited. AI total: 38/80.
 Book a demo Download the PDF
 
 - 1
@@ -1381,6 +1380,7 @@ Download the PDF (2.3 MB) Open this page full size
 - Phone photo, not a scanner. Shadows, a curved spiral notebook and ruled lines, all read.
 - Half marks with reasons. 1.5/2, 0.5/3, 3.5/5: each with a note on what was missing.
 - Mixed handwriting quality. Crossed-out words, insertions above the line and answers that run across pages.
+- One slip, left in. Q17 on page 2 is right (“Egyptian Civilisation”) but was crossed. This is why a teacher reviews every copy before release.
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1819,7 +1819,7 @@ Copies
 200
 
 Checked
-186
+194
 
 In progress
 3
@@ -1933,7 +1933,7 @@ Copies
 200
 
 Checked
-186
+194
 
 In progress
 3
@@ -2045,7 +2045,7 @@ Copies
 200
 
 Checked
-186
+194
 
 In progress
 3
@@ -2147,7 +2147,7 @@ Book a demo See a real checked copy
 Aditi Sharma · IX-B · Roll 14
 Social Science · Half-Yearly Mock 4
 
-38/80
+38.5/80
 38 of 38 questions
 
 Q30 · Factors affecting climate
@@ -2159,8 +2159,8 @@ Only weather elements listed; no factors of climate explained.
 Edit marks Criteria breakdown
 
 Q21 · Define social science
-Edited 1.5 / 2
-Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+Edited 2 / 2
+Teacher changed 1.5 → 2. Kept even if the copy is checked again.
 
 Students see nothing until you release Release result
 
@@ -2242,7 +2242,7 @@ Book a demo See a real checked copy
 Aditi Sharma · IX-B · Roll 14
 Social Science · Half-Yearly Mock 4
 
-38/80
+38.5/80
 38 of 38 questions
 
 Q30 · Factors affecting climate
@@ -2254,8 +2254,8 @@ Only weather elements listed; no factors of climate explained.
 Edit marks Criteria breakdown
 
 Q21 · Define social science
-Edited 1.5 / 2
-Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+Edited 2 / 2
+Teacher changed 1.5 → 2. Kept even if the copy is checked again.
 
 Students see nothing until you release Release result
 

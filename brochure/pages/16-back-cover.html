@@ -1,0 +1,92 @@
+<section class="page ink flush p-16" data-name="back cover">
+  <style>
+    .p-16 .wrap { position: relative; height: 100%; padding: 16mm 16mm 15mm; display: flex; flex-direction: column; }
+    .p-16 .top { display: flex; justify-content: space-between; align-items: flex-end; }
+    .p-16 .lede { color: #c3cbe0; }
+    .p-16 .demo { display: grid; grid-template-columns: minmax(0, 1fr) 58mm; gap: 8mm; align-items: center; background: rgba(255, 255, 255, 0.045); border: 0.3mm solid rgba(255, 255, 255, 0.12); border-radius: 6mm; padding: 7mm 7mm 7mm 8mm; }
+    .p-16 .ticks { gap: 3.2mm; font-size: 10.4pt; color: #dfe5f5; }
+    .p-16 .ticks li::before { width: 4.8mm; height: 4.8mm; top: 0.2em; }
+    .p-16 .ticks li { text-wrap: balance; }
+    .p-16 .qr-tile { background: #fff; border-radius: 6mm; padding: 5mm 5mm 4.4mm; color: var(--ink); text-align: center; box-shadow: 0 14mm 28mm -12mm rgba(0, 0, 0, 0.6); }
+    .p-16 .qr-tile img { width: 40mm; height: 40mm; margin: 0 auto; }
+    .p-16 .qr-tile .hand { font-size: 14pt; line-height: 1.1; margin-top: 2.6mm; }
+    .p-16 .qr-tile .url { font-size: 8.4pt; font-weight: 650; color: var(--slate-600); margin-top: 0.6mm; }
+    .p-16 .facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10mm; align-items: end; }
+    .p-16 .price .v { font-family: "Bricolage"; font-weight: 800; font-size: 40pt; line-height: 0.95; letter-spacing: -0.035em; color: #fff; }
+    .p-16 .price .v small { font-size: 13pt; font-weight: 600; color: #9aa6c4; letter-spacing: 0; }
+    .p-16 .price .k { margin-top: 2mm; font-size: 9pt; color: #c3cbe0; }
+    .p-16 .contact { list-style: none; display: grid; grid-template-columns: 1fr; gap: 2.6mm; font-size: 10pt; color: #fff; font-weight: 600; }
+    .p-16 .contact li { display: flex; align-items: center; gap: 3mm; }
+    .p-16 .contact .icon-badge { width: 8mm; height: 8mm; border-radius: 2.4mm; }
+    .p-16 .contact .icon-badge svg { width: 4.2mm; height: 4.2mm; }
+    .p-16 .contact .lbl { display: block; font-size: 7pt; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #9aa6c4; }
+    .p-16 .sign { display: flex; justify-content: space-between; align-items: center; }
+    .p-16 a { color: inherit; text-decoration: none; }
+    .p-16 .qr-tile a { display: block; }
+    .p-16 .contact li > a { display: flex; align-items: center; gap: 3mm; }
+  </style>
+  <div class="dots-dark" style="position:absolute;inset:0" data-bleed></div>
+  <!-- the red loop sits behind a checked copy peeking in from the right edge (mirrors the cover) -->
+  <svg data-bleed viewBox="0 0 400 300" style="position:absolute;left:131mm;top:-12mm;width:150mm;height:150mm;opacity:.32;transform:rotate(-12deg)" aria-hidden="true">
+    <path d="M330 60 C 280 10, 90 0, 40 80 C 0 150, 60 260, 200 270 C 330 280, 400 200, 380 130 C 365 80, 320 50, 250 40" fill="none" stroke="#FF6B72" stroke-width="3.4" stroke-linecap="round"/>
+  </svg>
+  <div data-bleed style="position:absolute;right:-30mm;top:15mm;width:80mm;height:106.7mm">
+    <div class="paper-shot" style="position:absolute;inset:0;transform:rotate(-7deg);opacity:.92"><img src="assets/img/page-6-print.jpg" alt="" style="width:100%;height:100%;object-fit:cover" /></div>
+  </div>
+
+  <div class="wrap">
+    <div class="top">
+      <div style="display:flex;align-items:flex-end;gap:2.5mm">
+        <img src="assets/img/logo-white.svg" alt="Evalezy" style="height:11mm;width:auto" />
+        <span style="font-size:8pt;color:#9aa6c4;font-weight:600;padding-bottom:1mm">by Vacademy</span>
+      </div>
+    </div>
+
+    <div style="margin-top:24mm;width:132mm;position:relative">
+      <p class="eyebrow">Book a demo</p>
+      <h2 class="display" style="font-size:46pt;margin-top:4mm;color:#fff">See your own
+        <span class="u">copies checked.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 60 6, 130 4, 200 7 S 280 12, 297 8" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span></h2>
+      <p class="lede" style="margin-top:7mm;width:128mm;font-size:12pt">A 20-minute call. We upload a question paper and a few scanned answer sheets, and you watch them come back checked in red pen, matched to students and ready to review.</p>
+    </div>
+
+    <div class="demo" style="margin-top:auto">
+      <div>
+        <p class="hand" style="color:#FF6B72;font-size:14pt">On the call</p>
+        <ul class="ticks mt3">
+          <li>Bring a question paper and <span style="white-space:nowrap">3–4 scanned copies,</span> if you can</li>
+          <li>Watch them come back checked in red pen</li>
+          <li>See the review screen and how release works</li>
+          <li>Get a cost estimate for your volume</li>
+        </ul>
+      </div>
+      <div class="qr-tile">
+        <a href="https://evalezy.com/demo/?utm_source=brochure&amp;utm_medium=pdf">
+          <img src="assets/img/qr-demo.svg" alt="QR code to book a demo at evalezy.com/demo" />
+          <p class="hand">Scan to book a demo</p>
+          <p class="url">evalezy.com/demo</p>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-top:auto">
+      <div class="divider" style="margin-bottom:7mm"></div>
+      <div class="facts">
+        <div class="price">
+          <div class="v">₹1<small> / page</small></div>
+          <div class="k">In India, excl. GST · $0.01 a page elsewhere</div>
+          <div class="k" style="margin-top:1mm;color:#9aa6c4">Failed, stopped and unreadable copies are free.</div>
+        </div>
+        <ul class="contact">
+          <li><a href="mailto:hello@evalezy.com"><span class="icon-badge"><i data-icon="mail"></i></span><span><span class="lbl">Email</span>hello@evalezy.com</span></a></li>
+          <li><a href="https://wa.me/919993336616"><span class="icon-badge"><i data-icon="message-circle"></i></span><span><span class="lbl">WhatsApp</span>+91 99933 36616</span></a></li>
+          <li><a href="https://evalezy.com/"><span class="icon-badge"><i data-icon="globe"></i></span><span><span class="lbl">Web</span>evalezy.com</span></a></li>
+        </ul>
+      </div>
+      <div class="divider" style="margin:7mm 0 5mm"></div>
+      <div class="sign">
+        <p class="small" style="color:#9aa6c4">Evalezy is a Vacademy product · Vidyayatan Technologies LLP</p>
+        <p class="small" style="color:#9aa6c4;margin-top:0">Product brochure · 2026</p>
+      </div>
+    </div>
+  </div>
+</section>

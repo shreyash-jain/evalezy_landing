@@ -1,0 +1,100 @@
+<section class="page white p-07" data-name="bulk upload">
+  <style>
+    .p-07 .h1 { font-size: 31pt; }
+    .p-07 .pg-body > * { flex-shrink: 0; }
+
+    /* hero: upload dialog overlapping the live bulk panel */
+    .p-07 .hero { position: relative; height: 100mm; flex: none; }
+    .p-07 .hero img { position: absolute; }
+    .p-07 .hero .panel { right: 0; top: 0; width: 100mm; border-radius: 2.8mm; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.08), 0 10mm 20mm -10mm rgba(15, 26, 58, 0.45); }
+    .p-07 .hero .dialog { left: 0; top: 12.5mm; width: 80.6mm; border-radius: 2.2mm; z-index: 2; box-shadow: 0 0.6mm 1.6mm rgba(15, 26, 58, 0.12), 0 14mm 26mm -10mm rgba(15, 26, 58, 0.6); }
+    .p-07 .anno { position: absolute; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 12pt; line-height: 1.15; }
+    .p-07 .anno svg { position: absolute; overflow: visible; }
+
+    /* matching table */
+    .p-07 .lower { display: grid; grid-template-columns: 1fr 66mm; column-gap: 8mm; align-items: start; }
+    .p-07 table.t { font-size: 8pt; }
+    .p-07 table.t th { padding: 1.7mm 3mm; font-size: 7.6pt; }
+    .p-07 table.t td { padding: 1.15mm 3mm; vertical-align: middle; }
+    .p-07 table.t td:last-child { width: 22mm; }
+    .p-07 .chip { font-size: 7pt; padding: 0.6mm 2.2mm; }
+
+    /* facts */
+    .p-07 .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 3.4mm 4mm; }
+    .p-07 .facts .v { font-family: "Bricolage"; font-weight: 800; font-size: 17pt; letter-spacing: -0.03em; line-height: 1; }
+    .p-07 .facts .v small { font-size: 8.4pt; font-weight: 600; color: var(--slate-500); letter-spacing: 0; }
+    .p-07 .facts .k { font-size: 7.3pt; line-height: 1.32; color: var(--slate-500); margin-top: 0.8mm; }
+    .p-07 .line { display: flex; gap: 2.6mm; align-items: flex-start; }
+    .p-07 .line .icon-badge { width: 7.4mm; height: 7.4mm; border-radius: 2.2mm; }
+    .p-07 .line .icon-badge svg { width: 3.9mm; height: 3.9mm; }
+    .p-07 .line p { font-size: 8pt; line-height: 1.42; color: var(--slate-700); }
+
+    .p-07 .tip { display: flex; align-items: center; gap: 3mm; background: var(--paper); border: 0.3mm dashed rgba(214, 28, 40, 0.35); border-radius: 3mm; padding: 2.6mm 4mm; }
+    .p-07 .tip p { font-size: 8.2pt; line-height: 1.45; color: var(--slate-700); }
+    .p-07 .tip .hand { font-size: 11pt; white-space: nowrap; }
+  </style>
+
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Bulk upload</span>
+  </header>
+
+  <div class="pg-body">
+    <p class="eyebrow">Bulk upload &amp; student matching</p>
+    <h2 class="h1 mt2" style="width:172mm">Drop in 200 copies.<br />Each one finds <span class="marker">its student.</span></h2>
+    <p class="lede mt3" style="width:168mm">Upload a section’s copies together, one PDF per student. Evalezy reads each name and roll number, matches it to your students and checks them in the background.</p>
+
+    <!-- HERO -->
+    <div class="hero mt5">
+      <div class="anno" style="left:2mm;top:0;width:60mm">
+        Drop in the whole pile.
+        <svg viewBox="0 0 40 50" style="left:45mm;top:1.5mm;width:7mm;height:9.5mm" aria-hidden="true"><path d="M6 4 C 22 8, 30 22, 26 44" fill="none" stroke="#D61C28" stroke-width="2.6" stroke-linecap="round"/><path d="M18 36 L 26 46 L 33 35" fill="none" stroke="#D61C28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <img class="panel" src="assets/ui/bulk-panel.png" alt="The Bulk AI check panel: 200 copies, 194 checked, 3 in progress, 2 needing review and 1 failed, with each file, the name read from it and its status." />
+      <img class="dialog" src="assets/ui/upload-dialog.png" alt="The upload dialog: one file per student, up to 200 files, 60 MB each; 3 copies, 21 pages, ₹21; email me when the check is done." />
+      <div class="anno" style="left:2mm;top:86mm;width:62mm">
+        Not sure whose it is?<br />It asks you.
+        <svg viewBox="0 0 96 24" style="left:31mm;top:1mm;width:48mm;height:12mm" aria-hidden="true"><path d="M1 16 C 34 26, 66 22, 93 5" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/><path d="M84 5.4 L 93 5 L 88.8 13" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+
+    <!-- MATCHING + FACTS -->
+    <div class="lower mt4">
+      <div>
+        <p class="h3">Evalezy never guesses a student.</p>
+        <p class="small muted mt1">A copy under the wrong name is worse than a copy not checked.</p>
+        <div class="table-wrap mt2">
+          <table class="t">
+            <thead><tr><th>What was read from the copy</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>Unique roll number on the sheet</td><td><span class="chip ok">Matched</span></td></tr>
+              <tr><td>Name matches one student clearly</td><td><span class="chip ok">Matched</span></td></tr>
+              <tr><td>Roll number shared by two students</td><td><span class="chip warn">You pick</span></td></tr>
+              <tr><td>Two students with very similar names</td><td><span class="chip warn">You pick</span></td></tr>
+              <tr><td>No name found, or a weak match</td><td><span class="chip warn">You pick</span></td></tr>
+              <tr><td>A second copy for a student already matched</td><td><span class="chip warn">You pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="facts">
+          <div><p class="v">200</p><p class="k">files in one upload</p></div>
+          <div><p class="v">60<small> MB</small></p><p class="k">per file</p></div>
+          <div><p class="v"><small>up to </small>40<small> pages</small></p><p class="k">in a copy, every page read in full</p></div>
+          <div><p class="v">₹0</p><p class="k">to read names and match students</p></div>
+        </div>
+        <div class="divider mt3"></div>
+        <div class="line mt3"><span class="icon-badge"><i data-icon="users"></i></span><p><strong>Students can upload their own copies</strong> in an online test. Check them all with one click, or switch on auto-check on submit.</p></div>
+        <div class="line mt2"><span class="icon-badge"><i data-icon="bell-ring"></i></span><p><strong>Told when it’s done:</strong> a bell alert, and an email if you tick the box.</p></div>
+      </div>
+    </div>
+
+    <div class="tip auto">
+      <span class="icon-badge"><i data-icon="smartphone"></i></span>
+      <p><span class="hand">Scanning tip:</span> phone photos are fine. One PDF per student, the whole page in frame, no deep shadows.</p>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">07</span></footer>
+</section>

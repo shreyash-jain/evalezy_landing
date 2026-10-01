@@ -1,0 +1,181 @@
+<section class="page ink p-05" data-name="how it works">
+  <style>
+    .p-05 .pg-head, .p-05 .pg-foot { position: relative; }
+    .p-05 .h1 { font-size: 31pt; }
+
+    /* "Your part" slips: the teacher's steps, on paper */
+    .p-05 .you { position: relative; background: var(--paper); color: var(--ink); border-radius: 3mm; padding: 3mm 5mm 3.2mm; display: grid; grid-template-columns: 19mm 1fr; column-gap: 4mm; align-items: center; box-shadow: 0 6mm 14mm -8mm rgba(0, 0, 0, 0.6); }
+    .p-05 .you .lbl { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 12pt; line-height: 1.1; }
+    .p-05 .you .lbl small { display: block; font-family: "Inter"; font-weight: 600; font-size: 6.8pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate-500); margin-top: 1mm; }
+    .p-05 .you ol { list-style: none; display: grid; column-gap: 4mm; }
+    .p-05 .you li { display: flex; gap: 2mm; align-items: flex-start; }
+    .p-05 .you li .n { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 13pt; line-height: 1; width: 4.5mm; flex: none; margin-top: -0.4mm; }
+    .p-05 .you li .t { font-weight: 650; font-size: 8.4pt; line-height: 1.3; color: var(--ink); }
+    .p-05 .you li .d { font-size: 7.2pt; line-height: 1.38; color: var(--slate-600); margin-top: 0.6mm; }
+    .p-05 .you strong { color: var(--ink); }
+
+    /* connectors between the slips and the pipeline */
+    .p-05 .join { height: 5.4mm; display: flex; justify-content: flex-start; padding-left: 7.6mm; }
+    .p-05 .join svg { width: 5mm; height: 5.4mm; overflow: visible; }
+
+    /* Evalezy's part: the pipeline */
+    .p-05 .pipe { position: relative; border: 0.3mm solid rgba(255, 255, 255, 0.12); background: rgba(255, 255, 255, 0.035); border-radius: 4mm; padding: 3.6mm 5mm 2.4mm 4mm; }
+    .p-05 .pipe-head { display: flex; align-items: baseline; justify-content: space-between; padding-left: 1mm; margin-bottom: 1.4mm; }
+    .p-05 .pipe-head .t { font-family: "Bricolage"; font-weight: 700; font-size: 12pt; color: #fff; }
+    .p-05 .pipe-head .t em { font-style: normal; color: var(--pen-dark); }
+    .p-05 .pipe-head .k { font-size: 7.4pt; color: #9aa6c4; margin: 0; }
+
+    .p-05 .steps { list-style: none; position: relative; }
+    /* the spine */
+    .p-05 .steps::before { content: ""; position: absolute; left: 4.3mm; top: 6mm; bottom: 6mm; border-left: 0.45mm dashed rgba(255, 107, 114, 0.45); }
+    .p-05 .phase { display: grid; grid-template-columns: 9mm 1fr 60mm; column-gap: 4mm; margin: 0 0 1mm; }
+    .p-05 .phase p { grid-column: 2; font-size: 6.8pt; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7f8bb0; }
+    .p-05 .phase.second { margin-top: 1mm; padding-top: 2mm; border-top: 0.3mm solid rgba(255, 255, 255, 0.08); }
+    .p-05 .step { display: grid; grid-template-columns: 9mm 1fr 60mm; column-gap: 4mm; align-items: start; min-height: 12mm; }
+    .p-05 .node { position: relative; z-index: 1; width: 8.6mm; height: 8.6mm; border-radius: 50%; background: var(--ink); border: 0.45mm solid var(--pen-dark); display: grid; place-items: center; font-family: "Kalam"; font-weight: 700; font-size: 12.5pt; line-height: 1; color: var(--pen-dark); padding-top: 0.6mm; }
+    .p-05 .step .txt { padding-top: 0.5mm; padding-bottom: 2.1mm; }
+    .p-05 .step .txt .h4 { color: #fff; font-size: 10.2pt; }
+    .p-05 .step .txt p.d { font-size: 8.1pt; line-height: 1.42; color: #c3cbe0; margin-top: 0.7mm; }
+
+    /* margin notes = the guard rails, written in red pen */
+    .p-05 .note { position: relative; padding: 0.6mm 0 0 10mm; }
+    .p-05 .note svg.arr { position: absolute; left: 0; top: 1.6mm; width: 8mm; height: 4mm; overflow: visible; }
+    .p-05 .note .hand { color: var(--pen-dark); font-size: 10.2pt; line-height: 1.22; }
+    .p-05 .note .sub { font-size: 7pt; color: #9aa6c4; margin-top: 0.6mm; line-height: 1.35; }
+    .p-05 .stop { display: inline-flex; align-items: center; gap: 1.2mm; margin-top: 1.2mm; border-radius: 99px; padding: 0.5mm 2.2mm; font-size: 6.8pt; font-weight: 700; letter-spacing: 0.04em; background: rgba(255, 107, 114, 0.14); color: var(--pen-dark); }
+    .p-05 .stop svg { width: 3mm; height: 3mm; }
+
+    .p-05 .out { position: relative; padding-left: 2mm; }
+    .p-05 .out img { width: 100%; transform: rotate(-1.6deg); border-radius: 1mm; box-shadow: 0 0.4mm 1mm rgba(0, 0, 0, 0.25), 0 6mm 12mm -6mm rgba(0, 0, 0, 0.7); }
+    .p-05 .out .cap { font-size: 7pt; color: #9aa6c4; margin-top: 2.2mm; }
+
+    /* timing strip */
+    .p-05 .timing { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; padding-top: 5mm; }
+    .p-05 .timing .v { font-family: "Bricolage"; font-weight: 800; font-size: 15pt; letter-spacing: -0.03em; line-height: 1; color: #fff; }
+    .p-05 .timing .v small { font-size: 8.4pt; font-weight: 600; color: #9aa6c4; letter-spacing: 0; }
+    .p-05 .timing .k { font-size: 7.1pt; line-height: 1.32; color: #9aa6c4; margin-top: 0.8mm; }
+  </style>
+
+  <div class="dots-dark" style="position:absolute;inset:0" data-bleed></div>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">How it works</span>
+  </header>
+
+  <div class="pg-body">
+    <p class="eyebrow">Three steps for you · eight for Evalezy · then your review</p>
+    <h2 class="h1 mt2" style="color:#fff">What happens to
+      <span class="u">every copy.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 60 6, 130 4, 200 7 S 280 12, 297 8" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span>
+    </h2>
+    <p class="lede mt2" style="width:160mm">You set the paper up once. Evalezy reads, marks and writes on each copy, with steps that stop it from guessing. Nothing reaches a student until you release it.</p>
+
+    <!-- YOUR PART: BEFORE -->
+    <div class="you mt3">
+      <p class="lbl">Your part<small>Before</small></p>
+      <ol style="grid-template-columns: 1fr 1fr 1.22fr">
+        <li><span class="n">1</span><div><p class="t">Upload the paper</p><p class="d">Read into questions with their marks and sections.</p></div></li>
+        <li><span class="n">2</span><div><p class="t">Set the marking scheme</p><p class="d">Accept the AI draft, edit it, or write your own.</p></div></li>
+        <li><span class="n">3</span><div><p class="t">Upload the copies</p><p class="d">Up to 200 PDFs. Names read and matched; unsure ones wait for you.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="join" aria-hidden="true">
+      <svg viewBox="0 0 24 28"><path d="M12 1 C 11 9, 13 15, 12 24" fill="none" stroke="#FF6B72" stroke-width="2.4" stroke-linecap="round"/><path d="M6.5 18.5 L 12 25.5 L 17.5 18.5" fill="none" stroke="#FF6B72" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+
+    <!-- EVALEZY'S PART: THE PIPELINE -->
+    <div class="pipe">
+      <div class="pipe-head">
+        <p class="t">Evalezy’s part <em>· for every copy</em></p>
+        <p class="k">Stop at any time; a stopped check is not charged</p>
+      </div>
+
+      <ol class="steps">
+        <li class="phase"><p>Reading the copy</p></li>
+
+        <li class="step">
+          <span class="node">1</span>
+          <div class="txt"><p class="h4">Read the page layout</p><p class="d">Each page is straightened, cleaned and contrast-boosted, and the position of every written line is found.</p></div>
+          <div></div>
+        </li>
+        <li class="step">
+          <span class="node">2</span>
+          <div class="txt"><p class="h4">Read the handwriting</p><p class="d">A vision model reads every line as written, three pages at a time.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 40 20" aria-hidden="true"><path d="M38 12 C 28 6, 16 6, 4 10" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round"/><path d="M10 4.5 L 3.5 10 L 10.5 14.5" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="hand">Told never to invent text.</p>
+            <p class="sub">Lines it cannot read are marked unreliable.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="node">3</span>
+          <div class="txt"><p class="h4">Check the copy is readable</p><p class="d">If most pages are too blurred or blank, it stops with a clear reason.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 40 20" aria-hidden="true"><path d="M38 12 C 28 6, 16 6, 4 10" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round"/><path d="M10 4.5 L 3.5 10 L 10.5 14.5" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="hand">Unreadable? It stops.</p>
+            <span class="stop"><i data-icon="octagon-x"></i> No marks guessed · not charged</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="node">4</span>
+          <div class="txt"><p class="h4">Second read for maths</p><p class="d">Unsure maths lines (up to four) go to a dedicated equation reader.</p></div>
+          <div></div>
+        </li>
+
+        <li class="phase second"><p>Marking the copy</p></li>
+
+        <li class="step">
+          <span class="node">5</span>
+          <div class="txt"><p class="h4">Find each answer, by content</p><p class="d">On copies of four pages or more, Evalezy works out which pages hold which answer, so answers written out of order are still found.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 40 20" aria-hidden="true"><path d="M38 12 C 28 6, 16 6, 4 10" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round"/><path d="M10 4.5 L 3.5 10 L 10.5 14.5" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="hand">No zero on a first miss.</p>
+            <p class="sub">If an answer looks unattempted, the whole copy is searched again.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="node">6</span>
+          <div class="txt"><p class="h4">Mark each question</p><p class="d">Against its criteria, in half-mark steps, with the student’s own words quoted. Marks appear on your screen question by question.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 40 20" aria-hidden="true"><path d="M38 12 C 28 6, 16 6, 4 10" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round"/><path d="M10 4.5 L 3.5 10 L 10.5 14.5" fill="none" stroke="#FF6B72" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="hand">Low confidence? Asked again, and flagged for you.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="node">7</span>
+          <div class="txt"><p class="h4">Make the marks add up</p><p class="d">Capped at the maximum; one score, one clear note per question.</p></div>
+          <div></div>
+        </li>
+        <li class="step">
+          <span class="node">8</span>
+          <div class="txt"><p class="h4">Write on the copy</p><p class="d">Ticks, crosses, corrections, notes and marks drawn on the student’s pages in a handwriting-style red pen, with the total circled on page one.</p></div>
+          <figure class="out">
+            <img src="assets/img/crop-score.jpg" alt="The top of a checked copy: the paper title with the total 38/80 circled in red pen." />
+            <figcaption class="cap">The total, circled on page one of a real copy.</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </div>
+
+    <div class="join" aria-hidden="true">
+      <svg viewBox="0 0 24 28"><path d="M12 1 C 11 9, 13 15, 12 24" fill="none" stroke="#FF6B72" stroke-width="2.4" stroke-linecap="round"/><path d="M6.5 18.5 L 12 25.5 L 17.5 18.5" fill="none" stroke="#FF6B72" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+
+    <!-- YOUR PART: AFTER -->
+    <div class="you">
+      <p class="lbl">Your part<small>After</small></p>
+      <ol style="grid-template-columns: 1.7fr 1fr">
+        <li><span class="n">4</span><div><p class="t">Review</p><p class="d">A bell alert and an email when the batch is done. See the answer as read, marks, feedback and criteria per question. Change any mark: your edit is kept.</p></div></li>
+        <li><span class="n">5</span><div><p class="t">Release</p><p class="d">Students get their checked copy by email. Until then they see “Results pending”.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="timing auto">
+      <div><p class="v">1–8<small> min</small></p><p class="k">a copy, several checked at once</p></div>
+      <div><p class="v">~10<small> min</small></p><p class="k">to the first results, usually</p></div>
+      <div><p class="v">2–3<small> hours</small></p><p class="k">for 100 copies, on current capacity</p></div>
+      <div><p class="v"><small>up to </small>40<small> pages</small></p><p class="k">in a copy, every page read in full</p></div>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">05</span></footer>
+</section>

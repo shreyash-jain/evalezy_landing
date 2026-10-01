@@ -1,0 +1,52 @@
+<section class="page ink flush" data-name="cover">
+  <div class="dots-dark" style="position:absolute;inset:0" data-bleed></div>
+  <!-- hand-drawn loop behind the copies -->
+  <svg data-bleed viewBox="0 0 400 300" style="position:absolute;right:-30mm;bottom:30mm;width:120mm;height:90mm;opacity:.22" aria-hidden="true">
+    <path d="M330 60 C 280 10, 90 0, 40 80 C 0 150, 60 260, 200 270 C 330 280, 400 200, 380 130 C 365 80, 320 50, 250 40" fill="none" stroke="#FF6B72" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+
+  <div style="position:relative;padding:16mm 16mm 0;display:flex;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;align-items:flex-end;gap:2.5mm">
+      <img src="assets/img/logo-white.svg" alt="Evalezy" style="height:11mm;width:auto" />
+      <span style="font-size:8pt;color:#9aa6c4;font-weight:600;padding-bottom:1mm">by Vacademy</span>
+    </div>
+    <span class="eyebrow">Product brochure · 2026</span>
+  </div>
+
+  <div style="position:relative;padding:22mm 16mm 0;width:150mm">
+    <p class="eyebrow">AI answer sheet checking</p>
+    <h1 class="display" style="font-size:44pt;margin-top:4mm;color:#fff">
+      Handwritten copies, checked by AI in a
+      <span class="u">teacher’s red pen.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 60 6, 130 4, 200 7 S 280 12, 297 8" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span>
+    </h1>
+    <p class="lede" style="margin-top:7mm;width:118mm;font-size:12pt">
+      Upload a whole class’s scanned answer sheets at once. Evalezy reads every student’s name, marks each answer against one
+      marking scheme, and hands back the student’s own copy with ticks, crosses, notes and the total circled. You review and release.
+    </p>
+  </div>
+
+  <!-- the copies: three rotated real pages, flattened into one image that ends exactly at the page edge.
+       A live image crossing the bottom edge is pushed to the next page when Chrome prints, so it would vanish.
+       Regenerate assets/img/cover-stack.jpg with the flatten step in brochure/README.md if the layout changes. -->
+  <img src="assets/img/cover-stack.jpg" alt="A real answer copy checked by Evalezy, total 38/80 circled, on top of two more checked pages" style="position:absolute;right:0;bottom:0;width:120.249mm;height:109.212mm;max-width:none" />
+
+  <!-- handwritten note with arrow -->
+  <div style="position:absolute;left:44mm;top:178mm;width:84mm">
+    <p class="hand" style="color:#FF6B72;font-size:15pt;line-height:1.25">A real copy, checked by Evalezy.<br/>Total circled: 38/80</p>
+    <svg viewBox="0 0 120 60" style="width:30mm;height:15mm;margin-left:30mm;margin-top:1mm" aria-hidden="true">
+      <path d="M4 10 C 40 6, 80 18, 108 48" fill="none" stroke="#FF6B72" stroke-width="3" stroke-linecap="round"/>
+      <path d="M96 46 L 110 50 L 110 35" fill="none" stroke="#FF6B72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- bottom facts -->
+  <div style="position:absolute;left:16mm;bottom:16mm;width:100mm">
+    <div class="divider" style="margin-bottom:5mm"></div>
+    <div class="grid3" style="gap:4mm">
+      <div class="stat"><div class="v" style="color:#fff">₹1<small style="color:#9aa6c4"> /page</small></div><div class="k">excl. GST · $0.01 outside India</div></div>
+      <div class="stat"><div class="v" style="color:#fff">200</div><div class="k">copies in one upload, matched to students</div></div>
+      <div class="stat"><div class="v" style="color:#fff">1–8<small style="color:#9aa6c4"> min</small></div><div class="k">a copy, several checked at once</div></div>
+    </div>
+    <p class="small" style="margin-top:6mm;color:#9aa6c4">evalezy.com</p>
+  </div>
+</section>

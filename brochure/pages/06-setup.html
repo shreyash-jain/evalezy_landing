@@ -1,0 +1,134 @@
+<section class="page p-06" data-name="set up once">
+  <style>
+    .p-06 .h1 { font-size: 31pt; }
+    .p-06 .band { display: grid; grid-template-columns: 98mm 1fr; column-gap: 8mm; align-items: center; }
+    .p-06 .band.flip { grid-template-columns: 1fr 96mm; }
+    .p-06 .shot { position: relative; }
+    .p-06 .shot img.ui { width: 100%; border-radius: 2.6mm; }
+    .p-06 .shot.card-shadow img.ui { box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.08), 0 9mm 18mm -9mm rgba(15, 26, 58, 0.45); }
+    .p-06 .step-no { display: flex; align-items: center; gap: 2.4mm; }
+    .p-06 .step-no .num-badge { width: 7mm; height: 7mm; font-size: 8.6pt; }
+    .p-06 .txt .h3 { font-size: 13.5pt; margin-top: 2.2mm; }
+    .p-06 .txt p.b { font-size: 8.8pt; line-height: 1.5; color: var(--slate-600); margin-top: 2mm; }
+    .p-06 .txt .ticks { margin-top: 3.2mm; gap: 1.7mm; font-size: 8.5pt; line-height: 1.42; color: var(--slate-700); }
+    .p-06 .anno { position: absolute; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 11.5pt; line-height: 1.15; white-space: nowrap; }
+    .p-06 .anno svg, .p-06 svg.ring { position: absolute; overflow: visible; }
+    .p-06 .h3 { text-wrap: balance; }
+
+    /* question paper import: the product screen, rebuilt in HTML so its numbers match the real paper
+       (Sections A–E of the Class IX mock: 20 + 12 + 18 + 20 + 10 = 80 marks, 38 questions) */
+    .p-06 .pimport { padding-left: 39mm; }
+    .p-06 .pimport .sheet { position: absolute; left: 0; top: 9mm; width: 32mm; background: #fffdf8; border: 0.3mm solid var(--line); border-radius: 1.6mm; padding: 3.4mm 2.6mm 4mm; text-align: center; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.06), 0 7mm 12mm -7mm rgba(15, 26, 58, 0.35); }
+    .p-06 .sheet .t { font-weight: 700; font-size: 7.8pt; line-height: 1.25; color: var(--ink); }
+    .p-06 .sheet .s { font-size: 6.8pt; line-height: 1.35; color: #62748e; margin-top: 0.6mm; }
+    .p-06 .sheet .s + .s { margin-top: 0; }
+    .p-06 .sheet .bars { margin-top: 2.6mm; padding-top: 2.6mm; border-top: 0.25mm solid var(--line); display: flex; flex-direction: column; gap: 1.9mm; align-items: flex-start; }
+    .p-06 .sheet .bars i { display: block; height: 1.2mm; border-radius: 1mm; background: #dae1e9; }
+    .p-06 .pimport svg.arr { position: absolute; left: 33.1mm; top: 28.6mm; width: 5.2mm; height: 2.6mm; overflow: visible; }
+    .p-06 .panel { background: #fff; border: 0.3mm solid var(--line); border-radius: 2.6mm; overflow: hidden; }
+    .p-06 .panel .ph { display: flex; align-items: baseline; justify-content: space-between; padding: 2.4mm 3.4mm 2.2mm; border-bottom: 0.3mm solid var(--line); }
+    .p-06 .panel .ph b { font-weight: 600; font-size: 8.4pt; color: var(--ink); }
+    .p-06 .panel .ph span { font-family: "JBMono"; font-size: 7pt; color: #62748e; }
+    .p-06 .panel .pr { display: grid; grid-template-columns: 10.2mm 1fr auto; column-gap: 2.6mm; align-items: center; padding: 1.9mm 3.4mm; border-bottom: 0.3mm solid var(--line); }
+    .p-06 .panel .q { font-family: "JBMono"; font-size: 7pt; color: #90a1b9; white-space: nowrap; }
+    .p-06 .panel .l { font-size: 7.8pt; line-height: 1.32; color: #314158; }
+    .p-06 .panel .m { font-family: "JBMono"; font-weight: 700; font-size: 7.8pt; color: var(--ink); }
+    .p-06 .panel .pf { background: var(--paper); font-size: 6.8pt; line-height: 1.4; color: #62748e; padding: 2.1mm 3.4mm 2.3mm; text-wrap: balance; }
+
+    /* consistency strip */
+    .p-06 .same { background: var(--ink); color: #fff; border-radius: 4mm; padding: 5mm 6mm 4.6mm; display: grid; grid-template-columns: 60mm 1fr; column-gap: 7mm; align-items: center; position: relative; margin-top: 7mm; }
+    .p-06 .same .h3 { color: #fff; font-size: 13.5pt; }
+    .p-06 .same p.b { font-size: 8.2pt; line-height: 1.5; color: #c3cbe0; margin-top: 2mm; }
+    .p-06 .rows { display: flex; flex-direction: column; gap: 1.5mm; }
+    .p-06 .rows .r { display: grid; grid-template-columns: 15mm 1fr auto; column-gap: 3mm; align-items: center; background: rgba(255, 255, 255, 0.06); border: 0.3mm solid rgba(255, 255, 255, 0.1); border-radius: 2.2mm; padding: 1.5mm 3.4mm; }
+    .p-06 .rows .r p { margin: 0; }
+    .p-06 .rows .c { font-size: 8pt; font-weight: 650; color: #fff; white-space: nowrap; }
+    .p-06 .rows .w { font-size: 7.8pt; color: #c3cbe0; line-height: 1.35; }
+    .p-06 .rows .m { font-family: "Kalam"; font-weight: 700; color: var(--pen-dark); font-size: 13pt; line-height: 1; white-space: nowrap; }
+    .p-06 .same .cap { font-size: 6.8pt; color: #9aa6c4; margin-top: 2mm; }
+  </style>
+
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Set up</span>
+  </header>
+
+  <div class="pg-body">
+    <p class="eyebrow">Once per paper</p>
+    <h2 class="h1 mt2" style="width:170mm">Set up once. <span class="marker">Every copy</span> gets the same scheme.</h2>
+    <p class="lede mt3" style="width:160mm">Evalezy needs two things before the first copy: the questions, and a marking scheme for each one. Both start from the paper you already printed.</p>
+
+    <!-- 1. QUESTION PAPER IMPORT -->
+    <div class="band mt5">
+      <figure class="shot pimport" role="img" aria-label="A printed Social Science question paper read into 38 questions worth 80 marks, in five sections.">
+        <div class="sheet" aria-hidden="true">
+          <p class="t">Social Science</p>
+          <p class="s">Half-Yearly<br />Mock Test 4</p>
+          <p class="s">Class IX · 80 marks</p>
+          <div class="bars"><i style="width:100%"></i><i style="width:76%"></i><i style="width:90%"></i><i style="width:58%"></i><i style="width:94%"></i><i style="width:68%"></i></div>
+        </div>
+        <svg class="arr" viewBox="0 0 60 30" aria-hidden="true"><path d="M2 16 C 20 9, 36 10, 54 14" fill="none" stroke="#D61C28" stroke-width="3" stroke-linecap="round"/><path d="M44 6 L 55 14 L 45 22" fill="none" stroke="#D61C28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="panel" aria-hidden="true">
+          <div class="ph"><b>38 questions found</b><span>80 marks</span></div>
+          <div class="pr"><span class="q">Q1–20</span><span class="l">Write the correct answer</span><span class="m">20</span></div>
+          <div class="pr"><span class="q">Q21–26</span><span class="l">Very short answer</span><span class="m">12</span></div>
+          <div class="pr"><span class="q">Q27–32</span><span class="l">Short answer</span><span class="m">18</span></div>
+          <div class="pr"><span class="q">Q33–36</span><span class="l">Long answer</span><span class="m">20</span></div>
+          <div class="pr"><span class="q">Q37–38</span><span class="l">Case-based</span><span class="m">10</span></div>
+          <p class="pf">Edit any question or mark before checking.</p>
+        </div>
+        <div class="anno" style="left:0.5mm;top:0.2mm">
+          Read, not typed.
+          <svg viewBox="0 0 60 30" style="left:31mm;top:1.6mm;width:6.4mm;height:3.4mm" aria-hidden="true"><path d="M2 8 C 20 6, 36 9, 54 16" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/><path d="M43 10 L 55 16 L 47 25" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </figure>
+      <div class="txt">
+        <p class="step-no"><span class="num-badge pen">1</span><span class="eyebrow">Question paper import</span></p>
+        <h3 class="h3">Upload the paper you already printed.</h3>
+        <p class="b">No typing 38 questions into a form. Upload the question paper as a PDF and Evalezy reads it into questions with their marks and sections.</p>
+        <ul class="ticks">
+          <li>Question text and maximum marks</li>
+          <li>Sections, in paper order</li>
+          <li>Printed numbers kept, so Q21 stays “Q21” on the checked copy</li>
+          <li>Edit any question or mark before you check</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2. MARKING SCHEME -->
+    <div class="band flip" style="margin-top:9mm">
+      <div class="txt">
+        <p class="step-no"><span class="num-badge pen">2</span><span class="eyebrow">Marking scheme</span></p>
+        <h3 class="h3">One scheme per question. The same for every student.</h3>
+        <p class="b">Criteria that add up to the question’s marks. Accept the AI draft, edit it, or write your own.</p>
+        <ul class="ticks">
+          <li>Criteria rescaled to add up exactly to the marks</li>
+          <li>1 criterion if objective, 3–5 if subjective</li>
+          <li>Model answer is a guide, not set wording</li>
+          <li>Made once, even if two copies start together</li>
+        </ul>
+      </div>
+      <figure class="shot card-shadow">
+        <img class="ui" src="assets/ui/rubric.png" alt="The marking scheme for Q30: three criteria worth 1.5, 1 and 0.5 that add up to 3 out of 3, with an optional model answer." />
+        <svg class="ring" viewBox="0 0 120 60" style="left:83.6%;top:56.6%;width:15%;height:12%" aria-hidden="true"><path d="M70 6 C 40 2, 6 10, 5 30 C 4 50, 40 57, 70 55 C 102 53, 117 42, 114 26 C 111 12, 92 4, 62 7" fill="none" stroke="#D61C28" stroke-width="3" stroke-linecap="round"/></svg>
+      </figure>
+    </div>
+
+    <!-- COPY 1 = COPY 200 -->
+    <div class="same">
+      <div>
+        <p class="h3">Copy 1 and copy 200 are judged the same way.</p>
+        <p class="b">Over 200 copies, a person’s standard can drift. Evalezy fixes the scheme first and uses it for every copy.</p>
+      </div>
+      <div>
+        <div class="rows">
+          <div class="r"><p class="c">Copy 1</p><p class="w">Named weather elements, not climate factors</p><p class="m">0.5/3</p></div>
+          <div class="r"><p class="c">Copy 87</p><p class="w">Three factors, explained, no example</p><p class="m">2.5/3</p></div>
+          <div class="r"><p class="c">Copy 200</p><p class="w">Factors, effects and an example</p><p class="m">3/3</p></div>
+        </div>
+        <p class="cap">Illustration: three answers to Q30, judged against the same three criteria.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">06</span></footer>
+</section>

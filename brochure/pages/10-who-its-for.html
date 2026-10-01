@@ -1,0 +1,148 @@
+<section class="page p-10" data-name="who it's for">
+  <style>
+    .p-10 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5mm; flex: 1; min-height: 0; }
+    .p-10 .aud { display: flex; flex-direction: column; background: #fff; border: 0.3mm solid var(--line); border-radius: 4mm; }
+    .p-10 .aud .in { padding: 4.4mm 4.6mm 3.2mm; }
+    .p-10 .aud .top { display: flex; align-items: center; gap: 2.6mm; }
+    .p-10 .aud .lbl { font-size: 7.4pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pen-700); line-height: 1.3; }
+    .p-10 .aud .line { font-family: "Bricolage"; font-weight: 700; font-size: 11.6pt; line-height: 1.2; letter-spacing: -0.01em; margin-top: 2.8mm; text-wrap: balance; }
+    .p-10 .aud .ticks { margin-top: 2.6mm; gap: 1.8mm; font-size: 7.9pt; line-height: 1.42; color: var(--slate-600); }
+    .p-10 .aud .ticks li { padding-left: 5.4mm; text-wrap: pretty; }
+    .p-10 .aud .ticks li::before { width: 3.6mm; height: 3.6mm; top: 0.2em; }
+    /* worked example: a sum in red pen on a strip of ruled paper */
+    .p-10 .sum {
+      margin-top: auto; padding: 2.8mm 4mm 3.4mm 10mm; border-top: 0.3mm solid var(--line); border-radius: 0 0 3.7mm 3.7mm;
+      background-color: #fffdf8;
+      background-image:
+        linear-gradient(90deg, transparent 0, transparent 6.8mm, rgba(214,28,40,.3) 6.8mm, rgba(214,28,40,.3) 7.1mm, transparent 7.1mm);
+    }
+    .p-10 .sum .cap { font-size: 7pt; line-height: 1.35; min-height: 2.7em; color: var(--slate-500); text-wrap: balance; }
+    .p-10 .sum .calc { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 9.6pt; line-height: 1.2; margin-top: 1.4mm; white-space: nowrap; }
+    .p-10 .sum .tot { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 17.5pt; line-height: 1.3; margin-top: 2.6mm; display: flex; align-items: center; gap: 2.4mm; white-space: nowrap; }
+    .p-10 .sum .tot .circ { padding: 0 0.38em; margin: 0 0 0 -0.2em; }
+    .p-10 .sum .tot .circ > svg { left: -0.16em; top: -0.34em; width: calc(100% + 0.32em); height: calc(100% + 0.5em); }
+    .p-10 .sum .tot .per { font-size: 9pt; line-height: 1.1; margin-left: -0.6mm; }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Who it’s for</span>
+  </header>
+  <div class="pg-body">
+    <p class="eyebrow">Who it’s for</p>
+    <h2 class="h1 mt2" style="font-size:31pt">Anyone who checks handwritten answers at scale.</h2>
+    <div class="row mt2" style="justify-content:space-between;align-items:flex-end;gap:8mm">
+      <p class="lede" style="font-size:10.4pt;width:124mm">Schools after every exam, coaching institutes after every weekly test, answer-writing programmes every day, colleges every semester, exam bodies every season, and platforms all the time.</p>
+      <div class="row" style="align-items:flex-end;gap:1.5mm;flex:none">
+        <p class="hand" style="font-size:11.5pt;line-height:1.15;text-align:right">Each one worked<br />out at ₹1 a page</p>
+        <svg viewBox="0 0 40 34" style="width:8mm;height:7mm;margin-bottom:-4.5mm" aria-hidden="true"><path d="M4 4 C 18 4, 30 10, 32 28" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/><path d="M25 22 L 32 30 L 38 21" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+
+    <div class="grid mt3">
+      <!-- Schools -->
+      <article class="aud">
+        <div class="in">
+          <div class="top"><span class="icon-badge"><i data-icon="school"></i></span><span class="lbl">Schools</span></div>
+          <p class="line">Give teachers their evenings back after every exam.</p>
+          <ul class="ticks">
+            <li>Every copy marked against the same scheme, from the first to the last</li>
+            <li>A note on every answer that lost marks, in red pen on the copy itself</li>
+          </ul>
+        </div>
+        <div class="sum">
+          <p class="cap">Four sections of 40, an 8&#8209;page half-yearly copy</p>
+          <p class="calc">160 copies × 8 pages =</p>
+          <p class="tot"><span class="circ">₹1,280<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M104 9 C 84 1, 28 2, 11 14 C -3 25, 12 46, 60 46 C 102 46, 121 33, 113 18 C 108 9, 95 5, 78 4" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/></svg></span></p>
+        </div>
+      </article>
+
+      <!-- Coaching institutes -->
+      <article class="aud">
+        <div class="in">
+          <div class="top"><span class="icon-badge"><i data-icon="graduation-cap"></i></span><span class="lbl">Coaching institutes</span></div>
+          <p class="line">Weekly tests, checked before the next class.</p>
+          <ul class="ticks">
+            <li>Test more often without hiring more checkers</li>
+            <li>One marking standard across batches, centres and faculty</li>
+          </ul>
+        </div>
+        <div class="sum">
+          <p class="cap">A 300&#8209;student weekly test, 6 pages a copy</p>
+          <p class="calc">300 copies × 6 pages =</p>
+          <p class="tot"><span class="circ">₹1,800<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M104 9 C 84 1, 28 2, 11 14 C -3 25, 12 46, 60 46 C 102 46, 121 33, 113 18 C 108 9, 95 5, 78 4" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/></svg></span><span class="per">/ week</span></p>
+        </div>
+      </article>
+
+      <!-- UPSC & PSC -->
+      <article class="aud">
+        <div class="in">
+          <div class="top"><span class="icon-badge"><i data-icon="pen-line"></i></span><span class="lbl">UPSC &amp; PSC answer writing</span></div>
+          <p class="line">Daily answer writing, with feedback on every answer.</p>
+          <ul class="ticks">
+            <li>Every answer judged on the same criteria</li>
+            <li>Margin notes written on the aspirant’s own copy</li>
+          </ul>
+        </div>
+        <div class="sum">
+          <p class="cap">500 aspirants writing a 3&#8209;page daily answer</p>
+          <p class="calc">500 answers × 3 pages =</p>
+          <p class="tot"><span class="circ">₹1,500<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M104 9 C 84 1, 28 2, 11 14 C -3 25, 12 46, 60 46 C 102 46, 121 33, 113 18 C 108 9, 95 5, 78 4" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/></svg></span><span class="per">/ day</span></p>
+        </div>
+      </article>
+
+      <!-- Colleges & universities -->
+      <article class="aud">
+        <div class="in">
+          <div class="top"><span class="icon-badge"><i data-icon="landmark"></i></span><span class="lbl">Colleges &amp; universities</span></div>
+          <p class="line">Internal assessments without the marking backlog.</p>
+          <ul class="ticks">
+            <li>One rubric applied identically across every script</li>
+            <li>Written reasons on the script for every deduction</li>
+          </ul>
+        </div>
+        <div class="sum">
+          <p class="cap">A 240&#8209;student course, 10&#8209;page scripts</p>
+          <p class="calc">240 scripts × 10 pages =</p>
+          <p class="tot"><span class="circ">₹2,400<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M104 9 C 84 1, 28 2, 11 14 C -3 25, 12 46, 60 46 C 102 46, 121 33, 113 18 C 108 9, 95 5, 78 4" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/></svg></span></p>
+        </div>
+      </article>
+
+      <!-- Exam bodies -->
+      <article class="aud">
+        <div class="in">
+          <div class="top"><span class="icon-badge"><i data-icon="building-2"></i></span><span class="lbl">Exam bodies &amp; large-scale tests</span></div>
+          <p class="line">A consistent first evaluation for every script.</p>
+          <ul class="ticks">
+            <li>Identical criteria applied to every script</li>
+            <li>Per-question record: what was read, the marks, the reasons, who edited</li>
+          </ul>
+        </div>
+        <div class="sum">
+          <p class="cap">10,000 candidates, 12&#8209;page scripts</p>
+          <p class="calc">10,000 scripts × 12 pages =</p>
+          <p class="tot"><span class="circ">₹1,20,000<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M104 9 C 84 1, 28 2, 11 14 C -3 25, 12 46, 60 46 C 102 46, 121 33, 113 18 C 108 9, 95 5, 78 4" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/></svg></span></p>
+        </div>
+      </article>
+
+      <!-- Edtech -->
+      <article class="aud">
+        <div class="in">
+          <div class="top"><span class="icon-badge"><i data-icon="code-xml"></i></span><span class="lbl">Edtech platforms &amp; developers</span></div>
+          <p class="line">Handwritten answer checking, as an API.</p>
+          <ul class="ticks">
+            <li>Per-question marks, feedback and criteria in JSON</li>
+            <li>A red-pen checked PDF to show learners</li>
+          </ul>
+        </div>
+        <div class="sum">
+          <p class="cap">20,000 answer sheets a month, 5 pages each</p>
+          <p class="calc">20,000 sheets × 5 pages =</p>
+          <p class="tot"><span class="circ">₹1,00,000<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M104 9 C 84 1, 28 2, 11 14 C -3 25, 12 46, 60 46 C 102 46, 121 33, 113 18 C 108 9, 95 5, 78 4" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/></svg></span><span class="per">/ month</span></p>
+        </div>
+      </article>
+    </div>
+
+    <p class="tiny muted mt2">Worked examples at ₹1 per page checked, excluding GST; $0.01 per page outside India. Failed, stopped and unreadable copies are free. Large volumes: talk to us about custom pricing. API access is enabled per account; request it at evalezy.com/demo.</p>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">10</span></footer>
+</section>

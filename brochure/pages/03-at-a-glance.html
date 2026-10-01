@@ -1,0 +1,109 @@
+<section class="page p-03" data-name="at a glance">
+  <style>
+    .p-03 .pg-body > * { flex: none; }
+
+    /* four steps */
+    .p-03 .steps { margin-top: 6mm; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4.5mm; position: relative; }
+    .p-03 .step { position: relative; background: #fffdf8; border: 0.3mm solid var(--line); border-radius: 3.5mm; padding: 4.2mm 4mm 4.6mm 4mm; display: flex; flex-direction: column; }
+    .p-03 .step .top { display: flex; align-items: center; justify-content: space-between; }
+    .p-03 .step .n { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 22pt; line-height: 1; }
+    .p-03 .step .h4 { margin-top: 3mm; font-size: 10.5pt; }
+    .p-03 .step .b { margin-top: 1.6mm; font-size: 8.2pt; line-height: 1.45; color: var(--slate-600); }
+    .p-03 .step .who { margin-top: auto; padding-top: 2.6mm; }
+    .p-03 .step .who span { display: flex; align-items: center; gap: 1.4mm; border-top: 0.3mm dashed var(--line); padding-top: 2.4mm; font-size: 7.3pt; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .p-03 .step .who svg { width: 3.4mm; height: 3.4mm; flex: none; }
+    .p-03 .arrow { position: absolute; top: 4.4mm; right: -6.05mm; width: 7.6mm; height: 7.6mm; padding: 0 1.25mm 0 1.45mm; background: #fff; border: 0.3mm solid var(--line); border-radius: 50%; z-index: 2; }
+
+    /* numbers */
+    .p-03 .nums { margin-top: 6mm; background: var(--ink); border-radius: 4mm; padding: 6mm 3mm 5.5mm; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); position: relative; overflow: hidden; }
+    .p-03 .nums .cell { padding: 0 3.2mm; border-left: 0.3mm solid rgba(255, 255, 255, 0.12); position: relative; }
+    .p-03 .nums .cell:first-child { border-left: 0; }
+    .p-03 .nums .v { font-family: "Bricolage"; font-weight: 800; font-size: 21pt; letter-spacing: -0.03em; line-height: 1; color: #fff; white-space: nowrap; }
+    .p-03 .nums .v small { font-size: 9pt; font-weight: 600; color: #9aa6c4; letter-spacing: 0; margin-left: 0.6mm; }
+    .p-03 .nums .k { margin-top: 1.8mm; font-size: 7.4pt; line-height: 1.35; color: #b4bdd4; }
+
+    /* what you get back */
+    .p-03 .back { margin-top: 6.5mm; display: grid; grid-template-columns: 60mm 1fr; gap: 9mm; align-items: start; }
+    .p-03 .shot { position: relative; padding: 2mm 0 0 2mm; }
+    .p-03 .shot .paper-shot { transform: rotate(-2.5deg); }
+    .p-03 .shot .paper-shot img { width: 100%; }
+    .p-03 .shot .pdf { position: absolute; right: -3mm; top: 6mm; transform: rotate(4deg); }
+    .p-03 .gets { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm 6mm; }
+    .p-03 .get { display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; align-items: start; }
+    .p-03 .get .h4 { font-size: 10pt; }
+    .p-03 .get p.b { margin-top: 0.8mm; font-size: 8.2pt; line-height: 1.45; color: var(--slate-600); }
+  </style>
+
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">At a glance</span>
+  </header>
+
+  <div class="pg-body">
+    <p class="eyebrow">The whole product, on one page</p>
+    <h2 class="h1 mt2" style="width:166mm">From question paper to
+      <span class="u">checked copies<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 60 6, 130 5, 200 8 S 280 13, 297 7" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span>
+      in four steps.</h2>
+    <p class="lede mt4" style="width:150mm">You set up once per paper and upload the pile. Evalezy does the first check of every copy. Nothing reaches a student until a teacher releases it.</p>
+
+    <ol class="steps" style="list-style:none">
+      <li class="step">
+        <div class="top"><span class="n">01</span><span class="icon-badge"><i data-icon="file-text"></i></span></div>
+        <p class="h4">Upload the question paper</p>
+        <p class="b">It is read into questions, with their marks and sections. Fix anything in a minute.</p>
+        <p class="who"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6" fill="none" stroke="#D61C28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>No retyping</span></p>
+        <svg class="arrow" viewBox="0 0 32 20" aria-hidden="true"><path d="M2 11 C 10 9, 18 9, 28 10" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/><path d="M22 4 L 29 10 L 22 16" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </li>
+      <li class="step">
+        <div class="top"><span class="n">02</span><span class="icon-badge"><i data-icon="list-checks"></i></span></div>
+        <p class="h4">Set the marking scheme</p>
+        <p class="b">Accept the AI’s draft for each question, edit it, or write your own with model answers.</p>
+        <p class="who"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6" fill="none" stroke="#D61C28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Used for every copy</span></p>
+        <svg class="arrow" viewBox="0 0 32 20" aria-hidden="true"><path d="M2 11 C 10 9, 18 9, 28 10" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/><path d="M22 4 L 29 10 L 22 16" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </li>
+      <li class="step">
+        <div class="top"><span class="n">03</span><span class="icon-badge"><i data-icon="files"></i></span></div>
+        <p class="h4">Upload every copy at once</p>
+        <p class="b">Up to 200 PDFs. Names and roll numbers are read and matched to your students.</p>
+        <p class="who"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6" fill="none" stroke="#D61C28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Unsure? It asks you</span></p>
+        <svg class="arrow" viewBox="0 0 32 20" aria-hidden="true"><path d="M2 11 C 10 9, 18 9, 28 10" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round"/><path d="M22 4 L 29 10 L 22 16" fill="none" stroke="#D61C28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </li>
+      <li class="step">
+        <div class="top"><span class="n">04</span><span class="icon-badge"><i data-icon="user-check"></i></span></div>
+        <p class="h4">Review, then release</p>
+        <p class="b">Marks fill in live. Change any mark, then release. Students get their checked copy by email.</p>
+        <p class="who"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6" fill="none" stroke="#D61C28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Released by you</span></p>
+      </li>
+    </ol>
+
+    <div class="nums dots-dark">
+      <div class="cell"><div class="v">₹1<small>/page</small></div><div class="k">excl. GST · $0.01 outside India</div></div>
+      <div class="cell"><div class="v">200</div><div class="k">copies in one upload</div></div>
+      <div class="cell"><div class="v">1–8<small>min</small></div><div class="k">a copy, several checked at once</div></div>
+      <div class="cell"><div class="v">~10<small>min</small></div><div class="k">to the first results, usually</div></div>
+      <div class="cell"><div class="v">2–3<small>h</small></div><div class="k">for 100 copies, roughly</div></div>
+      <div class="cell"><div class="v">½</div><div class="k">mark steps for each question</div></div>
+    </div>
+
+    <div class="back">
+      <figure class="shot">
+        <div class="paper-shot"><img src="assets/img/page-6-sm.jpg" alt="Page six of the real checked copy: 3.5/5 and 2.5/5 with notes in red pen" /></div>
+        <span class="chip pen pdf"><i data-icon="file-check"></i> Checked copy · PDF</span>
+        <figcaption class="figcap" style="margin-top:3mm">A real copy checked by Evalezy, page 6 of 7.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">What you get back</p>
+        <p class="h2 mt1" style="font-size:19pt">Every copy, checked and explained.</p>
+        <div class="gets mt4">
+          <div class="get"><span class="icon-badge"><i data-icon="pen-line"></i></span><div><p class="h4">The checked copy</p><p class="b">The student’s own pages in red pen, as a PDF: ticks, crosses, notes, total circled.</p></div></div>
+          <div class="get"><span class="icon-badge"><i data-icon="sigma"></i></span><div><p class="h4">Marks per question</p><p class="b">Scored against criteria that add up exactly to the question’s marks.</p></div></div>
+          <div class="get"><span class="icon-badge"><i data-icon="scan-text"></i></span><div><p class="h4">The answer as read</p><p class="b">The student’s handwriting as Evalezy read it, beside the marks.</p></div></div>
+          <div class="get"><span class="icon-badge"><i data-icon="message-square-text"></i></span><div><p class="h4">Feedback</p><p class="b">For each question, plus a note on the copy wherever marks were lost.</p></div></div>
+          <div class="get"><span class="icon-badge"><i data-icon="list-checks"></i></span><div><p class="h4">Criteria breakdown</p><p class="b">How each line of the marking scheme was scored.</p></div></div>
+          <div class="get"><span class="icon-badge"><i data-icon="mail"></i></span><div><p class="h4">Release emails</p><p class="b">On release, each student is emailed the checked copy as a PDF.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">03</span></footer>
+</section>

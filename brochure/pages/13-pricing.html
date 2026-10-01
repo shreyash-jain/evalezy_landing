@@ -1,0 +1,152 @@
+<section class="page p-13" data-name="pricing">
+  <style>
+    .p-13 .pg-body > * { flex-shrink: 0; }
+    .p-13 .head { display: grid; grid-template-columns: 1fr 64mm; gap: 8mm; align-items: center; }
+    .p-13 .sample { position: relative; background-color: #fffdf8; border-radius: 4mm; border: 0.3mm solid var(--line); padding: 5mm 5mm 5mm 6mm; display: flex; gap: 5mm; align-items: center; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.06), 0 8mm 16mm -10mm rgba(15, 26, 58, 0.35); }
+    .p-13 .sample .thumb { width: 23mm; flex: none; transform: rotate(-4deg); border-radius: 1mm; overflow: hidden; box-shadow: 0 0.3mm 0.8mm rgba(15, 26, 58, 0.15), 0 4mm 8mm -4mm rgba(15, 26, 58, 0.45); }
+    .p-13 .sample .big { font-family: "Bricolage"; font-weight: 800; font-size: 34pt; letter-spacing: -0.03em; line-height: 1; color: var(--pen); }
+
+    .p-13 .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.5mm; }
+    .p-13 .plan { display: flex; flex-direction: column; padding: 4.4mm 4.4mm 4.2mm; border-radius: 4mm; }
+    .p-13 .plan .price { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; letter-spacing: -0.03em; line-height: 1; margin-top: 2.6mm; }
+    .p-13 .plan .price span { font-size: 10pt; font-weight: 600; letter-spacing: 0; color: var(--slate-500); }
+    .p-13 .plan .sub { font-size: 7.2pt; color: var(--slate-500); margin-top: 1.4mm; line-height: 1.4; }
+    .p-13 .plan .who { font-size: 8pt; line-height: 1.42; color: var(--slate-600); margin-top: 2.6mm; }
+    .p-13 .plan .ticks { font-size: 7.8pt; line-height: 1.35; gap: 1.3mm; margin-top: 3mm; }
+    .p-13 .plan .ticks li { padding-left: 5.6mm; }
+    .p-13 .plan .ticks li::before { width: 3.8mm; height: 3.8mm; top: 0.2em; }
+    .p-13 .plan .cta { margin-top: auto; padding-top: 3.4mm; display: flex; align-items: center; justify-content: space-between; gap: 1.5mm; white-space: nowrap; }
+    .p-13 .plan .cta b { border-radius: 99px; padding: 1.5mm 2.8mm; font-size: 7.5pt; font-weight: 650; background: var(--pen); color: #fff; }
+    .p-13 .plan .cta em { font-style: normal; font-weight: 500; font-size: 6.9pt; color: var(--slate-500); }
+    .p-13 .plan.ink .cta em { color: #9aa6c4; }
+    .p-13 .plan.ink { background: var(--ink); color: #fff; }
+    .p-13 .plan.ink .price span, .p-13 .plan.ink .sub { color: #9aa6c4; }
+    .p-13 .plan.ink .who, .p-13 .plan.ink .ticks { color: #c3cbe0; }
+    .p-13 .plan.ink .eyebrow { color: var(--pen-dark); }
+    .p-13 .plan.ink .ticks li::before { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6' fill='none' stroke='%23FF6B72' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/></svg>"); }
+    .p-13 .plan .cta.ghost b { background: transparent; box-shadow: inset 0 0 0 0.35mm var(--ink); color: var(--ink); }
+
+    .p-13 table.t td, .p-13 table.t th { padding: 1.3mm 3mm; line-height: 1.3; }
+    .p-13 table.t th { white-space: nowrap; }
+    .p-13 table.t th { font-size: 7.8pt; }
+    .p-13 table.t td { font-size: 8.4pt; vertical-align: middle; }
+    .p-13 table.t .num { font-size: 8.2pt; }
+    .p-13 table.t td.inr { font-family: "Bricolage"; font-weight: 800; font-size: 10.5pt; line-height: 1.15; color: var(--ink); text-align: right; letter-spacing: -0.01em; }
+    .p-13 table.t th.r { text-align: right; }
+    .p-13 .lists { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6mm; }
+    .p-13 .lists .ticks { font-size: 8pt; line-height: 1.35; gap: 1.5mm; }
+    .p-13 .inc { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4mm; row-gap: 1.6mm; }
+    .p-13 .free { background: #fff; border: 0.3mm solid var(--line); border-radius: 4mm; padding: 3.8mm 4.6mm; }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Pricing</span>
+  </header>
+  <div class="pg-body">
+    <div class="head">
+      <div>
+        <p class="eyebrow">Pricing</p>
+        <h2 class="h1 mt2" style="font-size:33pt">One price: <span class="circ">₹1<svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true"><path d="M72 7 C 42 -1, 6 8, 4 31 C 2 53, 40 59, 68 55 C 95 50, 99 25, 84 11 C 77 5, 63 3, 52 5" fill="none" stroke="#D61C28" stroke-width="3.4" stroke-linecap="round"/></svg></span><br />a page checked.</h2>
+        <p class="lede mt3" style="font-size:10.4pt">$0.01 a page outside India; Indian prices exclude GST. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not.</p>
+      </div>
+      <div class="sample ruled-faint">
+        <img class="thumb" src="assets/img/page-1-sm.jpg" alt="Page one of the 7-page sample copy, total 38/80 circled" />
+        <div>
+          <p class="small muted" style="line-height:1.3">The 7-page<br />sample copy</p>
+          <p class="mono mt1" style="font-size:8pt;color:var(--slate-600)">7 pages × <span style="font-family:Inter">₹</span>1</p>
+          <p class="big mt1">₹7</p>
+          <p class="tiny muted mt1">$0.07 outside India</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- plans -->
+    <div class="plans mt4">
+      <div class="plan card">
+        <p class="eyebrow">Dashboard</p>
+        <p class="price">₹1<span> / page</span></p>
+        <p class="sub">$0.01 outside India · excl. GST</p>
+        <p class="who">For schools, coaching institutes and colleges.</p>
+        <ul class="ticks">
+          <li>Up to 200 copies per upload</li>
+          <li>Teacher review before release</li>
+          <li>Students emailed their copy</li>
+          <li>All inclusions listed below</li>
+        </ul>
+        <p class="cta"><b>Book a demo</b><em>evalezy.com/demo</em></p>
+      </div>
+      <div class="plan ink">
+        <p class="eyebrow">API</p>
+        <p class="price">₹1<span> / page</span></p>
+        <p class="sub">$0.01 outside India · excl. GST</p>
+        <p class="who">For edtech platforms and developers. Access is enabled per account.</p>
+        <ul class="ticks">
+          <li>Billed on completed evaluations</li>
+          <li>Sheets by upload or URL</li>
+          <li>Webhooks or status polling</li>
+          <li>Marks, feedback, checked PDF</li>
+        </ul>
+        <p class="cta"><b>Request access</b><em>evalezy.com/demo</em></p>
+      </div>
+      <div class="plan card">
+        <p class="eyebrow">Volume</p>
+        <p class="price">Custom</p>
+        <p class="sub">For 1,00,000+ pages a month</p>
+        <p class="who">For exam bodies, university-wide rollouts and large platforms.</p>
+        <ul class="ticks">
+          <li>Capacity planned for exam dates</li>
+          <li>Invoice billing</li>
+          <li>A named contact at exam time</li>
+          <li>Help writing marking schemes</li>
+        </ul>
+        <p class="cta ghost"><b>Talk to us</b><em>hello@evalezy.com</em></p>
+      </div>
+    </div>
+
+    <!-- worked examples -->
+    <div class="row mt4" style="align-items:baseline;justify-content:space-between">
+      <h3 class="h3">What a test costs</h3>
+      <p class="tiny muted">Copies × pages each × ₹1 ($0.01 outside India) · excl. GST</p>
+    </div>
+    <div class="table-wrap mt2">
+      <table class="t">
+        <thead><tr><th>Example</th><th class="r">Copies</th><th class="r">Pages each</th><th class="r">Pages checked</th><th class="r">Cost in India</th><th class="r">Elsewhere</th></tr></thead>
+        <tbody>
+          <tr><td>One section, unit test</td><td class="num">40</td><td class="num">4</td><td class="num">160</td><td class="inr">₹160</td><td class="num">$1.60</td></tr>
+          <tr><td>Four sections, half-yearly</td><td class="num">160</td><td class="num">8</td><td class="num">1,280</td><td class="inr">₹1,280</td><td class="num">$12.80</td></tr>
+          <tr><td>Coaching weekly test</td><td class="num">300</td><td class="num">6</td><td class="num">1,800</td><td class="inr">₹1,800</td><td class="num">$18.00</td></tr>
+          <tr><td>UPSC daily answer, a month<sup class="muted" style="font-size:6.8pt">*</sup></td><td class="num">13,000</td><td class="num">4</td><td class="num">52,000</td><td class="inr">₹52,000</td><td class="num">$520.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tiny muted mt1">* 500 answers a day for 26 days. Typed long answers from online tests have no pages, so they are priced per answer graded: ask us for the rate.</p>
+
+    <!-- included / never charged -->
+    <div class="lists mt3">
+      <div>
+        <h3 class="h3">Included in the page price</h3>
+        <ul class="ticks inc mt3">
+          <li>Question paper import</li>
+          <li>AI-drafted marking schemes, editable</li>
+          <li>Reading names and matching copies to students</li>
+          <li>The red-pen checked copy PDF</li>
+          <li>Teacher review, edits and release</li>
+          <li>Result emails to students with the checked copy</li>
+          <li>The same price on the API</li>
+        </ul>
+      </div>
+      <div class="free">
+        <h3 class="h3">Never charged</h3>
+        <ul class="crosses mt2" style="font-size:8pt;line-height:1.35;gap:1.3mm">
+          <li>Failed checks</li>
+          <li>Stopped or cancelled checks</li>
+          <li>Copies too blurred or blank to read</li>
+          <li>Reading names in bulk uploads</li>
+          <li>Teacher edits</li>
+        </ul>
+        <p class="small mt2" style="color:var(--slate-600)"><strong>A re-check is a fresh check and is billed again.</strong> Edits a teacher makes are free and are kept.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">13</span></footer>
+</section>

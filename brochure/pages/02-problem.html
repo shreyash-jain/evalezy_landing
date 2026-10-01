@@ -1,0 +1,127 @@
+<section class="page white p-02" data-name="the problem">
+  <style>
+    .p-02 .pg-body > * { flex: none; }
+    .p-02 .top { display: grid; grid-template-columns: 1fr 64mm; gap: 8mm; align-items: start; }
+    .p-02 .pains { margin-top: 5mm; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6mm; border-top: 0.3mm solid var(--line); padding-top: 5mm; }
+    .p-02 .pain .k { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 18pt; line-height: 1.1; }
+    .p-02 .pain .v { margin-top: 1.8mm; font-size: 9.2pt; line-height: 1.5; color: var(--slate-600); }
+
+    /* the pile */
+    .p-02 .pile { position: relative; height: 78mm; }
+    .p-02 .sheet, .p-02 .copy { position: absolute; left: 11.5mm; top: 1mm; width: 45mm; height: 60mm; }
+    .p-02 .sheet { background: #fff; border: 0.25mm solid #e2dac8; border-radius: 0.8mm; box-shadow: 0 0.3mm 0.8mm rgba(15, 26, 58, 0.08); }
+    .p-02 .sheet.s1 { transform: translate(-2.4mm, 3mm) rotate(-4.5deg); }
+    .p-02 .sheet.s2 { transform: translate(2.2mm, 2.6mm) rotate(3.5deg); }
+    .p-02 .sheet.s3 { transform: translate(-1.6mm, 2.1mm) rotate(-2.5deg); }
+    .p-02 .sheet.s4 { transform: translate(1.6mm, 1.6mm) rotate(2deg); }
+    .p-02 .sheet.s5 { transform: translate(-0.8mm, 1.1mm) rotate(-1deg); }
+    .p-02 .sheet.s6 { transform: translate(0.8mm, 0.6mm) rotate(1deg); }
+    .p-02 .copy img { width: 100%; height: 100%; object-fit: cover; }
+    .p-02 .copy.c1 { transform: rotate(6deg) translate(2.5mm, -0.5mm); }
+    .p-02 .copy.c2 { transform: rotate(-3.5deg) translate(-1.5mm, 0.5mm); }
+    .p-02 .note { position: absolute; left: 0; bottom: 0; width: 64mm; display: flex; align-items: flex-end; gap: 1mm; }
+    .p-02 .note p { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 12pt; line-height: 1.2; }
+
+    /* the stat */
+    .p-02 .stat-band { margin-top: 6.5mm; display: grid; grid-template-columns: 52mm 1fr; gap: 9mm; background: var(--paper); border-radius: 4mm; padding: 6mm 8mm 5.5mm; align-items: center; }
+    .p-02 .big { display: flex; flex-direction: column; align-items: center; }
+    .p-02 .big .n { position: relative; font-family: "Bricolage"; font-weight: 800; font-size: 74pt; letter-spacing: -0.05em; line-height: 0.82; color: var(--ink); padding: 1mm 4mm 0 2mm; }
+    .p-02 .big .n svg { position: absolute; left: -6.5mm; top: -5.5mm; width: calc(100% + 12mm); height: calc(100% + 10mm); overflow: visible; }
+    .p-02 .big .lbl { margin-top: 6mm; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 12pt; line-height: 1.1; text-align: center; }
+    .p-02 .day { margin-top: 4mm; }
+    .p-02 .bar { display: grid; grid-template-columns: repeat(16, 1fr); gap: 0.7mm; height: 5.5mm; }
+    .p-02 .bar span { background: var(--ink); border-radius: 0.6mm; }
+    .p-02 .bar span:nth-child(even) { background: var(--ink-3); }
+    .p-02 .axis { display: flex; justify-content: space-between; margin-top: 1.4mm; font-size: 7pt; color: var(--slate-500); }
+    .p-02 .axis b { font-weight: 650; color: var(--ink); }
+    .p-02 sup { font-size: 0.65em; color: var(--pen-700); font-weight: 700; line-height: 0; }
+
+    /* the turn */
+    .p-02 .turn { margin-top: 6mm; background: var(--ink); color: #fff; border-radius: 4mm; padding: 6mm 8mm; display: grid; grid-template-columns: 1fr 58mm; gap: 9mm; align-items: center; }
+    .p-02 .turn .q { font-family: "Bricolage"; font-weight: 800; font-size: 17.5pt; letter-spacing: -0.02em; line-height: 1.12; }
+    .p-02 .turn .q em { font-style: normal; color: var(--pen-dark); }
+    .p-02 .flow { display: flex; flex-direction: column; gap: 3mm; }
+    .p-02 .flow li { list-style: none; display: grid; grid-template-columns: 7.5mm 1fr; gap: 2.8mm; align-items: center; font-size: 8.2pt; line-height: 1.35; color: #c3cbe0; }
+    .p-02 .flow li strong { color: #fff; }
+    .p-02 .flow .ib { width: 7.5mm; height: 7.5mm; border-radius: 2mm; display: grid; place-items: center; background: rgba(255, 107, 114, 0.14); color: var(--pen-dark); }
+    .p-02 .flow .ib svg { width: 4mm; height: 4mm; }
+  </style>
+
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Why Evalezy</span>
+  </header>
+
+  <div class="pg-body">
+    <div class="top">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2 class="h1 mt2">Checking copies is the
+          <span class="u">hidden half<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 60 6, 130 5, 200 8 S 280 13, 297 7" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span>
+          of every exam.</h2>
+        <p class="lede mt4">An exam ends when the last student hands in. For the teacher, that is when the second half begins: every copy read, marked against the scheme, totalled and explained, one by one.</p>
+      </div>
+
+      <div class="pile" aria-hidden="true">
+        <div class="sheet s1"></div><div class="sheet s2"></div><div class="sheet s3"></div>
+        <div class="sheet s4"></div><div class="sheet s5"></div><div class="sheet s6"></div>
+        <div class="copy c1 paper-shot"><img src="assets/img/page-5-sm.jpg" alt="" /></div>
+        <div class="copy c2 paper-shot"><img src="assets/img/page-2-sm.jpg" alt="" /></div>
+        <div class="note">
+          <p>One class, one test:<br />forty copies like these.</p>
+          <svg viewBox="0 0 60 60" style="width:11mm;height:11mm;flex:none;margin-bottom:5mm" aria-hidden="true">
+            <path d="M6 54 C 14 40, 26 22, 46 10" fill="none" stroke="#D61C28" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M34 8 L 48 8 L 46 22" fill="none" stroke="#D61C28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="pains">
+      <div class="pain">
+        <p class="k">The pile</p>
+        <p class="v">After every exam, a teacher carries home a stack of copies and gives up evenings and weekends to check them.</p>
+      </div>
+      <div class="pain">
+        <p class="k">The drift</p>
+        <p class="v">Copy 5 and copy 95 are not marked the same way. Neither are two teachers checking the same paper.</p>
+      </div>
+      <div class="pain">
+        <p class="k">The number</p>
+        <p class="v">Under time pressure, students get a score and a few ticks, rarely the reason they lost marks.</p>
+      </div>
+    </div>
+
+    <div class="stat-band">
+      <div class="big">
+        <span class="n">16<svg viewBox="0 0 200 140" preserveAspectRatio="none" aria-hidden="true"><path d="M150 12 C 110 -2, 30 4, 12 50 C -2 92, 50 134, 112 130 C 174 126, 202 84, 188 46 C 178 22, 150 10, 118 10" fill="none" stroke="#D61C28" stroke-width="4" stroke-linecap="round"/></svg></span>
+        <span class="lbl">hours, one paper</span>
+      </div>
+      <div>
+        <p class="eyebrow" style="color:var(--slate-500)">For scale: one teacher, one half-yearly</p>
+        <p class="h3 mt1">Four sections. 160 copies. Sixteen hours.</p>
+        <p class="mt1" style="color:var(--slate-600);font-size:9pt;line-height:1.5">A teacher with four sections of 40 checks 160 copies after a single paper. At 6 minutes a copy, that is 16 hours of checking, before totalling, entering marks or writing a word of feedback.<sup>1</sup></p>
+        <div class="day">
+          <div class="bar"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="axis"><span>0 h</span><span>each block: one hour, <b>10 copies</b></span><span>16 h</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div>
+        <p class="hand" style="color:var(--pen-dark);font-size:13pt">So, what if…</p>
+        <p class="q mt1">the first check ran <em>overnight</em>, and the teacher only reviewed?</p>
+        <p class="mt2" style="color:#c3cbe0;font-size:8.8pt;line-height:1.5">That is Evalezy’s job: check every copy against one marking scheme, in red pen, on the student’s own pages. The teacher keeps the final word.</p>
+      </div>
+      <ul class="flow">
+        <li><span class="ib"><i data-icon="scan-line"></i></span><span><strong>AI first check</strong><br />1–8 min a copy, several at once; 100 copies in about 2–3 hours</span></li>
+        <li><span class="ib"><i data-icon="pencil-line"></i></span><span><strong>Teacher review</strong><br />change any mark; your edit is kept</span></li>
+        <li><span class="ib"><i data-icon="send"></i></span><span><strong>Release</strong><br />students get their checked copy</span></li>
+      </ul>
+    </div>
+
+    <p class="tiny muted" style="margin-top:auto;padding-top:3mm">1. An illustration, not a measurement: 160 copies × 6 minutes = 960 minutes. Put in your own class sizes and minutes per copy; the calculator at evalezy.com/pricing does the sum.</p>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">02</span></footer>
+</section>

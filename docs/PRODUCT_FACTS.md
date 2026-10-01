@@ -45,6 +45,8 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
 | Failed, cancelled and unreadable checks are free | §13.2 |
 | A re-check is a new run and is charged again (re-checking overwrites marks) | §12.2 |
 | Each check is billed once, even if it is retried or requeued internally | §13.2, §14 |
+| A typed answer is graded in about 20 seconds; a blank typed answer gets 0 at once, with no AI call and no charge | §1, §8 |
+| Sample copy (Class IX Social Science mock): 80 marks, 38 questions, sections A 1–20 (20), B 21–26 (12), C 27–32 (18), D 33–36 (20), E 37–38 (10); AI total 38/80. Known slip: Q17 on page 2 is crossed although the answer is right (shown on brochure p14 as "one slip, left in") | sample PDF |
 
 ## Pricing **(owner)**
 

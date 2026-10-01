@@ -52,9 +52,9 @@ export function CheckedCopyStack() {
           <p className="font-semibold text-ink">Bulk check</p>
           <span className="flex items-center gap-1 text-xs font-semibold text-pen-700"><Loader2 className="h-3.5 w-3.5 animate-spin" /> Running</span>
         </div>
-        <p className="mt-1 text-xs text-slate-500">186 of 200 copies checked</p>
+        <p className="mt-1 text-xs text-slate-500">194 of 200 copies checked</p>
         <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-paper-2">
-          <div className="h-full w-[93%] rounded-full bg-pen" />
+          <div className="h-full w-[97%] rounded-full bg-pen" />
         </div>
       </div>
 
@@ -134,7 +134,7 @@ const BULK_ROWS: { file: string; pages: number; read: string; student: string; s
 export function BulkCheckPanel({ compact = false }: { compact?: boolean }) {
   const stats = [
     { k: "Copies", v: "200", c: "text-ink" },
-    { k: "Checked", v: "186", c: "text-ok" },
+    { k: "Checked", v: "194", c: "text-ok" },
     { k: "In progress", v: "3", c: "text-ink" },
     { k: "Need review", v: "2", c: "text-warn" },
     { k: "Failed", v: "1", c: "text-pen" },
@@ -302,7 +302,7 @@ export function ReviewPanel() {
           <p className="text-slate-500">Social Science · Half-Yearly Mock 4</p>
         </div>
         <div className="text-right">
-          <p className="h-card text-2xl text-ink">38<span className="text-base text-slate-400">/80</span></p>
+          <p className="h-card text-2xl text-ink">38.5<span className="text-base text-slate-400">/80</span></p>
           <p className="text-xs text-slate-500">38 of 38 questions</p>
         </div>
       </div>
@@ -326,10 +326,10 @@ export function ReviewPanel() {
             <p className="text-sm font-semibold text-ink">Q21 · Define social science</p>
             <span className="flex items-center gap-2">
               <span className="rounded-full bg-warn-50 px-2 py-0.5 text-[0.7rem] font-bold text-warn ring-1 ring-warn/30">Edited</span>
-              <span className="rounded-full bg-paper-2 px-2.5 py-0.5 font-mono text-xs font-semibold text-ink">1.5 / 2</span>
+              <span className="rounded-full bg-paper-2 px-2.5 py-0.5 font-mono text-xs font-semibold text-ink">2 / 2</span>
             </span>
           </div>
-          <p className="mt-2 text-sm text-slate-600">Teacher changed 1 → 1.5. Kept even if the copy is checked again.</p>
+          <p className="mt-2 text-sm text-slate-600">Teacher changed 1.5 → 2. Kept even if the copy is checked again.</p>
         </div>
       </div>
       <div className="flex items-center justify-between border-t border-line bg-paper px-5 py-3">
@@ -348,10 +348,9 @@ export function PaperImport() {
   const qs = [
     { n: "1–20", t: "Write the correct answer (1 mark each)", m: "20" },
     { n: "21–26", t: "Very short answer questions", m: "12" },
-    { n: "27–31", t: "Short answer questions", m: "15" },
-    { n: "32–35", t: "Long answer questions", m: "20" },
-    { n: "36–37", t: "Case-based questions", m: "10" },
-    { n: "38", t: "Map work", m: "3" },
+    { n: "27–32", t: "Short answer questions", m: "18" },
+    { n: "33–36", t: "Long answer questions", m: "20" },
+    { n: "37–38", t: "Case-based questions", m: "10" },
   ];
   return (
     <div className="grid items-center gap-4 sm:grid-cols-[0.8fr_auto_1.2fr]">

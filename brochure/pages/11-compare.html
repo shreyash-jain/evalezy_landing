@@ -1,0 +1,135 @@
+<section class="page white p-11" data-name="compare">
+  <style>
+    .p-11 table.cmp { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 7.4pt; line-height: 1.36; table-layout: fixed; }
+    .p-11 table.cmp th, .p-11 table.cmp td { padding: 1.7mm 2.2mm; vertical-align: top; text-align: left; border-top: 0.25mm solid var(--line); color: var(--slate-700); }
+    .p-11 table.cmp thead th { border-top: none; font-family: "Bricolage"; font-weight: 700; font-size: 8.8pt; line-height: 1.15; color: var(--ink); padding-top: 2.4mm; padding-bottom: 2.4mm; vertical-align: middle; }
+    .p-11 table.cmp tbody th { font-weight: 650; color: var(--ink); }
+    .p-11 table.cmp .ev { background: var(--pen-50); color: var(--ink); border-top-color: var(--pen-100); }
+    .p-11 table.cmp thead .ev { background: var(--ink); color: #fff; border-radius: 3mm 3mm 0 0; }
+    .p-11 table.cmp tbody tr:last-child .ev { border-radius: 0 0 3mm 3mm; }
+    .p-11 table.cmp thead .ev span { display: inline-flex; align-items: center; gap: 1.6mm; }
+    .p-11 table.cmp thead .ev img { height: 4mm; width: auto; box-shadow: 0 0 0 0.25mm rgba(255, 255, 255, 0.25); border-radius: 1mm; }
+    .p-11 table.cmp tr.best td, .p-11 table.cmp tr.best th { border-top: 0.45mm solid var(--ink); padding-top: 2.2mm; padding-bottom: 2.2mm; }
+    .p-11 table.cmp tr.best .ev { border-top-color: var(--ink); }
+    .p-11 .win { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 10pt; line-height: 0; margin-right: 1mm; }
+
+    /* typed answers: a secondary panel under the comparison */
+    .p-11 .typed { background: var(--paper); border-radius: 4mm; padding: 4.6mm 5mm 0 5.5mm; }
+    .p-11 .typed .cols { display: grid; grid-template-columns: 1fr 80mm; gap: 6mm; align-items: center; }
+    .p-11 .typed .shotbox { position: relative; }
+    .p-11 .typed .shot { display: block; width: 100%; border-radius: 2.4mm; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.08), 0 8mm 16mm -8mm rgba(15, 26, 58, 0.4); }
+    /* the capture's footer caption states a grading time PRODUCT_FACTS does not cover: paint it out with the strip's own flat colour (#FBF9F4), keep the 4 / 5 total */
+    .p-11 .typed .shotbox .mask { position: absolute; left: 2.9%; top: 91.1%; width: 35.7%; height: 7.6%; background: #FBF9F4; }
+    .p-11 .typed .ticks { font-size: 8.2pt; line-height: 1.42; gap: 1.6mm; color: var(--slate-700); }
+    .p-11 .inject { display: flex; align-items: center; gap: 4mm; border-top: 0.3mm dashed rgba(214, 28, 40, 0.35); margin-top: 4.5mm; padding: 3.4mm 1mm 3.6mm 0; }
+    .p-11 .inject .score { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 22pt; line-height: 1; flex: none; padding: 0.6mm 2.4mm 0; margin-right: 1mm; }
+    .p-11 .inject q { font-family: "Kalam"; color: var(--biro); font-size: 10pt; quotes: "“" "”"; }
+
+    /* folio: Kalam's 1 is a bare slanted stroke, so "11" read as "//". Same face, colour and size as every other folio,
+       set upright and spaced so it reads as two 1s (negative margin keeps it on the right margin) */
+    .p-11 .pg-foot .num { display: inline-block; letter-spacing: 0.14em; margin-right: -0.14em; transform: skewX(10deg); }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Compare</span>
+  </header>
+  <div class="pg-body">
+    <!-- Comparison: the page's headline and hero -->
+    <p class="eyebrow">How it compares</p>
+    <h2 class="h1 mt2" style="font-size:30pt">Next to the other ways<br />copies get checked.</h2>
+    <p class="lede mt2" style="font-size:10.4pt">Approaches, not named products. Where another option is the better choice, we say so.</p>
+
+    <div class="mt4">
+      <table class="cmp">
+        <colgroup><col style="width:25mm" /><col /><col /><col /><col /></colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th class="ev"><span><img src="assets/img/logo-mark.svg" alt="" />Evalezy</span></th>
+            <th>Checking by hand</th>
+            <th>On-screen marking</th>
+            <th>A general chatbot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Who decides the final mark</th>
+            <td class="ev">The teacher. AI marks are a draft until released</td>
+            <td>The teacher</td>
+            <td>An evaluator, after reading every answer on screen</td>
+            <td>You, copying each suggestion out</td>
+          </tr>
+          <tr>
+            <th>Consistency</th>
+            <td class="ev">One scheme per question, applied to every copy</td>
+            <td>Drifts with fatigue and between checkers</td>
+            <td>Depends on each evaluator, plus moderation</td>
+            <td>Depends on each conversation; easy to drift</td>
+          </tr>
+          <tr>
+            <th>Output for students</th>
+            <td class="ev">Their own copy in red pen, with marks per question</td>
+            <td>The marked copy; feedback depends on the teacher’s time</td>
+            <td>Usually marks only</td>
+            <td>Text in a chat window</td>
+          </tr>
+          <tr>
+            <th>Matching to students</th>
+            <td class="ev">Name and roll number read and matched; never guesses</td>
+            <td>Not needed: the paper goes back by hand</td>
+            <td>Usually barcodes or manual entry</td>
+            <td>Manual</td>
+          </tr>
+          <tr>
+            <th>Unreadable pages</th>
+            <td class="ev">Fails clearly, never guessed, not charged</td>
+            <td>The teacher deciphers it</td>
+            <td>The evaluator deciphers it</td>
+            <td>May guess what was written</td>
+          </tr>
+          <tr>
+            <th>Cost</th>
+            <td class="ev">₹1 per page checked</td>
+            <td>Teacher time, or a fee per copy to outside checkers</td>
+            <td>Varies; often licences or per-script fees, plus evaluator time</td>
+            <td>Your time: one upload at a time, by hand</td>
+          </tr>
+          <tr class="best">
+            <th>The better choice when</th>
+            <td class="ev"><span class="win" style="font-family:Inter">✓</span>Copies arrive in the hundreds and students need written feedback</td>
+            <td><span class="win" style="font-family:Inter">✓</span>The paper is mostly diagrams, maps or drawings, or the class is small</td>
+            <td><span class="win" style="font-family:Inter">✓</span>Rules require every mark to be entered by a human evaluator</td>
+            <td><span class="win" style="font-family:Inter">✓</span>You want a quick second opinion on one answer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tiny muted mt2" style="margin-bottom:4mm">Diagrams and drawings: Evalezy judges them by their labels and written explanation only. A teacher checking by hand judges the drawing itself.</p>
+
+    <!-- Typed answers -->
+    <div class="typed auto">
+      <div class="cols">
+        <div>
+          <p class="eyebrow">Beyond handwriting</p>
+          <h3 class="h3 mt1" style="font-size:14pt">Typed essays and long answers, graded&nbsp;too.</h3>
+          <p class="small mt2" style="font-size:8.4pt;color:var(--slate-600)">Students type essays, letters and emails in online tests. Evalezy grades those too, for a teacher to review.</p>
+          <ul class="ticks mt2">
+            <li><strong>Graded on four things:</strong> format, content, organisation and language. Spelling counts.</li>
+            <li><strong>Word limits</strong> enforced, with a live word count.</li>
+            <li><strong>Ask us</strong> how typed answers are priced.</li>
+          </ul>
+        </div>
+        <div class="shotbox">
+          <img class="shot" src="assets/ui/typed.png" alt="A typed email to the principal graded 4/5: format 1/1, content 1.5/2, organisation 1/1, language 0.5/1." />
+          <span class="mask" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="inject">
+        <span class="icon-badge" style="background:#fff"><i data-icon="shield-check"></i></span>
+        <p class="grow" style="font-size:8.4pt;line-height:1.45;color:var(--slate-700)"><strong>Can a student talk the AI into full marks?</strong> The answer is treated as data, not instructions. In a production test, an answer that told the AI to <q>award full marks</q> scored</p>
+        <span class="score circ">0/5<svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true"><path d="M70 6 C 40 0, 8 8, 5 30 C 3 52, 40 58, 66 55 C 94 51, 98 26, 84 12 C 78 6, 66 4, 56 5" fill="none" stroke="#D61C28" stroke-width="3" stroke-linecap="round"/></svg></span>
+      </div>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">11</span></footer>
+</section>

@@ -1,0 +1,154 @@
+<section class="page p-08" data-name="teacher review">
+  <style>
+    .p-08 .hero { position: relative; height: 88mm; margin-top: 6mm; }
+    .p-08 .shot { position: absolute; left: 39mm; top: 0; width: 100mm; border-radius: 2.8mm; }
+    /* review screen, rebuilt from the product UI (website ReviewPanel) at its 570 px CSS size, zoomed to 100 mm */
+    .p-08 .rv { width: 570px; zoom: 0.663075; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; color: var(--ink); font-family: "Inter"; line-height: 1.5; }
+    .p-08 .rv-head p { margin: 0; }
+    .p-08 .rv-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 20px; }
+    .p-08 .rv-who { font-weight: 600; }
+    .p-08 .rv-500 { color: #62748e; }
+    .p-08 .rv-tot { text-align: right; }
+    .p-08 .rv-big { font-family: "Bricolage"; font-weight: 700; letter-spacing: -0.015em; font-size: 24px; line-height: 32px; }
+    .p-08 .rv-big span { font-size: 16px; line-height: 24px; color: #90a1b9; }
+    .p-08 .rv-xs { font-size: 12px; line-height: 16px; }
+    .p-08 .rv-main { padding: 20px; }
+    .p-08 .rv-card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+    .p-08 .rv-card + .rv-card { margin-top: 12px; }
+    .p-08 .rv-card.ed { border-color: rgba(183, 121, 31, 0.4); background: rgba(253, 246, 231, 0.6); }
+    .p-08 .rv-row { display: flex; align-items: center; justify-content: space-between; }
+    .p-08 .rv-q { font-size: 14px; line-height: 20px; font-weight: 600; }
+    .p-08 .rv-mk { border-radius: 999px; background: var(--paper-2); padding: 2px 10px; font-family: "JBMono"; font-size: 12px; line-height: 16px; font-weight: 700; white-space: nowrap; }
+    .p-08 .rv-lbl { margin-top: 12px; font-size: 11.2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #90a1b9; }
+    .p-08 .rv-hand { margin-top: 4px; font-family: "Kalam"; font-weight: 400; font-size: 16.32px; line-height: 1.375; letter-spacing: 0.01em; color: var(--biro); }
+    .p-08 .rv-fb { margin-top: 4px; font-size: 14px; line-height: 20px; color: #314158; }
+    .p-08 .rv-btns { display: flex; gap: 8px; margin-top: 12px; }
+    .p-08 .rv-btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 6px 12px; border: 1px solid var(--paper-3); background: #fff; box-shadow: 0 1px 2px rgba(15, 26, 58, 0.06); font-size: 12px; line-height: 16px; font-weight: 650; white-space: nowrap; }
+    .p-08 .rv-btn .lucide { width: 12px; height: 12px; }
+    .p-08 .rv-chips { display: flex; align-items: center; gap: 8px; }
+    .p-08 .rv-ed { border-radius: 999px; background: var(--warn-50); padding: 2px 8px; box-shadow: 0 0 0 1px rgba(183, 121, 31, 0.3); font-size: 11.2px; line-height: 1.5; font-weight: 700; color: var(--warn); }
+    .p-08 .rv-note { margin-top: 8px; font-size: 14px; line-height: 20px; color: #45556c; }
+    .p-08 .rv-foot { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-top: 1px solid var(--line); background: var(--paper); }
+    .p-08 .rv-mail { display: flex; align-items: center; gap: 6px; font-size: 12px; line-height: 16px; color: #62748e; }
+    .p-08 .rv-mail .lucide { width: 14px; height: 14px; }
+    .p-08 .rv-rel { display: inline-flex; align-items: center; border-radius: 999px; padding: 8px 21.6px; background: var(--pen); color: #fff; font-size: 14px; line-height: 20px; font-weight: 650; white-space: nowrap; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 10px 24px -12px rgba(214, 28, 40, 0.8); }
+    .p-08 .note { position: absolute; width: 35mm; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 10.5pt; line-height: 1.18; }
+    .p-08 .note svg { position: absolute; overflow: visible; }
+    .p-08 .note.l { text-align: right; }
+
+    .p-08 .flow-head { display: flex; align-items: baseline; justify-content: space-between; }
+    .p-08 .phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 3.5mm; }
+    .p-08 .phase { position: relative; padding-top: 2mm; }
+    .p-08 .phase .lbl { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 11pt; line-height: 1; }
+    .p-08 .phase .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; margin-top: 3mm; padding-top: 4mm; border-top: 0.4mm solid var(--ink); }
+    .p-08 .step .badge { position: relative; width: 9mm; height: 9mm; }
+    .p-08 .step .badge .num-badge { position: absolute; right: -2mm; top: -2mm; width: 4.8mm; height: 4.8mm; font-size: 6.8pt; box-shadow: 0 0 0 0.6mm var(--paper); }
+    .p-08 .step .h4 { font-size: 9.2pt; margin-top: 2.6mm; line-height: 1.2; }
+    .p-08 .step .small { margin-top: 1mm; font-size: 7.6pt; line-height: 1.42; }
+
+    .p-08 .safety { background: var(--ink); color: #fff; border-radius: 4mm; padding: 5mm 6mm; display: grid; grid-template-columns: 40mm 1fr; gap: 6mm; align-items: center; }
+    .p-08 .safety .h3 { text-wrap: balance; }
+    .p-08 .safety .ticks { display: grid; grid-template-columns: 1fr 1fr; gap: 2.6mm 6mm; font-size: 8.2pt; line-height: 1.4; color: #dfe5f5; }
+    .p-08 .safety .ticks li::before {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6' fill='none' stroke='%23FF6B72' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Teacher review</span>
+  </header>
+  <div class="pg-body">
+    <p class="eyebrow">Teacher review &amp; release</p>
+    <h2 class="h1 mt2" style="width:170mm">The AI checks.
+      <span class="u">The teacher decides.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 60 6, 130 5, 200 8 S 280 12, 297 7" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span>
+    </h2>
+    <p class="lede mt3" style="width:152mm">Every AI mark is a draft. Teachers see what was read and why each mark was given, change anything they disagree with, and release when they are ready. Not before.</p>
+
+    <!-- hero: the review screen, annotated in red pen -->
+    <div class="hero">
+      <!-- rebuilt in HTML (was assets/ui/review.png) so the edit starts from the mark the AI wrote: Q21 is 1.5/2 on the
+           checked copy (page 2) and the AI total is 38/80; the teacher's edit 1.5 → 2 makes it 38.5/80 -->
+      <div class="paper-shot shot" role="img" aria-label="Evalezy's teacher review screen: Q30 marked 0.5/3 with the student's answer as read and feedback, Q21 edited by the teacher from 1.5 to 2/2 (total now 38.5/80), and a Release result button.">
+        <div class="rv">
+          <div class="rv-head">
+            <div><p class="rv-who">Aditi Sharma · IX-B · Roll 14</p><p class="rv-500">Social Science · Half-Yearly Mock 4</p></div>
+            <div class="rv-tot"><p class="rv-big">38.5<span>/80</span></p><p class="rv-xs rv-500">38 of 38 questions</p></div>
+          </div>
+          <div class="rv-main">
+            <div class="rv-card">
+              <div class="rv-row"><p class="rv-q">Q30 · Factors affecting climate</p><span class="rv-mk">0.5 / 3</span></div>
+              <p class="rv-lbl">Student’s answer, as read</p>
+              <p class="rv-hand">1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind</p>
+              <p class="rv-lbl">Feedback</p>
+              <p class="rv-fb">Only weather elements listed; no factors of climate explained.</p>
+              <div class="rv-btns"><span class="rv-btn"><i data-icon="pencil"></i> Edit marks</span><span class="rv-btn">Criteria breakdown</span></div>
+            </div>
+            <div class="rv-card ed">
+              <div class="rv-row"><p class="rv-q">Q21 · Define social science</p><span class="rv-chips"><span class="rv-ed">Edited</span><span class="rv-mk">2 / 2</span></span></div>
+              <p class="rv-note">Teacher changed 1.5 → 2. Kept even if the copy is checked again.</p>
+            </div>
+          </div>
+          <div class="rv-foot"><span class="rv-mail"><i data-icon="mail"></i> Students see nothing until you release</span><span class="rv-rel">Release result</span></div>
+        </div>
+      </div>
+
+      <!-- red-pen notes; arrows are drawn in hero coordinates (mm) -->
+      <p class="note l" style="left:0;top:22.5mm">The answer, exactly as the AI read it</p>
+      <p class="note l" style="left:0;top:40.3mm">The reason for<br />every mark</p>
+      <p class="note" style="left:143.5mm;top:56mm">A teacher’s edit stays, even if the copy is checked again</p>
+      <p class="note" style="left:143.5mm;top:77.5mm">Nothing reaches students until you press this</p>
+      <svg viewBox="0 0 178 88" style="position:absolute;left:0;top:0;width:178mm;height:88mm;overflow:visible" aria-hidden="true">
+        <g fill="none" stroke="#D61C28" stroke-width="0.62" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M36.2 27.4 C 39 27.4, 41.6 28.6, 44.2 30.6" /><path d="M41.1 28.4 L 44.4 30.7 L 40.6 31.6" />
+          <path d="M36.2 44.6 C 39 43.9, 41.6 44, 44.2 44.6" /><path d="M41.3 42.8 L 44.4 44.7 L 41.2 46.4" />
+          <path d="M142.6 58.8 C 140.2 59.2, 138.4 60.6, 136.6 63" /><path d="M136.4 59.6 L 136.4 63.2 L 139.8 62.4" />
+          <path d="M142.6 80.6 C 140.2 80.8, 138.3 81.6, 136.6 83.1" /><path d="M136.6 79.8 L 136.4 83.3 L 139.9 83" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- the flow -->
+    <div class="flow-head mt4">
+      <h3 class="h3" style="font-size:14pt">From check to release, in six steps</h3>
+      <span class="small muted">Low-confidence questions are flagged for review.</span>
+    </div>
+    <div class="phases">
+      <div class="phase">
+        <p class="lbl">While it checks</p>
+        <div class="steps">
+          <div class="step"><div class="badge"><span class="icon-badge"><i data-icon="eye"></i></span><span class="num-badge pen">1</span></div><p class="h4">Watch it fill in</p><p class="small muted">Marks appear question by question. Stop any time; stopped checks are free.</p></div>
+          <div class="step"><div class="badge"><span class="icon-badge"><i data-icon="bell-ring"></i></span><span class="num-badge pen">2</span></div><p class="h4">Told when done</p><p class="small muted">A bell alert and an email when the batch finishes.</p></div>
+        </div>
+      </div>
+      <div class="phase">
+        <p class="lbl">Before release</p>
+        <div class="steps">
+          <div class="step"><div class="badge"><span class="icon-badge"><i data-icon="pencil"></i></span><span class="num-badge pen">3</span></div><p class="h4">Review &amp; edit</p><p class="small muted">Each answer as read, with marks, feedback and criteria. Change any mark.</p></div>
+          <div class="step"><div class="badge"><span class="icon-badge"><i data-icon="eye-off"></i></span><span class="num-badge pen">4</span></div><p class="h4">Students wait</p><p class="small muted">They see “Results pending”. The server holds marks back.</p></div>
+        </div>
+      </div>
+      <div class="phase">
+        <p class="lbl">On release</p>
+        <div class="steps">
+          <div class="step"><div class="badge"><span class="icon-badge"><i data-icon="send"></i></span><span class="num-badge pen">5</span></div><p class="h4">Release</p><p class="small muted">One student, a selection or the whole assessment.</p></div>
+          <div class="step"><div class="badge"><span class="icon-badge"><i data-icon="mail"></i></span><span class="num-badge pen">6</span></div><p class="h4">Copies go out</p><p class="small muted">Each student is emailed the checked copy as a PDF. WhatsApp via Automations.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- safety -->
+    <div class="safety auto">
+      <div>
+        <p class="eyebrow" style="color:var(--pen-dark)">Built-in safety</p>
+        <p class="h3 mt1" style="color:#fff">Marks students can trust.</p>
+      </div>
+      <ul class="ticks">
+        <li>A mark a teacher edits is never overwritten by a later AI check.</li>
+        <li>A released result is not changed by a late AI update.</li>
+        <li>A total is only final when every question is graded.</li>
+        <li>Marks are clamped between 0 and the question’s maximum.</li>
+      </ul>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">08</span></footer>
+</section>

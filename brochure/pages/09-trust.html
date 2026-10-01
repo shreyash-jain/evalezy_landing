@@ -1,0 +1,82 @@
+<section class="page ink p-09" data-name="trust">
+  <style>
+    .p-09 .bgdots { position: absolute; inset: 0; }
+    .p-09 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+    .p-09 .cards .card { padding: 5mm 4.6mm 5.4mm; border-radius: 3.6mm; }
+    .p-09 .cards .top { display: flex; align-items: center; gap: 3mm; min-height: 9mm; }
+    .p-09 .cards .h4 { color: #fff; line-height: 1.18; }
+    .p-09 .cards .small { color: #b7c0d8; margin-top: 2.6mm; font-size: 8.3pt; line-height: 1.48; }
+
+    .p-09 .bottom { display: grid; grid-template-columns: 1fr 60mm; gap: 6.5mm; align-items: stretch; }
+
+    /* the honest-limits sheet: notebook paper pinned to the page */
+    .p-09 .sheet {
+      position: relative; margin-right: -1mm; color: var(--ink); background-color: #fffdf8; border-radius: 1.2mm;
+      transform: rotate(-1.2deg); transform-origin: 50% 0;
+      box-shadow: 0 0.5mm 1mm rgba(0,0,0,.25), 0 10mm 20mm -8mm rgba(0,0,0,.6);
+      padding: 7mm 5mm 5mm 15mm;
+      background-image:
+        linear-gradient(90deg, transparent 0, transparent 11mm, rgba(214,28,40,.38) 11mm, rgba(214,28,40,.38) 11.3mm, transparent 11.3mm),
+        repeating-linear-gradient(180deg, transparent 0, transparent 5.15mm, rgba(42,68,168,.13) 5.15mm, rgba(42,68,168,.13) 5.4mm);
+      background-position: 0 1.6mm;
+    }
+    .p-09 .tape { position: absolute; top: -3.4mm; left: 50%; width: 26mm; height: 7.4mm; transform: translateX(-50%) rotate(2.4deg); background: linear-gradient(180deg, #f3ead2, #e9dcb9); opacity: .94; box-shadow: 0 0.3mm 0.8mm rgba(0,0,0,.25); }
+    .p-09 .sheet .title { position: relative; top: 1.7mm; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 17.5pt; line-height: 10.8mm; }
+    .p-09 .sheet ol { list-style: none; counter-reset: lim; }
+    .p-09 .sheet li { position: relative; font-size: 8.8pt; line-height: 5.4mm; color: var(--slate-700); }
+    .p-09 .sheet li + li { margin-top: 5.4mm; }
+    .p-09 .sheet li::before { counter-increment: lim; content: counter(lim) "."; position: absolute; left: -8.6mm; top: 0; font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 11pt; }
+    .p-09 .sheet li strong { color: var(--ink); }
+
+    .p-09 .privacy { display: flex; flex-direction: column; background: rgba(255,255,255,.05); border: 0.3mm solid rgba(255,255,255,.12); border-radius: 3.6mm; padding: 5mm; }
+    .p-09 .privacy .ticks { gap: 2.6mm; font-size: 8.2pt; line-height: 1.45; color: #c3cbe0; }
+    .p-09 .privacy .crosses { font-size: 8.2pt; line-height: 1.45; color: #c3cbe0; }
+    .p-09 .privacy .crosses li::before { filter: brightness(1.6); }
+  </style>
+  <div class="dots-dark bgdots" data-bleed></div>
+  <header class="pg-head" style="position:relative">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Trust</span>
+  </header>
+  <div class="pg-body">
+    <p class="eyebrow">Built to be trusted with marks</p>
+    <h2 class="h1 mt2" style="color:#fff">Careful where it matters.</h2>
+    <p class="lede mt3" style="width:150mm">We do not publish an accuracy percentage; it depends on handwriting, scans and your scheme. Here is what Evalezy does instead to keep marks right.</p>
+
+    <div class="cards mt6">
+      <div class="card"><div class="top"><span class="icon-badge"><i data-icon="search"></i></span><p class="h4">Answers found by content</p></div><p class="small">Students answer out of order. Each answer is matched to its question by what it says, not by the number written beside it.</p></div>
+      <div class="card"><div class="top"><span class="icon-badge"><i data-icon="sigma"></i></span><p class="h4">Maths gets a second read</p></div><p class="small">Equations and working are read from the page; lines it is unsure of go to a dedicated equation reader.</p></div>
+      <div class="card"><div class="top"><span class="icon-badge"><i data-icon="scan-line"></i></span><p class="h4">Never guesses an unreadable page</p></div><p class="small">If most of a copy cannot be read, the check stops with a clear reason. No invented marks, and no charge.</p></div>
+      <div class="card"><div class="top"><span class="icon-badge"><i data-icon="badge-check"></i></span><p class="h4">Marks that add up</p></div><p class="small">Criteria always sum to the question’s marks, marks come in half steps, and every deduction gets one clear note.</p></div>
+      <div class="card"><div class="top"><span class="icon-badge"><i data-icon="user-round-check"></i></span><p class="h4">Never guesses a student</p></div><p class="small">No name, a weak match or two close names? The copy waits for you to pick. It is never filed under a guessed name.</p></div>
+      <div class="card"><div class="top"><span class="icon-badge"><i data-icon="shield-check"></i></span><p class="h4">Teachers have the last word</p></div><p class="small">Marks are a draft until released. A teacher’s edit is never overwritten, even if the copy is checked again.</p></div>
+    </div>
+
+    <div class="bottom mt5" style="padding-top:2mm">
+      <div class="sheet">
+        <span class="tape" aria-hidden="true"></span>
+        <p class="title">Honest limits</p>
+        <ol>
+          <li><strong>No accuracy percentage.</strong> Judge it on your own copies in a demo. Every mark shows the answer as read and the reason, and low&#8209;confidence questions are flagged for review.</li>
+          <li><strong>Diagrams, maps and graphs</strong> are judged by their labels and written explanation, not as drawings. Keep a teacher on those questions.</li>
+          <li><strong>English answer sheets.</strong> Built and tested on English copies. Hindi-medium or another language? Send us sample copies and we will tell you honestly how it does.</li>
+          <li><strong>Not instant.</strong> 1–8 minutes a copy, several at once. First results in about 10 minutes; 100 copies in about 2–3 hours.</li>
+        </ol>
+      </div>
+      <div class="privacy">
+        <span class="icon-badge"><i data-icon="lock-keyhole"></i></span>
+        <p class="h3 mt2" style="color:#fff">Data &amp; privacy</p>
+        <ul class="ticks mt3">
+          <li>Answer sheets, marks and checked copies live inside your institute’s account.</li>
+          <li>Students see only their own result, and only after release. The server enforces it.</li>
+          <li>Pages go to the AI and equation&#8209;reading providers Evalezy uses; each step gets only what it needs.</li>
+        </ul>
+        <ul class="crosses" style="margin-top:2.6mm">
+          <li>No SOC 2 or ISO 27001 certification and no on&#8209;premise option today.</li>
+        </ul>
+        <p class="tiny auto" style="color:#9aa6c4;padding-top:3mm">Operated by Vidyayatan Technologies LLP under the Vacademy privacy policy.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="pg-foot" style="position:relative"><span>Evalezy · AI answer sheet checking</span><span class="num">09</span></footer>
+</section>

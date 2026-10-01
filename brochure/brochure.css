@@ -1,0 +1,202 @@
+/* Evalezy brochure: A4 print design system. Every page is a <section class="page"> exactly 210 x 297 mm.
+   Brand = the website: paper, blue-black ink, and the red pen rgb(214, 28, 40) the annotator draws with. */
+
+/* Static instances of the variable fonts (assets/fonts/*-NNN.ttf) so Chrome embeds real TrueType, not Type 3. */
+@font-face { font-family: "Bricolage"; src: url("assets/fonts/Bricolage-600.ttf"); font-weight: 600; }
+@font-face { font-family: "Bricolage"; src: url("assets/fonts/Bricolage-700.ttf"); font-weight: 700; }
+@font-face { font-family: "Bricolage"; src: url("assets/fonts/Bricolage-800.ttf"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.ttf"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.ttf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.ttf"); font-weight: 700; }
+@font-face { font-family: "Kalam"; src: url("assets/fonts/Kalam-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Kalam"; src: url("assets/fonts/Kalam-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "JBMono"; src: url("assets/fonts/JBMono-400.ttf"); font-weight: 400; }
+@font-face { font-family: "JBMono"; src: url("assets/fonts/JBMono-700.ttf"); font-weight: 700; }
+
+:root {
+  --ink: #0f1a3a;
+  --ink-2: #17244a;
+  --ink-3: #22315c;
+  --paper: #fbf9f4;
+  --paper-2: #f4f0e6;
+  --paper-3: #ebe5d6;
+  --line: #e7e1d3;
+  --pen: #d61c28;
+  --pen-700: #a3121b;
+  --pen-50: #fdeeee;
+  --pen-100: #fbd9da;
+  --pen-dark: #ff6b72;
+  --biro: #2a44a8;
+  --biro-50: #eef1fb;
+  --marker: #ffe15a;
+  --ok: #1d8a4e;
+  --ok-50: #e8f6ee;
+  --warn: #b7791f;
+  --warn-50: #fdf6e7;
+  --slate-700: #334155;
+  --slate-600: #475467;
+  --slate-500: #667085;
+  --slate-400: #98a2b3;
+  --mx: 16mm; /* side margin */
+}
+
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { background: #8a8578; font-family: "Inter", system-ui, sans-serif; color: var(--ink); font-size: 9.6pt; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+
+/* ---------------------------------------------------------------- page frame */
+.page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  background: var(--paper);
+  page-break-after: always;
+  break-after: page;
+  padding: 15mm var(--mx) 0;
+  display: flex;
+  flex-direction: column;
+}
+@media screen { .page { margin: 10mm auto; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25); } }
+.page.white { background: #fff; }
+.page.ink { background: var(--ink); color: #fff; }
+.page.flush { padding: 0; }
+.pg-body { flex: 1; min-height: 0; position: relative; display: flex; flex-direction: column; }
+
+/* Running header + footer */
+.pg-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9mm; }
+.pg-head .mark { display: flex; align-items: center; gap: 2.2mm; font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate-500); }
+.pg-head .mark img { height: 5.2mm; width: auto; }
+.pg-head .sec { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 11pt; }
+.ink .pg-head .mark { color: #9aa6c4; }
+.ink .pg-head .sec { color: var(--pen-dark); }
+.pg-foot { height: 13mm; flex: none; display: flex; align-items: center; justify-content: space-between; border-top: 0.3mm solid var(--line); font-size: 7.4pt; color: var(--slate-500); margin-top: 6mm; }
+.pg-foot .num { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 11pt; }
+.ink .pg-foot { border-color: rgba(255, 255, 255, 0.14); color: #9aa6c4; }
+.ink .pg-foot .num { color: var(--pen-dark); }
+
+/* ---------------------------------------------------------------- textures */
+.ruled-bg {
+  background-color: #fffdf8;
+  background-image:
+    linear-gradient(90deg, transparent 0, transparent 13mm, rgba(214, 28, 40, 0.3) 13mm, rgba(214, 28, 40, 0.3) calc(13mm + 0.3mm), transparent calc(13mm + 0.3mm)),
+    repeating-linear-gradient(180deg, transparent 0, transparent 7.7mm, rgba(42, 68, 168, 0.1) 7.7mm, rgba(42, 68, 168, 0.1) 8mm);
+}
+.ruled-faint { background-image: repeating-linear-gradient(180deg, transparent 0, transparent 9.7mm, rgba(42, 68, 168, 0.055) 9.7mm, rgba(42, 68, 168, 0.055) 10mm); }
+.margin-rule { background-image: linear-gradient(90deg, transparent 0, transparent 11mm, rgba(214, 28, 40, 0.3) 11mm, rgba(214, 28, 40, 0.3) calc(11mm + 0.3mm), transparent calc(11mm + 0.3mm)); }
+.dots-dark { background-image: radial-gradient(rgba(255, 255, 255, 0.09) 0.3mm, transparent 0.3mm); background-size: 5.5mm 5.5mm; }
+
+/* ---------------------------------------------------------------- type */
+.eyebrow { font-size: 7.6pt; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pen-700); }
+.ink .eyebrow { color: var(--pen-dark); }
+.display { font-family: "Bricolage"; font-weight: 800; letter-spacing: -0.035em; line-height: 1.0; }
+.h1 { font-family: "Bricolage"; font-weight: 800; font-size: 34pt; letter-spacing: -0.03em; line-height: 1.02; }
+.h2 { font-family: "Bricolage"; font-weight: 800; font-size: 22pt; letter-spacing: -0.025em; line-height: 1.08; }
+.h3 { font-family: "Bricolage"; font-weight: 700; font-size: 12.5pt; letter-spacing: -0.01em; line-height: 1.2; }
+.h4 { font-family: "Bricolage"; font-weight: 700; font-size: 10.5pt; line-height: 1.25; }
+.lede { font-size: 11.5pt; line-height: 1.55; color: var(--slate-600); }
+.ink .lede { color: #c3cbe0; }
+.muted { color: var(--slate-500); }
+.ink .muted { color: #9aa6c4; }
+.small { font-size: 8pt; line-height: 1.45; }
+.tiny { font-size: 6.8pt; line-height: 1.4; }
+.hand { font-family: "Kalam"; font-weight: 700; color: var(--pen); }
+.hand-ink { font-family: "Kalam"; font-weight: 400; color: var(--biro); }
+.mono { font-family: "JBMono", ui-monospace, monospace; }
+p + p { margin-top: 2.6mm; }
+strong { font-weight: 650; color: var(--ink); }
+.ink strong { color: #fff; }
+.marker { background: linear-gradient(104deg, transparent 0.3em, rgba(255, 225, 90, 0.9) 0.4em, rgba(255, 225, 90, 0.8) 94%, transparent 100%); padding: 0 0.1em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+/* Red-pen underline: wrap words in <span class="u">…<svg>…</svg></span> (see pen-underline snippet in pages/README) */
+.u { position: relative; white-space: nowrap; display: inline-block; }
+.u > svg { position: absolute; left: 0; bottom: -0.2em; width: 100%; height: 0.36em; overflow: visible; }
+/* Red-pen circle around a short word or number */
+.circ { position: relative; display: inline-block; padding: 0 0.18em; margin: 0 0.08em; }
+.circ > svg { position: absolute; left: -0.12em; top: -0.18em; width: calc(100% + 0.24em); height: calc(100% + 0.32em); overflow: visible; }
+
+/* ---------------------------------------------------------------- layout helpers */
+.row { display: flex; gap: 6mm; }
+.col { display: flex; flex-direction: column; }
+.grow { flex: 1; min-width: 0; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; }
+.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.center { align-items: center; }
+.end { justify-content: flex-end; }
+.mt1 { margin-top: 1.5mm; } .mt2 { margin-top: 3mm; } .mt3 { margin-top: 4.5mm; } .mt4 { margin-top: 6mm; } .mt5 { margin-top: 8mm; } .mt6 { margin-top: 11mm; }
+.auto { margin-top: auto; }
+
+/* ---------------------------------------------------------------- components */
+.card { background: #fff; border: 0.3mm solid var(--line); border-radius: 4mm; padding: 5mm; }
+.card.tight { padding: 3.6mm 4mm; }
+.card.ink { background: var(--ink); border-color: var(--ink); color: #fff; }
+.card.pen { border: 0.5mm solid rgba(214, 28, 40, 0.35); }
+.ink .card { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.12); color: #fff; }
+.shadow { box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.08), 0 8mm 16mm -8mm rgba(15, 26, 58, 0.45); }
+.paper-shot { background: #fff; border-radius: 1.5mm; overflow: hidden; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.1), 0 10mm 20mm -10mm rgba(15, 26, 58, 0.55); }
+
+.chip { display: inline-flex; align-items: center; gap: 1.5mm; border-radius: 99px; padding: 0.9mm 2.6mm; font-size: 7.4pt; font-weight: 650; background: var(--paper-2); color: var(--ink); }
+.chip.ok { background: var(--ok-50); color: var(--ok); }
+.chip.warn { background: var(--warn-50); color: var(--warn); }
+.chip.pen { background: var(--pen); color: #fff; }
+.chip.ghost { background: transparent; border: 0.3mm solid var(--line); }
+
+.icon-badge { width: 9mm; height: 9mm; border-radius: 2.6mm; background: var(--pen-50); color: var(--pen-700); display: grid; place-items: center; flex: none; }
+.icon-badge svg { width: 4.8mm; height: 4.8mm; }
+.ink .icon-badge { background: rgba(255, 107, 114, 0.14); color: var(--pen-dark); }
+
+.num-badge { width: 6.4mm; height: 6.4mm; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font-size: 7.6pt; font-weight: 700; flex: none; }
+.num-badge.pen { background: var(--pen); }
+
+/* Red-pen tick list */
+.ticks { list-style: none; display: flex; flex-direction: column; gap: 2.2mm; }
+.ticks li { position: relative; padding-left: 6.4mm; }
+.ticks li::before {
+  content: ""; position: absolute; left: 0; top: 0.35em; width: 4.2mm; height: 4.2mm;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6' fill='none' stroke='%23D61C28' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center / contain;
+}
+.ink .ticks li::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6' fill='none' stroke='%23FF6B72' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+.crosses { list-style: none; display: flex; flex-direction: column; gap: 2.2mm; }
+.crosses li { position: relative; padding-left: 6.4mm; }
+.crosses li::before {
+  content: ""; position: absolute; left: 0.2mm; top: 0.4em; width: 3.6mm; height: 3.6mm;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 5.5 C 9 9.4, 14.6 14.8, 19.2 19' fill='none' stroke='%23667085' stroke-width='2.8' stroke-linecap='round'/><path d='M18.6 4.8 C 14.6 9, 9.4 14.6, 5.4 19.4' fill='none' stroke='%23667085' stroke-width='2.8' stroke-linecap='round'/></svg>") no-repeat center / contain;
+}
+
+/* Stats */
+.stat .v { font-family: "Bricolage"; font-weight: 800; font-size: 22pt; letter-spacing: -0.03em; line-height: 1; }
+.stat .v small { font-size: 10pt; font-weight: 600; color: var(--slate-500); letter-spacing: 0; }
+.stat .k { margin-top: 1.4mm; font-size: 7.8pt; line-height: 1.35; color: var(--slate-500); }
+.ink .stat .k { color: #9aa6c4; }
+
+/* Tables */
+table.t { width: 100%; border-collapse: collapse; font-size: 8.4pt; }
+table.t th { text-align: left; font-weight: 650; background: var(--paper-2); color: var(--ink); padding: 2mm 2.6mm; }
+table.t td { padding: 2mm 2.6mm; border-top: 0.25mm solid var(--line); vertical-align: top; color: var(--slate-700); }
+table.t .num { font-family: "JBMono"; font-size: 8pt; text-align: right; white-space: nowrap; }
+.table-wrap { border: 0.3mm solid var(--line); border-radius: 3mm; overflow: hidden; background: #fff; }
+
+/* Code */
+.code { background: var(--ink); color: #dfe5f5; border-radius: 3mm; padding: 4mm 4.5mm; font-family: "JBMono"; font-size: 7pt; line-height: 1.6; white-space: pre; overflow: hidden; }
+.code .k { color: #ff9aa0; } .code .s { color: #a8e6b9; } .code .c { color: #7f8bb0; } .code .n { color: #ffd479; }
+.code-label { font-family: "JBMono"; font-size: 6.8pt; color: #9aa6c4; margin-bottom: 2mm; }
+
+/* Method pills for API */
+.method { font-family: "JBMono"; font-size: 6.8pt; font-weight: 700; border-radius: 1mm; padding: 0.5mm 1.4mm; display: inline-block; min-width: 9.5mm; text-align: center; }
+.method.get { background: var(--ok-50); color: var(--ok); }
+.method.post { background: var(--biro-50); color: var(--biro); }
+.method.put { background: var(--warn-50); color: var(--warn); }
+
+/* Callout pins on images */
+.pin { position: absolute; transform: translate(-50%, -50%); width: 6.6mm; height: 6.6mm; border-radius: 50%; background: var(--ink); color: #fff; font-size: 8pt; font-weight: 700; display: grid; place-items: center; box-shadow: 0 0 0 1mm rgba(255, 255, 255, 0.9), 0 1mm 3mm rgba(0, 0, 0, 0.35); }
+
+.divider { height: 0.3mm; background: var(--line); }
+.ink .divider { background: rgba(255, 255, 255, 0.12); }
+.figcap { font-size: 7.2pt; color: var(--slate-500); margin-top: 2mm; }
+.ink .figcap { color: #9aa6c4; }

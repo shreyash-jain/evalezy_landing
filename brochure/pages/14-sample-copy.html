@@ -1,0 +1,109 @@
+<section class="page white p-14" data-name="sample copy">
+  <style>
+    .p-14 .gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 5mm; row-gap: 5.5mm; }
+    .p-14 .shot { position: relative; aspect-ratio: 3 / 4; }
+    .p-14 .shot img { width: 100%; height: 100%; object-fit: cover; }
+    .p-14 .pg-no { position: absolute; left: 2mm; top: 2mm; width: 5.4mm; height: 5.4mm; border-radius: 50%; background: var(--ink); color: #fff; font-size: 7pt; font-weight: 700; display: grid; place-items: center; box-shadow: 0 0 0 0.7mm rgba(255, 255, 255, 0.9); }
+    .p-14 .note { margin-top: 2.4mm; }
+    .p-14 .note .hand { font-size: 10.5pt; line-height: 1.1; }
+    .p-14 .note .small { margin-top: 0.6mm; color: var(--slate-600); }
+    .p-14 .total { aspect-ratio: 3 / 4; align-self: start; width: 100%; border-radius: 1.5mm; background: var(--ink); color: #fff; padding: 3.6mm 4.2mm 3.4mm; display: flex; flex-direction: column; box-shadow: 0 0.4mm 1mm rgba(15, 26, 58, 0.1), 0 10mm 20mm -10mm rgba(15, 26, 58, 0.55); }
+    .p-14 .total .score { font-family: "Kalam"; font-weight: 700; color: #ff6b72; font-size: 24pt; line-height: 1; position: relative; display: inline-block; padding: 2.6mm 4.4mm 1.4mm; margin-top: 1.2mm; margin-bottom: 1.8mm; margin-left: -1mm; align-self: flex-start; }
+    .p-14 .total .score svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; }
+    .p-14 .facts { list-style: none; margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2.6mm 2mm; border-top: 0.3mm solid rgba(255, 255, 255, 0.14); padding-top: 3.4mm; }
+    .p-14 .facts b { display: block; font-family: "Bricolage"; font-weight: 800; font-size: 14pt; line-height: 1; letter-spacing: -0.02em; color: #fff; }
+    .p-14 .facts span { display: block; margin-top: 0.8mm; font-size: 6.8pt; color: #9aa6c4; line-height: 1.25; }
+    .p-14 .band { background: var(--paper); border-radius: 4mm; padding: 4.2mm 4.6mm 4.2mm 5.4mm; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 50mm; gap: 3mm 5mm; align-items: center; }
+    .p-14 .band .h4 { font-size: 9.6pt; text-wrap: balance; }
+    .p-14 .band .small { text-wrap: pretty; }
+    .p-14 .band .small { margin-top: 1mm; }
+    .p-14 .qr { background: #fff; border: 0.3mm solid var(--line); border-radius: 3mm; padding: 2.6mm; display: flex; gap: 2.6mm; align-items: center; }
+    .p-14 .qr img { width: 19mm; height: 19mm; flex: none; }
+    .p-14 .band .qr { grid-column: 4; grid-row: 1 / span 2; }
+    .p-14 .slip { grid-column: 1 / 4; grid-row: 2; display: flex; gap: 2.4mm; align-items: flex-start; border-top: 0.3mm dashed var(--line); padding-top: 2.8mm; }
+    .p-14 .slip svg { width: 3.8mm; height: 3.8mm; flex: none; margin-top: 0.5mm; }
+    .p-14 .slip .small { text-wrap: pretty; }
+    .p-14 .slip b { font-family: "Bricolage"; font-weight: 700; font-size: 9.6pt; color: var(--ink); }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">Sample</span>
+  </header>
+  <div class="pg-body">
+    <p class="eyebrow">Sample checked copy</p>
+    <h2 class="h1 mt2" style="font-size:32pt">One real copy. All
+      <span class="circ">7<svg viewBox="0 0 100 70" preserveAspectRatio="none" aria-hidden="true"><path d="M80 9 C 62 -1, 22 1, 9 22 C -1 40, 18 66, 52 66 C 84 66, 99 46, 94 26 C 90 12, 76 5, 58 4" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span>
+      pages, checked.</h2>
+    <p class="lede mt3">A Class IX Social Science half-yearly mock test: 80 marks, 38 questions, 7 notebook pages shot on a phone. Every tick, cross, note and mark below was written by Evalezy.</p>
+
+    <div class="gallery mt5">
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-1-sm.jpg" alt="Page 1 of 7: Section A one-mark answers with ticks, crosses and the total 38/80 circled." /><span class="pg-no">1</span></div>
+        <figcaption class="note"><p class="hand">38/80, circled</p><p class="small">One-mark answers. Crosses carry the right answer.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-2-sm.jpg" alt="Page 2 of 7: the rest of Section A (Q17 crossed in error), then Section B with 1.5/2 and a note, and 2/2 marked Good." /><span class="pg-no">2</span></div>
+        <figcaption class="note"><p class="hand">1.5/2 · 2/2 “Good.”</p><p class="small">Section B. A note on what a definition missed.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-3-sm.jpg" alt="Page 3 of 7: a weather vs climate table at 2/2, one feature of two at 1/2, and a muddled example at 1.5/2." /><span class="pg-no">3</span></div>
+        <figcaption class="note"><p class="hand">2/2 · 1/2 · 1.5/2</p><p class="small">A table, a missing feature, a muddled example.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-4-sm.jpg" alt="Page 4 of 7: why study social science at 1.5/3 with a note; the atmosphere answer begins." /><span class="pg-no">4</span></div>
+        <figcaption class="note"><p class="hand">1.5/3 + a note</p><p class="small">Why study social science: what was left out.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-5-sm.jpg" alt="Page 5 of 7: the atmosphere answer at 3/3, and factors of climate at 0.5/3 with a note." /><span class="pg-no">5</span></div>
+        <figcaption class="note"><p class="hand">3/3 · 0.5/3</p><p class="small">Climate factors: only weather elements listed.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-6-sm.jpg" alt="Page 6 of 7: economic problems at 3.5/5 with a note, and a case-based question at 2.5/5 with the missing part flagged." /><span class="pg-no">6</span></div>
+        <figcaption class="note"><p class="hand">3.5/5 · 2.5/5</p><p class="small">A case study, the unanswered part flagged.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="paper-shot shot"><img src="assets/img/page-7-sm.jpg" alt="Page 7 of 7: the last answer, every part ticked, 5/5." /><span class="pg-no">7</span></div>
+        <figcaption class="note"><p class="hand">5/5</p><p class="small">The last answer, every part ticked.</p></figcaption>
+      </figure>
+      <!-- the total -->
+      <div class="total">
+        <p class="eyebrow" style="color:var(--pen-dark)">AI total</p>
+        <span class="score">38/80<svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true"><path d="M82 8 C 62 -1, 20 1, 7 20 C -2 36, 16 58, 50 58 C 84 58, 99 42, 95 24 C 92 12, 78 5, 58 4" fill="none" stroke="#FF6B72" stroke-width="3.4" stroke-linecap="round"/></svg></span>
+        <ul class="facts">
+          <li><b>7</b><span>pages</span></li>
+          <li><b>38</b><span>questions</span></li>
+          <li><b>80</b><span>marks</span></li>
+          <li><b>₹7</b><span>to check, at ₹1 a page</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="eyebrow auto" style="color:var(--slate-500)">What to look for</p>
+    <div class="band mt2">
+      <div>
+        <p class="h4">Phone photo, not a scanner</p>
+        <p class="small muted">Shadows, a curved spiral notebook and ruled lines, all read.</p>
+      </div>
+      <div>
+        <p class="h4">Half marks with reasons</p>
+        <p class="small muted">1.5/2, 0.5/3, 3.5/5: each with a note on what was missing.</p>
+      </div>
+      <div>
+        <p class="h4">Mixed handwriting quality</p>
+        <p class="small muted">Crossed-out words, insertions above the line, answers across pages.</p>
+      </div>
+      <div class="slip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5 C 9 9.4, 14.6 14.8, 19.2 19" fill="none" stroke="#D61C28" stroke-width="2.8" stroke-linecap="round"/><path d="M18.6 4.8 C 14.6 9, 9.4 14.6, 5.4 19.4" fill="none" stroke="#D61C28" stroke-width="2.8" stroke-linecap="round"/></svg>
+        <p class="small muted"><b>One slip, left in.</b> Q17 on page 2 is right (“Egyptian Civilisation”) but the AI crossed it, 0/1. Catching slips like this is what teacher review is for.</p>
+      </div>
+      <div class="qr">
+        <a href="https://evalezy.com/sample/?utm_source=brochure&amp;utm_medium=pdf" style="display:block"><img src="assets/img/qr-sample.svg" alt="QR code for evalezy.com/sample" /></a>
+        <div>
+          <p class="hand" style="font-size:10pt;line-height:1.15">See every page full size</p>
+          <p class="tiny muted mt1">evalezy.com/sample</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">14</span></footer>
+</section>

@@ -14,7 +14,7 @@ const EXAMPLES = [
   { who: "One section, unit test", copies: 40, pages: 4 },
   { who: "Four sections, half-yearly", copies: 160, pages: 8 },
   { who: "Coaching weekly test", copies: 300, pages: 6 },
-  { who: "UPSC daily answer (a month)", copies: 500 * 26, pages: 3 },
+  { who: "UPSC daily answer (a month)", copies: 500 * 26, pages: 4 },
 ];
 
 const INCLUDED = [

@@ -262,7 +262,7 @@ export function PriceCalculator({ defaults = { copies: 160, pages: 8, tests: 4, 
 
 const SAMPLE_PAGES = [
   { n: 1, note: "Section A, one-mark answers: ticks, crosses with the correct answer beside them, and the total 38/80 circled at the top." },
-  { n: 2, note: "The rest of Section A, then Section B: 1.5/2 with a note on what the definition missed, and 2/2 with \"Good.\"" },
+  { n: 2, note: "The rest of Section A (Q17 is right but was crossed: one slip a teacher would fix in review), then Section B: 1.5/2 with a note on what the definition missed, and 2/2 with \"Good.\"" },
   { n: 3, note: "Weather vs climate as a table (2/2); one feature where two were asked (1/2, \"Second feature missing\"); a muddled example (1.5/2)." },
   { n: 4, note: "Why study social science: 1.5/3 with a note on what the answer left out. The long answer on the atmosphere begins." },
   { n: 5, note: "The atmosphere answer finishes with 3/3. Factors of climate: 0.5/3, \"Only weather elements listed; no factors of climate explained.\"" },
