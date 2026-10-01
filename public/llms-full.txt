@@ -1,0 +1,2430 @@
+# Evalezy — full site text
+
+Generated 2026-10-01 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+
+
+---
+
+# Evalezy: AI Answer Sheet Checking for Handwritten Copies
+URL: https://evalezy.com/
+
+AI answer sheet checking
+
+# Handwritten copies, checked by AI in a teacher's red pen.
+Upload a whole class's scanned answer sheets at once. Evalezy reads every student's name, marks each answer against one marking scheme, and hands back the student's own copy with ticks, crosses, notes and the total circled. You review and release.
+Book a demo See a real checked copy
+Price₹1 / page
+One upload200 copies
+Failed checksFree
+
+Read from the sheet
+Aditi Sharma
+Roll 14 · Class IX-B
+
+Matched
+
+Bulk check
+Running
+186 of 200 copies checked
+
+Reviewed by Ms. Rao
+2 marks changed · ready to release
+
+The pile
+After every exam, a teacher carries home a stack of copies and gives up evenings and weekends to check them.
+
+The drift
+Copy 5 and copy 95 are not marked the same way. Neither are two teachers checking the same paper.
+
+The number
+Under time pressure, students get a score and a few ticks, rarely the reason they lost marks.
+
+What makes Evalezy different
+
+## Not a score table. The copy itself, checked.
+Most AI graders give you a number per question. Evalezy writes back onto the student's own pages, the way a teacher would, so students can see exactly where marks were won and lost.
+
+What most AI graders returnQ | Score | Remark |
+
+Q4 | 0 / 1 | Incorrect |
+Q5 | 0 / 1 | Incorrect |
+Q6 | 0 / 1 | Incorrect |
+Q21 | 1.5 / 2 | Partially correct |
+Q30 | 0.5 / 3 | Partially correct |
+
+A number per question. The student never sees where on the page they went wrong.
+What Evalezy returns the copy itself
+
+1 2 3 4 5
+
+- 1 The total, circled Marks are added up and the total is circled at the top right of page one, the way a teacher does. Here: 38 out of 80.
+- 2 A tick on what earned marks Correct answers get a red tick on the line itself, drawn with a slightly uneven hand so it reads as pen, not stamp.
+- 3 Marks per question, in the margin Every question gets its marks written beside it, in half-mark steps where the scheme allows.
+- 4 A cross, with the correct answer Wrong answers get a cross and the correct answer beside it: "Wrong answer. Correct: latitude (distance from the equator)."
+- 5 A note where marks were lost Incomplete answers get a short note explaining what was missing, so the student knows what to fix, not just that they lost a mark.
+
+This is a real Class IX Social Science copy checked by Evalezy, photographed on a phone. Read all 7 pages
+
+How it works
+
+## From question paper to released results in four steps.
+
+Every step in detail
+
+- 01 Upload the question paper
+It is read into questions with their marks. Fix anything in a minute, no retyping.
+
+- 02 Set the marking scheme
+Accept the AI's draft for each question, edit it, or write your own with model answers.
+
+- 03 Upload every copy at once
+Up to 200 PDFs. Names and roll numbers are read from each sheet and matched to your students.
+
+- 04 Review, then release
+Marks fill in live. Change any mark, then release. Students get their checked copy by email.
+
+Bulk upload & student matching
+
+## Drop in 200 copies. Each one finds its student.
+Scan the whole section into one folder and upload it. Evalezy reads the name, roll number and class written at the top of each copy and matches it to your students. When it is not sure, it asks you instead of guessing.
+
+- Phone photos or scanner PDFs, one file per student, up to 60 MB each
+- Reading names is free; you pay only for pages checked
+- Copies with no name or two close matches wait for you to pick
+- Or check the copies students uploaded themselves in one click
+- A bell alert and an email when the batch is done
+How matching works
+Bulk AI check
+Each uploaded copy, who it was matched to, and where its check is.
+
+Running
+Copies
+200
+
+Checked
+186
+
+In progress
+3
+
+Need review
+2
+
+Failed
+1
+
+-
+- 2 copies could not be matched to a student. Pick the student to check them.
+File | Read from the sheet | Status |
+
+IX-B_scan_014.pdf
+7 pages
+| Aditi Sharma · Roll 14 | Checked · 38 / 80 |
+IX-B_scan_015.pdf
+8 pages
+| Kabir Singh · Roll 15 | 21 of 38 questions |
+IMG_2041.pdf
+6 pages
+| No name found on the sheet | No match Pick student Skip |
+IX-B_scan_017.pdf
+7 pages
+| R. Verma · Roll 17?Two students match
+| Ambiguous Pick student Skip |
+
+Upload & check copies
+
+Drop PDF copies here or click to choose
+One file per student · up to 200 files · 60 MB each
+
+- IX-B_scan_014.pdf 7 pages
+- IX-B_scan_015.pdf 8 pages
+- IMG_2041.pdf 6 pages
+3 copies · 21 pages · ₹21
+₹1 per page · names are read for free
+
+Email me when the check is doneCancel Check 3 copies
+
+Consistent marking, teacher control
+
+## One marking scheme for every student. The final word for every teacher.
+Each question gets a scheme once, used for copy 1 and copy 200 alike. Then the marks land as a draft for you to review, change and release.
+
+1. The AI drafts the scheme; you can change every line
+Q30 · Explain the factors affecting climate.
+3 marks · Section C
+
+AI draft Your scheme
+
+- Names valid factors of climate (latitude, altitude, distance from the sea, ocean currents, relief, winds) 1.5
+- Explains how each factor affects climate 1
+- Uses a correct example 0.5
+Criteria add up to 3 / 3
+Model answer (optional)
+Latitude, altitude, pressure and wind system, distance from the sea, ocean currents and relief features…
+
+Used for every student in this assessment
+
+2. You review every answer, change any mark, then release
+Aditi Sharma · IX-B · Roll 14
+Social Science · Half-Yearly Mock 4
+
+38/80
+38 of 38 questions
+
+Q30 · Factors affecting climate
+0.5 / 3
+Student's answer, as read
+1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind
+Feedback
+Only weather elements listed; no factors of climate explained.
+Edit marks Criteria breakdown
+
+Q21 · Define social science
+Edited 1.5 / 2
+Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+
+Students see nothing until you release Release result
+
+AI marking scheme Teacher review & release Question paper import
+
+Built to be trusted with marks
+
+## Careful where it matters.
+We do not publish an accuracy percentage; it depends on handwriting, scans and your scheme. Here is what Evalezy does instead to keep marks right.
+
+Answers found by content
+Students answer out of order. Evalezy matches each answer to its question by what it says, not by the number written beside it.
+
+Maths gets a second read
+Equations and working are read from the page; lines it is unsure of go to a dedicated equation reader.
+
+Never guesses an unreadable page
+If most of a copy cannot be read, the check stops with a clear reason. No invented marks, and no charge.
+
+Marks that add up
+Criteria always sum to the question's marks, marks come in half steps, and every deduction gets one clear note.
+
+Never guesses a student
+No name, a weak match or two close names? The copy waits for you to pick. It is never filed under the wrong student.
+
+Teachers have the last word
+Marks are a draft until released. A teacher's edit is never overwritten, even if the copy is checked again.
+
+-
+- 1–8 minutes a copy, several at once. First results in about 10 minutes.
+100 copies in about 2–3 hours. Upload in the evening, review in the morning.
+Diagrams are judged by labels and explanation only; keep a teacher on those.
+
+Who it's for
+
+## Anyone who checks handwritten answers at scale.
+
+Schools
+Give teachers their evenings back after every exam.
+See how Coaching institutes
+Weekly tests, checked before the next class.
+See how UPSC & PSC answer writing
+Daily answer writing, with feedback on every answer.
+See how Colleges & universities
+Internal assessments without the marking backlog.
+See how Exam bodies & large-scale tests
+A consistent first evaluation for every script.
+See how Edtech platforms & developers
+Handwritten answer checking, as an API.
+See how
+
+Evaluation API
+
+## Building an edtech product? Put a red pen in it.
+Create an assessment, set criteria, send an answer sheet by file or URL, and get marks, feedback and the checked PDF back by status call or webhook. Same price as the dashboard.
+
+- POST /assessments
+- PUT /assessments/{id}/criteria
+- POST /evaluations
+- GET /evaluations/{id}
+Read the API docs Request API access
+
+cURL Node.js Python Result
+POST /evaluations Copy
+curl https://api.evalezy.com/v1/evaluations \
+-H "Authorization: Bearer $EVALEZY_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+"assessment_id": "asm_7Hq2",
+"answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
+"student": { "external_id": "IXB-14" },
+"webhook_url": "https://api.example.edu/hooks/evalezy"
+}'
+
+Pricing
+
+## ₹1 a page. That's it.
+$0.01 a page outside India. No subscription, no setup fee, no per-teacher seats. The same price on the API.
+
+- Question paper import, marking schemes, name matching and teacher review included
+- Failed, stopped and unreadable copies are not charged
+- A 7-page copy costs ₹7
+- Volume plans for exam bodies and platforms
+Full pricing
+What would it cost you?
+₹ INR $ USD
+
+Copies per test students Pages per copy pages Tests per month Minutes to check one copy by hand min Price is per page checked: ₹1. Failed, stopped and unreadable copies are not charged. Prices exclude GST.
+
+Per test
+₹1,280
+₹8 a copy
+
+Per month · 5,120 pages
+₹5,120
+
+Checking by hand at 6 min a copy: 64 teacher-hours a month.
+
+## Questions teachers ask us
+More in the full FAQ .
+
+How accurate is it? +
+We do not publish an accuracy percentage, because it depends on handwriting, scan quality, subject and how good the marking scheme is. What we do instead: every mark comes with the student's answer as read and the reason for the mark, low-confidence questions are flagged for review, unreadable copies are never guessed, and nothing reaches students until a teacher releases it. Try it on your own copies in a demo.
+
+Can teachers change the AI's marks? +
+Yes, any mark on any question. The review screen shows the student's answer as read, the AI's feedback and the criteria breakdown. A mark a teacher edits is never overwritten, even if the copy is checked again.
+
+Do I need a scanner? +
+No. Phone photos combined into a PDF work. The sample copy on this site is a phone photo of a spiral notebook. Pages are straightened, cleaned and contrast-boosted before reading.
+
+How does it know which copy belongs to which student? +
+It reads the name, roll number and class or section written at the top of the first page (or the second page's header) and matches it to the students in that assessment. If there is no name, the match is weak, or two students are close, it does not guess: the copy waits for you to pick the student or skip it.
+
+What about diagrams, maps and graphs? +
+Grading works from what is written. Diagrams are judged by their labels and the written explanation, not as drawings. For questions that are mostly a diagram, keep a teacher on the final mark.
+
+How long does it take? +
+Usually 1 to 8 minutes per copy, with several copies checked in parallel. The first results appear in about 10 minutes; 100 copies take roughly 2 to 3 hours. You get a bell alert and an email when a batch is done.
+
+What is not charged? +
+Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
+
+Is there an API? +
+Yes. Create assessments, set evaluation criteria, send answer sheets by file upload or URL, and get marks, feedback and the checked PDF from a status endpoint or a webhook. API access is enabled per account; request it on the demo page.
+
+Book a demo
+
+## Bring your own copies. Watch them get checked.
+In 20 minutes we upload a question paper and a few of your scanned answer sheets, and you see them checked in red pen, matched to students and ready to review.
+
+- See the checked copy on your own handwriting
+- Set up your marking scheme together
+- Get a cost estimate for your volume
+
+What are you looking for?Check copies API access Both
+Full name Work email Phone +91+1+44+971+65+61+977+880+94 Your role Choose onePrincipal / DirectorOwner / FounderExam controller / Academic headTeacher / FacultyDeveloper / ProductOtherSchool / institute Pages checked per month Not sure yetUnder 1,0001,000–5,0005,000–20,00020,000–1,00,000Over 1,00,000
+Anything we should know? (optional) Book my demo We usually reply within one working day. Your details stay with us.
+
+## Give your teachers their evenings back.
+Upload tonight's pile, review it tomorrow. ₹1 a page, and nothing reaches students until a teacher says so.
+
+Book a demo See a real checked copy
+
+
+---
+
+# How AI Answer Sheet Checking Works, Step by Step | Evalezy
+URL: https://evalezy.com/how-it-works/
+
+- Home
+- / How it works
+How it works
+
+# How Evalezy checks a handwritten answer sheet.
+Three steps for you, eight for the machine, and a review before anything reaches students. Here is every step, including the ones that keep it from guessing.
+Book a demo See a real checked copy
+
+Your part
+
+## Set up once per paper
+
+- 1. Create the assessment and upload the question paper
+The paper is read into questions with their marks, sections and printed numbers. Edit anything that needs it.
+More
+- 2. Check the marking scheme
+Each question gets criteria that add up to its marks. Accept the AI draft, edit it, or write your own and add model answers.
+More
+- 3. Upload the copies
+Drop in up to 200 PDFs, one per student; or let students upload their own in an online test. Names and roll numbers are read and matched; anything uncertain waits for you.
+More
+
+Evalezy's part · 1–8 minutes a copy
+
+## What happens to each copy
+
+- 1 Read the page layout
+Each page is straightened, cleaned and contrast-boosted, and the position of every written line is found. Printed-text OCR alone cannot read handwriting, so it is only used for where lines are, never for what they say.
+
+- 2 Read the handwriting
+A vision model reads every line as written, three pages at a time, row by row. It is told never to invent text; anything it cannot read is marked as unreliable.
+
+- 3 Check the copy is readable
+If most pages are too blurred or blank to read, the check stops here with a clear reason. No marks are guessed and nothing is charged.
+
+- 4 Second read for maths
+Up to four maths lines the reader was unsure of are sent to a dedicated equation reader and replaced with its reading.
+
+- 5 Find each answer
+On copies of four pages or more, Evalezy works out which pages hold which answer, by content, so answers written out of order are still found. If a question then looks unattempted, the whole copy is searched again before it gets zero.
+
+- 6 Mark each question
+Each answer is marked against its criteria, in half-mark steps, with the student's own words quoted. Low-confidence marks are re-asked. Marks appear on your screen question by question.
+
+- 7 Make the marks add up
+Marks are capped at the maximum, criteria scaled to match, and each question gets exactly one score and one clear note.
+
+- 8 Write on the copy
+Ticks, crosses, corrections, notes and marks are drawn onto the student's pages in a handwriting-style red pen, with the total circled on page one.
+
+Several copies are checked at once. The first results usually appear within about 10 minutes of uploading, and 100 copies take roughly 2 to 3 hours. Copies up to 40 pages are read in full.
+
+Your part again · as long as you like
+
+## Review and release
+
+- 4. You are notified
+A bell alert and an email when the batch is done.
+
+- 5. You review
+Answer as read, marks, feedback and criteria per question. Change any mark; your edit is kept.
+
+- 6. You release
+Students get their checked copy by email. Until then they see "Results pending".
+
+Teacher review in detail
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI-Checked Answer Copies That Look Teacher-Checked | Evalezy
+URL: https://evalezy.com/checked-copy/
+
+- Home
+- / Red-pen checked copy
+Red-pen checked copy
+
+# The student's own copy, checked the way a teacher would.
+Evalezy does not stop at a score. It writes back onto the student's pages: a tick where marks were earned, a cross with the correct answer where they were not, a short note where an answer fell short, marks in the margin and the total circled on page one.
+Book a demo See a real checked copy
+
+## Students learn from the page, not the number.
+On the left, what most AI graders return. On the right, two crops from a real copy checked by Evalezy.
+What most AI graders returnQ | Score | Remark |
+
+Q4 | 0 / 1 | Incorrect |
+Q5 | 0 / 1 | Incorrect |
+Q6 | 0 / 1 | Incorrect |
+Q21 | 1.5 / 2 | Partially correct |
+Q30 | 0.5 / 3 | Partially correct |
+
+A number per question. The student never sees where on the page they went wrong.
+What Evalezy returns the copy itself
+
+## Anatomy of a checked page
+Tap a number to see what each mark means.
+1 2 3 4 5
+
+- 1 The total, circled Marks are added up and the total is circled at the top right of page one, the way a teacher does. Here: 38 out of 80.
+- 2 A tick on what earned marks Correct answers get a red tick on the line itself, drawn with a slightly uneven hand so it reads as pen, not stamp.
+- 3 Marks per question, in the margin Every question gets its marks written beside it, in half-mark steps where the scheme allows.
+- 4 A cross, with the correct answer Wrong answers get a cross and the correct answer beside it: "Wrong answer. Correct: latitude (distance from the equator)."
+- 5 A note where marks were lost Incomplete answers get a short note explaining what was missing, so the student knows what to fix, not just that they lost a mark.
+
+Half marks, with a reason
+
+## Partial credit you can see.
+Marks are given in half-mark steps against the question's criteria. When an answer earns part of the marks, Evalezy writes what was missing next to it, so “1.5/2” comes with a reason.
+
+- One score per question, written in the margin
+- One clear note per deduction, never a wall of text
+- Short, kind praise where an answer is complete
+
+Long answers
+
+## Notes on what a long answer missed.
+On 3- and 5-mark answers, the note names the gap: a missing part, a missing example, a list where an explanation was asked for. It sits right under the answer, in the same red pen.
+The note is written for the student, not the teacher: what to add next time.
+
+## The marks on every copy
+
+- Tick on what earned marks
+- Cross, with the correct answer beside it
+- 1.5/2 Marks per question, in half-mark steps
+- note A short note where marks were lost
+
+Read the full 7-page sample
+
+## Frequently asked questions
+Why does the checked copy look handwritten? +
+Because students and parents trust a copy that looks checked. Notes are drawn in a handwriting-style font with a slight wobble, ticks are drawn as uneven pen strokes, and the ink is a teacher's red. The same copy always re-renders identically.
+
+Can teachers edit the checked copy? +
+Teachers change marks and feedback on the review screen; marks they edit are kept and never overwritten by the AI. The marks students see are the marks the teacher released.
+
+How do students get it? +
+When a teacher releases results, each student receives the checked copy as a PDF by email. Results can also go out on WhatsApp through Automations if you have connected WhatsApp.
+
+How big is the checked PDF? +
+Page images are re-encoded so the checked PDF stays under 18 MB, small enough to email, even for a long phone-scanned copy.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Bulk Answer Sheet Upload with Automatic Student Matching | Evalezy
+URL: https://evalezy.com/bulk-upload/
+
+- Home
+- / Bulk upload & student matching
+Bulk upload & student matching
+
+# Upload the whole pile. Every copy finds its student.
+Scan a section's copies, one PDF per student, and drop up to 200 of them in at once. Evalezy reads the name and roll number written on each copy, matches it to your students, and checks them one after another in the background.
+Book a demo See a real checked copy
+
+Upload & check copies
+
+Drop PDF copies here or click to choose
+One file per student · up to 200 files · 60 MB each
+
+- IX-B_scan_014.pdf 7 pages
+- IX-B_scan_015.pdf 8 pages
+- IMG_2041.pdf 6 pages
+3 copies · 21 pages · ₹21
+₹1 per page · names are read for free
+
+Email me when the check is doneCancel Check 3 copies
+
+Live batch view
+
+## See every copy, who it went to, and where its check is.
+The bulk panel lists each file with what was read from the sheet, the student it was matched to and its status: reading, checking question by question, checked, or waiting for you.
+
+- Counts for checked, in progress, need review and failed
+- Pick student, Skip or Retry on any copy
+- Failed and unreadable copies are not charged
+
+Bulk AI check
+Each uploaded copy, who it was matched to, and where its check is.
+
+Running
+Copies
+200
+
+Checked
+186
+
+In progress
+3
+
+Need review
+2
+
+Failed
+1
+
+-
+- 2 copies could not be matched to a student. Pick the student to check them.
+File | Read from the sheet | Status |
+
+IX-B_scan_014.pdf
+7 pages
+| Aditi Sharma · Roll 14 | Checked · 38 / 80 |
+IX-B_scan_015.pdf
+8 pages
+| Kabir Singh · Roll 15 | 21 of 38 questions |
+IMG_2041.pdf
+6 pages
+| No name found on the sheet | No match Pick student Skip |
+IX-B_scan_017.pdf
+7 pages
+| R. Verma · Roll 17?Two students match
+| Ambiguous Pick student Skip |
+
+## Evalezy never guesses a student.
+A copy filed under the wrong name is worse than a copy not checked. So matching is strict, and anything uncertain comes to you.
+What was read from the copy | Result |
+
+Unique roll number on the sheet | Matched |
+Name matches one student clearly | Matched |
+Roll number shared by two students | You pick |
+Two students with very similar names | You pick |
+No name found, or a weak match | You pick |
+A second copy for a student already matched | You pick |
+
+Scanning tips
+One PDF per student, pages in order. Phone scanner apps work well. Keep the whole page in frame and avoid deep shadows across the writing.
+
+Limits
+Up to 200 files per upload and 60 MB per file. Copies up to 40 pages are read in full.
+
+Timing
+Usually 1–8 minutes a copy, several at once. First results in about 10 minutes; 100 copies in roughly 2–3 hours.
+
+## Frequently asked questions
+What does the student need to write? +
+Their name, and ideally roll number and class or section, at the top of the first page, the way they already do. Evalezy reads the top of page one first, then the whole first page, then the top of page two if needed.
+
+What if a student wrote their name in Hindi? +
+Names written in other scripts are read and transliterated so they can be matched against the names in your student list.
+
+Does reading names cost anything? +
+No. Reading and matching names is free. You pay only for the pages that are checked.
+
+What happens to copies that don't match? +
+They wait in the Bulk checks panel with the reason (no name found, two close matches, a duplicate). Pick the student from a scored list of suggestions, or skip the copy. Nothing is checked under a guessed name.
+
+Can students upload their own copies instead? +
+Yes. In an online test set to manual evaluation, students upload a PDF of their answer sheet. Check all submitted copies with one click, select a few and check those, or switch on auto-check so each copy is checked as soon as it is submitted. Already-checked copies are skipped unless you choose to re-check.
+
+How will I know when it's done? +
+The batch settles as completed or needing review, and you get a bell alert and, if you ticked the box, an email with the counts.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Turn a Question Paper PDF into a Gradable Test | Evalezy
+URL: https://evalezy.com/question-paper-import/
+
+- Home
+- / Question paper import
+Question paper import
+
+# Upload the question paper. Get a test ready to check.
+AI checking needs to know the questions and their marks. Instead of typing 38 questions into a form, upload the question paper you already printed and Evalezy reads it into questions with their marks and sections.
+Book a demo See a real checked copy
+
+Social Science
+Half-Yearly Mock Test 4 · Class IX · 80 marks
+
+question-paper.pdf
+
+38 questions found
+80 marks
+
+- Q1–20 Write the correct answer (1 mark each) 20
+- Q21–26 Very short answer questions 12
+- Q27–31 Short answer questions 15
+- Q32–35 Long answer questions 20
+- Q36–37 Case-based questions 10
+- Q38 Map work 3
+Edit any question or mark before you check copies.
+
+What gets read
+
+## Questions, marks, sections and numbering.
+Evalezy keeps the question numbers as printed on the paper, so feedback and marks on the checked copy refer to the same “Q21” the student sees.
+
+- Question text and maximum marks
+- Sections, in paper order
+- The number printed on the paper, kept for every question
+- Edit anything before you check
+
+Section B · Very short answer (2 marks each)
+
+- Q21. What is social science? 2
+- Q22. State two features of democracy. 2
+- Q23. Distinguish between weather and climate. 2
+
+Next step
+
+## Then set the marking scheme.
+Once the questions are in, each one gets a marking scheme: criteria whose marks add up to the question's marks. Accept the AI draft, edit it, or bring your own.
+
+Q30 · Explain the factors affecting climate.
+3 marks · Section C
+
+AI draft Your scheme
+
+- Names valid factors of climate (latitude, altitude, distance from the sea, ocean currents, relief, winds) 1.5
+- Explains how each factor affects climate 1
+- Uses a correct example 0.5
+Criteria add up to 3 / 3
+Model answer (optional)
+Latitude, altitude, pressure and wind system, distance from the sea, ocean currents and relief features…
+
+Used for every student in this assessment
+
+## Frequently asked questions
+What format should the question paper be in? +
+A PDF of the paper as you printed it. Typed papers work best; a clear scan of a printed paper also works.
+
+Can I fix a question it read wrongly? +
+Yes. Every question and mark can be edited before you check any copies.
+
+We already uploaded copies to a test without questions. Can we still use AI checking? +
+Yes. A test that only has an "upload your answer sheet" placeholder cannot be AI-checked, so the Submissions tab offers to read the attached question paper into questions and adopt them for that test.
+
+Do I also need a marking scheme? +
+Evalezy drafts one per question automatically the first time a copy is checked, so you can start without one. Most teachers review the draft or add model answers for the long questions first.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Marking Scheme Generator, or Bring Your Own Rubric | Evalezy
+URL: https://evalezy.com/marking-scheme/
+
+- Home
+- / AI marking scheme
+AI marking scheme
+
+# One marking scheme per question. The same for every student.
+Consistency starts with the scheme. Evalezy drafts criteria for each question that add up exactly to its marks, you edit what you want, and that scheme is used for every copy in the assessment.
+Book a demo See a real checked copy
+
+Q30 · Explain the factors affecting climate.
+3 marks · Section C
+
+AI draft Your scheme
+
+- Names valid factors of climate (latitude, altitude, distance from the sea, ocean currents, relief, winds) 1.5
+- Explains how each factor affects climate 1
+- Uses a correct example 0.5
+Criteria add up to 3 / 3
+Model answer (optional)
+Latitude, altitude, pressure and wind system, distance from the sea, ocean currents and relief features…
+
+Used for every student in this assessment
+
+Why it matters
+
+## Copy 1 and copy 200 are judged the same way.
+When a person checks 200 copies, the standard drifts: generous early, strict late, or the other way round. When several teachers share a paper, each brings their own standard.
+Evalezy fixes the scheme before the first copy is checked and uses it for every copy. That is the single biggest reason AI checking can be fairer than a tired human, and why we ask you to read the scheme first.
+
+Copy 1 · Q30
+Named weather elements, not climate factors
+
+0.5 / 3
+Copy 87 · Q30
+Three factors, explained, no example
+
+2.5 / 3
+Copy 200 · Q30
+Factors, effects and an example
+
+3 / 3
+Illustration: three different answers to the same question, all judged against the same three criteria.
+
+Guidance, not formulas
+
+## Criteria describe quality. The marks stay with the criterion.
+Each criterion says what a good answer does: names the factors, explains the effect, gives an example. The marks live on the criterion, not inside the wording, so editing one never silently caps another.
+
+- Marks awarded in half-mark steps
+- Per-criterion marks shown on the review screen
+- Edit a criterion and every later check uses the new version
+
+Aditi Sharma · IX-B · Roll 14
+Social Science · Half-Yearly Mock 4
+
+38/80
+38 of 38 questions
+
+Q30 · Factors affecting climate
+0.5 / 3
+Student's answer, as read
+1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind
+Feedback
+Only weather elements listed; no factors of climate explained.
+Edit marks Criteria breakdown
+
+Q21 · Define social science
+Edited 1.5 / 2
+Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+
+Students see nothing until you release Release result
+
+## Frequently asked questions
+How many criteria does a question get? +
+One for objective questions (one-mark answers and anything with options). Three to five for subjective questions, each with its share of the marks.
+
+What if the criteria marks don't add up? +
+They always do: criterion marks are rescaled so they sum exactly to the question's maximum marks.
+
+Can I use my board's marking scheme? +
+Yes. Replace the AI draft with your own criteria per question, or set a fixed scheme for the whole assessment. Add a model answer per question if you have one; a stored model answer is used ahead of anything generated.
+
+Does the AI look for exact wording? +
+No. A model answer is a reference, not wording the student must match. Answers that say the right thing in different words still earn the marks.
+
+When is the scheme created? +
+Once per question, the first time a copy of that assessment is checked, and then reused. Two copies starting at the same moment still get one scheme, not two.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Teacher Review: Approve AI Marks Before Students See Them | Evalezy
+URL: https://evalezy.com/teacher-review/
+
+- Home
+- / Teacher review & release
+Teacher review & release
+
+# The AI checks. The teacher decides.
+Every AI mark is a draft. Teachers see the answer as it was read, the reason for each mark and the criteria behind it, change anything they disagree with, and release results when they are ready. Not before.
+Book a demo See a real checked copy
+
+Aditi Sharma · IX-B · Roll 14
+Social Science · Half-Yearly Mock 4
+
+38/80
+38 of 38 questions
+
+Q30 · Factors affecting climate
+0.5 / 3
+Student's answer, as read
+1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind
+Feedback
+Only weather elements listed; no factors of climate explained.
+Edit marks Criteria breakdown
+
+Q21 · Define social science
+Edited 1.5 / 2
+Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+
+Students see nothing until you release Release result
+
+## From check to release
+
+- 01
+Watch it fill in
+Marks appear question by question while a copy is being checked. Stop a check at any time; a stopped check is not charged.
+
+- 02
+Get told when it's done
+A bell alert and an email when a batch finishes, so nobody has to keep checking the screen.
+
+- 03
+Review and adjust
+For each question: the student's answer as read, the marks, the feedback and the criteria. Change any mark and its feedback.
+
+- 04
+Students wait
+Until release, students see "Results pending". Marks and the checked copy are held back on the server.
+
+- 05
+Release
+Release one student, a selection or the whole assessment from the Submissions tab.
+
+- 06
+Students receive the copy
+Each student is emailed their checked copy as a PDF. Add WhatsApp through Automations.
+
+Built-in safety
+
+## Marks students can trust.
+
+- A total is only final when every question is graded; a partly checked copy never shows a misleading total
+- A released result is not changed by a late AI callback
+- Edited marks are labelled and recorded with who changed them and when
+- Unreadable copies fail clearly instead of getting guessed marks
+
+Stop
+Halts within seconds. Not charged.
+
+Edit
+Marks clamped between 0 and the question's maximum.
+
+Release
+Email with the checked copy attached; WhatsApp via Automations.
+
+## Frequently asked questions
+What happens to my edits if the copy is checked again? +
+They are kept. A question a teacher has edited is never overwritten by a later AI check.
+
+Can students see anything before release? +
+No. Students see "Results pending"; their marks, report and checked copy are refused by the server until release.
+
+Who gets notified when checking is done? +
+The teacher who started the check, the assessment's creator and evaluator, and the institute's admins get a bell alert; admins also get an email. Bulk uploads send one notice for the whole batch.
+
+Can I send results on WhatsApp? +
+Yes, through Automations: use the "Assessment Result Released" trigger with a WhatsApp, email or push step. The student's name, marks, total, percentage and checked-copy file are available to the message.
+
+What does "Need review" mean? +
+A copy or question the system was less sure about: a low-confidence read, a copy that could not be matched to a student, or a question still waiting. Start your review there.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Essay Grading for Online Long-Answer Questions | Evalezy
+URL: https://evalezy.com/typed-answers/
+
+- Home
+- / Typed essays & long answers
+Typed essays & long answers
+
+# Online long answers, graded in about 20 seconds.
+Not every answer is handwritten. In online tests, students type essays, letters and emails into a long-answer box. Evalezy grades those too, against the same kind of criteria, and holds the result for a teacher to review.
+Book a demo See a real checked copy
+
+Q2 · Write an email to your principal requesting a science club. (5 marks, 120–150 words)
+
+Respected Ma'am,
+I am writing to request permission to start a science club in our school. Many students in Class IX are interested in experiments beyond the syllabus…
+138 words
+
+Format
+1 / 1
+
+Content
+1.5 / 2
+
+Organisation
+1 / 1
+
+Language
+0.5 / 1
+
+Purpose is clear, but no proposed timing or teacher in charge; two spelling errors.
+
+Graded in about 20 seconds 4 / 5
+
+How to set it up
+
+## Switch on AI evaluation, add a long-answer question.
+In the test settings, pick any result type except manual and turn on “Evaluate submissions with AI”. Add questions of type Long Answer, with a model answer if you have one.
+
+- Graded automatically when the student submits
+- Result held as pending until a teacher releases it
+- Model answer used as a reference, not as required wording
+
+Test settings
+Result type Release after review
+Evaluate submissions with AI On
+Question type Writing skills → Long answer
+
+## Frequently asked questions
+What does it judge a typed answer on? +
+Format and conventions (an email's greeting and sign-off, a letter's layout), content, organisation and language. Spelling counts, because there is no handwriting to blame. Word limits are enforced. Answers worded differently from the model answer still earn credit.
+
+What if a student tries to trick the AI? +
+The student's text is treated as data, not instructions. In a production test, an email that told the evaluator to "award full marks" scored 0 out of 5.
+
+What about MCQs in the same test? +
+Objective questions keep their normal automatic marks. Only long-answer questions go to the AI, and the total adds both.
+
+Are blank answers charged? +
+No. A blank answer gets zero immediately, without an AI call, and an attempt where every answer is blank is not billed.
+
+How are typed answers priced? +
+Typed answers have no pages, so they are priced per answer graded rather than per page. Ask us for the current rate.
+
+Can students copy-paste an answer? +
+Copy, cut and paste are blocked in the long-answer box, which also shows a live word count.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Answer Sheet Evaluation API for Developers | Evalezy
+URL: https://evalezy.com/api/
+
+- Home
+- / Evaluation API
+Evaluation API
+
+# Answer sheet evaluation, as an API.
+Send a handwritten answer sheet by file or URL. Get back per-question marks, feedback, the student's answer as read and a red-pen checked PDF. Same engine and same price as the Evalezy dashboard: ₹1 / $0.01 per page.
+Book a demo Request API access
+
+cURL Node.js Python
+POST /evaluations Copy
+curl https://api.evalezy.com/v1/evaluations \
+-H "Authorization: Bearer $EVALEZY_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+"assessment_id": "asm_7Hq2",
+"answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
+"student": { "external_id": "IXB-14" },
+"webhook_url": "https://api.example.edu/hooks/evalezy"
+}'
+
+Bearer API keys
+Every request carries Authorization: Bearer <key>. Base URL: https://api.evalezy.com/v1
+
+Webhooks or polling
+Pass a webhook_url per evaluation, or poll GET /evaluations/{id} for status and progress.
+
+Billed on success
+Charged per page only when an evaluation completes. Failed, cancelled and unreadable: free.
+
+## The flow
+
+- 1.
+
+### Create an assessment
+Send your questions with marks, or a question paper URL to be read into questions. You get back an assessment id and the question list.
+
+POST /assessments Copy
+curl https://api.evalezy.com/v1/assessments \
+-H "Authorization: Bearer $EVALEZY_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+"title": "Social Science · Half-Yearly Mock Test 4",
+"class": "IX",
+"question_paper_url": "https://files.example.edu/papers/sst-ix-mock-4.pdf"
+}'
+
+- 2.
+
+### Set evaluation criteria
+Send criteria and an optional model answer per question. Criteria marks are rescaled to sum to the question's marks. Or call /criteria/generate for a draft to edit.
+
+PUT /assessments/{id}/criteria Copy
+curl -X PUT https://api.evalezy.com/v1/assessments/asm_7Hq2/criteria \
+-H "Authorization: Bearer $EVALEZY_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+"questions": [{
+"question_id": "q_30",
+"max_marks": 3,
+"model_answer": "Latitude, altitude, pressure and wind system, distance from the sea, ocean currents, relief.",
+"criteria": [
+{ "name": "Names valid factors of climate", "marks": 1.5 },
+{ "name": "Explains how each factor affects climate", "marks": 1 },
+{ "name": "Uses a correct example", "marks": 0.5 }
+]
+}]
+}'
+
+- 3.
+
+### Send an answer sheet
+Pass a URL to the PDF, or upload it to /files first and send the file id. Include your own student id so results map back to your users.
+
+POST /evaluations Copy
+curl https://api.evalezy.com/v1/evaluations \
+-H "Authorization: Bearer $EVALEZY_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+"assessment_id": "asm_7Hq2",
+"answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
+"student": { "external_id": "IXB-14" },
+"webhook_url": "https://api.example.edu/hooks/evalezy"
+}'
+202 Accepted Copy
+{
+"id": "ev_3kP9xW",
+"status": "queued",
+"assessment_id": "asm_7Hq2",
+"student": { "external_id": "IXB-14" }
+}
+
+- 4.
+
+### Get the result
+Poll the evaluation or wait for the webhook. A completed evaluation carries the total, every question's marks, the student's answer as read, feedback, the criteria breakdown and the checked PDF.
+Example values are from the real sample copy (38/80).
+
+GET /evaluations/ev_3kP9xW → 200 Copy
+{
+"id": "ev_3kP9xW",
+"status": "completed",
+"pages": 7,
+"total": { "awarded": 38, "max": 80 },
+"questions": [
+{
+"number": "4",
+"awarded": 0,
+"max": 1,
+"student_answer": "Temperature",
+"feedback": "Wrong answer. Correct: latitude (distance from the equator)."
+},
+{
+"number": "30",
+"awarded": 0.5,
+"max": 3,
+"student_answer": "1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind",
+"feedback": "Only weather elements listed; no factors of climate explained.",
+"criteria": [
+{ "name": "Names valid factors of climate", "awarded": 0.5, "max": 1.5 },
+{ "name": "Explains how each factor affects climate", "awarded": 0, "max": 1 },
+{ "name": "Uses a correct example", "awarded": 0, "max": 0.5 }
+]
+}
+],
+"checked_copy_url": "https://files.evalezy.com/ev_3kP9xW/checked-copy.pdf",
+"billing": { "pages": 7, "amount": 7, "currency": "INR" }
+}
+
+## Endpoints
+Base URL https://api.evalezy.com/v1
+Method | Path | What it does |
+
+POST | /assessments | Create an assessment from a list of questions with marks, or from a question paper URL to be read into questions. |
+GET | /assessments/{id} | Fetch an assessment with its questions, marks and current criteria. |
+PUT | /assessments/{id}/criteria | Set evaluation criteria and model answers per question. Criteria marks are rescaled to sum to the question's marks. |
+POST | /assessments/{id}/criteria/generate | Ask Evalezy to draft criteria for every question; review and edit before you evaluate. |
+POST | /files | Upload an answer sheet PDF (multipart). Returns a file id to evaluate. |
+POST | /evaluations | Start checking one answer sheet, by file id or public URL, with your student id and an optional webhook. |
+GET | /evaluations/{id} | Status, progress and, once completed, marks per question, feedback and the checked copy PDF URL. |
+POST | /evaluations/{id}/cancel | Stop a running evaluation. Cancelled evaluations are not billed. |
+
+## Statuses
+
+- queuedAccepted and waiting for a slot.
+- readingPages are being read: layout, handwriting, maths lines.
+- gradingQuestions are being marked; progress shows questions done / total.
+- completedMarks, feedback and the checked PDF are ready.
+- failedCould not be checked, e.g. an unreadable copy. Reason included. Not billed.
+- cancelledStopped by you. Not billed.
+
+## Webhooks
+Pass webhook_url when you create an evaluation and Evalezy posts to it when the evaluation completes or fails. Fetch the full result with the id.
+evaluation.completed Copy
+POST https://api.example.edu/hooks/evalezy
+{
+"event": "evaluation.completed",
+"evaluation_id": "ev_3kP9xW",
+"status": "completed",
+"total": { "awarded": 38, "max": 80 }
+}
+
+- Answer sheets that cannot be read fail with a reason and are not billed
+- Cancel any running evaluation; cancelled evaluations are not billed
+- Each evaluation is billed once, even if it is retried internally
+
+Ready to build?
+Tell us what you are building and your expected volume. We will enable API access on your account.
+
+Request API access
+
+## Frequently asked questions
+How do I get an API key? +
+API access is enabled per account. Request it on the demo page with your use case and expected monthly volume.
+
+Is the API synchronous? +
+No. Checking takes minutes, so evaluations are asynchronous: create one, get an id back immediately, then poll the status endpoint or receive a webhook.
+
+What file formats are accepted? +
+PDF answer sheets, one file per student, uploaded directly or fetched from a URL you provide. Phone photos combined into a PDF work.
+
+How is the API billed? +
+Per page checked: ₹1 in India, $0.01 elsewhere. Failed, cancelled and unreadable sheets are not billed.
+
+Can I get the checked PDF? +
+Yes. A completed evaluation includes a URL to the checked copy with ticks, crosses, notes, marks and the circled total.
+
+Do teachers still review API results? +
+That is up to your product. The API returns the AI's marks with reasons and confidence signals; most platforms show them to a teacher or reviewer before learners see them.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Pricing: ₹1 per Page Checked ($0.01) | Evalezy
+URL: https://evalezy.com/pricing/
+
+- Home
+- / Pricing
+Pricing
+
+# One price: ₹1 a page checked.
+$0.01 a page outside India. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not.
+Book a demo
+
+Dashboard
+₹1 / page
+$0.01 outside India · prepaid credits · excl. GST
+For schools, coaching institutes and colleges checking copies in the Evalezy dashboard.
+
+- Question paper import
+- AI-drafted marking schemes, editable
+- Reading names and matching copies to students
+- The red-pen checked copy PDF
+- Teacher review, edits and release
+- Result emails to students with the checked copy
+Book a demo
+API
+₹1 / page
+$0.01 outside India · billed on completed evaluations
+For edtech platforms and developers adding handwritten answer checking to their product.
+
+- Assessments, criteria, answer sheets, results
+- Answer sheets by upload or URL
+- Webhooks or status polling
+- Marks, feedback and the checked PDF in the response
+- Failed and cancelled: not billed
+Request API access
+Volume
+Custom
+For 1,00,000+ pages a month
+For exam bodies, university-wide rollouts and large platforms that need capacity planned around an exam window.
+
+- Capacity planned for your exam dates
+- Invoice billing
+- A named contact during the evaluation window
+- Help writing marking schemes
+Talk to us
+
+## Work out your cost
+Change the numbers to match your school or batch.
+What would it cost you?
+₹ INR $ USD
+
+Copies per test students Pages per copy pages Tests per month Minutes to check one copy by hand min Price is per page checked: ₹1. Failed, stopped and unreadable copies are not charged. Prices exclude GST.
+
+Per test
+₹1,280
+₹8 a copy
+
+Per month · 5,120 pages
+₹5,120
+
+Checking by hand at 6 min a copy: 64 teacher-hours a month.
+
+Example | Copies | Pages each | Cost (India) | Cost (elsewhere) |
+
+One section, unit test | 40 | 4 | ₹160 | $1.60 |
+Four sections, half-yearly | 160 | 8 | ₹1,280 | $12.80 |
+Coaching weekly test | 300 | 6 | ₹1,800 | $18.00 |
+UPSC daily answer (a month) | 13,000 | 3 | ₹39,000 | $390.00 |
+
+Indian prices exclude GST.
+
+## Included in the page price
+
+- Question paper import
+- AI-drafted marking schemes, editable
+- Reading names and matching copies to students
+- The red-pen checked copy PDF
+- Teacher review, edits and release
+- Result emails to students with the checked copy
+- The same price on the API
+
+## Never charged
+
+- Failed checks
+- Stopped or cancelled checks
+- Copies too blurred or blank to read
+- Reading names in bulk uploads
+- Teacher edits
+A re-check is a fresh check and is billed again. Edits a teacher makes are free and are kept.
+All questions
+
+## Pricing questions
+How much does it cost? +
+₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST.
+
+What is not charged? +
+Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
+
+Is a re-check charged? +
+Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept.
+
+Is the API priced differently? +
+No. The API costs the same per page as the dashboard.
+
+Do you offer volume pricing? +
+For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Sample: A Real Answer Sheet Checked by Evalezy | Evalezy
+URL: https://evalezy.com/sample/
+
+- Home
+- / See a checked copy
+Sample checked copy
+
+# A real answer sheet, checked by Evalezy.
+A Class IX Social Science half-yearly mock test: 80 marks, 38 questions, 7 pages of a spiral notebook photographed on a phone. Every tick, cross, note and mark below was written by Evalezy. Final score: 38/80.
+Book a demo Download the PDF
+
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+
+Page 1 of 7
+Section A, one-mark answers: ticks, crosses with the correct answer beside them, and the total 38/80 circled at the top.
+Previous Next page
+
+Download the PDF (2.3 MB) Open this page full size
+
+## What to look for
+
+- Tick on what earned marks
+- Cross, with the correct answer beside it
+- 1.5/2 Marks per question, in half-mark steps
+- note A short note where marks were lost
+
+- Phone photo, not a scanner. Shadows, a curved spiral notebook and ruled lines, all read.
+- Half marks with reasons. 1.5/2, 0.5/3, 3.5/5: each with a note on what was missing.
+- Mixed handwriting quality. Crossed-out words, insertions above the line and answers that run across pages.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Who Uses Evalezy: Schools, Coaching, Colleges, Boards | Evalezy
+URL: https://evalezy.com/for/
+
+- Home
+- / Who it's for
+Who it's for
+
+# Built for anyone who checks handwritten answers at scale.
+Schools after every exam, coaching institutes after every weekly test, answer-writing programs every day, colleges every semester, exam bodies every season, and platforms all the time.
+Book a demo See a real checked copy
+
+## Schools
+Give teachers their evenings back after every exam.
+Check unit tests, half-yearly and pre-board copies with AI. Teachers upload the class's scans, review the marks and release red-pen checked copies to students.
+Read more
+
+## Coaching institutes
+Weekly tests, checked before the next class.
+Weekly tests and test series checked overnight: bulk upload, automatic student matching, consistent marking and red-pen checked copies your students will read.
+Read more
+
+## UPSC & PSC answer writing
+Daily answer writing, with feedback on every answer.
+Run daily answer-writing practice at scale: AI checks handwritten mains answers against your rubric, leaves margin notes on the copy, and mentors review before release.
+Read more
+
+## Colleges & universities
+Internal assessments without the marking backlog.
+Internal assessments and semester scripts checked against a fixed rubric, with faculty review before release. Consistent marking across evaluators and departments.
+Read more
+
+## Exam bodies & large-scale tests
+A consistent first evaluation for every script.
+Add an AI first evaluation to large-scale written exams: one rubric per question, consistent annotations, human review before results, and per-page pricing.
+Read more
+
+## Edtech platforms & developers
+Handwritten answer checking, as an API.
+Add handwritten answer checking to your app through an API: create assessments, set criteria, send answer sheets by file or URL, and get marks plus a red-pen PDF back.
+Read more
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Evalezy vs Manual Checking, OSM and ChatGPT | Evalezy
+URL: https://evalezy.com/compare/
+
+- Home
+- / Compare
+Compare
+
+# How Evalezy compares
+Honest comparisons with the ways answer sheets are checked today, including where the other option is the better choice.
+Book a demo See a real checked copy
+
+## Evalezy vs checking by hand
+Where checking answer sheets by hand still wins, where AI copy checking with teacher review is better, and what changes for teachers, students and cost.
+Read the comparison
+
+## Evalezy vs on-screen marking (OSM)
+On-screen marking digitises the checking; evaluators still read every answer. Evalezy adds an AI first evaluation and a red-pen checked copy. How they compare.
+Read the comparison
+
+## Evalezy vs ChatGPT
+A general chatbot can read a photo of one answer. Checking a whole class needs one rubric for all, student matching, an annotated copy and teacher control. How they compare.
+Read the comparison
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# The Evalezy Blog: Assessment and AI Checking Guides | Evalezy
+URL: https://evalezy.com/blog/
+
+- Home
+- / Blog
+Blog
+
+# Guides for faster, fairer checking
+Practical writing for teachers, exam heads and edtech builders on checking answer sheets, marking schemes, scanning and using AI without losing control.
+Book a demo
+
+First posts coming soon.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Evalezy FAQ: AI Answer Sheet Checking Questions | Evalezy
+URL: https://evalezy.com/faq/
+
+- Home
+- / FAQ
+FAQ
+
+# Questions about AI answer sheet checking
+How Evalezy marks, what it can and cannot read, how students are matched, what teachers control, what it costs and how the API works.
+Book a demo See a real checked copy
+
+## How it checks
+What exactly does Evalezy do? +
+It checks handwritten answer sheets. You upload scanned or photographed copies as PDFs; Evalezy reads the handwriting, finds each answer, marks it against a marking scheme for that question, and returns marks per question plus the student's own copy checked in red pen: ticks, crosses, short notes, marks in the margin and the total circled on page one.
+
+How does it decide the marks? +
+Every question gets a marking scheme: a few criteria whose marks add up exactly to the question's maximum. Evalezy can draft the scheme for you, or you can write your own and add a model answer. The scheme is created once per question and reused for every student, so all copies are judged the same way. Marks are given in half-mark steps.
+
+How accurate is it? +
+We do not publish an accuracy percentage, because it depends on handwriting, scan quality, subject and how good the marking scheme is. What we do instead: every mark comes with the student's answer as read and the reason for the mark, low-confidence questions are flagged for review, unreadable copies are never guessed, and nothing reaches students until a teacher releases it. Try it on your own copies in a demo.
+
+Can students answer questions out of order? +
+Yes. Answers are matched to questions by their content, not by the number the student wrote. On longer copies Evalezy first works out which pages hold which answer; if a question then looks unattempted, it re-checks the whole copy before giving zero.
+
+Does it handle maths? +
+Yes for written working and equations. Pages are read by a vision model, and maths lines it is unsure of get a second read by a dedicated equation reader.
+
+What about diagrams, maps and graphs? +
+Grading works from what is written. Diagrams are judged by their labels and the written explanation, not as drawings. For questions that are mostly a diagram, keep a teacher on the final mark.
+
+Which languages does it support? +
+Evalezy is built and tested on English answer sheets. Students' names written in other scripts are read and transliterated for matching. For Hindi-medium or other-language answers, send us sample copies and we will tell you honestly how it does.
+
+Can it check typed answers from an online test? +
+Yes. Long-answer questions typed in an online test (essays, letters, emails) are graded on format, content, organisation and language, with word limits. A typed answer takes about 20 seconds.
+
+## Uploading copies
+Do I need a scanner? +
+No. Phone photos combined into a PDF work. The sample copy on this site is a phone photo of a spiral notebook. Pages are straightened, cleaned and contrast-boosted before reading.
+
+How many copies can I upload at once? +
+Up to 200 PDFs per upload, one file per student, up to 60 MB each. Copies up to 40 pages are read in full.
+
+How does it know which copy belongs to which student? +
+It reads the name, roll number and class or section written at the top of the first page (or the second page's header) and matches it to the students in that assessment. If there is no name, the match is weak, or two students are close, it does not guess: the copy waits for you to pick the student or skip it.
+
+What if a copy is unreadable? +
+If most pages are too blurred, dark or blank to read, the check fails with a clear message and you are not charged. Re-scan and upload it again.
+
+Can students upload their own answer sheets? +
+Yes. In an online test set to manual evaluation, students upload their answer sheet as a PDF. You can check every submitted copy with one click, or switch on auto-check so each copy is checked as soon as it is submitted.
+
+How long does it take? +
+Usually 1 to 8 minutes per copy, with several copies checked in parallel. The first results appear in about 10 minutes; 100 copies take roughly 2 to 3 hours. You get a bell alert and an email when a batch is done.
+
+## Teachers, students and results
+Can teachers change the AI's marks? +
+Yes, any mark on any question. The review screen shows the student's answer as read, the AI's feedback and the criteria breakdown. A mark a teacher edits is never overwritten, even if the copy is checked again.
+
+When do students see their results? +
+Only after a teacher presses Release Result. Until then students see "Results pending" and the marks are hidden on the server, not just in the app.
+
+How do students get the checked copy? +
+On release each student is emailed their checked copy as a PDF. If you have connected WhatsApp in Automations, you can send results there too.
+
+Can I stop a check that is running? +
+Yes. Stop it from the progress screen; it halts within seconds and a stopped check is not charged.
+
+## Pricing
+How much does it cost? +
+₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST.
+
+What is not charged? +
+Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
+
+Is a re-check charged? +
+Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept.
+
+Is the API priced differently? +
+No. The API costs the same per page as the dashboard.
+
+Do you offer volume pricing? +
+For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
+
+## API and data
+Is there an API? +
+Yes. Create assessments, set evaluation criteria, send answer sheets by file upload or URL, and get marks, feedback and the checked PDF from a status endpoint or a webhook. API access is enabled per account; request it on the demo page.
+
+Who can see the answer sheets? +
+Copies and marks live inside your institute's account. Students see their own results only after release. See the data and privacy page for details.
+
+Who is behind Evalezy? +
+Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by institutes in India. Evalezy is the AI checking engine of that platform, offered on its own.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Data, Privacy and Control in AI Copy Checking | Evalezy
+URL: https://evalezy.com/security/
+
+- Home
+- / Data & privacy
+Data & privacy
+
+# Your students' answer sheets, handled with care.
+Answer sheets carry names, roll numbers and children's handwriting. Here is how Evalezy treats them, what stays in your control, and what we do not claim.
+Book a demo
+
+## Who sees what, and when
+
+- Answer sheets, marks and checked copies live inside your institute's account.
+- Students see only their own result, and only after a teacher releases it. Before release the server refuses their marks, report and checked copy, not just the app.
+- Copies uploaded by teachers and copies uploaded by students are both held as pending until release.
+
+## The AI never has the last word
+
+- Every AI mark is a draft. A teacher reviews, edits and releases.
+- A mark a teacher edits is never overwritten by a later AI check.
+- A released result is not changed by a late AI update.
+- A copy is never matched to a student by guesswork; uncertain matches wait for a person.
+
+## When something goes wrong
+
+- Unreadable copies fail with a clear reason instead of getting invented marks.
+- If the checked PDF cannot be produced, the marks still arrive and can be reviewed.
+- Failed, stopped and unreadable checks are not charged.
+- Typed answers are treated as data, not instructions: an answer telling the AI to award full marks scored 0/5 in testing.
+
+## How the checking is done
+
+- Pages are processed by Evalezy's pipeline and by AI model and equation-reading providers it uses to read handwriting and mark answers.
+- Each step only receives what it needs: page images for reading, answer text and criteria for marking.
+- Usage is billed once per check, recorded against your institute.
+
+## What we do not claim
+Evalezy does not hold SOC 2 or ISO 27001 certification today, does not offer on-premise deployment, and does not publish an accuracy percentage. If your procurement needs any of these, tell us early and we will tell you plainly where we stand. Evalezy is operated by Vidyayatan Technologies LLP under the Vacademy privacy policy .
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# About Evalezy | Evalezy
+URL: https://evalezy.com/about/
+
+- Home
+- / About
+About
+
+# We built the red pen we wished teachers had.
+Evalezy comes from the team behind Vacademy, a learning and assessment platform for institutes in India. Online tests were already easy to check. Handwritten copies were not: they still went home in a teacher's bag every weekend.
+Book a demo
+
+## Why the copy, not the score
+Most automated grading stops at a number. But students do not learn from a number; they learn from seeing their own page marked: which line earned the tick, where the cross is, what the right answer was. Teachers know this, which is why they still check by hand. So we set out to return the copy itself, checked the way a careful teacher would check it.
+
+## Why the teacher stays in charge
+Marks matter to children and parents. An AI that publishes marks on its own is a liability. In Evalezy every mark is a draft, every deduction comes with a reason, unreadable copies are never guessed, and nothing reaches a student until a teacher releases it.
+
+## Why ₹1 a page
+Pricing should be something a school can work out on the back of an exam paper. Pages are what teachers count, so that is what we charge for, and nothing when a check fails.
+
+## The name
+Evalezy is evaluation, made easy. The logo is the loop a teacher draws around the total at the top of a copy, with a tick inside.
+
+Evalezy
+A Vacademy product · Vidyayatan Technologies LLP
+
+Vacademy The learning and assessment platform Evalezy is part of See a checked copy 7 real pages, checked by Evalezy
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Book an Evalezy Demo or Request API Access | Evalezy
+URL: https://evalezy.com/demo/
+
+- Home
+- / Book a demo
+Book a demo
+
+# See Evalezy check copies like yours.
+A 20-minute call. We upload a question paper and a few scanned answer sheets, and you watch them come back checked in red pen, matched to students and ready to review.
+
+- Bring a question paper and 3–4 scanned copies if you can
+- See the review screen and how release works
+- Get a cost estimate for your volume
+Developers: request API access
+Choose “API access” in the form and tell us what you are building and your expected monthly pages. API access is enabled per account.
+
+WhatsApp +91 99933 36616 hello@evalezy.com
+
+What are you looking for?Check copies API access Both
+Full name Work email Phone +91+1+44+971+65+61+977+880+94 Your role Choose onePrincipal / DirectorOwner / FounderExam controller / Academic headTeacher / FacultyDeveloper / ProductOtherSchool / institute Pages checked per month Not sure yetUnder 1,0001,000–5,0005,000–20,00020,000–1,00,000Over 1,00,000
+Anything we should know? (optional) Book my demo We usually reply within one working day. Your details stay with us.
+
+
+---
+
+# AI Answer Sheet Checking for Schools (CBSE, ICSE, State Boards) | Evalezy
+URL: https://evalezy.com/for/schools/
+
+- Home
+- / Who it's for
+- / Schools
+For schools
+
+# Give teachers their evenings back after every exam.
+Unit tests, half-yearlies, pre-boards. Scan the class's copies, upload them in one go, and let Evalezy do the first check, in red pen, against one marking scheme. Teachers review, adjust and release.
+Book a demo See a real checked copy
+
+Bulk AI check
+Each uploaded copy, who it was matched to, and where its check is.
+
+Running
+Copies
+200
+
+Checked
+186
+
+In progress
+3
+
+Need review
+2
+
+Failed
+1
+
+-
+- 2 copies could not be matched to a student. Pick the student to check them.
+File | Read from the sheet | Status |
+
+IX-B_scan_014.pdf
+7 pages
+| Aditi Sharma · Roll 14 | Checked · 38 / 80 |
+IX-B_scan_015.pdf
+8 pages
+| Kabir Singh · Roll 15 | 21 of 38 questions |
+IMG_2041.pdf
+6 pages
+| No name found on the sheet | No match Pick student Skip |
+
+## The problem today
+Copies pile up after every exam
+A teacher with four sections can carry 150+ copies home after one paper. Checking eats evenings and weekends, and results go out late.
+
+Marking drifts across checkers
+The same answer can get 2 marks from one teacher and 3 from another, or from the same teacher at copy 5 and copy 95.
+
+Feedback stops at a number
+Under time pressure, students get a score and a few ticks. They rarely see why they lost marks on a long answer.
+
+## How it fits your workflow
+
+- 1. Set the paper once
+Upload the question paper; it is read into questions with marks. Accept the AI-drafted marking scheme or type your own.
+
+- 2. Scan and upload the whole section
+Phone photos or scanner PDFs, one file per student, up to 200 at a time. Names and roll numbers are read from the top of each copy and matched to the section.
+
+- 3. Review on your own time
+Marks fill in question by question. Open any copy, read the extracted answer and feedback, change a mark if you disagree.
+
+- 4. Release when you are ready
+Students see nothing until you press Release Result. Each student gets the checked copy as a PDF by email.
+
+## What changes
+
+- Every copy marked against the same scheme, from the first to the last
+- A note on every answer that lost marks, in red pen on the copy itself
+- Teachers stay the final word: edited marks are never overwritten
+- Unreadable scans are flagged for a re-scan, not guessed and not charged
+
+Worked example
+four sections of 40, an 8-page half-yearly copy
+160 copies × 8 pages × ₹1
+₹1,280
+$12.80 outside India · excl. GST · failed copies free
+Work out your own
+
+Also used by
+Coaching institutes UPSC & PSC answer writing Colleges & universities Exam bodies & large-scale tests Edtech platforms & developers
+
+## Frequently asked questions
+Does it work for CBSE, ICSE and state-board papers? +
+Yes. Evalezy marks against the questions and marking scheme you give it, so the board does not matter. Upload your paper, check the drafted scheme against your board's marking guidelines, and edit any criterion before you run the check.
+
+Our teachers check in notebooks, not answer booklets. Will phone photos work? +
+Yes. The sample copy on this site is a phone photo of a spiral notebook. Pages are straightened and cleaned before reading. Very dark, blurred or cut-off photos fail with a clear message and are not charged, so you can re-scan them.
+
+Can students see marks before the teacher checks them? +
+No. AI marks are a draft. Students see "Results pending" until a teacher presses Release Result, and that rule is enforced on the server, not just hidden in the app.
+
+What does it cost a school? +
+₹1 per page checked. A section of 40 students writing an 8-page copy costs ₹320 for that paper. Failed and unreadable copies are free.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Copy Checking for Coaching Institutes and Test Series | Evalezy
+URL: https://evalezy.com/for/coaching-institutes/
+
+- Home
+- / Who it's for
+- / Coaching institutes
+For coaching institutes
+
+# Weekly tests, checked before the next class.
+Your faculty should be teaching, not checking 300 copies after every Sunday test. Upload the batch, let Evalezy check it against one scheme, and send students a checked copy they can actually learn from.
+Book a demo See a real checked copy
+
+Bulk AI check
+Each uploaded copy, who it was matched to, and where its check is.
+
+Running
+Copies
+200
+
+Checked
+186
+
+In progress
+3
+
+Need review
+2
+
+Failed
+1
+
+-
+- 2 copies could not be matched to a student. Pick the student to check them.
+File | Read from the sheet | Status |
+
+IX-B_scan_014.pdf
+7 pages
+| Aditi Sharma · Roll 14 | Checked · 38 / 80 |
+IX-B_scan_015.pdf
+8 pages
+| Kabir Singh · Roll 15 | 21 of 38 questions |
+IMG_2041.pdf
+6 pages
+| No name found on the sheet | No match Pick student Skip |
+
+## The problem today
+Checking caps how often you can test
+More practice tests mean better results, but every test adds hundreds of copies to someone's desk. So tests get cut, or checking gets rushed.
+
+Outsourced checkers are inconsistent
+Part-time evaluators mark differently, miss deadlines and need re-checking. Students notice when two friends get different marks for the same answer.
+
+Parents and students want proof
+A mark sheet alone does not show improvement. A checked copy with notes shows exactly where marks were lost.
+
+## How it fits your workflow
+
+- 1. Create the test once, reuse the scheme
+Upload the paper; the marking scheme is generated once per question and reused for every student in every batch.
+
+- 2. Upload all batches in one go
+Up to 200 copies per upload. Each copy is matched to a student by name or roll number; anything unclear waits for you to pick.
+
+- 3. Or let students upload
+If students submit photos of their answers in the online test, check every submitted copy with one click, or switch on auto-check on submit.
+
+- 4. Release with a checked copy
+Release results and each student gets their checked copy by email. Connect WhatsApp in Automations to send results there too.
+
+## What changes
+
+- Test more often without hiring more checkers
+- One marking standard across batches, centres and faculty
+- Checked copies students and parents can read line by line
+- ₹1 a page, so a 6-page test costs ₹6 a student
+
+Worked example
+a 300-student weekly test, 6 pages a copy
+300 copies × 6 pages × ₹1
+₹1,800
+$18.00 outside India · excl. GST · failed copies free
+Work out your own
+
+Also used by
+Schools UPSC & PSC answer writing Colleges & universities Exam bodies & large-scale tests Edtech platforms & developers
+
+## Frequently asked questions
+Can we use our own model answers? +
+Yes. Add a model answer per question, or replace the drafted marking scheme entirely. A stored model answer is used ahead of anything the AI generates.
+
+We run the same test across several centres. Is the marking consistent? +
+Yes, by design. The marking scheme for each question is created once and reused for every copy, at every centre, so the same answer is judged against the same criteria.
+
+How fast is it? +
+A copy usually takes 1 to 8 minutes and several copies are checked in parallel. The first results appear in about 10 minutes and 100 copies take roughly 2 to 3 hours. Upload in the evening and review in the morning.
+
+Can students upload their own answer photos? +
+Yes. In an online test set to manual evaluation, students upload their answer sheet as a PDF. You can check all submitted copies with one click, or have each one checked automatically as it is submitted.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Evaluation for UPSC Mains and State PSC Answer Writing | Evalezy
+URL: https://evalezy.com/for/upsc-answer-writing/
+
+- Home
+- / Who it's for
+- / UPSC & PSC answer writing
+For UPSC & state PSC programs
+
+# Daily answer writing, with feedback on every answer.
+Answer-writing programs live or die on feedback turnaround. Evalezy does the first evaluation of each handwritten answer against your rubric, writes the margin notes, and leaves the final word to your mentors.
+Book a demo See a real checked copy
+
+Bulk AI check
+Each uploaded copy, who it was matched to, and where its check is.
+
+Running
+Copies
+200
+
+Checked
+186
+
+In progress
+3
+
+Need review
+2
+
+Failed
+1
+
+-
+- 2 copies could not be matched to a student. Pick the student to check them.
+File | Read from the sheet | Status |
+
+IX-B_scan_014.pdf
+7 pages
+| Aditi Sharma · Roll 14 | Checked · 38 / 80 |
+IX-B_scan_015.pdf
+8 pages
+| Kabir Singh · Roll 15 | 21 of 38 questions |
+IMG_2041.pdf
+6 pages
+| No name found on the sheet | No match Pick student Skip |
+
+## The problem today
+Mentor time is the bottleneck
+Good evaluators are scarce and expensive. When enrolments grow, turnaround slips from two days to two weeks.
+
+Feedback quality varies by evaluator
+Some mentors write detailed notes, some write "good". Aspirants compare copies and notice.
+
+Aspirants need the why, not just the score
+"6/15" does not help. "Introduction missing context; no examples for the second dimension" does.
+
+## How it fits your workflow
+
+- 1. Put your rubric in
+Write the criteria you already teach: introduction, dimensions covered, examples, conclusion. Or let Evalezy draft them and edit.
+
+- 2. Aspirants upload their answers
+Scanned or photographed answer sheets, uploaded by the aspirant or in bulk by your team.
+
+- 3. AI does the first evaluation
+Each answer is read and marked against your criteria, in half-mark steps, with a note on what was missing written on the copy.
+
+- 4. Mentors review and release
+Mentors skim the AI's marks and notes, adjust where they disagree and release. Their edits are never overwritten.
+
+## What changes
+
+- Feedback in hours, not weeks, even as batches grow
+- Every answer judged on the same criteria
+- Margin notes written on the aspirant's own copy
+- Mentors spend time on judgement, not on reading every line
+
+Worked example
+500 aspirants writing a 4-page daily answer
+500 copies × 4 pages × ₹1
+₹2,000
+$20.00 outside India · excl. GST · failed copies free
+Work out your own
+
+Also used by
+Schools Coaching institutes Colleges & universities Exam bodies & large-scale tests Edtech platforms & developers
+
+## Frequently asked questions
+Can the AI judge a GS mains answer well? +
+It judges the answer against the criteria you set: what must be covered, how marks split, what a strong answer includes. That is why we ask you to write or edit the rubric. Mentors should review the marks before release; they can change any mark in a few clicks.
+
+Does it handle Hindi-medium answers? +
+Evalezy is built and tested on English answer sheets today. If you run a Hindi-medium program, send us a few sample copies and we will tell you honestly how it does.
+
+Can we keep our own evaluators in the loop? +
+Yes. Nothing reaches the aspirant until someone on your team presses Release Result. Any mark a mentor edits is kept, even if the copy is checked again.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Answer Script Evaluation for Colleges and Universities | Evalezy
+URL: https://evalezy.com/for/colleges-universities/
+
+- Home
+- / Who it's for
+- / Colleges & universities
+For colleges & universities
+
+# Internal assessments without the marking backlog.
+Mid-terms, internals and assignments arrive in hundreds of scripts per course. Evalezy does the first evaluation against your rubric and returns annotated scripts; faculty review, moderate and release.
+Book a demo See a real checked copy
+
+Aditi Sharma · IX-B · Roll 14
+Social Science · Half-Yearly Mock 4
+
+38/80
+38 of 38 questions
+
+Q30 · Factors affecting climate
+0.5 / 3
+Student's answer, as read
+1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind
+Feedback
+Only weather elements listed; no factors of climate explained.
+Edit marks Criteria breakdown
+
+Q21 · Define social science
+Edited 1.5 / 2
+Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+
+Students see nothing until you release Release result
+
+## The problem today
+Large classes, few evaluators
+A 240-student course with two faculty members means weeks of evaluation for every internal.
+
+Moderation is slow
+Re-checking a sample of scripts for consistency is the first thing to go when deadlines bite.
+
+Students dispute marks
+Without written feedback on the script, re-evaluation requests are hard to answer.
+
+## How it fits your workflow
+
+- 1. Fix the rubric for the course
+Upload the paper and set the criteria per question. The same rubric is used for every script.
+
+- 2. Bulk upload scripts
+Up to 200 scripts per upload, matched to enrolled students by name or roll number.
+
+- 3. Faculty review
+Per question: marks, the student's answer as read, feedback and the criteria breakdown. Edit any mark.
+
+- 4. Release annotated scripts
+Students receive their checked script as a PDF, with notes explaining each deduction.
+
+## What changes
+
+- One rubric applied identically across every script
+- Written reasons on the script for every deduction
+- Faculty time spent on moderation, not first reading
+- Unreadable scripts flagged, never guessed
+
+Worked example
+a 240-student course, 10-page scripts
+240 copies × 10 pages × ₹1
+₹2,400
+$24.00 outside India · excl. GST · failed copies free
+Work out your own
+
+Also used by
+Schools Coaching institutes UPSC & PSC answer writing Exam bodies & large-scale tests Edtech platforms & developers
+
+## Frequently asked questions
+Does it handle equations and numerical working? +
+Yes for written maths and working: pages are read by a vision model, and unclear maths lines get a second read by a dedicated equation reader. Diagrams and graphs are judged by their labels and written explanation, not as drawings, so review those questions yourself.
+
+How long can a script be? +
+Scripts up to 40 pages are read in full. Each upload accepts files up to 60 MB.
+
+Can we export marks? +
+Marks are stored per question in the assessment and appear in its reports alongside the checked script. Talk to us about the exact export you need for your ERP.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI-Assisted Evaluation for Exam Bodies and Large-Scale Tests | Evalezy
+URL: https://evalezy.com/for/exam-boards/
+
+- Home
+- / Who it's for
+- / Exam bodies & large-scale tests
+For exam bodies & assessment providers
+
+# A consistent first evaluation for every script.
+When tens of thousands of scripts go to hundreds of evaluators, consistency is the hard part. Evalezy applies one rubric per question to every script and annotates it, so your evaluators review rather than start from scratch.
+Book a demo See a real checked copy
+
+Aditi Sharma · IX-B · Roll 14
+Social Science · Half-Yearly Mock 4
+
+38/80
+38 of 38 questions
+
+Q30 · Factors affecting climate
+0.5 / 3
+Student's answer, as read
+1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind
+Feedback
+Only weather elements listed; no factors of climate explained.
+Edit marks Criteria breakdown
+
+Q21 · Define social science
+Edited 1.5 / 2
+Teacher changed 1 → 1.5. Kept even if the copy is checked again.
+
+Students see nothing until you release Release result
+
+## The problem today
+Evaluator variance
+Different evaluators read the same answer differently, and the variance shows up in re-evaluation requests.
+
+Tight result timelines
+Results are promised by a date; evaluation capacity is fixed.
+
+Audit trail
+When a mark is challenged you need to show what was read, which criteria applied and who changed what.
+
+## How it fits your workflow
+
+- 1. Rubric per question
+Your marking scheme becomes criteria that add up to each question's marks.
+
+- 2. AI first evaluation
+Each script is read, located question by question, and marked in half-mark steps against the criteria.
+
+- 3. Human review
+Evaluators see the extracted answer, the AI's marks and reasons, and change marks where they disagree. Their edits are recorded and never overwritten.
+
+- 4. Release
+Results are released only when your team says so.
+
+## What changes
+
+- Identical criteria applied to every script
+- Per-question record: what was read, the marks, the reasons, who edited
+- Unreadable scripts routed back, not guessed
+- Per-page pricing that scales with volume
+
+Worked example
+10,000 candidates, 12-page scripts
+10,000 copies × 12 pages × ₹1
+₹1,20,000
+$1,200.00 outside India · excl. GST · failed copies free
+Work out your own
+
+Also used by
+Schools Coaching institutes UPSC & PSC answer writing Colleges & universities Edtech platforms & developers
+
+## Frequently asked questions
+Can Evalezy handle our volume? +
+Current shared capacity checks about 100 copies in 2 to 3 hours. For large-scale exams we plan capacity with you before the exam window; talk to us with your script count and dates.
+
+Do you replace human evaluators? +
+No. Evalezy does the first evaluation and annotates the script; your evaluators review and own the final mark. Nothing is released without a person pressing release.
+
+Is there an API? +
+Yes. Large-scale users usually integrate through the evaluation API: send scripts by URL, receive marks, reasons and the annotated PDF. See the API page.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Handwritten Answer Evaluation API for Edtech Platforms | Evalezy
+URL: https://evalezy.com/for/edtech-platforms/
+
+- Home
+- / Who it's for
+- / Edtech platforms & developers
+For edtech platforms & developers
+
+# Handwritten answer checking, as an API.
+Your learners write on paper; your product lives online. Send Evalezy an answer sheet by file or URL and get back per-question marks, feedback and a checked copy in red pen, ready to show in your app.
+Book a demo See a real checked copy
+
+GET /evaluations/{id} Copy
+{
+"id": "ev_3kP9xW",
+"status": "completed",
+"pages": 7,
+"total": { "awarded": 38, "max": 80 },
+"questions": [
+{
+"number": "4",
+"awarded": 0,
+"max": 1,
+"student_answer": "Temperature",
+"feedback": "Wrong answer. Correct: latitude (distance from the equator)."
+},
+{
+"number": "30",
+"awarded": 0.5,
+"max": 3,
+"student_answer": "1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind",
+"feedback": "Only weather elements listed; no factors of climate explained.",
+"criteria": [
+{ "name": "Names valid factors of climate", "awarded": 0.5, "max": 1.5 },
+{ "name": "Explains how each factor affects climate", "awarded": 0, "max": 1 },
+{ "name": "Uses a correct example", "awarded": 0, "max": 0.5 }
+]
+}
+],
+"checked_copy_url": "https://files.evalezy.com/ev_3kP9xW/checked-copy.pdf",
+"billing": { "pages": 7, "amount": 7, "currency": "INR" }
+}
+
+## The problem today
+OCR alone fails on handwriting
+Printed-text OCR cannot read student handwriting, and a grader fed garbage text invents answers.
+
+A score is not a product
+Learners want to see their own page marked up, not a JSON blob turned into a table.
+
+Building it in-house is a project
+Page reading, answer location, rubrics, consistency, annotation and retries are each a project of their own.
+
+## How it fits your workflow
+
+- 1. Create an assessment
+Send questions and marks, or a question paper to read into questions.
+
+- 2. Set evaluation criteria
+Send your rubric per question, or ask for a generated one and edit it.
+
+- 3. Send answer sheets
+Upload the PDF or pass a URL, with your own student id and an optional webhook.
+
+- 4. Get results
+Poll the status endpoint or receive a webhook: marks per question, feedback, the student's answer as read, and a link to the checked PDF.
+
+## What changes
+
+- Per-question marks, feedback and criteria in JSON
+- A red-pen checked PDF to show learners
+- Failed and unreadable sheets are not billed
+- ₹1 / $0.01 per page, same as the dashboard
+
+Worked example
+20,000 answer sheets a month, 5 pages each
+20,000 copies × 5 pages × ₹1
+₹1,00,000
+$1,000.00 outside India · excl. GST · failed copies free
+Work out your own
+
+Also used by
+Schools Coaching institutes UPSC & PSC answer writing Colleges & universities Exam bodies & large-scale tests
+
+## Frequently asked questions
+How do I get API keys? +
+API access is enabled per account. Request access on the demo page with your expected monthly volume and we will set you up.
+
+Is it synchronous? +
+No. Checking a copy takes minutes, so evaluations are asynchronous: you get an id straight away, then poll the status endpoint or receive a webhook when the check completes.
+
+What do I get back? +
+Status, total marks, and for each question: marks awarded, maximum, the student's answer as read, feedback and the criteria breakdown, plus a URL to the checked copy PDF.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Copy Checking vs Manual Checking: An Honest Comparison | Evalezy
+URL: https://evalezy.com/compare/manual-checking/
+
+- Home
+- / Compare
+- / Evalezy vs checking by hand
+Compare
+
+# Evalezy vs checking copies by hand
+Teachers are the best judges of an answer. They are also tired by copy 80. Here is what changes when AI does the first check and the teacher does the final one.
+Book a demo See a real checked copy
+
+| Evalezy | Checking by hand |
+
+Who decides the final mark | The teacher. AI marks are a draft until released | The teacher |
+Time for 100 copies | About 2–3 hours of machine time, then a review | About 10 hours at 6 minutes a copy |
+Consistency across copies | One scheme per question, applied to every copy | Drifts with fatigue and between checkers |
+Feedback on the copy | A tick, cross or note on every answer, with the correct answer where it was wrong | Depends on the teacher's time |
+Half marks | 0.5-mark steps against criteria | Yes |
+Diagrams and drawings | Judged by labels and written explanation only | Fully judged |
+Cost | ₹1 per page checked | Teacher time, or ₹/copy to outside checkers |
+Unreadable handwriting | Flagged for review, never guessed, not charged | Teacher deciphers it |
+
+## Choose checking by hand when
+
+- The paper is mostly diagrams, maps or drawings
+- It is a small class and the teacher has the time
+- The answers are in a language Evalezy has not been tested on yet
+
+## Choose Evalezy when
+
+- Copies arrive in the hundreds after every test
+- Several teachers or centres mark the same paper
+- Students need written feedback, not just a score
+- You want to test more often without adding checking load
+
+## It is not either-or
+Evalezy is designed to keep the teacher in charge. The AI does the reading and the first marking; the teacher reviews, edits any mark and decides when results go out. A teacher's edit is never overwritten by a later AI run.
+
+## Where the time goes
+By hand, most of the time goes into reading every line of every copy. With Evalezy, the reading is done for you: the teacher sees each answer as read, the marks, the reasons and the criteria, and spends their time on the answers where judgement matters.
+
+## What students notice
+A checked copy from Evalezy looks like a teacher checked it: red ticks, crosses with the correct answer, a note where marks were lost, marks per question and the total circled on page one. Students get more written feedback than a rushed manual check usually allows.
+
+What most AI graders returnQ | Score | Remark |
+
+Q4 | 0 / 1 | Incorrect |
+Q5 | 0 / 1 | Incorrect |
+Q6 | 0 / 1 | Incorrect |
+Q21 | 1.5 / 2 | Partially correct |
+Q30 | 0.5 / 3 | Partially correct |
+
+A number per question. The student never sees where on the page they went wrong.
+What Evalezy returns the copy itself
+
+Other comparisons
+Evalezy vs on-screen marking (OSM) Evalezy vs ChatGPT
+
+## Frequently asked questions
+Will teachers trust AI marks? +
+They do not have to. Every mark is a draft that a teacher can change, and the reasons are written next to each answer, so checking the AI's work is quick. Most teachers start by reviewing every copy, then focus on the ones flagged for review.
+
+Is AI checking fair to students? +
+It applies the same criteria to every copy, which removes the drift that comes with fatigue and multiple checkers. Fairness still needs a good marking scheme, which is why you can edit every criterion before you run the check.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Evalezy vs On-Screen Marking (OSM) Systems | Evalezy
+URL: https://evalezy.com/compare/on-screen-marking/
+
+- Home
+- / Compare
+- / Evalezy vs on-screen marking (OSM)
+Compare
+
+# Evalezy vs on-screen marking (OSM)
+On-screen marking moved checking from paper to a screen. Evaluators still read and mark every answer. Evalezy reads and marks first, so evaluators review instead.
+Book a demo See a real checked copy
+
+| Evalezy | Typical on-screen marking |
+
+Who reads the answers first | AI, against a rubric per question | A human evaluator, on screen |
+Evaluator effort per script | Review the AI's marks and reasons; change any mark | Read and mark every answer |
+Consistency | Same criteria applied to every script | Depends on each evaluator, plus moderation |
+Output for students | The script itself, annotated in red pen | Usually marks only |
+Student matching | Names and roll numbers read from the script and matched automatically | Usually barcodes or manual entry |
+Pricing | ₹1 per page | Varies; often licences or per-script fees, plus evaluator time |
+
+## Choose typical on-screen marking when
+
+- You need a mature, fully human evaluation workflow with barcoded booklets and evaluator panels
+- Your regulations require every mark to be entered by a human evaluator
+
+## Choose Evalezy when
+
+- You want evaluators to review rather than read everything from scratch
+- You want students to receive an annotated copy, not just marks
+- You run frequent internal tests where an OSM setup is too heavy
+
+## The difference in one line
+OSM is a better desk for a human checker. Evalezy is a first checker. They can work together: Evalezy's marks, reasons and annotated copy give a human evaluator a head start, and the human's edits are kept.
+
+## Setup
+Evalezy does not need barcoded booklets. Students write on any paper; copies are scanned or photographed and the name and roll number are read from the top of the first page.
+
+What most AI graders returnQ | Score | Remark |
+
+Q4 | 0 / 1 | Incorrect |
+Q5 | 0 / 1 | Incorrect |
+Q6 | 0 / 1 | Incorrect |
+Q21 | 1.5 / 2 | Partially correct |
+Q30 | 0.5 / 3 | Partially correct |
+
+A number per question. The student never sees where on the page they went wrong.
+What Evalezy returns the copy itself
+
+Other comparisons
+Evalezy vs checking by hand Evalezy vs ChatGPT
+
+## Frequently asked questions
+Can Evalezy work with our existing evaluation process? +
+Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If you need marks in another system, the API returns them per question.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Can ChatGPT Check Answer Sheets? Evalezy vs a General Chatbot | Evalezy
+URL: https://evalezy.com/compare/chatgpt/
+
+- Home
+- / Compare
+- / Evalezy vs ChatGPT
+Compare
+
+# Evalezy vs pasting answer sheets into ChatGPT
+A general-purpose chatbot can read a photo of an answer and suggest a mark. Checking a class of 40 copies is a different job. Here is what is missing, and what Evalezy adds.
+Book a demo See a real checked copy
+
+| Evalezy | A general chatbot |
+
+One marking scheme for every student | Generated once per question, reused for every copy | Depends on each conversation; easy to drift |
+Bulk | Up to 200 copies per upload, checked in the background | One upload at a time, by hand |
+Matching copies to students | Reads name and roll number, matches to your list, never guesses | Manual |
+Output | The student's copy checked in red pen, plus marks per question | Text in a chat window |
+Marks add up | Criteria rescaled to sum exactly to the question's marks; 0.5 steps | Not enforced |
+Unreadable pages | Fails clearly, never guesses, not charged | May guess what was written |
+Release to students | Teacher review, then release by email (and WhatsApp via automations) | Copy-paste |
+Student data | Stays inside your institute's account | Pasted into a personal chat |
+
+## Choose a general chatbot when
+
+- You want a quick second opinion on one answer
+- You are drafting a model answer or a marking scheme to edit
+
+## Choose Evalezy when
+
+- You are checking a class, a batch or an exam
+- You want students to receive their own copy checked
+- Marks must be consistent, add up and be reviewable
+
+## Why one rubric matters
+If each copy is checked in a fresh conversation, the standard can move from copy to copy. Evalezy creates the marking scheme once per question and uses it for every student, so the 1st and the 140th copy are judged the same way.
+
+## Why the copy matters
+Students learn from seeing their own page marked: which line earned the tick, where the cross is, what the correct answer was. Evalezy writes that back onto the copy in a handwriting-style red pen, with the total circled on page one.
+
+What most AI graders returnQ | Score | Remark |
+
+Q4 | 0 / 1 | Incorrect |
+Q5 | 0 / 1 | Incorrect |
+Q6 | 0 / 1 | Incorrect |
+Q21 | 1.5 / 2 | Partially correct |
+Q30 | 0.5 / 3 | Partially correct |
+
+A number per question. The student never sees where on the page they went wrong.
+What Evalezy returns the copy itself
+
+Other comparisons
+Evalezy vs checking by hand Evalezy vs on-screen marking (OSM)
+
+## Frequently asked questions
+Which AI model does Evalezy use? +
+Evalezy runs a pipeline rather than one prompt: handwriting reading, answer location, an equation reader for unclear maths lines, per-question grading against a rubric, checks that marks add up, and annotation. The default models are chosen for handwriting reading and cost; the pipeline matters more than the model.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy

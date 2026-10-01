@@ -1,0 +1,46 @@
+# Evalezy
+
+> Evalezy is AI checking for handwritten answer sheets. Teachers upload scanned or phone-photographed answer copies (PDF, up to 200 at a time); Evalezy reads each student's name and roll number and matches the copy to the right student, marks every answer against one marking scheme per question, and returns the student's own copy checked in a handwriting-style red pen: ticks, crosses with the correct answer, short notes, marks per question and the total circled on page one. AI marks are a draft: a teacher reviews, edits and releases results. Price: ₹1 per page checked in India, $0.01 per page elsewhere; failed, stopped and unreadable copies are free. There is also an evaluation API at the same price. Evalezy is a Vacademy product by Vidyayatan Technologies LLP.
+
+Key facts:
+- Input: PDFs of handwritten answer sheets, one per student; phone photos work. Up to 200 files per upload, 60 MB each; copies up to 40 pages are read in full.
+- Output: marks per question (half-mark steps), the student's answer as read, feedback, a criteria breakdown, and a red-pen checked copy PDF.
+- Marking scheme: drafted by AI per question (criteria add up to the marks) or written by the teacher, with optional model answers; one scheme reused for every student.
+- Student matching: name, roll number and class read from the top of page one; uncertain matches wait for a teacher, never guessed. Reading names is free.
+- Safety: unreadable copies fail with a clear reason and are not charged; teacher edits are never overwritten; students see nothing until release.
+- Timing: usually 1–8 minutes a copy, several in parallel; first results in about 10 minutes; about 2–3 hours for 100 copies.
+- Limits: diagrams are judged by labels and written explanation only; built and tested on English answer sheets.
+- Also grades typed long answers (essays, letters, emails) from online tests.
+- No published accuracy percentage; no SOC 2/ISO certification claimed.
+
+## Product
+- [How it works](https://evalezy.com/how-it-works/): every step from question paper to released results
+- [Red-pen checked copy](https://evalezy.com/checked-copy/): what the checked copy looks like and why
+- [Bulk upload & student matching](https://evalezy.com/bulk-upload/): 200 copies at once, matched by name and roll number
+- [Question paper import](https://evalezy.com/question-paper-import/): turn a question paper PDF into gradable questions
+- [AI marking scheme](https://evalezy.com/marking-scheme/): criteria per question, drafted or your own
+- [Teacher review & release](https://evalezy.com/teacher-review/): review, edit and release; students see nothing before
+- [Typed essays & long answers](https://evalezy.com/typed-answers/): online long answers graded in about 20 seconds
+- [Evaluation API](https://evalezy.com/api/): assessments, criteria, answer sheets by file or URL, results and checked PDF
+- [Pricing](https://evalezy.com/pricing/): ₹1 / $0.01 per page checked
+- [Sample checked copy](https://evalezy.com/sample/): a real 7-page Class IX answer copy checked by Evalezy (38/80)
+
+## Who it's for
+- [Schools](https://evalezy.com/for/schools/)
+- [Coaching institutes](https://evalezy.com/for/coaching-institutes/)
+- [UPSC & PSC answer writing](https://evalezy.com/for/upsc-answer-writing/)
+- [Colleges & universities](https://evalezy.com/for/colleges-universities/)
+- [Exam bodies & large-scale tests](https://evalezy.com/for/exam-boards/)
+- [Edtech platforms & developers](https://evalezy.com/for/edtech-platforms/)
+
+## Compare
+- [Evalezy vs checking by hand](https://evalezy.com/compare/manual-checking/)
+- [Evalezy vs on-screen marking (OSM)](https://evalezy.com/compare/on-screen-marking/)
+- [Evalezy vs ChatGPT](https://evalezy.com/compare/chatgpt/)
+
+## More
+- [FAQ](https://evalezy.com/faq/)
+- [Data & privacy](https://evalezy.com/security/)
+- [Blog](https://evalezy.com/blog/)
+- [Book a demo or request API access](https://evalezy.com/demo/)
+- [Full site text](https://evalezy.com/llms-full.txt)
