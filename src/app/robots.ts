@@ -34,6 +34,5 @@ export default function robots(): MetadataRoute.Robots {
       ...AI_BOTS.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
     sitemap: `${SITE}/sitemap.xml`,
-    host: SITE,
   };
 }

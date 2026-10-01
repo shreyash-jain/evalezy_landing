@@ -172,7 +172,7 @@ export function BulkCheckPanel({ compact = false }: { compact?: boolean }) {
             {(compact ? BULK_ROWS.slice(0, 3) : BULK_ROWS).map((r) => (
               <tr key={r.file} className={`border-b border-line/70 last:border-0 ${r.state === "nomatch" || r.state === "ambiguous" ? "bg-warn-50/50" : ""}`}>
                 <td className="py-2.5 pr-3">
-                  <p className="flex items-center gap-1.5 font-semibold text-ink"><FileText className="h-3.5 w-3.5 text-slate-400" /> {r.file}</p>
+                  <p className="flex items-center gap-1.5 whitespace-nowrap font-semibold text-ink"><FileText className="h-3.5 w-3.5 shrink-0 text-slate-400" /> {r.file}</p>
                   <p className="text-slate-400">{r.pages} pages</p>
                 </td>
                 <td className={`py-2.5 pr-3 ${r.state === "nomatch" ? "text-slate-400" : "text-slate-600"}`}>

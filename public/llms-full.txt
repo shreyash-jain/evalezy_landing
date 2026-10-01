@@ -398,6 +398,14 @@ Students get their checked copy by email. Until then they see "Results pending".
 
 Teacher review in detail
 
+## From the blog
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+AI checking
+AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -594,6 +602,12 @@ Yes. In an online test set to manual evaluation, students upload a PDF of their 
 How will I know when it's done? +
 The batch settles as completed or needing review, and you get a bell alert and, if you ticked the box, an email with the counts.
 
+## From the blog
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Guides
+How to Check 200 Answer Sheets Faster Without Losing Fairness
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -676,6 +690,10 @@ Yes. A test that only has an "upload your answer sheet" placeholder cannot be AI
 
 Do I also need a marking scheme? +
 Evalezy drafts one per question automatically the first time a copy is checked, so you can start without one. Most teachers review the draft or add model answers for the long questions first.
+
+## From the blog
+Assessment
+How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -775,6 +793,12 @@ No. A model answer is a reference, not wording the student must match. Answers t
 When is the scheme created? +
 Once per question, the first time a copy of that assessment is checked, and then reused. Two copies starting at the same moment still get one scheme, not two.
 
+## From the blog
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Assessment
+How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -873,6 +897,14 @@ Yes, through Automations: use the "Assessment Result Released" trigger with a Wh
 
 What does "Need review" mean? +
 A copy or question the system was less sure about: a low-confidence read, a copy that could not be matched to a student, or a question still waiting. Start your review there.
+
+## From the blog
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Guides
+How to Check 200 Answer Sheets Faster Without Losing Fairness
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1146,7 +1178,11 @@ Can I get the checked PDF? +
 Yes. A completed evaluation includes a URL to the checked copy with ticks, crosses, notes, marks and the circled total.
 
 Do teachers still review API results? +
-That is up to your product. The API returns the AI's marks with reasons and confidence signals; most platforms show them to a teacher or reviewer before learners see them.
+That is up to your product. The API returns the AI's marks with the reason for each; most platforms show them to a teacher or reviewer before learners see them.
+
+## From the blog
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1166,6 +1202,11 @@ Pricing
 # One price: ₹1 a page checked.
 $0.01 a page outside India. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not.
 Book a demo
+
+The sample copy on this site
+7 pages × ₹1
+₹7
+38 questions marked, every page annotated. $0.07 outside India.
 
 Dashboard
 ₹1 / page
@@ -1405,7 +1446,41 @@ Blog
 Practical writing for teachers, exam heads and edtech builders on checking answer sheets, marking schemes, scanning and using AI without losing control.
 Book a demo
 
-First posts coming soon.
+Assessment
+
+## How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
+How to write a marking scheme for subjective answers: rules for criteria and half marks, with worked 2, 3 and 5-mark examples in the CBSE value-point style.
+1 Oct 2026 · 8 min read
+AI checking
+
+## AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
+How AI answer sheet evaluation reads handwriting and marks against a scheme, plus 12 questions to ask any AI copy checking vendor before you buy.
+1 Oct 2026 · 8 min read
+Guides
+
+## How to Check 200 Answer Sheets Faster Without Losing Fairness
+Practical copy checking tips for teachers: mark question by question, fix the scheme first, work in passes, moderate a sample and use feedback codes.
+1 Oct 2026 · 9 min read
+Assessment
+
+## On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+How on-screen marking works, how CBSE and universities in India use it, what it does not fix, and how an AI first evaluation with human review fits in.
+1 Oct 2026 · 9 min read
+Guides
+
+## How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Scan answer sheets with a phone: which apps make PDFs, light and framing, spiral notebooks, one PDF per student, file names and a pre-upload checklist.
+1 Oct 2026 · 9 min read
+For developers
+
+## Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API checks answer sheets by URL or file.
+1 Oct 2026 · 8 min read
+Guides
+
+## UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+How to run UPSC Mains answer writing evaluation at scale: a GS rubric, mentor workflow, daily cadence, and where an AI first evaluation helps or mentors judge.
+1 Oct 2026 · 9 min read
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1508,6 +1583,10 @@ Copies and marks live inside your institute's account. Students see their own re
 
 Who is behind Evalezy? +
 Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by institutes in India. Evalezy is the AI checking engine of that platform, offered on its own.
+
+## From the blog
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1709,7 +1788,7 @@ four sections of 40, an 8-page half-yearly copy
 $12.80 outside India · excl. GST · failed copies free
 Work out your own
 
-Also used by
+Evalezy is also for
 Coaching institutes UPSC & PSC answer writing Colleges & universities Exam bodies & large-scale tests Edtech platforms & developers
 
 ## Frequently asked questions
@@ -1724,6 +1803,14 @@ No. AI marks are a draft. Students see "Results pending" until a teacher presses
 
 What does it cost a school? +
 ₹1 per page checked. A section of 40 students writing an 8-page copy costs ₹320 for that paper. Failed and unreadable copies are free.
+
+## From the blog
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Guides
+How to Check 200 Answer Sheets Faster Without Losing Fairness
+AI checking
+AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1816,7 +1903,7 @@ a 300-student weekly test, 6 pages a copy
 $18.00 outside India · excl. GST · failed copies free
 Work out your own
 
-Also used by
+Evalezy is also for
 Schools UPSC & PSC answer writing Colleges & universities Exam bodies & large-scale tests Edtech platforms & developers
 
 ## Frequently asked questions
@@ -1831,6 +1918,12 @@ A copy usually takes 1 to 8 minutes and several copies are checked in parallel. 
 
 Can students upload their own answer photos? +
 Yes. In an online test set to manual evaluation, students upload their answer sheet as a PDF. You can check all submitted copies with one click, or have each one checked automatically as it is submitted.
+
+## From the blog
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Assessment
+How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1923,7 +2016,7 @@ Worked example
 $20.00 outside India · excl. GST · failed copies free
 Work out your own
 
-Also used by
+Evalezy is also for
 Schools Coaching institutes Colleges & universities Exam bodies & large-scale tests Edtech platforms & developers
 
 ## Frequently asked questions
@@ -1935,6 +2028,10 @@ Evalezy is built and tested on English answer sheets today. If you run a Hindi-m
 
 Can we keep our own evaluators in the loop? +
 Yes. Nothing reaches the aspirant until someone on your team presses Release Result. Any mark a mentor edits is kept, even if the copy is checked again.
+
+## From the blog
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2014,7 +2111,7 @@ a 240-student course, 10-page scripts
 $24.00 outside India · excl. GST · failed copies free
 Work out your own
 
-Also used by
+Evalezy is also for
 Schools Coaching institutes UPSC & PSC answer writing Exam bodies & large-scale tests Edtech platforms & developers
 
 ## Frequently asked questions
@@ -2026,6 +2123,10 @@ Scripts up to 40 pages are read in full. Each upload accepts files up to 60 MB.
 
 Can we export marks? +
 Marks are stored per question in the assessment and appear in its reports alongside the checked script. Talk to us about the exact export you need for your ERP.
+
+## From the blog
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2105,7 +2206,7 @@ Worked example
 $1,200.00 outside India · excl. GST · failed copies free
 Work out your own
 
-Also used by
+Evalezy is also for
 Schools Coaching institutes UPSC & PSC answer writing Colleges & universities Edtech platforms & developers
 
 ## Frequently asked questions
@@ -2117,6 +2218,10 @@ No. Evalezy does the first evaluation and annotates the script; your evaluators 
 
 Is there an API? +
 Yes. Large-scale users usually integrate through the evaluation API: send scripts by URL, receive marks, reasons and the annotated PDF. See the API page.
+
+## From the blog
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2207,7 +2312,7 @@ Worked example
 $1,000.00 outside India · excl. GST · failed copies free
 Work out your own
 
-Also used by
+Evalezy is also for
 Schools Coaching institutes UPSC & PSC answer writing Colleges & universities Exam bodies & large-scale tests
 
 ## Frequently asked questions
@@ -2219,6 +2324,10 @@ No. Checking a copy takes minutes, so evaluations are asynchronous: you get an i
 
 What do I get back? +
 Status, total marks, and for each question: marks awarded, maximum, the student's answer as read, feedback and the criteria breakdown, plus a URL to the checked copy PDF.
+
+## From the blog
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2294,6 +2403,10 @@ They do not have to. Every mark is a draft that a teacher can change, and the re
 Is AI checking fair to students? +
 It applies the same criteria to every copy, which removes the drift that comes with fatigue and multiple checkers. Fairness still needs a good marking scheme, which is why you can edit every criterion before you run the check.
 
+## From the blog
+Guides
+How to Check 200 Answer Sheets Faster Without Losing Fairness
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -2357,6 +2470,12 @@ Evalezy vs checking by hand Evalezy vs ChatGPT
 ## Frequently asked questions
 Can Evalezy work with our existing evaluation process? +
 Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If you need marks in another system, the API returns them per question.
+
+## From the blog
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+AI checking
+AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2423,6 +2542,1313 @@ Evalezy vs checking by hand Evalezy vs on-screen marking (OSM)
 ## Frequently asked questions
 Which AI model does Evalezy use? +
 Evalezy runs a pipeline rather than one prompt: handwriting reading, answer location, an equation reader for unclear maths lines, per-question grading against a rubric, checks that marks add up, and annotation. The default models are chosen for handwriting reading and cost; the pipeline matters more than the model.
+
+## From the blog
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+AI checking
+AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps) | Evalezy
+URL: https://evalezy.com/blog/upsc-answer-writing-evaluation-at-scale/
+
+- Home
+- / Blog
+- / UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Guides
+
+# UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+How to run UPSC Mains answer writing evaluation at scale: a GS rubric, mentor workflow, daily cadence, and where an AI first evaluation helps or mentors judge.
+By the Evalezy team · 1 October 2026· 9 min read
+
+## Key takeaways
+
+- UPSC’s own exam notice rewards depth, orderly expression and economy of words, and penalises superficial knowledge and illegible handwriting, so build your rubric on that.
+- Five criteria (introduction, body, examples, conclusion, structure and word limit) plus a model outline per question keep marks consistent across mentors.
+- Feedback that arrives after the next ten answers teaches little: aim to return every checked copy within 24 hours.
+- An AI first evaluation can read every answer and mark it against the same rubric; mentors should own current affairs depth, nuance, diagrams and Hindi-medium copies.
+
+Every serious UPSC programme runs on the same loop. An aspirant writes an answer, someone checks it, the aspirant learns something, and the next answer is better. The loop breaks in one place more than any other: the checking. When a batch grows from 80 aspirants to 800, the number of good evaluators does not grow with it. Copies wait for days, and by the time feedback arrives the aspirant has repeated the same mistake in five more answers.
+This guide is for coaching institutes and mentors running daily answer-writing practice. It covers what the exam itself asks for, a rubric for GS answers, a mentor workflow and daily cadence that hold up at scale, how to keep marking consistent across mentors, and where an AI first evaluation helps versus where only a mentor can judge.
+
+## What Mains actually asks for
+According to UPSC’s 2026 examination notice, the Civil Services (Main) written examination has nine papers of “conventional essay type”, each three hours long. Two are qualifying language papers. The seven that count for merit are the Essay, four General Studies papers and two optional papers, each of 250 marks, for a written total of 1,750 marks. The personality test carries another 275.
+Inside a GS paper, the pattern is printed on the cover. The 2026 General Studies Paper I had twenty compulsory questions. Questions 1 to 10 asked for answers in 150 words and carried 10 marks each. Questions 11 to 20 asked for 250 words and carried 15 marks each. Over three hours, that is roughly nine minutes an answer, including reading and planning time.
+The notice does not tell you how marks are split inside an answer. It does give general guidance that every practice rubric should reflect:
+
+- “Marks will not be allotted for mere superficial knowledge.”
+- “Credit will be given for orderly, effective and exact expression combined with due economy of words in all subjects of the examination.”
+- If a candidate’s handwriting “is not easily legible, a deduction will be made” from the total.
+- GS questions test the ability “to analyze, and take a view on conflicting socio-economic goals, objectives and demands”, and candidates “must give relevant, meaningful and succinct answers.”
+Read together, these say: answer the question that was asked, show depth rather than a list of facts, organise the answer, respect the word limit and write so the examiner can read it. That is the skeleton of your rubric.
+
+## Why feedback turnaround decides the programme
+Answer writing is a skill, and skills improve through repetition with correction. Repetition without correction only strengthens habits, good and bad. An aspirant who writes daily but gets copies back after ten days has written ten more answers with the same thin introduction or the same missing dimension before anyone points it out.
+Turnaround also shapes how a paid programme is judged. Aspirants compare notes. When one batch gets copies back the next day and another waits a week, the second batch notices.
+A practical target: the checked copy should be back before the aspirant writes the next answer on the same theme. For a daily programme, that means within 24 hours. The rest of this guide is about hitting that target without thinning out the feedback.
+
+## Designing a rubric for GS answers
+A rubric does two jobs. It tells evaluators what to look for, so two mentors give similar marks to the same answer. And it tells the aspirant why marks were lost, which is the part they actually learn from. Five criteria cover most GS answers. The splits below are a starting point, in half-mark steps; adjust them to how your faculty teaches.
+A starting rubric for GS answersCriterion | What the evaluator looks for | 10 marks | 15 marks |
+
+Introduction | Context, a definition or a relevant fact that frames the question; no padding | 1.5 | 2 |
+Body | Answers the directive asked; covers the expected dimensions (social, economic, political, environmental, ethical, as relevant) | 4 | 6.5 |
+Examples and data | Specific schemes, cases, reports or figures that support the points made | 2 | 3 |
+Conclusion | A balanced close or a way forward that follows from the body, not a repeat of the introduction | 1.5 | 2 |
+Structure and word limit | Clear paragraphs or points, headings where useful, close to the word limit | 1 | 1.5 |
+
+Some notes on using it:
+
+- Write the directive into the body criterion. The 2026 GS Paper I alone used “Analyze”, “Discuss”, “Elucidate”, “Examine this statement critically” and “Comment”. A critical examination needs both sides and a judgement; a discussion does not need a verdict. An answer that lists accurate facts in response to “examine critically” should still lose body marks.
+- Add a model answer or outline per question. Even five bullet points of expected dimensions make marking far steadier than criteria alone.
+- Keep the structure criterion small. It matters, but it should not decide the grade. Legibility and page layout are best judged by a mentor looking at the page.
+- Use half marks. Whole marks are too coarse for a 10-mark answer; quarter marks invite false precision.
+Freeze the rubric before the first copy is checked
+Changing criteria halfway through a batch means the first 200 aspirants were marked on a different scheme from the last 200. If a rubric turns out to be wrong, fix it, then re-check the whole batch.
+
+If you set papers as PDFs, a question paper import saves retyping, and a stored marking scheme per question means every copy is marked to the same criteria.
+
+## A mentor workflow that holds up at scale
+
+- 1 Set the question and rubric the evening before
+Publish the question with its word limit and marks. Lock the rubric and model outline at the same time, so evaluation is ready before the first copy arrives.
+
+- 2 Aspirants write by hand, timed
+On paper, in exam conditions, within the word limit. In the exam, answers are written in a Question-cum-Answer booklet, so practise on sheets with a fixed space per answer and build the habit of fitting the answer to the space.
+
+- 3 One PDF per aspirant, by a cut-off
+A scan, or phone photos combined into one PDF, with the aspirant’s name and roll number at the top of the first page. A firm cut-off keeps the batch together.
+
+- 4 First evaluation
+Every answer is read and marked against the rubric, with notes in the margin on what is missing. This is the step that eats mentor hours, and the one an AI can take on.
+
+- 5 Mentor review
+The mentor reads the marks and notes, changes what they disagree with and adds one line of personal advice. Mentor time goes into judgement rather than first reading.
+
+- 6 Release, then re-write
+Aspirants get their own copy back. Ask them to re-write their weakest answer within two days using the feedback, and check the re-write too.
+
+At volume, the third and fourth steps are where programmes stall. Collecting hundreds of PDFs and matching each to the right aspirant is clerical work that should not fall on mentors; a bulk upload that reads names and roll numbers from the page removes most of it.
+
+## A daily cadence aspirants can keep
+The cadence should be demanding enough to build speed and light enough to keep up for months. One workable pattern:
+When | What aspirants write | What comes back |
+
+Monday to Friday | Two answers a day: one 10-marker (150 words) and one 15-marker (250 words), in about 20 minutes | Checked copies within 24 hours |
+Saturday | A re-write of the week’s weakest answer, plus one new answer | The checked re-write, compared with the original |
+Weekly or fortnightly | A full-length GS paper: 20 questions in 3 hours | A checked copy and a discussion class on the paper |
+
+Rotate the four GS papers through the week so none goes untouched for long, and tie questions to what the classroom covered that week. Daily answers build structure. The full-length paper builds the stamina to write twenty answers in three hours, which is a different skill.
+
+## Quality control across mentors
+With one mentor, consistency is a habit. With fifteen, it has to be designed. Aspirants compare copies, and few things cost trust faster than two similar answers getting 4 and 7 from different evaluators.
+
+- One rubric per question, used by everyone. No personal variations, however experienced the mentor.
+- Calibrate with anchor copies. Before a new question set, have every mentor mark the same three copies: a strong one, an average one and a weak one. Talk through any gap of more than a mark until everyone agrees what each criterion means.
+- Double-mark a sample. A senior mentor re-marks a small random share of each mentor’s copies every week. Track the difference per mentor. A mentor who is always higher or lower is not careless, just uncalibrated.
+- Keep a shared comment bank tied to criteria. “Introduction lacks context.” “Only the economic dimension covered.” “No example to support the claim.” “Conclusion repeats the introduction.” Shared wording makes feedback consistent and quicker to write.
+- Watch average marks per mentor over time. Drift shows up in the averages before it shows up in complaints.
+An AI first evaluation changes the shape of this work. Every copy is first marked against the same scheme by the same evaluator, so mentors adjust from a common starting point instead of from their own habits. The places where mentors change marks then tell you where the rubric, or the AI, needs attention.
+
+## What aspirants should get back
+A number alone teaches nothing. “6/15” tells an aspirant they did badly, not what to change. What they need is:
+
+- Their own copy, marked in the margin. A note beside the paragraph where the problem is beats a summary at the end, because the aspirant sees exactly which lines fell short.
+- Marks per question and per criterion. “Body 3 of 6.5, examples 0.5 of 3” shows where the marks went.
+- One or two things to fix next time. Ten corrections get skimmed. Two get practised.
+- A model answer or outline. So the aspirant can see what the missing dimension would have looked like.
+- Speed. All of the above, in time for the next answer.
+The sample checked copy shows what a checked copy looks like on a real handwritten answer sheet: ticks, crosses, short notes beside the lines, marks per question and the total circled on the first page.
+
+## Where AI helps, and where mentors must judge
+An AI first evaluation is good at the part of checking that is careful reading and applying criteria. It does not replace a mentor’s judgement on depth and nuance. Split the work like this:
+Task | AI first evaluation | Mentor |
+
+Reading every line of every copy | Yes, including phone photos of notebooks | Spot checks |
+Checking coverage against the rubric | Yes: which criteria are met, which dimensions are missing | Reviews and adjusts marks |
+Writing margin notes | Yes, short notes on the copy itself | Adds a personal line |
+Current affairs depth and accuracy | Marks against your model answer | Judges whether examples are recent, correct and apt |
+Nuance and a well-defended view | Flags weak criteria | Makes the final call |
+Maps, diagrams and flowcharts | Judged by labels and written explanation only | Judges the drawing |
+Legibility and page layout | Not the right judge | Owns it |
+Hindi-medium answers | Not yet tested; send samples first | Primary evaluator for now |
+
+### Current affairs depth
+Aspirants are taught to back GS answers with recent, specific examples: a scheme, a court judgment, a figure from an official report. The AI marks against the criteria and model answer you give it. Whether an example is current, correctly quoted and relevant to this question is a call for a mentor who follows the news. When a question leans on recent events, put the expected examples into the model answer and ask mentors to look closely at that criterion.
+
+### Nuance
+“Examine critically” and “Comment” questions reward a balanced view that is defended. Two answers can cover the same dimensions and still differ in how well they weigh them. The criteria breakdown tells the mentor where to look; the final judgement on the quality of argument stays with the mentor.
+
+### Hindi-medium answers
+UPSC lets candidates write the Main papers, other than the two qualifying language papers, in English or in any language in the Eighth Schedule to the Constitution. If your programme runs a Hindi-medium batch, know that Evalezy is built and tested on English answer sheets today. Send us sample copies first, and keep mentors as the primary evaluators until you have seen the results.
+Where Evalezy fits
+Evalezy does the first evaluation of handwritten answer sheets and returns the aspirant’s own copy checked in red pen: ticks, crosses, short margin notes, marks per question and the total circled on page 1.
+Your rubric, on every copy. Set criteria per question, or let Evalezy draft them and edit, and add a model answer. Every aspirant is marked to the same marking scheme , in half-mark steps. Answers are matched by content, so an aspirant who answers out of order is not marked zero.
+Mentors keep the final word. Marks land as a draft. Mentors see marks, the answer as read, feedback and the criteria breakdown per question, edit any mark and press Release Result. An edited mark is never overwritten by a later AI run. See teacher review .
+Built for daily batches. Upload up to 200 PDFs at a time, with names and roll numbers read from the page and matched to your aspirants, or check the answers aspirants upload themselves. A copy typically takes 1 to 8 minutes, first results arrive in about 10 minutes, and about 100 copies take 2 to 3 hours on current capacity. It costs ₹1 per page checked, excluding GST, so a 4-page answer costs ₹4 (pricing ). More on the UPSC answer-writing page .
+
+Book a demo
+
+## Sources
+
+- UPSC, Examination Notice No. 05/2026-CSE: Civil Services Examination 2026 (scheme of the Main Examination, medium of answers, general instructions) (checked 1 October 2026)
+- UPSC, Civil Services (Main) Examination 2026, General Studies Paper I question paper (word limits, marks per question, directives) (checked 1 October 2026)
+- UPSC, Previous Year Question Papers (checked 1 October 2026)
+
+## Frequently asked questions
+How is a UPSC Mains answer evaluated? +
+UPSC’s exam notice does not publish how marks are split inside an answer. It does say that marks are not given for mere superficial knowledge, that credit goes to orderly, effective and exact expression with economy of words, and that illegible handwriting leads to a deduction. A practice rubric built on introduction, body, examples, conclusion and structure reflects that guidance.
+
+What are the word limits for UPSC GS answers? +
+They are printed on each paper. In the 2026 General Studies Paper I, Questions 1 to 10 asked for 150 words and carried 10 marks each, and Questions 11 to 20 asked for 250 words and carried 15 marks each. Always check the instructions on the paper itself.
+
+How many answers should an aspirant write each day? +
+Two a day (one 10-marker and one 15-marker) is a load most aspirants can sustain alongside study, with a full-length GS paper every week or fortnight. Consistency and quick feedback matter more than volume.
+
+Can AI evaluate UPSC answers? +
+It can do the first evaluation: read the handwritten answer, mark it against your rubric and model answer in half-mark steps, and write notes on the copy. Mentors should review before release, especially for current affairs depth and nuance. With Evalezy, nothing reaches the aspirant until a mentor presses Release Result.
+
+Does Evalezy check Hindi-medium answers? +
+Evalezy is built and tested on English answer sheets today. If you run a Hindi-medium batch, send us sample copies and we will tell you honestly how it does.
+
+Can the AI judge maps and diagrams in GS answers? +
+Not as drawings. Grading works from the transcribed text, so a map or flowchart is judged by its labels and written explanation only. Ask mentors to look at those answers themselves.
+
+On this page
+
+- What Mains actually asks for
+- Why turnaround decides the programme
+- A rubric for GS answers
+- A mentor workflow at scale
+- A daily cadence
+- Quality control across mentors
+- What aspirants should get back
+- Where AI helps, where mentors judge
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Read
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Read
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy | Evalezy
+URL: https://evalezy.com/blog/handwritten-answer-grading-api/
+
+- Home
+- / Blog
+- / Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+For developers
+
+# Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API checks answer sheets by URL or file.
+By the Evalezy team · 1 October 2026· 8 min read
+
+## Key takeaways
+
+- Printed-text OCR is the wrong tool for student handwriting: even Tesseract’s own FAQ says it is designed for printed text.
+- A production grading pipeline is ten problems, not one: cleanup, line geometry, reading, answer location, rubric grading, validation, annotation, review, failure handling and billing.
+- Treat student writing as untrusted input: an answer can contain instructions aimed at the grader.
+- Build if grading is your core product or you need a script Evalezy has not tested; use an API if grading is a feature and you want marks plus a checked PDF.
+- The Evalezy API flow is asynchronous: create an assessment, set criteria, start an evaluation by URL or file, then poll or take a webhook.
+
+Your learners write on paper. Your product lives online. Somewhere between the two, a handwritten answer sheet has to become marks, feedback and something a learner actually wants to open. If you are a product manager or engineer adding that step to an edtech app, this post covers why plain OCR does not get you there, what a pipeline needs before you can trust it in production, how to think about building it yourself, and how the Evalezy API handles it.
+
+## Why printed-text OCR fails on student handwriting
+Most OCR engines were built for print. Tesseract, the open-source OCR engine, says so in its own FAQ: you can use it for handwriting, but “it won’t work very well, as Tesseract is designed for printed text.” Handwriting is a harder problem because, as Wikipedia’s overview of the field puts it, “different people have different handwriting styles.”
+Cloud document services do read handwriting, but check the language list before you plan around one. Microsoft’s Document Intelligence Read model lists Hindi, Marathi, Tamil and many other languages for printed text. Its v4.0 list for handwritten text has twelve languages, and none of them is an Indian language.
+Student answer sheets then add problems of their own on top of the handwriting itself. These are the ones Evalezy’s pipeline is built to handle:
+
+- Phone photos, not scans. The sample copy on this site is a phone photo of a spiral notebook. Pages arrive tilted, shadowed and low in contrast.
+- Answers out of order. Students answer Question 7 before Question 3, or number answers wrongly. A pipeline that trusts the written number marks the wrong answer.
+- Maths. Fractions, powers and working spread over several lines need a careful second look.
+- Long copies. A 20-page script has to be split into answers before anything can be graded.
+And when reading fails, grading fails quietly. A grader handed garbled text has nothing true to grade. The pipeline must be able to say “this copy could not be read” instead of returning a mark.
+
+## What a robust pipeline needs
+“Read the page, ask a model for a mark” is a demo. A version you can put in front of thousands of learners needs every stage below, and each one is a small project of its own.
+Stages of a handwritten answer grading pipelineStage | What it does | What breaks without it |
+
+Page cleanup | Deskews, denoises and boosts contrast on scans and phone photos | Faint or tilted lines are misread or missed |
+Line geometry | Records where each line of writing sits on the page | Ticks and notes land in the wrong place |
+Vision reading | Reads whole pages in context, with a second read for hard lines such as maths | Word fragments with no structure reach the grader |
+Answer location | Finds which pages hold which answer, by content | Out-of-order answers score zero |
+Rubric grading | One set of criteria per question, reused for every student | Each copy is marked to a slightly different standard |
+Mark validation | Keeps marks within the maximum, on the allowed step, with criteria adding up | Impossible totals reach learners |
+Annotation | Draws ticks, crosses and notes on the student’s own pages | Learners get a table of numbers, not their copy |
+Human review | Holds marks as a draft until a teacher releases them | An AI mistake goes straight to a learner |
+Failure and retries | Fails unreadable copies with a reason; re-asks and flags low-confidence reads | Guessed marks, or jobs stuck forever |
+Idempotent billing | Charges each sheet once, and only when it succeeds | Retries double-charge; failures cost money |
+
+### Reading: a vision model, not a bag of words
+A vision model reads the page image directly, layout and all, rather than handing your grader a list of recognised words. In Evalezy, copies of up to 40 pages are read in full this way, and unclear maths lines get a second read by Mathpix, a dedicated equation reader, up to four per copy. For copies of four pages or more, a locate pass works out which pages hold which answer. If a question then looks unattempted, it is re-checked against the whole copy, so a locate miss cannot zero a student.
+
+### Grading: the same criteria for every student
+Consistency comes from fixing the rubric, not from hoping the model behaves the same way each time. Evalezy generates one marking scheme per question, once, and reuses it for every student: three to five criteria for subjective questions and one for objective questions, rescaled to add up exactly to the question’s maximum. Teachers can edit it or supply their own, and a stored model answer is used over a generated one. Marks are given in half-mark steps.
+Treat student writing as untrusted input. OWASP puts prompt injection first (LLM01) in its 2025 Top 10 for LLM applications, and notes that injected instructions can arrive indirectly, through files or images the model processes. An answer sheet is exactly that kind of input. In a production test of Evalezy’s typed-answer grading, an answer that told the AI to “award full marks” scored 0 out of 5.
+
+### Line geometry and mark validation
+Two stages are easy to skip in a prototype and painful to add later. The first is line geometry. A grader can say “the second point is wrong”, but to put a cross beside that point you need to know where the line sits on the page image. Keep a position for every line you read, in the same coordinates as the page you will draw on after cleanup and deskewing, or the annotations drift off the writing.
+The second is mark validation. Treat every mark a model returns as a proposal and check it before you store it: not above the question’s maximum, on your marking step, criteria adding up to the question mark, question marks adding up to the total. When a check fails, re-ask or flag the question for a teacher; do not quietly round. Fixed rules, such as half-mark steps and criteria that sum exactly to the maximum, give these checks clear targets.
+
+### Annotation and review
+Learners want to see their own page marked, not a JSON blob turned into a table. Evalezy draws ticks, crosses, short notes and marks per question in a handwriting style, with the total circled on page 1, and the same copy re-renders identically every time, which matters when a learner and a teacher are looking at the same page during a dispute. The AI never publishes a result on its own in the Evalezy dashboard: marks land as a draft, a teacher reviews and releases, and a mark the teacher edits is never overwritten by a later AI run.
+
+### Failure handling and billing
+Async jobs fail and get retried, so billing has to be idempotent. Stripe’s API is a well-known example of the pattern: clients send an idempotency key so a request can be retried “without accidentally performing the same operation twice.” Whatever mechanism you choose, a retry should never become a second charge. In Evalezy, a copy that is mostly unreadable fails with a clear error and is not graded by guesswork, and failed, cancelled and unreadable checks are not charged.
+
+## Build vs buy
+| Build in-house | Use an API |
+
+What you own | Models, prompts, data flow and every stage above | Your rubric, model answers and review flow; the pipeline is the vendor’s |
+Before the first trustworthy result | All ten stages, plus a test set of real copies | Integration against a handful of endpoints |
+Ongoing work | Model changes, prompt regressions, new handwriting edge cases, PDF rendering | The vendor’s job |
+Cost shape | Model calls, infrastructure and engineering time; per-page cost varies | A fixed rate per page (Evalezy: ₹1 or $0.01); failures not billed |
+Languages and scripts | Whatever you build and test | Evalezy: tested on English; other languages need samples first |
+
+Build if grading is your core product, if you need a language or script now that no vendor has tested, or if answer sheets must never leave your own infrastructure. Use an API if grading is one feature of a larger product, if you want a checked PDF and a review step without building them, and if a per-page cost is easier to plan for than a team. If you are weighing a general chatbot instead, our comparison with ChatGPT covers that approach.
+Either way, decide on evidence. Collect a test set of real answer sheets from your own learners, say fifty copies across neat and messy handwriting, phone photos and scans, and have experienced teachers mark them first. Run them through your prototype or a vendor and compare question by question: where marks differ, whether the reasons make sense, and which copies failed. Keep that set. It becomes your regression test for every model or prompt change afterwards.
+
+## How the Evalezy API flow works
+API access is enabled per account
+Request access on the API page with your use case and expected monthly volume. The full endpoint list, statuses and webhook format are there too.
+
+- 1 Create an assessment
+POST /assessments with a list of questions and marks, or a question paper URL to be read into questions. You get back an assessment id.
+
+- 2 Set evaluation criteria
+PUT /assessments/{id}/criteria with criteria and an optional model answer per question; criteria marks are rescaled to sum to the question’s marks. Or POST /assessments/{id}/criteria/generate for a draft to review and edit.
+
+- 3 Start an evaluation
+POST /evaluations with a public answer_sheet_url, or a file id from POST /files, plus your own student id and an optional webhook_url. It returns an evaluation id with status queued.
+
+- 4 Poll or wait for the webhook
+GET /evaluations/{id} moves through queued, reading and grading to completed, failed or cancelled. With a webhook_url, Evalezy posts to you when the evaluation completes or fails.
+
+- 5 Use the result
+The total, per-question marks, the student’s answer as read, feedback, the criteria breakdown, the checked_copy_url for the red-pen PDF and the pages billed.
+
+Here is the core of an integration in Node.js 18 or later, polling instead of using a webhook:
+const API = "https://api.evalezy.com/v1";
+const headers = {
+Authorization: "Bearer " + process.env.EVALEZY_API_KEY,
+"Content-Type": "application/json",
+};
+
+// 1. Start checking one answer sheet
+const res = await fetch(API + "/evaluations", {
+method: "POST",
+headers,
+body: JSON.stringify({
+assessment_id: "asm_7Hq2",
+answer_sheet_url: "https://files.example.edu/ix-b/roll-14.pdf",
+student: { external_id: "IXB-14" },
+}),
+});
+const { id } = await res.json(); // status: "queued"
+
+// 2. Poll every 30 s until it finishes (or pass webhook_url instead)
+let ev;
+do {
+await new Promise((r) => setTimeout(r, 30000));
+ev = await (await fetch(API + "/evaluations/" + id, { headers })).json();
+} while (["queued", "reading", "grading"].includes(ev.status));
+
+// 3. Use the result
+if (ev.status === "completed") {
+console.log(ev.total); // { awarded: 38, max: 80 }
+console.log(ev.checked_copy_url); // red-pen PDF to show the learner
+} else {
+console.log(ev.status, ev); // failed includes a reason; not billed
+}The example values come from the real sample copy , a 7-page Class IX Social Science answer sheet that scored 38 out of 80.
+
+## Shipping it in your product
+
+- Show the checked copy, not only the JSON. The checked copy is what learners open and share. Put it first; use the per-question data for progress tracking and reports.
+- Put a reviewer before the learner. The API returns the AI’s marks with reasons. Whether a teacher sees them first is up to your product, and we recommend that one does, as in Evalezy’s own teacher review .
+- Map results to your users. Send your own student id as student.external_id on every evaluation, so a webhook or poll result maps straight back to the right learner.
+- Make your own side idempotent. Store the evaluation id against the learner’s submission as soon as you get it. If your worker crashes and retries, look up the stored id instead of starting a second evaluation of the same sheet, which would be a separate run.
+- Design for minutes, not seconds. A copy typically takes 1 to 8 minutes. Show progress, let the learner leave and notify them when the result is ready.
+- Handle failure honestly. When a sheet fails as unreadable, ask the learner for a clearer scan rather than showing a zero. Failed checks are not billed.
+- Know the limits. Diagrams, maps and graphs are judged by their labels and written explanation, not as drawings. Grading is tested on English answer sheets.
+- Budget per page. A 5-page sheet costs ₹5 or $0.05. A re-check is a new run and is billed again, so re-check deliberately.
+Where Evalezy fits
+Evalezy handles the reading, grading, annotation and review stages for you, in a dashboard or through the API. Send a handwritten answer sheet by URL or file and get back per-question marks, feedback, the student’s answer as read, a criteria breakdown and a red-pen checked PDF .
+Same engine, same price. ₹1 per page in India (excluding GST) or $0.01 elsewhere, the same rate as the dashboard. Failed, cancelled and unreadable sheets are not billed. See pricing .
+Your rubric, or a draft to edit. Send your own criteria and model answers, or ask for generated criteria and review them before you evaluate. See how it works and the edtech platforms page .
+
+Book a demo
+
+## Sources
+
+- Tesseract documentation, FAQ: “Can I use Tesseract for handwriting recognition?” (checked 1 October 2026)
+- Wikipedia, Handwriting recognition (offline recognition and handwriting styles) (checked 1 October 2026)
+- Microsoft Learn, Language and locale support for Read and Layout document analysis (Document Intelligence v4.0) (checked 1 October 2026)
+- OWASP Gen AI Security Project, LLM01:2025 Prompt Injection (checked 1 October 2026)
+- Stripe API reference, Idempotent requests (checked 1 October 2026)
+
+## Frequently asked questions
+Can I grade handwritten answers with Tesseract or another OCR library? +
+You can extract some text, but Tesseract’s own FAQ says it will not work very well on handwriting because it is designed for printed text. Grading also needs answer location, a rubric, validation and annotation on top of reading, so OCR is at most one stage of the pipeline.
+
+Why not send the page straight to a general chatbot? +
+A single chat prompt gives you a mark, but not a fixed rubric reused for every student, mark validation, a checked PDF, a review step or clear failure on unreadable pages. We compare the two approaches on the Evalezy vs ChatGPT page.
+
+Is the Evalezy API synchronous? +
+No. Checking a copy typically takes 1 to 8 minutes, so evaluations are asynchronous: you get an id straight away, then poll the status endpoint or receive a webhook when the check completes or fails.
+
+What does a completed evaluation return? +
+The total, and for each question the marks awarded and maximum, the student’s answer as read, feedback and the criteria breakdown, plus a URL to the checked copy PDF and the pages billed.
+
+How is the API billed? +
+Per page checked: ₹1 in India (excluding GST) or $0.01 elsewhere, the same as the dashboard. Failed, cancelled and unreadable sheets are not billed. A re-check is a new run and is billed again.
+
+Does it read Hindi or other Indian-language handwriting? +
+Evalezy is built and tested on English answer sheets. If your learners write in another language, send us sample copies before you plan a launch around it.
+
+On this page
+
+- Why OCR fails on handwriting
+- What a robust pipeline needs
+- Build vs buy
+- How the Evalezy API flow works
+- Shipping it in your product
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Read
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# How to Scan Answer Sheets With a Phone: A Practical Guide for Schools | Evalezy
+URL: https://evalezy.com/blog/scan-answer-sheets-with-phone/
+
+- Home
+- / Blog
+- / How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Guides
+
+# How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Scan answer sheets with a phone: which apps make PDFs, light and framing, spiral notebooks, one PDF per student, file names and a pre-upload checklist.
+By the Evalezy team · 1 October 2026· 9 min read
+
+## Key takeaways
+
+- Use a scanner app that builds one multi-page PDF, not loose camera photos: Google Drive (Android and iPhone) and Notes or Preview (iPhone) all do this.
+- Make exactly one PDF per student, with pages in order and nobody else’s pages in the file.
+- Ask students to write name, roll number and class at the top of page 1 in clear capitals; that line is what automatic matching reads.
+- Most unreadable pages come from shadow, blur, cut-off edges and very light ink, and all four are easy to catch before upload.
+- Run a short checklist on every PDF before upload: page count, order, the name line, all four corners and one zoomed-in page.
+
+Most schools do not have a document scanner in every staffroom, and they do not need one. A phone with the right app makes answer sheet scans that are good enough for a teacher, or an AI, to read every line. What goes wrong is rarely the phone. It is a shadow across the bottom third of a page, a margin cut off, two students’ pages in one file, or page 4 scanned twice and page 5 not at all.
+This guide is for the teacher or office staff member with a stack of answer copies and a phone. It covers which app to use, how to light and frame a page, how to handle spiral notebooks, how to build one clean PDF per student, and a checklist to run before you upload anything for evaluation.
+
+## Why scan quality decides the result
+Whoever evaluates a scanned copy, a teacher on a screen or an AI, can only mark what they can read. If a line is lost in a shadow, the answer looks incomplete. If a page is missing, the answer is missing.
+Large exam bodies treat this as a real risk. When CBSE moved Class 12 evaluation to on-screen marking in 2026, its published FAQ described three levels of scan quality checks: at scanning, by a quality control team, and by the evaluator, who could reject a copy that was not scanned properly so it could be scanned again. The Ministry of Education also said that more than 13,000 answer sheets with legibility problems, because students had used very light ink, were identified and checked manually.
+Your school is unlikely to have a quality control team. A short routine per class does the same job, and most of it happens before you press the shutter.
+
+## Scanner app or camera photos?
+Use a scanner app. It does four things the camera app does not: it finds the edges of the page and crops to them, straightens the page, evens out the background, and collects many pages into one PDF. Loose camera photos arrive as separate images per student, sorted however the gallery sorts them, and someone has to rebuild each copy by hand.
+Apps most phones already have will do the job:
+
+- Google Drive (Android and iPhone). Tap the camera or Scan option and point the phone at the page. A blue line shows where the page will be cropped. Tap Add to scan the next page. On Android you choose PDF or JPG when saving: choose PDF. Google’s help page says scans on iPhone are saved as searchable PDFs. Drive also has Crop & Rotate, Filter and a Clean tool that erases stains and fingers.
+- Notes (iPhone). In a note, tap the attachment button, then Scan Documents. The iPhone captures the page automatically when it detects the page boundaries, or you can capture manually and adjust the corners. Apple’s guide says the document is saved as a PDF in the note. The Files app has the same Scan Documents option and asks where to save.
+- Preview (iPhone, recent iOS versions). Apple’s guide says you can scan a document in Preview to create a PDF, adding pages one after another and cropping, rotating or adjusting each one.
+If your staff used Microsoft Lens
+Microsoft retired Lens from iOS and Android starting 9 January 2026 and recommends the scanner in the OneDrive app instead. Check its limits before you rely on it for exam copies: Microsoft’s help page for OneDrive on Android caps a multi-page scan at 10 pages, fewer than many answer booklets.
+
+Camera photos are a fallback, not a plan. If you must use them, shoot each page straight on and combine the photos into one PDF, in page order, before upload. Evalezy takes one PDF per student, so photos have to become a PDF at some point, and that step is where pages get shuffled.
+
+## Before the exam: the name line
+The easiest scanning fix happens before anyone picks up a phone. Ask every student to write three things at the top of page 1, in clear capital letters:
+
+- Name
+- Roll number
+- Class and section
+This is not only for tidiness. Evalezy reads the name, roll number and class or section from the top of page 1 (and from page 2’s header if page 1 has none), then matches each copy to a registered student. It never guesses: if the name is missing, unclear, or two students are close matches, the teacher picks the right student. A clear name line means fewer copies to sort by hand. See how this works on the bulk upload page .
+Two more requests help. Keep the name line a little away from the very top edge, where a tight crop can cut it. And if you can, ask for dark blue or black pen. Faint pencil and light ink stay hard to read even in a perfect scan.
+
+## Light, shadows and framing
+
+- Use soft daylight. A table near a window gives even light. A ceiling light directly overhead puts the shadow of your phone and hand on the page.
+- Avoid glare. Flash on glossy or laminated paper leaves a bright patch over the writing. Use it only when the room is too dark, and check the result.
+- Hold the phone flat and parallel to the page. A tilted shot makes the far lines smaller. Apps straighten the shape of the page, but they cannot add detail the camera never caught.
+- Use a plain, darker surface. White paper on a white table makes the page edges hard for the app to find. A dark desk or a dark sheet underneath works better, and also reduces writing from the back of thin paper showing through.
+- Keep the whole page in frame. Leave a thin border of table visible on all four sides. The name line at the top and the last line at the bottom are the easiest things to cut.
+- Keep still until the app captures. Blur from a moving hand cannot be fixed later, by any app.
+- Go easy on filters. Colour or greyscale is safest. Look at the first page after any filter before scanning the rest.
+
+## Spiral notebooks and two-page spreads
+Many schools and coaching institutes run tests in notebooks rather than loose sheets. These scan well with a little care. Evalezy’s own sample copy is a phone photo of a spiral notebook, and each page is straightened, cleaned up and contrast-boosted before it is read.
+
+- One page per shot. Do not photograph the open notebook as a spread. Two pages in one image means two half-size pages with a curved binding in the middle.
+- Press the page flat. Fold a spiral notebook back on itself. For a bound notebook, hold the page down at the outer edges with your fingers clear of the writing, and check no fingertip covers a word.
+- Watch the binding side. Words close to the spiral or the spine are the easiest to lose to the curve of the page. Make sure the inner margin is visible.
+- Answers across a spread. If a student wrote one answer across a left and a right page, scan the left page first, then the right, as two pages in order.
+
+## One PDF per student, in order
+Every student gets exactly one PDF, containing all of their pages and nobody else’s. This is how Evalezy’s bulk upload works (up to 200 PDFs at a time, one file per student), and it is how any evaluator, human or AI, expects a copy to arrive.
+
+- Start with the page that carries the name line.
+- Scan in page order, and add supplementary sheets at the end in the order they were attached.
+- Leave out completely blank pages and accidental duplicate shots. They add review time and nothing else.
+- Never put two students in one file because it is quicker. Splitting a PDF later is slower than scanning separately now.
+Students often answer Question 5 before Question 2. That is fine for checking: Evalezy finds answers by their content, not by the number the student wrote. Page order still matters for the student and teacher who read the checked copy later, so keep the pages in the order they were written.
+
+## File names and file sizes
+Pick one naming pattern for the whole school and stick to it. A good pattern sorts correctly in any folder and shows a missing roll number at a glance. For example: 10B_07_StudentName.pdf for class 10, section B, roll number 7. Write roll numbers with a leading zero (07, not 7) so that 10 does not sort before 2. If one folder holds several tests, put the subject and test first, such as Science-UT2_10B_07.pdf.
+Evalezy reads the student’s name from the page, not from the file name. The file name is for your team, so anyone can find a copy quickly.
+Check sizes before upload. Evalezy accepts PDFs up to 60 MB each and reads copies of up to 40 pages in full. Size problems usually come from PDFs built out of full-resolution camera photos. If a file is too large, rescan at the app’s default quality instead of its highest, or use a compress option, then zoom in on the smallest handwriting to make sure it is still sharp.
+
+## What makes a page unreadable
+Problem | What it looks like | Fix |
+
+Shadow | A dark band or corner across the writing | Move to window light; hold the phone so your shadow falls off the page |
+Motion blur | Smeared or doubled letters | Hold still; let the app auto-capture; add light |
+Cut-off edges | Name line, margin or last lines missing | Leave a border on all four sides; check the corners |
+Glare | A white patch over the text | Turn the flash off; move away from the direct light |
+Very light ink or pencil | Faint, broken strokes | Use colour or greyscale, not harsh black and white; ask for dark pen next time |
+Show-through | Writing from the back of the page visible | Put a dark sheet behind the page |
+Curved or tilted page | Lines that slope or bend near the binding | Flatten the page; hold the phone parallel |
+Missing or repeated pages | Page 4 twice, page 5 absent | Count pages against the copy before saving |
+
+Evalezy straightens, cleans and boosts the contrast of each page before reading it, which rescues many imperfect phone photos. It cannot recover writing the photo never captured. When a copy is mostly unreadable, Evalezy fails it with a clear error instead of marking it by guesswork, and that check is not charged. You rescan and upload again.
+
+## Pre-upload checklist
+For a full class, it helps if one person scans and another checks. Run these steps on every PDF before upload:
+
+- 1 One file per student
+Each PDF holds one student’s copy and nothing else.
+
+- 2 Page count matches
+The number of pages equals the pages in the copy, including supplementary sheets.
+
+- 3 Name line readable
+Page 1 shows name, roll number and class clearly, with nothing cropped.
+
+- 4 Order and duplicates
+Pages are in written order, with no repeats and no blank pages.
+
+- 5 Zoom test
+Open one middle page and zoom in on the smallest handwriting. Every word should be clear.
+
+- 6 Corners
+Check all four corners of the first and last page for cut-off text.
+
+- 7 Name and size
+The file follows your naming pattern and is under 60 MB.
+
+- 8 Count against attendance
+The number of files matches the students who sat the test.
+
+Where Evalezy fits
+Once the PDFs are ready, upload up to 200 at a time on the bulk upload page. Evalezy reads each name line, matches copies to your student list, and asks you to pick whenever it cannot be sure. It then checks each copy against one marking scheme per question and returns the student’s own copy checked in red pen, with marks per question and the total circled on page 1.
+Marks stay a draft until a teacher reviews them and presses Release Result. See a real checked sample copy , or read how it works for schools .
+
+Book a demo
+
+## Sources
+
+- Google Drive Help: Scan documents with Google Drive (Android) (checked 1 October 2026)
+- Google Drive Help: Scan documents with Google Drive (iPhone & iPad) (checked 1 October 2026)
+- Apple iPhone User Guide: Scan text and documents in Notes (checked 1 October 2026)
+- Apple iPhone User Guide: Scan text and documents in Preview (checked 1 October 2026)
+- Apple Support: How to scan documents on your iPhone or iPad (checked 1 October 2026)
+- Microsoft Support: Retirement of Microsoft Lens (checked 1 October 2026)
+- Microsoft Support: Scan a whiteboard, document, business card, or photo in OneDrive for Android (checked 1 October 2026)
+- CBSE: Know about On Screen Marking (OSM), FAQ dated 18 May 2026 (checked 1 October 2026)
+- ThePrint (PTI), 17 May 2026: On-Screen Marking not new, enables transparent evaluation: Ministry of Education (checked 1 October 2026)
+
+## Frequently asked questions
+Can I scan answer sheets with a phone instead of a scanner? +
+Yes. A phone with a scanner app produces copies that a teacher or an AI can read line by line, as long as the light is even, the whole page is in frame and the phone is held still. Evalezy’s own sample copy is a phone photo of a spiral notebook.
+
+Which app should I use to scan answer sheets? +
+Any app that saves several pages into one PDF. Google Drive does this on Android and iPhone (choose PDF when saving on Android). On iPhone, Notes saves scans as a PDF in the note, and Preview can scan a document to create a PDF. Microsoft Lens was retired in early 2026, so do not plan around it.
+
+Should I scan answer sheets in colour or black and white? +
+Colour or greyscale is the safer choice. Strong black-and-white filters make dark ink look crisp but can wipe out faint pencil or light blue ink. Check the first page after applying a filter before you scan the rest of the class.
+
+What happens if a student forgot to write their name? +
+Evalezy reads the name, roll number and class from the top of page 1, and from page 2’s header if page 1 has none. If there is no name, or two students look like close matches, it does not guess: the teacher picks the right student or skips the copy. Reading names is free.
+
+How many answer sheets can I upload at once? +
+Evalezy’s bulk upload takes up to 200 PDFs at a time, up to 60 MB each, one file per student. Copies of up to 40 pages are read in full.
+
+Do the pages need to be in question order? +
+Not for the checking itself: Evalezy finds answers by their content, not by the number the student wrote, so an answer to Question 5 written before Question 2 is still found. Keep pages in the order they were written so the checked copy is easy for the student and teacher to follow.
+
+On this page
+
+- Why scan quality decides the result
+- Scanner app or camera photos?
+- Before the exam: the name line
+- Light, shadows and framing
+- Spiral notebooks and two-page spreads
+- One PDF per student, in order
+- File names and file sizes
+- What makes a page unreadable
+- Pre-upload checklist
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Read
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know | Evalezy
+URL: https://evalezy.com/blog/on-screen-marking-vs-ai-evaluation/
+
+- Home
+- / Blog
+- / On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Assessment
+
+# On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+How on-screen marking works, how CBSE and universities in India use it, what it does not fix, and how an AI first evaluation with human review fits in.
+By the Evalezy team · 1 October 2026· 9 min read
+
+## Key takeaways
+
+- On-screen marking moves the answer book to a screen: evaluators still read and mark every answer, while the software handles totalling, routing and records.
+- CBSE used OSM for Class 12 answer books in 2026, and its post-result process showed that OSM brings its own failure points: blurred scans, missing pages and wrong answer books.
+- OSM does not remove evaluator variance; an AI first evaluation applies one rubric to every script so evaluators review proposed marks instead of reading from scratch.
+- The safe combination is an AI first pass plus human evaluator review, with the human mark final and the re-evaluation route unchanged.
+- Before any rollout, pilot on past scripts with known marks, test scan quality and data security, and write down who owns the final mark.
+
+Ask two exam controllers what “digital evaluation” means and you may get two different answers. One is on-screen marking (OSM): answer books are scanned and evaluators mark them on a computer. The other is AI evaluation: software reads the handwriting and proposes marks. They are often mentioned together, but they solve different problems.
+This article explains both, what India’s experience with OSM has shown, and how an AI first pass can sit inside an OSM-style process without taking the final mark away from a human evaluator.
+
+## What on-screen marking is
+In on-screen marking, students write on paper as usual. After the exam, answer books are scanned and the images are sent to evaluators, who log in, read each answer on screen and enter marks question by question. The software adds up the total, records which evaluator marked which script, and lets senior examiners review a sample.
+CBSE’s FAQ on OSM puts it plainly: the method changes, not the criteria. The answer book is on a monitor instead of a table, and a mouse is used to award marks. Asked whether computers are checking the answers, CBSE’s answer is no: examiners evaluate the scanned copies.
+The one-line difference
+On-screen marking changes where a human reads. AI evaluation changes who reads first.
+
+## How OSM is used in India
+
+### CBSE Class 12, 2026
+In a circular dated 9 February 2026, CBSE told its schools that Class 12 answer books would be evaluated by on-screen marking from the 2026 examinations, while Class 10 would stay in physical mode. Its later FAQ says the board first tried OSM in 2014 but stopped, because answer books could not then be scanned without cutting them, which risked mixing pages. In 2026 the books were scanned with book scanners that did not need the spine cut, marking schemes for 116 subjects were uploaded to the portal, and Head Examiners could randomly check evaluated answer books.
+The scale was large. The Ministry of Education said about 98 lakh Class 12 answer sheets were scanned, as reported by PTI. CBSE declared results on 13 May 2026 for about 17.69 lakh candidates. After the results, students and parents raised concerns that a drop in the pass percentage was due to OSM. The Ministry dismissed those concerns and announced a cut in the fee for a scanned copy of an evaluated answer book, from ₹700 to ₹100.
+
+### State boards and universities
+In February 2026, PTI reported that the Punjab School Education Board would use OSM for one subject of its matriculation exam that year, on answer sheets with a QR code on every page, after evaluating 23,000 answer sheets on screen in its September 2025 supplementary exams.
+Universities moved earlier. Deccan Herald reported in April 2012 that Visvesvaraya Technological University’s examination paper evaluation was going digital. The University of Mumbai’s switch in 2017 is the cautionary tale: Newslaundry reported that the rollout was rushed without the agency finalised or teachers trained, results were badly delayed, and over 73,430 results were initially held back because answer scripts were misplaced or not scanned or uploaded properly.
+Outside India, OSM is well established in England. Ofqual, the exams regulator there, notes that all four exam boards in its marking study (AQA, OCR, Pearson and WJEC) use on-screen marking and monitoring for some components.
+
+## What OSM solves
+
+- Logistics. Answer books stay at the scanning centre. CBSE listed teachers staying in their own schools and savings in transport time and cost among the expected benefits.
+- Totalling and posting errors. The system adds the marks. CBSE’s FAQ says OSM eliminates totalling, posting and uploading errors and ensures every answer is evaluated.
+- Live supervision. Senior examiners can check samples while marking is under way. In England, boards slip pre-marked “seed” responses into an examiner’s allocation (Ofqual says sampling rates of about 5% are typical) to compare the examiner’s marks with an agreed standard.
+- Records for post-result services. Every mark is entered per question against a known evaluator. CBSE gave Class 12 students scanned copies of their evaluated answer books, then a window to ask for verification or re-evaluation.
+
+## What OSM does not solve
+Evaluators still read every answer. OSM saves the trip to the evaluation centre, not the reading. Ninety-eight lakh answer sheets still need enough evaluators to read every page of every one.
+Evaluator variance stays. Two careful evaluators can give the same answer different marks, especially in long answers. Ofqual’s 2018 analysis of on-screen marking data found that the probability of a candidate receiving the “definitive” grade (the one senior examiners would give) ranged from 0.96 for a mathematics qualification to 0.52 for an English language and literature qualification, though the probability of getting the definitive grade or the one next to it was above 0.95 for all of them. OSM measures variance well. It does not remove it.
+New failure points appear. Scanning adds steps that can go wrong. CBSE’s June 2026 window for post-result verification listed the issues students could report: missing pages, missing supplementary sheets, missing maps or graphs, blurred pages, an incorrect answer book, and evaluation against a different set. The Ministry said more than 13,000 answer sheets written in very light ink were identified and checked manually. CBSE’s February circular had expected that post-result verification of marks would no longer be required. In practice a verification route was still needed, for a different kind of error.
+Security becomes a bigger topic. Scanned answer books put a whole cohort’s personal data in one system. On 1 June 2026, The Week reported CBSE’s statement that it had been monitoring vulnerabilities flagged in public in its service provider’s portal, had brought in cybersecurity experts from government and the IITs, and that the identified vulnerabilities had been contained.
+
+## What AI first evaluation adds
+AI evaluation of answer sheets does what OSM does not: it reads first. A typical system reads the handwriting, finds each answer, compares it with a marking scheme and proposes a mark with reasons. The evaluator’s job changes from reading every answer from scratch to checking a proposed mark and changing it where they disagree.
+
+- One rubric for every script. The same criteria are applied to the first script and the ten-thousandth, without end-of-day fatigue.
+- Reasons you can audit. Per question: what was read, which criteria were met, what mark was proposed and why.
+- Triage. Low-confidence reads and unreadable pages are flagged for a human instead of being marked by guesswork.
+- An annotated copy. Some systems write ticks, crosses and notes onto the script itself, so the student or a re-evaluator can see where marks were won and lost.
+The limits matter just as much:
+
+- It should not make the final decision. Marks stay a draft until a human releases them.
+- It reads text. Diagrams, maps and graphs need a human eye; a text-based system can judge only their labels and written explanation.
+- It must be tested on your subjects, languages and handwriting. Ask for results on your own past scripts, not general claims.
+- It can be wrong in ways that look confident, so human review and sampling must continue.
+
+## How the two combine
+Think of OSM as the desk and AI as a first reader sitting at it. Three patterns work:
+
+- 1 AI first pass, human reviews every script
+The AI proposes marks and reasons per question. The evaluator sees the scan beside them, confirms or changes each mark, and the human mark is final. Suits university semester exams, internal exams and mock tests.
+
+- 2 Human marks first, AI as a check
+Evaluators mark as they do in OSM today. An AI mark is computed in the background, and large disagreements go to a senior examiner, like a seed check that covers every script. Suits bodies whose rules require a human to enter every mark.
+
+- 3 Split by question type
+AI first pass on text answers with clear marking schemes; human-only evaluation for diagram-heavy questions and for languages the system has not been tested on.
+
+Whichever pattern you choose, protect the human edit: once an evaluator changes a mark, no later AI run should overwrite it.
+
+## Risks and governance
+
+- Write down who owns the final mark. Your rules should say that a named human role decides every mark and that nothing is published without human release.
+- Keep re-evaluation unchanged. Students keep the same rights to see their copy and ask for re-evaluation. The re-evaluator should see the AI’s proposed mark and reasons, and every human change.
+- Keep an audit trail. Per question: the scan, what the system read, the proposed mark and reason, the evaluator’s mark, and who changed what, and when.
+- Gate scan quality. Borrow CBSE’s layered checks: at scanning, by a quality control team, and by the evaluator, who can reject an unreadable copy for rescanning.
+- Pilot before go-live. Run the new process on past scripts with known marks, in parallel with the old one, and compare. Mumbai’s 2017 experience shows the cost of skipping this step.
+- Protect the data. Answer books carry students’ names, roll numbers and handwriting. India’s Digital Personal Data Protection Rules, 2025 were notified on 14 November 2025 with an eighteen-month phased compliance period, and include duties on security safeguards and telling affected people about a breach without delay. Check where scans are stored, who can open them, how long they are kept and how vendors are audited, and take legal advice on your obligations.
+- Be open about AI use. Tell evaluators and students where AI is used and how a human checks it. UNESCO’s 2023 guidance on generative AI in education calls for protecting data privacy and a human-centred approach to validating such tools.
+
+## A decision table
+Your situation | OSM alone | AI first pass + human review | What to watch |
+
+Board exam where rules require a human to enter every mark | Fits today | Use AI as a background check until the rules allow more | Write the AI’s role into your rules first |
+University semester exams, many evaluators, tight result dates | Removes logistics; reading load unchanged | Cuts reading load; evaluators review proposed marks | Pilot on past scripts; keep re-evaluation |
+Internal tests, mock exams, practice answer writing | Often too heavy to set up | Good fit: fast feedback, teacher releases results | Review before release |
+Diagram-heavy papers such as engineering drawing or map work | Fits | Limited: text is judged, drawings need humans | Route those questions to human evaluators |
+Papers in languages the system has not been tested on | Fits | Test on your own samples first | Ask for results on your scripts |
+Students should see why they lost marks | Scanned copy with marks | Annotated copy with reasons | Check annotations during review |
+
+For a side-by-side view of the two approaches, see Evalezy vs on-screen marking .
+Where Evalezy fits
+Evalezy is an AI first evaluator for handwritten answer sheets. It uses one marking scheme per question (yours, or a generated one you can edit), reads each scanned script, finds answers by content even when they are out of order, and marks in half-mark steps against the criteria. Unreadable scripts fail with a clear error and are never graded by guesswork.
+Every mark lands as a draft. Evaluators see the extracted answer, the marks, the reasons and a criteria breakdown, change what they disagree with, and their edits are never overwritten by a later AI run. Nothing reaches students until someone presses Release Result. See teacher review and the red-pen checked copy .
+Be clear on the limits: diagrams are judged by their labels and written explanation only, and grading is built and tested on English scripts, so for other languages send us samples. Current capacity is about 100 copies in 2 to 3 hours. Read more for exam bodies and colleges and universities .
+
+Book a demo
+
+## Sources
+
+- CBSE circular, 9 February 2026: Introduction of On-Screen Marking (OSM) for Class XII Examinations (checked 1 October 2026)
+- CBSE: Know about On Screen Marking (OSM), FAQ dated 18 May 2026 (checked 1 October 2026)
+- CBSE press release, 2 June 2026: Verification of issues in scanned copies and re-evaluation (checked 1 October 2026)
+- CBSE press release, 21 June 2026: Release of Class XII verification and re-evaluation outcomes (checked 1 October 2026)
+- ThePrint (PTI), 17 May 2026: On-Screen Marking not new, enables transparent evaluation: Ministry of Education (checked 1 October 2026)
+- ThePrint (PTI), 17 May 2026: ‘Not new for CBSE’: Education Ministry dismisses concerns about On-Screen Marking system (checked 1 October 2026)
+- The Week, 1 June 2026: OSM row: Can CBSE blacklist vendor over portal lapses? (checked 1 October 2026)
+- Devdiscourse (PTI), 13 February 2026: Punjab to introduce ‘on-screen’ marking system for 2026 board exam evaluations (checked 1 October 2026)
+- Deccan Herald, 4 April 2012: VTU examination paper evaluation goes digital (checked 1 October 2026)
+- Newslaundry, 29 September 2017: Mumbai University: A consistent tale of inefficiency and woe (checked 1 October 2026)
+- Ofqual, November 2018: Marking consistency metrics, an update (checked 1 October 2026)
+- PIB, 17 November 2025: DPDP Rules, 2025 Notified (checked 1 October 2026)
+- UNESCO, 7 September 2023: Guidance for generative AI in education and research (checked 1 October 2026)
+
+## Frequently asked questions
+What is on-screen marking (OSM)? +
+On-screen marking is a digital evaluation system. Students write on paper, the answer books are scanned, and evaluators log in to read each answer on a computer and enter marks question by question. The software totals the marks, records who marked what and lets senior examiners check samples.
+
+Is on-screen marking the same as AI evaluation? +
+No. In on-screen marking a human evaluator reads and marks every answer; only the medium changes from paper to screen. In AI evaluation, software reads the handwriting and proposes marks against a marking scheme, and a human reviews them. The two can be combined.
+
+Does CBSE use AI to check answer sheets? +
+Not in its on-screen marking system, according to CBSE’s own FAQ from May 2026. Asked whether computers check the answers, CBSE said no: examiners evaluate the scanned copies on a computer instead of the physical answer books.
+
+Can AI replace evaluators in board or university exams? +
+It should not. The responsible use is an AI first evaluation that a human evaluator reviews, with the human mark final and nothing published without human release. Diagram-heavy answers and languages the system has not been tested on need human evaluators.
+
+How should an exam body pilot AI evaluation? +
+Run it on past scripts that already have final marks, in parallel with your current process. Compare marks question by question, study the largest disagreements, check each question type separately, and set rules for human review before using it on a live exam.
+
+What happens to re-evaluation when AI is used? +
+Students should keep exactly the same rights to see their copy and ask for re-evaluation. The re-evaluator should see the scanned answer, the AI’s proposed mark and reasons, and every change the human evaluator made.
+
+On this page
+
+- What on-screen marking is
+- How OSM is used in India
+- What OSM solves
+- What OSM does not solve
+- What AI first evaluation adds
+- How the two combine
+- Risks and governance
+- A decision table
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Read
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# How to Check 200 Answer Sheets Faster Without Losing Fairness | Evalezy
+URL: https://evalezy.com/blog/how-to-check-answer-sheets-faster/
+
+- Home
+- / Blog
+- / How to Check 200 Answer Sheets Faster Without Losing Fairness
+Guides
+
+# How to Check 200 Answer Sheets Faster Without Losing Fairness
+Practical copy checking tips for teachers: mark question by question, fix the scheme first, work in passes, moderate a sample and use feedback codes.
+By the Evalezy team · 1 October 2026· 9 min read
+
+## Key takeaways
+
+- Write the marking scheme before the first copy, and test it on five to eight varied copies before you freeze it.
+- Mark question by question across the whole stack: the scheme stays in your head and one strong or weak answer is less likely to colour the next.
+- Split the work into passes (marking, totalling, checking, feedback) so that each pass has one job and fewer errors slip through.
+- Re-mark a small sample at the end, including every borderline copy, to catch drift you cannot feel while marking.
+- Short feedback codes save time when students know what they mean, and AI first-checking can take over the first pass while the teacher still releases the marks.
+
+Two hundred answer sheets is not an unusual pile. Five sections of 40 after a unit test, or one batch at a coaching centre after a weekly mock, and the stack is on your table. The checking itself is not hard. What makes it slow is making the same judgement 200 times. What makes it unfair is making it slightly differently on copy 180 than on copy 1.
+This guide deals with both problems. Nothing in it needs software. The last section covers where AI first-checking fits, if you want to go further.
+
+## Why checking takes so long
+For a sense of scale: CBSE’s 2025 instructions to board examiners ask for a full 8-hour working day and 20 answer books a day in main subjects (25 in other subjects). At that pace, 200 board copies would take one examiner ten working days. A school test is shorter, but the arithmetic is the same: one minute saved per copy is more than three hours saved across 200.
+Most of that time goes into three places that have little to do with reading answers:
+
+- Re-deciding. Without a written scheme, you decide again on every copy whether a half-right answer gets the half mark. Each decision is quick. Two hundred of them are not.
+- Switching. Copy by copy, you jump from a 1-mark definition to a 5-mark long answer to a numerical and back, a dozen times per copy, reloading a different standard each time.
+- Admin. Totalling, carrying marks to the cover page and the register, and fixing mistakes after students point them out. CBSE’s own list of common examiner errors is mostly this kind of thing: answers left unassessed, wrong totals, marks wrongly carried from the inside pages to the title page, and marks in words and figures that do not match.
+Each method below attacks one of these.
+
+## Before the first copy: a scheme and a trial run
+The biggest single time-saver is deciding what each answer is worth before you start. Write a marking scheme for every question worth more than a mark or two: the points you are looking for, the marks for each, and what earns a half mark. The points should add up exactly to the marks for the question. If you have not written one before, our guide on how to write a marking scheme has worked 2, 3 and 5-mark examples.
+Then test the scheme on a handful of copies before you trust it.
+
+- 1 Pick five to eight varied copies
+Take a few from the top, middle and bottom of the stack, not just the neat ones. Include at least one weak copy and one strong one.
+
+- 2 Mark them against the scheme
+Note every answer the scheme does not cover: a correct point in different words, a common wrong answer, a half-right one.
+
+- 3 Fix the scheme, then freeze it
+Add the alternatives you will accept and the near-misses you will not. After this, change it only for a real gap, and if you do, go back over the copies already marked for that question.
+
+- 4 If colleagues share the paper, compare
+Each teacher marks the same few copies and you compare. CBSE builds the same check into board evaluation: the head examiner goes through the first five answer books each evaluator marks on day one before the rest are handed out.
+
+## Mark question by question, not copy by copy
+Instead of finishing copy 1 and moving to copy 2, mark Question 1 on all 200 copies, then Question 2 on all 200, and so on. With paper booklets, a practical version is to go section by section: all of Section A across the stack, then all of Section B.
+It tends to be faster because the scheme for one question stays in your head, and after twenty copies you have seen most of the ways students answer it. It can also be fairer. When one person marks a whole script, a strong or weak answer early on can colour how they read the same student’s later, unrelated answers. Researchers call this the halo effect. Ofqual’s 2014 review of item-level marking (each question marked separately) found that the evidence is limited, but that marking by item seems to be at least as reliable as marking whole scripts and may remove the halo effect. Examiners in one study it describes named speed as the main advantage.
+The same review records the downside examiners reported: marking one question again and again is boring, and boredom can lead to slips of attention. So:
+
+- Group two or three short questions into one pass rather than doing a single 1-mark question 200 times.
+- Mark the long answers, which need the most judgement, when you are freshest.
+- Shuffle the stack between questions. A review of marking research written for Ofqual by NFER in 2013 describes contrast effects: good work is judged more favourably when it follows weaker work, and poor work more severely when it follows strong work. If the pile is always in roll-number order, the same students always follow the same neighbours. A shuffle stops that bias landing on the same copies every time.
+- Fold back or cover the name on the cover page if you can, so you are marking the answer and not the student you know.
+
+## Work in passes, one job per pass
+Trying to mark, total, comment and fill the register in one go is how errors creep in. Split the work into passes, each with a single job.
+Pass | What you do | What you do not do |
+
+1. Marking | Tick, cross and write the marks for each answer in the margin, with a feedback code where useful. | No totals, no long comments. |
+2. Totalling | Add up each copy, write the total on the cover and enter the marks on a tally sheet. | No re-marking. If an answer looks wrong, flag it for pass 3. |
+3. Checking | Re-check flagged answers and a moderation sample (see below). | No new rules, unless you apply them to every copy. |
+4. Class feedback | List the three to five mistakes you saw most often, to discuss in class. | No re-marking. |
+
+A simple tally sheet makes the totalling pass far more reliable: one row per student, one column per question and a total column. Fill it from the margins, then add it up both ways. The sum of the student totals must equal the sum of the question totals. If it does not, there is a slip somewhere, and you find it before a student does. The sheet also shows at a glance which question the class found hardest.
+Boards take this seriously too. When CBSE announced on-screen marking for Class XII answer books from the 2026 examinations, the first benefit on its list was the elimination of totalling errors.
+
+## Time-box the work
+A pile of 200 feels endless because it has no shape. Give it one.
+
+- Time ten. Time yourself on ten copies of one question and multiply by twenty. At 40 seconds a copy, that question costs a little over two hours for 200 copies. Now you can plan.
+- Book blocks, not evenings. Plan blocks of 45 to 60 minutes with a short break between them, and decide which questions go in which block.
+- Long answers first. They need the most judgement, so give them your best hour, not the last one of the night.
+- Set a stop rule. If you notice you are reading the same line twice, stop. A rushed mark costs more time later than a break costs now.
+- Clear the quick ones fast. Unattempted answers, one-word answers and multiple choice take seconds. Do them in their own quick pass so they never interrupt a judgement pass.
+
+## Sample for fairness: a moderation check
+Moderation means checking a sample of your own marking, the way a head examiner checks an examiner’s. It is a small job next to the marking itself, and it catches drift you cannot feel while marking.
+
+- Pick the sample. About ten copies spread across the order you marked them in (some early, some middle, some late), plus every copy within a mark or two of a pass mark or grade boundary, plus the top two or three.
+- Re-mark blind. Cover your first marks and re-mark the long answers in the sample.
+- Compare. A half-mark difference here and there is normal. A pattern is not: if your late copies are consistently stricter than your early ones on one question, go back through that question on the whole stack.
+- Swap with a colleague when a paper is shared. Five copies each, marked against the same scheme, is enough to see whether you are applying it the same way.
+
+## Feedback shorthand students actually understand
+Writing the same comment sixty times is a large hidden cost. Short codes fix that. The Education Endowment Foundation’s 2016 review of written marking reports that research finds no difference in effectiveness between coded and written-out feedback, provided students understand what the codes mean, and that codes are likely to save time. The same review is frank that the overall evidence on written marking is thin, so treat this as sensible practice rather than a guarantee.
+A sample code list. Put yours on the board and in the front of every notebook.Code | Meaning | What the student does |
+
+Def | Definition incomplete | Rewrite the definition with the missing part |
+Ex | Example missing | Add one relevant example |
+R | Reason not given | Add the “because” |
+U | Unit missing or wrong | Correct the unit in the final answer |
+C | Calculation slip | Find and fix the slip |
+L | Label missing on a diagram | Label the parts asked for |
+? | Could not read this | Rewrite it legibly |
+
+The review also draws a useful line between careless mistakes and misunderstandings. A slip can simply be marked wrong. A misunderstanding is better met with a hint or a question that points the student back to the idea. Codes handle the first kind. Save your written comments for the second.
+Keep a scrap list, as you mark, of the mistakes you see most often. Ten minutes of class feedback on those does more than the same comment written into forty copies.
+
+## Where AI first-checking fits
+Everything above makes the first pass faster. AI first-checking takes the first pass off your desk. The discipline stays the same: a fixed scheme per question, a review by the teacher, and marks released only when the teacher is satisfied. Your job shifts from marking 200 copies to reviewing them, and the moderation step above applies to AI-checked copies exactly as it would to a colleague’s.
+Before you adopt any tool, check what it does with copies it cannot read, and make sure marks never reach students before a teacher has looked at them. Our buyer’s guide to AI answer sheet evaluation lists twelve questions to ask, and our comparison with manual checking sets the two side by side.
+Where Evalezy fits
+Evalezy checks scanned or photographed handwritten answer sheets and returns each student’s own copy checked in red pen : ticks, crosses, short notes, marks per question and the total circled on the first page. You can see a real checked copy .
+It works the way this guide recommends. One marking scheme per question , which you can read and edit, is used for every copy, and marks are given in half-mark steps. You can upload up to 200 PDFs at a time , one per student. Evalezy reads names and roll numbers and asks you to pick the student whenever a match is unclear. 100 copies take about 2–3 hours on current capacity.
+Marks arrive as a draft. In teacher review you see each answer with its marks, feedback and criteria breakdown, change anything you disagree with, and press Release Result. Pricing is ₹1 per page checked (plus GST), and unreadable copies are not charged.
+
+Book a demo
+
+## Sources
+
+- CBSE, Marking Scheme: Home Science (064), Senior Secondary School Examination 2025, General Instructions (examiner workload, head examiner check of first five answer books, common examiner errors) (checked 1 October 2026)
+- CBSE circular dated 9 February 2026: Introduction of On-Screen Marking (OSM) for Class XII Examinations (checked 1 October 2026)
+- Ofqual (2014), Quality of Marking: Review of Literature on Item-level Marking Research (checked 1 October 2026)
+- Tisi, Whitehouse, Maughan and Burdett (2013), A review of literature on marking reliability research, NFER for Ofqual (checked 1 October 2026)
+- Elliott et al. (2016), A marked improvement? A review of the evidence on written marking, Education Endowment Foundation (checked 1 October 2026)
+
+## Frequently asked questions
+How long should it take to check one answer sheet? +
+It depends on the paper. Time yourself on ten copies of each question and multiply. As a reference point, CBSE’s 2025 instructions ask board examiners to evaluate 20 answer books a day in main subjects over an 8-hour working day.
+
+Is it better to check copy by copy or question by question? +
+Question by question, or section by section with paper booklets. The scheme stays in your head, you see the full range of answers to each question, and it limits the halo effect. Break up long runs of one short question so boredom does not cause slips.
+
+How do I stay fair when I am checking late at night? +
+Fix the scheme before you start, mark the long answers when you are fresh, shuffle the stack between questions and re-mark a sample at the end. A pattern of stricter or softer marking late in the pile shows up in the sample.
+
+Should I give half marks? +
+Yes, if the scheme says exactly what earns them. Decide before the first copy, for example ½ for naming a factor without explaining it, and apply the rule the same way to every student.
+
+How many copies should I re-check for moderation? +
+There is no fixed number. About ten copies spread across the order you marked them in, plus every copy near a pass mark or grade boundary, is a workable start for a class set.
+
+Can AI check handwritten answer sheets? +
+Yes. Tools such as Evalezy read scanned or photographed copies and propose marks against a marking scheme, and a teacher reviews and releases them. Evalezy is built and tested on English copies, and it judges diagrams by their labels and written explanation, not as drawings.
+
+On this page
+
+- Why checking takes so long
+- Before the first copy
+- Question by question
+- Work in passes
+- Time-box the work
+- Sample for fairness
+- Feedback shorthand
+- Where AI first-checking fits
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Read
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask | Evalezy
+URL: https://evalezy.com/blog/ai-answer-sheet-evaluation-buyers-guide/
+
+- Home
+- / Blog
+- / AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
+AI checking
+
+# AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
+How AI answer sheet evaluation reads handwriting and marks against a scheme, plus 12 questions to ask any AI copy checking vendor before you buy.
+By the Evalezy team · 1 October 2026· 8 min read
+
+## Key takeaways
+
+- AI answer sheet evaluation reads the handwriting, finds each answer, marks it against a scheme and hands the result to a teacher; reading handwriting is a harder job than reading printed text.
+- Consistency comes from one fixed marking scheme per question used for every copy, not from the AI model alone.
+- No vendor’s demo tells you how it will do on your copies, so run a pilot on copies your teachers have already marked.
+- The most revealing questions are about failure: unreadable copies, uncertain student matches, diagrams, other languages and who releases the marks.
+
+AI answer sheet evaluation means software that reads a student’s handwritten answer copy, finds each answer and proposes marks against a marking scheme. It is now offered to schools, coaching institutes and universities, and the demos tend to look alike. The differences show up later, on your copies, in exam week.
+This guide explains how these systems work in plain words, then gives twelve questions to put to any vendor, including us. It is written for principals, exam heads and coaching owners who will sign off the purchase and answer for the marks.
+
+## What it is, and what it is not
+Three different things often get lumped together:
+
+- OMR reads filled bubbles on a printed sheet. It works only for objective questions.
+- On-screen marking scans answer books so that human examiners mark them on a screen. People still read every answer; the software handles distribution and adds up the marks. CBSE introduced on-screen marking for Class XII answer books from the 2026 examinations and listed the elimination of totalling errors among its benefits.
+- AI answer sheet evaluation reads the handwriting itself and proposes the marks. A teacher then reviews them.
+Our pages comparing AI checking with on-screen marking and manual checking go into these differences in more detail.
+
+## How it works, step by step
+Most systems follow the same six steps. The buying questions later in this guide map onto them.
+
+- 1 Clean up the scans
+Copies arrive as scanned PDFs or phone photos. Pages are straightened, cleaned up and given more contrast so that faint pencil and light ink are easier to read.
+
+- 2 Read the handwriting
+This is the hard part, and it is not the same as ordinary OCR. Printed-text OCR expects regular letters on straight lines. Student handwriting slopes, runs together, has crossings-out, arrows and insertions, and mixes words with symbols. Newer systems use AI models that read the whole page as an image, in context, rather than letter by letter. They can still misread a word.
+
+- 3 Find each answer
+Students answer out of order, skip numbers, write the wrong number and continue an answer three pages later. The system has to work out which text answers which question before it can mark anything.
+
+- 4 Mark against a scheme
+Each answer is compared with a marking scheme for that question: the points that earn marks and what each is worth. If the scheme is fixed once and used for every copy, every copy is judged the same way. If the AI decides afresh for each copy, they may not be.
+
+- 5 Annotate
+The output is marks per question, usually with short reasons. Some tools return a spreadsheet. Some write the marks and comments back onto the student’s own copy.
+
+- 6 Human review and release
+A teacher reviews the proposed marks, changes what needs changing and releases the result. In England, the exams regulator Ofqual has made clear that AI may not be used as the sole marker in any assessment that is part of a regulated qualification, and expects appropriate expert human involvement and oversight.
+
+Ask for evidence on your own copies
+Ofqual’s researchers wrote in January 2026 that AI marking performance varies significantly across contexts, that marking a maths exam is substantially different from marking an English exam, and that the case for any use needs context-specific evidence. A demo on the vendor’s sample proves little. A pilot on your own copies proves a lot.
+
+## 12 questions to ask before you buy
+For each question: why it matters, and what a good answer sounds like.
+
+### 1. What happens to a copy the system cannot read?
+Blurred photos, faint pencil, missing or shuffled pages. A system that always produces a mark will sometimes produce one from text it never really read. A good answer: the copy fails with a clear reason, it is not graded by guesswork, a teacher is told, and you are not charged for it. Ask to see what the teacher sees when this happens.
+
+### 2. Who releases the marks to students?
+If AI marks can reach students or parents before a teacher has looked at them, every misread becomes a complaint. A good answer: marks land as a draft, only a teacher can release them, and students see nothing until then. Ask whether that is enforced on the server or only hidden in the app.
+
+### 3. Does it ever guess which student a copy belongs to?
+With a bulk upload, the system has to match each copy to a student, usually by reading the handwritten name and roll number on the first page. Handwritten names are hard, and two students can have similar names. A wrong match means one student receives another student’s marks. A good answer: when the match is not certain, a person picks the student.
+
+### 4. How exactly is it priced?
+Per page, per copy, per question, per student or a subscription can all look cheap on a slide. Ask for: a worked cost for one real paper (copies × pages), whether failed and unreadable copies are charged, whether a re-check costs again, what is included in the price, and whether the price includes GST.
+
+### 5. What happens to student data?
+Answer sheets carry names, roll numbers and children’s handwriting. In India, the Digital Personal Data Protection Act, 2023 treats anyone under 18 as a child and has a separate section on children’s data. Its Rules were notified on 14 November 2025 with an eighteen-month period for phased compliance, and the government’s summary says verifiable parental consent is required for a child’s data unless the processing relates to essential services such as education. How that applies to your institution is a question for your own adviser.
+Ask any vendor: where copies are stored, who can see them, which outside AI providers receive page images, how long data is kept, how you delete it, and what the contract says. If a vendor claims a security certification, ask for the certificate.
+
+### 6. Can teachers override marks, and does the override stick?
+Overrides are the whole point of review. A good answer: a teacher can change any mark, and a mark a teacher has changed is never overwritten by a later AI run. Ask what happens if a copy is re-checked after a teacher has edited it.
+
+### 7. How does it keep marking consistent across copies?
+Consistency is one of the main reasons to use AI at all. A good answer: one marking scheme per question, fixed before marking and used for every copy, which teachers can read and edit, plus a breakdown for each answer showing which criteria earned marks. Seeing why a mark was given also matters when a student asks for a re-check. Test it: submit the same copy twice and compare the marks.
+
+### 8. How are diagrams, maps and graphs marked?
+Many answers in science, geography and maths include drawings. Ask precisely what is judged: the drawing itself, or only the labels and the written explanation around it. A good answer is a specific one, with examples from your subjects. Be wary of a general “yes, diagrams are supported”.
+
+### 9. Which languages has it actually been tested on?
+“Supported” and “tested” are not the same thing. Hindi, regional languages, and answers that mix English with another language or script are much harder than they sound. Ask for: the languages it has been tested on, and a trial on your own copies in each language you need.
+
+### 10. How does it handle maths?
+Maths copies are dense with fractions, powers, symbols and working spread over many lines, and one misread minus sign changes the answer. Ask: how symbols and working are read, how unclear lines are handled, and whether method marks are given when the final answer is wrong.
+
+### 11. How long does a batch really take?
+“Instant” is a warning sign: reading and marking handwriting takes time. Ask for: typical minutes per copy, how long until the first results appear, how long a batch of 100 or 500 copies takes on current capacity, and whether that changes in exam season when every customer uploads at once. Also ask how you are told a batch is done.
+
+### 12. Is there an API?
+This matters if you run your own LMS, test platform or app. Ask: whether the API is available to you now or only on a roadmap, how authentication works, how you send a copy (a file or a URL) and get results back, and whether API pricing matches the dashboard.
+
+## How to run a fair pilot
+
+- Use copies you have already marked. Thirty to fifty copies from a recent test, across at least two subjects if you can.
+- Include the hard cases. Messy handwriting, answers out of order, a phone photo, a near-blank copy, a long answer and a numerical.
+- Give the vendor your marking scheme. You are testing whether it applies your standard, not whether it can invent a good one. If you need to tidy your scheme first, see how to write a marking scheme .
+- Compare question by question, not just totals. Totals can match while individual answers are off in both directions. Look at where the AI and your teachers differ, and read why.
+- Time the review. The real saving is how long a teacher takes to review and release a batch, compared with checking it by hand.
+Where Evalezy fits
+Evalezy is our AI checking product for handwritten answer sheets. It returns each student’s own copy checked in red pen, with marks per question and the total circled; you can see a real checked copy . Here is how it answers the twelve questions.
+Unreadable copies: a mostly unreadable copy fails with a clear error, is not graded by guesswork and is not charged. Release: marks land as a draft, and students see “Results pending” until a teacher presses Release Result, enforced on the server. Student matching: it reads the name, roll number and class from the first page and never guesses; uncertain matches wait for a teacher to pick the student.
+Price: ₹1 per page checked ($0.01 outside India), plus GST in India. Failed, cancelled and unreadable checks are free; a re-check is charged again. Data: see how we handle answer sheets ; Evalezy does not hold SOC 2 or ISO certification today. Overrides: a mark a teacher edits is never overwritten by a later AI run.
+Consistency: one marking scheme per question , generated once and used for every copy, which you can edit or replace; teacher review shows the criteria breakdown for every answer. Diagrams: judged by their labels and written explanation only, not as drawings. Languages: built and tested on English copies; for anything else, send us samples first.
+Maths: unclear maths lines get a second read by an equation reader, up to four per copy. Time: 1–8 minutes per copy, first results in about 10 minutes, and about 2–3 hours for 100 copies on current capacity, with a bell alert and an email when a batch is done. API: API access is enabled per account.
+
+Book a demo
+If you are evaluating tools for a specific setting, our pages for schools , coaching institutes and colleges and universities show how the workflow fits, and our comparison with a general chatbot covers the question we hear most.
+
+## Sources
+
+- CBSE circular dated 9 February 2026: Introduction of On-Screen Marking (OSM) for Class XII Examinations (checked 1 October 2026)
+- Ofqual, Ofqual’s approach to regulating the use of artificial intelligence in the qualifications sector (policy paper, updated 16 July 2026) (checked 1 October 2026)
+- Handford and Williamson, Using AI in marking: why technical capability, fairness, and transparency all matter, The Ofqual blog, 14 January 2026 (checked 1 October 2026)
+- The Digital Personal Data Protection Act, 2023 (No. 22 of 2023), Gazette of India, via MeitY: section 2(f) and section 9 (checked 1 October 2026)
+- Press Information Bureau, DPDP Rules, 2025 Notified (17 November 2025) (checked 1 October 2026)
+
+## Frequently asked questions
+How accurate is AI answer sheet checking? +
+There is no single accuracy figure that transfers to your copies. Results vary with subject, question type, handwriting, scan quality and language. That is why a pilot on copies your teachers have already marked tells you more than any number in a brochure.
+
+Is AI copy checking the same as on-screen marking? +
+No. On-screen marking scans answer books so that human examiners can mark them on a screen. AI checking reads the handwriting and proposes marks, which a teacher then reviews and releases.
+
+Can we just use ChatGPT to check answer sheets? +
+A general chatbot can comment on a photo of one answer, but checking a class needs one fixed scheme for every copy, matching copies to students, an annotated copy and a teacher release step. Our comparison page covers the differences.
+
+Should AI marks ever go to students without a teacher’s review? +
+No. Treat AI marks as a draft that a teacher reviews, edits and releases. In England, the exams regulator Ofqual has said AI may not be used as the sole marker in assessments that are part of regulated qualifications.
+
+What should a pilot include? +
+Thirty to fifty copies your teachers have already marked, across at least two subjects if you can, including messy handwriting, out-of-order answers, a phone photo and a near-blank copy. Give the vendor your marking scheme and compare marks question by question.
+
+On this page
+
+- What it is, and what it is not
+- How it works, step by step
+- 12 questions to ask before you buy
+- How to run a fair pilot
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Read
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples | Evalezy
+URL: https://evalezy.com/blog/how-to-write-a-marking-scheme/
+
+- Home
+- / Blog
+- / How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
+Assessment
+
+# How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
+How to write a marking scheme for subjective answers: rules for criteria and half marks, with worked 2, 3 and 5-mark examples in the CBSE value-point style.
+By the Evalezy team · 1 October 2026· 8 min read
+
+## Key takeaways
+
+- A marking scheme lists, for each question, the points that earn marks, what each is worth and what earns a half mark, and its criteria add up exactly to the question’s marks.
+- Write criteria as things you can see on the page (“names a factor and says how it works”), not as impressions (“good understanding”).
+- A model answer is a reference, not required wording: a student’s own correct expression earns the marks, which is also how CBSE instructs its examiners.
+- Keep marks in their own column, never inside the criterion text, so that editing one criterion cannot leave a stale figure behind.
+- Test the scheme on five varied copies before marking the stack, and write down every near-miss decision you make.
+
+A marking scheme is the reason copy 1 and copy 200 get the same marks for the same answer, and the reason two teachers checking one paper agree. Without one, the standard lives in the checker’s head, and heads get tired.
+This guide shows how to write one for subjective questions, with three worked examples: a 2-mark definition, a 3-mark “explain the factors” question and a 5-mark long answer. The examples use Class 10 Geography content so that they are familiar, but the method works for any subject.
+
+## What a marking scheme is (and what it is not)
+A marking scheme, or rubric, lists for each question the points that earn marks, how much each is worth, and how to treat answers that are half right. A good one also has a model answer for reference and a short note on what does not earn marks.
+Indian board schemes are a useful model. CBSE’s published marking schemes list “expected answers / value points” for each question with the marks per point, written like “½ × 4 = 2”, and often add “Any other” so that other correct points are credited. The general instructions to examiners go further: the value points are guidelines and not the complete answer, and if a student’s own expression is correct, the due marks should be awarded.
+That is the spirit to copy. A marking scheme describes what a good answer contains. It is not a script the student must reproduce.
+There are two broad styles:
+
+- Point-based (value points): marks for each correct idea. Best for definitions, “explain the factors” questions, numericals and most short and long answers in content subjects.
+- Level-based (bands): a description of what an answer looks like at each level. Best for essays, letters and arguments, where quality matters more than a count of points.
+This guide focuses on point-based schemes, with a note on levels for long answers.
+
+## Six rules for criteria that work
+
+- 1 Make the criteria add up exactly to the marks
+A 3-mark question has criteria worth 3, not 2½ or 4. If you allow “any three of five points”, say so, and say that each point can earn marks only once.
+
+- 2 One idea per criterion, written as something you can see
+“Names a factor and says how it helps form soil” can be checked. “Shows good understanding” cannot, and two teachers will read it two ways.
+
+- 3 Decide half marks in advance
+Write down exactly what earns ½: a factor named but not explained, a definition with one of its two parts, the right method with an arithmetic slip.
+
+- 4 Keep the marks out of the criterion text
+Put marks in their own column. A figure buried in the wording, such as “explains the effect (2 marks)”, goes stale the moment you edit or rescale the criteria, and then the text and the marks column disagree.
+
+- 5 Treat the model answer as a reference, not required wording
+Students who say the right thing in their own words earn the marks. List the common acceptable alternatives so checkers do not have to decide on the spot.
+
+- 6 Say what does not earn marks
+Write down the near-misses you expect: the related but wrong term, an effect given in place of a cause, a list of examples in place of a definition. It saves a decision on every copy.
+
+Two more conventions from CBSE’s instructions to examiners are worth borrowing. Penalise an error only once, not again in every later step that depends on it. And use the full range of marks: give full marks when an answer deserves them.
+
+## Example 1: a 2-mark definition
+Question: What is a resource? (2 marks)
+Model answer (for reference): Everything available in our environment that can be used to satisfy our needs, provided it is technologically accessible, economically feasible and culturally acceptable, is a resource.
+Total: 2 marks.Criterion | What earns it | Half marks | Marks |
+
+Core idea | Something available in the environment that can be used to satisfy human needs. | ½ if it says only “something found in nature” with no link to needs. | 1 |
+Conditions | It must be technologically accessible, economically feasible and culturally acceptable. | ½ for any two of the three conditions. | 1 |
+
+Accept: “can be used by people” or “useful to us” for “satisfy our needs”; “we have the technology to use it” for technologically accessible; “affordable to use” for economically feasible; “accepted by society” for culturally acceptable. Do not accept: a list of examples (water, coal, soil) in place of a definition. Examples show that the student recognises resources, not that they can define one.
+Notice what the scheme does not do: it does not demand the textbook sentence. A student who writes “Anything around us that people can use to meet their needs, if we have the technology, it is affordable and society accepts it” earns both marks.
+
+## Example 2: a 3-mark “explain the factors” question
+Question: Explain any three factors that help in the formation of soil. (3 marks)
+Factors to accept: relief, parent rock (bed rock), climate, vegetation and other forms of life, and time.
+Total: 3 marks. Each factor can be credited only once.Criterion | What earns it | Half marks | Marks |
+
+First factor | A valid factor, with how it helps form soil. | ½ if named but not explained, or explained wrongly. | 1 |
+Second factor | A different valid factor, with how it helps form soil. | As above. | 1 |
+Third factor | A third valid factor, with how it helps form soil. | As above. | 1 |
+
+Explanations to accept include, for example:
+
+- Climate: changes in temperature, and the action of running water, wind and glaciers, break rock down into smaller particles.
+- Vegetation and other forms of life: decomposers break down dead plants and animals and add organic matter to the soil.
+- Time: soil forms very slowly; it takes millions of years for soil to form even a few centimetres deep.
+- Parent rock: soil is formed from the rock that is broken down, so the rock shapes what the soil is made of.
+Decide the near-miss before the first copy
+Many students will list “temperature, running water and wind” as three separate factors. They are forces of nature that break rock down, and this scheme credits them together as one factor, climate. You might decide differently. What matters is that the decision is written down before marking starts, or one checker gives 3 marks for that answer and another gives 1.
+
+Why split each factor into naming and explaining? It rewards the student who knows the factors but explains them weakly, without giving full credit for a bare list. It mirrors the “½ × 6 = 3” pattern you will find in CBSE marking schemes.
+
+## Example 3: a 5-mark long answer
+Question: What is soil erosion? Explain two causes of soil erosion and two methods of soil conservation. (5 marks)
+Model answer (for reference): Soil erosion is the removal of the soil cover and its washing down. One cause is deforestation: once trees are cut, there are no roots to hold the soil, and rain washes it away. Another is defective farming, such as ploughing up and down a slope, which makes channels for water to run down quickly and carry the soil with it. One method of conservation is contour ploughing: ploughing along the contour lines slows the flow of water down a slope. Another is planting shelter belts, rows of trees that break the force of the wind. In western India, shelter belts have helped to stabilise sand dunes.
+Total: 5 marks. Each criterion is marked on its own.Criterion | What earns it | Half marks | Marks |
+
+Definition | Soil erosion is the removal or washing away of the top layer of soil. | ½ for a vague answer such as “soil gets damaged”. | 1 |
+Causes | Two valid causes, each with how it leads to erosion. | ½ for each cause named without an explanation. | 2 |
+Conservation methods | Two valid methods, each with how it protects the soil. | ½ for each method named without an explanation. | 2 |
+
+Accept as causes: deforestation, overgrazing, construction and mining, defective farming such as ploughing up and down the slope, and natural forces such as wind, glaciers and running water. Accept as methods: contour ploughing, terrace farming, strip cropping and shelter belts. An Indian example, such as terrace farming in the western and central Himalayas, is welcome but is not required for full marks.
+Keep the criteria independent. A weak definition costs the definition mark only. It should not pull down the marks for causes and methods that are explained correctly.
+
+### When a level-based scheme fits better
+If the same 5 marks were for a piece of extended writing, such as “Should farmers on hill slopes switch to terrace farming? Give your view”, counting points would reward listing over reasoning. A level-based scheme fits better:
+Level | What the answer does | Marks |
+
+High | Takes a clear position and supports it with at least two accurate reasons and an example; considers one drawback. | 4–5 |
+Middle | Takes a position with one or two reasons, but little support and no drawback. | 2–3 |
+Low | Makes relevant points without a clear position or reasons. | 1 |
+None | Nothing relevant. | 0 |
+
+Even with levels, keep the descriptions observable, and decide in advance what moves an answer from the bottom of a band to the top.
+
+### And for numericals: method marks
+The same rules apply to a numerical, with one addition: give marks for the method, not only the final answer. For “A car travels 150 km in 3 hours. Find its average speed. (3 marks)”, a workable scheme is:
+Total: 3 marks.Criterion | What earns it | Half marks | Marks |
+
+Formula | Average speed = total distance ÷ total time. | None. | 1 |
+Substitution | Correct values put into the formula: 150 ÷ 3. | None. | 1 |
+Answer | 50 km/h, with the unit. | ½ for 50 with no unit or a wrong unit. | 1 |
+
+A student who writes 150 ÷ 3 = 60 keeps the formula and substitution marks and loses only the answer mark. If a wrong value from one step is then used correctly in the next, penalise the error once, where it happened, and credit the later steps that follow from it correctly.
+
+## Common mistakes
+
+- Criteria that do not add up. Criteria worth 4 for a 3-mark question, or a scheme in which full marks are impossible.
+- Vague words. “Proper explanation”, “good answer”, “relevant points”. Replace them with what you will actually see on the page.
+- Double counting. The same idea earning marks under two criteria, such as an example that also counts as the explanation.
+- Marks hidden in the text. A “maximum 1 mark for examples” buried in a description, which quietly conflicts with the marks column after someone edits it.
+- Textbook wording as a requirement. It penalises students who understand the idea but put it in their own words.
+- No rule for choices and extra answers. If a student attempts both options of an “OR” question, the scheme should say which answer counts. CBSE’s instruction is to keep the answer that deserves more marks and score out the other with a note, “Extra Question”.
+- Writing the scheme after marking has started. The first copies get one standard and the rest get another.
+
+## Test the scheme before you mark
+Before marking the whole stack, mark five varied copies with the scheme. Any answer you hesitate over is a gap: add it as an accepted alternative or a near-miss. If two teachers share the paper, both mark the same five and compare. Where you disagree by more than half a mark, the wording of a criterion is usually the cause. Then freeze the scheme and mark the rest.
+For the marking itself, our guide on checking 200 answer sheets faster covers question-by-question marking, totalling and moderation. Exam teams writing schemes for many papers may also find our page for exam boards useful.
+Where Evalezy fits
+Evalezy builds the scheme first, then checks. When you set up an assessment, you can upload the question paper and it is read into questions. For each question, Evalezy drafts a marking scheme with three to five criteria for a subjective question (one for an objective question), rescaled so the criteria add up exactly to the question’s marks.
+You can read and edit every criterion, set your own scheme for any question and add a model answer; a model answer you store is used instead of a generated one. The scheme is created once per question and used for every student’s copy, marks are given in half-mark steps, and in teacher review you see the criteria breakdown behind every mark before you release results. See how it looks on a real checked copy .
+
+Book a demo
+
+## Sources
+
+- CBSE, Marking Scheme: Home Science (064), Senior Secondary School Examination 2025 (general instructions to examiners and value-point format) (checked 1 October 2026)
+- CBSE, Marking Scheme for Examination (index of published marking schemes) (checked 1 October 2026)
+- CBSE Academic, Class XII Sample Question Paper and Marking Scheme for Exam 2025-26 (checked 1 October 2026)
+- NCERT, Contemporary India II (Class 10 Geography), Chapter 1: Resources and Development (definition of resource, soil formation, soil erosion and conservation) (checked 1 October 2026)
+
+## Frequently asked questions
+What is the difference between a marking scheme and a rubric? +
+The terms overlap. A marking scheme often means value points with marks for each, as in CBSE’s published schemes. A rubric often means descriptions of quality at each level. Both do the same job: tell every checker exactly what earns marks.
+
+How many criteria should one question have? +
+Roughly one per idea that earns marks: one for a 1-mark question, two for a 2-mark definition and three to five for longer answers. Beyond five, criteria tend to overlap and become hard to apply the same way every time.
+
+Should students lose marks for not using textbook wording? +
+No. The model answer is a reference. CBSE’s instructions to examiners say the value points are guidelines rather than the complete answer, and that a student’s own expression earns the due marks if it is correct.
+
+How do I decide what earns half a mark? +
+Decide before marking and write it in its own column. Common half-mark rules are a point named but not explained, a definition with one of two parts, or the right method with a small slip. Then apply the same rule to every copy.
+
+Where can I find CBSE marking schemes to use as a model? +
+CBSE publishes marking schemes for its board examinations on cbse.gov.in, and sample question papers with marking schemes on its academic website, cbseacademic.nic.in.
+
+On this page
+
+- What a marking scheme is
+- Six rules for good criteria
+- Example: a 2-mark definition
+- Example: a 3-mark “explain” question
+- Example: a 5-mark long answer
+- Common mistakes
+- Test it before you mark
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+For developers
+Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Read
+Guides
+How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Read
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.

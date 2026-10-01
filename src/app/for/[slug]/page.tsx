@@ -72,7 +72,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         </div>
         <div className="ruled rounded-[1.75rem] border border-line p-8 pl-20 shadow-paper">
           <p className="text-sm font-semibold text-slate-500">Worked example</p>
-          <p className="mt-2 text-lg text-ink">{a.example.label}</p>
+          <p className="mt-2 text-lg text-ink first-letter:uppercase">{a.example.label}</p>
           <p className="mt-6 text-sm text-slate-500">{a.example.copies.toLocaleString("en-IN")} copies × {a.example.pages} pages × ₹1</p>
           <p className="h-display mt-1 text-5xl text-pen">₹{cost.toLocaleString("en-IN")}</p>
           <p className="mt-2 text-sm text-slate-500">${(cost * 0.01).toLocaleString("en-US", { minimumFractionDigits: 2 })} outside India · excl. GST · failed copies free</p>
@@ -81,7 +81,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       </section>
       <section className="border-t border-line bg-white">
         <div className="wrap py-14">
-          <p className="eyebrow">Also used by</p>
+          <p className="eyebrow">Evalezy is also for</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {others.map((o) => (
               <Link key={o.slug} href={`/for/${o.slug}/`} className="rounded-full border border-line px-4 py-2 text-sm font-semibold text-slate-700 hover:border-ink hover:text-ink">{o.label}</Link>

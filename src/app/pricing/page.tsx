@@ -37,6 +37,17 @@ export default function Page() {
       h1={<>One price: <PenCircle>₹1</PenCircle> a page checked.</>}
       lede="$0.01 a page outside India. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not."
       secondary={null}
+      visual={
+        <div className="ruled mx-auto flex max-w-md items-center gap-6 rounded-[1.75rem] border border-line p-6 pl-16 shadow-paper">
+          <img src="/copy/page-1-sm.webp" alt="The 7-page sample copy" className="w-28 shrink-0 -rotate-3 rounded shadow-paper" width={560} height={747} />
+          <div>
+            <p className="text-sm text-slate-500">The sample copy on this site</p>
+            <p className="mt-1 font-mono text-sm text-slate-600">7 pages × ₹1</p>
+            <p className="h-display mt-1 text-5xl text-pen">₹7</p>
+            <p className="mt-2 text-sm text-slate-500">38 questions marked, every page annotated. $0.07 outside India.</p>
+          </div>
+        </div>
+      }
       faqs={PRICING_FAQS}
       faqTitle="Pricing questions"
     >

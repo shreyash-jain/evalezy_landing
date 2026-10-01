@@ -39,7 +39,7 @@ export default function Page() {
         { q: "What file formats are accepted?", a: "PDF answer sheets, one file per student, uploaded directly or fetched from a URL you provide. Phone photos combined into a PDF work." },
         { q: "How is the API billed?", a: "Per page checked: ₹1 in India, $0.01 elsewhere. Failed, cancelled and unreadable sheets are not billed." },
         { q: "Can I get the checked PDF?", a: "Yes. A completed evaluation includes a URL to the checked copy with ticks, crosses, notes, marks and the circled total." },
-        { q: "Do teachers still review API results?", a: "That is up to your product. The API returns the AI's marks with reasons and confidence signals; most platforms show them to a teacher or reviewer before learners see them." },
+        { q: "Do teachers still review API results?", a: "That is up to your product. The API returns the AI's marks with the reason for each; most platforms show them to a teacher or reviewer before learners see them." },
       ]}
     >
       <section className="wrap grid gap-6 py-16 md:grid-cols-3 md:py-20">

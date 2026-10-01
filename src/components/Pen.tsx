@@ -27,12 +27,12 @@ export function PenUnderline({ children, className = "" }: { children: React.Rea
 /** A hand-drawn red loop around a word or number, like the circled total on page one. */
 export function PenCircle({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <span className={`relative inline-block px-[0.08em] ${className}`}>
+    <span className={`relative mx-[0.1em] inline-block px-[0.16em] ${className}`}>
       <span className="relative z-10">{children}</span>
       <svg
         viewBox="0 0 200 100"
         preserveAspectRatio="none"
-        className="pointer-events-none absolute left-[-0.32em] top-[-0.2em] z-0 h-[calc(100%+0.36em)] w-[calc(100%+0.64em)]"
+        className="pointer-events-none absolute left-[-0.1em] top-[-0.16em] z-0 h-[calc(100%+0.3em)] w-[calc(100%+0.2em)]"
         aria-hidden
       >
         <path

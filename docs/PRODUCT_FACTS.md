@@ -44,6 +44,7 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
 | Copies up to 40 pages are read in full by the vision model | §7 step 2 |
 | Failed, cancelled and unreadable checks are free | §13.2 |
 | A re-check is a new run and is charged again (re-checking overwrites marks) | §12.2 |
+| Each check is billed once, even if it is retried or requeued internally | §13.2, §14 |
 
 ## Pricing **(owner)**
 
