@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Inter, Kalam, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
@@ -7,10 +7,22 @@ import { Footer } from "@/components/Footer";
 import { Tracking } from "@/components/Tracking";
 import { COMPANY, SALES_EMAIL, SITE, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/site";
 
-const bricolage = Bricolage_Grotesque({ subsets: ["latin"], weight: ["600", "700", "800"], variable: "--font-bricolage", display: "swap" });
-const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-inter", display: "swap" });
-const kalam = Kalam({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-kalam", display: "swap" });
-const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-jb", display: "swap" });
+/*
+ * Fonts are self-hosted (src/fonts/*.woff2, latin + latin-ext + ₹ and maths symbols, cut from the Google Fonts
+ * sources with fontTools). next/font/google fetches from Google at build time, and on 2 Oct 2026 Cloudflare Pages
+ * got a font URL without a file extension back, which crashed the build. Local files make the build offline-safe.
+ */
+const bricolage = localFont({ src: "../fonts/bricolage-var.woff2", weight: "600 800", variable: "--font-bricolage", display: "swap" });
+const inter = localFont({ src: "../fonts/inter-var.woff2", weight: "400 700", variable: "--font-inter", display: "swap" });
+const kalam = localFont({
+  src: [
+    { path: "../fonts/kalam-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/kalam-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-kalam",
+  display: "swap",
+});
+const mono = localFont({ src: "../fonts/jetbrains-mono-var.woff2", weight: "400 500", variable: "--font-jb", display: "swap" });
 
 /** Same GTM container as vacademy.io, tutezy.ai and telleo.ai; configure Evalezy triggers there (README). */
 const GTM_ID = "GTM-5C4DDJ6W";
