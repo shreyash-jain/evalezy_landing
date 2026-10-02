@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-10-01 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-10-02 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -243,6 +243,24 @@ Marks are a draft until released. A teacher's edit is never overwritten, even if
 - 1–8 minutes a copy, several at once. First results in about 10 minutes.
 100 copies in about 2–3 hours. Upload in the evening, review in the morning.
 Diagrams are judged by labels and explanation only; keep a teacher on those.
+
+One copy, checked twice
+
+## We gave Evalezy a copy a teacher had already checked.
+Same maths half-yearly mock test, same scan. Evalezy caught 2 slips the teacher had ticked. The teacher read 5 answers correctly that Evalezy misread. Each caught what the other missed, which is why Evalezy's marks always wait for a teacher.
+Teacher
+48/80
+0 written notes
+
+Evalezy
+40/80
+12 written notes
+
+Compare every page
+Q30 · the student's check: 37 + 25 = 65 Evalezy caught it Teacher: ticked
+The teacher's copy: the wrong check 37 + 25 = 65 is ticked
+Evalezy: “= 62, not 65”
+Evalezy's copy: the check is crossed with the note Check wrong: 37+25 = 62, not 65
 
 Who it's for
 
@@ -1335,6 +1353,144 @@ No. The API costs the same per page as the dashboard.
 
 Do you offer volume pricing? +
 For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# AI vs Teacher: One Answer Copy, Checked Twice | Evalezy
+URL: https://evalezy.com/side-by-side/
+
+- Home
+- / AI vs teacher: one copy
+AI vs teacher
+
+# One answer copy. Checked twice.
+A maths half-yearly mock test: 80 marks, 32 questions, 7 pages. A teacher checked it in green pen. Evalezy checked the same scan in red. Each caught mistakes the other missed, and that is exactly why Evalezy never releases marks without a teacher.
+Book a demo See a real checked copy
+
+Teacher · green pen
+48/80
+0 written notes
+
+Evalezy · red pen
+40/80
+12 written notes
+
+They disagreed on 10 of 32 questions:
+
+- Slips Evalezy caught that the teacher ticked 2
+- Answers Evalezy misread that the teacher got right 5
+- Half-mark judgement calls 3
+
+Page by page
+
+## Drag across the page to compare.
+Both copies are the same scan, so every difference you see is a difference in checking.
+1 2 3 4 5 6 7
+
+- Wipe Side by side
+
+Page 1. Section A, one-mark answers. Both crossed Q3. They split on Q6: the student wrote −19/7, and Evalezy missed the minus sign.
+Page 1, checked by the teacher in green penPage 1, checked by Evalezy in red pen
+
+Teacher Evalezy
+Teacher Evalezy Drag across the page or use the slider: teacher’s green pen on the left, Evalezy’s red pen on the right.
+
+What Evalezy caught
+
+## Two slips the teacher ticked.
+Right final answers with wrong working: easy to tick past at copy 40. Evalezy checks every line against the scheme and says what went wrong.
+Q30 · page 7 · student wrote A = 7, B = 6; check: 37 + 25 = 65
+Evalezy caught it Teacher 3/3, check ticked Q30 as checked by the teacher: 3/3, check tickedEvalezy 2.5/3: “Check wrong: 37+25 = 62, not 65” Q30 as checked by Evalezy: 2.5/3: “Check wrong: 37+25 = 62, not 65”
+The student’s own check says 37 + 25 = 65. It is 62. The teacher ticked it; Evalezy crossed it and wrote the right sum. The answer was right, so the slip cost half a mark.
+
+Q28 · page 5 · student wrote 625t⁴/2, via × 25/2 t⁻⁸
+Evalezy caught it Teacher 3/3 Q28 as checked by the teacher: 3/3Evalezy 2.5/3: exponent error and a 2/26 slip Q28 as checked by Evalezy: 2.5/3: exponent error and a 2/26 slip
+Dividing by (2/25)t⁻⁸, the student wrote × 25/2 t⁻⁸ where it should be t⁸. The final answer is right; the working isn’t. The teacher gave full marks, Evalezy took half a mark and said why. (Evalezy also crossed one correct line, 5⁻³ = 1/125, by reading the 5 as a 6.)
+
+What the teacher caught
+
+## Five answers Evalezy misread.
+A 7 read as a 1, a minus sign too small to see, a number the student had crossed out. The teacher read the handwriting correctly every time. These are the marks a teacher fixes in review before anything is released.
+Q18 · page 2 · student wrote (c) ₹720
+Teacher was right Teacher 1/1 Q18 as checked by the teacher: 1/1Evalezy 0/1: “Correct: (c) ₹720” Q18 as checked by Evalezy: 0/1: “Correct: (c) ₹720”
+The student chose (c), the right option. Evalezy read ₹720 as ₹120 and marked it wrong, while its own note names (c) as correct.
+
+Q6 · page 1 · student wrote (b) −19/7
+Teacher was right Teacher 1/1 Q6 as checked by the teacher: 1/1Evalezy 0/1: “option b with minus sign” Q6 as checked by Evalezy: 0/1: “option b with minus sign”
+The student chose (b) and did write the minus sign. Evalezy missed the small minus and marked a right answer wrong.
+
+Q25 · page 4 · student wrote 7/30
+Teacher was right Teacher 2/2 Q25 as checked by the teacher: 2/2Evalezy 1/2: “Common factor 7/5 missed” Q25 as checked by Evalezy: 1/2: “Common factor 7/5 missed”
+The boxed answer is 7/30, which is right. Evalezy read the 7 as a 1, took a mark for a “missing” factor, and its note was cut off mid-sentence.
+
+Q26 · page 4 · student wrote 350 km (corrected from 360)
+Teacher was right Teacher 2/2 Q26 as checked by the teacher: 2/2Evalezy 0/2: “Correct answer: 350 km” Q26 as checked by Evalezy: 0/2: “Correct answer: 350 km”
+The student struck out 360 and wrote 350 above it. Evalezy read the crossed-out number and gave 0/2, while naming 350 km as the right answer.
+
+Q29 · page 6 · student wrote x = 5, y = 5 (both boxed)
+Teacher was right Teacher 3/3 Q29 as checked by the teacher: 3/3Evalezy 2.5/3: “Final values not stated” Q29 as checked by Evalezy: 2.5/3: “Final values not stated”
+Both values are boxed on the page. Evalezy took half a mark for not stating them.
+
+Judgement calls
+
+## Three half-mark differences.
+Q27 · page 5 · student wrote 900 = 30²
+Judgement call Teacher 3/3 Q27 as checked by the teacher: 3/3Evalezy 2.5/3: “Divisibility of 900 by 6, 9, 15 not verified” Q27 as checked by Evalezy: 2.5/3: “Divisibility of 900 by 6, 9, 15 not verified”
+The answer is right. Evalezy wanted the student to show that 900 divides by 6, 9 and 15; the teacher didn’t. A strictness call.
+
+Q32 · page 7 · student wrote Part (i) only
+Judgement call Teacher 2/3 Q32 as checked by the teacher: 2/3Evalezy 1.5/3: “Part (ii) not attempted” Q32 as checked by Evalezy: 1.5/3: “Part (ii) not attempted”
+Both took marks for the missing part (ii); they differ by half a mark. Evalezy’s note for this question was printed at the foot of page 4 by mistake.
+
+Q22 · page 3 · student wrote 4a²/b²
+Judgement call Teacher 2/2 Q22 as checked by the teacher: 2/2Evalezy 1.5/2: “Steps not shown clearly” Q22 as checked by Evalezy: 1.5/2: “Steps not shown clearly”
+Evalezy took half a mark for unclear exponent steps; the teacher gave full marks. Settling who is right needs the question paper, which we don’t have.
+
+## Every disagreement, in one table
+Q | Student wrote | Teacher | Evalezy | Verdict |
+
+Q6 | (b) −19/7 | 1/1 | 0/1: “option b with minus sign” | Teacher was right |
+Q18 | (c) ₹720 | 1/1 | 0/1: “Correct: (c) ₹720” | Teacher was right |
+Q22 | 4a²/b² | 2/2 | 1.5/2: “Steps not shown clearly” | Judgement call |
+Q25 | 7/30 | 2/2 | 1/2: “Common factor 7/5 missed” | Teacher was right |
+Q26 | 350 km (corrected from 360) | 2/2 | 0/2: “Correct answer: 350 km” | Teacher was right |
+Q27 | 900 = 30² | 3/3 | 2.5/3: “Divisibility of 900 by 6, 9, 15 not verified” | Judgement call |
+Q28 | 625t⁴/2, via × 25/2 t⁻⁸ | 3/3 | 2.5/3: exponent error and a 2/26 slip | Evalezy caught it |
+Q29 | x = 5, y = 5 (both boxed) | 3/3 | 2.5/3: “Final values not stated” | Teacher was right |
+Q30 | A = 7, B = 6; check: 37 + 25 = 65 | 3/3, check ticked | 2.5/3: “Check wrong: 37+25 = 62, not 65” | Evalezy caught it |
+Q32 | Part (i) only | 2/3 | 1.5/3: “Part (ii) not attempted” | Judgement call |
+
+Totals: teacher 48/80, Evalezy 40/80. Every other question was marked the same by both. Checked by hand against the student’s working on 2 October 2026; there was no question paper, so items that depend on it are judgement calls.
+
+The point
+
+## Neither checker got everything right. Together, they did.
+Evalezy is more thorough about working, and writes a reason beside every lost mark. A teacher reads handwriting better. So Evalezy does the first check, a teacher reviews it, and nothing reaches students until the teacher releases.
+How teacher review works Try it on your copies
+
+- Both slips Evalezy caught stay caught: the teacher just confirms them
+- All five misreads are visible on the review screen, with the answer as Evalezy read it, so they are quick to fix
+- A teacher’s edit is never overwritten, even if the copy is checked again
+- Students see nothing until the teacher presses Release
+
+## Frequently asked questions
+Is this a real teacher’s copy? +
+Yes. A teacher checked this copy by hand. We ran the same scan through Evalezy and put the two side by side, unedited. We have left Evalezy’s mistakes in.
+
+Why does Evalezy give 8 marks fewer? +
+Two deductions are fair (Q30 and Q28: slips the teacher ticked). Five are Evalezy misreading handwriting (Q6, Q18, Q25, Q26, Q29): a 7 read as a 1, a small minus sign, a crossed-out number. The rest are half-mark judgement calls. A teacher reviewing Evalezy’s marks fixes those five in a few clicks.
+
+So is AI checking better than a teacher? +
+Not on its own, and we don’t claim it is. On this copy Evalezy was more thorough about working and wrote a reason for every lost mark; the teacher read handwriting better. Together they get it right, which is how Evalezy is built: AI first check, teacher review, then release.
+
+Where does the teacher review happen? +
+On the review screen: every answer as Evalezy read it, the marks, the reason and the criteria. A teacher changes any mark, and that edit is never overwritten. Students see nothing until the teacher releases.
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2469,6 +2625,9 @@ Evalezy is designed to keep the teacher in charge. The AI does the reading and t
 
 ## Where the time goes
 By hand, most of the time goes into reading every line of every copy. With Evalezy, the reading is done for you: the teacher sees each answer as read, the marks, the reasons and the criteria, and spends their time on the answers where judgement matters.
+
+## A real test: one copy, both ways
+We ran a maths copy that a teacher had already checked through Evalezy. Evalezy caught two slips the teacher had ticked; the teacher read five answers correctly that Evalezy misread. Each caught what the other missed, which is why Evalezy's marks always wait for a teacher's review. Every page and every disagreement is on the AI vs teacher page.
 
 ## What students notice
 A checked copy from Evalezy looks like a teacher checked it: red ticks, crosses with the correct answer, a note where marks were lost, marks per question and the total circled on page one. Students get more written feedback than a rushed manual check usually allows.

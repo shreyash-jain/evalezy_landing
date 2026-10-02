@@ -1,6 +1,6 @@
 # Brochure page spec (read fully before building a page)
 
-The Evalezy brochure is 16 A4 pages, built from `pages/NN-slug.html` fragments, rendered by Chrome into one PDF.
+The Evalezy brochure is 18 A4 pages, built from `pages/NN-slug.html` fragments, rendered by Chrome into one PDF.
 Audience: principals, school owners, coaching-institute owners, exam heads, university faculty and edtech product
 teams deciding whether to try Evalezy. It must look like a premium, designed product brochure, not a web page.
 
@@ -14,7 +14,7 @@ teams deciding whether to try Evalezy. It must look like a premium, designed pro
   `.ruled-faint`, `.margin-rule`), red ticks (`ul.ticks`), Kalam annotations with hand-drawn arrows. Use them with
   restraint: one strong motif per page.
 - Rhythm: vary page backgrounds across the brochure (paper / white / ink). Ink pages: `<section class="page ink">`.
-- Every interior page has the header + footer below; page number in the footer = its NN. The cover (01) and
+- Every interior page has the header + footer below; the page number is filled in automatically (CSS counter). The cover (01) and
   back cover (16) have none.
 - Visual density: each page has ONE clear headline (`.h1` 30–34pt or `.h2`), a short lede, and a strong visual
   (real copy image, UI capture, diagram, big numbers, table). Body text 8.5–10pt; never below 6.8pt.
@@ -28,7 +28,7 @@ teams deciding whether to try Evalezy. It must look like a premium, designed pro
     <span class="sec">Section label</span>                 <!-- Kalam, red: e.g. "How it works" -->
   </header>
   <div class="pg-body"> … </div>                         <!-- everything must fit inside this -->
-  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">NN</span></footer>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
 </section>
 ```
 Page-specific CSS: put a `<style>` block inside your fragment and prefix every selector with `.p-NN` (add class `p-NN`

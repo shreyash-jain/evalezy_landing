@@ -1,33 +1,33 @@
-<section class="page white p-11" data-name="compare">
+<section class="page white p-13" data-name="compare">
   <style>
-    .p-11 table.cmp { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 7.4pt; line-height: 1.36; table-layout: fixed; }
-    .p-11 table.cmp th, .p-11 table.cmp td { padding: 1.7mm 2.2mm; vertical-align: top; text-align: left; border-top: 0.25mm solid var(--line); color: var(--slate-700); }
-    .p-11 table.cmp thead th { border-top: none; font-family: "Bricolage"; font-weight: 700; font-size: 8.8pt; line-height: 1.15; color: var(--ink); padding-top: 2.4mm; padding-bottom: 2.4mm; vertical-align: middle; }
-    .p-11 table.cmp tbody th { font-weight: 650; color: var(--ink); }
-    .p-11 table.cmp .ev { background: var(--pen-50); color: var(--ink); border-top-color: var(--pen-100); }
-    .p-11 table.cmp thead .ev { background: var(--ink); color: #fff; border-radius: 3mm 3mm 0 0; }
-    .p-11 table.cmp tbody tr:last-child .ev { border-radius: 0 0 3mm 3mm; }
-    .p-11 table.cmp thead .ev span { display: inline-flex; align-items: center; gap: 1.6mm; }
-    .p-11 table.cmp thead .ev img { height: 4mm; width: auto; box-shadow: 0 0 0 0.25mm rgba(255, 255, 255, 0.25); border-radius: 1mm; }
-    .p-11 table.cmp tr.best td, .p-11 table.cmp tr.best th { border-top: 0.45mm solid var(--ink); padding-top: 2.2mm; padding-bottom: 2.2mm; }
-    .p-11 table.cmp tr.best .ev { border-top-color: var(--ink); }
-    .p-11 .win { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 10pt; line-height: 0; margin-right: 1mm; }
+    .p-13 table.cmp { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 7.4pt; line-height: 1.36; table-layout: fixed; }
+    .p-13 table.cmp th, .p-13 table.cmp td { padding: 1.7mm 2.2mm; vertical-align: top; text-align: left; border-top: 0.25mm solid var(--line); color: var(--slate-700); }
+    .p-13 table.cmp thead th { border-top: none; font-family: "Bricolage"; font-weight: 700; font-size: 8.8pt; line-height: 1.15; color: var(--ink); padding-top: 2.4mm; padding-bottom: 2.4mm; vertical-align: middle; }
+    .p-13 table.cmp tbody th { font-weight: 650; color: var(--ink); }
+    .p-13 table.cmp .ev { background: var(--pen-50); color: var(--ink); border-top-color: var(--pen-100); }
+    .p-13 table.cmp thead .ev { background: var(--ink); color: #fff; border-radius: 3mm 3mm 0 0; }
+    .p-13 table.cmp tbody tr:last-child .ev { border-radius: 0 0 3mm 3mm; }
+    .p-13 table.cmp thead .ev span { display: inline-flex; align-items: center; gap: 1.6mm; }
+    .p-13 table.cmp thead .ev img { height: 4mm; width: auto; box-shadow: 0 0 0 0.25mm rgba(255, 255, 255, 0.25); border-radius: 1mm; }
+    .p-13 table.cmp tr.best td, .p-13 table.cmp tr.best th { border-top: 0.45mm solid var(--ink); padding-top: 2.2mm; padding-bottom: 2.2mm; }
+    .p-13 table.cmp tr.best .ev { border-top-color: var(--ink); }
+    .p-13 .win { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 10pt; line-height: 0; margin-right: 1mm; }
 
     /* typed answers: a secondary panel under the comparison */
-    .p-11 .typed { background: var(--paper); border-radius: 4mm; padding: 4.6mm 5mm 0 5.5mm; }
-    .p-11 .typed .cols { display: grid; grid-template-columns: 1fr 80mm; gap: 6mm; align-items: center; }
-    .p-11 .typed .shotbox { position: relative; }
-    .p-11 .typed .shot { display: block; width: 100%; border-radius: 2.4mm; box-shadow: var(--lift); }
+    .p-13 .typed { background: var(--paper); border-radius: 4mm; padding: 4.6mm 5mm 0 5.5mm; }
+    .p-13 .typed .cols { display: grid; grid-template-columns: 1fr 80mm; gap: 6mm; align-items: center; }
+    .p-13 .typed .shotbox { position: relative; }
+    .p-13 .typed .shot { display: block; width: 100%; border-radius: 2.4mm; box-shadow: var(--lift); }
     /* the capture's footer caption states a grading time PRODUCT_FACTS does not cover: paint it out with the strip's own flat colour (#FBF9F4), keep the 4 / 5 total */
-    .p-11 .typed .shotbox .mask { position: absolute; left: 2.9%; top: 91.1%; width: 35.7%; height: 7.6%; background: #FBF9F4; }
-    .p-11 .typed .ticks { font-size: 8.2pt; line-height: 1.42; gap: 1.6mm; color: var(--slate-700); }
-    .p-11 .inject { display: flex; align-items: center; gap: 4mm; border-top: 0.3mm dashed rgba(214, 28, 40, 0.35); margin-top: 4.5mm; padding: 3.4mm 1mm 3.6mm 0; }
-    .p-11 .inject .score { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 22pt; line-height: 1; flex: none; padding: 0.6mm 2.4mm 0; margin-right: 1mm; }
-    .p-11 .inject q { font-family: "Kalam"; color: var(--biro); font-size: 10pt; quotes: "“" "”"; }
+    .p-13 .typed .shotbox .mask { position: absolute; left: 2.9%; top: 91.1%; width: 35.7%; height: 7.6%; background: #FBF9F4; }
+    .p-13 .typed .ticks { font-size: 8.2pt; line-height: 1.42; gap: 1.6mm; color: var(--slate-700); }
+    .p-13 .inject { display: flex; align-items: center; gap: 4mm; border-top: 0.3mm dashed rgba(214, 28, 40, 0.35); margin-top: 4.5mm; padding: 3.4mm 1mm 3.6mm 0; }
+    .p-13 .inject .score { font-family: "Kalam"; font-weight: 700; color: var(--pen); font-size: 22pt; line-height: 1; flex: none; padding: 0.6mm 2.4mm 0; margin-right: 1mm; }
+    .p-13 .inject q { font-family: "Kalam"; color: var(--biro); font-size: 10pt; quotes: "“" "”"; }
 
     /* folio: Kalam's 1 is a bare slanted stroke, so "11" read as "//". Same face, colour and size as every other folio,
        set upright and spaced so it reads as two 1s (negative margin keeps it on the right margin) */
-    .p-11 .pg-foot .num { display: inline-block; letter-spacing: 0.14em; margin-right: -0.14em; transform: skewX(10deg); }
+    .p-13 .pg-foot .num { display: inline-block; letter-spacing: 0.14em; margin-right: -0.14em; transform: skewX(10deg); }
   </style>
   <header class="pg-head">
     <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
@@ -131,5 +131,5 @@
       </div>
     </div>
   </div>
-  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">11</span></footer>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
 </section>

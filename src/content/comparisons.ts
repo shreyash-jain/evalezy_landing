@@ -37,6 +37,7 @@ export const COMPARISONS: Comparison[] = [
     body: [
       { heading: "It is not either-or", text: "Evalezy is designed to keep the teacher in charge. The AI does the reading and the first marking; the teacher reviews, edits any mark and decides when results go out. A teacher's edit is never overwritten by a later AI run." },
       { heading: "Where the time goes", text: "By hand, most of the time goes into reading every line of every copy. With Evalezy, the reading is done for you: the teacher sees each answer as read, the marks, the reasons and the criteria, and spends their time on the answers where judgement matters." },
+      { heading: "A real test: one copy, both ways", text: "We ran a maths copy that a teacher had already checked through Evalezy. Evalezy caught two slips the teacher had ticked; the teacher read five answers correctly that Evalezy misread. Each caught what the other missed, which is why Evalezy's marks always wait for a teacher's review. Every page and every disagreement is on the AI vs teacher page." },
       { heading: "What students notice", text: "A checked copy from Evalezy looks like a teacher checked it: red ticks, crosses with the correct answer, a note where marks were lost, marks per question and the total circled on page one. Students get more written feedback than a rushed manual check usually allows." },
     ],
     faqs: [

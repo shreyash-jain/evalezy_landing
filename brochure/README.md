@@ -1,4 +1,4 @@
-# Evalezy brochure (16-page A4 PDF)
+# Evalezy brochure (18-page A4 PDF)
 
 The PDF is `Evalezy-Brochure.pdf`. Rebuild it from source when the product, the prices or the copy change.
 
@@ -16,7 +16,9 @@ Then copy `out/Evalezy-Brochure.pdf` here and stamp the metadata (see the pypdf 
 - Before sending it out, two owner decisions are still open:
   - The brochure sells ₹1 per page, but the dashboard still bills per question.
   - The API pages describe the proposed public contract.
-- Page 14 says openly that the sample copy has one AI slip: Q17 on page 2 was crossed although the answer is right.
+- Pages 10–11 compare one maths copy checked by a teacher and by Evalezy (source PDFs kept locally in `../side-by-side-comparision/`, not in git;
+  verdicts in `../src/content/sideBySide.ts`). Page numbers are automatic (CSS counter), so pages can be inserted freely.
+- Page 16 says openly that the sample copy has one AI slip: Q17 on page 2 was crossed although the answer is right.
   If you would rather use a different sample copy, replace `assets/img/page-*` and update pages 01, 04, 05, 13 and 14.
 - The QR codes (`assets/img/qr-*.svg`) point to evalezy.com/demo and /sample, tagged `utm_source=brochure&utm_medium=pdf`.
 

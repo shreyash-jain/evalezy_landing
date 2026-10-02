@@ -54,10 +54,14 @@ export function Nav() {
       onMouseLeave={() => setOpen(null)}
     >
       <div className="wrap flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
-        <Link href="/" aria-label="Evalezy by Vacademy, home" className="flex shrink-0 items-end gap-2">
-          <Logo className="h-7 w-auto md:h-8" />
-          <span className="hidden pb-0.5 text-[0.7rem] font-semibold tracking-wide text-slate-500 sm:inline md:text-xs">by Vacademy</span>
-        </Link>
+        <div className="flex shrink-0 items-end gap-2">
+          <Link href="/" aria-label="Evalezy, home">
+            <Logo className="h-7 w-auto md:h-8" />
+          </Link>
+          <a href="https://vacademy.io/" className="hidden pb-0.5 text-[0.7rem] font-semibold tracking-wide text-slate-500 hover:text-ink sm:inline md:text-xs">
+            by Vacademy
+          </a>
+        </div>
 
         <nav aria-label="Main" className="hidden items-center gap-0.5 lg:flex">
           <Trigger k="product" label="Product" />

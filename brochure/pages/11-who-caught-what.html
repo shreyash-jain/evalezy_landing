@@ -1,0 +1,59 @@
+<section class="page p-11" data-name="who caught what">
+  <style>
+    .p-11 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+    .p-11 .pair figure { background: #fff; border-radius: 2mm; padding: 2mm; box-shadow: var(--lift); }
+    .p-11 .pair .cap { display: flex; justify-content: space-between; gap: 2mm; font-size: 7pt; margin-bottom: 1.4mm; line-height: 1.3; }
+    .p-11 .pair .cap b { font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+    .p-11 .pair img { width: 100%; display: block; border-radius: 1mm; }
+    .p-11 .green { color: #1f7a35; }
+    .p-11 .item { margin-top: 4.2mm; }
+    .p-11 .item .hd { display: flex; align-items: baseline; gap: 2.5mm; margin-bottom: 1.8mm; }
+    .p-11 .item .hd .q { font-family: "Bricolage"; font-weight: 800; font-size: 11pt; }
+    .p-11 .item .hd .d { font-size: 8.2pt; color: var(--slate-600); }
+    .p-11 .misreads { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm 5mm; }
+    .p-11 .mini .hd { margin-bottom: 1.2mm; display: flex; align-items: baseline; gap: 2mm; }
+    .p-11 .mini .hd .q { font-family: "Bricolage"; font-weight: 800; white-space: nowrap; }
+    .p-11 .mini .hd .d { font-size: 8pt; color: var(--slate-600); line-height: 1.35; }
+    .p-11 .mini img { width: 100%; display: block; border-radius: 1mm; border: 0.25mm solid var(--line); background: #fff; }
+    .p-11 .mini .ai { margin-top: 1.4mm; }
+    .p-11 .point { margin-top: auto; background: var(--ink); color: #fff; border-radius: 4mm; padding: 5mm 6mm; display: grid; grid-template-columns: 1fr 1.2fr; gap: 6mm; align-items: center; }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">AI vs teacher</span>
+  </header>
+  <div class="pg-body">
+    <p class="eyebrow">Who caught what</p>
+    <h2 class="h2 mt2" style="font-size:25pt">Evalezy checks every line. The teacher reads handwriting better.</h2>
+
+    <p class="hand mt4" style="font-size:12pt">What Evalezy caught</p>
+    <div class="item">
+      <div class="hd"><span class="q">Q30</span><span class="d">The student’s check: 37 + 25 = 65. It is 62. The teacher ticked it.</span></div>
+      <div class="pair">
+        <figure><p class="cap"><b class="green">Teacher</b><span>3/3, ticked</span></p><img src="assets/sbs/q30-teacher.jpg" alt="Teacher's copy: the wrong check is ticked" /></figure>
+        <figure><p class="cap"><b style="color:var(--pen-700)">Evalezy</b><span>2.5/3, “= 62, not 65”</span></p><img src="assets/sbs/q30-ai.jpg" alt="Evalezy's copy: the check is crossed with the correct sum" /></figure>
+      </div>
+    </div>
+    <div class="item">
+      <div class="hd"><span class="q">Q28</span><span class="d">Right answer, wrong working: × 25/2 t⁻⁸ should be t⁸. The teacher gave full marks.</span></div>
+      <div class="pair">
+        <figure><p class="cap"><b class="green">Teacher</b><span>3/3</span></p><img src="assets/sbs/q28-teacher.jpg" alt="Teacher's copy of Q28, full marks" style="height:30mm;object-fit:cover;object-position:50% 92%" /></figure>
+        <figure><p class="cap"><b style="color:var(--pen-700)">Evalezy</b><span>2.5/3, exponent error</span></p><img src="assets/sbs/q28-ai.jpg" alt="Evalezy's copy of Q28: 2.5/3 with a note on the exponent error" style="height:30mm;object-fit:cover;object-position:50% 92%" /></figure>
+      </div>
+    </div>
+
+    <p class="hand mt4" style="font-size:12pt;color:#1f7a35">What the teacher caught: answers Evalezy misread</p>
+    <div class="misreads mt2">
+      <div class="mini"><div class="hd"><span class="q" style="font-size:10pt">Q18</span><span class="d">₹720 read as ₹120. Evalezy: 0/1</span></div><img src="assets/sbs/q18-ai.jpg" alt="Evalezy marks Q18 wrong after reading 720 as 120" /></div>
+      <div class="mini"><div class="hd"><span class="q" style="font-size:10pt">Q6</span><span class="d">The minus in −19/7 missed. Evalezy: 0/1</span></div><img src="assets/sbs/q6-ai.jpg" alt="Evalezy marks Q6 wrong after missing the minus sign" /></div>
+      <div class="mini"><div class="hd"><span class="q" style="font-size:10pt">Q26</span><span class="d">Read the crossed-out 360, not 350. Evalezy: 0/2</span></div><img src="assets/sbs/q26-ai.jpg" alt="Evalezy marks Q26 0/2 after reading the crossed-out number" style="height:17mm;object-fit:cover;object-position:top" /></div>
+      <div class="mini"><div class="hd"><span class="q" style="font-size:10pt">Q25 · Q29</span><span class="d">7/30 read as 1/30; boxed x = 5, y = 5 “not stated”</span></div><img src="assets/sbs/q25-ai.jpg" alt="Evalezy's note on Q25 after reading 7 as 1" style="height:17mm;object-fit:cover;object-position:bottom" /></div>
+    </div>
+
+    <div class="point mt4">
+      <p class="h3" style="color:#fff;font-size:13pt;line-height:1.25">Neither checker got everything right. Together, they did.</p>
+      <p style="font-size:8.6pt;line-height:1.5;color:#c3cbe0">That is how Evalezy works: an AI first check that explains every lost mark, then a teacher review that fixes misreads in a few clicks. Nothing reaches students until the teacher releases.</p>
+    </div>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
+</section>

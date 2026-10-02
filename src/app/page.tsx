@@ -11,6 +11,7 @@ import { PenCircle, PenUnderline, TickList } from "@/components/Pen";
 import { BulkCheckPanel, CheckedCopyStack, ReviewPanel, RubricCard, ScoreTableVsCopy, UploadDialog } from "@/components/Visuals";
 import { ApiTabs, CopyAnatomy, PriceCalculator } from "@/components/Interactive";
 import { DemoForm } from "@/components/DemoForm";
+import { COPY, count } from "@/content/sideBySide";
 import { ClientMarquee } from "@/components/ClientLogos";
 
 export const metadata: Metadata = {
@@ -226,6 +227,50 @@ export default function Home() {
           <p className="flex items-start gap-3 text-slate-600"><Timer className="mt-0.5 h-5 w-5 shrink-0 text-pen" /> <span><strong className="text-ink">1–8 minutes a copy</strong>, several at once. First results in about 10 minutes.</span></p>
           <p className="flex items-start gap-3 text-slate-600"><FileStack className="mt-0.5 h-5 w-5 shrink-0 text-pen" /> <span><strong className="text-ink">100 copies in about 2–3 hours.</strong> Upload in the evening, review in the morning.</span></p>
           <p className="flex items-start gap-3 text-slate-600"><ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-pen" /> <span><strong className="text-ink">Diagrams</strong> are judged by labels and explanation only; keep a teacher on those.</span></p>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------ AI VS TEACHER */}
+      <section className="border-t border-line bg-white">
+        <div className="wrap grid gap-12 py-20 md:py-28 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <p className="eyebrow">One copy, checked twice</p>
+            <h2 className="h-section mt-3 text-ink">We gave Evalezy a copy a teacher had already checked.</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">
+              Same {COPY.subject.toLowerCase()}, same scan. Evalezy caught {count("evalezy")} slips the teacher had ticked.
+              The teacher read {count("teacher")} answers correctly that Evalezy misread. Each caught what the other missed,
+              which is why Evalezy&apos;s marks always wait for a teacher.
+            </p>
+            <div className="mt-6 grid max-w-md grid-cols-2 gap-3">
+              <div className="rounded-2xl bg-[#eef7f0] p-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-[#1f7a35]">Teacher</p>
+                <p className="h-card mt-1 text-3xl text-ink">{COPY.teacherTotal}<span className="text-lg text-slate-400">/{COPY.marks}</span></p>
+                <p className="text-sm text-slate-600">{COPY.teacherNotes} written notes</p>
+              </div>
+              <div className="rounded-2xl bg-pen-50 p-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-pen-700">Evalezy</p>
+                <p className="h-card mt-1 text-3xl text-ink">{COPY.evalezyTotal}<span className="text-lg text-slate-400">/{COPY.marks}</span></p>
+                <p className="text-sm text-slate-600">{COPY.evalezyNotes} written notes</p>
+              </div>
+            </div>
+            <Link href="/side-by-side/" className="btn btn-ink mt-8">Compare every page <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+          <figure className="overflow-hidden rounded-2xl border border-line bg-paper">
+            <figcaption className="flex items-center justify-between border-b border-line px-5 py-3 text-sm">
+              <span className="font-semibold text-ink">Q30 · the student&apos;s check: 37 + 25 = 65</span>
+              <span className="rounded-full bg-pen px-2.5 py-0.5 text-xs font-bold text-white">Evalezy caught it</span>
+            </figcaption>
+            <div className="grid gap-px bg-line sm:grid-cols-2">
+              <div className="bg-white p-3">
+                <p className="mb-2 text-xs font-bold uppercase tracking-wider text-[#1f7a35]">Teacher: ticked</p>
+                <img src="/side-by-side/q30-teacher.jpg" alt="The teacher's copy: the wrong check 37 + 25 = 65 is ticked" width={1100} height={370} loading="lazy" className="w-full rounded-md border border-line" />
+              </div>
+              <div className="bg-white p-3">
+                <p className="mb-2 text-xs font-bold uppercase tracking-wider text-pen-700">Evalezy: “= 62, not 65”</p>
+                <img src="/side-by-side/q30-ai.jpg" alt="Evalezy's copy: the check is crossed with the note Check wrong: 37+25 = 62, not 65" width={1100} height={370} loading="lazy" className="w-full rounded-md border border-line" />
+              </div>
+            </div>
+          </figure>
         </div>
       </section>
 

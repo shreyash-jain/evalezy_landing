@@ -67,6 +67,22 @@ evaluation endpoints authenticate with teacher JWTs or the internal service toke
 surface yet. The endpoint list on /api/ (`src/content/api.ts`) is the proposed public contract. Keep the page
 worded as "API access is enabled per account" until keys exist.
 
+## Side-by-side copy **(owner, 2 Oct 2026)**
+
+A maths half-yearly mock (80 marks, 32 questions, 7 pages) checked by a teacher (green, 48/80, no written notes) and by
+Evalezy (red, 40/80, 12 written notes) on the same phone scan. Source PDFs: `side-by-side-comparision/`. Verdicts were
+checked by hand against the student's working on 2 Oct 2026 (`src/content/sideBySide.ts` is the record):
+- Evalezy caught 2 slips the teacher ticked: Q30 (check 37+25 = 65, it is 62) and Q28 (t⁻⁸ for t⁸ in the working).
+- The teacher was right on 5 that Evalezy misread: Q18 (₹720 read as ₹120), Q6 (missed minus in −19/7), Q25 (7/30 read as
+  1/30), Q26 (read the crossed-out 360 instead of 350), Q29 (x = 5, y = 5 are boxed).
+- 3 half-mark judgement calls: Q22, Q27, Q32. No question paper was supplied, so these are not verdicts.
+- Also on the AI copy: Q32's note is printed at the foot of page 4; Q25's note is cut off mid-sentence; Q28 has a
+  wrong cross on 5⁻³ = 1/125.
+
+**Allowed framing:** "each caught mistakes the other missed", "Evalezy checks every line, the teacher reads handwriting
+better", "together they get it right" (= AI first check + teacher review). **Never:** "AI does what teachers miss" as
+a one-sided claim, "AI beats teachers", or quoting only the 2 catches without the 5 misreads.
+
 ## Customers **(owner, 1 Oct 2026)**
 
 - The owner asked to show "the same clients as Vacademy": the 25 logos on the vacademy.io homepage, whose own line is

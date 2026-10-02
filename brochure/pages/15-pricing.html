@@ -1,42 +1,42 @@
-<section class="page p-13" data-name="pricing">
+<section class="page p-15" data-name="pricing">
   <style>
-    .p-13 .pg-body > * { flex-shrink: 0; }
-    .p-13 .head { display: grid; grid-template-columns: 1fr 64mm; gap: 8mm; align-items: center; }
-    .p-13 .sample { position: relative; background-color: #fffdf8; border-radius: 4mm; border: 0.3mm solid var(--line); padding: 5mm 5mm 5mm 6mm; display: flex; gap: 5mm; align-items: center; box-shadow: var(--lift); }
-    .p-13 .sample .thumb { width: 23mm; flex: none; transform: rotate(-4deg); border-radius: 1mm; overflow: hidden; box-shadow: var(--sheet); }
-    .p-13 .sample .big { font-family: "Bricolage"; font-weight: 800; font-size: 34pt; letter-spacing: -0.03em; line-height: 1; color: var(--pen); }
+    .p-15 .pg-body > * { flex-shrink: 0; }
+    .p-15 .head { display: grid; grid-template-columns: 1fr 64mm; gap: 8mm; align-items: center; }
+    .p-15 .sample { position: relative; background-color: #fffdf8; border-radius: 4mm; border: 0.3mm solid var(--line); padding: 5mm 5mm 5mm 6mm; display: flex; gap: 5mm; align-items: center; box-shadow: var(--lift); }
+    .p-15 .sample .thumb { width: 23mm; flex: none; transform: rotate(-4deg); border-radius: 1mm; overflow: hidden; box-shadow: var(--sheet); }
+    .p-15 .sample .big { font-family: "Bricolage"; font-weight: 800; font-size: 34pt; letter-spacing: -0.03em; line-height: 1; color: var(--pen); }
 
-    .p-13 .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.5mm; }
-    .p-13 .plan { display: flex; flex-direction: column; padding: 4.4mm 4.4mm 4.2mm; border-radius: 4mm; }
-    .p-13 .plan .price { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; letter-spacing: -0.03em; line-height: 1; margin-top: 2.6mm; }
-    .p-13 .plan .price span { font-size: 10pt; font-weight: 600; letter-spacing: 0; color: var(--slate-500); }
-    .p-13 .plan .sub { font-size: 7.2pt; color: var(--slate-500); margin-top: 1.4mm; line-height: 1.4; }
-    .p-13 .plan .who { font-size: 8pt; line-height: 1.42; color: var(--slate-600); margin-top: 2.6mm; }
-    .p-13 .plan .ticks { font-size: 7.8pt; line-height: 1.35; gap: 1.3mm; margin-top: 3mm; }
-    .p-13 .plan .ticks li { padding-left: 5.6mm; }
-    .p-13 .plan .ticks li::before { width: 3.8mm; height: 3.8mm; top: 0.2em; }
-    .p-13 .plan .cta { margin-top: auto; padding-top: 3.4mm; display: flex; align-items: center; justify-content: space-between; gap: 1.5mm; white-space: nowrap; }
-    .p-13 .plan .cta b { border-radius: 99px; padding: 1.5mm 2.8mm; font-size: 7.5pt; font-weight: 650; background: var(--pen); color: #fff; }
-    .p-13 .plan .cta em { font-style: normal; font-weight: 500; font-size: 6.9pt; color: var(--slate-500); }
-    .p-13 .plan.ink .cta em { color: #9aa6c4; }
-    .p-13 .plan.ink { background: var(--ink); color: #fff; }
-    .p-13 .plan.ink .price span, .p-13 .plan.ink .sub { color: #9aa6c4; }
-    .p-13 .plan.ink .who, .p-13 .plan.ink .ticks { color: #c3cbe0; }
-    .p-13 .plan.ink .eyebrow { color: var(--pen-dark); }
-    .p-13 .plan.ink .ticks li::before { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6' fill='none' stroke='%23FF6B72' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/></svg>"); }
-    .p-13 .plan .cta.ghost b { background: transparent; box-shadow: inset 0 0 0 0.35mm var(--ink); color: var(--ink); }
+    .p-15 .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.5mm; }
+    .p-15 .plan { display: flex; flex-direction: column; padding: 4.4mm 4.4mm 4.2mm; border-radius: 4mm; }
+    .p-15 .plan .price { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; letter-spacing: -0.03em; line-height: 1; margin-top: 2.6mm; }
+    .p-15 .plan .price span { font-size: 10pt; font-weight: 600; letter-spacing: 0; color: var(--slate-500); }
+    .p-15 .plan .sub { font-size: 7.2pt; color: var(--slate-500); margin-top: 1.4mm; line-height: 1.4; }
+    .p-15 .plan .who { font-size: 8pt; line-height: 1.42; color: var(--slate-600); margin-top: 2.6mm; }
+    .p-15 .plan .ticks { font-size: 7.8pt; line-height: 1.35; gap: 1.3mm; margin-top: 3mm; }
+    .p-15 .plan .ticks li { padding-left: 5.6mm; }
+    .p-15 .plan .ticks li::before { width: 3.8mm; height: 3.8mm; top: 0.2em; }
+    .p-15 .plan .cta { margin-top: auto; padding-top: 3.4mm; display: flex; align-items: center; justify-content: space-between; gap: 1.5mm; white-space: nowrap; }
+    .p-15 .plan .cta b { border-radius: 99px; padding: 1.5mm 2.8mm; font-size: 7.5pt; font-weight: 650; background: var(--pen); color: #fff; }
+    .p-15 .plan .cta em { font-style: normal; font-weight: 500; font-size: 6.9pt; color: var(--slate-500); }
+    .p-15 .plan.ink .cta em { color: #9aa6c4; }
+    .p-15 .plan.ink { background: var(--ink); color: #fff; }
+    .p-15 .plan.ink .price span, .p-15 .plan.ink .sub { color: #9aa6c4; }
+    .p-15 .plan.ink .who, .p-15 .plan.ink .ticks { color: #c3cbe0; }
+    .p-15 .plan.ink .eyebrow { color: var(--pen-dark); }
+    .p-15 .plan.ink .ticks li::before { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M3.5 13.2 C 5.5 14.6, 7.6 16.8, 9.2 19.4 C 12.2 12.6, 16.2 7.4, 21 3.6' fill='none' stroke='%23FF6B72' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/></svg>"); }
+    .p-15 .plan .cta.ghost b { background: transparent; box-shadow: inset 0 0 0 0.35mm var(--ink); color: var(--ink); }
 
-    .p-13 table.t td, .p-13 table.t th { padding: 1.3mm 3mm; line-height: 1.3; }
-    .p-13 table.t th { white-space: nowrap; }
-    .p-13 table.t th { font-size: 7.8pt; }
-    .p-13 table.t td { font-size: 8.4pt; vertical-align: middle; }
-    .p-13 table.t .num { font-size: 8.2pt; }
-    .p-13 table.t td.inr { font-family: "Bricolage"; font-weight: 800; font-size: 10.5pt; line-height: 1.15; color: var(--ink); text-align: right; letter-spacing: -0.01em; }
-    .p-13 table.t th.r { text-align: right; }
-    .p-13 .lists { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6mm; }
-    .p-13 .lists .ticks { font-size: 8pt; line-height: 1.35; gap: 1.5mm; }
-    .p-13 .inc { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4mm; row-gap: 1.6mm; }
-    .p-13 .free { background: #fff; border: 0.3mm solid var(--line); border-radius: 4mm; padding: 3.8mm 4.6mm; }
+    .p-15 table.t td, .p-15 table.t th { padding: 1.3mm 3mm; line-height: 1.3; }
+    .p-15 table.t th { white-space: nowrap; }
+    .p-15 table.t th { font-size: 7.8pt; }
+    .p-15 table.t td { font-size: 8.4pt; vertical-align: middle; }
+    .p-15 table.t .num { font-size: 8.2pt; }
+    .p-15 table.t td.inr { font-family: "Bricolage"; font-weight: 800; font-size: 10.5pt; line-height: 1.15; color: var(--ink); text-align: right; letter-spacing: -0.01em; }
+    .p-15 table.t th.r { text-align: right; }
+    .p-15 .lists { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6mm; }
+    .p-15 .lists .ticks { font-size: 8pt; line-height: 1.35; gap: 1.5mm; }
+    .p-15 .inc { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4mm; row-gap: 1.6mm; }
+    .p-15 .free { background: #fff; border: 0.3mm solid var(--line); border-radius: 4mm; padding: 3.8mm 4.6mm; }
   </style>
   <header class="pg-head">
     <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
@@ -148,5 +148,5 @@
       </div>
     </div>
   </div>
-  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">13</span></footer>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
 </section>

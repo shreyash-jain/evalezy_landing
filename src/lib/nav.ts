@@ -22,6 +22,7 @@ export const COMPARE_NAV = COMPARISONS.map((c) => ({ slug: c.slug, label: c.labe
 export const RESOURCE_NAV = [
   { href: "/how-it-works/", label: "How it works" },
   { href: "/sample/", label: "See a checked copy" },
+  { href: "/side-by-side/", label: "AI vs teacher: one copy" },
   { href: "/blog/", label: "Blog" },
   { href: "/faq/", label: "FAQ" },
   { href: "/security/", label: "Data & privacy" },

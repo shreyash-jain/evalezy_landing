@@ -14,6 +14,7 @@ export function Footer() {
         ...PRODUCT_NAV.map((p) => ({ href: p.href, label: p.label })),
         { href: "/pricing/", label: "Pricing" },
         { href: "/sample/", label: "See a checked copy" },
+        { href: "/side-by-side/", label: "AI vs teacher: one copy" },
       ],
     },
     {
@@ -32,6 +33,7 @@ export function Footer() {
       title: "Company",
       links: [
         { href: "/about/", label: "About" },
+        { href: "https://vacademy.io/", label: "Vacademy" },
         { href: "/security/", label: "Data & privacy" },
         { href: bookHref(), label: "Book a demo" },
         { href: "/demo/#api", label: "Request API access" },
@@ -44,7 +46,8 @@ export function Footer() {
         <div>
           <Logo className="h-8 w-auto" />
           <p className="mt-4 max-w-xs leading-relaxed text-slate-600">
-            AI answer-sheet checking that looks like a teacher&apos;s red pen. Built by the team behind Vacademy.
+            AI answer-sheet checking that looks like a teacher&apos;s red pen. Built by the team behind{" "}
+            <a href="https://vacademy.io/" className="font-semibold text-ink underline-offset-4 hover:underline">Vacademy</a>, the learning and assessment platform.
           </p>
           <ul className="mt-6 space-y-2 text-sm text-slate-600">
             <li>
@@ -72,7 +75,10 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <div className="wrap flex flex-col gap-3 py-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} {COMPANY}. Evalezy is a Vacademy product.</p>
+          <p>
+            © {new Date().getFullYear()} {COMPANY}. Evalezy is a{" "}
+            <a href="https://vacademy.io/" className="hover:text-ink">Vacademy</a> product.
+          </p>
           <div className="flex gap-5">
             <a href={PRIVACY_URL} className="hover:text-ink">Privacy</a>
             <a href={TERMS_URL} className="hover:text-ink">Terms</a>

@@ -1,43 +1,43 @@
-<section class="page ink p-12" data-name="api">
+<section class="page ink p-14" data-name="api">
   <style>
-    .p-12 { --dim: #9aa6c4; --rule: rgba(255, 255, 255, 0.12); }
-    .p-12 .main { display: grid; grid-template-columns: 60mm minmax(0, 1fr); gap: 6mm; }
-    .p-12 .steps { list-style: none; position: relative; display: flex; flex-direction: column; gap: 4mm; }
-    .p-12 .steps::before { content: ""; position: absolute; left: 2.6mm; top: 6mm; bottom: 22mm; border-left: 0.4mm dashed rgba(255, 107, 114, 0.45); }
-    .p-12 .steps li { position: relative; padding-left: 9mm; }
-    .p-12 .steps .n { position: absolute; left: 0; top: -1.2mm; width: 5.6mm; height: 7mm; background: var(--ink); font-family: "Kalam"; font-weight: 700; color: var(--pen-dark); font-size: 14pt; line-height: 7mm; text-align: center; }
-    .p-12 .steps h3 { font-family: "Bricolage"; font-weight: 700; font-size: 10.5pt; line-height: 1.2; color: #fff; }
-    .p-12 .steps p { font-size: 7.8pt; line-height: 1.45; color: #c3cbe0; margin-top: 1mm; }
-    .p-12 .steps code { font-family: "JBMono"; font-size: 6.8pt; color: #fff; background: rgba(255, 255, 255, 0.08); border-radius: 0.8mm; padding: 0.2mm 1mm; white-space: nowrap; }
-    .p-12 .steps .ep { display: inline-block; margin-top: 1.6mm; color: #ffb3b7; background: rgba(255, 107, 114, 0.12); padding: 0.4mm 1.4mm; }
+    .p-14 { --dim: #9aa6c4; --rule: rgba(255, 255, 255, 0.12); }
+    .p-14 .main { display: grid; grid-template-columns: 60mm minmax(0, 1fr); gap: 6mm; }
+    .p-14 .steps { list-style: none; position: relative; display: flex; flex-direction: column; gap: 4mm; }
+    .p-14 .steps::before { content: ""; position: absolute; left: 2.6mm; top: 6mm; bottom: 22mm; border-left: 0.4mm dashed rgba(255, 107, 114, 0.45); }
+    .p-14 .steps li { position: relative; padding-left: 9mm; }
+    .p-14 .steps .n { position: absolute; left: 0; top: -1.2mm; width: 5.6mm; height: 7mm; background: var(--ink); font-family: "Kalam"; font-weight: 700; color: var(--pen-dark); font-size: 14pt; line-height: 7mm; text-align: center; }
+    .p-14 .steps h3 { font-family: "Bricolage"; font-weight: 700; font-size: 10.5pt; line-height: 1.2; color: #fff; }
+    .p-14 .steps p { font-size: 7.8pt; line-height: 1.45; color: #c3cbe0; margin-top: 1mm; }
+    .p-14 .steps code { font-family: "JBMono"; font-size: 6.8pt; color: #fff; background: rgba(255, 255, 255, 0.08); border-radius: 0.8mm; padding: 0.2mm 1mm; white-space: nowrap; }
+    .p-14 .steps .ep { display: inline-block; margin-top: 1.6mm; color: #ffb3b7; background: rgba(255, 107, 114, 0.12); padding: 0.4mm 1.4mm; }
 
-    .p-12 .code { background: #0a1330; border: 0.3mm solid var(--rule); font-size: 6.8pt; line-height: 1.5; padding: 3mm 4mm; }
-    .p-12 .code-label { display: flex; justify-content: space-between; align-items: center; }
-    .p-12 .code-label b { color: #fff; font-weight: 600; }
+    .p-14 .code { background: #0a1330; border: 0.3mm solid var(--rule); font-size: 6.8pt; line-height: 1.5; padding: 3mm 4mm; }
+    .p-14 .code-label { display: flex; justify-content: space-between; align-items: center; }
+    .p-14 .code-label b { color: #fff; font-weight: 600; }
 
-    .p-12 .eps { width: 100%; border-collapse: collapse; font-size: 7.4pt; }
-    .p-12 .eps td { padding: 0.85mm 2mm; border-top: 0.25mm solid var(--rule); vertical-align: middle; color: #c3cbe0; line-height: 1.35; }
-    .p-12 .eps tr:first-child td { border-top: none; }
-    .p-12 .eps td.m { width: 13mm; padding-left: 0; }
-    .p-12 .eps td.p { font-family: "JBMono"; font-size: 6.9pt; color: #fff; white-space: nowrap; width: 54mm; }
-    .p-12 .method { font-size: 6.8pt; }
-    .p-12 .method.get { background: rgba(29, 138, 78, 0.22); color: #7fe0a8; }
-    .p-12 .method.post { background: rgba(122, 146, 255, 0.2); color: #a9b9ff; }
-    .p-12 .method.put { background: rgba(240, 180, 80, 0.2); color: #f3c77a; }
+    .p-14 .eps { width: 100%; border-collapse: collapse; font-size: 7.4pt; }
+    .p-14 .eps td { padding: 0.85mm 2mm; border-top: 0.25mm solid var(--rule); vertical-align: middle; color: #c3cbe0; line-height: 1.35; }
+    .p-14 .eps tr:first-child td { border-top: none; }
+    .p-14 .eps td.m { width: 13mm; padding-left: 0; }
+    .p-14 .eps td.p { font-family: "JBMono"; font-size: 6.9pt; color: #fff; white-space: nowrap; width: 54mm; }
+    .p-14 .method { font-size: 6.8pt; }
+    .p-14 .method.get { background: rgba(29, 138, 78, 0.22); color: #7fe0a8; }
+    .p-14 .method.post { background: rgba(122, 146, 255, 0.2); color: #a9b9ff; }
+    .p-14 .method.put { background: rgba(240, 180, 80, 0.2); color: #f3c77a; }
 
-    .p-12 .status { display: flex; align-items: center; gap: 1.2mm; flex-wrap: nowrap; }
-    .p-12 .st { font-family: "JBMono"; font-size: 6.9pt; padding: 0.9mm 1.7mm; border-radius: 99px; border: 0.3mm solid rgba(255, 255, 255, 0.2); color: #fff; white-space: nowrap; }
-    .p-12 .st.ok { background: rgba(29, 138, 78, 0.25); border-color: rgba(127, 224, 168, 0.4); color: #a9f0c6; }
-    .p-12 .st.off { color: var(--dim); border-style: dashed; }
-    .p-12 .arr { color: var(--dim); font-size: 8pt; }
-    .p-12 .price { flex: none; width: 56mm; border-left: 0.4mm solid rgba(255, 107, 114, 0.5); padding-left: 5mm; display: flex; flex-direction: column; justify-content: center; }
-    .p-12 .price .v { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; letter-spacing: -0.03em; line-height: 1; color: #fff; }
-    .p-12 .price .v span { font-size: 13pt; color: #c3cbe0; letter-spacing: -0.01em; }
-    .p-12 .price .k { font-size: 7.6pt; line-height: 1.45; color: #9aa6c4; margin-top: 1.6mm; }
-    .p-12 .access { display: flex; gap: 3.4mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 3mm; padding: 3mm; }
-    .p-12 .band { display: grid; grid-template-columns: 1fr auto; gap: 6mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 4mm; padding: 3.4mm 4mm 3.4mm 5mm; margin-top: auto; }
-    .p-12 .qr { background: #fff; border-radius: 1.6mm; padding: 2mm; width: 22mm; height: 22mm; flex: none; }
-    .p-12 .qr img { width: 100%; height: 100%; }
+    .p-14 .status { display: flex; align-items: center; gap: 1.2mm; flex-wrap: nowrap; }
+    .p-14 .st { font-family: "JBMono"; font-size: 6.9pt; padding: 0.9mm 1.7mm; border-radius: 99px; border: 0.3mm solid rgba(255, 255, 255, 0.2); color: #fff; white-space: nowrap; }
+    .p-14 .st.ok { background: rgba(29, 138, 78, 0.25); border-color: rgba(127, 224, 168, 0.4); color: #a9f0c6; }
+    .p-14 .st.off { color: var(--dim); border-style: dashed; }
+    .p-14 .arr { color: var(--dim); font-size: 8pt; }
+    .p-14 .price { flex: none; width: 56mm; border-left: 0.4mm solid rgba(255, 107, 114, 0.5); padding-left: 5mm; display: flex; flex-direction: column; justify-content: center; }
+    .p-14 .price .v { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; letter-spacing: -0.03em; line-height: 1; color: #fff; }
+    .p-14 .price .v span { font-size: 13pt; color: #c3cbe0; letter-spacing: -0.01em; }
+    .p-14 .price .k { font-size: 7.6pt; line-height: 1.45; color: #9aa6c4; margin-top: 1.6mm; }
+    .p-14 .access { display: flex; gap: 3.4mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 3mm; padding: 3mm; }
+    .p-14 .band { display: grid; grid-template-columns: 1fr auto; gap: 6mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 4mm; padding: 3.4mm 4mm 3.4mm 5mm; margin-top: auto; }
+    .p-14 .qr { background: #fff; border-radius: 1.6mm; padding: 2mm; width: 22mm; height: 22mm; flex: none; }
+    .p-14 .qr img { width: 100%; height: 100%; }
   </style>
   <header class="pg-head">
     <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
@@ -137,5 +137,5 @@
     </div>
 
   </div>
-  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num">12</span></footer>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
 </section>

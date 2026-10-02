@@ -1,6 +1,6 @@
 # Evalezy
 
-> Evalezy is AI checking for handwritten answer sheets. Teachers upload scanned or phone-photographed answer copies (PDF, up to 200 at a time); Evalezy reads each student's name and roll number and matches the copy to the right student, marks every answer against one marking scheme per question, and returns the student's own copy checked in a handwriting-style red pen: ticks, crosses with the correct answer, short notes, marks per question and the total circled on page one. AI marks are a draft: a teacher reviews, edits and releases results. Price: ₹1 per page checked in India, $0.01 per page elsewhere; failed, stopped and unreadable copies are free. There is also an evaluation API at the same price. Evalezy is a Vacademy product by Vidyayatan Technologies LLP; Vacademy is used by schools, online academies and training institutes across 5 countries.
+> Evalezy is AI checking for handwritten answer sheets. Teachers upload scanned or phone-photographed answer copies (PDF, up to 200 at a time); Evalezy reads each student's name and roll number and matches the copy to the right student, marks every answer against one marking scheme per question, and returns the student's own copy checked in a handwriting-style red pen: ticks, crosses with the correct answer, short notes, marks per question and the total circled on page one. AI marks are a draft: a teacher reviews, edits and releases results. Price: ₹1 per page checked in India, $0.01 per page elsewhere; failed, stopped and unreadable copies are free. There is also an evaluation API at the same price. Evalezy is a Vacademy (https://vacademy.io) product by Vidyayatan Technologies LLP; Vacademy is used by schools, online academies and training institutes across 5 countries.
 
 Key facts:
 - Input: PDFs of handwritten answer sheets, one per student; phone photos work. Up to 200 files per upload, 60 MB each; copies up to 40 pages are read in full.
@@ -23,6 +23,7 @@ Key facts:
 - [Typed essays & long answers](https://evalezy.com/typed-answers/): online long answers graded in about 20 seconds
 - [Evaluation API](https://evalezy.com/api/): assessments, criteria, answer sheets by file or URL, results and checked PDF
 - [Pricing](https://evalezy.com/pricing/): ₹1 / $0.01 per page checked
+- [AI vs teacher: one copy, checked twice](https://evalezy.com/side-by-side/): the same maths copy checked by a teacher and by Evalezy; each caught mistakes the other missed (Evalezy: 2 slips the teacher ticked; teacher: 5 answers Evalezy misread)
 - [Sample checked copy](https://evalezy.com/sample/): a real 7-page Class IX answer copy checked by Evalezy (38/80)
 
 ## Who it's for

@@ -1,0 +1,46 @@
+<section class="page white p-10" data-name="one copy, checked twice">
+  <style>
+    .p-10 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 7mm; }
+    .p-10 .who { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 2.4mm; }
+    .p-10 .who .lbl { font-size: 7.6pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+    .p-10 .who .tot { font-family: "Bricolage"; font-weight: 800; font-size: 20pt; letter-spacing: -0.02em; line-height: 1; color: var(--ink); }
+    .p-10 .who .tot small { font-size: 10pt; color: var(--slate-400); font-weight: 700; }
+    .p-10 .green { color: #1f7a35; }
+    .p-10 .shot { border-radius: 1.4mm; overflow: hidden; box-shadow: var(--sheet); background: #fff; }
+    .p-10 .shot img { width: 100%; display: block; }
+    .p-10 .tally { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 7mm; }
+    .p-10 .tally > div { border-radius: 3mm; padding: 3.6mm 4mm; background: var(--paper); }
+    .p-10 .tally .n { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; line-height: 1; }
+    .p-10 .tally .t { margin-top: 1.4mm; font-size: 8.2pt; line-height: 1.4; color: var(--slate-600); }
+  </style>
+  <header class="pg-head">
+    <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
+    <span class="sec">AI vs teacher</span>
+  </header>
+  <div class="pg-body">
+    <p class="eyebrow">One copy, checked twice</p>
+    <h2 class="h1 mt2" style="width:170mm">Same copy. Two checkers. <span class="marker">Different misses.</span></h2>
+    <p class="lede mt3" style="width:160mm">A maths half-yearly mock: 80 marks, 32 questions, 7 pages. A teacher checked it in green pen. Evalezy checked the same scan in red. Each caught mistakes the other missed.</p>
+
+    <div class="duo">
+      <figure>
+        <div class="who"><span class="lbl green">Teacher · green pen</span><span class="tot">48<small>/80</small></span></div>
+        <div class="shot"><img src="assets/sbs/teacher-p1.jpg" alt="Page 1 of the maths copy, checked by the teacher: green ticks and a circled 48/80" /></div>
+        <figcaption class="figcap">Ticks and marks. No written notes on any page.</figcaption>
+      </figure>
+      <figure>
+        <div class="who"><span class="lbl" style="color:var(--pen-700)">Evalezy · red pen</span><span class="tot">40<small>/80</small></span></div>
+        <div class="shot"><img src="assets/sbs/ai-p1.jpg" alt="Page 1 of the same copy, checked by Evalezy: red ticks, crosses with corrections, marks per question and a circled 40/80" /></div>
+        <figcaption class="figcap">Marks per question and 12 written notes across the copy.</figcaption>
+      </figure>
+    </div>
+
+    <div class="tally">
+      <div><p class="n" style="color:var(--pen)">2</p><p class="t">slips Evalezy caught that the teacher had ticked</p></div>
+      <div><p class="n" style="color:#1f7a35">5</p><p class="t">answers the teacher read right that Evalezy misread</p></div>
+      <div><p class="n">3</p><p class="t">half-mark judgement calls. All other questions: same marks</p></div>
+    </div>
+    <p class="tiny muted" style="margin-top:auto;padding-top:3mm">Real copies, unedited. Checked by hand against the student’s working on 2 Oct 2026. Every page, wipe-to-compare: evalezy.com/side-by-side</p>
+  </div>
+  <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
+</section>
