@@ -283,24 +283,24 @@ See how
 Evaluation API
 
 ## Building an edtech product? Put a red pen in it.
-Create an assessment, set criteria, send an answer sheet by file or URL, and get marks, feedback and the checked PDF back by status call or webhook. Same price as the dashboard.
+Grade handwritten copies and typed long answers from your own exam system. Create an exam, upload each candidate's PDF, and read question-wise marks, reasons, feedback and the checked copy. Marks stay drafts until you finalize them, and the exams also show up in the Vacademy dashboard for teacher review.
 
-- POST /assessments
-- PUT /assessments/{id}/criteria
-- POST /evaluations
-- GET /evaluations/{id}
-Read the API docs Request API access
+- POST /exams
+- POST /uploads
+- POST /exams/{id}/submissions
+- GET /submissions/{id}/result
+- POST /exams/{id}/finalize
+Read the API docs How the API works
 
 cURL Node.js Python Result
-POST /evaluations Copy
-curl https://api.evalezy.com/v1/evaluations \
--H "Authorization: Bearer $EVALEZY_API_KEY" \
+POST /exams/{id}/submissions Copy
+curl https://api.evalezy.com/v1/exams/$EXAM_ID/submissions \
+-H "X-API-Key: $EVALEZY_API_KEY" \
 -H "Content-Type: application/json" \
+-H "Idempotency-Key: sst-ix-mock-4-IXB-14" \
 -d '{
-"assessment_id": "asm_7Hq2",
-"answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
-"student": { "external_id": "IXB-14" },
-"webhook_url": "https://api.example.edu/hooks/evalezy"
+"candidate": { "external_id": "IXB-14", "name": "Aditi Sharma", "roll_number": "14" },
+"upload_id": "0d2b6c1e-6a1f-4c55-9a43-2b1f0c9e7a10"
 }'
 
 Pricing
@@ -352,7 +352,7 @@ What is not charged? +
 Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
 
 Is there an API? +
-Yes. Create assessments, set evaluation criteria, send answer sheets by file upload or URL, and get marks, feedback and the checked PDF from a status endpoint or a webhook. API access is enabled per account; request it on the demo page.
+Yes. With the Evaluation API your own system creates an exam with its questions and rubrics, uploads each answer sheet as a PDF (or sends typed answers), and reads back question-wise marks, reasons, feedback and the checked copy. You poll for results (there are no webhooks yet), and marks stay drafts until you finalize them. We switch it on per institute: write to hello@evalezy.com or request access on the demo page. Full docs at docs.evalezy.com.
 
 Book a demo
 
@@ -1026,7 +1026,7 @@ Are blank answers charged? +
 No. A blank answer gets zero immediately, without an AI call, and an attempt where every answer is blank is not billed.
 
 How are typed answers priced? +
-Typed answers have no pages, so they are priced per answer graded rather than per page. Ask us for the current rate.
+Typed answers have no pages, so they are priced per answer graded rather than per page. On the Evaluation API it is 1 credit per non-blank long answer, with objective answers free. For the dashboard, ask us for the current rate.
 
 Can students copy-paste an answer? +
 Copy, cut and paste are blocked in the long-answer box, which also shows a live word count.
@@ -1047,189 +1047,221 @@ URL: https://evalezy.com/api/
 Evaluation API
 
 # Answer sheet evaluation, as an API.
-Send a handwritten answer sheet by file or URL. Get back per-question marks, feedback, the student's answer as read and a red-pen checked PDF. Same engine and same price as the Evalezy dashboard: ₹1 / $0.01 per page.
-Book a demo Request API access
+Grade handwritten answer copies and typed long answers from your own exam system. Send a question paper, a marking scheme and each candidate's PDF; get back question-wise marks, reasons, feedback and the checked copy in red pen. Marks stay drafts until you finalize them.
+Book a demo Read the API docs
 
-cURL Node.js Python
-POST /evaluations Copy
-curl https://api.evalezy.com/v1/evaluations \
--H "Authorization: Bearer $EVALEZY_API_KEY" \
+cURL Node.js Python 202 Accepted
+POST /exams/{id}/submissions Copy
+curl https://api.evalezy.com/v1/exams/$EXAM_ID/submissions \
+-H "X-API-Key: $EVALEZY_API_KEY" \
 -H "Content-Type: application/json" \
+-H "Idempotency-Key: sst-ix-mock-4-IXB-14" \
 -d '{
-"assessment_id": "asm_7Hq2",
-"answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
-"student": { "external_id": "IXB-14" },
-"webhook_url": "https://api.example.edu/hooks/evalezy"
+"candidate": { "external_id": "IXB-14", "name": "Aditi Sharma", "roll_number": "14" },
+"upload_id": "0d2b6c1e-6a1f-4c55-9a43-2b1f0c9e7a10"
 }'
 
-Bearer API keys
-Every request carries Authorization: Bearer <key>. Base URL: https://api.evalezy.com/v1
+X-API-Key, scoped
+Keys look like vak_eval_… and carry scopes: read, write, review, finalize. Server to server only. Base URL https://api.evalezy.com/v1
 
-Webhooks or polling
-Pass a webhook_url per evaluation, or poll GET /evaluations/{id} for status and progress.
+Fixed price, quoted first
+1 credit per page (handwritten) or per long answer (typed). POST /credits/quote before you submit; failed and cancelled are free.
 
-Billed on success
-Charged per page only when an evaluation completes. Failed, cancelled and unreadable: free.
+Safe retries
+Idempotency-Key on every POST, plus natural keys: your external_ref per exam, external_id per candidate, one live submission each.
 
-## The flow
+Drafts until you finalize
+The AI never publishes marks. Override, approve, then POST /exams/{id}/finalize. Unfinalizing needs a reason.
+
+Dashboard review included
+API exams show up in the Vacademy dashboard, tagged Source: API, so teachers can review without you building a screen.
+
+Full reference and guides
+Every endpoint with request, response and code, guides for term exams, typed tests and daily answer writing, and an OpenAPI document.
+
+## The flow, in six calls
+Ten-minute quickstart
 
 - 1.
 
-### Create an assessment
-Send your questions with marks, or a question paper URL to be read into questions. You get back an assessment id and the question list.
-
-POST /assessments Copy
-curl https://api.evalezy.com/v1/assessments \
--H "Authorization: Bearer $EVALEZY_API_KEY" \
+### Create an exam
+Questions, max marks, answer keys for objective questions and a rubric or model answer for long answers. Opening it fixes the questions, marks and answer keys; rubrics and model answers stay editable.
+In the docs
+POST /exams Copy
+curl https://api.evalezy.com/v1/exams \
+-H "X-API-Key: $EVALEZY_API_KEY" \
 -H "Content-Type: application/json" \
+-H "Idempotency-Key: sst-ix-mock-4" \
 -d '{
 "title": "Social Science · Half-Yearly Mock Test 4",
-"class": "IX",
-"question_paper_url": "https://files.example.edu/papers/sst-ix-mock-4.pdf"
+"mode": "handwritten",
+"external_ref": "sst-ix-mock-4",
+"class": "9",
+"open": true,
+"questions": [{
+"label": "30",
+"type": "long_answer",
+"text": "Explain the factors affecting climate.",
+"max_marks": 3,
+"rubric": { "criteria": [
+{ "name": "Names valid factors of climate", "marks": 1.5 },
+{ "name": "Explains how each factor affects climate", "marks": 1 },
+{ "name": "Uses a correct example", "marks": 0.5 }
+]}
+}]
 }'
 
 - 2.
 
-### Set evaluation criteria
-Send criteria and an optional model answer per question. Criteria marks are rescaled to sum to the question's marks. Or call /criteria/generate for a draft to edit.
-
-PUT /assessments/{id}/criteria Copy
-curl -X PUT https://api.evalezy.com/v1/assessments/asm_7Hq2/criteria \
--H "Authorization: Bearer $EVALEZY_API_KEY" \
+### Upload the answer sheets
+One PDF per candidate. Ask for presigned URLs (up to 100 per call), PUT each file, then read the upload back to confirm its page count.
+In the docs
+POST /uploads Copy
+# 1. Ask for a presigned upload URL (1 to 100 PDFs per call, 50 MB each)
+curl https://api.evalezy.com/v1/uploads \
+-H "X-API-Key: $EVALEZY_API_KEY" \
 -H "Content-Type: application/json" \
--d '{
-"questions": [{
-"question_id": "q_30",
-"max_marks": 3,
-"model_answer": "Latitude, altitude, pressure and wind system, distance from the sea, ocean currents, relief.",
-"criteria": [
-{ "name": "Names valid factors of climate", "marks": 1.5 },
-{ "name": "Explains how each factor affects climate", "marks": 1 },
-{ "name": "Uses a correct example", "marks": 0.5 }
-]
-}]
-}'
+-d '{"filename": "IXB-14.pdf", "content_type": "application/pdf", "size_bytes": 8421337}'
+
+# 2. PUT the PDF to the upload_url it returns (no API key on this call)
+curl -X PUT "$UPLOAD_URL" -H "Content-Type: application/pdf" --data-binary @IXB-14.pdf
 
 - 3.
 
-### Send an answer sheet
-Pass a URL to the PDF, or upload it to /files first and send the file id. Include your own student id so results map back to your users.
-
-POST /evaluations Copy
-curl https://api.evalezy.com/v1/evaluations \
--H "Authorization: Bearer $EVALEZY_API_KEY" \
+### Submit each copy
+Name the candidate by your own id and pass the upload_id; typed tests send answers[] instead. You get 202 and a fixed-price quote straight away.
+In the docs
+POST /exams/{id}/submissions Copy
+curl https://api.evalezy.com/v1/exams/$EXAM_ID/submissions \
+-H "X-API-Key: $EVALEZY_API_KEY" \
 -H "Content-Type: application/json" \
+-H "Idempotency-Key: sst-ix-mock-4-IXB-14" \
 -d '{
-"assessment_id": "asm_7Hq2",
-"answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
-"student": { "external_id": "IXB-14" },
-"webhook_url": "https://api.example.edu/hooks/evalezy"
+"candidate": { "external_id": "IXB-14", "name": "Aditi Sharma", "roll_number": "14" },
+"upload_id": "0d2b6c1e-6a1f-4c55-9a43-2b1f0c9e7a10"
 }'
-202 Accepted Copy
-{
-"id": "ev_3kP9xW",
-"status": "queued",
-"assessment_id": "asm_7Hq2",
-"student": { "external_id": "IXB-14" }
-}
 
 - 4.
 
-### Get the result
-Poll the evaluation or wait for the webhook. A completed evaluation carries the total, every question's marks, the student's answer as read, feedback, the criteria breakdown and the checked PDF.
-Example values are from the real sample copy (38/80).
+### Follow grading
+Poll one submission, or the feed of everything that changed since your last sync. Webhooks are on the roadmap; polling is the supported way today.
+In the docs
+GET /submissions?updated_since= Copy
+# No webhooks yet: poll the feed and follow next_cursor until has_more is false
+curl "https://api.evalezy.com/v1/submissions?updated_since=2026-10-02T10:00:00Z" \
+-H "X-API-Key: $EVALEZY_API_KEY"
 
-GET /evaluations/ev_3kP9xW → 200 Copy
+- 5.
+
+### Read results and the checked copy
+Question-wise marks, criteria with reasons, feedback, the answer as read, confidence and needs_review, plus the red-pen PDF.
+In the docs
+GET /submissions/{id}/result → 200 Copy
 {
-"id": "ev_3kP9xW",
-"status": "completed",
-"pages": 7,
-"total": { "awarded": 38, "max": 80 },
+"submission_id": "5a7e2c90-1b4d-4e8f-a3c2-7d9e0f1a2b3c",
+"status": "graded",
+"needs_review": true,
+"finalized": false,
+"totals": { "awarded": 38, "max": 80, "percentage": 47.5 },
 "questions": [
 {
-"number": "4",
-"awarded": 0,
-"max": 1,
-"student_answer": "Temperature",
-"feedback": "Wrong answer. Correct: latitude (distance from the equator)."
-},
-{
-"number": "30",
+"label": "30",
 "awarded": 0.5,
 "max": 3,
-"student_answer": "1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind",
+"source": "ai",
+"confidence": 0.88,
+"needs_review": false,
+"extracted_answer": "1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind",
 "feedback": "Only weather elements listed; no factors of climate explained.",
 "criteria": [
-{ "name": "Names valid factors of climate", "awarded": 0.5, "max": 1.5 },
-{ "name": "Explains how each factor affects climate", "awarded": 0, "max": 1 },
-{ "name": "Uses a correct example", "awarded": 0, "max": 0.5 }
+{ "name": "Names valid factors of climate", "awarded": 0.5, "max": 1.5, "reason": "Lists weather elements, not factors." },
+{ "name": "Explains how each factor affects climate", "awarded": 0, "max": 1, "reason": "No explanation." },
+{ "name": "Uses a correct example", "awarded": 0, "max": 0.5, "reason": "No example." }
 ]
 }
 ],
-"checked_copy_url": "https://files.evalezy.com/ev_3kP9xW/checked-copy.pdf",
-"billing": { "pages": 7, "amount": 7, "currency": "INR" }
+"checked_copy": { "available": true, "download_path": "/submissions/5a7e2c90-…/checked-copy" },
+"credits_charged": 7
 }
 
-## Endpoints
-Base URL https://api.evalezy.com/v1
+- 6.
+
+### Review, then finalize
+Override any mark (free) or approve it, in your app or in the Vacademy dashboard. Marks are drafts until you finalize.
+In the docs
+POST /exams/{id}/finalize Copy
+curl -X POST https://api.evalezy.com/v1/exams/$EXAM_ID/finalize \
+-H "X-API-Key: $EVALEZY_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{"all_graded": true}'
+
+Example values come from the real sample copy on this site (Class IX Social Science, 7 pages, 38/80).
+
+## Key endpoints
+Full API reference
+Base URL https://api.evalezy.com/v1. These are the calls most integrations use; the reference lists all of them.
 Method | Path | What it does |
 
-POST | /assessments | Create an assessment from a list of questions with marks, or from a question paper URL to be read into questions. |
-GET | /assessments/{id} | Fetch an assessment with its questions, marks and current criteria. |
-PUT | /assessments/{id}/criteria | Set evaluation criteria and model answers per question. Criteria marks are rescaled to sum to the question's marks. |
-POST | /assessments/{id}/criteria/generate | Ask Evalezy to draft criteria for every question; review and edit before you evaluate. |
-POST | /files | Upload an answer sheet PDF (multipart). Returns a file id to evaluate. |
-POST | /evaluations | Start checking one answer sheet, by file id or public URL, with your student id and an optional webhook. |
-GET | /evaluations/{id} | Status, progress and, once completed, marks per question, feedback and the checked copy PDF URL. |
-POST | /evaluations/{id}/cancel | Stop a running evaluation. Cancelled evaluations are not billed. |
+POST | /exams | Create an exam with its questions, marks, answer keys and rubrics or model answers. Send open: true to accept submissions straight away. |
+POST | /exams/{id}/open | Open a draft exam to accept copies. Rubrics must add up to max marks; questions, marks and answer keys are then fixed. |
+PUT | /exams/{id}/questions/{qid}/rubric | Set one long-answer question's rubric and model answer. Without one, a rubric is generated on the first copy and reused. |
+POST | /candidates | Create or update up to 2,000 candidates by your own external_id. Or skip it and send the candidate with the submission. |
+POST | /uploads | Get presigned URLs for 1 to 100 PDFs (50 MB each), PUT each file, then read it back to check its page count. |
+POST | /exams/{id}/submissions | Submit one candidate's copy (upload_id) or typed answers. Returns 202 with a fixed-price quote. |
+GET | /submissions?updated_since=… | The feed of every submission that changed, across exams. Poll it to pick up results (no webhooks yet). |
+GET | /submissions/{id}/result | Question-wise marks, criteria with reasons, feedback, the answer as read, confidence and needs_review. |
+GET | /submissions/{id}/checked-copy | Download the checked copy: the student's PDF with ticks, crosses, notes and marks. |
+PATCH | /submissions/{id}/questions/{qid} | A teacher's override: marks (0.5 steps) and feedback for one question. Overrides are free. |
+POST | /exams/{id}/finalize | Publish draft marks as final, for chosen submissions or every graded one. Nothing is final until you call it. |
+POST | /credits/quote | Quote the fixed price before you submit, and check your balance covers it. |
 
-## Statuses
+## Submission statuses
 
-- queuedAccepted and waiting for a slot.
-- readingPages are being read: layout, handwriting, maths lines.
-- gradingQuestions are being marked; progress shows questions done / total.
-- completedMarks, feedback and the checked PDF are ready.
-- failedCould not be checked, e.g. an unreadable copy. Reason included. Not billed.
-- cancelledStopped by you. Not billed.
+- queuedWaiting for a grading slot, with queue position and estimated ready time.
+- processingGrading has started.
+- readingThe handwriting is being read.
+- gradingAnswers are being marked.
+- gradedEvery question was graded. Marks are drafts until you finalize.
+- partially_gradedAt least one question could not be graded; a teacher marks it.
+- failedThe copy could not be graded, e.g. unreadable. Reason in error.code. Not charged.
+- cancelledYou cancelled it. Not charged.
 
-## Webhooks
-Pass webhook_url when you create an evaluation and Evalezy posts to it when the evaluation completes or fails. Fetch the full result with the id.
-evaluation.completed Copy
-POST https://api.example.edu/hooks/evalezy
-{
-"event": "evaluation.completed",
-"evaluation_id": "ev_3kP9xW",
-"status": "completed",
-"total": { "awarded": 38, "max": 80 }
-}
+## Not in the API yet
+Planned, without dates. The docs' roadmap says what to do today for each.
 
-- Answer sheets that cannot be read fail with a reason and are not billed
-- Cancel any running evaluation; cancelled evaluations are not billed
-- Each evaluation is billed once, even if it is retried internally
+- Webhooks: poll the submission feed for now
+- Phone photos: send one PDF per answer sheet
+- Bulk scans split and matched by name: one PDF per candidate
+- Exams from a question-paper PDF: send questions as JSON
+- CSV results and Hindi or regional-language answers
+API roadmap
 
 Ready to build?
-Tell us what you are building and your expected volume. We will enable API access on your account.
+Read the docs, then ask us to switch the Evaluation API on for your institute. Tell us what you are building and your expected monthly volume.
 
-Request API access
+API docs Request API access
 
 ## Frequently asked questions
 How do I get an API key? +
-API access is enabled per account. Request it on the demo page with your use case and expected monthly volume.
+The Evaluation API is switched on per institute. Write to hello@evalezy.com (or use the demo page) to get it enabled. An institute admin then creates keys in the Vacademy dashboard under Settings → Integrations → API keys, with only the scopes each system needs.
 
-Is the API synchronous? +
-No. Checking takes minutes, so evaluations are asynchronous: create one, get an id back immediately, then poll the status endpoint or receive a webhook.
+Is there a sandbox? +
+No. Every key is live and every graded copy is billed. Try things with a small exam of one or two short copies; failed and cancelled copies cost nothing.
 
-What file formats are accepted? +
-PDF answer sheets, one file per student, uploaded directly or fetched from a URL you provide. Phone photos combined into a PDF work.
+Are there webhooks? +
+Not yet; they are on the roadmap. Today you poll GET /submissions?updated_since= with a single worker, which the docs walk through step by step.
 
-How is the API billed? +
-Per page checked: ₹1 in India, $0.01 elsewhere. Failed, cancelled and unreadable sheets are not billed.
+What can I upload? +
+PDFs only, one per answer sheet, up to 50 MB each. Copies up to 40 pages are graded normally; 41 to 80 pages are graded and flagged for review; longer ones are refused before any charge. Phone photos must be combined into a PDF first.
 
-Can I get the checked PDF? +
-Yes. A completed evaluation includes a URL to the checked copy with ticks, crosses, notes, marks and the circled total.
+How is it priced? +
+1 credit per page of a handwritten PDF, blank pages included, and 1 credit per non-blank typed long answer. Objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged; re-evaluating is charged again.
 
-Do teachers still review API results? +
-That is up to your product. The API returns the AI's marks with the reason for each; most platforms show them to a teacher or reviewer before learners see them.
+Do teachers have to use my app to review? +
+No. Exams you create through the API also appear in the institute's Vacademy dashboard, tagged Source: API, where teachers can review and change marks. Their changes show up in your API results.
+
+Which languages are supported? +
+English answers only for now. Copies in Hindi or another regional language fail with language_not_supported and are not charged.
 
 ## From the blog
 For developers
@@ -1273,15 +1305,15 @@ For schools, coaching institutes and colleges checking copies in the Evalezy das
 Book a demo
 API
 ₹1 / page
-$0.01 outside India · billed on completed evaluations
-For edtech platforms and developers adding handwritten answer checking to their product.
+$0.01 outside India · 1 credit a page · quoted before grading
+For edtech platforms, ERPs and exam systems grading handwritten copies or typed long answers from their own product.
 
-- Assessments, criteria, answer sheets, results
-- Answer sheets by upload or URL
-- Webhooks or status polling
-- Marks, feedback and the checked PDF in the response
-- Failed and cancelled: not billed
-Request API access
+- Exams, rubrics, candidates, PDF uploads and results
+- Typed tests: 1 credit per non-blank long answer; objective answers free
+- Question-wise marks, reasons, feedback and the checked copy PDF
+- Poll for results; teachers can review in the dashboard
+- Failed and cancelled copies: not charged
+Request API access API pricing in the docs
 Volume
 Custom
 For 1,00,000+ pages a month
@@ -1326,7 +1358,7 @@ Indian prices exclude GST.
 - The red-pen checked copy PDF
 - Teacher review, edits and release
 - Result emails to students with the checked copy
-- The same price on the API
+- The same per-page price on the API
 
 ## Never charged
 
@@ -1349,7 +1381,7 @@ Is a re-check charged? +
 Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept.
 
 Is the API priced differently? +
-No. The API costs the same per page as the dashboard.
+Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing.
 
 Do you offer volume pricing? +
 For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
@@ -1584,7 +1616,7 @@ Read more
 
 ## Edtech platforms & developers
 Handwritten answer checking, as an API.
-Add handwritten answer checking to your app through an API: create assessments, set criteria, send answer sheets by file or URL, and get marks plus a red-pen PDF back.
+Add AI answer checking to your app or ERP: create an exam, upload each answer sheet as a PDF or send typed answers, then read question-wise marks and the red-pen checked copy.
 Read more
 
 ## See your own copies checked.
@@ -1665,7 +1697,7 @@ Scan answer sheets with a phone: which apps make PDFs, light and framing, spiral
 For developers
 
 ## Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
-Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API checks answer sheets by URL or file.
+Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API grades uploaded PDF answer sheets.
 1 Oct 2026 · 8 min read
 Guides
 
@@ -1760,14 +1792,14 @@ Is a re-check charged? +
 Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept.
 
 Is the API priced differently? +
-No. The API costs the same per page as the dashboard.
+Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing.
 
 Do you offer volume pricing? +
 For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
 
 ## API and data
 Is there an API? +
-Yes. Create assessments, set evaluation criteria, send answer sheets by file upload or URL, and get marks, feedback and the checked PDF from a status endpoint or a webhook. API access is enabled per account; request it on the demo page.
+Yes. With the Evaluation API your own system creates an exam with its questions and rubrics, uploads each answer sheet as a PDF (or sends typed answers), and reads back question-wise marks, reasons, feedback and the checked copy. You poll for results (there are no webhooks yet), and marks stay drafts until you finalize them. We switch it on per institute: write to hello@evalezy.com or request access on the demo page. Full docs at docs.evalezy.com.
 
 Who can see the answer sheets? +
 Copies and marks live inside your institute's account. Students see their own results only after release. See the data and privacy page for details.
@@ -1914,8 +1946,8 @@ A 20-minute call. We upload a question paper and a few scanned answer sheets, an
 - See the review screen and how release works
 - Get a cost estimate for your volume
 Developers: request API access
-Choose “API access” in the form and tell us what you are building and your expected monthly pages. API access is enabled per account.
-
+Choose “API access” in the form and tell us what you are building and your expected monthly copies. We switch the Evaluation API on for your institute; an institute admin then creates API keys in the Vacademy dashboard.
+Read the API docs
 WhatsApp +91 99933 36616 hello@evalezy.com
 
 What are you looking for?Check copies API access Both
@@ -2464,7 +2496,7 @@ Do you replace human evaluators? +
 No. Evalezy does the first evaluation and annotates the script; your evaluators review and own the final mark. Nothing is released without a person pressing release.
 
 Is there an API? +
-Yes. Large-scale users usually integrate through the evaluation API: send scripts by URL, receive marks, reasons and the annotated PDF. See the API page.
+Yes. With the Evaluation API your own system creates the exam and its rubrics, uploads each script as a PDF (one per candidate, up to 50 MB; scripts are uploaded, not fetched from a URL) and reads back question-wise marks with reasons, a needs_review flag and the annotated script. Marks stay drafts until you finalize them. Each institute has a daily copy quota that we set with you; ask us to raise it well before your exam window. Full reference at docs.evalezy.com.
 
 ## From the blog
 Assessment
@@ -2487,38 +2519,35 @@ URL: https://evalezy.com/for/edtech-platforms/
 For edtech platforms & developers
 
 # Handwritten answer checking, as an API.
-Your learners write on paper; your product lives online. Send Evalezy an answer sheet by file or URL and get back per-question marks, feedback and a checked copy in red pen, ready to show in your app.
-Book a demo See a real checked copy
+Your learners write on paper; your product lives online. Create the exam through the API, upload each answer sheet as a PDF (or send typed answers), and get back question-wise marks, reasons, feedback and the checked copy in red pen. Marks stay drafts until you finalize them.
+Book a demo Read the API docs
 
-GET /evaluations/{id} Copy
+GET /submissions/{id}/result Copy
 {
-"id": "ev_3kP9xW",
-"status": "completed",
-"pages": 7,
-"total": { "awarded": 38, "max": 80 },
+"submission_id": "5a7e2c90-1b4d-4e8f-a3c2-7d9e0f1a2b3c",
+"status": "graded",
+"needs_review": true,
+"finalized": false,
+"totals": { "awarded": 38, "max": 80, "percentage": 47.5 },
 "questions": [
 {
-"number": "4",
-"awarded": 0,
-"max": 1,
-"student_answer": "Temperature",
-"feedback": "Wrong answer. Correct: latitude (distance from the equator)."
-},
-{
-"number": "30",
+"label": "30",
 "awarded": 0.5,
 "max": 3,
-"student_answer": "1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind",
+"source": "ai",
+"confidence": 0.88,
+"needs_review": false,
+"extracted_answer": "1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind",
 "feedback": "Only weather elements listed; no factors of climate explained.",
 "criteria": [
-{ "name": "Names valid factors of climate", "awarded": 0.5, "max": 1.5 },
-{ "name": "Explains how each factor affects climate", "awarded": 0, "max": 1 },
-{ "name": "Uses a correct example", "awarded": 0, "max": 0.5 }
+{ "name": "Names valid factors of climate", "awarded": 0.5, "max": 1.5, "reason": "Lists weather elements, not factors." },
+{ "name": "Explains how each factor affects climate", "awarded": 0, "max": 1, "reason": "No explanation." },
+{ "name": "Uses a correct example", "awarded": 0, "max": 0.5, "reason": "No example." }
 ]
 }
 ],
-"checked_copy_url": "https://files.evalezy.com/ev_3kP9xW/checked-copy.pdf",
-"billing": { "pages": 7, "amount": 7, "currency": "INR" }
+"checked_copy": { "available": true, "download_path": "/submissions/5a7e2c90-…/checked-copy" },
+"credits_charged": 7
 }
 
 ## The problem today
@@ -2529,28 +2558,29 @@ A score is not a product
 Learners want to see their own page marked up, not a JSON blob turned into a table.
 
 Building it in-house is a project
-Page reading, answer location, rubrics, consistency, annotation and retries are each a project of their own.
+Page reading, answer location, rubrics, consistency, annotation, retries and a review screen for teachers are each a project of their own.
 
 ## How it fits your workflow
 
-- 1. Create an assessment
-Send questions and marks, or a question paper to read into questions.
+- 1. Create the exam
+POST /exams with the questions as JSON: max marks, answer keys for objective questions, and a rubric or model answer for each long answer.
 
-- 2. Set evaluation criteria
-Send your rubric per question, or ask for a generated one and edit it.
+- 2. Upload each copy
+One PDF per candidate, up to 50 MB, through presigned upload URLs (1 to 100 files per call). Typed tests send the answers as text instead.
 
-- 3. Send answer sheets
-Upload the PDF or pass a URL, with your own student id and an optional webhook.
+- 3. Submit and follow
+Submit each copy against your own candidate id. You get 202 and a fixed-price quote at once; poll the submission, or the updated_since feed for many.
 
-- 4. Get results
-Poll the status endpoint or receive a webhook: marks per question, feedback, the student's answer as read, and a link to the checked PDF.
+- 4. Read, review, finalize
+Question-wise marks with reasons, feedback, confidence, needs_review and the checked copy PDF. Teachers review in your app or the Vacademy dashboard; then you finalize.
 
 ## What changes
 
-- Per-question marks, feedback and criteria in JSON
-- A red-pen checked PDF to show learners
-- Failed and unreadable sheets are not billed
-- ₹1 / $0.01 per page, same as the dashboard
+- Question-wise marks, criteria with reasons, feedback and confidence in JSON
+- The student's own copy checked in red pen, as a PDF to show learners
+- A needs_review flag on the answers a teacher should look at
+- Teacher review without building a screen: API exams appear in the Vacademy dashboard
+- ₹1 / $0.01 per handwritten page, quoted before grading; failed and cancelled copies are free
 
 Worked example
 20,000 answer sheets a month, 5 pages each
@@ -2564,13 +2594,19 @@ Schools Coaching institutes UPSC & PSC answer writing Colleges & universities Ex
 
 ## Frequently asked questions
 How do I get API keys? +
-API access is enabled per account. Request access on the demo page with your expected monthly volume and we will set you up.
+We switch the Evaluation API on for your institute: write to hello@evalezy.com or request access on the demo page with your expected monthly volume. An institute admin then creates keys in the Vacademy dashboard (Settings → Integrations → API keys), each with only the scopes it needs. There is no sandbox: every key is live and every graded copy is billed.
 
 Is it synchronous? +
-No. Checking a copy takes minutes, so evaluations are asynchronous: you get an id straight away, then poll the status endpoint or receive a webhook when the check completes.
+No. A handwritten copy usually takes a few minutes, so grading is asynchronous: the submit call returns 202 straight away with the submission id, its place in the queue, an estimated ready time and the fixed price. Poll GET /submissions/{id}, or the GET /submissions?updated_since= feed when many copies are in flight. Webhooks are not available yet.
 
 What do I get back? +
-Status, total marks, and for each question: marks awarded, maximum, the student's answer as read, feedback and the criteria breakdown, plus a URL to the checked copy PDF.
+The status and totals, and for each question: marks awarded out of the maximum, each rubric criterion with its marks and reason, feedback, the answer as read, a confidence score and a needs_review flag. For handwritten copies, GET /submissions/{id}/checked-copy returns the red-pen PDF. Marks are drafts until you call finalize.
+
+What can I send? +
+Handwritten copies as PDFs only, one per candidate, up to 50 MB; phone photos must be combined into a PDF first, and the API does not yet split a bundled scan or match copies by name. Copies up to 40 pages are graded normally; 41 to 80 pages are graded and flagged for review. Typed tests send each answer as plain text. Questions go in as JSON, not as a question-paper PDF. English answers only for now.
+
+How is the API priced? +
+1 credit per page of a handwritten PDF, blank pages included, and 1 credit per non-blank typed long answer; objective answers are free. At the standard rate a handwritten page costs ₹1 in India (excluding GST) or $0.01 elsewhere, the same as in the dashboard. The price is fixed and quoted before grading. Failed and cancelled copies are not charged; re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing.
 
 ## From the blog
 For developers
@@ -2719,7 +2755,7 @@ Evalezy vs checking by hand Evalezy vs ChatGPT
 
 ## Frequently asked questions
 Can Evalezy work with our existing evaluation process? +
-Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If you need marks in another system, the API returns them per question.
+Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If your scripts already run through your own system, the Evaluation API takes each one as a PDF and returns marks per question with reasons, as drafts your reviewers finalize.
 
 ## From the blog
 Assessment
@@ -3014,8 +3050,8 @@ URL: https://evalezy.com/blog/handwritten-answer-grading-api/
 For developers
 
 # Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
-Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API checks answer sheets by URL or file.
-By the Evalezy team · 1 October 2026· 8 min read
+Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API grades uploaded PDF answer sheets.
+By the Evalezy team · Updated 2 October 2026· 8 min read
 
 ## Key takeaways
 
@@ -3023,7 +3059,7 @@ By the Evalezy team · 1 October 2026· 8 min read
 - A production grading pipeline is ten problems, not one: cleanup, line geometry, reading, answer location, rubric grading, validation, annotation, review, failure handling and billing.
 - Treat student writing as untrusted input: an answer can contain instructions aimed at the grader.
 - Build if grading is your core product or you need a script Evalezy has not tested; use an API if grading is a feature and you want marks plus a checked PDF.
-- The Evalezy API flow is asynchronous: create an assessment, set criteria, start an evaluation by URL or file, then poll or take a webhook.
+- The Evalezy API is asynchronous: create an exam, upload each answer sheet as a PDF, submit it, poll the submission feed (there are no webhooks yet), then read the draft marks and finalize them.
 
 Your learners write on paper. Your product lives online. Somewhere between the two, a handwritten answer sheet has to become marks, feedback and something a learner actually wants to open. If you are a product manager or engineer adding that step to an edtech app, this post covers why plain OCR does not get you there, what a pipeline needs before you can trust it in production, how to think about building it yourself, and how the Evalezy API handles it.
 
@@ -3032,7 +3068,7 @@ Most OCR engines were built for print. Tesseract, the open-source OCR engine, sa
 Cloud document services do read handwriting, but check the language list before you plan around one. Microsoft’s Document Intelligence Read model lists Hindi, Marathi, Tamil and many other languages for printed text. Its v4.0 list for handwritten text has twelve languages, and none of them is an Indian language.
 Student answer sheets then add problems of their own on top of the handwriting itself. These are the ones Evalezy’s pipeline is built to handle:
 
-- Phone photos, not scans. The sample copy on this site is a phone photo of a spiral notebook. Pages arrive tilted, shadowed and low in contrast.
+- Phone photos, not scans. The sample copy on this site is a phone photo of a spiral notebook. Pages arrive tilted, shadowed and low in contrast. (Through the API, combine the photos into one PDF per answer sheet first.)
 - Answers out of order. Students answer Question 7 before Question 3, or number answers wrongly. A pipeline that trusts the written number marks the wrong answer.
 - Maths. Fractions, powers and working spread over several lines need a careful second look.
 - Long copies. A 20-page script has to be split into answers before anything can be graded.
@@ -3068,7 +3104,7 @@ The second is mark validation. Treat every mark a model returns as a proposal an
 Learners want to see their own page marked, not a JSON blob turned into a table. Evalezy draws ticks, crosses, short notes and marks per question in a handwriting style, with the total circled on page 1, and the same copy re-renders identically every time, which matters when a learner and a teacher are looking at the same page during a dispute. The AI never publishes a result on its own in the Evalezy dashboard: marks land as a draft, a teacher reviews and releases, and a mark the teacher edits is never overwritten by a later AI run.
 
 ### Failure handling and billing
-Async jobs fail and get retried, so billing has to be idempotent. Stripe’s API is a well-known example of the pattern: clients send an idempotency key so a request can be retried “without accidentally performing the same operation twice.” Whatever mechanism you choose, a retry should never become a second charge. In Evalezy, a copy that is mostly unreadable fails with a clear error and is not graded by guesswork, and failed, cancelled and unreadable checks are not charged.
+Async jobs fail and get retried, so billing has to be idempotent. Stripe’s API is a well-known example of the pattern: clients send an idempotency key so a request can be retried “without accidentally performing the same operation twice.” Whatever mechanism you choose, a retry should never become a second charge. In Evalezy, a copy that is mostly unreadable fails with a clear error and is not graded by guesswork, and failed, cancelled and unreadable checks are not charged. Evalezy’s own API takes an Idempotency-Key header on every POST for the same reason.
 
 ## Build vs buy
 | Build in-house | Use an API |
@@ -3076,79 +3112,142 @@ Async jobs fail and get retried, so billing has to be idempotent. Stripe’s API
 What you own | Models, prompts, data flow and every stage above | Your rubric, model answers and review flow; the pipeline is the vendor’s |
 Before the first trustworthy result | All ten stages, plus a test set of real copies | Integration against a handful of endpoints |
 Ongoing work | Model changes, prompt regressions, new handwriting edge cases, PDF rendering | The vendor’s job |
-Cost shape | Model calls, infrastructure and engineering time; per-page cost varies | A fixed rate per page (Evalezy: ₹1 or $0.01); failures not billed |
-Languages and scripts | Whatever you build and test | Evalezy: tested on English; other languages need samples first |
+Cost shape | Model calls, infrastructure and engineering time; per-page cost varies | A fixed price per page, quoted before grading (Evalezy: ₹1 or $0.01); failed copies are free |
+Languages and scripts | Whatever you build and test | Evalezy: English answers only for now; Hindi and regional languages are on the roadmap |
 
 Build if grading is your core product, if you need a language or script now that no vendor has tested, or if answer sheets must never leave your own infrastructure. Use an API if grading is one feature of a larger product, if you want a checked PDF and a review step without building them, and if a per-page cost is easier to plan for than a team. If you are weighing a general chatbot instead, our comparison with ChatGPT covers that approach.
 Either way, decide on evidence. Collect a test set of real answer sheets from your own learners, say fifty copies across neat and messy handwriting, phone photos and scans, and have experienced teachers mark them first. Run them through your prototype or a vendor and compare question by question: where marks differ, whether the reasons make sense, and which copies failed. Keep that set. It becomes your regression test for every model or prompt change afterwards.
 
-## How the Evalezy API flow works
-API access is enabled per account
-Request access on the API page with your use case and expected monthly volume. The full endpoint list, statuses and webhook format are there too.
+## How the Evalezy API works
+The Evaluation API went live on 2 October 2026 at https://api.evalezy.com/v1, with full documentation at docs.evalezy.com . It is JSON over HTTPS, and every request carries your key in an X-API-Key header. It grades handwritten copies and typed long answers.
+Getting a key, and why there is no test mode
+Evalezy switches the API on per institute: write to hello@evalezy.com or request access on the API page . An institute admin then creates keys in the Vacademy dashboard, under Settings → Integrations → API keys. Keys look like vak_eval_… and belong on your server only, never in a web page or a mobile app.
+There is no sandbox. Every key is live and every graded copy is charged, so test with a small exam of one or two short copies. See Authentication in the docs.
 
-- 1 Create an assessment
-POST /assessments with a list of questions and marks, or a question paper URL to be read into questions. You get back an assessment id.
+- 1 Create the exam
+POST /exams with the questions, max marks, answer keys for objective questions and a rubric or model answer for each long answer, with mode set to handwritten (or typed, for typed answers). Send open: true to accept submissions straight away. Rubric criteria must add up exactly to the question’s marks, or the request is refused. A long answer with neither a rubric nor a model answer gets a rubric generated on the first copy, reused for every candidate.
 
-- 2 Set evaluation criteria
-PUT /assessments/{id}/criteria with criteria and an optional model answer per question; criteria marks are rescaled to sum to the question’s marks. Or POST /assessments/{id}/criteria/generate for a draft to review and edit.
+- 2 Upload each answer sheet
+POST /uploads returns a short-lived presigned URL for each PDF, up to 100 files per call. PUT the file to that URL, without your API key. Read GET /uploads/{id} if you want to see the page count before you submit. One PDF per answer sheet, up to 50 MB.
 
-- 3 Start an evaluation
-POST /evaluations with a public answer_sheet_url, or a file id from POST /files, plus your own student id and an optional webhook_url. It returns an evaluation id with status queued.
+- 3 Submit the copy
+POST /exams/{id}/submissions with the candidate, named by your own external_id, and the upload_id. You get 202 Accepted with the submission id, status queued, a queue position, an estimated ready time and a fixed-price quote. Typed exams send answers[] instead of an upload.
 
-- 4 Poll or wait for the webhook
-GET /evaluations/{id} moves through queued, reading and grading to completed, failed or cancelled. With a webhook_url, Evalezy posts to you when the evaluation completes or fails.
+- 4 Follow grading
+Each submission moves through queued, processing, reading and grading, and ends as graded, partially_graded, failed or cancelled. There are no webhooks yet: poll GET /submissions/{id} for one copy, or the feed GET /submissions?updated_since= for every change across your exams.
 
-- 5 Use the result
-The total, per-question marks, the student’s answer as read, feedback, the criteria breakdown, the checked_copy_url for the red-pen PDF and the pages billed.
+- 5 Read the result
+GET /submissions/{id}/result gives the totals and, per question, awarded and max marks, criteria with reasons, feedback, the extracted answer, a confidence score and needs_review. GET /submissions/{id}/checked-copy downloads the red-pen PDF.
 
-Here is the core of an integration in Node.js 18 or later, polling instead of using a webhook:
+- 6 Review, then finalize
+A teacher overrides a question’s marks (free) or approves the copy, either in your product through the review endpoints or in the Vacademy dashboard, where exams created through the API appear tagged Source: API. POST /exams/{id}/finalize then turns the draft marks into final marks.
+
+Here is the core of an integration in Node.js 18 or later. The first part creates the exam, uploads one student’s PDF and submits it:
+// Node.js 18+, run as an ES module. Call Evalezy from your server only.
+import { readFile, stat } from "node:fs/promises";
+
 const API = "https://api.evalezy.com/v1";
-const headers = {
-Authorization: "Bearer " + process.env.EVALEZY_API_KEY,
+
+async function call(method, path, body, idempotencyKey) {
+const res = await fetch(API + path, {
+method,
+headers: {
+"X-API-Key": process.env.EVALEZY_API_KEY,
 "Content-Type": "application/json",
-};
-
-// 1. Start checking one answer sheet
-const res = await fetch(API + "/evaluations", {
-method: "POST",
-headers,
-body: JSON.stringify({
-assessment_id: "asm_7Hq2",
-answer_sheet_url: "https://files.example.edu/ix-b/roll-14.pdf",
-student: { external_id: "IXB-14" },
-}),
+...(idempotencyKey ? { "Idempotency-Key": idempotencyKey } : {}),
+},
+body: body ? JSON.stringify(body) : undefined,
 });
-const { id } = await res.json(); // status: "queued"
+const json = await res.json();
+if (!res.ok) throw new Error(res.status + " " + json.error.code + ": " + json.error.message);
+return json;
+}
 
-// 2. Poll every 30 s until it finishes (or pass webhook_url instead)
-let ev;
-do {
-await new Promise((r) => setTimeout(r, 30000));
-ev = await (await fetch(API + "/evaluations/" + id, { headers })).json();
-} while (["queued", "reading", "grading"].includes(ev.status));
+// 1. Create the exam once and open it. Criteria must add up to max_marks.
+const exam = await call("POST", "/exams", {
+title: "Social Science · Half-Yearly Mock Test 4",
+mode: "handwritten",
+external_ref: "sst-ix-mock-4",
+open: true,
+questions: [
+{
+label: "30", type: "long_answer", max_marks: 3,
+text: "Explain the factors affecting climate.",
+rubric: { criteria: [
+{ name: "Names valid factors of climate", marks: 1.5 },
+{ name: "Explains how each factor affects climate", marks: 1 },
+{ name: "Uses a correct example", marks: 0.5 },
+] },
+},
+// ...one entry per question on the paper
+],
+}, "exam-sst-ix-mock-4");
 
-// 3. Use the result
-if (ev.status === "completed") {
-console.log(ev.total); // { awarded: 38, max: 80 }
-console.log(ev.checked_copy_url); // red-pen PDF to show the learner
-} else {
-console.log(ev.status, ev); // failed includes a reason; not billed
-}The example values come from the real sample copy , a 7-page Class IX Social Science answer sheet that scored 38 out of 80.
+// 2. Ask for a presigned upload URL, then PUT the PDF to it (no API key on the PUT)
+const file = "scans/IXB-14.pdf";
+const { uploads: [upload] } = await call("POST", "/uploads", {
+filename: "IXB-14.pdf",
+content_type: "application/pdf",
+size_bytes: (await stat(file)).size,
+});
+const put = await fetch(upload.upload_url, {
+method: "PUT", headers: upload.headers, body: await readFile(file),
+});
+if (!put.ok) throw new Error("Upload failed: " + put.status);
+
+// 3. Submit it, naming the student by your own id. 202 Accepted, price fixed now.
+const sub = await call("POST", "/exams/" + exam.id + "/submissions", {
+candidate: { external_id: "IXB-14", name: "Aditi Sharma", roll_number: "14" },
+upload_id: upload.id,
+}, "sst-ix-mock-4-IXB-14");
+console.log(sub.status, sub.quote); // "queued" { unit: "page", pages: 7, credits: 7, ... }The second part is a worker you run every 30 to 60 seconds. It reads the feed of every submission that changed, across all your exams, and fetches the result of each copy that has finished. Each pass starts two minutes before the last updated_at it processed, so a change saved a moment late is not missed:
+// 4. No webhooks yet: poll the feed of every submission that changed.
+// Run a pass every 30 to 60 seconds and save the watermark it returns.
+// On the first run, pass a time before your first submission.
+async function syncOnce(watermark) {
+const since = new Date(Date.parse(watermark) - 2 * 60 * 1000).toISOString();
+const params = new URLSearchParams({ updated_since: since, limit: "200" });
+for (;;) {
+const page = await call("GET", "/submissions?" + params);
+for (const row of page.data) {
+if (Date.parse(row.updated_at) > Date.parse(watermark)) watermark = row.updated_at;
+if (row.state !== "live") continue; // replaced or deleted: mark it so on your side
+if (row.status === "graded" || row.status === "partially_graded") {
+// 5. Draft marks, criteria with reasons, feedback, confidence, needs_review
+const result = await call("GET", "/submissions/" + row.id + "/result");
+await saveResult(row, result); // your upsert, keyed by row.id
+} else if (row.status === "failed") {
+await saveFailure(row, row.error.code); // e.g. copy_unreadable; not charged
+}
+}
+if (!page.has_more) return watermark;
+params.set("cursor", page.next_cursor);
+}
+}
+
+// 6. After a teacher's review, in your app or the Vacademy dashboard, make the marks final.
+// This call needs a key with the evaluation:finalize scope. all_graded covers "graded"
+// copies only; finalize partially_graded ones by id with allow_partial: true once a
+// teacher has marked the questions the AI could not grade.
+await call("POST", "/exams/" + exam.id + "/finalize", { all_graded: true });New keys get the read and write scopes. Finalizing needs the evaluation:finalize scope, and overriding or approving marks needs evaluation:review, so a system that only sends copies never gets to publish marks. The example values come from the real sample copy , a 7-page Class IX Social Science answer sheet that scored 38 out of 80; at 1 credit a page, it costs 7 credits.
+The docs have the same flow in curl, Python and Node: the quickstart , the handwritten exams guide and a complete sync worker with retries in Syncing results .
 
 ## Shipping it in your product
 
-- Show the checked copy, not only the JSON. The checked copy is what learners open and share. Put it first; use the per-question data for progress tracking and reports.
-- Put a reviewer before the learner. The API returns the AI’s marks with reasons. Whether a teacher sees them first is up to your product, and we recommend that one does, as in Evalezy’s own teacher review .
-- Map results to your users. Send your own student id as student.external_id on every evaluation, so a webhook or poll result maps straight back to the right learner.
-- Make your own side idempotent. Store the evaluation id against the learner’s submission as soon as you get it. If your worker crashes and retries, look up the stored id instead of starting a second evaluation of the same sheet, which would be a separate run.
-- Design for minutes, not seconds. A copy typically takes 1 to 8 minutes. Show progress, let the learner leave and notify them when the result is ready.
-- Handle failure honestly. When a sheet fails as unreadable, ask the learner for a clearer scan rather than showing a zero. Failed checks are not billed.
-- Know the limits. Diagrams, maps and graphs are judged by their labels and written explanation, not as drawings. Grading is tested on English answer sheets.
-- Budget per page. A 5-page sheet costs ₹5 or $0.05. A re-check is a new run and is billed again, so re-check deliberately.
+- Keep the key on your server. The API is server-to-server only. Anyone with the key can spend your credits, so your app talks to your backend and your backend talks to Evalezy. Use one key per system and environment, with only the scopes it needs.
+- Show the checked copy, not only the JSON. The checked copy is what learners open and share. Your server can fetch it from GET /submissions/{id}/checked-copy whenever a learner asks, so you need not store it. Put it first; use the per-question data for progress tracking and reports.
+- Put a reviewer before the learner. The API returns draft marks with reasons, and needs_review flags what the AI was unsure about, for example a confidence below 0.60. Nothing is final until you call finalize. Teachers can review in your own screens, or in the Vacademy dashboard, where API exams appear tagged Source: API and their changes show up in your results. We recommend that a teacher looks first, as in Evalezy’s own teacher review .
+- Map results to your users. Send your own student id as candidate.external_id on every submission, and your own answer-sheet id in metadata if you need it, so every row in the feed maps straight back to the right learner.
+- Make retries safe. Send an Idempotency-Key on every POST: a retry with the same key returns the stored response instead of creating or charging a second submission. A candidate has one live submission per exam, so a duplicate is refused with 409 submission_exists; send replace: true when you do mean to send a new copy.
+- Design for minutes, not seconds. A handwritten copy typically takes a few minutes, and longer copies take longer. Each submission carries an estimated ready time. Show progress, let the learner leave and notify them when the result is ready.
+- Handle failure honestly. When a copy fails as copy_unreadable, ask the learner for a clearer scan and send it with replace: true, rather than showing a zero. Failed copies are not charged.
+- Know the limits. One PDF per answer sheet, up to 50 MB; phone photos must be combined into a PDF first. English answers only for now. Diagrams, maps and graphs are judged by their labels and written explanation, not as drawings.
+- Budget per page. A 5-page copy is 5 credits, blank pages included, which is ₹5 or $0.05 at the standard rate. POST /credits/quote prices a whole exam before you submit it. Re-evaluating a copy is charged again, so re-evaluate deliberately.
+Before your first real exam, run through the docs’ going-live checklist (keys, quotas and rate limits), and check the roadmap for what is not available yet.
 Where Evalezy fits
-Evalezy handles the reading, grading, annotation and review stages for you, in a dashboard or through the API. Send a handwritten answer sheet by URL or file and get back per-question marks, feedback, the student’s answer as read, a criteria breakdown and a red-pen checked PDF .
-Same engine, same price. ₹1 per page in India (excluding GST) or $0.01 elsewhere, the same rate as the dashboard. Failed, cancelled and unreadable sheets are not billed. See pricing .
-Your rubric, or a draft to edit. Send your own criteria and model answers, or ask for generated criteria and review them before you evaluate. See how it works and the edtech platforms page .
+Evalezy handles the reading, grading, annotation and review stages for you, in a dashboard or through the API. Upload a handwritten answer sheet as a PDF, or send typed answers, and get back per-question marks, criteria with reasons, feedback, the student’s answer as read and a red-pen checked PDF , as drafts until you finalize them.
+Same price as the dashboard. 1 credit per page, quoted before grading: ₹1 in India (excluding GST) or $0.01 elsewhere. Typed long answers are 1 credit each and objective answers are free. Failed and cancelled copies are not charged. See pricing .
+Your rubric, checked when you send it. Send your own criteria or a model answer for each question; criteria that do not add up to the question’s marks are refused, not quietly rescaled. Leave both out and a rubric is generated on the first copy and reused for every candidate, and you can read it back and replace it. See the API page , the API docs and the edtech platforms page .
 
 Book a demo
 
@@ -3159,6 +3258,7 @@ Book a demo
 - Microsoft Learn, Language and locale support for Read and Layout document analysis (Document Intelligence v4.0) (checked 1 October 2026)
 - OWASP Gen AI Security Project, LLM01:2025 Prompt Injection (checked 1 October 2026)
 - Stripe API reference, Idempotent requests (checked 1 October 2026)
+- Evalezy API documentation (introduction, authentication, submissions, results, pricing and roadmap) (checked 2 October 2026)
 
 ## Frequently asked questions
 Can I grade handwritten answers with Tesseract or another OCR library? +
@@ -3168,23 +3268,29 @@ Why not send the page straight to a general chatbot? +
 A single chat prompt gives you a mark, but not a fixed rubric reused for every student, mark validation, a checked PDF, a review step or clear failure on unreadable pages. We compare the two approaches on the Evalezy vs ChatGPT page.
 
 Is the Evalezy API synchronous? +
-No. Checking a copy typically takes 1 to 8 minutes, so evaluations are asynchronous: you get an id straight away, then poll the status endpoint or receive a webhook when the check completes or fails.
+No. POST /exams/{id}/submissions answers 202 Accepted straight away, with a submission id, a queue position, an estimated ready time and a fixed-price quote. A handwritten copy typically takes a few minutes, and longer copies take longer. There are no webhooks yet: poll GET /submissions/{id} for one copy, or the feed GET /submissions?updated_since= for everything that changed since your last check.
 
-What does a completed evaluation return? +
-The total, and for each question the marks awarded and maximum, the student’s answer as read, feedback and the criteria breakdown, plus a URL to the checked copy PDF and the pages billed.
+What does a graded submission return? +
+GET /submissions/{id}/result returns the totals and, for each question, the marks awarded out of the maximum, the marks and a reason for each rubric criterion, feedback, the text Evalezy read from the copy, a confidence from 0 to 1 and a needs_review flag. GET /submissions/{id}/checked-copy downloads the student’s PDF with the marks and notes on it. All marks are drafts until you call finalize.
 
 How is the API billed? +
-Per page checked: ₹1 in India (excluding GST) or $0.01 elsewhere, the same as the dashboard. Failed, cancelled and unreadable sheets are not billed. A re-check is a new run and is billed again.
+In credits, at a fixed price quoted before grading starts: 1 credit per page of a handwritten PDF, blank pages included, and 1 credit per non-blank typed long answer. Objective answers are free. Failed and cancelled copies are not charged; re-evaluating a copy is charged again. Credits are bought in the Vacademy dashboard. At the standard rate a page costs ₹1 in India (excluding GST) or $0.01 elsewhere, the same as the dashboard.
+
+Is there a sandbox or test mode? +
+No. Every key is live and every graded copy is charged. Test with a small exam and one or two short copies. Typed submissions with only objective answers are free, so you can try exam setup and the submission flow without spending credits.
+
+Can I send phone photos, or a link to the answer sheet? +
+Not yet. The API takes one PDF per answer sheet, up to 50 MB, uploaded through a presigned URL from POST /uploads. Combine phone photos into one PDF first. Copies of up to 40 pages are graded normally, copies of 41 to 80 pages are graded and flagged for review, and longer ones are refused before any charge.
 
 Does it read Hindi or other Indian-language handwriting? +
-Evalezy is built and tested on English answer sheets. If your learners write in another language, send us sample copies before you plan a launch around it.
+Not yet. The API grades English answers only for now: a handwritten copy written in Hindi or another regional language fails with language_not_supported and is not charged. Hindi and regional languages are on the API roadmap; if you need them, tell us at hello@evalezy.com, since partner demand sets the order.
 
 On this page
 
 - Why OCR fails on handwriting
 - What a robust pipeline needs
 - Build vs buy
-- How the Evalezy API flow works
+- How the Evalezy API works
 - Shipping it in your product
 See a copy checked in red pen
 A real 7-page answer sheet, checked by Evalezy.
@@ -3857,7 +3963,7 @@ Evalezy is our AI checking product for handwritten answer sheets. It returns eac
 Unreadable copies: a mostly unreadable copy fails with a clear error, is not graded by guesswork and is not charged. Release: marks land as a draft, and students see “Results pending” until a teacher presses Release Result, enforced on the server. Student matching: it reads the name, roll number and class from the first page and never guesses; uncertain matches wait for a teacher to pick the student.
 Price: ₹1 per page checked ($0.01 outside India), plus GST in India. Failed, cancelled and unreadable checks are free; a re-check is charged again. Data: see how we handle answer sheets ; Evalezy does not hold SOC 2 or ISO certification today. Overrides: a mark a teacher edits is never overwritten by a later AI run.
 Consistency: one marking scheme per question , generated once and used for every copy, which you can edit or replace; teacher review shows the criteria breakdown for every answer. Diagrams: judged by their labels and written explanation only, not as drawings. Languages: built and tested on English copies; for anything else, send us samples first.
-Maths: unclear maths lines get a second read by an equation reader, up to four per copy. Time: 1–8 minutes per copy, first results in about 10 minutes, and about 2–3 hours for 100 copies on current capacity, with a bell alert and an email when a batch is done. API: API access is enabled per account.
+Maths: unclear maths lines get a second read by an equation reader, up to four per copy. Time: 1–8 minutes per copy, first results in about 10 minutes, and about 2–3 hours for 100 copies on current capacity, with a bell alert and an email when a batch is done. API: the Evaluation API is live now and is switched on per institute. It takes each copy as an uploaded PDF, not a link, and you poll for results, since webhooks are not available yet. The price per page is the same as the dashboard; the API docs have the details.
 
 Book a demo
 If you are evaluating tools for a specific setting, our pages for schools , coaching institutes and colleges and universities show how the workflow fits, and our comparison with a general chatbot covers the question we hear most.

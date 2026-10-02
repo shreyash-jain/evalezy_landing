@@ -1,4 +1,5 @@
 import type { Audience } from "./types";
+import { SALES_EMAIL } from "@/lib/site";
 
 /**
  * "Who it's for" pages. Every claim must trace to docs/PRODUCT_FACTS.md.
@@ -169,7 +170,7 @@ export const AUDIENCES: Audience[] = [
     faqs: [
       { q: "Can Evalezy handle our volume?", a: "Current shared capacity checks about 100 copies in 2 to 3 hours. For large-scale exams we plan capacity with you before the exam window; talk to us with your script count and dates." },
       { q: "Do you replace human evaluators?", a: "No. Evalezy does the first evaluation and annotates the script; your evaluators review and own the final mark. Nothing is released without a person pressing release." },
-      { q: "Is there an API?", a: "Yes. Large-scale users usually integrate through the evaluation API: send scripts by URL, receive marks, reasons and the annotated PDF. See the API page." },
+      { q: "Is there an API?", a: "Yes. With the Evaluation API your own system creates the exam and its rubrics, uploads each script as a PDF (one per candidate, up to 50 MB; scripts are uploaded, not fetched from a URL) and reads back question-wise marks with reasons, a needs_review flag and the annotated script. Marks stay drafts until you finalize them. Each institute has a daily copy quota that we set with you; ask us to raise it well before your exam window. Full reference at docs.evalezy.com." },
     ],
   },
   {
@@ -177,32 +178,35 @@ export const AUDIENCES: Audience[] = [
     label: "Edtech platforms & developers",
     icon: "Code2",
     title: "Handwritten Answer Evaluation API for Edtech Platforms",
-    description: "Add handwritten answer checking to your app through an API: create assessments, set criteria, send answer sheets by file or URL, and get marks plus a red-pen PDF back.",
+    description: "Add AI answer checking to your app or ERP: create an exam, upload each answer sheet as a PDF or send typed answers, then read question-wise marks and the red-pen checked copy.",
     eyebrow: "For edtech platforms & developers",
     h1: "Handwritten answer checking, as an API.",
-    lede: "Your learners write on paper; your product lives online. Send Evalezy an answer sheet by file or URL and get back per-question marks, feedback and a checked copy in red pen, ready to show in your app.",
+    lede: "Your learners write on paper; your product lives online. Create the exam through the API, upload each answer sheet as a PDF (or send typed answers), and get back question-wise marks, reasons, feedback and the checked copy in red pen. Marks stay drafts until you finalize them.",
     pains: [
       { title: "OCR alone fails on handwriting", body: "Printed-text OCR cannot read student handwriting, and a grader fed garbage text invents answers." },
       { title: "A score is not a product", body: "Learners want to see their own page marked up, not a JSON blob turned into a table." },
-      { title: "Building it in-house is a project", body: "Page reading, answer location, rubrics, consistency, annotation and retries are each a project of their own." },
+      { title: "Building it in-house is a project", body: "Page reading, answer location, rubrics, consistency, annotation, retries and a review screen for teachers are each a project of their own." },
     ],
     workflow: [
-      { title: "Create an assessment", body: "Send questions and marks, or a question paper to read into questions." },
-      { title: "Set evaluation criteria", body: "Send your rubric per question, or ask for a generated one and edit it." },
-      { title: "Send answer sheets", body: "Upload the PDF or pass a URL, with your own student id and an optional webhook." },
-      { title: "Get results", body: "Poll the status endpoint or receive a webhook: marks per question, feedback, the student's answer as read, and a link to the checked PDF." },
+      { title: "Create the exam", body: "POST /exams with the questions as JSON: max marks, answer keys for objective questions, and a rubric or model answer for each long answer." },
+      { title: "Upload each copy", body: "One PDF per candidate, up to 50 MB, through presigned upload URLs (1 to 100 files per call). Typed tests send the answers as text instead." },
+      { title: "Submit and follow", body: "Submit each copy against your own candidate id. You get 202 and a fixed-price quote at once; poll the submission, or the updated_since feed for many." },
+      { title: "Read, review, finalize", body: "Question-wise marks with reasons, feedback, confidence, needs_review and the checked copy PDF. Teachers review in your app or the Vacademy dashboard; then you finalize." },
     ],
     outcomes: [
-      "Per-question marks, feedback and criteria in JSON",
-      "A red-pen checked PDF to show learners",
-      "Failed and unreadable sheets are not billed",
-      "₹1 / $0.01 per page, same as the dashboard",
+      "Question-wise marks, criteria with reasons, feedback and confidence in JSON",
+      "The student's own copy checked in red pen, as a PDF to show learners",
+      "A needs_review flag on the answers a teacher should look at",
+      "Teacher review without building a screen: API exams appear in the Vacademy dashboard",
+      "₹1 / $0.01 per handwritten page, quoted before grading; failed and cancelled copies are free",
     ],
     example: { copies: 20000, pages: 5, label: "20,000 answer sheets a month, 5 pages each" },
     faqs: [
-      { q: "How do I get API keys?", a: "API access is enabled per account. Request access on the demo page with your expected monthly volume and we will set you up." },
-      { q: "Is it synchronous?", a: "No. Checking a copy takes minutes, so evaluations are asynchronous: you get an id straight away, then poll the status endpoint or receive a webhook when the check completes." },
-      { q: "What do I get back?", a: "Status, total marks, and for each question: marks awarded, maximum, the student's answer as read, feedback and the criteria breakdown, plus a URL to the checked copy PDF." },
+      { q: "How do I get API keys?", a: `We switch the Evaluation API on for your institute: write to ${SALES_EMAIL} or request access on the demo page with your expected monthly volume. An institute admin then creates keys in the Vacademy dashboard (Settings → Integrations → API keys), each with only the scopes it needs. There is no sandbox: every key is live and every graded copy is billed.` },
+      { q: "Is it synchronous?", a: "No. A handwritten copy usually takes a few minutes, so grading is asynchronous: the submit call returns 202 straight away with the submission id, its place in the queue, an estimated ready time and the fixed price. Poll GET /submissions/{id}, or the GET /submissions?updated_since= feed when many copies are in flight. Webhooks are not available yet." },
+      { q: "What do I get back?", a: "The status and totals, and for each question: marks awarded out of the maximum, each rubric criterion with its marks and reason, feedback, the answer as read, a confidence score and a needs_review flag. For handwritten copies, GET /submissions/{id}/checked-copy returns the red-pen PDF. Marks are drafts until you call finalize." },
+      { q: "What can I send?", a: "Handwritten copies as PDFs only, one per candidate, up to 50 MB; phone photos must be combined into a PDF first, and the API does not yet split a bundled scan or match copies by name. Copies up to 40 pages are graded normally; 41 to 80 pages are graded and flagged for review. Typed tests send each answer as plain text. Questions go in as JSON, not as a question-paper PDF. English answers only for now." },
+      { q: "How is the API priced?", a: "1 credit per page of a handwritten PDF, blank pages included, and 1 credit per non-blank typed long answer; objective answers are free. At the standard rate a handwritten page costs ₹1 in India (excluding GST) or $0.01 elsewhere, the same as in the dashboard. The price is fixed and quoted before grading. Failed and cancelled copies are not charged; re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing." },
     ],
   },
 ];

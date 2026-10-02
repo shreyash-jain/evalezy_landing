@@ -11,9 +11,9 @@ export const PRODUCT_NAV = [
 ];
 
 export const DEV_NAV = [
-  { href: "/api/", label: "Evaluation API", desc: "Assessments, criteria, answer sheets, results." },
-  { href: "/api/#endpoints", label: "Endpoints", desc: "Every call, one table." },
-  { href: "/api/#webhooks", label: "Webhooks & statuses", desc: "Know when a check is done." },
+  { href: "/api/", label: "Evaluation API", desc: "Exams, uploads, submissions, results." },
+  { href: "https://docs.evalezy.com/quickstart", label: "Quickstart", desc: "Grade your first answer in ten minutes." },
+  { href: "https://docs.evalezy.com/api-reference/introduction", label: "API reference", desc: "Every endpoint, with code." },
 ];
 
 export const AUDIENCE_NAV = AUDIENCES.map((a) => ({ slug: a.slug, label: a.label, icon: a.icon }));

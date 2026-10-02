@@ -15,7 +15,7 @@ teams deciding whether to try Evalezy. It must look like a premium, designed pro
   restraint: one strong motif per page.
 - Rhythm: vary page backgrounds across the brochure (paper / white / ink). Ink pages: `<section class="page ink">`.
 - Every interior page has the header + footer below; the page number is filled in automatically (CSS counter). The cover (01) and
-  back cover (16) have none.
+  back cover (18) have none.
 - Visual density: each page has ONE clear headline (`.h1` 30–34pt or `.h2`), a short lede, and a strong visual
   (real copy image, UI capture, diagram, big numbers, table). Body text 8.5–10pt; never below 6.8pt.
   Generous whitespace. Align to the 16 mm side margins.
@@ -80,8 +80,20 @@ online academies and training institutes across 5 countries." Never "our custome
 - Obey the "Never claim" list: no accuracy %, no diagram grading, no tested Hindi grading, no certifications, no
   Evalezy customers/testimonials, no free trial, no throughput beyond the stated figures.
 - Price: ₹1 per page checked in India (excl. GST), $0.01 elsewhere; failed, stopped and unreadable copies free; reading
-  names free; re-check billed again; API same price; Volume = custom (talk to us).
-- The API is "enabled per account; request access". Endpoints only from `../src/content/api.ts`.
+  names free; re-check billed again; API same price per page; Volume = custom (talk to us).
+- The API is live (v1, 2 Oct 2026) and **https://docs.evalezy.com is its source of truth**. Every endpoint, field,
+  status, limit and price you print about the API must match the docs (summary: `../docs/PRODUCT_FACTS.md`, section
+  "API"; the endpoint list in `../src/content/api.ts` is copied from the docs). Auth is the `X-API-Key` header; the API
+  is enabled per institute (request at evalezy.com/demo or hello@evalezy.com) and an institute admin creates keys in
+  the Vacademy dashboard. No sandbox. Statuses: queued, processing, reading, grading, graded, partially_graded, failed,
+  cancelled. API price: 1 credit per handwritten page (₹1 / $0.01, the same as the dashboard) and 1 credit per
+  non-blank typed long answer; objective answers free. Print typed prices in credits, as the website does: no currency
+  price for a typed answer has been confirmed.
+  Never claim what the API does not do today: webhooks (poll the feed), phone photos (PDF only), bulk scans matched by
+  name, exams from a question-paper PDF, CSV results, Hindi, SDKs, hosted review links (all on the docs' roadmap), or
+  answer sheets sent by URL (not offered at all). A "Not yet" list may name only roadmap items, never URL ingestion.
+  Keep API limits (PDF only, 50 MB, 1–100 files per upload call) out of dashboard claims (200 PDFs, 60 MB, name
+  matching, paper import, phone photos), and the other way round.
 - Any outside fact (e.g. a CBSE rule) must be verified today against the primary source and cited in a footnote
   (`.tiny .muted` at the bottom of the page: "Source: …, read 1 Oct 2026").
 - Contact: hello@evalezy.com · WhatsApp +91 99933 36616 · evalezy.com · demo at evalezy.com/demo.

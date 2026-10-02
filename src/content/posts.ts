@@ -29,9 +29,10 @@ export const POSTS: Post[] = [
   {
     slug: "handwritten-answer-grading-api",
     title: "Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy",
-    description: "Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API checks answer sheets by URL or file.",
+    description: "Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API grades uploaded PDF answer sheets.",
     category: "For developers",
     published: "2026-10-01",
+    updated: "2026-10-02",
     readMins: 8,
     keywords: ["handwritten answer grading API", "answer sheet evaluation API", "handwriting recognition for grading", "AI grading API", "OCR for handwritten answers", "handwritten text recognition", "edtech grading API"],
     pages: ["/api/", "/for/edtech-platforms/", "/how-it-works/", "/compare/chatgpt/"],

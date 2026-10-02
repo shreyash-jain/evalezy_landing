@@ -1,4 +1,5 @@
 import type { Faq } from "./types";
+import { SALES_EMAIL } from "@/lib/site";
 
 /** The /faq/ page, grouped. HOME_FAQS is the short list on the home page. Claims: docs/PRODUCT_FACTS.md. */
 export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
@@ -41,14 +42,14 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
       { q: "How much does it cost?", a: "₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST." },
       { q: "What is not charged?", a: "Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free." },
       { q: "Is a re-check charged?", a: "Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept." },
-      { q: "Is the API priced differently?", a: "No. The API costs the same per page as the dashboard." },
+      { q: "Is the API priced differently?", a: "Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing." },
       { q: "Do you offer volume pricing?", a: "For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window." },
     ],
   },
   {
     title: "API and data",
     faqs: [
-      { q: "Is there an API?", a: "Yes. Create assessments, set evaluation criteria, send answer sheets by file upload or URL, and get marks, feedback and the checked PDF from a status endpoint or a webhook. API access is enabled per account; request it on the demo page." },
+      { q: "Is there an API?", a: `Yes. With the Evaluation API your own system creates an exam with its questions and rubrics, uploads each answer sheet as a PDF (or sends typed answers), and reads back question-wise marks, reasons, feedback and the checked copy. You poll for results (there are no webhooks yet), and marks stay drafts until you finalize them. We switch it on per institute: write to ${SALES_EMAIL} or request access on the demo page. Full docs at docs.evalezy.com.` },
       { q: "Who can see the answer sheets?", a: "Copies and marks live inside your institute's account. Students see their own results only after release. See the data and privacy page for details." },
       { q: "Who is behind Evalezy?", a: "Evalezy is built by the team behind Vacademy (Vidyayatan Technologies), a learning and assessment platform used by schools, online academies and training institutes across 5 countries. Evalezy is the AI checking engine of that platform, offered on its own." },
     ],

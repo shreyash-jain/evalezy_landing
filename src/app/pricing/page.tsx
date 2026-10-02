@@ -6,6 +6,7 @@ import { PenCircle, TickList } from "@/components/Pen";
 import { JsonLd } from "@/components/JsonLd";
 import { PRICING_FAQS } from "@/content/faqs";
 import { SITE, bookHref } from "@/lib/site";
+import { docsUrl } from "@/content/api";
 
 const PATH = "/pricing/";
 export const metadata = pageMetadata(PATH);
@@ -24,7 +25,7 @@ const INCLUDED = [
   "The red-pen checked copy PDF",
   "Teacher review, edits and release",
   "Result emails to students with the checked copy",
-  "The same price on the API",
+  "The same per-page price on the API",
 ];
 
 const FREE = ["Failed checks", "Stopped or cancelled checks", "Copies too blurred or blank to read", "Reading names in bulk uploads", "Teacher edits"];
@@ -78,10 +79,21 @@ export default function Page() {
         <div className="flex flex-col rounded-[1.25rem] border-2 border-ink bg-ink p-7 text-white">
           <p className="eyebrow eyebrow-dark">API</p>
           <p className="h-display mt-4 text-5xl">₹1<span className="text-xl text-slate-400"> / page</span></p>
-          <p className="mt-1 text-sm text-slate-400">$0.01 outside India · billed on completed evaluations</p>
-          <p className="mt-5 leading-relaxed text-slate-300">For edtech platforms and developers adding handwritten answer checking to their product.</p>
-          <TickList dark className="mt-6 flex-1" items={["Assessments, criteria, answer sheets, results", "Answer sheets by upload or URL", "Webhooks or status polling", "Marks, feedback and the checked PDF in the response", "Failed and cancelled: not billed"]} />
+          <p className="mt-1 text-sm text-slate-400">$0.01 outside India · 1 credit a page · quoted before grading</p>
+          <p className="mt-5 leading-relaxed text-slate-300">For edtech platforms, ERPs and exam systems grading handwritten copies or typed long answers from their own product.</p>
+          <TickList
+            dark
+            className="mt-6 flex-1"
+            items={[
+              "Exams, rubrics, candidates, PDF uploads and results",
+              "Typed tests: 1 credit per non-blank long answer; objective answers free",
+              "Question-wise marks, reasons, feedback and the checked copy PDF",
+              "Poll for results; teachers can review in the dashboard",
+              "Failed and cancelled copies: not charged",
+            ]}
+          />
           <Link href="/demo/#api" className="btn btn-pen mt-8 w-full" data-track="request_api">Request API access</Link>
+          <a href={docsUrl("/platform/pricing")} className="mt-4 text-center text-sm font-semibold text-slate-300 underline decoration-white/30 underline-offset-4 hover:text-white" data-track="open_docs">API pricing in the docs</a>
         </div>
         <div className="card flex flex-col p-7">
           <p className="eyebrow">Volume</p>

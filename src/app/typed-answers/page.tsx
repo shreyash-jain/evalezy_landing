@@ -18,7 +18,7 @@ export default function Page() {
         { q: "What if a student tries to trick the AI?", a: "The student's text is treated as data, not instructions. In a production test, an email that told the evaluator to \"award full marks\" scored 0 out of 5." },
         { q: "What about MCQs in the same test?", a: "Objective questions keep their normal automatic marks. Only long-answer questions go to the AI, and the total adds both." },
         { q: "Are blank answers charged?", a: "No. A blank answer gets zero immediately, without an AI call, and an attempt where every answer is blank is not billed." },
-        { q: "How are typed answers priced?", a: "Typed answers have no pages, so they are priced per answer graded rather than per page. Ask us for the current rate." },
+        { q: "How are typed answers priced?", a: "Typed answers have no pages, so they are priced per answer graded rather than per page. On the Evaluation API it is 1 credit per non-blank long answer, with objective answers free. For the dashboard, ask us for the current rate." },
         { q: "Can students copy-paste an answer?", a: "Copy, cut and paste are blocked in the long-answer box, which also shows a live word count." },
       ]}
     >

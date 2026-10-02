@@ -7,7 +7,7 @@ import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { Icon } from "./ui";
 import { AUDIENCE_NAV, COMPARE_NAV, DEV_NAV, PRODUCT_NAV, RESOURCE_NAV } from "@/lib/nav";
-import { LOGIN_URL, bookHref } from "@/lib/site";
+import { DOCS_URL, LOGIN_URL, bookHref } from "@/lib/site";
 
 type MenuKey = "product" | "solutions" | "resources" | null;
 
@@ -68,6 +68,7 @@ export function Nav() {
           <Trigger k="solutions" label="Who it's for" />
           <Link href="/pricing/" className={link} onMouseEnter={() => setOpen(null)}>Pricing</Link>
           <Link href="/api/" className={link} onMouseEnter={() => setOpen(null)}>API</Link>
+          <a href={DOCS_URL} className={link} onMouseEnter={() => setOpen(null)} data-track="open_docs">Docs</a>
           <Trigger k="resources" label="Resources" />
         </nav>
 
@@ -110,10 +111,10 @@ export function Nav() {
                   <ul className="mt-3 space-y-3">
                     {DEV_NAV.map((d) => (
                       <li key={d.href}>
-                        <Link href={d.href} className="block text-sm hover:text-pen-200">
+                        <a href={d.href} className="block text-sm hover:text-pen-200">
                           <span className="font-semibold">{d.label}</span>
                           <span className="block text-slate-400">{d.desc}</span>
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -168,7 +169,7 @@ export function Nav() {
             <MobileGroup title="Who it's for" items={AUDIENCE_NAV.map((a) => ({ href: `/for/${a.slug}/`, label: a.label }))} />
             <MobileGroup
               title="Pricing, API & resources"
-              items={[{ href: "/pricing/", label: "Pricing" }, { href: "/api/", label: "API" }, ...RESOURCE_NAV.map((r) => ({ href: r.href, label: r.label }))]}
+              items={[{ href: "/pricing/", label: "Pricing" }, { href: "/api/", label: "API" }, { href: DOCS_URL, label: "API docs" }, ...RESOURCE_NAV.map((r) => ({ href: r.href, label: r.label }))]}
             />
             <div className="grid gap-3 pb-8">
               <Link href={bookHref()} className="btn btn-pen btn-lg w-full" data-track="book_demo">Book a demo</Link>
@@ -191,7 +192,11 @@ function MobileGroup({ title, items, open = false }: { title: string; items: { h
       <ul className="mt-3 grid grid-cols-1 gap-1 sm:grid-cols-2">
         {items.map((i) => (
           <li key={i.href}>
-            <Link href={i.href} className="block rounded-lg py-2 text-slate-700">{i.label}</Link>
+            {/^https?:/.test(i.href) ? (
+              <a href={i.href} className="block rounded-lg py-2 text-slate-700">{i.label}</a>
+            ) : (
+              <Link href={i.href} className="block rounded-lg py-2 text-slate-700">{i.label}</Link>
+            )}
           </li>
         ))}
       </ul>

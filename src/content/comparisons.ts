@@ -75,7 +75,7 @@ export const COMPARISONS: Comparison[] = [
       { heading: "Setup", text: "Evalezy does not need barcoded booklets. Students write on any paper; copies are scanned or photographed and the name and roll number are read from the top of the first page." },
     ],
     faqs: [
-      { q: "Can Evalezy work with our existing evaluation process?", a: "Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If you need marks in another system, the API returns them per question." },
+      { q: "Can Evalezy work with our existing evaluation process?", a: "Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If your scripts already run through your own system, the Evaluation API takes each one as a PDF and returns marks per question with reasons, as drafts your reviewers finalize." },
     ],
   },
   {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, FileStack, ScanLine, Search, ShieldCheck, Sigma, Timer, UserRoundCheck } from "lucide-react";
-import { SITE, bookHref } from "@/lib/site";
+import { DOCS_URL, SITE, bookHref } from "@/lib/site";
 import { AUDIENCES } from "@/content/audiences";
 import { HOME_FAQS } from "@/content/faqs";
 import { SNIPPETS } from "@/content/api";
@@ -297,28 +297,29 @@ export default function Home() {
           <p className="eyebrow">Evaluation API</p>
           <h2 className="h-section mt-3 text-ink">Building an edtech product? Put a red pen in it.</h2>
           <p className="mt-5 text-lg leading-relaxed text-slate-600">
-            Create an assessment, set criteria, send an answer sheet by file or URL, and get marks, feedback and the checked PDF back
-            by status call or webhook. Same price as the dashboard.
+            Grade handwritten copies and typed long answers from your own exam system. Create an exam, upload each
+            candidate&apos;s PDF, and read question-wise marks, reasons, feedback and the checked copy. Marks stay drafts until
+            you finalize them, and the exams also show up in the Vacademy dashboard for teacher review.
           </p>
           <ul className="mt-6 space-y-2 font-mono text-sm">
-            {[["POST", "/assessments"], ["PUT", "/assessments/{id}/criteria"], ["POST", "/evaluations"], ["GET", "/evaluations/{id}"]].map(([m, p]) => (
+            {[["POST", "/exams"], ["POST", "/uploads"], ["POST", "/exams/{id}/submissions"], ["GET", "/submissions/{id}/result"], ["POST", "/exams/{id}/finalize"]].map(([m, p]) => (
               <li key={p} className="flex items-center gap-3">
-                <span className={`w-12 rounded-md px-1.5 py-0.5 text-center text-xs font-bold ${m === "GET" ? "bg-ok-50 text-ok" : m === "PUT" ? "bg-warn-50 text-warn" : "bg-biro-50 text-biro"}`}>{m}</span>
+                <span className={`w-12 rounded-md px-1.5 py-0.5 text-center text-xs font-bold ${m === "GET" ? "bg-ok-50 text-ok" : "bg-biro-50 text-biro"}`}>{m}</span>
                 <span className="text-ink">{p}</span>
               </li>
             ))}
           </ul>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link href="/api/" className="btn btn-ink">Read the API docs <ArrowRight className="h-4 w-4" /></Link>
-            <Link href="/demo/#api" className="btn btn-outline" data-track="request_api">Request API access</Link>
+            <a href={DOCS_URL} className="btn btn-ink" data-track="open_docs">Read the API docs <ArrowRight className="h-4 w-4" /></a>
+            <Link href="/api/" className="btn btn-outline">How the API works</Link>
           </div>
         </div>
         <ApiTabs
           tabs={[
-            { label: "cURL", code: SNIPPETS.evaluateCurl, file: "POST /evaluations" },
-            { label: "Node.js", code: SNIPPETS.evaluateNode, file: "evaluate.mjs" },
-            { label: "Python", code: SNIPPETS.evaluatePython, file: "evaluate.py" },
-            { label: "Result", code: SNIPPETS.result, file: "GET /evaluations/ev_3kP9xW → 200" },
+            { label: "cURL", code: SNIPPETS.submitCurl, file: "POST /exams/{id}/submissions" },
+            { label: "Node.js", code: SNIPPETS.submitNode, file: "submit.mjs" },
+            { label: "Python", code: SNIPPETS.submitPython, file: "submit.py" },
+            { label: "Result", code: SNIPPETS.result, file: "GET /submissions/{id}/result → 200" },
           ]}
         />
       </section>

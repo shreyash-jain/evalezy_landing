@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { AUDIENCES, findAudience } from "@/content/audiences";
-import { SITE } from "@/lib/site";
+import { DOCS_URL, SITE } from "@/lib/site";
 import { TickList } from "@/components/Pen";
 import { BulkCheckPanel, ReviewPanel } from "@/components/Visuals";
 import { CodeBlock } from "@/components/Interactive";
@@ -37,7 +37,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       eyebrow={a.eyebrow}
       h1={a.h1}
       lede={a.lede}
-      visual={a.slug === "edtech-platforms" ? <CodeBlock code={SNIPPETS.result} label="GET /evaluations/{id}" /> : a.slug === "exam-boards" || a.slug === "colleges-universities" ? <ReviewPanel /> : <BulkCheckPanel compact />}
+      visual={a.slug === "edtech-platforms" ? <CodeBlock code={SNIPPETS.result} label="GET /submissions/{id}/result" /> : a.slug === "exam-boards" || a.slug === "colleges-universities" ? <ReviewPanel /> : <BulkCheckPanel compact />}
+      secondary={a.slug === "edtech-platforms" ? { href: DOCS_URL, label: "Read the API docs", track: "open_docs" } : undefined}
       faqs={a.faqs}
     >
       <section className="wrap py-16 md:py-20">

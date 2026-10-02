@@ -20,8 +20,9 @@ export const SALES_EMAIL = "hello@evalezy.com";
 export const BOOKING_URL = "";
 /** Where existing customers sign in (Evalezy runs inside the Vacademy admin dashboard). */
 export const LOGIN_URL = "https://dash.vacademy.io/";
-/** Public API base shown in the docs (src/content/api.ts). */
+/** Evaluation API (live since 2 Oct 2026) and its developer docs (Mintlify). Facts: src/content/api.ts. */
 export const API_BASE = "https://api.evalezy.com/v1";
+export const DOCS_URL = "https://docs.evalezy.com";
 
 export const bookHref = () => BOOKING_URL || "/demo/";
 export const whatsappHref = (text = "Hi, I'd like to see Evalezy check a few of our answer sheets.") =>
@@ -51,8 +52,8 @@ export const PAGES: SitePage[] = [
   { path: "/marking-scheme/", label: "AI marking scheme", group: "product", title: "AI Marking Scheme Generator, or Bring Your Own Rubric", description: "Evalezy drafts a marking scheme for every question, with criteria that add up to the marks. Edit it, replace it or add a model answer. One scheme for every student." },
   { path: "/teacher-review/", label: "Teacher review & release", group: "product", title: "Teacher Review: Approve AI Marks Before Students See Them", description: "AI marks land as a draft. Teachers see each answer, the feedback and the criteria, change any mark, then release results. Edited marks are never overwritten." },
   { path: "/typed-answers/", label: "Typed essays & long answers", group: "product", title: "AI Essay Grading for Online Long-Answer Questions", description: "Evalezy also grades essays, letters and emails typed in an online test, on format, content, organisation and language, with word limits and a teacher review." },
-  { path: "/api/", label: "Evaluation API", group: "product", title: "Answer Sheet Evaluation API for Developers", description: "Add AI copy checking to your app: create an assessment, set criteria, send an answer sheet file or URL, get marks and a red-pen checked PDF back. ₹1 / $0.01 per page." },
-  { path: "/pricing/", label: "Pricing", group: "product", title: "Pricing: ₹1 per Page Checked ($0.01)", description: "Evalezy pricing is per page checked: ₹1 in India, $0.01 elsewhere. No subscription, no setup fee. Failed and unreadable copies are free. Same price on the API." },
+  { path: "/api/", label: "Evaluation API", group: "product", title: "Answer Sheet Evaluation API for Developers", description: "Grade handwritten copies and typed long answers from your own exam system: create an exam, upload PDFs, read question-wise marks and the checked copy. Full docs at docs.evalezy.com." },
+  { path: "/pricing/", label: "Pricing", group: "product", title: "Pricing: ₹1 per Page Checked ($0.01)", description: "Evalezy pricing is per page checked: ₹1 in India, $0.01 elsewhere. No subscription, no setup fee. Failed and unreadable copies are free. Same per-page price on the API." },
   { path: "/side-by-side/", label: "AI vs teacher: one copy", group: "product", title: "AI vs Teacher: One Answer Copy, Checked Twice", description: "The same maths answer copy, checked by a teacher and by Evalezy. Drag across each page to compare. Evalezy caught 2 slips the teacher ticked; the teacher caught 5 it misread." },
   { path: "/sample/", label: "See a checked copy", group: "product", title: "Sample: A Real Answer Sheet Checked by Evalezy", description: "Look through a real 7-page Class IX Social Science answer copy checked by Evalezy: ticks, crosses, corrections, half marks, margin notes and a circled total of 38/80." },
   // Resources
@@ -63,7 +64,7 @@ export const PAGES: SitePage[] = [
   { path: "/security/", label: "Data & privacy", group: "resource", title: "Data, Privacy and Control in AI Copy Checking", description: "How Evalezy handles answer sheets and marks, who sees what and when, why the AI never publishes a result, what is free when a check fails, and what we do not claim." },
   // Company
   { path: "/about/", label: "About", group: "company", title: "About Evalezy", description: "Evalezy is AI answer-sheet checking from the team behind Vacademy, built to give teachers back the hours they spend checking copies, without taking away the red pen." },
-  { path: "/demo/", label: "Book a demo", group: "company", title: "Book an Evalezy Demo or Request API Access", description: "See Evalezy check answer sheets like yours in a 20-minute demo, or request API keys. Tell us how many copies you check and we'll show you the workflow." },
+  { path: "/demo/", label: "Book a demo", group: "company", title: "Book an Evalezy Demo or Request API Access", description: "See Evalezy check answer sheets like yours in a 20-minute demo, or request access to the Evaluation API. Tell us how many copies you check and we'll show you the workflow." },
 ];
 
 export const byGroup = (g: PageGroup) => PAGES.filter((p) => p.group === g);

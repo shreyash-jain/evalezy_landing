@@ -19,7 +19,11 @@ export function Footer() {
     },
     {
       title: "Who it's for",
-      links: [...AUDIENCES.map((a) => ({ href: `/for/${a.slug}/`, label: a.label })), { href: "/api/", label: "Evaluation API" }],
+      links: [
+        ...AUDIENCES.map((a) => ({ href: `/for/${a.slug}/`, label: a.label })),
+        { href: "/api/", label: "Evaluation API" },
+        { href: "https://docs.evalezy.com", label: "API docs" },
+      ],
     },
     {
       title: "Compare & learn",
@@ -65,7 +69,11 @@ export function Footer() {
               <ul className="mt-4 space-y-2.5">
                 {c.links.map((l) => (
                   <li key={l.href + l.label}>
-                    <Link href={l.href} className="text-sm text-slate-600 hover:text-ink">{l.label}</Link>
+                    {/^https?:/.test(l.href) ? (
+                      <a href={l.href} className="text-sm text-slate-600 hover:text-ink">{l.label}</a>
+                    ) : (
+                      <Link href={l.href} className="text-sm text-slate-600 hover:text-ink">{l.label}</Link>
+                    )}
                   </li>
                 ))}
               </ul>

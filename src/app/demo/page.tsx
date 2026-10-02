@@ -1,10 +1,10 @@
-import { MessageCircle, Mail } from "lucide-react";
+import { ArrowRight, MessageCircle, Mail } from "lucide-react";
 import { pageMetadata } from "@/components/PageShell";
 import { Breadcrumbs } from "@/components/ui";
 import { DemoForm } from "@/components/DemoForm";
 import { TickList } from "@/components/Pen";
 import { ClientMarquee } from "@/components/ClientLogos";
-import { SALES_EMAIL, WHATSAPP_DISPLAY, whatsappHref } from "@/lib/site";
+import { DOCS_URL, SALES_EMAIL, WHATSAPP_DISPLAY, whatsappHref } from "@/lib/site";
 
 const PATH = "/demo/";
 export const metadata = pageMetadata(PATH);
@@ -31,7 +31,8 @@ export default function Page() {
           />
           <div className="mt-10 rounded-2xl border border-line bg-white p-6" id="api">
             <p className="h-card text-lg text-ink">Developers: request API access</p>
-            <p className="mt-2 leading-relaxed text-slate-600">Choose &ldquo;API access&rdquo; in the form and tell us what you are building and your expected monthly pages. API access is enabled per account.</p>
+            <p className="mt-2 leading-relaxed text-slate-600">Choose &ldquo;API access&rdquo; in the form and tell us what you are building and your expected monthly copies. We switch the Evaluation API on for your institute; an institute admin then creates API keys in the Vacademy dashboard.</p>
+            <a href={DOCS_URL} className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-pen-700" data-track="open_docs">Read the API docs <ArrowRight className="h-3.5 w-3.5" /></a>
           </div>
           <div className="mt-6 flex flex-col gap-3 text-sm sm:flex-row sm:gap-6">
             <a href={whatsappHref()} className="flex items-center gap-2 font-semibold text-ink hover:text-pen-700" data-track="whatsapp" target="_blank" rel="noopener">

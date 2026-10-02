@@ -73,6 +73,8 @@ export function PageShell({
               {secondary &&
                 (/\.(pdf|png|webp)$/.test(secondary.href) ? (
                   <a href={secondary.href} className="btn btn-outline btn-lg" data-track={secondary.track} download>{secondary.label}</a>
+                ) : /^https?:/.test(secondary.href) ? (
+                  <a href={secondary.href} className="btn btn-outline btn-lg" data-track={secondary.track}>{secondary.label}</a>
                 ) : (
                   <Link href={secondary.href} className="btn btn-outline btn-lg" data-track={secondary.track}>{secondary.label}</Link>
                 ))}

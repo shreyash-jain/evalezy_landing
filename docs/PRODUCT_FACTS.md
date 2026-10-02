@@ -59,13 +59,43 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
   not per page. Per-page billing exists only on branch `feat/copy-check-edit-and-per-page-credits`. The rate card
   (`ai_tool_pricing.copy_check_evaluation`) must move to per-page before the site's price is what customers pay.
 
-## API **(owner — to build/expose)**
+## API (live since 2 Oct 2026, docs at https://docs.evalezy.com)
 
-The owner describes a public API: create an assessment, add evaluation criteria, upload an answer sheet or pass a
-URL, start an evaluation, poll a status endpoint that returns the evaluated sheet. On `main` (1 Oct 2026) the
-evaluation endpoints authenticate with teacher JWTs or the internal service token; there is no public API-key
-surface yet. The endpoint list on /api/ (`src/content/api.ts`) is the proposed public contract. Keep the page
-worded as "API access is enabled per account" until keys exist.
+The Evaluation API is live (v1, changelog "2026-10-02 launch"). The docs are the source of truth; a copy read on
+2 Oct 2026 lives in the session scratchpad, not in git. Facts the site may state about the API:
+
+- Base URL `https://api.evalezy.com/v1`; JSON REST; OpenAPI document at `/v1/openapi.json`.
+- Auth: `X-API-Key` header, keys `vak_eval_…`, created by an institute admin in the Vacademy dashboard (Settings →
+  Integrations → API keys) after Evalezy enables the Evaluation API for the institute (hello@evalezy.com). Scopes:
+  `evaluation:read`, `:write`, `:review`, `:finalize`. Server-to-server only. Up to 50 active keys per institute.
+- **No sandbox**: every key is live, every graded copy billed.
+- Flow: create exam (`POST /exams`, mode `handwritten` or `typed`, questions, answer keys, rubric or model answer;
+  open it) → candidates by your `external_id` (or inline with the submission) → uploads (`POST /uploads`, presigned
+  PUT, **PDF only, 50 MB each, 1–100 per call**) → `POST /exams/{id}/submissions` (`upload_id` or typed `answers[]`;
+  202 with a fixed-price `quote`) → poll `GET /submissions/{id}` or the feed `GET /submissions?updated_since=` → read
+  `GET /submissions/{id}/result` and `GET /submissions/{id}/checked-copy` → override (`PATCH`, 0.5 steps, free) or
+  approve → `POST /exams/{id}/finalize`. Unfinalize needs a reason.
+- Statuses: `queued`, `processing`, `reading`, `grading`, then `graded`, `partially_graded`, `failed`, `cancelled`.
+- Results: per question `awarded`/`max`, `criteria[]` with reasons, `feedback`, `extracted_answer`, `confidence`
+  (0–1), `needs_review` (e.g. confidence < 0.60), `source` (`ai`, `ai_reviewed`, `auto`); totals; checked copy PDF.
+- Copies up to 40 pages graded normally; 41–80 graded and flagged for review; > 80 refused (`too_many_pages`).
+- English only: Hindi/regional copies fail with `language_not_supported` and are not charged.
+- Pricing (API): **1 credit per page** of a handwritten PDF (blank pages included); **1 credit per non-blank typed
+  long answer**; objective answers free; fixed and quoted before grading (`POST /credits/quote`); failed and
+  cancelled not charged; re-evaluate charged again; overrides free. Credits are bought in the Vacademy dashboard; the
+  docs point to evalezy.com/pricing for the currency price (site: ₹1 / $0.01 per credit-page).
+- Exams created via the API appear in the Vacademy dashboard tagged "Source: API" so teachers can review there;
+  dashboard-created exams are NOT visible to API keys.
+- Idempotency-Key on every POST (48 h); rate limits and a daily copy quota per institute (429 + Retry-After).
+- **Not offered at all:** sending an answer sheet by URL. Copies go in only as PDF uploads (`POST /uploads` →
+  presigned PUT).
+- **Not available yet (roadmap, never claim):** webhooks (poll instead), phone photos/images (PDF only), bulk scans
+  split and matched by name (one PDF per candidate), exam from a question-paper PDF
+  (send JSON), CSV results, Hindi/regional languages, SDKs, hosted review links, re-grading single questions. Choice
+  groups are beta, off by default.
+
+**Dashboard vs API:** dashboard limits stay as above (200 PDFs per upload, 60 MB each, name matching, question-paper
+import). Don't apply API limits to dashboard claims, or the other way round.
 
 ## Side-by-side copy **(owner, 2 Oct 2026)**
 

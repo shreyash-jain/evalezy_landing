@@ -1,5 +1,6 @@
 import { BlogShell, postMetadata, Callout, Steps, WhereEvalezyFits, Sources } from "@/components/BlogShell";
 import Link from "next/link";
+import { DOCS_URL } from "@/lib/site";
 
 const SLUG = "ai-answer-sheet-evaluation-buyers-guide";
 export const metadata = postMetadata(SLUG);
@@ -268,8 +269,10 @@ export default function Page() {
         <p>
           <strong>Maths:</strong> unclear maths lines get a second read by an equation reader, up to four per copy.{" "}
           <strong>Time:</strong> 1–8 minutes per copy, first results in about 10 minutes, and about 2–3 hours for 100
-          copies on current capacity, with a bell alert and an email when a batch is done. <strong>API:</strong>{" "}
-          <Link href="/api/">API access</Link> is enabled per account.
+          copies on current capacity, with a bell alert and an email when a batch is done. <strong>API:</strong> the{" "}
+          <Link href="/api/">Evaluation API</Link> is live now and is switched on per institute. It takes each copy as an
+          uploaded PDF, not a link, and you poll for results, since webhooks are not available yet. The price per page is
+          the same as the dashboard; the <a href={DOCS_URL} data-track="open_docs">API docs</a> have the details.
         </p>
       </WhereEvalezyFits>
 

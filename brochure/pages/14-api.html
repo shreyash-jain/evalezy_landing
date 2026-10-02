@@ -1,43 +1,46 @@
 <section class="page ink p-14" data-name="api">
+  <!-- API facts: docs.evalezy.com (v1, launched 2 Oct 2026). Endpoints = ../src/content/api.ts ENDPOINTS. -->
   <style>
     .p-14 { --dim: #9aa6c4; --rule: rgba(255, 255, 255, 0.12); }
-    .p-14 .main { display: grid; grid-template-columns: 60mm minmax(0, 1fr); gap: 6mm; }
-    .p-14 .steps { list-style: none; position: relative; display: flex; flex-direction: column; gap: 4mm; }
-    .p-14 .steps::before { content: ""; position: absolute; left: 2.6mm; top: 6mm; bottom: 22mm; border-left: 0.4mm dashed rgba(255, 107, 114, 0.45); }
+    .p-14 .main { display: grid; grid-template-columns: 58mm minmax(0, 1fr); gap: 5mm; }
+    .p-14 .steps { list-style: none; position: relative; display: flex; flex-direction: column; gap: 2.8mm; margin-bottom: 2mm; }
+    .p-14 .steps::before { content: ""; position: absolute; left: 2.6mm; top: 6mm; bottom: 12mm; border-left: 0.4mm dashed rgba(255, 107, 114, 0.45); }
     .p-14 .steps li { position: relative; padding-left: 9mm; }
     .p-14 .steps .n { position: absolute; left: 0; top: -1.2mm; width: 5.6mm; height: 7mm; background: var(--ink); font-family: "Kalam"; font-weight: 700; color: var(--pen-dark); font-size: 14pt; line-height: 7mm; text-align: center; }
     .p-14 .steps h3 { font-family: "Bricolage"; font-weight: 700; font-size: 10.5pt; line-height: 1.2; color: #fff; }
-    .p-14 .steps p { font-size: 7.8pt; line-height: 1.45; color: #c3cbe0; margin-top: 1mm; }
-    .p-14 .steps code { font-family: "JBMono"; font-size: 6.8pt; color: #fff; background: rgba(255, 255, 255, 0.08); border-radius: 0.8mm; padding: 0.2mm 1mm; white-space: nowrap; }
-    .p-14 .steps .ep { display: inline-block; margin-top: 1.6mm; color: #ffb3b7; background: rgba(255, 107, 114, 0.12); padding: 0.4mm 1.4mm; }
+    .p-14 .steps p { font-size: 7.8pt; line-height: 1.42; color: #c3cbe0; margin-top: 0.8mm; }
+    .p-14 .steps .ep { display: inline-block; margin-top: 1.4mm; font-family: "JBMono"; font-size: 6.8pt; white-space: nowrap; border-radius: 0.8mm; color: #ffb3b7; background: rgba(255, 107, 114, 0.12); padding: 0.4mm 1.4mm; }
 
-    .p-14 .code { background: #0a1330; border: 0.3mm solid var(--rule); font-size: 6.8pt; line-height: 1.5; padding: 3mm 4mm; }
-    .p-14 .code-label { display: flex; justify-content: space-between; align-items: center; }
+    .p-14 .code { background: #0a1330; border: 0.3mm solid var(--rule); font-size: 6.6pt; line-height: 1.48; padding: 2.6mm 3.6mm; }
+    .p-14 .code-label { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.6mm; }
     .p-14 .code-label b { color: #fff; font-weight: 600; }
 
-    .p-14 .eps { width: 100%; border-collapse: collapse; font-size: 7.4pt; }
-    .p-14 .eps td { padding: 0.85mm 2mm; border-top: 0.25mm solid var(--rule); vertical-align: middle; color: #c3cbe0; line-height: 1.35; }
+    .p-14 .eps { width: 100%; border-collapse: collapse; font-size: 7.3pt; }
+    .p-14 .eps td { padding: 0.42mm 2mm; border-top: 0.25mm solid var(--rule); vertical-align: middle; color: #c3cbe0; line-height: 1.3; }
     .p-14 .eps tr:first-child td { border-top: none; }
     .p-14 .eps td.m { width: 13mm; padding-left: 0; }
-    .p-14 .eps td.p { font-family: "JBMono"; font-size: 6.9pt; color: #fff; white-space: nowrap; width: 54mm; }
-    .p-14 .method { font-size: 6.8pt; }
+    .p-14 .eps td.p { font-family: "JBMono"; font-size: 6.8pt; color: #fff; white-space: nowrap; width: 56mm; }
+    .p-14 .method { font-size: 6.6pt; padding: 0.3mm 1.4mm; }
     .p-14 .method.get { background: rgba(29, 138, 78, 0.22); color: #7fe0a8; }
     .p-14 .method.post { background: rgba(122, 146, 255, 0.2); color: #a9b9ff; }
-    .p-14 .method.put { background: rgba(240, 180, 80, 0.2); color: #f3c77a; }
+    .p-14 .method.put, .p-14 .method.patch { background: rgba(240, 180, 80, 0.2); color: #f3c77a; }
 
-    .p-14 .status { display: flex; align-items: center; gap: 1.2mm; flex-wrap: nowrap; }
-    .p-14 .st { font-family: "JBMono"; font-size: 6.9pt; padding: 0.9mm 1.7mm; border-radius: 99px; border: 0.3mm solid rgba(255, 255, 255, 0.2); color: #fff; white-space: nowrap; }
+    .p-14 .status { display: flex; align-items: center; gap: 1.1mm; flex-wrap: nowrap; }
+    .p-14 .st { font-family: "JBMono"; font-size: 6.8pt; padding: 0.8mm 1.6mm; border-radius: 99px; border: 0.3mm solid rgba(255, 255, 255, 0.2); color: #fff; white-space: nowrap; }
     .p-14 .st.ok { background: rgba(29, 138, 78, 0.25); border-color: rgba(127, 224, 168, 0.4); color: #a9f0c6; }
+    .p-14 .st.part { background: rgba(240, 180, 80, 0.16); border-color: rgba(243, 199, 122, 0.4); color: #f3c77a; }
     .p-14 .st.off { color: var(--dim); border-style: dashed; }
     .p-14 .arr { color: var(--dim); font-size: 8pt; }
+    .p-14 .or { font-size: 7pt; color: var(--dim); }
     .p-14 .price { flex: none; width: 56mm; border-left: 0.4mm solid rgba(255, 107, 114, 0.5); padding-left: 5mm; display: flex; flex-direction: column; justify-content: center; }
     .p-14 .price .v { font-family: "Bricolage"; font-weight: 800; font-size: 24pt; letter-spacing: -0.03em; line-height: 1; color: #fff; }
     .p-14 .price .v span { font-size: 13pt; color: #c3cbe0; letter-spacing: -0.01em; }
-    .p-14 .price .k { font-size: 7.6pt; line-height: 1.45; color: #9aa6c4; margin-top: 1.6mm; }
-    .p-14 .access { display: flex; gap: 3.4mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 3mm; padding: 3mm; }
-    .p-14 .band { display: grid; grid-template-columns: 1fr auto; gap: 6mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 4mm; padding: 3.4mm 4mm 3.4mm 5mm; margin-top: auto; }
-    .p-14 .qr { background: #fff; border-radius: 1.6mm; padding: 2mm; width: 22mm; height: 22mm; flex: none; }
+    .p-14 .price .k { font-size: 7.4pt; line-height: 1.42; color: #9aa6c4; margin-top: 1.6mm; }
+    .p-14 .access { display: flex; gap: 3mm; align-items: center; background: rgba(255, 255, 255, 0.05); border: 0.3mm solid var(--rule); border-radius: 3mm; padding: 3mm; }
+    .p-14 .qr { background: #fff; border-radius: 1.6mm; padding: 1.8mm; width: 20mm; height: 20mm; flex: none; }
     .p-14 .qr img { width: 100%; height: 100%; }
+    .p-14 .foot-note { font-size: 7.2pt; line-height: 1.45; color: #9aa6c4; }
+    .p-14 .foot-note b { color: #fff; font-weight: 650; }
   </style>
   <header class="pg-head">
     <span class="mark"><img src="assets/img/logo-mark.svg" alt="" /> Evalezy</span>
@@ -48,94 +51,99 @@
     <h2 class="h1 mt2" style="font-size:31pt;color:#fff">Answer sheet evaluation,
       <span class="u">as an API.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 60 6, 130 4, 200 7 S 280 12, 297 8" fill="none" stroke="#D61C28" stroke-width="5" stroke-linecap="round"/></svg></span></h2>
     <div class="row mt3" style="gap:8mm;align-items:stretch">
-      <p class="lede grow" style="font-size:10.4pt">Send a handwritten answer sheet by file or URL. Get back marks per question, feedback, the student’s answer as read and the red-pen checked PDF. Same engine as the Evalezy dashboard.</p>
+      <p class="lede grow" style="font-size:10.2pt">Grade handwritten copies and typed long answers from your own exam system. Get back question-wise marks with reasons, feedback and the red-pen checked copy.</p>
       <div class="price">
         <p class="v">₹1 <span>/ $0.01</span></p>
-        <p class="k">per page, excl. GST: the same price as the dashboard. Billed only when an evaluation completes.</p>
+        <p class="k">per handwritten page (1 credit), excl. GST. Typed tests: 1 credit per non-blank long answer; objective answers free.</p>
       </div>
     </div>
 
-    <div class="main mt5">
+    <div class="main mt3">
       <!-- the flow -->
       <div class="col">
       <ol class="steps">
-        <li><span class="n">1</span><h3>Create an assessment</h3><p>Questions with marks, or a question paper URL to be read into questions.</p><code class="ep">POST /assessments</code></li>
-        <li><span class="n">2</span><h3>Set the criteria</h3><p>Criteria and model answers per question, rescaled to sum to its marks, or a draft to edit.</p><code class="ep">PUT …/criteria</code></li>
-        <li><span class="n">3</span><h3>Send an answer sheet</h3><p>A PDF by URL, or a file id from <code>/files</code>. Add your own student id.</p><code class="ep">POST /evaluations</code></li>
-        <li><span class="n">4</span><h3>Get the result</h3><p>Poll, or wait for the webhook: total, marks and feedback per question, and the checked PDF.</p><code class="ep">GET /evaluations/{id}</code></li>
+        <li><span class="n">1</span><h3>Create an exam</h3><p>Handwritten or typed, with marks, answer keys and rubrics.</p><span class="ep">POST /exams</span></li>
+        <li><span class="n">2</span><h3>Upload and submit</h3><p>One PDF per candidate (max 50&nbsp;MB) and your own candidate id.</p><span class="ep">POST /exams/{id}/submissions</span></li>
+        <li><span class="n">3</span><h3>Poll for results</h3><p>No webhooks yet: poll the feed of every submission that changed.</p><span class="ep">GET /submissions?updated_since=</span></li>
+        <li><span class="n">4</span><h3>Review, then finalize</h3><p>Override or approve marks in your app or in the Vacademy dashboard.</p><span class="ep">POST /exams/{id}/finalize</span></li>
       </ol>
       <div class="access auto">
         <a class="qr" href="https://evalezy.com/demo/?utm_source=brochure&amp;utm_medium=pdf" style="display:block"><img src="assets/img/qr-demo.svg" alt="QR code to evalezy.com/demo" /></a>
         <div>
           <p class="h4" style="color:#fff;font-size:9.4pt">Request access</p>
-          <p class="tiny mt1" style="color:#c3cbe0;font-size:7.2pt">API access is enabled per account. Request it at <strong>evalezy.com/demo</strong> with your use case and monthly volume.</p>
+          <p class="tiny mt1" style="color:#c3cbe0;font-size:7.1pt;line-height:1.4">Enabled per institute: ask at <strong>evalezy.com/demo</strong>. Your admin then creates keys in the Vacademy dashboard.</p>
         </div>
       </div>
       </div>
 
       <!-- request + response -->
-      <div class="col" style="gap:3.6mm">
+      <div class="col" style="gap:3mm">
         <div>
-          <p class="code-label"><b>POST /evaluations</b><span>cURL</span></p>
-          <pre class="code"><span class="k">curl</span> https://api.evalezy.com/v1/evaluations \
-  -H <span class="s">"Authorization: Bearer $EVALEZY_API_KEY"</span> \
+          <p class="code-label"><b>POST /exams/{id}/submissions → 202 + quote</b><span>cURL</span></p>
+          <pre class="code"><span class="k">curl</span> https://api.evalezy.com/v1/exams/$EXAM_ID/submissions \
+  -H <span class="s">"X-API-Key: $EVALEZY_API_KEY"</span> \
   -H <span class="s">"Content-Type: application/json"</span> \
   -d <span class="s">'{
-    "assessment_id": "asm_7Hq2",
-    "answer_sheet_url": "https://files.example.edu/ix-b/roll-14.pdf",
-    "student": { "external_id": "IXB-14" },
-    "webhook_url": "https://api.example.edu/hooks/evalezy"
+    "candidate": { "external_id": "IXB-14", "name": "Aditi Sharma" },
+    "upload_id": "0d2b6c1e-6a1f-4c55-9a43-2b1f0c9e7a10"
   }'</span></pre>
         </div>
         <div>
-          <p class="code-label"><b>GET /evaluations/ev_3kP9xW → 200</b><span>trimmed</span></p>
+          <p class="code-label"><b>GET /submissions/{id}/result → 200</b><span>trimmed</span></p>
           <pre class="code">{
-  <span class="k">"status"</span>: <span class="s">"completed"</span>,
-  <span class="k">"total"</span>: { <span class="k">"awarded"</span>: <span class="n">38</span>, <span class="k">"max"</span>: <span class="n">80</span> },
+  <span class="k">"status"</span>: <span class="s">"graded"</span>, <span class="k">"needs_review"</span>: <span class="n">true</span>, <span class="k">"finalized"</span>: <span class="n">false</span>,
+  <span class="k">"totals"</span>: { <span class="k">"awarded"</span>: <span class="n">38</span>, <span class="k">"max"</span>: <span class="n">80</span>, <span class="k">"percentage"</span>: <span class="n">47.5</span> },
   <span class="k">"questions"</span>: [{
-    <span class="k">"number"</span>: <span class="s">"30"</span>, <span class="k">"awarded"</span>: <span class="n">0.5</span>, <span class="k">"max"</span>: <span class="n">3</span>,
-    <span class="k">"student_answer"</span>: <span class="s">"1. Temperature 2. Humidity 3. Precipitation …"</span>,
+    <span class="k">"label"</span>: <span class="s">"30"</span>, <span class="k">"awarded"</span>: <span class="n">0.5</span>, <span class="k">"max"</span>: <span class="n">3</span>, <span class="k">"confidence"</span>: <span class="n">0.88</span>,
+    <span class="k">"extracted_answer"</span>: <span class="s">"1. Temperature 2. Humidity 3. Precipitation …"</span>,
     <span class="k">"feedback"</span>:
       <span class="s">"Only weather elements listed; no factors of climate explained."</span>,
-    <span class="k">"criteria"</span>: [ <span class="c">…</span> ]
+    <span class="k">"criteria"</span>: [{ <span class="k">"name"</span>: <span class="s">"Names valid factors of climate"</span>,
+      <span class="k">"awarded"</span>: <span class="n">0.5</span>, <span class="k">"reason"</span>: <span class="s">"Lists weather elements, not factors."</span> }, <span class="c">…</span>]
   }, <span class="c">…</span>],
-  <span class="k">"checked_copy_url"</span>:
-    <span class="s">"https://files.evalezy.com/ev_3kP9xW/checked-copy.pdf"</span>,
-  <span class="k">"billing"</span>: { <span class="k">"pages"</span>: <span class="n">7</span>, <span class="k">"amount"</span>: <span class="n">7</span>, <span class="k">"currency"</span>: <span class="s">"INR"</span> }
+  <span class="k">"checked_copy"</span>: { <span class="k">"available"</span>: <span class="n">true</span>, <span class="c">…</span> }, <span class="k">"credits_charged"</span>: <span class="n">7</span>
 }</pre>
         </div>
         <div>
-          <p class="code-label"><b>Statuses</b><span>poll or webhook</span></p>
+          <p class="code-label"><b>Statuses</b><span>no webhooks yet: poll the feed</span></p>
           <div class="status">
             <span class="st">queued</span><span class="arr">→</span>
+            <span class="st">processing</span><span class="arr">→</span>
             <span class="st">reading</span><span class="arr">→</span>
             <span class="st">grading</span><span class="arr">→</span>
-            <span class="st ok">completed</span>
-            <span class="grow"></span>
-            <span class="st off">failed</span><span class="st off">cancelled</span>
+            <span class="st ok">graded</span>
           </div>
-          <p class="tiny muted mt1" style="text-align:right">Failed (e.g. an unreadable sheet, reason included) and cancelled: not billed</p>
+          <div class="status mt1">
+            <span class="or">or</span>
+            <span class="st part">partially_graded</span>
+            <span class="st off">failed</span><span class="st off">cancelled</span>
+            <span class="grow"></span>
+            <span class="tiny muted">Failed, cancelled: not charged</span>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- endpoints -->
-    <div class="row mt4" style="gap:7mm;align-items:flex-start">
-      <div class="grow">
-        <p class="h4" style="color:#fff">Endpoints <span class="mono muted" style="font-size:7pt;font-weight:400;margin-left:1.5mm">base https://api.evalezy.com/v1</span></p>
-        <table class="eps mt2">
-          <tr><td class="m"><span class="method post">POST</span></td><td class="p">/assessments</td><td>Create from questions with marks, or a question paper URL</td></tr>
-          <tr><td class="m"><span class="method get">GET</span></td><td class="p">/assessments/{id}</td><td>Questions, marks and current criteria</td></tr>
-          <tr><td class="m"><span class="method put">PUT</span></td><td class="p">/assessments/{id}/criteria</td><td>Criteria and model answers per question</td></tr>
-          <tr><td class="m"><span class="method post">POST</span></td><td class="p">/assessments/{id}/criteria/generate</td><td>Draft criteria to review and edit</td></tr>
-          <tr><td class="m"><span class="method post">POST</span></td><td class="p">/files</td><td>Upload an answer sheet PDF; returns a file id</td></tr>
-          <tr><td class="m"><span class="method post">POST</span></td><td class="p">/evaluations</td><td>Check one sheet, by file id or URL, with an optional webhook</td></tr>
-          <tr><td class="m"><span class="method get">GET</span></td><td class="p">/evaluations/{id}</td><td>Status, progress, then marks, feedback and the checked PDF</td></tr>
-          <tr><td class="m"><span class="method post">POST</span></td><td class="p">/evaluations/{id}/cancel</td><td>Stop a running evaluation; not billed</td></tr>
-        </table>
-      </div>
+    <div class="mt3">
+      <p class="h4 row" style="color:#fff;justify-content:space-between;align-items:baseline">Key endpoints <span class="mono muted" style="font-size:7pt;font-weight:400">base https://api.evalezy.com/v1 · X-API-Key header</span></p>
+      <table class="eps mt2">
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/exams</td><td>Create an exam: questions, marks, answer keys, rubrics or model answers</td></tr>
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/exams/{id}/open</td><td>Open a draft exam; questions, marks and answer keys are then fixed</td></tr>
+        <tr><td class="m"><span class="method put">PUT</span></td><td class="p">/exams/{id}/questions/{qid}/rubric</td><td>Set one long answer’s rubric and model answer</td></tr>
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/candidates</td><td>Create or update up to 2,000 candidates by your own external_id</td></tr>
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/uploads</td><td>Presigned upload URLs for 1 to 100 PDFs, 50 MB each</td></tr>
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/exams/{id}/submissions</td><td>Submit a copy (upload_id) or typed answers; 202 with a fixed quote</td></tr>
+        <tr><td class="m"><span class="method get">GET</span></td><td class="p">/submissions?updated_since=…</td><td>Every submission that changed, across exams: poll it for results</td></tr>
+        <tr><td class="m"><span class="method get">GET</span></td><td class="p">/submissions/{id}/result</td><td>Marks, criteria with reasons, feedback, answer as read, confidence</td></tr>
+        <tr><td class="m"><span class="method get">GET</span></td><td class="p">/submissions/{id}/checked-copy</td><td>The checked copy PDF: ticks, crosses, notes and marks</td></tr>
+        <tr><td class="m"><span class="method patch">PATCH</span></td><td class="p">/submissions/{id}/questions/{qid}</td><td>Override one question’s marks (0.5 steps) and feedback; free</td></tr>
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/exams/{id}/finalize</td><td>Publish draft marks as final; nothing is final until you call it</td></tr>
+        <tr><td class="m"><span class="method post">POST</span></td><td class="p">/credits/quote</td><td>Quote the fixed price before you submit, and check your balance covers it</td></tr>
+      </table>
     </div>
 
+    <p class="foot-note mt3"><b>No sandbox:</b> every key is live and every graded copy is billed, so test with a small exam. <b>Not yet:</b> webhooks, phone photos, bulk scans matched by name, Hindi. API exams also appear in the Vacademy dashboard, tagged “Source: API”. <b>Full reference, guides and roadmap: docs.evalezy.com</b></p>
   </div>
   <footer class="pg-foot"><span>Evalezy · AI answer sheet checking</span><span class="num pgno"></span></footer>
 </section>

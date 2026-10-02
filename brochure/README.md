@@ -13,9 +13,10 @@ Then copy `out/Evalezy-Brochure.pdf` here and stamp the metadata (see the pypdf 
   `pages/README.md`, and the design system is in `brochure.css`. The fonts are static instances, so the PDF embeds
   TrueType rather than Type 3.
 - Facts: every claim traces to `../docs/PRODUCT_FACTS.md`.
-- Before sending it out, two owner decisions are still open:
-  - The brochure sells ₹1 per page, but the dashboard still bills per question.
-  - The API pages describe the proposed public contract.
+- Before sending it out, one owner decision is still open: the brochure sells ₹1 per page, but the dashboard still
+  bills per question.
+- Page 14 (API) and the API card on page 15 follow the live docs at https://docs.evalezy.com (v1, 2 Oct 2026). When
+  the docs changelog changes, update them and rebuild.
 - Pages 10–11 compare one maths copy checked by a teacher and by Evalezy (source PDFs kept locally in `../side-by-side-comparision/`, not in git;
   verdicts in `../src/content/sideBySide.ts`). Page numbers are automatic (CSS counter), so pages can be inserted freely.
 - Page 16 says openly that the sample copy has one AI slip: Q17 on page 2 was crossed although the answer is right.

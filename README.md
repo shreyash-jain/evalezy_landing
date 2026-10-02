@@ -21,19 +21,20 @@ Static Next.js 15 + Tailwind 4 export, the same stack and deploy path as vacadem
 ## The truth file
 
 `docs/PRODUCT_FACTS.md` lists every claim the site may make, read from `vacademy_platform/docs/AI_COPY_EVALUATION.md`
-on `main` (1 Oct 2026), plus a "Never claim" list. **Change the product, change this file first, then the copy.**
+on `main` (1 Oct 2026) and, for the API, from the live docs at https://docs.evalezy.com (2 Oct 2026), plus a
+"Never claim" list. **Change the product, change this file first, then the copy.**
 
 ## Structure
 
 | What | Where |
 |---|---|
-| Site constants (price, WhatsApp, email, booking URL, login URL, API base) | `src/lib/site.ts` |
+| Site constants (price, WhatsApp, email, booking URL, login URL, API base, docs URL) | `src/lib/site.ts` |
 | Hand-written pages registry (titles + meta descriptions) | `PAGES` in `src/lib/site.ts` |
 | Every URL (sitemap + llms-full) | `src/lib/routes.ts` |
 | Audience pages `/for/<slug>/` (6) | `src/content/audiences.ts` → `src/app/for/[slug]` |
 | Comparison pages `/compare/<slug>/` (3) | `src/content/comparisons.ts` → `src/app/compare/[slug]` |
 | FAQ (all pages draw from it) | `src/content/faqs.ts` |
-| API docs content (endpoints, code samples, statuses) | `src/content/api.ts` |
+| API docs content (endpoints, code samples, statuses), a summary of https://docs.evalezy.com | `src/content/api.ts` → `src/app/api/page.tsx`; the full reference lives on docs.evalezy.com (Mintlify), not in this repo |
 | Blog registry / posts | `src/content/posts.ts` → `src/app/blog/<slug>/page.tsx` via `BlogShell` |
 | Product mock visuals (bulk check, rubric, review, upload…) | `src/components/Visuals.tsx` |
 | Interactive bits (copy anatomy, API tabs, price calculator, sample viewer) | `src/components/Interactive.tsx` |
@@ -74,16 +75,29 @@ was created on 1 Oct 2026 to verify the audience. Delete it in Audience Manager.
 1. **Pricing vs billing.** The site says ₹1 / $0.01 per page. On 1 Oct 2026 the dashboard still bills
    **1 + 0.2 credits per question per copy**; per-page billing lives only on `feat/copy-check-edit-and-per-page-credits`.
    Move the rate card (`ai_tool_pricing.copy_check_evaluation`) to per page before ads go live, or customers will be
-   charged differently from what the site says. Also confirm: everything else included (question paper import etc.),
-   typed answers "priced per answer, ask us", GST exclusive, and the Volume tier promises (1,00,000+ pages/month,
-   invoice billing, named contact, help with schemes).
-2. **API.** `/api/` documents the proposed public contract in `src/content/api.ts` (base `https://api.evalezy.com/v1`,
-   Bearer keys, `/assessments`, `/criteria`, `/files`, `/evaluations`, webhooks). On `main` the evaluation endpoints use
-   teacher JWTs or the internal service token, with no public API-key surface yet. Build or map these endpoints (and
-   the `api.evalezy.com` host) before giving out keys, and edit `api.ts` if the shapes differ.
-3. **Mailbox.** `hello@evalezy.com` is shown sitewide. Create it, or change `SALES_EMAIL` in `src/lib/site.ts`.
+   charged differently from what the site says. The API already charges per page (1 credit per handwritten page,
+   1 per non-blank typed long answer, objective answers free; https://docs.evalezy.com/platform/pricing). The docs say
+   credits are bought in the Vacademy dashboard and send developers to evalezy.com/pricing for the price of a credit,
+   so ₹1 / $0.01 per page there means ₹1 / $0.01 per credit: confirm that is what a credit costs. Also confirm:
+   everything else included (question paper import etc.), typed answers "priced per answer, ask us" (the API publishes
+   1 credit per non-blank long answer), GST exclusive, and the Volume tier promises (1,00,000+ pages/month, invoice
+   billing, named contact, help with schemes).
+2. **API.** The Evaluation API is live (v1, launched 2 Oct 2026) at `https://api.evalezy.com/v1`, documented at
+   https://docs.evalezy.com. The docs are the source of truth: `src/content/api.ts`, the `/api/` page and the API
+   section of `docs/PRODUCT_FACTS.md` copy their endpoints, statuses, limits and prices from them. Keep all three in step
+   with the docs changelog (https://docs.evalezy.com/platform/changelog): when it adds or changes something, update
+   them in the same change. Webhooks, phone photos, bulk scans matched by name, question-paper import, CSV results,
+   Hindi, hosted review links and SDKs are roadmap items (https://docs.evalezy.com/platform/roadmap). Sending an answer
+   sheet by URL is not offered at all: copies go in only as PDF uploads. Never claim any of these for the API until the
+   changelog lists them; the full list is under "Not available yet" in `docs/PRODUCT_FACTS.md`. The dashboard has its
+   own limits and features (200 PDFs per upload, 60 MB each, name matching, question-paper import, phone photos
+   combined into a PDF); don't apply API limits to dashboard copy, or the other way round.
+3. **Mailbox.** `hello@evalezy.com` is shown sitewide, and the API docs send developers there to get the API enabled for
+   their institute. Create it, or change `SALES_EMAIL` in `src/lib/site.ts` (and ask for the docs to be changed too).
 4. **Booking link.** Set `BOOKING_URL` in `src/lib/site.ts` (empty = every "Book a demo" goes to `/demo/`).
 5. **Login link.** "Log in" points to `https://dash.vacademy.io/`. Confirm that is where Evalezy customers sign in.
+   The API docs use the same dashboard: admins create API keys there (Settings → Integrations → API keys) and each API
+   exam's `dashboard_url` links into it.
 6. **Sample copy.** The 7-page checked copy is a real student's notebook (no name or roll number appears on it). Confirm
    you have the school's/student's permission to publish it.
 7. **Analytics.** The site loads the shared GTM container `GTM-5C4DDJ6W`, which also fires the Vacademy Meta pixel and
