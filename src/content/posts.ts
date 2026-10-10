@@ -17,6 +17,36 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "maths-step-marking-partial-credit",
+    title: "Maths Step Marking: How to Award Partial Credit Fairly",
+    description: "A practical maths step-marking guide with a worked 4-mark example, follow-through rules, alternative methods and checks for AI-read handwritten answers.",
+    category: "Assessment",
+    published: "2026-10-10",
+    readMins: 6,
+    keywords: ["maths step marking", "partial credit in maths", "maths answer sheet evaluation", "method marks", "marking handwritten maths answers"],
+    pages: ["/marking-scheme/", "/teacher-review/", "/for/schools/", "/side-by-side/"],
+  },
+  {
+    slug: "answer-sheet-moderation-checklist",
+    title: "Answer Sheet Moderation: A Checklist Before Releasing Results",
+    description: "Use this answer sheet moderation checklist to compare markers, record disagreements, check totals and review AI draft marks before releasing exam results.",
+    category: "Guides",
+    published: "2026-10-10",
+    readMins: 6,
+    keywords: ["answer sheet moderation", "exam moderation checklist", "marking consistency", "moderation of marking", "review AI grading"],
+    pages: ["/teacher-review/", "/for/colleges-universities/", "/for/exam-boards/", "/bulk-upload/"],
+  },
+  {
+    slug: "feedback-on-student-answer-sheets",
+    title: "Feedback on Student Answer Sheets: Examples That Guide Revision",
+    description: "Write useful feedback on student answer sheets with subject-specific comment examples, a simple response routine and a checklist for reviewing AI comments.",
+    category: "Guides",
+    published: "2026-10-10",
+    readMins: 6,
+    keywords: ["feedback on student answer sheets", "answer sheet feedback examples", "teacher marking comments", "actionable feedback for students", "exam feedback"],
+    pages: ["/checked-copy/", "/typed-answers/", "/for/schools/", "/for/coaching-institutes/"],
+  },
+  {
     slug: "upsc-answer-writing-evaluation-at-scale",
     title: "UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)",
     description: "How to run UPSC Mains answer writing evaluation at scale: a GS rubric, mentor workflow, daily cadence, and where an AI first evaluation helps or mentors judge.",

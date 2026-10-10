@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-10-02 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-10-10 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -538,6 +538,10 @@ When a teacher releases results, each student receives the checked copy as a PDF
 How big is the checked PDF? +
 Page images are re-encoded so the checked PDF stays under 18 MB, small enough to email, even for a long phone-scanned copy.
 
+## From the blog
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -655,6 +659,8 @@ How will I know when it's done? +
 The batch settles as completed or needing review, and you get a bell alert and, if you ticked the box, an email with the counts.
 
 ## From the blog
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Guides
 How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
 Guides
@@ -845,6 +851,8 @@ When is the scheme created? +
 Once per question, the first time a copy of that assessment is checked, and then reused. Two copies starting at the same moment still get one scheme, not two.
 
 ## From the blog
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Guides
 UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
 Assessment
@@ -950,12 +958,12 @@ What does "Need review" mean? +
 A copy or question the system was less sure about: a low-confidence read, a copy that could not be matched to a student, or a question still waiting. Start your review there.
 
 ## From the blog
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Guides
 UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Assessment
-On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
-Guides
-How to Check 200 Answer Sheets Faster Without Losing Fairness
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1030,6 +1038,10 @@ Typed answers have no pages, so they are priced per answer graded rather than pe
 
 Can students copy-paste an answer? +
 Copy, cut and paste are blocked in the long-answer box, which also shows a live word count.
+
+## From the blog
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1524,6 +1536,10 @@ Not on its own, and we don’t claim it is. On this copy Evalezy was more thorou
 Where does the teacher review happen? +
 On the review screen: every answer as Evalezy read it, the marks, the reason and the criteria. A teacher changes any mark, and that edit is never overwritten. Students see nothing until the teacher releases.
 
+## From the blog
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -1669,6 +1685,21 @@ Blog
 Practical writing for teachers, exam heads and edtech builders on checking answer sheets, marking schemes, scanning and using AI without losing control.
 Book a demo
 
+Guides
+
+## Feedback on Student Answer Sheets: Examples That Guide Revision
+Write useful feedback on student answer sheets with subject-specific comment examples, a simple response routine and a checklist for reviewing AI comments.
+10 Oct 2026 · 6 min read
+Guides
+
+## Answer Sheet Moderation: A Checklist Before Releasing Results
+Use this answer sheet moderation checklist to compare markers, record disagreements, check totals and review AI draft marks before releasing exam results.
+10 Oct 2026 · 6 min read
+Assessment
+
+## Maths Step Marking: How to Award Partial Credit Fairly
+A practical maths step-marking guide with a worked 4-mark example, follow-through rules, alternative methods and checks for AI-read handwritten answers.
+10 Oct 2026 · 6 min read
 Assessment
 
 ## How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
@@ -2086,12 +2117,12 @@ What does it cost a school? +
 ₹1 per page checked. A section of 40 students writing an 8-page copy costs ₹320 for that paper. Failed and unreadable copies are free.
 
 ## From the blog
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Guides
 How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
-Guides
-How to Check 200 Answer Sheets Faster Without Losing Fairness
-AI checking
-AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2200,6 +2231,8 @@ Can students upload their own answer photos? +
 Yes. In an online test set to manual evaluation, students upload their answer sheet as a PDF. You can check all submitted copies with one click, or have each one checked automatically as it is submitted.
 
 ## From the blog
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Guides
 UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
 Assessment
@@ -2404,6 +2437,8 @@ Can we export marks? +
 Marks are stored per question in the assessment and appear in its reports alongside the checked script. Talk to us about the exact export you need for your ERP.
 
 ## From the blog
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Assessment
 On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 
@@ -2499,6 +2534,8 @@ Is there an API? +
 Yes. With the Evaluation API your own system creates the exam and its rubrics, uploads each script as a PDF (one per candidate, up to 50 MB; scripts are uploaded, not fetched from a URL) and reads back question-wise marks with reasons, a needs_review flag and the annotated script. Marks stay drafts until you finalize them. Each institute has a daily copy quota that we set with you; ask us to raise it well before your exam window. Full reference at docs.evalezy.com.
 
 ## From the blog
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Assessment
 On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 
@@ -2843,6 +2880,373 @@ Book a demo See a real checked copy
 
 ---
 
+# Maths Step Marking: How to Award Partial Credit Fairly | Evalezy
+URL: https://evalezy.com/blog/maths-step-marking-partial-credit/
+
+- Home
+- / Blog
+- / Maths Step Marking: How to Award Partial Credit Fairly
+Assessment
+
+# Maths Step Marking: How to Award Partial Credit Fairly
+A practical maths step-marking guide with a worked 4-mark example, follow-through rules, alternative methods and checks for AI-read handwritten answers.
+By the Evalezy team · 10 October 2026· 6 min read
+
+## Key takeaways
+
+- Allocate marks to visible mathematical reasoning before checking the first answer sheet.
+- Define when a later correct step can earn credit after an earlier numerical error.
+- Credit equivalent methods against the same learning objective, using the applicable scheme.
+- Check the original scan when an AI reading changes a minus sign, fraction or crossed-out value.
+
+A student chooses the right equation, substitutes the right values and makes one arithmetic slip. Another writes the correct final number with no working. Maths step marking gives the teacher a way to assess the evidence in each answer instead of judging both from the last line alone.
+This guide proposes a classroom marking routine, with an original worked example. For an external examination, use the marking scheme and examiner instructions for that paper. The allocations below are illustrative, not a CBSE or other board marking policy.
+
+## What does step marking mean in maths?
+Step marking assigns parts of the available score to specific evidence: selecting a method, making a valid transformation, calculating a value or interpreting the result. Partial credit is the score earned when the answer demonstrates some of those requirements but not all of them.
+Start with the skill the question is intended to assess. In a question about forming equations, setting up the equation deserves explicit attention. In a question about interpreting a graph, a correct calculation alone may leave the main task unanswered. Write down the evidence required for each mark and ensure the allocations add up to the question total. Our marking scheme guide covers that setup in more detail.
+Carnegie Mellon University’s rubric guidance describes criteria, performance descriptions and levels of achievement as the building blocks of a rubric. For a maths question, translate those into decisions another teacher can apply to the actual working on the page.
+
+## A worked 4-mark example
+Question: A rectangle has a perimeter of 30 cm. Its length is 3 cm more than its width. Form an equation and find both dimensions, showing your working.
+One solution is to let the width be w and the length be w + 3. Then 2(w + w + 3) = 30, so 4w + 6 = 30, w = 6, and the dimensions are 6 cm by 9 cm.
+An illustrative classroom scheme; decide any half-mark and follow-through rules before use.Criterion | Evidence that earns credit | Marks |
+
+Model the dimensions | Defines width w and length w + 3, or an equivalent pair of variables and relation. | 1 |
+Use the perimeter | Forms 2(w + w + 3) = 30 or an equivalent correct equation. | 1 |
+Solve the equation | Uses valid algebra to obtain w = 6. | 1 |
+State the dimensions | Gives width 6 cm and length 9 cm, with the roles clear. | 1 |
+
+For this example, suppose the third criterion requires the correct solution, while the fourth permits follow-through: one mark for correctly interpreting the student’s calculated positive width and adding 3 cm for the length, with units. Record that exception next to the fourth criterion before marking.
+
+## How to handle an error carried into later steps
+Consider a student who reaches 4w = 24, then writes w = 8 and dimensions 8 cm by 11 cm. Under the example policy, the first two criteria earn 2 marks, the solving criterion earns 0, and the final criterion earns 1 follow-through mark. The total is 3/4. The final dimensions are wrong, but the later relationship and interpretation are consistent with the student’s value.
+A different scheme might reserve the final mark for the correct dimensions and award 2/4. The important decision is which rule the assessment uses. It must be written down and applied to all equivalent answers. Do not describe either allocation as a universal rule for maths examinations.
+Follow-through needs boundaries
+State which criteria allow follow-through and what makes it invalid. A negative rectangle width, a changed problem or an error that removes the mathematical challenge needs a separate decision. Credit should still represent a skill demonstrated in the answer.
+
+## Alternative methods, skipped steps and answer-only responses
+A student might start with length + width = 15 and combine it with length − width = 3. That is a valid route to the same dimensions. Map it to the criteria rather than requiring the exact sequence in the model answer. Add accepted alternatives to the scheme when they reveal a gap in its wording.
+
+- Skipped algebra: decide whether the written transition still shows enough evidence for the criterion.
+- Answer only: in this example, correct dimensions with units earn the final mark; the missing equation and working do not demonstrate the other three criteria.
+- Two conflicting answers: apply a recorded rule about the final selected answer and crossed-out work.
+- Missing units: place any deduction in the relevant criterion so it is applied consistently.
+Try the scheme on a few varied responses with a colleague. If you disagree, identify the exact criterion causing the difference. Revise its wording and revisit previously checked responses affected by that change.
+
+## What to inspect when AI reads handwritten maths
+Separate a reading problem from a marking judgement. If the scan says −19/7 but the extracted answer loses the minus sign, debating partial credit will not fix the underlying mistake. Compare the original line with the extracted text first, then assess the actual working.
+Check fractions, exponents, decimal points, overwritten digits and boxed answers in particular. Evalezy’s teacher and AI comparison shows one maths copy on which each caught mistakes the other missed, including AI handwriting misreads. It is a useful review example, not an accuracy benchmark. Diagrams also need care: Evalezy evaluates their labels and written explanation, not drawing quality.
+
+## A final check before releasing maths marks
+
+- Confirm that the criterion allocations sum to the question maximum.
+- Compare answers with the same error to check that follow-through was applied consistently.
+- Resolve unclear handwriting against the original copy.
+- Recheck any score affected by an accepted alternative method or a scheme change.
+- Give feedback that identifies the first incorrect step and a useful next action.
+Where Evalezy fits
+Evalezy uses one editable marking scheme per question across the assessment and proposes marks in half-mark steps. In teacher review , you can inspect the extracted answer, feedback and criteria breakdown, then edit draft marks before release. Use that review to resolve both handwriting errors and partial-credit decisions.
+
+Book a demo
+
+## Sources
+
+- Carnegie Mellon University, Eberly Center: Rubrics (checked 10 October 2026)
+
+## Frequently asked questions
+Can a wrong final answer earn marks in maths? +
+Yes, where the applicable marking scheme awards credit for correct method or intermediate reasoning. Award the criteria the student actually meets; a wrong final answer does not automatically erase all earlier working.
+
+Should I deduct marks twice for the same calculation error? +
+Follow the scheme. For a classroom test, decide in advance whether a later correct operation on an incorrect intermediate value earns follow-through credit. Do not invent the rule midway through the stack.
+
+Does a correct answer without working get full marks? +
+It depends on what the question and scheme assess. If the task explicitly requires a method or explanation, a final number alone does not demonstrate those criteria. An answer-only question may use a different rule.
+
+Can AI check handwritten maths accurately every time? +
+No. Handwritten symbols and crossed-out working can be misread. Review the original answer alongside the extracted text and proposed marks, especially where a small symbol changes the mathematical meaning.
+
+On this page
+
+- What step marking means
+- A worked 4-mark example
+- Follow-through after an error
+- Alternative methods and missing work
+- Reviewing handwritten maths
+- Before releasing marks
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
+Read
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Answer Sheet Moderation: A Checklist Before Releasing Results | Evalezy
+URL: https://evalezy.com/blog/answer-sheet-moderation-checklist/
+
+- Home
+- / Blog
+- / Answer Sheet Moderation: A Checklist Before Releasing Results
+Guides
+
+# Answer Sheet Moderation: A Checklist Before Releasing Results
+Use this answer sheet moderation checklist to compare markers, record disagreements, check totals and review AI draft marks before releasing exam results.
+By the Evalezy team · 10 October 2026· 6 min read
+
+## Key takeaways
+
+- Compare marking decisions at question level; matching totals can hide different errors.
+- Include varied copies, different markers and borderline results in the moderation sample.
+- Record why a score changed and revisit every answer affected by a scheme clarification.
+- Treat AI marks as draft decisions that still need evidence checks and teacher approval.
+
+Two teachers award 42/60 to the same answer sheet. Their totals agree, but one gave an extra mark on Question 4 and one withheld a mark on Question 8. A totals-only check would miss both disagreements. Answer sheet moderation looks at the decisions behind the score.
+The workflow below is a practical template for internal school, college and coaching assessments. Adapt it to the paper and your institution’s requirements. It is not a substitute for an examination body’s moderation procedure, and the sample choices are suggestions rather than a formal statistical assurance method.
+
+## What should answer sheet moderation check?
+Keep three checks separate: whether the answer has been read correctly, whether the scheme has been applied correctly, and whether the marks have been totalled and recorded correctly. A good review follows an answer through all three. It also confirms that no attempted question or continuation page was overlooked.
+A shared rubric gives reviewers a common reference. Carnegie Mellon University’s rubric guidance identifies consistency across graders as one benefit of explicit criteria. A shared document still needs discussion: words such as “adequate explanation” can leave teachers applying different standards to the same response.
+
+## Prepare a review pack before selecting copies
+Collect the question paper, the scheme version used for marking, model answers, accepted alternatives and any decisions made during checking. Keep each original answer sheet available alongside the question-level marks. A spreadsheet of totals alone does not provide enough evidence to review subjective answers.
+
+- Identify the assessment: subject, class, paper version, date and maximum marks.
+- Identify responsibility: who marked each batch and who will settle unresolved questions.
+- Identify rules: partial credit, optional questions, word limits and any applicable penalties.
+- Identify changes: which rubric clarifications were made and whether earlier copies were revisited.
+For future batches, compare a few varied answers before dividing the stack between markers. The marking scheme guide provides examples of criteria you can use as a starting point for that discussion.
+
+## Choose a sample that can reveal different problems
+Selecting only neat, middle-scoring copies gives a narrow view of marking. For an internal assessment, combine some ordinary copies selected without reference to their score with targeted copies that deserve attention. Include work from each marker and from different parts of the marking sequence.
+Include in the review | What it helps you inspect |
+
+High, middle and low scores | Whether the scheme distinguishes different levels of evidence consistently. |
+Results near a relevant pass or grade boundary | Whether a small marking error could change a student's outcome. |
+Early and late copies from each marker | Whether the standard changed during the batch. |
+Unusual correct approaches | Whether the scheme was treated too narrowly. |
+Unclear scans and continued answers | Whether a reading or page-location problem affected marks. |
+A selection of otherwise unflagged copies | Whether problems exist outside the cases already suspected. |
+
+Expand the review when you find a pattern
+A sample helps locate problems; it does not repair the rest of the batch. If a criterion was applied incorrectly on Question 6, review the affected Question 6 answers across the relevant batch. Correcting only the sampled copies leaves equivalent students with different treatment.
+
+## Compare question-level decisions and record the reason
+Where practical, ask the reviewer to score a selected answer before seeing the first score. Compare the evidence credited under each criterion. A difference might come from a missed sentence, an ambiguous rule, an alternative method or a simple transfer error. Name the cause before deciding the remedy.
+Do not settle disagreements by automatically averaging the two marks. Return to the criterion and the response. If the scheme does not resolve the case, the designated subject lead should record a clarification and specify which other answers need review.
+A suggested manual review log, not a claim of an automated Evalezy report.Review log field | Illustrative entry |
+
+Copy and question | Student reference S014, Question 6 |
+Original and reviewed mark | 2/4 → 3/4 |
+Reason | A valid alternative explanation met criterion 3 but was not credited. |
+Scope of follow-up | Review Question 6 in both classes for the same explanation. |
+Owner and completion | Subject lead records the clarification; each marker confirms review is complete. |
+
+Keep unchanged decisions too when they resolve a recurring doubt. An accepted example of a 2-mark response and a contrasting 3-mark response can make the next moderation discussion more concrete than another general instruction to “be consistent”.
+
+## Apply the same discipline to AI draft marks
+Start by comparing the extracted answer with the original scan. A misread negative sign is a reading error; withholding credit for a valid explanation is a grading decision. They need different corrections. Our maths step-marking guide shows how those issues can interact.
+Review unusual zeros, missing answers, unclear handwriting and disagreements between the written feedback and awarded marks. Also include unflagged answers: the absence of a warning does not prove the score is correct. Record the reviewed decision against the student’s actual response, not merely the AI explanation.
+
+## A checklist before releasing exam results
+
+- Every copy is linked to the intended student and the correct paper.
+- All attempted answers, continuation pages and question-choice rules have been accounted for.
+- Each question score is within its maximum, and the total matches the question scores.
+- Disagreements have a recorded resolution tied to the scheme.
+- Any recurring issue has been checked across all affected answers.
+- Feedback matches the final marks and describes the work accurately.
+- The responsible teacher has approved the reviewed results for release.
+After release, retain the scheme version and review decisions with the assessment record. If a student asks why an answer received a particular mark, the explanation should point to the criterion and the evidence, without requiring the marker to reconstruct the decision from memory.
+Where Evalezy fits
+Evalezy returns AI marks as drafts. Teachers can see the extracted answer, feedback and criteria breakdown in teacher review , edit marks and choose when to release results. Students see results pending until release. Keep your moderation log alongside this workflow so that changes to the scheme are followed through across the batch.
+
+Book a demo
+
+## Sources
+
+- Carnegie Mellon University, Eberly Center: Rubrics (checked 10 October 2026)
+
+## Frequently asked questions
+What is answer sheet moderation? +
+It is a review of whether marks have been awarded consistently against the agreed scheme. It can include comparing markers, rechecking selected answers and resolving disagreements before results are released.
+
+How many answer sheets should be moderated? +
+Use your institution or examination body's requirements where they apply. For an internal test, choose a sample that covers markers, score ranges and known risks, then expand it if disagreements reveal a recurring problem. There is no universal sample size recommended by this guide.
+
+Is moderation the same as checking totals? +
+No. Total checking catches arithmetic and transfer errors. Moderation also asks whether the evidence in an answer earned the right marks under the scheme.
+
+What should happen if the marking scheme changes during review? +
+Record the clarification and identify all answers affected by it, including those already checked. Review that group consistently before releasing results.
+
+On this page
+
+- What moderation checks
+- Prepare the review pack
+- Choose the sample
+- Compare and resolve decisions
+- Reviewing AI draft marks
+- Result-release checklist
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
+Read
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Feedback on Student Answer Sheets: Examples That Guide Revision | Evalezy
+URL: https://evalezy.com/blog/feedback-on-student-answer-sheets/
+
+- Home
+- / Blog
+- / Feedback on Student Answer Sheets: Examples That Guide Revision
+Guides
+
+# Feedback on Student Answer Sheets: Examples That Guide Revision
+Write useful feedback on student answer sheets with subject-specific comment examples, a simple response routine and a checklist for reviewing AI comments.
+By the Evalezy team · 10 October 2026· 6 min read
+
+## Key takeaways
+
+- A useful comment identifies evidence in the answer and gives the student a specific next action.
+- Match feedback to the assessed criterion rather than the length or neatness of the response.
+- Plan time for students to correct or retry something after receiving a checked copy.
+- Review AI-generated comments against the original answer and the final awarded marks.
+
+“Explain more” is a familiar comment on a student answer sheet. It identifies a concern, but the student may not know whether to add a definition, a cause, an example or another paragraph. A more useful comment names the missing part and tells the student what to do with it.
+This guide offers original classroom examples and a routine for using them after a test. The aim is to make marking comments easier to act on, without turning every checked copy into a page of teacher-written advice.
+
+## What does useful answer sheet feedback contain?
+The Education Endowment Foundation’s feedback guidance emphasises principles over the choice of written or verbal delivery. It recommends planning how pupils will receive and use feedback. A comment is therefore only part of the process: the lesson needs space for the learner’s response too.
+A practical comment pattern is evidence → gap → next action. Point to something the student actually wrote, connect it to the criterion, and ask for a manageable revision. This is a suggested writing aid, not a requirement to force every comment into three clauses.
+
+- Evidence: “You named deforestation as a cause.”
+- Gap: “The answer does not explain the link to soil erosion.”
+- Next action: “Add a sentence about what roots do to hold soil in place.”
+Keep praise specific as well. “Your comparison uses evidence from both passages” tells the student what to repeat. A judgement about being clever or careless provides less guidance for the next answer. Comments should describe the submitted work without making assumptions about effort or ability.
+
+## Feedback examples for different subjects
+The examples below assume the stated gap is present in the answer and relevant to the scheme. Adapt the language to the student’s age and what has been taught. Do not paste a comment simply because a response received a low mark.
+Original illustrative comments, not feedback from an actual student assessment.What you notice | A comment the student can use | Suggested response |
+
+Maths: an arithmetic slip after a correct setup | Your equation is correct. Recheck 24 ÷ 4, then use your revised value to find the length. | Correct the calculation and check the dimensions against the perimeter. |
+Science: a factor named without its mechanism | You identified temperature. Explain how faster particle movement changes the rate of collisions. | Add the missing causal link in two sentences. |
+History: a claim without supporting evidence | You state that the policy caused opposition. Add one relevant event or example and explain how it supports that claim. | Revise the paragraph using evidence taught in class. |
+Geography: a list where explanation was requested | Your two factors are relevant. For each one, explain how it affects the location of the industry. | Turn each listed factor into a cause-and-effect sentence. |
+English: a quotation without analysis | The quotation is relevant. Choose one word from it and explain its effect on the reader. | Add analysis after the quotation rather than another quotation. |
+A typed email: the requested action is unclear | The purpose is clear, but the recipient does not know what to do next. End with a specific request and a suitable closing. | Rewrite the final two sentences. |
+
+Notice that the next action changes with the error. Recalculating is appropriate for a slip. A missing concept may need teaching before revision is possible. If the student cannot explain the idea orally either, simply asking for a longer written answer is unlikely to address the immediate problem.
+
+## Make feedback agree with the marking scheme
+If a question awards separate marks for identifying a cause and explaining it, the comment should preserve that distinction. “Cause identified; explanation missing” supports the partial-credit decision. “Wrong” erases the successful part and gives the student little basis for understanding the score.
+Avoid asking for material the question did not require while implying it cost marks. You can suggest a further challenge, but label it as extension work. An accurate short answer should not receive “write more” merely because another student filled a page. Use the marking criteria as the reference for both the score and the comment.
+Explain changes after review
+If moderation changes a mark, reread the feedback beside it. A corrected score paired with the original criticism can leave the student unsure what was accepted. The final score and explanation should describe the same decision.
+
+## A simple routine when returning checked copies
+Reserve part of the next lesson for a response task. The sequence below is a suggested classroom routine; choose its length and difficulty to suit the assessment. Start with one important improvement rather than asking every student to rewrite every answer at once.
+
+- Locate: the student finds the answer and the criterion mentioned in the feedback.
+- Explain: they state what needs to change in their own words.
+- Revise: they correct the calculation, add the explanation or rewrite the relevant paragraph.
+- Transfer: they attempt a similar question with different numbers or a new example.
+- Check: the teacher inspects whether the new response demonstrates the intended skill.
+Keep the original answer visible beside the revision. That makes the change easier to discuss and avoids confusing a copied model answer with independent understanding. If several students still struggle on the transfer question, use that evidence to plan the next explanation or practice task.
+
+## When to use whole-class feedback
+If many answers omit the same reasoning step, prepare one shared explanation with an anonymous or invented example. Ask students to compare it with their own response and revise the matching section. Keep individual comments for differences that the shared explanation does not address.
+A useful preparation sheet has three entries: what the class did well, the misconception to revisit, and a question that will show whether the correction has been understood. You can compile it while marking without producing a separate report for every student. For batch organisation and comment codes, see our guide to checking answer sheets faster .
+
+## How to review AI-generated feedback
+Read the comment against the original response, not just the extracted text. A confident explanation can still refer to a symbol that was misread or a point the student actually included. Before sharing, check whether the comment is accurate, relevant to the scheme, consistent with the final mark and understandable without further interpretation.
+Check that it gives the right amount of help for the response task. A full model solution may be appropriate for discussion; a hint may be more useful when the student is about to retry. The teacher should choose how to use the feedback in the lesson. Our moderation checklist includes this final consistency check before release.
+Where Evalezy fits
+Evalezy returns a checked copy PDF with red-pen annotations, short notes and question marks. Teachers can inspect per-question feedback and the criteria breakdown during review and edit marks before releasing results. Use the reviewed copy as the starting point for correction and discussion; the student response activity is something you plan in your teaching.
+
+Book a demo
+
+## Sources
+
+- Education Endowment Foundation: Teacher Feedback to Improve Pupil Learning (checked 10 October 2026)
+
+## Frequently asked questions
+What should I write as feedback on an answer sheet? +
+Identify a specific part of the answer, explain what is missing or successful against the criterion, and give one manageable next action. For example: You named the cause; now add a sentence explaining how it produced the outcome.
+
+Does every answer need a long written comment? +
+No. Choose the format and detail that suit the learning need. A short correction prompt may be enough for a calculation slip; a misconception may need a worked example, conversation or additional teaching.
+
+How can students use feedback after an exam? +
+Ask them to locate the relevant criterion, correct one answer and try a similar question. Check that the new response shows the intended improvement rather than only a copied model answer.
+
+Can teachers use AI-generated marking comments? +
+They can use them as draft feedback to review. Check that each comment accurately describes the student's work, matches the final marks and suggests a suitable next step before sharing it.
+
+On this page
+
+- What useful feedback contains
+- Subject-specific examples
+- Make comments match marks
+- A student response routine
+- Whole-class feedback
+- Reviewing AI comments
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+Read
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
 # UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps) | Evalezy
 URL: https://evalezy.com/blog/upsc-answer-writing-evaluation-at-scale/
 
@@ -3023,14 +3427,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-For developers
-Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Read
 Guides
-How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Read
-Assessment
-On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
@@ -3297,14 +3701,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Guides
-UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Read
-Guides
-How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
-Read
 Assessment
-On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Maths Step Marking: How to Award Partial Credit Fairly
+Read
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
@@ -3490,14 +3894,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Guides
-UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Read
-For developers
-Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
-Read
 Assessment
-On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Maths Step Marking: How to Award Partial Credit Fairly
+Read
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
@@ -3667,14 +4071,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Guides
-UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Read
-For developers
-Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Read
 Guides
-How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
@@ -3839,14 +4243,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Guides
-UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Read
-For developers
-Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Read
 Guides
-How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
@@ -4003,14 +4407,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Guides
-UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Read
-For developers
-Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Read
 Guides
-How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
@@ -4196,14 +4600,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Guides
-UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
-Read
-For developers
-Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Read
 Guides
-How to Scan Answer Sheets With a Phone: A Practical Guide for Schools
+Answer Sheet Moderation: A Checklist Before Releasing Results
+Read
+Guides
+Feedback on Student Answer Sheets: Examples That Guide Revision
 Read
 
 ## See your own copies checked.
