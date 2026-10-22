@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Evalezy",
+    "company": "Vidyayatan Technologies LLP (Vacademy)",
+    "website": "https://evalezy.com",
+    "hq_country": "India",
+    "founded_year": 2026,
+    "segment": "ai-copy-checking",
+    "target_customers": "schools, coaching institutes, UPSC/PSC programmes, colleges, exam bodies, edtech platforms (API)",
+    "pricing": {"public_pricing": true, "model": "per page", "entry_price": {"amount": 1, "currency": "INR", "period": "page", "plan_name": "Dashboard / API", "notes": "$0.01 per page outside India; failed, stopped and unreadable copies free; excl. GST"}, "free_plan": false},
+    "capabilities": {
+      "handwritten_reading": {"value": "yes", "evidence": "Reads scanned or phone-photographed handwritten copies (PDF)"},
+      "subjective_ai_marking": {"value": "yes", "evidence": "Marks every answer against a marking scheme per question"},
+      "stem_maths": {"value": "yes", "evidence": "Reads maths working; unsure equation lines get a second read by an equation reader. Diagrams judged by labels only"},
+      "rubric_marking_scheme": {"value": "yes", "evidence": "AI-drafted or teacher-written criteria per question that add up to the marks; model answers"},
+      "partial_marks_feedback": {"value": "yes", "evidence": "Half-mark steps with a written reason per question and criteria breakdown"},
+      "typed_answers": {"value": "yes", "evidence": "Grades typed long answers (essays, letters, emails) from online tests"},
+      "indian_languages": {"value": "no", "evidence": "English answers only; Hindi/regional copies fail with language_not_supported (not charged)"},
+      "bulk_scan_ingest": {"value": "yes", "evidence": "Up to 200 PDFs per upload in the dashboard; API uploads up to 100 PDFs per call"},
+      "student_identification": {"value": "yes", "evidence": "Reads name, roll number and class from the top of page 1 and matches to the class list; never guesses"},
+      "annotated_copy": {"value": "yes", "evidence": "Returns the student's own copy checked in a handwriting-style red pen with marks and notes"},
+      "teacher_review": {"value": "yes", "evidence": "AI marks are drafts; teacher reviews, overrides and releases (dashboard) or finalizes (API)"},
+      "question_paper_import": {"value": "yes", "evidence": "Upload the question paper and it is read into questions with marks (dashboard)"},
+      "public_api": {"value": "yes", "evidence": "Evaluation API v1 live since 2 Oct 2026, docs at docs.evalezy.com"},
+      "integrity_checks": {"value": "no", "evidence": "No plagiarism or AI-writing detection on answers today"}
+    },
+    "scale": {"customers_claimed": null, "funding_or_owner_notes": "Product of Vacademy (Vidyayatan Technologies LLP)"},
+    "notable_2025_2026": "Launched the Evaluation API (v1) on 2 October 2026.",
+    "notable_source": "https://docs.evalezy.com/platform/changelog",
+    "sources": {"homepage": "https://evalezy.com/", "pricing": "https://evalezy.com/pricing/", "capabilities": "https://evalezy.com/how-it-works/", "capabilities.public_api": "https://docs.evalezy.com/", "capabilities.indian_languages": "https://docs.evalezy.com/platform/roadmap"},
+    "as_of": "2026-10-22"
+  }
+]

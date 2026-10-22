@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-10-10 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-10-22 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -1674,6 +1674,27 @@ Book a demo See a real checked copy
 
 ---
 
+# Evalezy Research: Data on Answer Sheet Evaluation | Evalezy
+URL: https://evalezy.com/research/
+
+- Home
+- / Research
+Evalezy Research
+
+# Research on how answer sheets get checked
+Sourced data on the tools schools, coaching institutes, universities and exam boards use to check student answers: what each one documents, what it costs and where the gaps are. Every figure links to its source and the data is free to download under CC BY 4.0.
+
+## AI Answer Sheet Evaluation Landscape 2026
+37 AI copy-checking, on-screen marking, scan-and-grade, AI grading and OMR tools from India and abroad, scored on 14 capabilities and mapped by marking depth and exam-workflow coverage.
+Read the report
+3 of 36
+tools document the full scan pipeline, from reading handwriting to identifying the student
+
+Evalezy sells AI answer-sheet checking, so it is one of the vendors in this market; it is scored with the same rubric as everyone else. Dataset: CSV . Corrections with a source are welcome at hello@evalezy.com .
+
+
+---
+
 # The Evalezy Blog: Assessment and AI Checking Guides | Evalezy
 URL: https://evalezy.com/blog/
 
@@ -2876,6 +2897,283 @@ AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
 Book a demo See a real checked copy
+
+
+---
+
+# AI Answer Sheet Evaluation Landscape 2026 | Evalezy
+URL: https://evalezy.com/research/ai-answer-sheet-evaluation-landscape-2026/
+
+- Home
+- / Research
+- / Answer sheet evaluation landscape 2026
+Evalezy Research · Evaluation landscape
+
+# AI Answer Sheet Evaluation Landscape 2026: 37 Copy-Checking, OSM and AI Grading Tools Compared
+We compared 37 tools that check student answers, from Indian AI copy checkers and on-screen marking vendors to global scan-and-grade platforms and AI grading assistants, on 14 jobs from reading handwriting to returning results. AI marking is now common: 20 of the 36 other tools document it. The rest of the job is not. Only 3 document the full scan pipeline (handwriting, AI marking, bulk upload and student identification), none of them Indian; 6 return the student's own sheet marked up, all of them with a person doing the marking; and none documents a public grading API.
+By the Evalezy research team · Published 22 October 2026 · Updated 22 October 2026 · Download the data (CSV)
+Disclosure. Evalezy publishes this report and sells AI answer-sheet checking, so we are one of the vendors in this market. Every score links to its source, the method is published below, Evalezy is scored with the same rubric (including what it does not do), and anything we could not verify counts as not documented. Spot an error? Write to hello@evalezy.com with a source and we will correct it.
+
+## Key findings
+20 of 36
+tools document AI marking of written answers. It is no longer rare; what surrounds it is.
+
+3 of 36
+document the whole scan pipeline natively: reading handwriting, AI marking, bulk upload and identifying the student (Top Marks AI, stylus, No More Marking). None is Indian.
+
+6 of 36
+return the student's own sheet marked up. In all of them a person makes the marks on screen.
+
+0 of 36
+document a public grading API natively (6 more mention one only on enterprise plans or via integrations).
+
+3 of 36
+document grading answers written in Hindi or another Indian language (Eklavvya, CrazyGoldFish, PrepAiro). Evalezy does not, yet.
+
+11 of 36
+publish prices. None of the 6 Indian on-screen marking vendors does; their contracts are quoted per exam.
+
+## The Evalezy Evaluation Map
+Each tool is placed by how much of the marking job it can do (left to right) and how much of the exam workflow around the marking it covers (bottom to top). Scores come only from what each vendor documents publicly; the method is below. Evalezy is on the map with the same rubric, scored from its own pages, including the two things it does not do: Indian-language answers and plagiarism or AI-writing checks.
+Marking depth vs. exam-workflow coverage, 2026 37 tools. Marking: handwriting, AI marking, maths, rubric, partial marks with reasons, typed answers, Indian languages. Workflow: bulk scans, student identification, annotated copy, teacher review, paper import, public API, integrity checks.
+- Evalezy
+- Indian vendors
+- Global vendors
+
+- 0%0%
+
+- 25%25%
+
+- 50%50%
+
+- 75%75%
+
+- 100%100%WORKFLOW-FIRSTEND TO ENDPOINT TOOLSMARKING-FIRSTMarking depth →Exam-workflow coverage →Eklavvya: marking 79%, workflow 50% (9 of 14) · AI copy checkingEklavvyaSmart Paper: marking 64%, workflow 0% (4.5 of 14) · AI copy checkingSmart PaperCrazyGoldFish: marking 71%, workflow 21% (6.5 of 14) · AI copy checkingCrazyGoldFishExtramarks: marking 43%, workflow 14% (4 of 14) · LMS with AI gradingSuperKalam: marking 50%, workflow 0% (3.5 of 14) · UPSC answer writingAnswerWriting: marking 50%, workflow 0% (3.5 of 14) · UPSC answer writingPrepAiro: marking 50%, workflow 7% (4 of 14) · UPSC answer writingCollectorBabu: marking 29%, workflow 0% (2 of 14) · UPSC answer writingLikhit: marking 50%, workflow 7% (4 of 14) · UPSC answer writingTCS iON: marking 14%, workflow 29% (3 of 14) · On-screen markingTCS iONMeritTrac: marking 7%, workflow 43% (3.5 of 14) · On-screen markingMeritTracCoempt Onmark: marking 21%, workflow 57% (5.5 of 14) · On-screen markingCoempt OnmarkExcelsoft Saras: marking 29%, workflow 36% (4.5 of 14) · On-screen markingMercer | Mettl: marking 14%, workflow 21% (2.5 of 14) · On-screen markingDEXIT Global: marking 21%, workflow 57% (5.5 of 14) · On-screen markingGradescope: marking 64%, workflow 64% (9 of 14) · Scan-and-gradeGradescopeCrowdmark: marking 50%, workflow 57% (7.5 of 14) · Scan-and-gradeCrowdmarkRM Assessor: marking 43%, workflow 50% (6.5 of 14) · On-screen markingRM AssessorInspera Assessment: marking 43%, workflow 43% (6 of 14) · On-screen markingSurpass Scora: marking 57%, workflow 29% (6 of 14) · AI copy checkingTop Marks AI: marking 71%, workflow 50% (8.5 of 14) · AI copy checkingEdexia: marking 71%, workflow 50% (8.5 of 14) · AI copy checkingstylus: marking 57%, workflow 43% (7 of 14) · AI copy checkingAkindi: marking 0%, workflow 14% (1 of 14) · OMR / bubble sheetsZipGrade: marking 14%, workflow 14% (2 of 14) · OMR / bubble sheetsZipGradeGradeCam: marking 0%, workflow 0% (0 of 14) · OMR / bubble sheetsGradeCamCoGrader: marking 71%, workflow 57% (9 of 14) · AI grading assistantCoGraderEssayGrader: marking 71%, workflow 50% (8.5 of 14) · AI grading assistantBrisk: marking 50%, workflow 29% (5.5 of 14) · LMS with AI gradingMagicSchool: marking 57%, workflow 29% (6 of 14) · LMS with AI gradingWritable: marking 57%, workflow 14% (5 of 14) · LMS with AI gradingWritableTurnitin: marking 57%, workflow 57% (8 of 14) · LMS with AI gradingTurnitinGrade Direct: marking 86%, workflow 36% (8.5 of 14) · AI grading assistantGrade DirectNo More Marking: marking 36%, workflow 43% (5.5 of 14) · AI grading assistantNo More MarkingTimelyGrader: marking 71%, workflow 29% (7 of 14) · AI grading assistantTimelyGraderOlex.AI: marking 43%, workflow 29% (5 of 14) · AI grading assistantEvalezy: marking 86%, workflow 86% (12 of 14) · AI copy checkingEvalezy
+Source: Evalezy Research, vendor websites, help centres and pricing pages read in October 2026. Yes = 1, partial = 0.5, not documented = 0. Hover a point for its scores; the full table is below.
+Show the data as a table
+Tool | Region | Type | Marking % | Workflow % | Of 14 |
+
+Evalezy | India | AI copy checking | 86 | 86 | 12 |
+CoGrader | United States | AI grading assistant | 71 | 57 | 9 |
+Eklavvya | India | AI copy checking | 79 | 50 | 9 |
+Gradescope | United States | Scan-and-grade | 64 | 64 | 9 |
+Edexia | Australia | AI copy checking | 71 | 50 | 8.5 |
+EssayGrader | United States / Canada | AI grading assistant | 71 | 50 | 8.5 |
+Grade Direct | United Kingdom | AI grading assistant | 86 | 36 | 8.5 |
+Top Marks AI | United Kingdom | AI copy checking | 71 | 50 | 8.5 |
+Turnitin | United States | LMS with AI grading | 57 | 57 | 8 |
+Crowdmark | Canada | Scan-and-grade | 50 | 57 | 7.5 |
+stylus | United Kingdom | AI copy checking | 57 | 43 | 7 |
+TimelyGrader | Global | AI grading assistant | 71 | 29 | 7 |
+CrazyGoldFish | India | AI copy checking | 71 | 21 | 6.5 |
+RM Assessor | United Kingdom | On-screen marking | 43 | 50 | 6.5 |
+Inspera Assessment | Global | On-screen marking | 43 | 43 | 6 |
+MagicSchool | United States | LMS with AI grading | 57 | 29 | 6 |
+Surpass Scora | United Kingdom / United States (offices in both) | AI copy checking | 57 | 29 | 6 |
+Brisk | United States | LMS with AI grading | 50 | 29 | 5.5 |
+Coempt Onmark | India | On-screen marking | 21 | 57 | 5.5 |
+DEXIT Global | India | On-screen marking | 21 | 57 | 5.5 |
+No More Marking | United Kingdom | AI grading assistant | 36 | 43 | 5.5 |
+Olex.AI | United Kingdom | AI grading assistant | 43 | 29 | 5 |
+Writable | United States | LMS with AI grading | 57 | 14 | 5 |
+Excelsoft Saras | India | On-screen marking | 29 | 36 | 4.5 |
+Smart Paper | India | AI copy checking | 64 | 0 | 4.5 |
+Extramarks | India | LMS with AI grading | 43 | 14 | 4 |
+Likhit | India | UPSC answer writing | 50 | 7 | 4 |
+PrepAiro | India | UPSC answer writing | 50 | 7 | 4 |
+AnswerWriting | India | UPSC answer writing | 50 | 0 | 3.5 |
+MeritTrac | India | On-screen marking | 7 | 43 | 3.5 |
+SuperKalam | India | UPSC answer writing | 50 | 0 | 3.5 |
+TCS iON | India | On-screen marking | 14 | 29 | 3 |
+Mercer | Mettl | India | On-screen marking | 14 | 21 | 2.5 |
+CollectorBabu | India | UPSC answer writing | 29 | 0 | 2 |
+ZipGrade | United States | OMR / bubble sheets | 14 | 14 | 2 |
+Akindi | Global | OMR / bubble sheets | 0 | 14 | 1 |
+GradeCam | United States | OMR / bubble sheets | 0 | 0 | 0 |
+
+8 of the 36 other tools reach at least half of both axes (Eklavvya, Gradescope, Crowdmark, Top Marks AI, Edexia, CoGrader, EssayGrader, Turnitin). The Indian on-screen marking vendors sit high on workflow and low on marking: they move scanned scripts to human examiners very well, and the examiners still read every answer. The UPSC answer-writing apps sit the other way: instant AI marks for one aspirant at a time, with no batch, no class list and no teacher in the loop. The global AI assistants mark typed essays well and are newer to paper.
+
+## Which capabilities are rare
+Share of 36 tools that document each capability natively Evalezy excluded. Partial support (an add-on, a beta, some question types only, or an integration) is in the table.
+- Teacher review 72% (26 of 36)
+- AI marks written answers 56% (20 of 36)
+- Bulk scan upload 56% (20 of 36)
+- Reads handwriting 53% (19 of 36)
+- Rubric / marking scheme 53% (19 of 36)
+- Partial marks + reasons 47% (17 of 36)
+- Typed answers 42% (15 of 36)
+- Identifies the student 25% (9 of 36)
+- Annotated copy back 17% (6 of 36)
+- Integrity checks 14% (5 of 36)
+- Indian languages 8% (3 of 36)
+- Maths working 6% (2 of 36)
+- Paper import 0% (0 of 36)
+- Public API 0% (0 of 36)
+Source: Evalezy Research, vendor documentation, October 2026.
+Show the data as a table
+Capability | Native (yes) | Partial | Share native | Evalezy |
+
+Reads handwriting | 19 | 7 | 53% | Yes |
+AI marks written answers | 20 | 7 | 56% | Yes |
+Maths working | 2 | 7 | 6% | Yes |
+Rubric / marking scheme | 19 | 6 | 53% | Yes |
+Partial marks + reasons | 17 | 13 | 47% | Yes |
+Typed answers | 15 | 2 | 42% | Yes |
+Indian languages | 3 | 1 | 8% | No |
+Bulk scan upload | 20 | 4 | 56% | Yes |
+Identifies the student | 9 | 6 | 25% | Yes |
+Annotated copy back | 6 | 2 | 17% | Yes |
+Teacher review | 26 | 1 | 72% | Yes |
+Paper import | 0 | 2 | 0% | Yes |
+Public API | 0 | 6 | 0% | Yes |
+Integrity checks | 5 | 5 | 14% | No |
+
+A teacher review step is the norm (26 of 36): almost nobody lets AI marks reach students unchecked. Reading handwriting (19) and AI marking (20) are now common. The rare jobs are the ones that save the most time on a real exam: identifying which student a scanned copy belongs to (9), returning the copy marked up (6), marking maths working (2), Indian-language answers (3), importing the question paper (0) and a public API (0).
+
+## Coverage by type of tool
+Average capabilities covered, out of 14, by type of tool
+- AI copy checking (India) 6.0 of 14 (4)
+- UPSC answer-writing apps 3.4 of 14 (5)
+- On-screen marking (India) 4.1 of 14 (6)
+- AI copy checking (global) 7.5 of 14 (4)
+- Scan-and-grade + OSM (global) 7.3 of 14 (4)
+- AI grading assistants 6.8 of 14 (10)
+- OMR / bubble sheets 1.0 of 14 (3)
+- Evalezy 12 of 14
+Source: Evalezy Research, October 2026. Averages of the scores in the matrix below.
+Show the data as a table
+Type | Tools | Average of 14 |
+
+AI copy checking (India) | 4 | 6.0 |
+UPSC answer-writing apps | 5 | 3.4 |
+On-screen marking (India) | 6 | 4.1 |
+AI copy checking (global) | 4 | 7.5 |
+Scan-and-grade + OSM (global) | 4 | 7.3 |
+AI grading assistants | 10 | 6.8 |
+OMR / bubble sheets | 3 | 1.0 |
+Evalezy | 1 | 12.0 |
+
+## Full capability matrix
+● native · ◐ partial (add-on, beta, limited or via integration) · ○ not offered · – not documented publicly. Sorted by capabilities covered. Hover a symbol for the evidence; the CSV has every value.
+Tool | Reads handwriting | AI marks written answers | Maths working | Rubric / marking scheme | Partial marks + reasons | Typed answers | Indian languages | Bulk scan upload | Identifies the student | Annotated copy back | Teacher review | Paper import | Public API | Integrity checks | Of 14 | Price |
+
+Evalezy AI copy checking · India | ● Yes | ● Yes | ● Yes | ● Yes | ● Yes | ● Yes | ○ No | ● Yes | ● Yes | ● Yes | ● Yes | ● Yes | ● Yes | ○ No | 12 | ₹1 / page |
+CoGrader AI grading assistant · United States | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | ◐ Partial | – Not documented | ● Yes | – Not documented | ◐ Partial | ● Yes | 9 | $15 / month |
+Eklavvya AI copy checking · India | ● Yes | ● Yes | ◐ Partial | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ◐ Partial | – Not documented | ● Yes | ◐ Partial | ◐ Partial | – Not documented | 9 | On request |
+Gradescope Scan-and-grade · United States | ◐ Partial | ◐ Partial | ◐ Partial | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | ● Yes | – Not documented | – Not documented | ◐ Partial | 9 | On request |
+Edexia AI copy checking · Australia | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | ◐ Partial | – Not documented | ● Yes | – Not documented | – Not documented | ● Yes | 8.5 | On request |
+EssayGrader AI grading assistant · United States / Canada | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | ◐ Partial | – Not documented | ● Yes | – Not documented | – Not documented | ● Yes | 8.5 | $14.99 / month |
+Grade Direct AI grading assistant · United Kingdom | ● Yes | ● Yes | ● Yes | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | ◐ Partial | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 8.5 | $25 / 6,000 credits |
+Top Marks AI AI copy checking · United Kingdom | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | – Not documented | – Not documented | ◐ Partial | – Not documented | ● Yes | 8.5 | On request |
+Turnitin LMS with AI grading · United States | ◐ Partial | ◐ Partial | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ◐ Partial | – Not documented | ● Yes | ● Yes | – Not documented | ◐ Partial | ● Yes | 8 | On request |
+Crowdmark Scan-and-grade · Canada | ◐ Partial | ○ No | ◐ Partial | ● Yes | ● Yes | ◐ Partial | – Not documented | ● Yes | ● Yes | ● Yes | ● Yes | – Not documented | – Not documented | – Not documented | 7.5 | $3.75 / student per course |
+stylus AI copy checking · United Kingdom | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | – Not documented | – Not documented | ● Yes | ● Yes | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 7 | On request |
+TimelyGrader AI grading assistant · Global | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ● Yes | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 7 | $10 / month |
+CrazyGoldFish AI copy checking · India | ● Yes | ● Yes | ◐ Partial | ● Yes | ◐ Partial | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | ● Yes | – Not documented | ◐ Partial | – Not documented | 6.5 | On request |
+RM Assessor On-screen marking · United Kingdom | ◐ Partial | ◐ Partial | – Not documented | ◐ Partial | ◐ Partial | ● Yes | – Not documented | ● Yes | ● Yes | – Not documented | ● Yes | – Not documented | – Not documented | ◐ Partial | 6.5 | On request |
+Inspera Assessment On-screen marking · Global | ◐ Partial | ◐ Partial | ◐ Partial | – Not documented | ◐ Partial | ● Yes | – Not documented | ◐ Partial | ● Yes | – Not documented | ● Yes | – Not documented | – Not documented | ◐ Partial | 6 | On request |
+MagicSchool LMS with AI grading · United States | – Not documented | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | ◐ Partial | – Not documented | ◐ Partial | ● Yes | – Not documented | – Not documented | – Not documented | 6 | $8.33 / month |
+Surpass Scora AI copy checking · United Kingdom / United States (offices in both) | ● Yes | ● Yes | – Not documented | ● Yes | ● Yes | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 6 | On request |
+Brisk LMS with AI grading · United States | ◐ Partial | ◐ Partial | – Not documented | ● Yes | ◐ Partial | ● Yes | – Not documented | ◐ Partial | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | ◐ Partial | 5.5 | On request |
+Coempt Onmark On-screen marking · India | – Not documented | ○ No | – Not documented | ● Yes | ◐ Partial | – Not documented | – Not documented | ● Yes | ◐ Partial | ● Yes | ● Yes | – Not documented | ◐ Partial | – Not documented | 5.5 | On request |
+DEXIT Global On-screen marking · India | – Not documented | ○ No | – Not documented | ● Yes | ◐ Partial | – Not documented | – Not documented | ● Yes | ● Yes | ● Yes | ● Yes | – Not documented | – Not documented | – Not documented | 5.5 | On request |
+No More Marking AI grading assistant · United Kingdom | ● Yes | ● Yes | – Not documented | ○ No | ◐ Partial | – Not documented | – Not documented | ● Yes | ● Yes | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 5.5 | £10 / 100 AI custom task credits |
+Olex.AI AI grading assistant · United Kingdom | ● Yes | ◐ Partial | ◐ Partial | ◐ Partial | ◐ Partial | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 5 | Not published |
+Writable LMS with AI grading · United States | – Not documented | ● Yes | – Not documented | ● Yes | ● Yes | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 5 | On request |
+Excelsoft Saras On-screen marking · India | ◐ Partial | ◐ Partial | – Not documented | – Not documented | – Not documented | ● Yes | – Not documented | ● Yes | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | ◐ Partial | 4.5 | On request |
+Smart Paper AI copy checking · India | ● Yes | ● Yes | ● Yes | ● Yes | ◐ Partial | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 4.5 | On request |
+Extramarks LMS with AI grading · India | ● Yes | ● Yes | – Not documented | ◐ Partial | ◐ Partial | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 4 | On request |
+Likhit UPSC answer writing · India | ● Yes | ● Yes | – Not documented | ◐ Partial | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | ◐ Partial | – Not documented | – Not documented | – Not documented | – Not documented | 4 | ₹299 / month |
+PrepAiro UPSC answer writing · India | ● Yes | ● Yes | – Not documented | – Not documented | ◐ Partial | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | ◐ Partial | – Not documented | – Not documented | – Not documented | 4 | ₹999 / year |
+AnswerWriting UPSC answer writing · India | ● Yes | ● Yes | – Not documented | ◐ Partial | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 3.5 | Not published |
+MeritTrac On-screen marking · India | – Not documented | ○ No | – Not documented | – Not documented | ◐ Partial | – Not documented | – Not documented | ● Yes | – Not documented | ● Yes | ● Yes | – Not documented | – Not documented | – Not documented | 3.5 | On request |
+SuperKalam UPSC answer writing · India | ● Yes | ● Yes | – Not documented | ◐ Partial | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 3.5 | ₹1,199 / month |
+TCS iON On-screen marking · India | – Not documented | ○ No | – Not documented | – Not documented | – Not documented | ◐ Partial | ◐ Partial | ● Yes | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | 3 | On request |
+Mercer | Mettl On-screen marking · India | – Not documented | ○ No | – Not documented | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | ● Yes | – Not documented | ◐ Partial | – Not documented | 2.5 | On request |
+CollectorBabu UPSC answer writing · India | ● Yes | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 2 | ₹39,999 / till next Mains |
+ZipGrade OMR / bubble sheets · United States | ○ No | ○ No | ◐ Partial | ○ No | ◐ Partial | ○ No | – Not documented | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 2 | $6.99 / year |
+Akindi OMR / bubble sheets · Global | ○ No | ○ No | – Not documented | – Not documented | – Not documented | ○ No | – Not documented | ● Yes | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 1 | On request |
+GradeCam OMR / bubble sheets · United States | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | – Not documented | 0 | $3.5 / student per year |
+
+Of the 15 Indian and 21 global tools, 11 publish a price. Pricing models vary widely: per teacher per month for the AI assistants, per aspirant per month or year for UPSC apps, per student for scan-and-grade and OMR tools, and quoted per exam for on-screen marking. Evalezy charges per page checked.
+
+## What changed in 2025-26
+
+- Coempt Onmark: Won CBSE's on-screen marking contract (December 2025) for the 2026 Class 12 evaluation; the rollout drew complaints about scan quality, which Coempt attributed to the scanning stage. source
+- TCS iON: Was the other technically qualified bidder for CBSE's on-screen marking contract; CBSE chose Coempt on price, as reported. source
+- Excelsoft Saras: Signed a multi-year deal with the UK exam board AQA (May 2026) to build its next e-marking platform, after a joint AI taskforce on AI-supported marking of handwritten scripts. source
+- Inspera: Acquired Graide, an AI marking and feedback platform, now sold as Inspera Graide. source
+- DEXIT Global: CL Educate closed its acquisition of NSEIT's digital exam business, renamed DEXIT Global, in January 2025. source
+- Extramarks: Began rolling out its Extra Intelligence suite, including AI evaluation of pen-and-paper tests, to partner schools on 31 July 2025. source
+- stylus: Won about £250,000 from the UK Department for Education to develop AI marking of scanned handwritten work with human moderation (reported 28 November 2025). source
+- Brisk: Raised a $15M Series A led by Bessemer Venture Partners (26 March 2025). source
+- Turnitin: Launched Turnitin Clarity (4 March 2025), a drafting space with writing playback and optional AI feedback, as a paid Feedback Studio add-on. source
+- Evalezy: Opened its Evaluation API (v1) to developers on 2 October 2026. source
+
+## When another tool is the better fit
+Breadth is not the only thing that matters. Based on this research, these needs are better served elsewhere today:
+
+- Answers in Hindi or another Indian language: Eklavvya documents eight Indian languages and CrazyGoldFish publishes results on Hindi handwritten answers. Evalezy grades English answers only for now.
+- A board or university running human marking at very large scale, with double marking, seed scripts and examiner panels: the on-screen marking vendors (Coempt Onmark, DEXIT Global, MeritTrac, TCS iON, RM Assessor) are built for that.
+- Plagiarism and AI-writing checks on typed essays: Turnitin, CoGrader, EssayGrader, Top Marks AI and Edexia document them. Evalezy does not.
+- University STEM courses with many short answers and code: Gradescope groups similar answers for fast human grading and checks code similarity.
+- Multiple-choice only: OMR tools such as ZipGrade cost a few dollars a year.
+- Comparative judgement of writing rather than rubric marks: No More Marking.
+
+## Method
+
+- Tools: 37 products that check or grade student answers, in seven groups: Indian AI copy checkers, UPSC and state PSC answer-writing apps, Indian on-screen marking providers, global AI copy checkers, global scan-and-grade and on-screen marking platforms, global AI grading assistants, and OMR tools. Tools we could not document at all were left out, and the reasons are kept with the research notes.
+- Evidence: each vendor's own product, help and pricing pages, read in October 2026; where a vendor site blocked reading, a university guide or a news report, marked as third-party in the evidence. Every value has its evidence in the CSV.
+- Scoring: native = 1, partial = 0.5, not offered or not documented = 0. Marking covers 7 capabilities and workflow 7; each axis is shown as a percentage. Human on-screen marking counts as partial for reading handwriting (the scans are shown to people, not read by software).
+- Evalezy is scored with the same rubric from its own public pages and API docs. It publishes this report, so treat its position as a vendor claim that you can check.
+
+### Limits
+
+- The map measures breadth, not accuracy or quality. We did not test any tool's marks; a tool with fewer capabilities can mark better.
+- “Not documented” scores zero. A vendor may do something it does not describe publicly; send us a source and we will update the record.
+- Prices are shown as published, in their own currency and unit, without conversion. Customer counts are the vendors' own claims.
+Related: One copy checked by a teacher and by Evalezy · Evalezy vs on-screen marking · Evalezy vs a general chatbot · Evalezy pricing
+
+## Sources
+
+- [1] Evalezy: product, help and pricing pages · Evalezy (self-assessed) (Vendor)
+- [2] Eklavvya: product, help and pricing pages · Eklavvya (Splashgain Technology Solutions Pvt Ltd) (Vendor)
+- [3] Smart Paper: product, help and pricing pages · Smart Paper (EdOptimize / Playpower Labs) (Vendor)
+- [4] CrazyGoldFish: product, help and pricing pages · CrazyGoldFish (CrazyGoldFish Technologies) (Vendor)
+- [5] Extramarks: product, help and pricing pages · Extramarks (Extramarks Education) (Vendor)
+- [6] SuperKalam: product, help and pricing pages · SuperKalam (Vendor)
+- [7] AnswerWriting: product, help and pricing pages · AnswerWriting (Anthroholic Technologies Private Limited) (Vendor)
+- [8] PrepAiro: product, help and pricing pages · PrepAiro (VerTune Data Technologies Private Limited) (Vendor)
+- [9] CollectorBabu: product, help and pricing pages · CollectorBabu (Vendor)
+- [10] Likhit: product, help and pricing pages · Likhit (Vendor)
+- [11] TCS iON: product, help and pricing pages · TCS iON (Tata Consultancy Services (TCS iON unit)) (Vendor)
+- [12] MeritTrac: product, help and pricing pages · MeritTrac (MeritTrac Services Pvt Ltd) (Vendor)
+- [13] Coempt Onmark: product, help and pricing pages · Coempt Onmark (Coempt Edu Teck Pvt Ltd (formerly Globarena Technologies)) (Vendor)
+- [14] Excelsoft Saras: product, help and pricing pages · Excelsoft Saras (Excelsoft Technologies Ltd) (Vendor)
+- [15] Mercer | Mettl: product, help and pricing pages · Mercer | Mettl (Mercer) (Vendor)
+- [16] DEXIT Global: product, help and pricing pages · DEXIT Global (DEXIT Global Ltd (formerly NSEIT Ltd), CL Educate group) (Vendor)
+- [17] Gradescope: product, help and pricing pages · Gradescope (Turnitin) (Vendor)
+- [18] Crowdmark: product, help and pricing pages · Crowdmark (Crowdmark Inc.) (Vendor)
+- [19] RM Assessor: product, help and pricing pages · RM Assessor (RM plc (RM Assessment)) (Vendor)
+- [20] Inspera Assessment: product, help and pricing pages · Inspera Assessment (Inspera) (Vendor)
+- [21] Surpass Scora: product, help and pricing pages · Surpass Scora (Surpass Assessment) (Vendor)
+- [22] Top Marks AI: product, help and pricing pages · Top Marks AI (Top Marks AI Ltd) (Vendor)
+- [23] Edexia: product, help and pricing pages · Edexia (Edexia Pty Ltd) (Vendor)
+- [24] stylus: product, help and pricing pages · stylus (LearnCycle Ltd (trading as Stylus Education); Mindflair plc portfolio company) (Vendor)
+- [25] Akindi: product, help and pricing pages · Akindi (Akindi Inc.) (Vendor)
+- [26] ZipGrade: product, help and pricing pages · ZipGrade (ZipGrade LLC) (Vendor)
+- [27] GradeCam: product, help and pricing pages · GradeCam (GradeCam, LLC) (Vendor)
+- [28] CoGrader: product, help and pricing pages · CoGrader (Vendor)
+- [29] EssayGrader: product, help and pricing pages · EssayGrader (Tech Nest Ventures Inc.) (Vendor)
+- [30] Brisk: product, help and pricing pages · Brisk (Brisk Labs Co.) (Vendor)
+- [31] MagicSchool: product, help and pricing pages · MagicSchool (MagicSchool AI) (Vendor)
+- [32] Writable: product, help and pricing pages · Writable (HMH (Houghton Mifflin Harcourt)) (Vendor)
+- [33] Turnitin: product, help and pricing pages · Turnitin (Turnitin (Advance)) (Vendor)
+- [34] Grade Direct: product, help and pricing pages · Grade Direct (EDSYSTEMS LTD) (Vendor)
+- [35] No More Marking: product, help and pricing pages · No More Marking (No More Marking Ltd) (Vendor)
+- [36] TimelyGrader: product, help and pricing pages · TimelyGrader (Vendor)
+- [37] Olex.AI: product, help and pricing pages · Olex.AI (Vendor)
+More: all Evalezy research
 
 
 ---

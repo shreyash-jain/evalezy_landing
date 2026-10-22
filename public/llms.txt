@@ -40,6 +40,9 @@ Key facts:
 - [Evalezy vs on-screen marking (OSM)](https://evalezy.com/compare/on-screen-marking/)
 - [Evalezy vs ChatGPT](https://evalezy.com/compare/chatgpt/)
 
+## Research
+- [AI Answer Sheet Evaluation Landscape 2026](https://evalezy.com/research/ai-answer-sheet-evaluation-landscape-2026/): 37 AI copy-checking, on-screen marking, scan-and-grade, AI grading and OMR tools (India and global) scored on 14 documented capabilities, with a source per vendor, published prices and a CC BY 4.0 CSV (https://evalezy.com/research/ai-answer-sheet-evaluation-landscape-2026.csv). Evalezy publishes it and is scored with the same rubric.
+
 ## More
 - [FAQ](https://evalezy.com/faq/)
 - [Data & privacy](https://evalezy.com/security/)

@@ -29,6 +29,7 @@ export function Footer() {
       title: "Compare & learn",
       links: [
         ...COMPARISONS.map((c) => ({ href: `/compare/${c.slug}/`, label: c.label })),
+        { href: "/research/", label: "Research" },
         { href: "/blog/", label: "Blog" },
         { href: "/faq/", label: "FAQ" },
       ],

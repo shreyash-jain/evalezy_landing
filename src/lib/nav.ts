@@ -23,6 +23,7 @@ export const RESOURCE_NAV = [
   { href: "/how-it-works/", label: "How it works" },
   { href: "/sample/", label: "See a checked copy" },
   { href: "/side-by-side/", label: "AI vs teacher: one copy" },
+  { href: "/research/ai-answer-sheet-evaluation-landscape-2026/", label: "Evaluation landscape 2026" },
   { href: "/blog/", label: "Blog" },
   { href: "/faq/", label: "FAQ" },
   { href: "/security/", label: "Data & privacy" },

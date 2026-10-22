@@ -1,0 +1,3472 @@
+{
+ "capLabels": {
+  "handwritten_reading": "Reads handwriting",
+  "subjective_ai_marking": "AI marks written answers",
+  "stem_maths": "Maths working",
+  "rubric_marking_scheme": "Rubric / marking scheme",
+  "partial_marks_feedback": "Partial marks + reasons",
+  "typed_answers": "Typed answers",
+  "indian_languages": "Indian languages",
+  "bulk_scan_ingest": "Bulk scan upload",
+  "student_identification": "Identifies the student",
+  "annotated_copy": "Annotated copy back",
+  "teacher_review": "Teacher review",
+  "question_paper_import": "Paper import",
+  "public_api": "Public API",
+  "integrity_checks": "Integrity checks"
+ },
+ "marking": [
+  "handwritten_reading",
+  "subjective_ai_marking",
+  "stem_maths",
+  "rubric_marking_scheme",
+  "partial_marks_feedback",
+  "typed_answers",
+  "indian_languages"
+ ],
+ "workflow": [
+  "bulk_scan_ingest",
+  "student_identification",
+  "annotated_copy",
+  "teacher_review",
+  "question_paper_import",
+  "public_api",
+  "integrity_checks"
+ ],
+ "vendors": [
+  {
+   "name": "Evalezy",
+   "fullName": "Evalezy",
+   "company": "Vidyayatan Technologies LLP (Vacademy)",
+   "region": "evalezy",
+   "hq": "India",
+   "segment": "ai-copy-checking",
+   "website": "https://evalezy.com",
+   "target": "schools, coaching institutes, UPSC/PSC programmes, colleges, exam bodies, edtech platforms (API)",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per page",
+    "entry_price": {
+     "amount": 1,
+     "currency": "INR",
+     "period": "page",
+     "plan_name": "Dashboard / API",
+     "notes": "$0.01 per page outside India; failed, stopped and unreadable copies free; excl. GST"
+    },
+    "free_plan": false
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Reads scanned or phone-photographed handwritten copies (PDF)"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Marks every answer against a marking scheme per question"
+    },
+    "stem_maths": {
+     "value": "yes",
+     "evidence": "Reads maths working; unsure equation lines get a second read by an equation reader. Diagrams judged by labels only"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "AI-drafted or teacher-written criteria per question that add up to the marks; model answers"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Half-mark steps with a written reason per question and criteria breakdown"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Grades typed long answers (essays, letters, emails) from online tests"
+    },
+    "indian_languages": {
+     "value": "no",
+     "evidence": "English answers only; Hindi/regional copies fail with language_not_supported (not charged)"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Up to 200 PDFs per upload in the dashboard; API uploads up to 100 PDFs per call"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Reads name, roll number and class from the top of page 1 and matches to the class list; never guesses"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "Returns the student's own copy checked in a handwriting-style red pen with marks and notes"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "AI marks are drafts; teacher reviews, overrides and releases (dashboard) or finalizes (API)"
+    },
+    "question_paper_import": {
+     "value": "yes",
+     "evidence": "Upload the question paper and it is read into questions with marks (dashboard)"
+    },
+    "public_api": {
+     "value": "yes",
+     "evidence": "Evaluation API v1 live since 2 Oct 2026, docs at docs.evalezy.com"
+    },
+    "integrity_checks": {
+     "value": "no",
+     "evidence": "No plagiarism or AI-writing detection on answers today"
+    }
+   },
+   "marking": 86,
+   "workflow": 86,
+   "breadth": 12.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Product of Vacademy (Vidyayatan Technologies LLP)"
+   },
+   "notable": "Launched the Evaluation API (v1) on 2 October 2026.",
+   "notableSource": "https://docs.evalezy.com/platform/changelog",
+   "sources": {
+    "homepage": "https://evalezy.com/",
+    "pricing": "https://evalezy.com/pricing/",
+    "capabilities": "https://evalezy.com/how-it-works/",
+    "capabilities.public_api": "https://docs.evalezy.com/",
+    "capabilities.indian_languages": "https://docs.evalezy.com/platform/roadmap"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Eklavvya",
+   "fullName": "Eklavvya AI Answer Sheet Checking (OSM Auto Evaluation)",
+   "company": "Splashgain Technology Solutions Pvt Ltd",
+   "region": "india",
+   "hq": "India",
+   "segment": "ai-copy-checking",
+   "website": "https://www.eklavvya.com",
+   "target": "universities, schools, coaching institutes, certification and corporate exam bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": false
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "OCR \"converts handwritten content into accurate, indexed digital text\"; scanned booklets are OCR-processed"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "LLM scores each answer against the model answer and gives a draft AI score per question and total"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Coaching page lists Physics, Chemistry, Mathematics subjective problems and shows derivation/ray-diagram feedback; equation handling not described"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Model answer per question plus four evaluation modes (Easy, Default, Moderate, Strict); product page says grading follows rubrics"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Partial credit assessed; reviewers see the AI's reasoning under \"Why this score\" for each question"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "A separate Auto Descriptive Answer Evaluation page refers to online descriptive tests but does not state that typed answers are graded"
+    },
+    "indian_languages": {
+     "value": "yes",
+     "evidence": "Hindi, Marathi, Tamil, Telugu, Bengali, Kannada, Gujarati, Malayalam listed; model answer must be in the same language as the response"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Scanner role uploads scanned booklets into OSM; vendor claims 100,000+ answer sheets per session"
+    },
+    "student_identification": {
+     "value": "partial",
+     "evidence": "Student identity masked under a QR/bar code for blind marking; name/roll reading not described"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Students can view scanned evaluated scripts; on-page AI annotation not described"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Examiner can Accept, Override or Comment per question; moderator and re-evaluator keep an audit trail of AI and human scores"
+    },
+    "question_paper_import": {
+     "value": "partial",
+     "evidence": "FAQ: team helps you upload your first question paper during setup; automatic reading into questions not described"
+    },
+    "public_api": {
+     "value": "partial",
+     "evidence": "Product page: connect with any REST API, plus MCP, Make and n8n; no public grading API docs found"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "No plagiarism or AI-writing detection mentioned on the AI checking pages"
+    }
+   },
+   "marking": 79,
+   "workflow": 50,
+   "breadth": 9.0,
+   "scale": {
+    "customers_claimed": "Client names shown (NMIMS, Sharda University, Delhi Public School, WeSchool, Tata Power); no total count",
+    "funding_or_owner_notes": "Copyright Splashgain Technology Solutions Pvt Ltd; ISO 27001 and CERT-In claimed. AI evaluation is an Enterprise feature, enabled per organisation plan"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.eklavvya.com/ai-answer-sheet-checking/",
+    "pricing": "https://www.eklavvya.com/pricing/",
+    "capabilities": "https://help.eklavvya.com/a/osm-auto-evaluation/",
+    "capabilities.stem_maths": "https://www.eklavvya.com/ai-grading-coaching-institute/",
+    "capabilities.question_paper_import": "https://www.eklavvya.com/ai-grading-coaching-institute/",
+    "capabilities.indian_languages": "https://www.eklavvya.com/ai-answer-sheet-checking/",
+    "capabilities.public_api": "https://www.eklavvya.com/ai-answer-sheet-checking/",
+    "capabilities.typed_answers": "https://www.eklavvya.com/auto-descriptive-answer-evaluation-demo/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Smart Paper",
+   "fullName": "Smart Paper",
+   "company": "EdOptimize / Playpower Labs",
+   "region": "india",
+   "hq": "India",
+   "segment": "ai-copy-checking",
+   "website": "https://www.getsmartpaper.com",
+   "target": "teachers and state school systems (paper worksheets and assessments)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "App \"immediately converts student handwriting to digital text\" from a photo"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Gives \"suggested scores based on your rubrics\"; analyses handwritten essays and responses with AI assistance"
+    },
+    "stem_maths": {
+     "value": "yes",
+     "evidence": "AI \"recognizes mathematical notation and can identify common misconceptions\"; equations, diagrams, step-by-step work"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Suggested scores are based on the teacher's rubrics"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "MIT Solve listing (third-party): LLMs grade and give feedback per item; partial-mark reasons not described on vendor site"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Paper-first product; typed answer grading not described"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "No language list on vendor site; MIT Solve listing does not specify languages"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Workflow shown as photographing sheets in the app; MIT Solve (third-party) cites an engine handling up to 25,000 scans/min"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Teachers print Smart Paper worksheets from the app; how a sheet is matched to a student is not described"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Searchable archive of student work described; marked-up copy not described"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Scores are described as 'suggested'; an explicit review/override step is not documented"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Worksheets are created in the app, not imported from an existing paper"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "No API mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 64,
+   "workflow": 0,
+   "breadth": 4.5,
+   "scale": {
+    "customers_claimed": "\"over 5 million student assessments worldwide\" (vendor); MIT Solve listing: ~235,000 teachers and 4.6M students in Rajasthan",
+    "funding_or_owner_notes": "Site titled 'by EdOptimize'; MIT Solve lists the Playpower Labs team, Gandhinagar, Gujarat. UNESCO recognition reported (Jan 2024, ANI)"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.getsmartpaper.com/",
+    "capabilities": "https://www.getsmartpaper.com/",
+    "capabilities.partial_marks_feedback": "https://solve.mit.edu/solutions/90696",
+    "capabilities.bulk_scan_ingest": "https://solve.mit.edu/solutions/90696",
+    "scale": "https://solve.mit.edu/solutions/90696"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "CrazyGoldFish",
+   "fullName": "CrazyGoldFish",
+   "company": "CrazyGoldFish Technologies",
+   "region": "india",
+   "hq": "India",
+   "segment": "ai-copy-checking",
+   "website": "https://www.crazygoldfish.com",
+   "target": "schools, coaching networks, edtech platforms and NGOs (evaluation infrastructure and APIs)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"scores handwritten, subjective answers at scale\""
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Exam Evaluation and Assignment Evaluation products score subjective answers"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Homepage examples use calculus and fractions with step-level notes (\"Misses sign convention at step 3\"); no STEM documentation"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Responses are interpreted against rubrics"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Output includes concept, error type, mastery, confidence and suggested action; partial-mark reasons not explicitly shown"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Assignment Evaluation listed; typed answer grading not described"
+    },
+    "indian_languages": {
+     "value": "yes",
+     "evidence": "Vendor reports reliability alpha 0.808 on Hindi handwritten answers across 2 states and 7 subjects"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Pitches high-volume mock evaluation for coaching networks; batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Human-in-the-loop, governed review; teachers remain \"the final authority\""
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "public_api": {
+     "value": "partial",
+     "evidence": "Evaluation APIs offered with a sample endpoint on the homepage; no public API documentation found"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 71,
+   "workflow": 21,
+   "breadth": 6.5,
+   "scale": {
+    "customers_claimed": "\"Six live deployments\"; logos Vedantu, ClassTeacher, Educate Girls (vendor)",
+    "funding_or_owner_notes": "Listed on MeitY IndiaAI Compendium and AIKosh; vendor claims up to 60% less evaluation time"
+   },
+   "notable": "Featured as a case study in MeitY's India AI Impact Summit 2026 compendium (per vendor homepage).",
+   "notableSource": "https://www.crazygoldfish.com/",
+   "sources": {
+    "homepage": "https://www.crazygoldfish.com/",
+    "capabilities": "https://www.crazygoldfish.com/",
+    "scale": "https://aikosh.indiaai.gov.in/home/use-cases/details/crazygoldfish_technologies_ai_powered_assessment_engine_reduces_evaluation_time_by_up_to_60_in_subjective_learning_assessments.html"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Extramarks",
+   "fullName": "Extramarks Extra Intelligence (Offline Test Evaluation)",
+   "company": "Extramarks Education",
+   "region": "india",
+   "hq": "India",
+   "segment": "lms-ai",
+   "website": "https://www.extramarks.com",
+   "target": "K-12 partner schools",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"Teachers upload scanned copies of handwritten answer sheets, and AI reads and scores them.\""
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Press release: system evaluates every answer, \"including long-form subjective ones\""
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Maths not mentioned for this feature"
+    },
+    "rubric_marking_scheme": {
+     "value": "partial",
+     "evidence": "Extra Intelligence \"follows board-specific marking schemes\" (Automated Grading section); custom per-question rubric not described"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Teachers can give \"feedback that explains how each mark was earned\"; whether AI writes it is unclear"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not described for the evaluation feature"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Multiple regional languages claimed for the suite generally, not stated for answer evaluation"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "\"You can review and adjust the scores\"; AI adapts to strict or lenient marking and gives the teacher the final say"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Tests are created in the platform; import of an existing paper not described"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned for answer evaluation"
+    }
+   },
+   "marking": 43,
+   "workflow": 14,
+   "breadth": 4.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Feature sits inside Extramarks' Extra Intelligence AI suite for partner schools"
+   },
+   "notable": "Began rolling out the Extra Intelligence AI suite, including AI evaluation of pen-and-paper tests, to partner schools on 31 July 2025.",
+   "notableSource": "https://www.theweek.in/wire-updates/business/2025/07/31/dcm153-biz-extramarks.html",
+   "sources": {
+    "homepage": "https://www.extramarks.com/",
+    "capabilities": "https://www.extramarks.com/ai-in-education/how-ai-will-change-standardised-testing/",
+    "capabilities.subjective_ai_marking": "https://www.theweek.in/wire-updates/business/2025/07/31/dcm153-biz-extramarks.html"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "SuperKalam",
+   "fullName": "SuperKalam",
+   "company": "SuperKalam",
+   "region": "india",
+   "hq": "India",
+   "segment": "upsc-answer-writing",
+   "website": "https://superkalam.com",
+   "target": "individual UPSC CSE aspirants",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per student/yr",
+    "entry_price": {
+     "amount": 1199,
+     "currency": "INR",
+     "period": "month",
+     "plan_name": "Monthly",
+     "notes": "Auto-pay monthly; 6 Months Plan Rs 5,499 one-time; Mains '27 Plan Rs 7,499 one-time. Other SuperKalam pages show different prices"
+    },
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"Upload handwritten mains answers for AI evaluation in under 60 seconds\""
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI evaluates GS, Ethics, Essay and Optional answers with marks"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "rubric_marking_scheme": {
+     "value": "partial",
+     "evidence": "Fixed criteria with weightage: relevance, structure, facts/examples, depth of analysis, presentation; custom rubrics not offered"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Marks plus comments on introduction, body and conclusion, demand of the question, and a model answer"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Hindi-medium evaluation not mentioned on pricing, evaluation or llms.txt pages"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Single-aspirant app; batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not applicable/not described (individual accounts)"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Mentions \"examiner-style remarks\"; marked-up copy not described"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Described as an AI mentor; no human review mentioned"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 50,
+   "workflow": 0,
+   "breadth": 3.5,
+   "scale": {
+    "customers_claimed": "\"Loved by 3,00,000+ aspirants\" (vendor)",
+    "funding_or_owner_notes": "Y Combinator W23; $2M seed led by Y Combinator and FundersClub (May 2024); founders Vimal Singh Rathore and Aseem Gupta"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://superkalam.com/",
+    "pricing": "https://superkalam.com/pricing",
+    "capabilities": "https://superkalam.com/llms.txt",
+    "capabilities.rubric_marking_scheme": "https://superkalam.com/pricing",
+    "founded_year": "https://www.outlookbusiness.com/corporate/superkalam-raises-2m-in-seed-funding-led-by-ycombinator-and-fundersclub"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "AnswerWriting",
+   "fullName": "AnswerWriting",
+   "company": "Anthroholic Technologies Private Limited",
+   "region": "india",
+   "hq": "India",
+   "segment": "upsc-answer-writing",
+   "website": "https://answerwriting.com",
+   "target": "individual UPSC and State PSC aspirants (13 exams listed)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "free",
+    "entry_price": {
+     "amount": 0,
+     "currency": "INR",
+     "period": "evaluation",
+     "plan_name": "Free",
+     "notes": "Site says 'Free / Affordable Pro'; Pro price not shown on the pages opened"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"Advanced OCR reads your handwriting\"; photo or PDF (JPG, PNG, PDF)"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI scores answers on structure, context, keywords and relevance"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "rubric_marking_scheme": {
+     "value": "partial",
+     "evidence": "\"Tailored evaluation rubrics for each exam's unique marking scheme\"; per-question custom rubric not described"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Section scores (Introduction, Content & Analysis, Conclusion, Structure & Flow) with model answer and tips"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Essay Evaluator listed; typed input not described"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "FAQ asks about Hindi-medium suitability but no answer was visible"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Single-aspirant tool; batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not applicable/not described (individual accounts)"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "AI-driven evaluation; human review not offered on the pages opened"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 50,
+   "workflow": 0,
+   "breadth": 3.5,
+   "scale": {
+    "customers_claimed": "\"100K+ aspirants\"; \"58000+\" answers evaluated this month (vendor)",
+    "funding_or_owner_notes": "Vendor claims 98% consistency with human evaluators from internal benchmarks"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://answerwriting.com/",
+    "pricing": "https://answerwriting.com/upgrade",
+    "capabilities": "https://answerwriting.com/",
+    "capabilities.rubric_marking_scheme": "https://answerwriting.com/upgrade"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "PrepAiro",
+   "fullName": "PrepAiro",
+   "company": "VerTune Data Technologies Private Limited",
+   "region": "india",
+   "hq": "India",
+   "segment": "upsc-answer-writing",
+   "website": "https://prepairo.ai",
+   "target": "individual UPSC aspirants (also GRE, GMAT, IB MYP verticals)",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per student/yr",
+    "entry_price": {
+     "amount": 999,
+     "currency": "INR",
+     "period": "year",
+     "plan_name": "Plus/Pro",
+     "notes": "AI evaluation 'Included in Rs 999/year', unlimited for Plus/Pro; human evaluation Rs 100-200 per answer. PrepAiro's SuperKalam comparison page quotes Pro at Rs 1,499"
+    },
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"Take photo, upload via app\""
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Estimated mark out of the question's marks with a conservative-to-optimistic range and percentile"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Calibrated on 10,000+ human-evaluated answers; rubric not described"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Estimated marks per answer with feedback; per-criterion reasons not described"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "indian_languages": {
+     "value": "yes",
+     "evidence": "\"Hindi + English answers accepted\""
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Single-aspirant app; batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not applicable/not described (individual accounts)"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "teacher_review": {
+     "value": "partial",
+     "evidence": "AI result is not reviewed; human evaluation sold separately at Rs 100-200 per answer"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 50,
+   "workflow": 7,
+   "breadth": 4.0,
+   "scale": {
+    "customers_claimed": "UPSC page: \"1.5L+ aspirants\"; homepage: 100,000+ learners, 500+ paying subscribers across verticals (vendor, inconsistent)",
+    "funding_or_owner_notes": "Brand of VerTune Data Technologies Private Limited"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://prepairo.ai/",
+    "pricing": "https://prepairo.ai/upsc/llms/upsc-ai-mains-evaluation/",
+    "capabilities": "https://prepairo.ai/upsc/llms/upsc-ai-mains-evaluation/",
+    "pricing.notes": "https://prepairo.ai/upsc/llms/prepairo-vs-superkalam/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "CollectorBabu",
+   "fullName": "CollectorBabu",
+   "company": "CollectorBabu",
+   "region": "india",
+   "hq": "India",
+   "segment": "upsc-answer-writing",
+   "website": "https://collectorbabu.com",
+   "target": "individual UPSC aspirants (evaluation plus 1:1 mentorship)",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per student/yr",
+    "entry_price": {
+     "amount": 39999,
+     "currency": "INR",
+     "period": "till next Mains",
+     "plan_name": "Zenith Mentorship + Evaluation (GS + Essay)",
+     "notes": "GS + Essay + Optional Rs 44,999; includes unlimited GS + Essay evaluation in 24h and 1:1 mentorship. Trial plan listed without price; standalone AI Answer Review price not shown"
+    },
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"Instantly evaluate hand-written answers in seconds\"; full PDF uploads also accepted"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Separate \"AI Answer Review\" service; instant evaluation of handwritten answers"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Scoring method not described"
+    },
+    "partial_marks_feedback": {
+     "value": "unknown",
+     "evidence": "Testimonials mention detailed feedback; marks breakdown not described"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Hindi not mentioned"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Single-aspirant tool; batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not applicable/not described (individual accounts)"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "\"Download Evaluated Copies\" refers to toppers' sheets; marked-up user copy not described"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Full-PDF \"comprehensive review within 24 hours\" and mentor plan; whether a human reviews AI marks is not stated"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 29,
+   "workflow": 0,
+   "breadth": 2.0,
+   "scale": {
+    "customers_claimed": "\"30k+ students\"; 150k+ / 2,00,000+ answers evaluated (vendor, inconsistent figures on one page)",
+    "funding_or_owner_notes": "No legal entity or founders named on the pages opened"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://collectorbabu.com/",
+    "pricing": "https://collectorbabu.com/pricing",
+    "capabilities": "https://collectorbabu.com/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Likhit",
+   "fullName": "Likhit",
+   "company": "Likhit",
+   "region": "india",
+   "hq": "India",
+   "segment": "upsc-answer-writing",
+   "website": "https://likhit.in",
+   "target": "individual UPSC Mains aspirants",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per student/yr",
+    "entry_price": {
+     "amount": 299,
+     "currency": "INR",
+     "period": "month",
+     "plan_name": "Pro",
+     "notes": "Auto-renewing monthly; also a 30-day Pro Pass at Rs 299. Free plan: 3 evaluations/month, 250-word cap"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "\"Upload a photo of your handwritten answer\"; OCR"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI overall score with a 4-axis breakdown"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "rubric_marking_scheme": {
+     "value": "partial",
+     "evidence": "Fixed axes: Introduction, Content, Structure, Conclusion, each out of 5; custom rubrics not offered"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Per-axis scores; Pro adds line-level margin notes, rewrite suggestions and a feedback summary"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Hindi not mentioned"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Single-aspirant tool; batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not applicable/not described (individual accounts)"
+    },
+    "annotated_copy": {
+     "value": "partial",
+     "evidence": "Pro only: line-level margin notes; whether shown on the photographed page is not stated"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "AI-generated feedback; no human review of marks mentioned"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 50,
+   "workflow": 7,
+   "breadth": 4.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "No legal entity or founding date named on the pricing page"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://likhit.in/",
+    "pricing": "https://likhit.in/pricing",
+    "capabilities": "https://likhit.in/pricing"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "TCS iON",
+   "fullName": "TCS Marking as a Service (TCS iON Digital Marking Hub)",
+   "company": "Tata Consultancy Services (TCS iON unit)",
+   "region": "india",
+   "hq": "India",
+   "segment": "osm",
+   "website": "https://www.tcs.com/what-we-do/industries/education/solution/marking-service-digital-secure-faster-evaluation",
+   "target": "educational institutions, exam bodies and boards (managed marking service)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Answer booklets are scanned and marked by human evaluators; no machine reading of handwriting documented"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Human evaluators mark; the 'integrated AI platform' is described as intelligent controls to prevent human errors, not AI marking"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Not documented on the service page"
+    },
+    "partial_marks_feedback": {
+     "value": "unknown",
+     "evidence": "Page mentions 'personalized feedback with analytics-driven insights' but not per-question reasons"
+    },
+    "typed_answers": {
+     "value": "partial",
+     "evidence": "2019 release: evaluators trained to evaluate textual and spoken (audio) responses; platform supports video, audio and paper-pen marking"
+    },
+    "indian_languages": {
+     "value": "partial",
+     "evidence": "Service 'can be customized for different languages and subjects'; no Indian language named"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Four-step process includes scanning answer booklets with quality checks"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Human evaluator marking with seeding methodology and analytics to track evaluator consistency"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented; page cites TCS iON platform integration with other platforms and in-house markers"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    }
+   },
+   "marking": 14,
+   "workflow": 29,
+   "breadth": 3.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Unit of TCS. Offers a pool of certified evaluators on demand; 2019 EFLU partnership to train evaluators; named client Sapix Yozemi Group (Japan) for spoken English marking"
+   },
+   "notable": "TCS and Coempt were the final technically qualified bidders for CBSE's on-screen marking contract; CBSE chose Coempt in December 2025 on price (as reported).",
+   "notableSource": "https://www.sakshipost.com/news/telangana/who-coempt-edu-teck-hyderabad-company-linked-cbse-osm-controversy-480098",
+   "sources": {
+    "homepage": "https://www.tcs.com/what-we-do/industries/education/solution/marking-service-digital-secure-faster-evaluation",
+    "capabilities": "https://www.tcs.com/what-we-do/industries/education/solution/marking-service-digital-secure-faster-evaluation",
+    "capabilities.typed_answers": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-ion-digital-marking-hub-expands-its-evaluator-ecosystem",
+    "scale": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-ion-digital-marking-hub-expands-its-evaluator-ecosystem"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "MeritTrac",
+   "fullName": "TracMARKS",
+   "company": "MeritTrac Services Pvt Ltd",
+   "region": "india",
+   "hq": "India",
+   "segment": "osm",
+   "website": "https://merittrac.com/tracmarks/",
+   "target": "universities, school boards, certification and professional bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Scripts are scanned and marked on screen by evaluators; no machine reading of handwriting documented"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Evaluators annotate and grade scripts on the platform; no AI marking documented for TracMARKS"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Page mentions a 'standardized marking process' but no per-question scheme feature"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Evaluators can annotate, highlight and grade scripts; written reasons per question not documented"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not documented for TracMARKS"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Digitally scan and store answer scripts; handles high volumes of scripts"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "Annotation tools on platform; 2017 news report: marked scripts converted to PDF with annotations (third-party)"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Human evaluator marking with real-time monitoring of evaluator performance and audit trails"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Integrates with existing examination management systems; no public API documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    }
+   },
+   "marking": 7,
+   "workflow": 43,
+   "breadth": 3.5,
+   "scale": {
+    "customers_claimed": "Over 55 million assessments delivered; 500+ global organizations (company-wide, not OSM-specific). 2017 report: OSM work with Mumbai University, Manipal University, Kerala Technical University",
+    "funding_or_owner_notes": "Bengaluru-based testing and assessment company founded 2000"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://merittrac.com/",
+    "capabilities": "https://merittrac.com/tracmarks/",
+    "capabilities.annotated_copy": "https://www.theweek.in/news/sci-tech/digital-evaluation-transparency-exam-systems.html",
+    "founded_year": "https://merittrac.com/about-us/",
+    "scale": "https://merittrac.com/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Coempt Onmark",
+   "fullName": "Onmark",
+   "company": "Coempt Edu Teck Pvt Ltd (formerly Globarena Technologies)",
+   "region": "india",
+   "hq": "India",
+   "segment": "osm",
+   "website": "https://www.coempt.in/oursolutions/onmark",
+   "target": "state and central school boards, technical, medical and general universities, certification bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Scans answer books (uncut) for human examiners; no machine reading of handwriting documented"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Human examiners mark scanned scripts on screen; no AI marking documented"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Customizable marking rubrics and scheme of evaluation"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Multi-colour annotation tools incl. comments; instant mark calculation and aggregation"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not documented for Onmark"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Scanning module scans answer books without cutting or de-threading; secure upload and storage"
+    },
+    "student_identification": {
+     "value": "partial",
+     "evidence": "API connectivity with student databases; student details hidden from examiners"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "Annotation tools; vendor says ~95% of CBSE students who sought answer-sheet copies received them (2026 news)"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Seed scripts for standardization, double marking, real-time examiner monitoring, discrepancy reports"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "partial",
+     "evidence": "API connectivity with student databases and bulk import/export; no public evaluation API docs"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    }
+   },
+   "marking": 21,
+   "workflow": 57,
+   "breadth": 5.5,
+   "scale": {
+    "customers_claimed": "35+ universities and institutions; close to 2 crore answer booklets a year (vendor statement in 2026 news); site claims 6,561+ satisfied clients",
+    "funding_or_owner_notes": "Hyderabad-based; private"
+   },
+   "notable": "Won the CBSE on-screen marking contract (finalised December 2025) for 2026 Class 12 evaluation; the rollout drew complaints over scan quality, which Coempt attributed to the scanning stage (June 2026).",
+   "notableSource": "https://www.theweek.in/news/india/2026/06/18/cbse-osm-controversy-coempt-defense.amp.html",
+   "sources": {
+    "homepage": "https://www.coempt.in/",
+    "capabilities": "https://www.coempt.in/oursolutions/onmark",
+    "capabilities.annotated_copy": "https://www.theweek.in/news/india/2026/06/18/cbse-osm-controversy-coempt-defense.amp.html",
+    "company": "https://www.sakshipost.com/news/telangana/who-coempt-edu-teck-hyderabad-company-linked-cbse-osm-controversy-480098",
+    "scale": "https://www.theweek.in/news/india/2026/06/18/cbse-osm-controversy-coempt-defense.amp.html"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Excelsoft Saras",
+   "fullName": "Saras eMarking",
+   "company": "Excelsoft Technologies Ltd",
+   "region": "india",
+   "hq": "India",
+   "segment": "osm",
+   "website": "https://www.excelsoftcorp.com/assessmentandproctoringsolutions/emarking/",
+   "target": "awarding bodies, exam boards, universities (largest named client is UK board AQA)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "Case study: AI transcription of scanned handwritten scripts for a UK awarding body, giving examiners a transcript"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "'Assisted scoring workflows' as an optional AI capability under human oversight; Dec 2025: marking exams 'will remain a human process'"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Marker standardization and benchmarking documented; per-question scheme feature not described"
+    },
+    "partial_marks_feedback": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Evaluates essay and descriptive responses, online and HTML-based digital responses alongside scanned scripts"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Integrates scanned answer scripts at scale; OCR-enabled script digitization"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Moderation workflows, multi-marker evaluation, variance analysis; decisions remain under human oversight"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Integrates with exam management, SIS, ERP, LMS; no public API docs found"
+    },
+    "integrity_checks": {
+     "value": "partial",
+     "evidence": "Plagiarism detection listed as an optional AI capability"
+    }
+   },
+   "marking": 29,
+   "workflow": 36,
+   "breadth": 4.5,
+   "scale": {
+    "customers_claimed": "AQA platform to cover ~12 million scripts a year and ~40,000 examiners when fully implemented (2026 news)",
+    "funding_or_owner_notes": "Mysuru-based; listed on NSE/BSE (EXCELSOFT)"
+   },
+   "notable": "Signed a multi-year deal with UK board AQA (May 2026) to build its next e-marking platform on Saras, after a December 2025 joint AI taskforce on AI-supported marking of handwritten scripts.",
+   "notableSource": "https://cxotoday.com/media-coverage/excelsoft-technologies-and-aqa-partner-to-build-the-future-of-high-stakes-e-marking/",
+   "sources": {
+    "homepage": "https://www.excelsoftcorp.com/",
+    "capabilities": "https://www.excelsoftcorp.com/assessmentandproctoringsolutions/emarking/",
+    "capabilities.handwritten_reading": "https://www.excelsoftcorp.com/assessmentandproctoringsolutions/from-ocr-to-ai-evaluation-how-a-uk-awarding-body-transformed-handwritten-script-processing/",
+    "capabilities.subjective_ai_marking": "https://nsearchives.nseindia.com/corporate/EXCELSOFT_04122025193453_Pressrelease.pdf",
+    "founded_year": "https://www.excelsoftcorp.com/",
+    "scale": "https://cxotoday.com/media-coverage/excelsoft-technologies-and-aqa-partner-to-build-the-future-of-high-stakes-e-marking/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Mercer | Mettl",
+   "fullName": "Mercer | Mettl Digital Evaluation (onscreen marking)",
+   "company": "Mercer",
+   "region": "india",
+   "hq": "India",
+   "segment": "osm",
+   "website": "https://mettl.com/onscreen-digital-evaluation-system/",
+   "target": "universities, business schools, schools and coaching institutes running exams on Mettl",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Not documented on the evaluation page"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Evaluators and moderators mark assigned answer sheets; AI is described only for proctoring"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "partial_marks_feedback": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Integrated platform to conduct, proctor and evaluate online exams; evaluators mark answer sheets in dashboards"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "'Support 20+ languages' is stated for the exam platform, not specifically for evaluation"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Scanning of paper scripts not documented on the evaluation page"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented; page covers masking of student information"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Assign sheets to evaluators and moderators; multi-evaluation; admins can review any evaluation anytime"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "partial",
+     "evidence": "API-based integration to ERPs; no public evaluation API documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "AI-assisted proctoring during exams; no plagiarism checks on answers documented"
+    }
+   },
+   "marking": 14,
+   "workflow": 21,
+   "breadth": 2.5,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Part of Mercer. Testimonials on page from ISB, NISM, Vidyamandir Classes"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://mettl.com/",
+    "capabilities": "https://mettl.com/onscreen-digital-evaluation-system/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "DEXIT Global",
+   "fullName": "DEXIT On-Screen Marking (OSM)",
+   "company": "DEXIT Global Ltd (formerly NSEIT Ltd), CL Educate group",
+   "region": "india",
+   "hq": "India",
+   "segment": "osm",
+   "website": "https://www.dexitglobal.com/on-screen-marking-osm-solution/",
+   "target": "universities, boards, recruitment and certification exam bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Scripts are scanned for human evaluators; no machine reading of handwriting documented"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Authorized evaluators access, review and award marks digitally; no AI marking documented"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Configure subjects, question papers, schedules and evaluation schemes; structured marking panels"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Annotation and marking tools with automated mark compilation; written reasons not documented"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not documented for OSM"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Answer scripts are scanned, indexed and uploaded; high-volume evaluation"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Barcode-based script identification, tracking and allocation"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "Annotated script downloads"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "L1, L2, moderation and reconciliation workflows; escalation management; audit trails"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Question papers can be configured; import from an uploaded paper not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    }
+   },
+   "marking": 21,
+   "workflow": 57,
+   "breadth": 5.5,
+   "scale": {
+    "customers_claimed": "Company-wide: one digital exam for 73 lakh+ candidates; owned test centres in 230+ cities (OSM-specific numbers not published)",
+    "funding_or_owner_notes": "Digital exam (DEX) business of NSEIT bought by CL Educate for INR 230 crore upfront + INR 75 crore earn-out, closed January 2025"
+   },
+   "notable": "CL Educate closed its acquisition of NSEIT's digital exam business (now DEXIT Global) in January 2025.",
+   "notableSource": "https://www.avendus.com/india/newsroom/avendus-capital-advises-nseit-the-digital-examination-dex-business-of-the-national-stock-exchange-of-india-on-its-acquisition-by-cl-educate",
+   "sources": {
+    "homepage": "https://www.dexitglobal.com/",
+    "capabilities": "https://www.dexitglobal.com/on-screen-marking-osm-solution/",
+    "scale": "https://www.dexitglobal.com/",
+    "company": "https://www.avendus.com/india/newsroom/avendus-capital-advises-nseit-the-digital-examination-dex-business-of-the-national-stock-exchange-of-india-on-its-acquisition-by-cl-educate"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Gradescope",
+   "fullName": "Gradescope",
+   "company": "Turnitin",
+   "region": "global",
+   "hq": "United States",
+   "segment": "handwritten-grading",
+   "website": "https://www.gradescope.com",
+   "target": "universities and colleges (instructors, TAs, administrators); some schools",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "Handwriting recognition (OCR + AI) used to group similar short answers on fixed-template paper work; humans grade the groups"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "AI-assisted answer grouping forms suggested groups of short-answer and multiple-choice questions for review; instructor applies the marks. Institutional plan only"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Paper-based work 'including handwritten answers and diagrams' graded on screen by staff; no AI marking of maths working documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Dynamic rubrics built in advance or on the fly; import rubrics and rubric item groups on Institutional plan"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Rubric items give detailed feedback with one click; rubric changes apply retroactively"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Institutional plan covers all assignment types including online and programming; graded by staff"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Bulk scanning for instructor-uploaded paper assessments; students can also upload via mobile app"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "AI-powered roster matching (Institutional plan)"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "Annotation tools on submissions; graded work sent back to students"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Staff grade every question; AI only suggests answer groups for review"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened (help centre blocked automated access)"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "No public grading API found; LTI 1.3 LMS integration documented"
+    },
+    "integrity_checks": {
+     "value": "partial",
+     "evidence": "Code Similarity for programming assignments (Institutional only); no plagiarism/AI-writing check on written answers documented"
+    }
+   },
+   "marking": 64,
+   "workflow": 64,
+   "breadth": 9.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Owned by Turnitin, LLC. Pricing page lists Basic (free) and Institutional (contact sales)."
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.turnitin.com/products/gradescope/",
+    "pricing": "https://turnitin.gradescope.com/pricing",
+    "capabilities": "https://www.turnitin.com/products/gradescope/",
+    "capabilities.handwritten_reading": "https://elearning.ufl.edu/supported-services/gradescope/",
+    "capabilities.integrity_checks": "https://turnitin.gradescope.com/pricing"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Crowdmark",
+   "fullName": "Crowdmark",
+   "company": "Crowdmark Inc.",
+   "region": "global",
+   "hq": "Canada",
+   "segment": "handwritten-grading",
+   "website": "https://crowdmark.com",
+   "target": "universities, colleges and schools; maths contests",
+   "pricing": {
+    "public_pricing": null,
+    "model": "quote",
+    "entry_price": {
+     "amount": 3.75,
+     "currency": "USD",
+     "period": "student per course",
+     "plan_name": null,
+     "notes": "Third-party figure (University of Zurich tools page) dated 11 Apr 2022; alt. $7 per user per academic year. Vendor pricing page blocked automated access; may be outdated"
+    },
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "OCR used for admin tasks: matching booklets to students and sorting handwriting for marking; humans grade (third-party: Queen's CTL)"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Crowdmark says it opposes solutions that automate point values or responses for open-response questions (via Queen's CTL)"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Built for human marking of handwritten maths exams (origin: Canadian Open Mathematics Challenge); no AI maths marking"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Reusable comments can carry a point value and work like rubric items (third-party: UZH)"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Point-valued reusable comments plus free-form annotation per question (third-party: UZH)"
+    },
+    "typed_answers": {
+     "value": "partial",
+     "evidence": "Runs exams/quizzes/assignments in person and online; typed long-answer grading not detailed"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Proctor scans and uploads completed work for grading"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "QR codes on every page; OCR auto-matching of cover pages to student records (beta per Crowdmark help, via search)"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "Free-form annotation and exam review listed (third-party: UZH)"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Human markers grade; unrecognised bubble answers sent to a human marker to moderate"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Paper assessments must be created in Crowdmark (UZH); import of an existing paper not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    }
+   },
+   "marking": 50,
+   "workflow": 57,
+   "breadth": 7.5,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Founded 2012 in Toronto by U of T maths professor James Colliander (per Crowdmark 'our story', via search). Vendor site blocks automated fetches; most detail is third-party."
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://crowdmark.com",
+    "pricing": "https://www.df.uzh.ch/static/ai-assisted-grading/tools/crowdmark",
+    "capabilities": "https://www.queensu.ca/ctl/ed-tech-toolkit/crowdmark",
+    "capabilities.rubric_marking_scheme": "https://www.df.uzh.ch/static/ai-assisted-grading/tools/crowdmark",
+    "capabilities.student_identification": "https://crowdmark.com/help/using-automated-matching/",
+    "founded_year": "https://crowdmark.com/our-story/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "RM Assessor",
+   "fullName": "RM Assessor",
+   "company": "RM plc (RM Assessment)",
+   "region": "global",
+   "hq": "United Kingdom",
+   "segment": "osm",
+   "website": "https://www.rm.com/assessment",
+   "target": "exam boards, awarding organisations, professional bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": false
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "Scanned handwritten scripts are displayed for human examiners to mark on screen; no machine transcription documented"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "AI marking tool for digital exams 'alongside human marking' at proof-of-concept stage; auto-marking of basic questions in Assessor"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "rubric_marking_scheme": {
+     "value": "partial",
+     "evidence": "AI tool applies agreed marking criteria; examiners standardised against definitively marked responses"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "AI tool gives justifications and feedback related to the mark scheme (proof of concept)"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Marks on-screen digital exams, spreadsheets, coursework and audio-visual submissions"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Integrates with scanning and indexing systems; RM says it scanned 113M+ images in 2025"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Automatically verifies each script against the candidate entrant list"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Seeded pre-marked responses, tolerances, double-marking and real-time examiner monitoring"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Integration with management/scanning systems mentioned; no public API docs found"
+    },
+    "integrity_checks": {
+     "value": "partial",
+     "evidence": "Separate product RM Echo checks responses for collusion and similarity against reference material"
+    }
+   },
+   "marking": 43,
+   "workflow": 50,
+   "breadth": 6.5,
+   "scale": {
+    "customers_claimed": "Over 200 million exam pages marked annually; customers in more than 160 countries",
+    "funding_or_owner_notes": "Part of RM plc (registered in England and Wales). Customers named include Cambridge University Press & Assessment, SEAB, ICAN, Trinity College London."
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.rm.com/assessment",
+    "capabilities": "https://www.rm.com/assessment/services/e-marking",
+    "capabilities.subjective_ai_marking": "https://www.rm.com/assessment/services/ai-in-assessment",
+    "capabilities.integrity_checks": "https://www.rm.com/assessment/services/collusion-and-malpractice-detection"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Inspera Assessment",
+   "fullName": "Inspera Assessment",
+   "company": "Inspera",
+   "region": "global",
+   "hq": null,
+   "segment": "osm",
+   "website": "https://www.inspera.com",
+   "target": "universities and awarding bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "InsperaScan / Inspera Docs: handwritten sketch sheets scanned and attached to candidate and question for graders; extra licence (support article, via search)"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "Inspera Graide (separate product) uses classification AI to suggest marks after 5-20 human-marked answers; educator confirms each"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Inspera Graide works with 'mathematical equations and expressions'"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Graide learns from human-marked examples rather than a rubric; Inspera rubric support not checked"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Graide applies educator-written feedback across a cohort (vendor: 23 to 166 words per script)"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Digital exams and coursework; Graide covers short answers and essays"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented for grading; Originality similarity check covers 30+ languages"
+    },
+    "bulk_scan_ingest": {
+     "value": "partial",
+     "evidence": "Scanner-based workflow for sketch sheets (Scantron, Panasonic, Avision) under an extra licence"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Each question sheet carries a unique code per candidate identifying candidate, test and question"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "No automatic grading: every AI suggestion accepted or rejected by an educator; built-in second-reviewer moderation"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "integrity_checks": {
+     "value": "partial",
+     "evidence": "Inspera Originality (separate product) for similarity checking; proctoring and lockdown browser"
+    }
+   },
+   "marking": 43,
+   "workflow": 43,
+   "breadth": 6.0,
+   "scale": {
+    "customers_claimed": "160+ institutions; customer base across 160+ countries and 20M+ submissions per year (vendor)",
+    "funding_or_owner_notes": "Founded 1999. Acquired Graide (classification-AI marking) in 2026; Graide also sold standalone for LMS use."
+   },
+   "notable": "Acquired Graide, a classification-AI marking and feedback platform, now sold as Inspera Graide (deal completed June 2026 per Farrer & Co).",
+   "notableSource": "https://inspera.com/press-releases/graide-acquisition/",
+   "sources": {
+    "homepage": "https://www.inspera.com/",
+    "capabilities": "https://inspera.com/inspera-graide/",
+    "capabilities.handwritten_reading": "https://support.inspera.com/hc/en-us/articles/360031110972-InsperaScan-Handwritten-digital-exams",
+    "capabilities.teacher_review": "https://inspera.com/press-releases/graide-acquisition/",
+    "notable_date": "https://www.farrer.co.uk/news-and-insights/farrer--co-advises-inspera-on-edtech-acquisition/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Surpass Scora",
+   "fullName": "Surpass Scora",
+   "company": "Surpass Assessment",
+   "region": "global",
+   "hq": "United Kingdom / United States (offices in both)",
+   "segment": "ai-copy-checking",
+   "website": "https://surpass.com/scora/",
+   "target": "schools running paper mock exams; Surpass platform serves awarding and licensure bodies",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Scanned paper scripts digitised and transcribed with OCR, 'even the ones that are difficult to read'"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Automatically scores each paper against expert-calibrated criteria (vendor: within 5% of a senior examiner)"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Uses calibrated mark schemes aligned to examiner standards; calibrated before marking"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Detailed personalised feedback; reports of scores, strengths, weaknesses and target areas"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Scora page covers scanned paper scripts only"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Scan with standard school equipment and upload; 'thousands of scripts processed at scale'"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Teachers review every output and control results release"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Surpass platform has APIs; none documented for Scora marking"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    }
+   },
+   "marking": 57,
+   "workflow": 29,
+   "breadth": 6.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Product of Surpass Assessment (UK and USA offices; 'celebrating 40 years')."
+   },
+   "notable": "Surpass Assessment was listed in the e-Assessment Association 2026 'AI in Marking' awards for AI marking of scanned handwritten mock exams in schools (entry names the product Surpass Serenity).",
+   "notableSource": "https://e-assessment.com/eaa-awards/2026-winners-and-finalists/ai-in-marking",
+   "sources": {
+    "homepage": "https://surpass.com/scora/",
+    "capabilities": "https://surpass.com/scora/",
+    "hq_country": "https://surpass.com/about-us/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Top Marks AI",
+   "fullName": "Top Marks AI",
+   "company": "Top Marks AI Ltd",
+   "region": "global",
+   "hq": "United Kingdom",
+   "segment": "ai-copy-checking",
+   "website": "https://www.topmarks.ai",
+   "target": "UK secondary schools and multi-academy trusts (GCSE, A Level, KS3, IB, IELTS)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Marks essays 'whether typed or handwritten'; handwriting-to-text transcription"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "400+ subject tools, each a fine-tuned model benchmarked to board standardisation materials"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Listed tools are mainly English, humanities and RE; maths marking not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Exam-board mark schemes per qualification/board/module; feedback references mark scheme criteria"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Scores with detailed feedback explicitly referencing mark scheme criteria"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Single or batch typed essays"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Process entire sets of handwritten essays from a single PDF; batch mark thousands of scripts"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Unique per-student, per-question barcodes route scanned answers to the right student and tool"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Teacher review/override before release not described on pages opened"
+    },
+    "question_paper_import": {
+     "value": "partial",
+     "evidence": "Papers are built natively on Top Marks (Assignment Packs), not imported from an uploaded paper"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "MIS integration via Wonde and export to Bromcom; no public API documented"
+    },
+    "integrity_checks": {
+     "value": "yes",
+     "evidence": "Integrated AI-writing detectors ('up to a point', per FAQ)"
+    }
+   },
+   "marking": 71,
+   "workflow": 50,
+   "breadth": 8.5,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Top Marks AI Ltd, registered in England and Wales (no. 11580241), London. Institutional credits; pricing on request."
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.topmarks.ai/",
+    "pricing": "https://www.topmarks.ai/",
+    "capabilities": "https://www.topmarks.ai/",
+    "hq_country": "https://www.topmarks.ai/terms"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Edexia",
+   "fullName": "Edexia",
+   "company": "Edexia Pty Ltd",
+   "region": "global",
+   "hq": "Australia",
+   "segment": "ai-copy-checking",
+   "website": "https://www.edexia.ai",
+   "target": "secondary schools and English departments (VCE, HSC, QCE, WACE, IB, AP)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Handwriting transcription of scanned work via mobile app or photos; transcript shown beside the scan"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Grades each essay against curriculum rubrics as an 'extra marker'; vendor reports 81.2% exact agreement on 579 VCE essays"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Science subjects listed; marking of maths working not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Official VCE/HSC/QCE/WACE/IB criteria built in; FAQ says custom rubrics are on the roadmap"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Paragraph-level feedback with every comment tied to the rubric"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Grades typed essays, with writing replay for typed work"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Bulk upload with automatic splitting and every page transcribed"
+    },
+    "student_identification": {
+     "value": "partial",
+     "evidence": "Automatic splitting of bulk uploads; names hidden/stripped at de-identification. Matching method not described"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Teachers review, edit and approve everything before students see it; department moderation"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented for summative marking"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "No API documented; LMS integration on the roadmap"
+    },
+    "integrity_checks": {
+     "value": "yes",
+     "evidence": "AI detection via writing replay, paste detection and tab tracking (typed work)"
+    }
+   },
+   "marking": 71,
+   "workflow": 50,
+   "breadth": 8.5,
+   "scale": {
+    "customers_claimed": "50+ schools (Australia)",
+    "funding_or_owner_notes": "Founded in Australia by second-time edtech founders"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.edexia.ai/",
+    "pricing": "https://www.edexia.ai/faq",
+    "capabilities": "https://www.edexia.ai/faq",
+    "capabilities.bulk_scan_ingest": "https://www.edexia.ai/summative"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "stylus",
+   "fullName": "stylus",
+   "company": "LearnCycle Ltd (trading as Stylus Education); Mindflair plc portfolio company",
+   "region": "global",
+   "hq": "United Kingdom",
+   "segment": "ai-copy-checking",
+   "website": "https://stylus.education",
+   "target": "UK primary and secondary schools and multi-academy trusts (KS2-KS3 writing, GCSE English)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Students write by hand on coded lined sheets; teachers scan via the photocopier document tray"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI feedback system for KS2-3 writing scoring against almost 100 criteria"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Writing only on pages opened"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Vendor criteria: almost 100 marking points mapped to the Teacher Assessment Framework"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Criterion-level scores; per-student What Went Well, Even Better If and Next Steps"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Process is described as optimised for paper"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Class sets scanned through the photocopier document tray"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Each lined sheet has a unique code to match students to their work"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Returns separate paper feedback reports; marked-up scripts not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Ongoing moderation by stylus's own team of markers (not the school's teacher) per site and DfE news"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    }
+   },
+   "marking": 57,
+   "workflow": 43,
+   "breadth": 7.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Portfolio company of Mindflair plc; UK DfE contract ~GBP 250,000 (Nov 2025)"
+   },
+   "notable": "Won about GBP 250,000 from the UK Department for Education's AI Tools for Education programme to develop AI marking of scanned handwritten work with human moderation (reported 28 Nov 2025).",
+   "notableSource": "https://www.ajbell.co.uk/news/articles/mindflair-portfolio-company-wins-ps250000-ai-government-contract",
+   "sources": {
+    "homepage": "https://stylus.education/",
+    "capabilities": "https://stylus.education/",
+    "capabilities.teacher_review": "https://www.ajbell.co.uk/news/articles/mindflair-portfolio-company-wins-ps250000-ai-government-contract"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Akindi",
+   "fullName": "Akindi",
+   "company": "Akindi Inc.",
+   "region": "global",
+   "hq": null,
+   "segment": "omr",
+   "website": "https://akindi.com",
+   "target": "universities and colleges (central scanning or self-serve)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": false
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "no",
+     "evidence": "Vendor positions it as 'one end-to-end solution for multiple choice assessments'"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Multiple-choice test scoring only"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "partial_marks_feedback": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "typed_answers": {
+     "value": "no",
+     "evidence": "Online test scoring is for multiple-choice assessments"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Regular paper and any scanner for high-volume scanning; central or self-serve"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "An 'Akindi Importer' exists; its function not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "LMS integration documented; no public API found"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    }
+   },
+   "marking": 0,
+   "workflow": 14,
+   "breadth": 1.0,
+   "scale": {
+    "customers_claimed": "Over 20 million student tests",
+    "funding_or_owner_notes": "Annual licence priced by total student tests graded; 30-day free pilot"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://akindi.com/",
+    "pricing": "https://akindi.com/pricing",
+    "capabilities": "https://akindi.com/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "ZipGrade",
+   "fullName": "ZipGrade",
+   "company": "ZipGrade LLC",
+   "region": "global",
+   "hq": "United States",
+   "segment": "omr",
+   "website": "https://www.zipgrade.com",
+   "target": "individual K-12 teachers and schools",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per teacher/yr",
+    "entry_price": {
+     "amount": 6.99,
+     "currency": "USD",
+     "period": "year",
+     "plan_name": "Paid (non-recurring subscription)",
+     "notes": "Unlimited grading; free tier grades 100 papers per month; US price, varies by app store region"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "no",
+     "evidence": "Answer types listed: multiple choice, true/false, matching, gridded-numeric bubbles"
+    },
+    "subjective_ai_marking": {
+     "value": "no",
+     "evidence": "Answer-key scoring of bubble sheets only"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Gridded-numeric entry for numeric answers; no working marked"
+    },
+    "rubric_marking_scheme": {
+     "value": "no",
+     "evidence": "Answer keys with multiple key versions, not rubrics"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Alternate answers and weighted questions; item analysis, no written feedback"
+    },
+    "typed_answers": {
+     "value": "no",
+     "evidence": "Web-based quizzes use the same objective answer types"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Scans papers with a phone/tablet camera; batch scanning not described"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "Forms with pre-printed student info available; roster CSV import"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "CSV export documented; no API found"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    }
+   },
+   "marking": 14,
+   "workflow": 14,
+   "breadth": 2.0,
+   "scale": {
+    "customers_claimed": "More than 1 million teachers have used ZipGrade",
+    "funding_or_owner_notes": "ZipGrade LLC, New Lenox, Illinois"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://www.zipgrade.com/",
+    "pricing": "https://www.zipgrade.com/pricing/",
+    "capabilities": "https://www.zipgrade.com/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "GradeCam",
+   "fullName": "Gradient (GradeCam)",
+   "company": "GradeCam, LLC",
+   "region": "global",
+   "hq": "United States",
+   "segment": "omr",
+   "website": "https://gradecam.com",
+   "target": "US K-12 schools and districts",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per student/yr",
+    "entry_price": {
+     "amount": 3.5,
+     "currency": "USD",
+     "period": "student per year",
+     "plan_name": "Gradient for Schools and Districts",
+     "notes": "Packages start at $2,800/year plus a one-time onboarding charge"
+    },
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Scan-to-score answer sheets; reading of handwritten answers not documented"
+    },
+    "subjective_ai_marking": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "rubric_marking_scheme": {
+     "value": "unknown",
+     "evidence": "'Performance and skill-based assessments' listed; rubric method not described"
+    },
+    "partial_marks_feedback": {
+     "value": "unknown",
+     "evidence": "Immediate feedback listed; partial marks not described"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Online assessment delivery listed; typed long answers not described"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Scanning with any device (mobile, desktop, document camera); batch upload not described"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Rostering via Clever/ClassLink; sheet-level ID not described"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "teacher_review": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented on pages opened"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "LMS, SIS gradebook and SSO integrations listed; no public API found"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Respondus LockDown Browser integration only; no plagiarism/AI check"
+    }
+   },
+   "marking": 0,
+   "workflow": 0,
+   "breadth": 0.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "GradeCam, LLC, Livermore, California; product branded Gradient"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://gradecam.com/",
+    "pricing": "https://gradecam.com/pricing/",
+    "capabilities": "https://gradecam.com/pricing/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "CoGrader",
+   "fullName": "CoGrader",
+   "company": "CoGrader",
+   "region": "global",
+   "hq": "United States",
+   "segment": "ai-grading-assistant",
+   "website": "https://cograder.com",
+   "target": "K-12 teachers, schools and districts (US); higher ed and enterprise",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per teacher/mo",
+    "entry_price": {
+     "amount": 15,
+     "currency": "USD",
+     "period": "month",
+     "plan_name": "Individual",
+     "notes": "$15/mo billed annually or $19/mo monthly; Schools & Districts and Higher Ed priced by quote"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Paper essays via phone photo, copier scan or LMS photos; tool 'reads the handwriting' and grades against the rubric. Handwritten assignments included in free Starter plan"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Drafts a score and Glow/Grow feedback for each rubric criterion"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Positioned for written assignments (essays, science CER responses); no maths marking documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "500+ state-aligned rubrics (CCSS, TEKS, STAAR, Regents, AP/IB); 'Upload any rubric or mark scheme as-is'"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Score plus Glow and Grow comments per rubric criterion"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Grades typed essays from Google Classroom, Canvas, Schoology; PDF/DOCX uploads"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Feedback can be generated in the language of the submission; no Indian language documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Scan a class set at a copier or snap pages; pages are sorted by student and graded"
+    },
+    "student_identification": {
+     "value": "partial",
+     "evidence": "Handwritten flow 'sorts pages by student'; method of matching (name read, template) not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Feedback returned via LMS and gradebook export; on-page markup of the student's sheet not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "'You approve every grade'; teacher edits any score or comment before students see it"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Rubric/mark-scheme upload documented; building questions from a question paper not documented"
+    },
+    "public_api": {
+     "value": "partial",
+     "evidence": "API listed only on the Higher Ed & Enterprise (custom) plan; no public docs found"
+    },
+    "integrity_checks": {
+     "value": "yes",
+     "evidence": "Originality report flags 'Possibly AI-assisted' plus plagiarism check; pricing FAQ puts AI detection on school/district plans"
+    }
+   },
+   "marking": 71,
+   "workflow": 57,
+   "breadth": 9.0,
+   "scale": {
+    "customers_claimed": "100,000+ teachers, 16,000+ schools across all 50 states, 2.5M+ essays graded (vendor claim)",
+    "funding_or_owner_notes": "Backed by UC Berkeley SkyDeck; US Dept of Education IES research award; footer 'Built with teachers, in California'"
+   },
+   "notable": "Homepage cites a June 2026 validation study of its grading against teachers.",
+   "notableSource": "https://cograder.com/",
+   "sources": {
+    "homepage": "https://cograder.com/",
+    "pricing": "https://cograder.com/pricing",
+    "capabilities": "https://cograder.com/",
+    "capabilities.public_api": "https://cograder.com/pricing",
+    "capabilities.integrity_checks": "https://cograder.com/pricing"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "EssayGrader",
+   "fullName": "EssayGrader",
+   "company": "Tech Nest Ventures Inc.",
+   "region": "global",
+   "hq": "United States / Canada",
+   "segment": "ai-grading-assistant",
+   "website": "https://www.essaygrader.ai",
+   "target": "K-12 and higher-ed teachers; schools and districts (25+ users)",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per teacher/mo",
+    "entry_price": {
+     "amount": 14.99,
+     "currency": "USD",
+     "period": "month",
+     "plan_name": "Pro",
+     "notes": "350 gradings/mo, 3,500-word limit; Premium $34.99/mo (800 gradings); annual billing up to 30% off; districts by quote"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "'Scan handwritten essays'; recognizes 'cursive, print & messy handwriting, then transcribes it'"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI reads each paper 'criterion by criterion' and drafts scores and comments; vendor study reports 94% criterion-level agreement"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Positioned for essay-based subjects (essays, short answers, DBQs); maths not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "800+ standards-aligned rubrics or upload your own rubric file"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Per-criterion scores with colour-coded feedback and next steps"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Grades typed essays from Google Classroom, Canvas, Schoology, Drive, Dropbox, Box"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Grades in Spanish, French, Chinese, Japanese and others; no Indian language documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Upload one PDF of the whole class and it separates essays automatically; 'Upload an entire class's essays with a single click'"
+    },
+    "student_identification": {
+     "value": "partial",
+     "evidence": "Splits a class PDF into individual essays automatically; how names are matched is not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Feedback shared back via LMS; markup on the student's own page not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Teachers 'review, adjust and share'; 'You stay in control of every grade'"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "No API mentioned on site or pricing page"
+    },
+    "integrity_checks": {
+     "value": "yes",
+     "evidence": "Sentence-level AI-writing highlights and plagiarism detection on Pro (350/mo) and Premium (800/mo)"
+    }
+   },
+   "marking": 71,
+   "workflow": 50,
+   "breadth": 8.5,
+   "scale": {
+    "customers_claimed": "200,000+ educators; 3.5M+ assignments graded; 100+ schools with signed DPAs in 30+ US states (vendor, July 2026)",
+    "funding_or_owner_notes": "Copyright Tech Nest Ventures Inc.; offices listed in Dover, DE and Toronto, ON"
+   },
+   "notable": "Released a Schoology integration in April 2026.",
+   "notableSource": "https://www.essaygrader.ai/",
+   "sources": {
+    "homepage": "https://www.essaygrader.ai/",
+    "pricing": "https://www.essaygrader.ai/pricing",
+    "capabilities": "https://www.essaygrader.ai/",
+    "capabilities.integrity_checks": "https://www.essaygrader.ai/pricing",
+    "capabilities.indian_languages": "https://www.essaygrader.ai/pricing"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Brisk",
+   "fullName": "Brisk",
+   "company": "Brisk Labs Co.",
+   "region": "global",
+   "hq": "United States",
+   "segment": "lms-ai",
+   "website": "https://www.briskteaching.com",
+   "target": "K-12 teachers (Chrome extension), schools and districts",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "'Upload a photo of a student's handwritten work, and Brisk will analyze it' for feedback (blog, Feb 2025); batch handwritten flow not documented"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "Feedback-first tool; 'Rubric scoring in feedback' listed as opt-in on paid Premium/Intelligence plans"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Maths images used for question generation; maths marking not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Rubric Criteria Feedback aligns comments to criteria; generate a rubric or upload your own"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Per-criterion feedback documented; per-criterion scores only via opt-in rubric scoring on paid plans"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Feedback on Google Docs, Word docs and PDFs, single or whole class (batch feedback)"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Translates into 50+ languages; grading in an Indian language not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "partial",
+     "evidence": "Batch feedback on a class's files; free plan has an upload limit, unlimited on Premium; scan batches not documented"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages read"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Teacher can edit the comments before sending them back"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "No API documented; connectors for Claude (Jul 2026) and ChatGPT (Sep 2026) create batch-feedback assignments"
+    },
+    "integrity_checks": {
+     "value": "partial",
+     "evidence": "Inspect Writing replays Google Docs writing process and flags pasted text; FAQ does not describe an AI-content detector"
+    }
+   },
+   "marking": 50,
+   "workflow": 29,
+   "breadth": 5.5,
+   "scale": {
+    "customers_claimed": "'10,000+ districts use Brisk' (plans page); 'one million educators in over 100 countries' (press, Mar 2025)",
+    "funding_or_owner_notes": "$15M Series A led by Bessemer Venture Partners, Mar 2025; San Francisco, CA"
+   },
+   "notable": "Raised a $15M Series A led by Bessemer Venture Partners on 26 March 2025.",
+   "notableSource": "https://vcnewsdaily.com/brisk-teaching/venture-capital-funding/hysyrcbbmj",
+   "sources": {
+    "homepage": "https://www.briskteaching.com/",
+    "pricing": "https://www.briskteaching.com/plans",
+    "capabilities": "https://www.briskteaching.com/faq",
+    "capabilities.handwritten_reading": "https://www.briskteaching.com/post/upload-photos-to-create-lesson-content-and-generate-feedback",
+    "capabilities.subjective_ai_marking": "https://www.briskteaching.com/plans",
+    "capabilities.public_api": "https://www.briskteaching.com/whats-new",
+    "hq_country": "https://vcnewsdaily.com/brisk-teaching/venture-capital-funding/hysyrcbbmj"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "MagicSchool",
+   "fullName": "MagicSchool",
+   "company": "MagicSchool AI",
+   "region": "global",
+   "hq": "United States",
+   "segment": "lms-ai",
+   "website": "https://www.magicschool.ai",
+   "target": "K-12 teachers, schools and districts",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per teacher/mo",
+    "entry_price": {
+     "amount": 8.33,
+     "currency": "USD",
+     "period": "month",
+     "plan_name": "Plus",
+     "notes": "$99.96/yr billed annually or $12.99 monthly; Enterprise by quote; Class Writing Feedback listed on Free plan as 'Standard Access'"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Class Writing Feedback pulls essays from Google Drive, OneDrive, Canvas, Schoology; handwritten uploads not documented"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Class Writing Feedback scores each student's essay against your rubric (Score Breakdown)"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented for the grading tool"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Assignment created with a rubric; June 2026 rubric builder supports point ranges and custom performance levels"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Score breakdown per rubric category with evidence, plus Glows & Grows and Next Steps feedback"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Rubric-aligned feedback on student essays for a whole class at once"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented for Class Writing Feedback"
+    },
+    "bulk_scan_ingest": {
+     "value": "partial",
+     "evidence": "Whole class of documents from Drive/OneDrive/LMS at once; scanned batches not documented"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Identity comes from the student's Drive/LMS document; sheet-level ID not documented"
+    },
+    "annotated_copy": {
+     "value": "partial",
+     "evidence": "Approved feedback is added directly into each student's Google Doc or Word doc"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Teacher reviews each essay, edits feedback and adjusts scores before approving"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "No API mentioned on pricing page"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Pricing page lists PII/bias safeguards only; no AI-writing or plagiarism detection described"
+    }
+   },
+   "marking": 57,
+   "workflow": 29,
+   "breadth": 6.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "$45M Series B early 2025 (third-party reports, lead Valor Equity Partners); Denver, CO; founded 2023 (Endeavor Colorado)"
+   },
+   "notable": "June 2026 update added Canvas/Schoology and OneDrive sources, PDF exports and flexible rubrics to Class Writing Feedback.",
+   "notableSource": "https://www.magicschool.ai/blog-posts/whats-new-june-2026",
+   "sources": {
+    "homepage": "https://www.magicschool.ai/",
+    "pricing": "https://www.magicschool.ai/pricing",
+    "capabilities": "https://help.magicschool.ai/en/articles/13540423-class-writing-feedback-overview-how-it-works",
+    "capabilities.rubric_marking_scheme": "https://www.magicschool.ai/blog-posts/whats-new-june-2026",
+    "founded_year": "https://www.endeavorcolorado.org/companies/magicschool-ai",
+    "scale": "https://www.magicschool.ai/blog-posts/series-b-fundraise-for-teacher-ai"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Writable",
+   "fullName": "Writable",
+   "company": "HMH (Houghton Mifflin Harcourt)",
+   "region": "global",
+   "hq": "United States",
+   "segment": "lms-ai",
+   "website": "https://www.writable.com",
+   "target": "Grades 3-12 schools and districts",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "'AI suggested scores and comments' rubric-aligned; district setting 'Enable Grading Bot Scores'"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Writing-focused; maths not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "'Enable Rubric Comment Suggestions' generates AI feedback for individual rubric criteria"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "AI draft scores plus AI comments per rubric criterion and overall"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "AI suggested scores and comments 'on any doc'; online writing assignments"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Rostering via LMS/Google Classroom; sheet-level ID not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented on pages read"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "AI scores are suggestions to teachers while grading; districts can turn AI scores/comments on or off"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented on pages read"
+    }
+   },
+   "marking": 57,
+   "workflow": 14,
+   "breadth": 5.0,
+   "scale": {
+    "customers_claimed": null,
+    "funding_or_owner_notes": "Joined HMH (announced 28 Feb 2024); sold as part of HMH connected literacy"
+   },
+   "notable": "Added AI Feedback Profiles (Feb 2026) to set tone, depth and reading level of AI comments; AI draft scores unchanged.",
+   "notableSource": "https://www.hmhco.com/platform-product-updates/make-ai-feedback-sound-more-like-you-with-new-writable-ai-feedback-profiles",
+   "sources": {
+    "homepage": "https://www.writable.com/",
+    "pricing": "https://www.writable.com/",
+    "capabilities": "https://intercom.help/writable/en/articles/8114305-how-do-i-manage-ai-feedback-and-scoring-controls-in-my-district",
+    "capabilities.partial_marks_feedback": "https://www.hmhco.com/platform-product-updates/make-ai-feedback-sound-more-like-you-with-new-writable-ai-feedback-profiles"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Turnitin",
+   "fullName": "Turnitin Feedback Studio (with Clarity and Originality)",
+   "company": "Turnitin (Advance)",
+   "region": "global",
+   "hq": "United States",
+   "segment": "lms-ai",
+   "website": "https://www.turnitin.com",
+   "target": "Universities, colleges and secondary schools worldwide",
+   "pricing": {
+    "public_pricing": false,
+    "model": "quote",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "partial",
+     "evidence": "'Paper to Digital' lets instructors scan and grade paper assignments with AI-assisted grading tools; AI reading of handwriting not described"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "AI summary comments and AI-assisted grading tools for scanned work; Clarity gives students AI feedback when educator enables it; AI essay scoring not documented"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Not documented for Feedback Studio (maths marking sits in Turnitin's separate Gradescope product)"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Standards-aligned, pre-loaded and reusable rubrics and grading forms"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Rubric/grading-form scores with QuickMark comments (teacher-awarded)"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Typed submissions via web or LMS; Clarity adds a student drafting space"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Similarity repository covers 170 languages; grading in Indian languages not documented; AI humaniser detection English-only"
+    },
+    "bulk_scan_ingest": {
+     "value": "partial",
+     "evidence": "Paper to Digital scanning of paper assignments; batch details not documented on page"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Submissions tied to LMS/class enrolment; sheet-level ID not documented"
+    },
+    "annotated_copy": {
+     "value": "yes",
+     "evidence": "QuickMarks drag-and-drop comments placed on the student's submission"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Educators grade and give feedback; tool 'does not make the final determination of plagiarism'"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "partial",
+     "evidence": "Integration 'via API and LTI 1.3'; an API for AI grading is not documented"
+    },
+    "integrity_checks": {
+     "value": "yes",
+     "evidence": "Similarity Report plus AI writing indicator (Originality add-on), incl. paraphrased/humanised text; Clarity writing playback"
+    }
+   },
+   "marking": 57,
+   "workflow": 57,
+   "breadth": 8.0,
+   "scale": {
+    "customers_claimed": "17,000+ customers in 185 countries (Mar 2025 press release)",
+    "funding_or_owner_notes": "Owned by Advance Publications since 2019 (reported ~$1.75B); Oakland, CA; founded 1998 as iParadigms (EdSurge)"
+   },
+   "notable": "Announced Turnitin Clarity on 4 March 2025 (student drafting space with writing playback and optional AI feedback), sold as a paid Feedback Studio add-on from Q3 2025.",
+   "notableSource": "https://www.turnitin.co.uk/press/turnitin-launches-turnitin-clarity-bringing-transparency-and-integrity-insights-to-education",
+   "sources": {
+    "homepage": "https://www.turnitin.com/",
+    "pricing": "https://in.turnitin.com/products/feedback-studio",
+    "capabilities": "https://in.turnitin.com/products/feedback-studio",
+    "capabilities.subjective_ai_marking": "https://www.turnitin.co.uk/press/turnitin-launches-turnitin-clarity-bringing-transparency-and-integrity-insights-to-education",
+    "founded_year": "https://www.edsurge.com/news/2019-03-06-turnitin-to-be-acquired-by-advance-publications-for-1-75b"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Grade Direct",
+   "fullName": "Grade Direct (formerly Graded Pro)",
+   "company": "EDSYSTEMS LTD",
+   "region": "global",
+   "hq": "United Kingdom",
+   "segment": "ai-grading-assistant",
+   "website": "https://grade.direct",
+   "target": "Secondary teachers and schools (GCSE/A level, IB, AP, Common Core)",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per script/copy",
+    "entry_price": {
+     "amount": 25,
+     "currency": "USD",
+     "period": "6,000 credits",
+     "plan_name": "Teacher Pro",
+     "notes": "Credit-based: ~3 credits basic task, 8-10 in-depth, ~30 full exam; credits do not expire; free tier 150 credits + up to 50/mo; school accounts by quote"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "'Recognises handwriting' and turns handwritten maths into typeset work; students capture work with phone camera"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "Marks per question and total (e.g. 6/6, 25/40) across humanities, languages and STEM"
+    },
+    "stem_maths": {
+     "value": "yes",
+     "evidence": "Reads 'equations and code'; sample feedback for Maths, Physics, Mechanics, Chemistry, Biology, Computer Science"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Scores 'to the same rubric or mark scheme'; feedback linked to criteria"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Per-question marks with feedback on strengths, misconceptions, next steps and a model solution"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Fetches student submissions from Google Classroom automatically"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Says it covers subjects 'across languages'; no Indian language documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Desktop App processes multiple student files at once for exam and mock marking"
+    },
+    "student_identification": {
+     "value": "partial",
+     "evidence": "Student identity via Google Classroom submission or student app; reading names from scans not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not described"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "Teacher previews and edits feedback, adds voice/written notes before returning work"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 86,
+   "workflow": 36,
+   "breadth": 8.5,
+   "scale": {
+    "customers_claimed": "'Used in over 3,000 schools worldwide' (vendor)",
+    "funding_or_owner_notes": "EDSYSTEMS LTD (London) and EdSystems Inc (Wilmington, DE); graded.pro now 301-redirects to grade.direct and app is still named 'Graded Pro Companion'"
+   },
+   "notable": null,
+   "notableSource": null,
+   "sources": {
+    "homepage": "https://grade.direct/",
+    "pricing": "https://grade.direct/",
+    "capabilities": "https://grade.direct/"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "No More Marking",
+   "fullName": "No More Marking",
+   "company": "No More Marking Ltd",
+   "region": "global",
+   "hq": "United Kingdom",
+   "segment": "ai-grading-assistant",
+   "website": "https://www.nomoremarking.com",
+   "target": "UK and Australian primary/secondary schools (writing assessment)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "per institution",
+    "entry_price": {
+     "amount": 10,
+     "currency": "GBP",
+     "period": "100 AI custom task credits",
+     "plan_name": "AI custom task credits",
+     "notes": "Only published price is this top-up; annual school subscription price not shown"
+    },
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Handwritten scripts are scanned and 'digitised'; pricing lists 'AI transcriptions'; feedback guards against mis-transcribed responses"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI-enhanced comparative judgement: default 90% AI / 10% human pairwise decisions place essays on a scale; 82-83% AI-human agreement"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Writing-focused; maths essays not documented (Automark covers paper multiple-choice only)"
+    },
+    "rubric_marking_scheme": {
+     "value": "no",
+     "evidence": "Teachers compare essays instead of scoring against a rubric"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Holistic scaled score/grade plus AI feedback reports; no per-question marks"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not documented on pages read"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Scan completed sheets as PDFs on any photocopier and upload"
+    },
+    "student_identification": {
+     "value": "yes",
+     "evidence": "System reads printed codes on each script to match sheets to candidates; unread codes flagged 'No code'"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "10% human judgements flag where AI departs from teachers; teachers spend 7-14 min per assessment"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    }
+   },
+   "marking": 36,
+   "workflow": 43,
+   "breadth": 5.5,
+   "scale": {
+    "customers_claimed": "Over 1,400 schools; 2025-26: 1,422 schools, 566,140 student responses (vendor)",
+    "funding_or_owner_notes": "No More Marking Ltd; footer (c) 2013-2026"
+   },
+   "notable": "Lists AI Custom Tasks as its newest subscription product for schools outside national assessments (launch date not stated).",
+   "notableSource": "https://www.nomoremarking.com/",
+   "sources": {
+    "homepage": "https://www.nomoremarking.com/",
+    "pricing": "https://www.nomoremarking.com/pricing",
+    "capabilities": "https://www.nomoremarking.com/",
+    "capabilities.handwritten_reading": "https://www.nomoremarking.com/pricing",
+    "capabilities.bulk_scan_ingest": "https://help.nomoremarking.com/en/category/scanning-ixy9yt/",
+    "capabilities.student_identification": "https://help.nomoremarking.com/en/category/scanning-ixy9yt/",
+    "capabilities.stem_maths": "https://www.nomoremarking.com/products/auto"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "TimelyGrader",
+   "fullName": "TimelyGrader",
+   "company": "TimelyGrader",
+   "region": "global",
+   "hq": null,
+   "segment": "ai-grading-assistant",
+   "website": "https://www.timelygrader.ai",
+   "target": "Higher-ed instructors and institutions (Canvas, D2L)",
+   "pricing": {
+    "public_pricing": true,
+    "model": "per teacher/mo",
+    "entry_price": {
+     "amount": 10,
+     "currency": "USD",
+     "period": "month",
+     "plan_name": "Starter",
+     "notes": "$10/mo billed annually or $12 monthly; Institution plan by quote"
+    },
+    "free_plan": true
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Homepage lists 'hand-written essays' among supported submissions"
+    },
+    "subjective_ai_marking": {
+     "value": "yes",
+     "evidence": "AI scores work against each rubric criterion (sample 18/20 with per-criterion scores)"
+    },
+    "stem_maths": {
+     "value": "unknown",
+     "evidence": "Handles spreadsheets, charts and tables; maths working not documented"
+    },
+    "rubric_marking_scheme": {
+     "value": "yes",
+     "evidence": "Instructor-defined rubrics and an AI rubric generator"
+    },
+    "partial_marks_feedback": {
+     "value": "yes",
+     "evidence": "Per-criterion scores with 'What you did well' / 'How you can improve' feedback"
+    },
+    "typed_answers": {
+     "value": "yes",
+     "evidence": "Essays, research reports, plans, slides, spreadsheets and video"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Unlimited bulk uploads on Starter plan"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Assignment sync with Canvas/D2L; sheet-level ID not documented"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "'Validation by an instructor or a TA is required' before grades are final"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Only 'LMS API integration' (Institution plan) documented; no grading API"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 71,
+   "workflow": 29,
+   "breadth": 7.0,
+   "scale": {
+    "customers_claimed": "1,300+ institutions, 2,200+ instructors, 40K+ submissions graded (vendor)",
+    "funding_or_owner_notes": "Named users include McGill, Simon Fraser, Arizona State, University of Illinois; product 'launched in Early 2024'"
+   },
+   "notable": "Introduced Free, Starter ($10/mo annual) and Institution plans on 21 February 2025.",
+   "notableSource": "https://timelygrader.beehiiv.com/p/new-free-and-paid-plans-coming-to-timelygrader",
+   "sources": {
+    "homepage": "https://www.timelygrader.ai/",
+    "pricing": "https://www.timelygrader.ai/pricing",
+    "capabilities": "https://www.timelygrader.ai/",
+    "capabilities.bulk_scan_ingest": "https://www.timelygrader.ai/pricing",
+    "founded_year": "https://timelygrader.beehiiv.com/p/new-free-and-paid-plans-coming-to-timelygrader"
+   },
+   "asOf": "2026-10-22"
+  },
+  {
+   "name": "Olex.AI",
+   "fullName": "Olex.AI",
+   "company": "Olex.AI",
+   "region": "global",
+   "hq": "United Kingdom",
+   "segment": "ai-grading-assistant",
+   "website": "https://olex.ai",
+   "target": "UK primary and secondary schools and multi-academy trusts (KS1-KS5)",
+   "pricing": {
+    "public_pricing": false,
+    "model": "per institution",
+    "entry_price": null,
+    "free_plan": null
+   },
+   "capabilities": {
+    "handwritten_reading": {
+     "value": "yes",
+     "evidence": "Handwritten work photographed on desktop/mobile/tablet or scanned; no special paper needed"
+    },
+    "subjective_ai_marking": {
+     "value": "partial",
+     "evidence": "'Examiner-level feedback' on mock scripts; numeric marks not explicitly documented"
+    },
+    "stem_maths": {
+     "value": "partial",
+     "evidence": "Maths and Science listed as subjects; no detail on marking working"
+    },
+    "rubric_marking_scheme": {
+     "value": "partial",
+     "evidence": "'GCSE mark scheme aligned' (secondary) and 'DfE Writing Framework aligned' (primary); custom schemes not documented"
+    },
+    "partial_marks_feedback": {
+     "value": "partial",
+     "evidence": "Individual feedback per student plus class-level feedback; per-question marks not documented"
+    },
+    "typed_answers": {
+     "value": "unknown",
+     "evidence": "Not documented on homepage"
+    },
+    "indian_languages": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "bulk_scan_ingest": {
+     "value": "yes",
+     "evidence": "Work can be 'scanned in bulk' with a flatbed or office scanner"
+    },
+    "student_identification": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "annotated_copy": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    },
+    "teacher_review": {
+     "value": "yes",
+     "evidence": "No content reaches a student 'until the teacher has reviewed it and manually clicked Send'"
+    },
+    "question_paper_import": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "public_api": {
+     "value": "unknown",
+     "evidence": "Not documented"
+    },
+    "integrity_checks": {
+     "value": "unknown",
+     "evidence": "Not mentioned"
+    }
+   },
+   "marking": 43,
+   "workflow": 29,
+   "breadth": 5.0,
+   "scale": {
+    "customers_claimed": "Used 'across 120 Trusts' (vendor)",
+    "funding_or_owner_notes": "UK GDPR compliance and UK LinkedIn page; HQ country inferred, not stated; annual subscription with 'no per-script fees'"
+   },
+   "notable": "Bett Awards 2026 winner in Assessment, Planning and Progress Monitoring (per site badge).",
+   "notableSource": "https://olex.ai/",
+   "sources": {
+    "homepage": "https://olex.ai/",
+    "pricing": "https://olex.ai/",
+    "capabilities": "https://olex.ai/"
+   },
+   "asOf": "2026-10-22"
+  }
+ ]
+}

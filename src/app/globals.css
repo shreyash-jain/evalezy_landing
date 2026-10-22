@@ -242,6 +242,17 @@
     line-height: 1.7;
   }
 
+  /* Research reports (/research/*): direct children only, so figures and tables keep their own styles. */
+  .research-prose > h2 { margin-top: 3.5rem; scroll-margin-top: 6rem; font-family: var(--font-display); font-weight: 800; font-size: 1.85rem; letter-spacing: -0.02em; line-height: 1.15; color: var(--color-ink); }
+  .research-prose > h3 { margin-top: 2rem; font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--color-ink); }
+  .research-prose > p { margin-top: 1rem; font-size: 1.05rem; line-height: 1.75; color: #334155; }
+  .research-prose > ul, .research-prose > ol { margin-top: 1rem; padding-left: 1.25rem; font-size: 1.04rem; line-height: 1.75; color: #334155; }
+  .research-prose > ul { list-style: disc; }
+  .research-prose > ol { list-style: decimal; }
+  .research-prose > ul > li, .research-prose > ol > li { margin-top: 0.5rem; }
+  .research-prose a:not([class]) { color: var(--color-pen-700); text-decoration: underline; text-underline-offset: 3px; }
+  .research-prose strong { color: var(--color-ink); }
+
   .prose-ez p { margin-top: 1rem; line-height: 1.75; color: #334155; font-size: 1.06rem; }
   .prose-ez h2 { margin-top: 2.6rem; font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; letter-spacing: -0.02em; color: var(--color-ink); line-height: 1.15; }
   .prose-ez h3 { margin-top: 1.8rem; font-family: var(--font-display); font-weight: 700; font-size: 1.22rem; color: var(--color-ink); }
