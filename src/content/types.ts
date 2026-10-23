@@ -66,4 +66,7 @@ export interface Comparison {
   whenEvalezy: string[];
   body: { heading: string; text: string }[];
   faqs: Faq[];
+  /** Named-vendor comparisons: where the other side's facts were read, and when. */
+  sources?: { label: string; url: string }[];
+  note?: string;
 }
