@@ -94,7 +94,7 @@ Page one of the sample answer copy checked by Evalezy 1 2 3 4 5
 - 4 A cross, with the correct answer Wrong answers get a cross and the correct answer beside it: "Wrong answer. Correct: latitude (distance from the equator)."
 - 5 A note where marks were lost Incomplete answers get a short note explaining what was missing, so the student knows what to fix, not just that they lost a mark.
 
-This is a real Class IX Social Science copy checked by Evalezy, photographed on a phone. Read all 7 pages
+This is a real Class IX Social Science copy checked by Evalezy, photographed on a phone. Read all 7 pages · How copy checking software works · Best AI copy checking software, compared
 
 How it works
 
@@ -372,6 +372,120 @@ Anything we should know? (optional) Book my demo We usually reply within one wor
 
 ## Give your teachers their evenings back.
 Upload tonight's pile, review it tomorrow. ₹1 a page, and nothing reaches students until a teacher says so.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Copy Checking Software: Check Answer Copies Online with AI | Evalezy
+URL: https://evalezy.com/copy-checking-software/
+
+- Home
+- / Copy checking software
+Copy checking software
+
+# Copy checking software that checks answer sheets like a teacher.
+Evalezy is AI copy checking software for schools, coaching institutes and colleges. Upload a class's scanned or phone-photographed answer copies and get each one back checked in red pen, matched to the right student, ready for you to review. ₹1 per page.
+Book a demo See a real checked copy
+
+Page one of a Class IX Social Science answer copy checked by Evalezy: red ticks on correct answers, crosses with the correct answer written beside wrong ones, marks per question in the margin and the total 38/80 circled at the top
+Read from the sheet
+Aditi Sharma
+Roll 14 · Class IX-B
+
+Matched
+
+Bulk check
+Running
+194 of 200 copies checked
+
+Reviewed by Ms. Rao
+2 marks changed · ready to release
+
+## How copy checking with Evalezy works
+
+- 01 Scan or photograph the copies
+A scanner or a phone camera, one PDF per student. Spiral notebooks work; pages are straightened and cleaned before reading.
+
+- 02 Add the question paper and marking scheme
+Upload the question paper and it is read into questions with marks. Accept the AI's draft scheme per question, edit it, or write your own.
+
+- 03 Upload up to 200 copies at once
+Each student's name and roll number is read from the top of the first page and matched to your class list. Unsure matches wait for you.
+
+- 04 Get every copy back checked
+Ticks, crosses with the correct answer, short notes where marks were lost, marks per question and the total circled on page one.
+
+- 05 Review, then release
+Marks are drafts. Change any mark, then release; each student is emailed their checked copy as a PDF.
+
+Every step in detail
+Not a score table
+
+## Students get their own copy back, checked.
+Most grading tools return a number per question. Evalezy writes on the student's own pages, the way a teacher would, so students see which line earned the tick and where the marks went.
+
+- Half marks against criteria that add up to the question's marks
+- The correct answer next to every cross
+- Marks per question and the total circled on page one
+See a real 7-page checked copy
+
+What most AI graders returnQ | Score | Remark |
+
+Q4 | 0 / 1 | Incorrect |
+Q5 | 0 / 1 | Incorrect |
+Q6 | 0 / 1 | Incorrect |
+Q21 | 1.5 / 2 | Partially correct |
+Q30 | 0.5 / 3 | Partially correct |
+
+A number per question. The student never sees where on the page they went wrong.
+What Evalezy returns the copy itself Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the marginA 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained
+
+## Checking copies by hand vs copy checking software
+| By hand | With Evalezy |
+
+Time for 100 copies | About 10 hours at 6 minutes a copy | About 2–3 hours of machine time, then a teacher's review |
+Same standard for every copy | Drifts with fatigue and between teachers | One marking scheme per question, applied to every copy |
+Feedback on the copy | Depends on the teacher's time | A tick, cross or note on every answer |
+Who decides the final mark | The teacher | The teacher. AI marks wait for release |
+Diagrams and drawings | Fully judged | Judged by labels and written explanation only |
+Cost | Teacher time, or a fee per copy to outside checkers | ₹1 per page checked |
+
+More in Evalezy vs checking by hand and how to check 200 answer sheets faster .
+
+## What it costs
+₹1 per page checked in India, $0.01 elsewhere. No subscription, no setup fee, no per-teacher seats. A class of 40 copies of 8 pages each costs ₹320. Failed, stopped and unreadable copies are free, and reading names is free.
+Full pricing
+
+## Choosing copy checking software?
+We compared ten tools, one pick per job, with sourced capabilities and prices, including where another tool is the better choice (for example, Hindi-medium answers).
+Best AI copy checking software in 2026
+
+## Frequently asked questions
+What is copy checking software? +
+Software that marks students' handwritten answer copies. Evalezy reads each copy, finds every answer, marks it against the marking scheme for that question and writes the result back onto the student's pages in red pen, with the total circled. A teacher reviews and releases the marks.
+
+Is there an app to check copies? +
+Evalezy works in a web browser, inside the Vacademy dashboard. Copies photographed on a phone work: combine one student's photos into a PDF and upload it. Students can also upload their own answer sheet from an online test.
+
+Can I check copies online without a scanner? +
+Yes. Phone photos combined into a PDF work. The sample copy on this site is a phone photo of a spiral notebook. Mostly unreadable copies fail with a clear reason and are not charged.
+
+Which classes and subjects does it work for? +
+Any class whose answers are written in English, from school tests to college exams and UPSC answer writing. You set the marking scheme per question, so it follows your board's or institute's style. Maths working is read, with unclear lines sent to an equation reader. Diagrams are judged by their labels and written explanation, so keep a teacher on diagram-heavy questions.
+
+Does it check Hindi-medium copies? +
+Not yet. Evalezy is built and tested on English answer sheets. Students' names written in other scripts are still read for matching. Send us sample Hindi copies and we will tell you honestly how it does.
+
+Is it a plagiarism checker? +
+No. Copy checking here means marking students' answer copies. Evalezy does not check for plagiarism or AI-written text.
+
+How accurate is AI copy checking? +
+We do not publish an accuracy percentage, because it depends on handwriting, scan quality and the marking scheme. Every mark comes with the answer as read and the reason, low-confidence questions are flagged, and nothing reaches students until a teacher releases it. When we checked one maths copy both ways, Evalezy caught 2 slips the teacher had ticked and the teacher caught 5 answers Evalezy misread.
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
 Book a demo See a real checked copy
 
