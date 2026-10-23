@@ -134,5 +134,8 @@ a one-sided claim, "AI beats teachers", or quoting only the 2 catches without th
 - Named Evalezy customers, testimonials, results or numbers of copies checked. None are supplied yet. (Vacademy's client
   logos may be shown, framed as in "Customers" above.)
 - A free trial or free pages. None is defined. **(owner — decide)**
-- Competitor facts. No competitor list was supplied; comparisons are against approaches (manual checking,
-  on-screen marking, general chatbots), not named vendors.
+- Competitor facts that are not in the landscape research. Named-vendor pages (`/best-ai-copy-checking-software/`,
+  `/compare/<vendor>/`) may state only what `src/app/research/data/landscape.json` records, with its source and the
+  read date, and must say where the other tool is the better choice. Capability tables on those pages are generated
+  from that file; hand-written text in `src/content/bestTools.ts` and `VENDOR_COMPARISONS` must agree with its
+  evidence. When a vendor's record changes, rebuild the research data and re-read that text.
