@@ -45,6 +45,7 @@ export interface SitePage {
 
 export const PAGES: SitePage[] = [
   // Product
+  { path: "/copy-checking-software/", label: "Copy checking software", group: "product", title: "Copy Checking Software: Check Answer Copies Online with AI", description: "AI copy checking software for schools, coaching institutes and colleges. Upload scanned or phone-photographed answer copies; get each one checked in red pen. ₹1 per page." },
   { path: "/how-it-works/", label: "How it works", group: "product", title: "How AI Answer Sheet Checking Works, Step by Step", description: "From question paper to released results: how Evalezy reads handwritten copies, matches students, marks every answer against one scheme and returns red-pen checked copies." },
   { path: "/checked-copy/", label: "Red-pen checked copy", group: "product", title: "AI-Checked Answer Copies That Look Teacher-Checked", description: "Evalezy returns the student's own copy with ticks, crosses, short notes, marks per question and the total circled, in a handwriting-style red pen. Not a score table." },
   { path: "/bulk-upload/", label: "Bulk upload & student matching", group: "product", title: "Bulk Answer Sheet Upload with Automatic Student Matching", description: "Upload up to 200 scanned answer sheets at once. Evalezy reads each student's name and roll number, matches the copy to your class list and never guesses." },

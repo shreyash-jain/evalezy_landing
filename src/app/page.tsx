@@ -126,6 +126,10 @@ export default function Home() {
         <p className="mt-8 text-center text-sm text-slate-500">
           This is a real Class IX Social Science copy checked by Evalezy, photographed on a phone.{" "}
           <Link href="/sample/" className="font-semibold text-pen-700 underline underline-offset-4">Read all 7 pages</Link>
+          {" · "}
+          <Link href="/copy-checking-software/" className="font-semibold text-pen-700 underline underline-offset-4">How copy checking software works</Link>
+          {" · "}
+          <Link href="/best-ai-copy-checking-software/" className="font-semibold text-pen-700 underline underline-offset-4">Best AI copy checking software, compared</Link>
         </p>
       </section>
 
