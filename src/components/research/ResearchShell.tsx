@@ -28,6 +28,10 @@ export default function ResearchShell({
   sources,
   dataset,
   crumb,
+  path,
+  crumbs,
+  kind = "Report",
+  extraLd = [],
   children,
 }: {
   slug: string;
@@ -41,12 +45,20 @@ export default function ResearchShell({
   dataset?: DatasetMeta;
   /** Short breadcrumb label for this report. */
   crumb: string;
+  /** URL path when the page does not live under /research/ (e.g. "/best-ai-copy-checking-software/"). */
+  path?: string;
+  /** Breadcrumb trail above the title; defaults to Research / crumb. */
+  crumbs?: { label: string; href?: string }[];
+  /** schema.org type of the main entity. */
+  kind?: "Report" | "Article";
+  /** More JSON-LD nodes for the same @graph (e.g. an ItemList). */
+  extraLd?: Record<string, unknown>[];
   children: React.ReactNode;
 }) {
-  const url = `${SITE}/research/${slug}/`;
+  const url = `${SITE}${path ?? `/research/${slug}/`}`;
   const graph: Record<string, unknown>[] = [
     {
-      "@type": "Report",
+      "@type": kind,
       "@id": `${url}#report`,
       headline: title,
       description: dek,
@@ -56,9 +68,10 @@ export default function ResearchShell({
       inLanguage: "en",
       author: { "@id": `${SITE}/#org` },
       publisher: { "@id": `${SITE}/#org` },
-      isPartOf: { "@id": `${SITE}/research/#collection` },
+      isPartOf: { "@id": path ? `${SITE}/#website` : `${SITE}/research/#collection` },
       citation: sources.map((s) => ({ "@type": "CreativeWork", name: s.title, publisher: s.publisher, url: s.url })),
     },
+    ...extraLd,
   ];
   if (dataset) {
     graph.push({
@@ -80,7 +93,7 @@ export default function ResearchShell({
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c") }} />
       <article className="wrap max-w-4xl pb-16 pt-10 md:pt-14">
-        <Breadcrumbs items={[{ label: "Research", href: "/research/" }, { label: crumb }]} />
+        <Breadcrumbs items={crumbs ?? [{ label: "Research", href: "/research/" }, { label: crumb }]} />
         <p className="eyebrow mt-8">{eyebrow}</p>
         <h1 className="h-display mt-3 text-[2.2rem] text-ink md:text-[3rem]">{title}</h1>
         <p className="mt-5 text-lg leading-relaxed text-slate-700">{dek}</p>
@@ -98,7 +111,7 @@ export default function ResearchShell({
         </p>
 
         <div role="note" className="mt-6 rounded-xl border border-warn/30 bg-warn-50 p-4 text-sm leading-relaxed text-[#6b4a12]">
-          <strong>Disclosure.</strong> Evalezy publishes this report and sells AI answer-sheet checking, so we are one of
+          <strong>Disclosure.</strong> Evalezy publishes this {kind === "Article" ? "guide" : "report"} and sells AI answer-sheet checking, so we are one of
           the vendors in this market. Every score links to its source, the method is published below, Evalezy is scored
           with the same rubric (including what it does not do), and anything we could not verify counts as not
           documented. Spot an error? Write to{" "}

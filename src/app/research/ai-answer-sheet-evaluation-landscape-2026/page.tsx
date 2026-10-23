@@ -307,7 +307,8 @@ export default function Page() {
         <li>Prices are shown as published, in their own currency and unit, without conversion. Customer counts are the vendors&apos; own claims.</li>
       </ul>
       <p>
-        Related: <Link href="/side-by-side/">One copy checked by a teacher and by Evalezy</Link> ·{" "}
+        Related: <Link href="/best-ai-copy-checking-software/">Best AI copy checking software in 2026, one pick per job</Link> ·{" "}
+        <Link href="/side-by-side/">One copy checked by a teacher and by Evalezy</Link> ·{" "}
         <Link href="/compare/on-screen-marking/">Evalezy vs on-screen marking</Link> ·{" "}
         <Link href="/compare/chatgpt/">Evalezy vs a general chatbot</Link> · <Link href="/pricing/">Evalezy pricing</Link>
       </p>
