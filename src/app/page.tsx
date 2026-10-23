@@ -41,7 +41,7 @@ export default function Home() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "Evalezy: AI Answer Sheet Checking for Handwritten Copies",
+          name: "Evalezy: AI Copy Checking Software for Handwritten Answer Sheets",
           url: SITE,
           isPartOf: { "@id": `${SITE}/#website` },
           about: { "@id": `${SITE}/#app` },
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="ruled-faint pointer-events-none absolute inset-0" />
         <div className="wrap relative grid gap-12 pb-16 pt-10 md:pt-16 lg:grid-cols-[1.08fr_1fr] lg:items-center lg:gap-8 lg:pb-24">
           <div>
-            <p className="eyebrow animate-rise">AI answer sheet checking</p>
+            <p className="eyebrow animate-rise">AI copy checking software</p>
             <h1 className="h-display mt-4 animate-rise text-[2.7rem] text-ink [animation-delay:80ms] sm:text-6xl lg:text-[4.3rem]">
               Handwritten copies, checked by AI in a <PenUnderline>teacher&apos;s red pen.</PenUnderline>
             </h1>

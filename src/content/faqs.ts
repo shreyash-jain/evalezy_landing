@@ -13,6 +13,8 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
       { q: "Does it handle maths?", a: "Yes for written working and equations. Pages are read by a vision model, and maths lines it is unsure of get a second read by a dedicated equation reader." },
       { q: "What about diagrams, maps and graphs?", a: "Grading works from what is written. Diagrams are judged by their labels and the written explanation, not as drawings. For questions that are mostly a diagram, keep a teacher on the final mark." },
       { q: "Which languages does it support?", a: "Evalezy is built and tested on English answer sheets. Students' names written in other scripts are read and transliterated for matching. For Hindi-medium or other-language answers, send us sample copies and we will tell you honestly how it does." },
+      { q: "How is Evalezy different from other AI copy checking tools?", a: "In our sourced research of 37 answer-sheet evaluation tools (evalezy.com/research), Evalezy documents 12 of 14 capabilities, the most of any. Three things set it apart: it reads each student's name and roll number and matches the copy to your class list; it returns the student's own copy checked in a handwriting-style red pen, not a score table; and it publishes a per-page price (₹1) and a public Evaluation API. Others are better for Indian-language answers (Eklavvya), plagiarism checks (Turnitin) and human marking at board scale (on-screen marking providers). The buyer's guide at evalezy.com/best-ai-copy-checking-software compares ten tools." },
+      { q: "Is Evalezy a plagiarism or AI-content checker?", a: "No. In India a \"copy\" is a student's answer sheet, and copy checking means marking it. Evalezy marks students' answers and returns the checked copy; it does not check for plagiarism or AI-written text." },
       { q: "Can it check typed answers from an online test?", a: "Yes. Long-answer questions typed in an online test (essays, letters, emails) are graded on format, content, organisation and language, with word limits. A typed answer takes about 20 seconds." },
     ],
   },
@@ -65,6 +67,7 @@ const pick = (q: string) => {
 };
 
 export const HOME_FAQS: Faq[] = [
+  pick("How is Evalezy different from other AI copy checking tools?"),
   pick("How accurate is it?"),
   pick("Can teachers change the AI's marks?"),
   pick("Do I need a scanner?"),
