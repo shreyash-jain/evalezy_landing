@@ -28,7 +28,9 @@ export function Footer() {
     {
       title: "Compare & learn",
       links: [
+        { href: "/best-ai-copy-checking-software/", label: "Best AI copy checking software" },
         ...COMPARISONS.map((c) => ({ href: `/compare/${c.slug}/`, label: c.label })),
+        { href: "/compare/", label: "Evalezy vs other tools" },
         { href: "/research/", label: "Research" },
         { href: "/blog/", label: "Blog" },
         { href: "/faq/", label: "FAQ" },

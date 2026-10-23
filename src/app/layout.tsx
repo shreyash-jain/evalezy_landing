@@ -5,7 +5,7 @@ import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Tracking } from "@/components/Tracking";
-import { COMPANY, SALES_EMAIL, SITE, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/site";
+import { COMPANY, DOCS_URL, SALES_EMAIL, SITE, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/site";
 
 /*
  * Fonts are self-hosted (src/fonts/*.woff2, latin + latin-ext + ₹ and maths symbols, cut from the Google Fonts
@@ -28,18 +28,20 @@ const mono = localFont({ src: "../fonts/jetbrains-mono-var.woff2", weight: "400 
 const GTM_ID = "GTM-5C4DDJ6W";
 
 const DESCRIPTION =
-  "Evalezy checks handwritten answer sheets with AI and returns each student's copy checked in red pen: ticks, crosses, notes, marks per question and the total circled. Bulk upload, automatic student matching, teacher review. ₹1 per page.";
+  "Evalezy is AI copy checking software for handwritten answer sheets. It returns each student's copy checked in red pen: ticks, crosses, notes, marks per question and the total circled. Bulk upload, automatic student matching, teacher review. ₹1 per page.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: { default: "Evalezy: AI Answer Sheet Checking for Handwritten Copies", template: "%s | Evalezy" },
-  description: DESCRIPTION,
+  title: { default: "Evalezy: AI Copy Checking Software for Handwritten Answer Sheets", template: "%s | Evalezy" },
+  description: "AI copy checking software for handwritten answer sheets. Get each student's copy back checked in red pen, matched to the student, ready for teacher review. ₹1 a page.",
   applicationName: SITE_NAME,
   manifest: "/site.webmanifest",
   keywords: [
     "AI answer sheet checking", "AI copy checking", "answer sheet evaluation software", "handwritten answer evaluation",
     "AI exam paper checker", "automated answer sheet evaluation", "AI grading handwritten", "subjective answer evaluation AI",
     "answer sheet evaluation API", "on-screen marking alternative", "Evalezy",
+    "AI copy checking software", "copy checking software", "AI copy checker for teachers", "answer sheet checking app",
+    "best AI copy checking software", "AI answer sheet checker India", "UPSC answer evaluation AI", "AI marking of handwritten exams",
   ],
   openGraph: {
     type: "website",
@@ -83,6 +85,11 @@ const jsonLd = {
       logo: `${SITE}/logo.png`,
       description: DESCRIPTION,
       email: SALES_EMAIL,
+      alternateName: ["Evalezy AI", "Evalezy by Vacademy"],
+      knowsAbout: [
+        "AI copy checking", "AI answer sheet evaluation", "handwritten answer grading", "marking schemes and rubrics",
+        "on-screen marking", "UPSC answer writing evaluation", "assessment in Indian schools",
+      ],
       sameAs: ["https://vacademy.io"],
       parentOrganization: { "@type": "Organization", name: "Vacademy", url: "https://vacademy.io" },
       contactPoint: [{ "@type": "ContactPoint", contactType: "sales", telephone: `+${WHATSAPP_NUMBER}`, email: SALES_EMAIL, availableLanguage: ["en", "hi"] }],
@@ -99,10 +106,25 @@ const jsonLd = {
       "@type": "SoftwareApplication",
       "@id": `${SITE}/#app`,
       name: "Evalezy",
+      alternateName: "Evalezy AI copy checking",
       applicationCategory: "EducationalApplication",
+      applicationSubCategory: "AI copy checking (answer sheet evaluation)",
       operatingSystem: "Web",
       url: SITE,
       description: DESCRIPTION,
+      screenshot: `${SITE}/copy/page-1.webp`,
+      softwareHelp: { "@type": "CreativeWork", name: "Evalezy Evaluation API docs", url: DOCS_URL },
+      audience: { "@type": "EducationalAudience", educationalRole: "teacher" },
+      featureList: [
+        "Reads scanned or phone-photographed handwritten answer sheets",
+        "Marks every answer against one marking scheme per question, in half marks with a reason",
+        "Up to 200 copies per upload, matched to students by name and roll number",
+        "Returns the student's own copy checked in a handwriting-style red pen, total circled",
+        "Teacher review, edit and release; AI marks are drafts",
+        "Question paper import and AI-drafted marking schemes",
+        "Grades typed essays and long answers from online tests",
+        "Evaluation API for developers",
+      ],
       offers: [
         { "@type": "Offer", name: "Per page checked (India)", price: "1", priceCurrency: "INR", description: "₹1 per answer-sheet page checked, excluding GST" },
         { "@type": "Offer", name: "Per page checked", price: "0.01", priceCurrency: "USD", description: "$0.01 per answer-sheet page checked" },
