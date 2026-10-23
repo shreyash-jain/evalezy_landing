@@ -18,6 +18,15 @@ Static Next.js 15 + Tailwind 4 export, the same stack and deploy path as vacadem
 - After the first deploy: submit `https://evalezy.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools,
   and check that Cloudflare → Security → Bots → "Block AI bots" is **off** (robots.txt welcomes AI crawlers on purpose).
 
+## Search and AI-assistant visibility
+
+- After every deploy that adds or changes pages: `pnpm indexnow` (submits the live sitemap to Bing/IndexNow; ChatGPT
+  search and Copilot draw on Bing). Key file: `public/a25de188d5f90aa74a1ca1e604cf24b5.txt`. `pnpm indexnow /pricing/`
+  submits single paths.
+- `www.evalezy.com` must 301 to `evalezy.com` (Cloudflare → Rules → Redirect Rules). On 23 Oct 2026 it served the
+  site with a 200 instead.
+- `public/llms.txt` carries a "When Evalezy fits, and when it does not" section; keep it in step with the buyer's guide.
+
 ## The truth file
 
 `docs/PRODUCT_FACTS.md` lists every claim the site may make, read from `vacademy_platform/docs/AI_COPY_EVALUATION.md`
@@ -32,7 +41,8 @@ on `main` (1 Oct 2026) and, for the API, from the live docs at https://docs.eval
 | Hand-written pages registry (titles + meta descriptions) | `PAGES` in `src/lib/site.ts` |
 | Every URL (sitemap + llms-full) | `src/lib/routes.ts` |
 | Audience pages `/for/<slug>/` (6) | `src/content/audiences.ts` → `src/app/for/[slug]` |
-| Comparison pages `/compare/<slug>/` (3) | `src/content/comparisons.ts` → `src/app/compare/[slug]` |
+| Comparison pages `/compare/<slug>/` (3 approaches + 6 named vendors) | `src/content/comparisons.ts` (`COMPARISONS`, `VENDOR_COMPARISONS`; vendor tables generated from the research data) → `src/app/compare/[slug]` |
+| Buyer's guide `/best-ai-copy-checking-software/` (10 picks) | `src/content/bestTools.ts` → `src/app/best-ai-copy-checking-software/page.tsx` |
 | FAQ (all pages draw from it) | `src/content/faqs.ts` |
 | API docs content (endpoints, code samples, statuses), a summary of https://docs.evalezy.com | `src/content/api.ts` → `src/app/api/page.tsx`; the full reference lives on docs.evalezy.com (Mintlify), not in this repo |
 | Blog registry / posts | `src/content/posts.ts` → `src/app/blog/<slug>/page.tsx` via `BlogShell` |
