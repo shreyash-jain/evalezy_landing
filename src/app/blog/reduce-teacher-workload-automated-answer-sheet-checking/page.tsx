@@ -60,7 +60,11 @@ export default function Page() {
         <strong>Automated answer sheet checking</strong> uses AI to read students’ handwritten answers, mark them
         against a marking scheme and hand the result to the teacher for review. This guide explains where checking time
         goes, what automation can and cannot take off a teacher’s desk, and how to introduce it without losing control
-        of the marks.
+        of the marks. For the bigger picture, see{" "}
+        <Link href="/blog/ai-exam-evaluation-schools-coaching-institutes/">
+          how AI is transforming exam evaluation in schools and coaching institutes
+        </Link>
+        .
       </p>
 
       <h2 id="why-time-consuming">Why is answer sheet checking so time-consuming?</h2>
@@ -205,7 +209,9 @@ export default function Page() {
         <Link href="/blog/how-to-write-a-marking-scheme/">how to write a marking scheme</Link> with worked 2, 3 and
         5-mark examples. For step 4, our guide to{" "}
         <Link href="/blog/scan-answer-sheets-with-phone/">scanning answer sheets with a phone</Link> covers apps,
-        lighting and spiral notebooks.
+        lighting and spiral notebooks. For step 2, our guide to{" "}
+        <Link href="/blog/best-ai-grading-software-for-teachers/">choosing AI grading software for teachers</Link> lists
+        the features to check.
       </p>
 
       <WhereEvalezyFits>
@@ -244,8 +250,9 @@ export default function Page() {
       <p>
         Time savings are not fixed. They depend on the class size, how long and complex the answers are, how good the
         scans are and which tool you use. A 20-question objective test and a 5-question essay paper behave very
-        differently. Measure your own numbers on a pilot batch. For a closer look, read our comparison of{" "}
-        <Link href="/compare/manual-checking/">AI copy checking and checking by hand</Link>.
+        differently. Measure your own numbers on a pilot batch. For a closer look, read{" "}
+        <Link href="/blog/ai-vs-manual-answer-sheet-checking/">AI vs manual answer sheet checking</Link> or our
+        comparison of <Link href="/compare/manual-checking/">AI copy checking and checking by hand</Link>.
       </p>
 
       <h2 id="best-practices">Best practices for implementing AI-assisted grading</h2>

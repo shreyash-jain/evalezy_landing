@@ -85,7 +85,9 @@ export default function Page() {
         releases the result. Capabilities vary a lot between tools and between assessment types: some read only typed
         answers, some give only a total and some cannot handle maths. See our guide to{" "}
         <Link href="/blog/best-ai-grading-software-for-teachers/">choosing AI grading software for teachers</Link> for
-        the features to check.
+        the features to check, and our overview of{" "}
+        <Link href="/blog/ai-exam-evaluation-schools-coaching-institutes/">AI exam evaluation in schools and coaching
+        institutes</Link> for the whole process.
       </p>
 
       <h2 id="key-differences">AI vs manual answer sheet checking: key differences</h2>

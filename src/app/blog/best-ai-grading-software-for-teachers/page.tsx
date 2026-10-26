@@ -83,7 +83,9 @@ export default function Page() {
         Three ideas come up in every serious tool. <strong>Answer recognition</strong> is reading the handwriting and
         working out which answer belongs to which question. <strong>The marking scheme</strong> (or rubric) is the
         list of criteria that earn marks for each question. <strong>Teacher review</strong> is the step where a teacher
-        checks the proposed marks before students see them.
+        checks the proposed marks before students see them. Our overview of{" "}
+        <Link href="/blog/ai-exam-evaluation-schools-coaching-institutes/">AI exam evaluation in schools and coaching
+        institutes</Link> explains the whole process.
       </p>
 
       <h2 id="features">What teachers should look for in AI grading software</h2>
@@ -241,7 +243,9 @@ export default function Page() {
       </ul>
       <p>
         In every subject, complex reasoning, unusual methods, diagrams and subjective judgements are where a teacher’s
-        review matters most.
+        review matters most. Our comparison of{" "}
+        <Link href="/blog/ai-vs-manual-answer-sheet-checking/">AI vs manual answer sheet checking</Link> explains when a
+        teacher should check by hand.
       </p>
 
       <h2 id="mistakes">Common mistakes to avoid</h2>
