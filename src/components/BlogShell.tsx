@@ -14,22 +14,23 @@ export function postMetadata(slug: string): Metadata {
   const p = findPost(slug);
   if (!p) return {};
   const url = `${SITE}${postPath(slug)}`;
+  const title = p.seoTitle ?? p.title;
   return {
-    title: p.title,
+    title,
     description: p.description,
     keywords: p.keywords,
     alternates: { canonical: url },
     openGraph: {
       type: "article",
       url,
-      title: p.title,
+      title,
       description: p.description,
       publishedTime: p.published,
       modifiedTime: p.updated ?? p.published,
       siteName: SITE_NAME,
       images: [{ url: "/og.png", width: 1200, height: 630 }],
     },
-    twitter: { card: "summary_large_image", title: p.title, description: p.description },
+    twitter: { card: "summary_large_image", title, description: p.description },
   };
 }
 

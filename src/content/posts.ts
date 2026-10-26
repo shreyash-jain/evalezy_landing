@@ -4,7 +4,10 @@
  */
 export interface Post {
   slug: string;
+  /** The article's H1 and BlogPosting headline. */
   title: string;
+  /** Shorter <title> and social title when the H1 is too long for search results; defaults to `title`. */
+  seoTitle?: string;
   description: string;
   category: "Guides" | "Assessment" | "AI checking" | "For developers";
   published: string; // YYYY-MM-DD
