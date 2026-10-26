@@ -20,6 +20,16 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "reduce-teacher-workload-automated-answer-sheet-checking",
+    title: "How to Reduce Teachers' Workload With Automated Answer Sheet Checking",
+    description: "Discover how automated answer sheet checking can help teachers manage exam workloads, streamline grading, and provide timely feedback to students.",
+    category: "Guides",
+    published: "2026-10-26",
+    readMins: 10,
+    keywords: ["automated answer sheet checking", "reduce teachers' workload", "AI answer sheet checking", "automated exam grading", "AI tools for teachers", "handwritten answer sheet checking software", "AI evaluation software for schools"],
+    pages: ["/copy-checking-software/", "/bulk-upload/", "/for/coaching-institutes/", "/compare/manual-checking/"],
+  },
+  {
     slug: "maths-step-marking-partial-credit",
     title: "Maths Step Marking: How to Award Partial Credit Fairly",
     description: "A practical maths step-marking guide with a worked 4-mark example, follow-through rules, alternative methods and checks for AI-read handwritten answers.",
