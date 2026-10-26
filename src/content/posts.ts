@@ -20,6 +20,16 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "ai-exam-evaluation-schools-coaching-institutes",
+    title: "How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes",
+    description: "Discover how AI exam evaluation software helps schools and coaching institutes streamline answer sheet checking, improve feedback, and reduce manual grading workloads.",
+    category: "AI checking",
+    published: "2026-10-26",
+    readMins: 9,
+    keywords: ["AI exam evaluation software", "AI exam evaluation system", "automated exam evaluation", "AI assessment software", "AI grading for schools", "AI evaluation for coaching institutes", "digital exam evaluation", "automated answer sheet checking"],
+    pages: ["/how-it-works/", "/for/schools/", "/for/coaching-institutes/", "/copy-checking-software/", "/for/colleges-universities/"],
+  },
+  {
     slug: "ai-vs-manual-answer-sheet-checking",
     title: "AI vs Manual Answer Sheet Checking: Which Is Better for Modern Education?",
     seoTitle: "AI vs Manual Answer Sheet Checking: Key Differences",
