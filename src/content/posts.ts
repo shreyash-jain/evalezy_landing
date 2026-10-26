@@ -20,6 +20,16 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "best-ai-grading-software-for-teachers",
+    title: "Best AI Grading Software for Teachers: Features, Benefits, and How to Choose",
+    description: "Looking for AI grading software for teachers? Compare essential features, evaluation workflows, and selection criteria to find the right solution for your institution.",
+    category: "AI checking",
+    published: "2026-10-26",
+    readMins: 10,
+    keywords: ["AI grading software for teachers", "best AI grading tools", "AI assessment tools for teachers", "automated grading software", "AI answer sheet evaluation software", "handwritten answer checking software", "AI tools for educators"],
+    pages: ["/pricing/", "/compare/", "/faq/", "/marking-scheme/"],
+  },
+  {
     slug: "reduce-teacher-workload-automated-answer-sheet-checking",
     title: "How to Reduce Teachers' Workload With Automated Answer Sheet Checking",
     description: "Discover how automated answer sheet checking can help teachers manage exam workloads, streamline grading, and provide timely feedback to students.",
