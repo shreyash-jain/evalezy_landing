@@ -4,7 +4,10 @@
  */
 export interface Post {
   slug: string;
+  /** The article's H1 and BlogPosting headline. */
   title: string;
+  /** Shorter <title> and social title when the H1 is too long for search results; defaults to `title`. */
+  seoTitle?: string;
   description: string;
   category: "Guides" | "Assessment" | "AI checking" | "For developers";
   published: string; // YYYY-MM-DD
@@ -16,6 +19,47 @@ export interface Post {
 }
 
 export const POSTS: Post[] = [
+  {
+    slug: "ai-exam-evaluation-schools-coaching-institutes",
+    title: "How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes",
+    description: "Discover how AI exam evaluation software helps schools and coaching institutes streamline answer sheet checking, improve feedback, and reduce manual grading workloads.",
+    category: "AI checking",
+    published: "2026-10-26",
+    readMins: 9,
+    keywords: ["AI exam evaluation software", "AI exam evaluation system", "automated exam evaluation", "AI assessment software", "AI grading for schools", "AI evaluation for coaching institutes", "digital exam evaluation", "automated answer sheet checking"],
+    pages: ["/how-it-works/", "/for/schools/", "/for/coaching-institutes/", "/copy-checking-software/", "/for/colleges-universities/"],
+  },
+  {
+    slug: "ai-vs-manual-answer-sheet-checking",
+    title: "AI vs Manual Answer Sheet Checking: Which Is Better for Modern Education?",
+    seoTitle: "AI vs Manual Answer Sheet Checking: Key Differences",
+    description: "Compare AI vs manual answer sheet checking to understand differences in grading time, consistency, feedback, costs, and teacher control.",
+    category: "AI checking",
+    published: "2026-10-26",
+    readMins: 10,
+    keywords: ["AI vs manual answer sheet checking", "AI vs manual grading", "AI answer sheet evaluation", "manual vs automated grading", "AI exam checking software", "automated answer sheet evaluation", "AI grading accuracy"],
+    pages: ["/compare/manual-checking/", "/side-by-side/", "/checked-copy/", "/teacher-review/"],
+  },
+  {
+    slug: "best-ai-grading-software-for-teachers",
+    title: "Best AI Grading Software for Teachers: Features, Benefits, and How to Choose",
+    description: "Looking for AI grading software for teachers? Compare essential features, evaluation workflows, and selection criteria to find the right solution for your institution.",
+    category: "AI checking",
+    published: "2026-10-26",
+    readMins: 10,
+    keywords: ["AI grading software for teachers", "best AI grading tools", "AI assessment tools for teachers", "automated grading software", "AI answer sheet evaluation software", "handwritten answer checking software", "AI tools for educators"],
+    pages: ["/pricing/", "/compare/", "/faq/", "/marking-scheme/"],
+  },
+  {
+    slug: "reduce-teacher-workload-automated-answer-sheet-checking",
+    title: "How to Reduce Teachers' Workload With Automated Answer Sheet Checking",
+    description: "Discover how automated answer sheet checking can help teachers manage exam workloads, streamline grading, and provide timely feedback to students.",
+    category: "Guides",
+    published: "2026-10-26",
+    readMins: 10,
+    keywords: ["automated answer sheet checking", "reduce teachers' workload", "AI answer sheet checking", "automated exam grading", "AI tools for teachers", "handwritten answer sheet checking software", "AI evaluation software for schools"],
+    pages: ["/copy-checking-software/", "/bulk-upload/", "/for/coaching-institutes/", "/compare/manual-checking/"],
+  },
   {
     slug: "maths-step-marking-partial-credit",
     title: "Maths Step Marking: How to Award Partial Credit Fairly",
