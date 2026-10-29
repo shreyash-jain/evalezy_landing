@@ -20,6 +20,7 @@ function textOf(html) {
       .replace(/<script[\s\S]*?<\/script>/g, "")
       .replace(/<li[^>]*aria-hidden="true"[^>]*>[\s\S]*?<\/li>/g, "")
       .replace(/<ul[^>]*data-llms-skip[^>]*>[\s\S]*?<\/ul>/g, "")
+      .replace(/<figure[^>]*data-llms-skip[^>]*>[\s\S]*?<\/figure>/g, "")
       .replace(/<img[^>]*\balt="([^"]+)"[^>]*>/g, "$1")
       .replace(/<style[\s\S]*?<\/style>/g, "")
       .replace(/<(h1|h2|h3)[^>]*>/g, (_, t) => `\n\n${"#".repeat(Number(t[1]) + 0)} `)
