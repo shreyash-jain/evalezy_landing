@@ -13,6 +13,7 @@ import { ApiTabs, CopyAnatomy, PriceCalculator } from "@/components/Interactive"
 import { DemoForm } from "@/components/DemoForm";
 import { COPY, count } from "@/content/sideBySide";
 import { ClientMarquee } from "@/components/ClientLogos";
+import { PhoneMock } from "@/components/AppMock";
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE },
@@ -54,7 +55,13 @@ export default function Home() {
         <div className="ruled-faint pointer-events-none absolute inset-0" />
         <div className="wrap relative grid gap-12 pb-16 pt-10 md:pt-16 lg:grid-cols-[1.08fr_1fr] lg:items-center lg:gap-8 lg:pb-24">
           <div>
-            <p className="eyebrow animate-rise">AI copy checking software</p>
+            <div>
+            <Link href="/app/" className="inline-flex animate-rise items-center gap-2 rounded-full border border-pen/30 bg-white px-3 py-1 text-sm font-semibold text-pen-700 hover:border-pen">
+              <span className="rounded-full bg-pen px-2 py-0.5 text-[0.7rem] font-bold uppercase tracking-wide text-white">New</span>
+              The Evalezy app is launching soon <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+            </div>
+            <p className="eyebrow mt-6 animate-rise">AI copy checking software</p>
             <h1 className="h-display mt-4 animate-rise text-[2.7rem] text-ink [animation-delay:80ms] sm:text-6xl lg:text-[4.3rem]">
               Handwritten copies, checked by AI in a <PenUnderline>teacher&apos;s red pen.</PenUnderline>
             </h1>
@@ -257,7 +264,10 @@ export default function Home() {
                 <p className="text-sm text-slate-600">{COPY.evalezyNotes} written notes</p>
               </div>
             </div>
-            <Link href="/side-by-side/" className="btn btn-ink mt-8">Compare every page <ArrowRight className="h-4 w-4" /></Link>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link href="/side-by-side/" className="btn btn-ink">Compare every page <ArrowRight className="h-4 w-4" /></Link>
+              <Link href="/case-studies/" className="btn btn-outline">Read the case studies</Link>
+            </div>
           </div>
           <figure className="overflow-hidden rounded-2xl border border-line bg-paper">
             <figcaption className="flex items-center justify-between border-b border-line px-5 py-3 text-sm">
@@ -292,6 +302,86 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------ COMPARE */}
+      <section className="wrap py-20 md:py-28">
+        <SectionHeading
+          eyebrow="How Evalezy compares"
+          title={<>Other tools stop at a score. <span className="marker">Evalezy hands back the copy.</span></>}
+          lede="Sourced from each tool's public pages, October 2026. Where the other option is better, we say so."
+        />
+        <div className="mt-12 overflow-x-auto rounded-2xl border border-line bg-white">
+          <table className="w-full min-w-[44rem] text-left">
+            <thead>
+              <tr className="bg-paper-2 text-sm text-ink">
+                <th className="w-[30%] px-5 py-3.5 font-semibold"> </th>
+                <th className="px-5 py-3.5 font-semibold text-pen-700">Evalezy</th>
+                <th className="px-5 py-3.5 font-semibold">Acadine</th>
+                <th className="px-5 py-3.5 font-semibold">Checking by hand</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Teacher reviews every mark before students see it", "Yes: AI marks are drafts", "Results publish automatically", "Yes"],
+                ["Student gets their own copy back, checked", "Yes, in red pen, total circled", "Not described: scorecards and feedback", "Depends on the teacher's time"],
+                ["Copies matched to students by name and roll number", "Yes, never guessed", "Not described", "By hand"],
+                ["Same marking scheme for every copy", "Yes, one per question", "Yes, standard rubrics", "Drifts with fatigue"],
+                ["Published price", "₹1 per page; failed copies free", "No, book a demo", "Teacher hours"],
+                ["Public grading API", "Yes, docs.evalezy.com", "Not documented", "—"],
+                ["Hindi and regional-language answers", "Not yet: English only", "Yes: English, Hindi, Sanskrit", "Yes"],
+                ["Question papers, OMR, LMS and analytics in one suite", "No: Evalezy focuses on checking (part of Vacademy)", "Yes", "—"],
+              ].map(([k, a, b, c]) => (
+                <tr key={k} className="border-t border-line align-top">
+                  <th scope="row" className="px-5 py-3.5 text-sm font-semibold text-ink">{k}</th>
+                  <td className="px-5 py-3.5 text-sm leading-relaxed text-slate-700">{a}</td>
+                  <td className="px-5 py-3.5 text-sm leading-relaxed text-slate-600">{b}</td>
+                  <td className="px-5 py-3.5 text-sm leading-relaxed text-slate-600">{c}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-2">
+          <Link href="/compare/acadine/" className="rounded-full border border-pen/40 bg-white px-4 py-2 text-sm font-semibold text-pen-700 hover:border-pen">Evalezy vs Acadine, in full</Link>
+          <Link href="/best-ai-copy-checking-software/" className="rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-ink hover:text-ink">Best AI copy checking software 2026</Link>
+          <Link href="/compare/" className="rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-ink hover:text-ink">All comparisons</Link>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------ MOBILE APP */}
+      <section className="relative overflow-hidden border-y border-line bg-white">
+        <div className="wrap grid gap-12 py-20 md:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="eyebrow">Evalezy app · Launching soon</p>
+            <h2 className="h-section mt-3 text-ink">No scanner? Check the whole class from your phone.</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">
+              Photograph each student&apos;s copy, tap Next student, and send the class for checking. Every copy is matched
+              to its student and comes back checked in red pen, ready to share as one zip. Same login, same ₹1 a page.
+            </p>
+            <ol className="mt-8 grid gap-3 sm:grid-cols-2">
+              {[
+                ["Pick the test", "Set up once in the dashboard"],
+                ["Scan each copy", "Camera, or pick PDFs"],
+                ["Check them all", "Names read, students matched"],
+                ["Share checked copies", "One zip to WhatsApp, Drive or email"],
+              ].map(([t, b], i) => (
+                <li key={t} className="flex gap-3 rounded-2xl border border-line bg-paper p-4">
+                  <span className="hand text-2xl leading-6 text-pen">{i + 1}</span>
+                  <span>
+                    <span className="block font-semibold text-ink">{t}</span>
+                    <span className="text-sm text-slate-600">{b}</span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link href="/app/" className="btn btn-ink">See the app <ArrowRight className="h-4 w-4" /></Link>
+              <Link href="/blog/evalezy-app-check-answer-sheets-on-phone/" className="btn btn-outline">Use cases</Link>
+            </div>
+          </div>
+          <PhoneMock />
         </div>
       </section>
 
