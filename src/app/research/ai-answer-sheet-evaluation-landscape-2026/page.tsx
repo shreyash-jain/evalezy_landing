@@ -9,10 +9,10 @@ import {
 } from "../data/landscape";
 import { SITE } from "@/lib/site";
 
-const TITLE = "AI Answer Sheet Evaluation Landscape 2026: 37 Copy-Checking, OSM and AI Grading Tools Compared";
+const TITLE = "AI Answer Sheet Evaluation Landscape 2026: 38 Copy-Checking, OSM and AI Grading Tools Compared";
 const URL = `${SITE}/research/${LANDSCAPE_SLUG}/`;
 const DESCRIPTION =
-  "37 AI copy-checking, on-screen marking, scan-and-grade and AI grading tools from India and abroad, scored on 14 capabilities with sources. Map, matrix, CSV.";
+  "38 AI copy-checking, on-screen marking, scan-and-grade and AI grading tools from India and abroad, scored on 14 capabilities with sources. Map, matrix, CSV.";
 
 export const metadata: Metadata = {
   title: "AI Answer Sheet Evaluation Landscape 2026",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     url: URL,
     title: "AI Answer Sheet Evaluation Landscape 2026 | Evalezy",
-    description: "37 tools that check student answers, from India and abroad, mapped on marking depth and exam workflow. Every score sourced.",
+    description: "38 tools that check student answers, from India and abroad, mapped on marking depth and exam workflow. Every score sourced.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "AI Answer Sheet Evaluation Landscape 2026" }],
   },
   twitter: { card: "summary_large_image", title: "AI Answer Sheet Evaluation Landscape 2026", description: DESCRIPTION, images: ["/og.png"] },

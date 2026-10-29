@@ -324,5 +324,46 @@
       "capabilities": "https://likhit.in/pricing"
     },
     "as_of": "2026-10-22"
+  },
+  {
+    "name": "Acadine",
+    "company": "Ardonik Technologies Pvt. Ltd.",
+    "website": "https://www.acadine.ai",
+    "hq_country": "India",
+    "founded_year": null,
+    "segment": "ai-copy-checking",
+    "target_customers": "coaching institutes and schools in India (CBSE, ICSE, state boards, JEE/NEET, UPSC, CA/CMA/CS), single- and multi-branch",
+    "pricing": {"public_pricing": false, "model": "quote", "entry_price": null, "free_plan": null},
+    "capabilities": {
+      "handwritten_reading": {"value": "yes", "evidence": "\"Evaluate handwritten answer sheets\"; \"Understands handwriting, formulas, diagrams, and working steps\""},
+      "subjective_ai_marking": {"value": "yes", "evidence": "Tests: answer sheets are uploaded after the test and \"automatically evaluated by AI within 24 hours\""},
+      "stem_maths": {"value": "yes", "evidence": "Step-wise marking: \"Awards accurate partial marks and identifies working errors line by line\"; formulas named"},
+      "rubric_marking_scheme": {"value": "yes", "evidence": "\"Standardized rubrics applied ... across every teacher and paper\"; how a teacher sets or edits a rubric per question is not described"},
+      "partial_marks_feedback": {"value": "yes", "evidence": "Partial credit for working steps; \"Detailed feedback provided for every question\""},
+      "typed_answers": {"value": "unknown", "evidence": "Online CBT tests with instant grading shown for objective (+4/-1) questions; grading of typed long answers not described"},
+      "indian_languages": {"value": "yes", "evidence": "Homepage hero: \"22 Indian languages\"; the evaluation section lists \"English, Hindi, and Sanskrit\""},
+      "bulk_scan_ingest": {"value": "yes", "evidence": "Admins scan and upload a test's answer sheets; docs: \"Grade 1000+ handwritten answer sheets in 24 hours\""},
+      "student_identification": {"value": "unknown", "evidence": "How an uploaded sheet is matched to its student is not described; the Upload Answer Sheets guide is marked \"Coming Soon\""},
+      "annotated_copy": {"value": "unknown", "evidence": "Per-question feedback and scorecards are shown; returning the student's own sheet marked up page by page is not described"},
+      "teacher_review": {"value": "partial", "evidence": "Teacher guide: AI evaluates, then \"automatically publishes results to students\"; students can raise a Challenge Grade. No review step before release described"},
+      "question_paper_import": {"value": "partial", "evidence": "Papers are made in Acadine (AI Auto Generate or Build with AI, own questions added); reading an existing paper PDF into questions is not described"},
+      "public_api": {"value": "unknown", "evidence": "No public grading API documented; docs.acadine.ai covers the dashboard only"},
+      "integrity_checks": {"value": "unknown", "evidence": "Fullscreen proctoring for online tests; plagiarism or AI-writing detection on answers not described"}
+    },
+    "scale": {"customers_claimed": "Homepage: 200+ institutes, 50k+ students, 80k+ answer sheets a month (100k+ elsewhere on the same page); claims 98%+ accuracy (\"faculty benchmarked\") and ISO 27001", "funding_or_owner_notes": "Ardonik Technologies Pvt. Ltd., founded by IIT Indore graduates. Also sells AI question papers, OMR scanning, online CBT tests, analytics, institute management and a white-label mobile app"},
+    "notable_2025_2026": null,
+    "notable_source": null,
+    "sources": {
+      "homepage": "https://www.acadine.ai/",
+      "pricing": "https://www.acadine.ai/",
+      "capabilities": "https://docs.acadine.ai/getting-started/key-concepts",
+      "capabilities.teacher_review": "https://docs.acadine.ai/getting-started/for-teacher",
+      "capabilities.question_paper_import": "https://docs.acadine.ai/question-papers/generate-question-paper",
+      "capabilities.student_identification": "https://docs.acadine.ai/tests-evaluation/upload-answer-sheets",
+      "capabilities.bulk_scan_ingest": "https://docs.acadine.ai/getting-started/overview",
+      "capabilities.handwritten_reading": "https://www.acadine.ai/",
+      "capabilities.indian_languages": "https://www.acadine.ai/"
+    },
+    "as_of": "2026-10-29"
   }
 ]

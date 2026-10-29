@@ -115,7 +115,7 @@ export default function Page() {
           <div>
             <h2 className="h-section text-ink">Choosing copy checking software?</h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
-              We compared ten tools, one pick per job, with sourced capabilities and prices, including where another tool is the
+              We compared eleven tools, one pick per job, with sourced capabilities and prices, including where another tool is the
               better choice (for example, Hindi-medium answers).
             </p>
             <Link href={BEST_PATH} className="mt-6 inline-flex items-center gap-1 font-semibold text-pen-700">Best AI copy checking software in 2026 <ArrowRight className="h-4 w-4" /></Link>

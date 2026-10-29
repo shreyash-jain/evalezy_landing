@@ -81,7 +81,7 @@ export default function Page() {
       crumbs={[{ label: "Compare", href: "/compare/" }, { label: "Best AI copy checking software" }]}
       eyebrow="Buyer's guide · Updated October 2026"
       title={TITLE}
-      dek={`For checking a class's or an exam's handwritten answer sheets in English, Evalezy is our pick: it documents ${evalezy.breadth} of the 14 capabilities we track, the most of the ${VENDORS.length} tools in our research, from reading handwriting and marking every answer against a scheme to matching each copy to its student and returning it checked in red pen, at a published ₹1 per page. Another tool is the better choice for some jobs: Eklavvya for Indian-language answers, Gradescope for university courses graded by staff, CoGrader for US essays, Top Marks AI for UK exam-board essays, and an on-screen marking vendor such as Coempt Onmark for human marking at board scale.`}
+      dek={`For checking a class's or an exam's handwritten answer sheets in English, Evalezy is our pick: it documents ${evalezy.breadth} of the 14 capabilities we track, the most of the ${VENDORS.length} tools in our research, from reading handwriting and marking every answer against a scheme to matching each copy to its student and returning it checked in red pen, at a published ₹1 per page. Another tool is the better choice for some jobs: Eklavvya for Indian-language answers, Acadine for coaching institutes that want checking, question papers and analytics in one suite, Gradescope for university courses graded by staff, CoGrader for US essays, Top Marks AI for UK exam-board essays, and an on-screen marking vendor such as Coempt Onmark for human marking at board scale.`}
       published={BEST_PUBLISHED}
       updated={BEST_UPDATED}
       sources={sources}
@@ -190,9 +190,9 @@ export default function Page() {
         );
       })}
 
-      <h2 id="at-a-glance">The 10 tools at a glance</h2>
+      <h2 id="at-a-glance">The 11 tools at a glance</h2>
       <p>● documented · ◐ partly (add-on, beta, some question types or an integration) · ○ not offered · – not documented publicly.</p>
-      <div className="not-prose mt-6 overflow-x-auto rounded-2xl border border-line bg-white" tabIndex={0} role="region" aria-label="Capabilities of the 10 tools">
+      <div className="not-prose mt-6 overflow-x-auto rounded-2xl border border-line bg-white" tabIndex={0} role="region" aria-label="Capabilities of the 11 tools">
         <table className="w-full min-w-[860px] border-collapse text-left text-sm">
           <thead>
             <tr className="border-b border-line align-bottom">
