@@ -97,6 +97,34 @@ The Evaluation API is live (v1, changelog "2026-10-02 launch"). The docs are the
 **Dashboard vs API:** dashboard limits stay as above (200 PDFs per upload, 60 MB each, name matching, question-paper
 import). Don't apply API limits to dashboard claims, or the other way round.
 
+## Mobile app **(owner, 29 Oct 2026: launching soon)**
+
+The Evalezy app (`io.evalezy.app`) is the dashboard's copy-checking flow in a phone app. Source:
+`vacademy_platform/frontend-admin-dashboard/EVALEZY_APP.md`. Until it is in the stores, the site says **"launching
+soon"** and never links a store page. Platforms: **Android first; iOS to follow** **(owner — confirm)**.
+
+| Claim the site may make | Source |
+|---|---|
+| Same login, same assessments, same credits and price (₹1 / page) as the dashboard | EVALEZY_APP.md intro |
+| Pick an assessment, add copies, check them all, download the checked copies: four steps | EVALEZY_APP.md steps 1–4 |
+| Scan with the phone camera page by page, tapping **Next student** between copies | step 2 |
+| Or upload files: each PDF is one copy; photos picked together make one copy (or one copy per photo) | step 2 |
+| Each copy's photos become one PDF and go through the same bulk check: name read, student matched, copy checked | step 3 |
+| Live progress; pick the student for a copy that could not be matched; retry | step 4 |
+| All checked copies download as one zip (on a phone, through the share sheet: WhatsApp, Drive, email…) | step 4; save-blob.ts |
+| The teacher gets an email when the batch is checked | Settings `notifyEmail` |
+| The institute admin can switch the app off, or switch camera scanning / file upload off separately | Settings `enabled`, `allowCamera`, `allowUpload` |
+
+Not in the app yet (never claim): creating an assessment or importing the question paper in the app (set it up in the
+dashboard first), reviewing and releasing marks in the app (do that in the dashboard), offline checking, a student app.
+
+## Case studies
+
+The site's case studies are only the two documented copies: the Class IX Social Science sample (`/sample/`) and the
+maths side-by-side (`/side-by-side/`), plus workflows clearly labelled **"example"** (no customer, no results, no
+numbers of copies checked). A named or anonymous customer case study needs the owner to supply the institute, the
+numbers and their OK first (see "Customers" and "Never claim").
+
 ## Side-by-side copy **(owner, 2 Oct 2026)**
 
 A maths half-yearly mock (80 marks, 32 questions, 7 pages) checked by a teacher (green, 48/80, no written notes) and by
