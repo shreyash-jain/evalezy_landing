@@ -191,6 +191,38 @@ export const VENDOR_COMPARISONS: Comparison[] = [
     ],
   }),
   vendorComparison({
+    vendor: "Acadine",
+    slug: "acadine",
+    title: "Evalezy vs Acadine: AI Copy Checking Compared (2026)",
+    description: "Evalezy vs Acadine AI: handwritten copy checking, teacher review, the red-pen checked copy, student matching, languages, pricing and API. Sourced, Oct 2026.",
+    h1: "Evalezy vs Acadine",
+    lede: "Acadine is an all-in-one platform for coaching institutes: AI answer-sheet evaluation, AI question papers, OMR, online tests, analytics and a white-label app. Evalezy does one job, checking handwritten copies, and goes deeper on it: the student's own copy back in red pen, names read and matched, a teacher review before anything is released, and a published ₹1 a page.",
+    whenThem: [
+      "Answers are written in Hindi or Sanskrit (Acadine lists English, Hindi and Sanskrit; Evalezy grades English only for now)",
+      "You want one vendor for AI question papers, OMR sheets, online CBT tests, timetables and announcements as well as checking",
+      "You want multi-branch analytics down to chapter and topic, and a white-label student app",
+      "You want scorecards sent to parents on WhatsApp straight after evaluation",
+    ],
+    whenEvalezy: [
+      "Teachers must see and edit every AI mark before students do (Acadine's teacher guide says results publish automatically)",
+      "Students should get their own copy back with ticks, crosses, notes and the total circled, not just a scorecard",
+      "You upload a pile of copies and want each matched to the right student by the name and roll number on page one",
+      "You want to know the price before a sales call: ₹1 per page, failed and unreadable copies free",
+      "You already have an LMS or exam system and want a public grading API (docs.evalezy.com)",
+    ],
+    body: [
+      { heading: "The difference in one line", text: "Acadine is an institute operating system with AI checking inside it. Evalezy is a copy-checking engine: it does not schedule your lectures, but it documents 12 of the 14 checking capabilities in our research to Acadine's 8, and it plugs into the Vacademy platform or your own system through the API." },
+      { heading: "Who releases the marks", text: "In Acadine's teacher guide, admins upload the sheets, AI evaluates them within 24 hours and results are published to students automatically; students can then challenge a grade. In Evalezy every AI mark lands as a draft, the teacher reviews the reasons per question, edits what they disagree with and presses Release Result. A teacher's edit is never overwritten by a later AI run." },
+      { heading: "Accuracy claims", text: "Acadine's homepage claims 98%+ accuracy, benchmarked against faculty. Evalezy publishes no accuracy percentage. Instead we published one maths copy checked by a teacher and by Evalezy, page by page: Evalezy caught 2 slips the teacher ticked and misread 5 answers the teacher got right. That is why our marks wait for a teacher. Ask any vendor, us included, to check a batch your teachers have already marked." },
+      { heading: "Price", text: "Acadine does not publish prices; you book a demo. Evalezy charges ₹1 per page checked in India and $0.01 elsewhere, with no subscription or setup fee, and nothing for failed, stopped or unreadable copies." },
+    ],
+    faqs: [
+      { q: "Is Evalezy an Acadine alternative?", a: "For checking handwritten answer sheets in English, yes: Evalezy marks every answer against a scheme per question, returns the student's own copy checked in red pen, matches copies to students by name and roll number and keeps the teacher in charge of release, at ₹1 a page. If you want one suite for question papers, OMR, online tests, analytics and a branded app, or need Hindi answers checked, Acadine covers more of that today." },
+      { q: "Does Evalezy have a mobile app like Acadine?", a: "They are different apps. Acadine's app is a white-label app for students, teachers and admins. The Evalezy app, launching soon, is a checking tool: a teacher scans each copy with the phone camera or picks PDFs, runs the AI check for the whole batch and downloads the checked copies. Students still get their checked copy by email when you release results." },
+      { q: "Can I use both?", a: "Yes. Some institutes keep their institute platform for timetables, tests and analytics and send handwritten copies to a specialist checker. Evalezy's Evaluation API takes each copy as a PDF and returns marks per question, reasons and the checked copy PDF, as drafts your teachers finalize." },
+    ],
+  }),
+  vendorComparison({
     vendor: "Gradescope",
     slug: "gradescope",
     title: "Evalezy vs Gradescope: AI Marking vs AI-Assisted Grading",

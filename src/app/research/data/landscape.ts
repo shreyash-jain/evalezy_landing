@@ -49,7 +49,7 @@ export const EVALEZY: Vendor = VENDORS.find((v) => v.region === "evalezy")!;
 export const LANDSCAPE_SLUG = "ai-answer-sheet-evaluation-landscape-2026";
 export const LANDSCAPE_CSV = "/research/ai-answer-sheet-evaluation-landscape-2026.csv";
 export const RESEARCH_PUBLISHED = "2026-10-22";
-export const RESEARCH_UPDATED = "2026-10-22";
+export const RESEARCH_UPDATED = "2026-10-29";
 
 export const SEGMENT_LABELS: Record<string, string> = {
   "ai-copy-checking": "AI copy checking",

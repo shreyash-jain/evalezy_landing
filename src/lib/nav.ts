@@ -8,6 +8,7 @@ export const PRODUCT_NAV = [
   { href: "/marking-scheme/", label: "AI marking scheme", desc: "Drafted for you, or bring your own." },
   { href: "/teacher-review/", label: "Teacher review & release", desc: "Nothing reaches students until you say so." },
   { href: "/typed-answers/", label: "Typed essays & long answers", desc: "Online long answers graded in seconds." },
+  { href: "/app/", label: "Mobile app (launching soon)", desc: "Scan copies with your phone, check the whole class." },
 ];
 
 export const DEV_NAV = [
@@ -17,12 +18,13 @@ export const DEV_NAV = [
 ];
 
 export const AUDIENCE_NAV = AUDIENCES.map((a) => ({ slug: a.slug, label: a.label, icon: a.icon }));
-export const COMPARE_NAV = COMPARISONS.map((c) => ({ slug: c.slug, label: c.label }));
+export const COMPARE_NAV = [{ slug: "acadine", label: "Evalezy vs Acadine" }, ...COMPARISONS.map((c) => ({ slug: c.slug, label: c.label }))];
 
 export const RESOURCE_NAV = [
   { href: "/how-it-works/", label: "How it works" },
   { href: "/sample/", label: "See a checked copy" },
   { href: "/side-by-side/", label: "AI vs teacher: one copy" },
+  { href: "/case-studies/", label: "Case studies" },
   { href: "/best-ai-copy-checking-software/", label: "Best AI copy checking software" },
   { href: "/research/ai-answer-sheet-evaluation-landscape-2026/", label: "Evaluation landscape 2026" },
   { href: "/blog/", label: "Blog" },

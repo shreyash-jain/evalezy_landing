@@ -184,7 +184,7 @@ export default function Page() {
           Use only facts you can verify on the vendor’s own pages, and note the date you read them. Our{" "}
           <Link href="/best-ai-copy-checking-software/">best AI copy checking software guide</Link> and{" "}
           <Link href="/research/ai-answer-sheet-evaluation-landscape-2026/">landscape research</Link> do exactly that
-          for 37 tools, with a source for every capability and a note on where each one is the better choice.
+          for 38 tools, with a source for every capability and a note on where each one is the better choice.
         </p>
       </Callout>
 

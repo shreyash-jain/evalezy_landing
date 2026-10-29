@@ -8,7 +8,7 @@ import type { Faq } from "./types";
 
 export const BEST_PATH = "/best-ai-copy-checking-software/";
 export const BEST_PUBLISHED = "2026-10-23";
-export const BEST_UPDATED = "2026-10-23";
+export const BEST_UPDATED = "2026-10-29";
 
 export interface Pick {
   /** Must match a vendor name in landscape.json. */
@@ -49,6 +49,19 @@ export const PICKS: Pick[] = [
       "No public grading API documentation found",
     ],
     compare: "eklavvya",
+  },
+  {
+    name: "Acadine",
+    bestFor: "Coaching institutes that want one suite: AI checking, question papers, tests, analytics and an app",
+    summary:
+      "An Indian institute platform for coaching centres and schools: admins scan and upload a test's answer sheets and AI marks them step by step within 24 hours, alongside AI question-paper generation, OMR scanning, online CBT tests, batch and branch analytics, WhatsApp scorecards and a white-label student app. It claims 200+ institutes and lists Indian languages (22 on the homepage; English, Hindi and Sanskrit in the evaluation section).",
+    watch: [
+      "Prices are not published; you book a demo",
+      "The teacher guide says results are published to students automatically; a teacher review step before release is not described",
+      "Returning the student's own sheet marked up page by page, and how sheets are matched to students, are not described",
+      "No public grading API documentation found",
+    ],
+    compare: "acadine",
   },
   {
     name: "Gradescope",
