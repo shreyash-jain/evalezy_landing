@@ -9,7 +9,7 @@ export interface Post {
   /** Shorter <title> and social title when the H1 is too long for search results; defaults to `title`. */
   seoTitle?: string;
   description: string;
-  category: "Guides" | "Assessment" | "AI checking" | "For developers";
+  category: "Guides" | "Assessment" | "AI checking" | "For developers" | "Case studies" | "Compare";
   published: string; // YYYY-MM-DD
   updated?: string;
   readMins: number;
@@ -19,6 +19,50 @@ export interface Post {
 }
 
 export const POSTS: Post[] = [
+  {
+    slug: "acadine-alternatives-ai-answer-sheet-checking",
+    title: "Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)",
+    seoTitle: "Acadine Alternatives for AI Copy Checking (2026)",
+    description: "Looking for an Acadine alternative? A sourced comparison of Evalezy, Eklavvya, CrazyGoldFish and Smart Paper on teacher review, the checked copy, languages and price.",
+    category: "Compare",
+    published: "2026-10-29",
+    readMins: 9,
+    keywords: ["Acadine alternative", "Acadine AI", "Acadine vs Evalezy", "AI answer sheet checking software India", "AI copy checking for coaching institutes", "AI evaluation of handwritten answer sheets", "best AI copy checking software"],
+    pages: ["/compare/", "/compare/acadine/", "/best-ai-copy-checking-software/", "/for/coaching-institutes/"],
+  },
+  {
+    slug: "case-study-ai-vs-teacher-maths-answer-copy",
+    title: "Case Study: One Maths Answer Copy, Checked by a Teacher and by AI",
+    seoTitle: "Case Study: AI vs Teacher on One Maths Answer Copy",
+    description: "A real maths copy checked twice: the teacher gave 48/80, Evalezy 40/80. What each caught, what each missed, and what it means for AI copy checking in schools.",
+    category: "Case studies",
+    published: "2026-10-29",
+    readMins: 8,
+    keywords: ["AI copy checking case study", "AI vs teacher grading", "AI answer sheet checking accuracy", "maths answer sheet checking", "AI evaluation case study", "handwritten answer sheet AI test"],
+    pages: ["/side-by-side/", "/case-studies/", "/teacher-review/", "/compare/manual-checking/"],
+  },
+  {
+    slug: "case-study-class-9-social-science-copy-phone-photo",
+    title: "Case Study: A Class IX Social Science Copy, Photographed on a Phone and Checked by AI",
+    seoTitle: "Case Study: Phone-Photo Answer Copy Checked by AI",
+    description: "A 7-page Class IX Social Science copy, shot on a phone, checked by Evalezy: 38 questions, half marks, red-pen notes and one slip a teacher should catch.",
+    category: "Case studies",
+    published: "2026-10-29",
+    readMins: 7,
+    keywords: ["AI answer sheet checking case study", "check answer sheets from phone photos", "CBSE Class 9 answer sheet checking", "AI copy checking sample", "social science answer evaluation AI", "red pen checked copy"],
+    pages: ["/sample/", "/case-studies/", "/checked-copy/", "/for/schools/"],
+  },
+  {
+    slug: "evalezy-app-check-answer-sheets-on-phone",
+    title: "The Evalezy App: Scan and Check Answer Sheets From Your Phone",
+    seoTitle: "How to Check Answer Sheets on Your Phone (Evalezy App)",
+    description: "The Evalezy app is launching soon: photograph each student's copy, run the AI check for the whole class and share the checked copies. Steps and use cases.",
+    category: "Guides",
+    published: "2026-10-29",
+    readMins: 6,
+    keywords: ["answer sheet checking app", "app to check students' copies", "AI copy checking app", "scan answer sheets with phone", "mobile app for teachers to check papers", "Evalezy app"],
+    pages: ["/app/", "/bulk-upload/", "/for/schools/", "/for/coaching-institutes/"],
+  },
   {
     slug: "ai-exam-evaluation-schools-coaching-institutes",
     title: "How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes",
