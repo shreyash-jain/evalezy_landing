@@ -16,6 +16,7 @@ export function Footer() {
         { href: "/pricing/", label: "Pricing" },
         { href: "/sample/", label: "See a checked copy" },
         { href: "/side-by-side/", label: "AI vs teacher: one copy" },
+        { href: "/case-studies/", label: "Case studies" },
       ],
     },
     {
@@ -31,6 +32,8 @@ export function Footer() {
       links: [
         { href: "/best-ai-copy-checking-software/", label: "Best AI copy checking software" },
         ...COMPARISONS.map((c) => ({ href: `/compare/${c.slug}/`, label: c.label })),
+        { href: "/compare/acadine/", label: "Evalezy vs Acadine" },
+        { href: "/blog/acadine-alternatives-ai-answer-sheet-checking/", label: "Acadine alternatives" },
         { href: "/compare/", label: "Evalezy vs other tools" },
         { href: "/research/", label: "Research" },
         { href: "/blog/", label: "Blog" },
