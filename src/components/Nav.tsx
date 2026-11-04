@@ -7,7 +7,7 @@ import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { Icon } from "./ui";
 import { AUDIENCE_NAV, COMPARE_NAV, DEV_NAV, PRODUCT_NAV, RESOURCE_NAV } from "@/lib/nav";
-import { DOCS_URL, LOGIN_URL, bookHref } from "@/lib/site";
+import { DOCS_URL, LOGIN_URL, TRIAL_DAYS, bookHref, signupHref } from "@/lib/site";
 
 type MenuKey = "product" | "solutions" | "resources" | null;
 
@@ -74,9 +74,10 @@ export function Nav() {
 
         <div className="hidden items-center gap-2 lg:flex">
           <a href={LOGIN_URL} className={link} rel="nofollow">Log in</a>
-          <Link href={bookHref()} className="btn btn-pen !py-2.5" data-track="book_demo">
-            Book a demo
-          </Link>
+          <Link href={bookHref()} className={link} data-track="book_demo">Book a demo</Link>
+          <a href={signupHref()} className="btn btn-pen !py-2.5" rel="nofollow" data-track="cta_trial_click">
+            Start {TRIAL_DAYS}-day trial
+          </a>
         </div>
 
         <button
@@ -172,7 +173,8 @@ export function Nav() {
               items={[{ href: "/pricing/", label: "Pricing" }, { href: "/api/", label: "API" }, { href: DOCS_URL, label: "API docs" }, ...RESOURCE_NAV.map((r) => ({ href: r.href, label: r.label }))]}
             />
             <div className="grid gap-3 pb-8">
-              <Link href={bookHref()} className="btn btn-pen btn-lg w-full" data-track="book_demo">Book a demo</Link>
+              <a href={signupHref()} className="btn btn-pen btn-lg w-full" rel="nofollow" data-track="cta_trial_click">Start {TRIAL_DAYS}-day trial</a>
+              <Link href={bookHref()} className="btn btn-outline btn-lg w-full" data-track="book_demo">Book a demo</Link>
               <a href={LOGIN_URL} className="btn btn-outline btn-lg w-full" rel="nofollow">Log in</a>
             </div>
           </div>

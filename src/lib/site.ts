@@ -20,6 +20,17 @@ export const SALES_EMAIL = "hello@evalezy.com";
 export const BOOKING_URL = "";
 /** Where existing customers sign in (Evalezy runs inside the Vacademy admin dashboard). */
 export const LOGIN_URL = "https://dash.vacademy.io/";
+/** Self sign-up: a {TRIAL_DAYS}-day trial without a card. Runs on the same dashboard as LOGIN_URL. */
+export const SIGNUP_URL = "https://dash.vacademy.io/signup/start";
+export const TRIAL_DAYS = 3;
+/** Yearly platform fee, before GST. Paying monthly costs 20% more. Proposed pricing, Nov 2026. */
+export const PLANS = {
+  starter: { name: "Starter", teachers: 1, yearly: 5000 },
+  team: { name: "Team", teachers: 15, yearly: 20000 },
+} as const;
+export const signupHref = (plan?: keyof typeof PLANS) =>
+  `${SIGNUP_URL}?product=evalezy&source=website${plan ? `&plan=${plan}` : ""}`;
+
 /** Evaluation API (live since 2 Oct 2026) and its developer docs (Mintlify). Facts: src/content/api.ts. */
 export const API_BASE = "https://api.evalezy.com/v1";
 export const DOCS_URL = "https://docs.evalezy.com";
@@ -55,7 +66,7 @@ export const PAGES: SitePage[] = [
   { path: "/typed-answers/", label: "Typed essays & long answers", group: "product", title: "AI Essay Grading for Online Long-Answer Questions", description: "Evalezy also grades essays, letters and emails typed in an online test, on format, content, organisation and language, with word limits and a teacher review." },
   { path: "/app/", label: "Evalezy mobile app", group: "product", title: "Evalezy App: Check Answer Sheets on Your Phone", description: "The Evalezy app, launching soon: photograph each student's answer copy, check the whole class with AI and share the red-pen checked copies. ₹1 per page." },
   { path: "/api/", label: "Evaluation API", group: "product", title: "Answer Sheet Evaluation API for Developers", description: "Grade handwritten copies and typed long answers from your own exam system: create an exam, upload PDFs, read question-wise marks and the checked copy. Full docs at docs.evalezy.com." },
-  { path: "/pricing/", label: "Pricing", group: "product", title: "Pricing: ₹1 per Page Checked ($0.01)", description: "Evalezy pricing is per page checked: ₹1 in India, $0.01 elsewhere. No subscription, no setup fee. Failed and unreadable copies are free. Same per-page price on the API." },
+  { path: "/pricing/", label: "Pricing", group: "product", title: "Pricing: From ₹5,000 a Year, Plus ₹1 per Page Checked", description: "Evalezy costs a yearly platform fee from ₹5,000 plus ₹1 for every page checked. Try it free for 3 days, no card needed. No setup fee. Failed and unreadable copies are free. Same per-page price on the API." },
   { path: "/side-by-side/", label: "AI vs teacher: one copy", group: "product", title: "AI vs Teacher: One Answer Copy, Checked Twice", description: "The same maths answer copy, checked by a teacher and by Evalezy. Drag across each page to compare. Evalezy caught 2 slips the teacher ticked; the teacher caught 5 it misread." },
   { path: "/sample/", label: "See a checked copy", group: "product", title: "Sample: A Real Answer Sheet Checked by Evalezy", description: "Look through a real 7-page Class IX Social Science answer copy checked by Evalezy: ticks, crosses, corrections, half marks, margin notes and a circled total of 38/80." },
   // Resources

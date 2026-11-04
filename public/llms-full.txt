@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-10-29 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-11-04 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -336,8 +336,8 @@ curl https://api.evalezy.com/v1/exams/$EXAM_ID/submissions \
 
 Pricing
 
-## ₹1 a page. That's it.
-$0.01 a page outside India. No subscription, no setup fee, no per-teacher seats. The same price on the API.
+## From ₹5,000 a year, plus ₹1 a page.
+A yearly platform fee, plus ₹1 for every page checked. Try it free for 3 days, no card needed. No setup fee. API: ₹1 a page, no platform fee.
 
 - Question paper import, marking schemes, name matching and teacher review included
 - Failed, stopped and unreadable copies are not charged
@@ -486,7 +486,7 @@ Cost | Teacher time, or a fee per copy to outside checkers | ₹1 per page check
 More in Evalezy vs checking by hand and how to check 200 answer sheets faster .
 
 ## What it costs
-₹1 per page checked in India, $0.01 elsewhere. No subscription, no setup fee, no per-teacher seats. A class of 40 copies of 8 pages each costs ₹320. Failed, stopped and unreadable copies are free, and reading names is free.
+A yearly platform fee from ₹5,000, plus ₹1 per page checked. No setup fee, and a free 3-day trial with no card. A class of 40 copies of 8 pages each costs ₹320 in page charges. Failed, stopped and unreadable copies are free, and reading names is free.
 Full pricing
 
 ## Choosing copy checking software?
@@ -1546,82 +1546,85 @@ Book a demo See a real checked copy
 
 ---
 
-# Pricing: ₹1 per Page Checked ($0.01) | Evalezy
+# Pricing: From ₹5,000 a Year, Plus ₹1 per Page Checked | Evalezy
 URL: https://evalezy.com/pricing/
 
 - Home
 - / Pricing
 Pricing
 
-# One price: ₹1 a page checked.
-$0.01 a page outside India. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not.
+# A yearly platform fee, plus ₹1 for every page checked.
+Try it free for 3 days, no card needed. All prices are per year and exclude 18% GST. Paying monthly costs 20% more. No setup fee.
 Book a demo
 
 The 7-page sample copyThe sample copy on this site
 7 pages × ₹1
 ₹7
-38 questions marked, every page annotated. $0.07 outside India.
+38 questions marked, every page annotated.
 
-Dashboard
-₹1 / page
-$0.01 outside India · prepaid credits · excl. GST
-For schools, coaching institutes and colleges checking copies in the Evalezy dashboard.
+## Starter
 
-- Question paper import
-- AI-drafted marking schemes, editable
-- Reading names and matching copies to students
-- The red-pen checked copy PDF
-- Teacher review, edits and release
-- Result emails to students with the checked copy
-Book a demo
+1 teacher
+₹5,000 / year
+or ₹500 a month
+
+- Upload copies, get marked PDFs
+- Reports and result emails
+- Checking history
+Start 3-day trial
+
+## Team
+Most popular
+Up to 15 teachers
+₹20,000 / year
+or ₹2,000 a month
+
+- Everything in Starter
+- Shared across your team
+- Teacher review before release
+Start 3-day trial
+
+More than 15 teachers or 1,00,000+ pages a month? Enterprise: custom price. Talk to us
+
+## Work out your cost
+What will I pay?
+Move the sliders. The total updates as you go.
+
+Teachers 5 Pages checked a month 3,000 pages
+Your plan: Team
+Team plan ₹20,000
+Pages checked ₹36,000
+Total per year
+₹56,000
+₹66,080 with GST
+
+Start 3-day trial
+
+Example | Copies | Pages each | Page charges |
+
+One section, unit test | 40 | 4 | ₹160 |
+Four sections, half-yearly | 160 | 8 | ₹1,280 |
+Coaching weekly test | 300 | 6 | ₹1,800 |
+UPSC daily answer (a month) | 13,000 | 4 | ₹52,000 |
+
+Plus the yearly platform fee. Prices exclude 18% GST.
+
 API
 ₹1 / page
-$0.01 outside India · 1 credit a page · quoted before grading
-For edtech platforms, ERPs and exam systems grading handwritten copies or typed long answers from their own product.
+No platform fee · $0.01 outside India · 1 credit a page
+For edtech platforms, ERPs and exam systems grading handwritten copies or typed long answers.
 
 - Exams, rubrics, candidates, PDF uploads and results
 - Typed tests: 1 credit per non-blank long answer; objective answers free
 - Question-wise marks, reasons, feedback and the checked copy PDF
-- Poll for results; teachers can review in the dashboard
 - Failed and cancelled copies: not charged
-Request API access API pricing in the docs
-Volume
-Custom
-For 1,00,000+ pages a month
-For exam bodies, university-wide rollouts and large platforms that need capacity planned around an exam window.
+Request API access API pricing details
+Charged per page
+Each page checked | ₹1 |
+Failed or unreadable copies | free |
+Checking a copy again | ₹1/page |
 
-- Capacity planned for your exam dates
-- Invoice billing
-- A named contact during the evaluation window
-- Help writing marking schemes
-Talk to us
-
-## Work out your cost
-Change the numbers to match your school or batch.
-What would it cost you?
-₹ INR $ USD
-
-Copies per test students Pages per copy pages Tests per month Minutes to check one copy by hand min Price is per page checked: ₹1. Failed, stopped and unreadable copies are not charged. Prices exclude GST.
-
-Per test
-₹1,280
-₹8 a copy
-
-Per month · 5,120 pages
-₹5,120
-
-Checking by hand at 6 min a copy: 64 teacher-hours a month.
-
-Example | Copies | Pages each | Cost (India) | Cost (elsewhere) |
-
-One section, unit test | 40 | 4 | ₹160 | $1.60 |
-Four sections, half-yearly | 160 | 8 | ₹1,280 | $12.80 |
-Coaching weekly test | 300 | 6 | ₹1,800 | $18.00 |
-UPSC daily answer (a month) | 13,000 | 4 | ₹52,000 | $520.00 |
-
-Indian prices exclude GST.
-
-## Included in the page price
+## Included in every plan
 
 - Question paper import
 - AI-drafted marking schemes, editable
@@ -1629,7 +1632,6 @@ Indian prices exclude GST.
 - The red-pen checked copy PDF
 - Teacher review, edits and release
 - Result emails to students with the checked copy
-- The same per-page price on the API
 
 ## Never charged
 
@@ -1643,7 +1645,10 @@ All questions
 
 ## Pricing questions
 How much does it cost? +
-₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST.
+A yearly platform fee plus ₹1 per page checked. Starter is ₹5,000 a year for 1 teacher; Team is ₹20,000 a year for up to 15 teachers. Paying monthly costs 20% more. A 7-page copy costs ₹7 in page charges. There is no setup fee. Prices exclude 18% GST. The API has no platform fee.
+
+Is there a free trial? +
+Yes. 3 days, with no card needed, for 1 teacher and 100 pages. Sign up with Google or your email. When the trial ends, checking stops and your reports stay available.
 
 What is not charged? +
 Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
@@ -2273,7 +2278,10 @@ Yes. Stop it from the progress screen; it halts within seconds and a stopped che
 
 ## Pricing
 How much does it cost? +
-₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST.
+A yearly platform fee plus ₹1 per page checked. Starter is ₹5,000 a year for 1 teacher; Team is ₹20,000 a year for up to 15 teachers. Paying monthly costs 20% more. A 7-page copy costs ₹7 in page charges. There is no setup fee. Prices exclude 18% GST. The API has no platform fee.
+
+Is there a free trial? +
+Yes. 3 days, with no card needed, for 1 teacher and 100 pages. Sign up with Google or your email. When the trial ends, checking stops and your reports stay available.
 
 What is not charged? +
 Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
@@ -3886,7 +3894,7 @@ In Acadine's teacher guide, admins upload the sheets, AI evaluates them within 2
 Acadine's homepage claims 98%+ accuracy, benchmarked against faculty. Evalezy publishes no accuracy percentage. Instead we published one maths copy checked by a teacher and by Evalezy, page by page: Evalezy caught 2 slips the teacher ticked and misread 5 answers the teacher got right. That is why our marks wait for a teacher. Ask any vendor, us included, to check a batch your teachers have already marked.
 
 ## Price
-Acadine does not publish prices; you book a demo. Evalezy charges ₹1 per page checked in India and $0.01 elsewhere, with no subscription or setup fee, and nothing for failed, stopped or unreadable copies.
+Acadine does not publish prices; you book a demo. Evalezy charges a yearly platform fee from ₹5,000 plus ₹1 per page checked, with no setup fee, and nothing for failed, stopped or unreadable copies.
 
 What most AI graders returnQ | Score | Remark |
 
