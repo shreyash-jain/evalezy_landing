@@ -50,7 +50,11 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
 
 ## Pricing **(owner)**
 
-- **₹1 per page checked, or $0.01 per page** outside India. Owner instruction, 1 Oct 2026.
+- **Yearly platform fee plus ₹1 per page checked.** Owner, 4 Nov 2026 (`pricing_preview`, proposed): Starter ₹5,000/yr for
+  1 teacher, Team ₹20,000/yr for up to 15, Enterprise custom above 15 teachers or 1,00,000+ pages a month. Monthly costs 20% more.
+  No setup fee. The API stays ₹1 / $0.01 a page with no platform fee. (Replaces "no subscription", 1 Oct 2026.)
+- **Free trial: 3 days, no card, 1 teacher, 100 pages.** Sign-up with Google, or email with OTP plus username and password.
+  After it ends uploads stop and reports stay for 30 days. Owner, 4 Nov 2026 (`Self_Signup_Flow_Plan`).
 - Everything else in the flow is included (question paper import, marking schemes, name reading and matching,
   teacher review, release emails). **(owner — confirm)**
 - Same rate on the API. **(owner)**
@@ -161,7 +165,6 @@ a one-sided claim, "AI beats teachers", or quoting only the 2 catches without th
 - SOC 2 / ISO certifications, on-premise deployment, or data residency guarantees.
 - Named Evalezy customers, testimonials, results or numbers of copies checked. None are supplied yet. (Vacademy's client
   logos may be shown, framed as in "Customers" above.)
-- A free trial or free pages. None is defined. **(owner — decide)**
 - Competitor facts that are not in the landscape research. Named-vendor pages (`/best-ai-copy-checking-software/`,
   `/compare/<vendor>/`) may state only what `src/app/research/data/landscape.json` records, with its source and the
   read date, and must say where the other tool is the better choice. Capability tables on those pages are generated

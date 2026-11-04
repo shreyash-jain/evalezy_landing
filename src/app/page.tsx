@@ -424,10 +424,10 @@ export default function Home() {
           <div>
             <p className="eyebrow">Pricing</p>
             <h2 className="h-section mt-3 text-ink">
-              <PenCircle>₹1</PenCircle> a page. That&apos;s it.
+              From ₹5,000 a year, plus <PenCircle>₹1</PenCircle> a page.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
-              $0.01 a page outside India. No subscription, no setup fee, no per-teacher seats. The same price on the API.
+              A yearly platform fee, plus ₹1 for every page checked. Try it free for 3 days, no card needed. No setup fee. API: ₹1 a page, no platform fee.
             </p>
             <TickList
               className="mt-6"

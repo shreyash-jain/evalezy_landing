@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Check, Copy, Download, ExternalLink } from "lucide-react";
-import { PRICE_INR, PRICE_USD } from "@/lib/site";
+import { PRICE_INR, PRICE_USD, PLANS, TRIAL_DAYS, signupHref } from "@/lib/site";
 import { track } from "@/lib/track";
 
 /* ------------------------------------------------------------------ */
@@ -201,6 +201,49 @@ function NumberField({ id, label, value, onChange, min = 1, max = 100000, suffix
         {suffix && <span className="pr-3.5 text-sm text-slate-400">{suffix}</span>}
       </span>
     </label>
+  );
+}
+
+/** Yearly total on the pricing page: the platform fee for the team size plus the pages checked. */
+export function PlanCalculator() {
+  const [teachers, setTeachers] = useState(5);
+  const [pages, setPages] = useState(3000);
+  const plan = teachers <= PLANS.starter.teachers ? PLANS.starter : PLANS.team;
+  const pagesYear = pages * 12 * PRICE_INR;
+  const total = plan.yearly + pagesYear;
+  const inr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
+  return (
+    <div className="grid overflow-hidden rounded-[1.75rem] border border-line bg-white shadow-paper md:grid-cols-2">
+      <div className="flex flex-col gap-6 p-6">
+        <div>
+          <p className="h-card text-lg text-ink">What will I pay?</p>
+          <p className="mt-1 text-sm text-slate-500">Move the sliders. The total updates as you go.</p>
+        </div>
+        <label className="block">
+          <span className="flex justify-between text-sm font-medium text-slate-700">
+            Teachers <strong className="text-ink">{teachers}</strong>
+          </span>
+          <input type="range" min={1} max={15} step={1} value={teachers} onChange={(e) => setTeachers(Number(e.target.value))} className="mt-2 w-full accent-pen" />
+        </label>
+        <label className="block">
+          <span className="flex justify-between text-sm font-medium text-slate-700">
+            Pages checked a month <strong className="text-ink">{pages.toLocaleString("en-IN")} pages</strong>
+          </span>
+          <input type="range" min={0} max={20000} step={500} value={pages} onChange={(e) => setPages(Number(e.target.value))} className="mt-2 w-full accent-pen" />
+        </label>
+      </div>
+      <div className="flex flex-col gap-3 border-t border-line bg-paper-2 p-6 md:border-l md:border-t-0">
+        <p className="text-sm text-slate-600">Your plan: <strong className="text-ink">{plan.name}</strong></p>
+        <p className="flex justify-between text-sm text-slate-600"><span>{plan.name} plan</span><span>{inr(plan.yearly)}</span></p>
+        <p className="flex justify-between text-sm text-slate-600"><span>Pages checked</span><span>{inr(pagesYear)}</span></p>
+        <div className="mt-2 border-t border-line pt-3">
+          <p className="text-sm text-slate-500">Total per year</p>
+          <p className="h-display text-4xl text-pen" data-testid="plan-total">{inr(total)}</p>
+          <p className="mt-1 text-sm text-slate-500">{inr(total * 1.18)} with GST</p>
+        </div>
+        <a href={signupHref(plan === PLANS.starter ? "starter" : "team")} className="btn btn-pen mt-2 w-full" data-track="cta_trial_click">Start {TRIAL_DAYS}-day trial</a>
+      </div>
+    </div>
   );
 }
 

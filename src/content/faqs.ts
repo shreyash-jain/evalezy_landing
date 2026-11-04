@@ -41,7 +41,8 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
   {
     title: "Pricing",
     faqs: [
-      { q: "How much does it cost?", a: "₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST." },
+      { q: "How much does it cost?", a: "A yearly platform fee plus ₹1 per page checked. Starter is ₹5,000 a year for 1 teacher; Team is ₹20,000 a year for up to 15 teachers. Paying monthly costs 20% more. A 7-page copy costs ₹7 in page charges. There is no setup fee. Prices exclude 18% GST. The API has no platform fee." },
+      { q: "Is there a free trial?", a: "Yes. 3 days, with no card needed, for 1 teacher and 100 pages. Sign up with Google or your email. When the trial ends, checking stops and your reports stay available." },
       { q: "What is not charged?", a: "Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free." },
       { q: "Is a re-check charged?", a: "Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept." },
       { q: "Is the API priced differently?", a: "Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing." },
@@ -80,6 +81,7 @@ export const HOME_FAQS: Faq[] = [
 
 export const PRICING_FAQS: Faq[] = [
   pick("How much does it cost?"),
+  pick("Is there a free trial?"),
   pick("What is not charged?"),
   pick("Is a re-check charged?"),
   pick("Is the API priced differently?"),

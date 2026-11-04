@@ -107,8 +107,8 @@ export default function Page() {
           <div>
             <h2 className="h-section text-ink">What it costs</h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
-              ₹1 per page checked in India, $0.01 elsewhere. No subscription, no setup fee, no per-teacher seats. A class of 40
-              copies of 8 pages each costs ₹320. Failed, stopped and unreadable copies are free, and reading names is free.
+              A yearly platform fee from ₹5,000, plus ₹1 per page checked. No setup fee, and a free 3-day trial with no card. A class of 40
+              copies of 8 pages each costs ₹320 in page charges. Failed, stopped and unreadable copies are free, and reading names is free.
             </p>
             <Link href="/pricing/" className="mt-6 inline-flex items-center gap-1 font-semibold text-pen-700">Full pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
