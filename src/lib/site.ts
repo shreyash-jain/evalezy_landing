@@ -28,7 +28,7 @@ export const bookHref = () => BOOKING_URL || "/demo/";
 export const whatsappHref = (text = "Hi, I'd like to see Evalezy check a few of our answer sheets.") =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 
-export const PRIVACY_URL = "https://vacademy.io/privacy-policy";
+export const PRIVACY_URL = "/privacy/";
 export const TERMS_URL = "https://vacademy.io/terms-of-service";
 
 export type PageGroup = "product" | "resource" | "company";
@@ -69,6 +69,8 @@ export const PAGES: SitePage[] = [
   // Company
   { path: "/about/", label: "About", group: "company", title: "About Evalezy", description: "Evalezy is AI answer-sheet checking from the team behind Vacademy, built to give teachers back the hours they spend checking copies, without taking away the red pen." },
   { path: "/demo/", label: "Book a demo", group: "company", title: "Book an Evalezy Demo or Request API Access", description: "See Evalezy check answer sheets like yours in a 20-minute demo, or request access to the Evaluation API. Tell us how many copies you check and we'll show you the workflow." },
+  { path: "/privacy/", label: "Privacy policy", group: "company", title: "Evalezy Privacy Policy", description: "What the Evalezy app and website collect, why, who it is shared with, how long it is kept, and the choices you have." },
+  { path: "/delete-account/", label: "Delete account", group: "company", title: "Delete Your Evalezy Account", description: "How to delete your Evalezy account in the app or by email, what is deleted, what is kept, and for how long." },
 ];
 
 export const byGroup = (g: PageGroup) => PAGES.filter((p) => p.group === g);

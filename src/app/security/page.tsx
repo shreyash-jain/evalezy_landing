@@ -63,7 +63,7 @@ export default function Page() {
         <div className="wrap py-14 md:py-16">
           <h2 className="h-display text-2xl text-ink md:text-3xl">What we do not claim</h2>
           <p className="mt-4 max-w-3xl leading-relaxed text-slate-600">
-            Evalezy does not hold SOC 2 or ISO 27001 certification today, does not offer on-premise deployment, and does not publish an accuracy percentage. If your procurement needs any of these, tell us early and we will tell you plainly where we stand. Evalezy is operated by Vidyayatan Technologies LLP under the Vacademy{" "}
+            Evalezy does not hold SOC 2 or ISO 27001 certification today, does not offer on-premise deployment, and does not publish an accuracy percentage. If your procurement needs any of these, tell us early and we will tell you plainly where we stand. Evalezy is operated by Vidyayatan Technologies LLP. Read our{" "}
             <a href={PRIVACY_URL} className="font-semibold text-pen-700 underline underline-offset-4">privacy policy</a>.
           </p>
         </div>
