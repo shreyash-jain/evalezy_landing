@@ -5,7 +5,7 @@
   "packageManager": "pnpm@10.13.1",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/routes.mjs && node scripts/llms-full.mjs && rm out/_routes.json",
+    "build": "node scripts/trial-offer.mjs && next build && node scripts/routes.mjs && node scripts/llms-full.mjs && rm out/_routes.json",
     "start": "npx serve out",
     "typecheck": "tsc --noEmit --incremental false",
     "indexnow": "node scripts/indexnow.mjs"

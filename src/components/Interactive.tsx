@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Check, Copy, Download, ExternalLink } from "lucide-react";
-import { PRICE_INR, PRICE_USD } from "@/lib/site";
+import { PRICE_INR, PRICE_USD, planPeriod, signupHref } from "@/lib/site";
+import { useTrialOffer } from "./useTrialOffer";
+import { TickList } from "./Pen";
 import { track } from "@/lib/track";
 
 /* ------------------------------------------------------------------ */
@@ -201,6 +203,88 @@ function NumberField({ id, label, value, onChange, min = 1, max = 100000, suffix
         {suffix && <span className="pr-3.5 text-sm text-slate-400">{suffix}</span>}
       </span>
     </label>
+  );
+}
+
+/** Total for one plan period on the pricing page: the plan that fits the team, plus credits beyond what it includes. */
+export function PlanCalculator() {
+  const offer = useTrialOffer();
+  const maxUsers = Math.max(...offer.plans.map((p) => p.users));
+  const [teachers, setTeachers] = useState(Math.min(5, maxUsers));
+  const [pages, setPages] = useState(300);
+  const byPrice = [...offer.plans].sort((a, b) => a.price_inr - b.price_inr);
+  const plan = byPrice.find((p) => p.users >= teachers) ?? byPrice[byPrice.length - 1];
+  const pagesPeriod = pages * offer.months;
+  const extraPages = Math.max(0, pagesPeriod - plan.credits);
+  const extraCost = extraPages * offer.extra;
+  const total = plan.price_inr + extraCost;
+  const period = planPeriod(offer.months);
+  const inr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
+  return (
+    <div className="grid overflow-hidden rounded-[1.75rem] border border-line bg-white shadow-paper md:grid-cols-2">
+      <div className="flex flex-col gap-6 p-6">
+        <div>
+          <p className="h-card text-lg text-ink">What will I pay?</p>
+          <p className="mt-1 text-sm text-slate-500">Move the sliders. The total updates as you go.</p>
+        </div>
+        <label className="block">
+          <span className="flex justify-between text-sm font-medium text-slate-700">
+            Teachers <strong className="text-ink">{teachers}</strong>
+          </span>
+          <input type="range" min={1} max={maxUsers} step={1} value={teachers} onChange={(e) => setTeachers(Number(e.target.value))} className="mt-2 w-full accent-pen" />
+        </label>
+        <label className="block">
+          <span className="flex justify-between text-sm font-medium text-slate-700">
+            Pages checked a month <strong className="text-ink">{pages.toLocaleString("en-IN")} pages</strong>
+          </span>
+          <input type="range" min={0} max={10000} step={50} value={pages} onChange={(e) => setPages(Number(e.target.value))} className="mt-2 w-full accent-pen" />
+        </label>
+      </div>
+      <div className="flex flex-col gap-3 border-t border-line bg-paper-2 p-6 md:border-l md:border-t-0">
+        <p className="text-sm text-slate-600">Your plan: <strong className="text-ink">{plan.name}</strong> ({plan.users === 1 ? "1 user" : `up to ${plan.users} users`})</p>
+        <p className="flex justify-between text-sm text-slate-600"><span>{plan.name} plan, {plan.credits.toLocaleString("en-IN")} credits included</span><span>{inr(plan.price_inr)}</span></p>
+        <p className="flex justify-between text-sm text-slate-600"><span>{extraPages.toLocaleString("en-IN")} extra pages × {inr(offer.extra)}</span><span>{inr(extraCost)}</span></p>
+        <div className="mt-2 border-t border-line pt-3">
+          <p className="text-sm text-slate-500">Total per {period}</p>
+          <p className="h-display text-4xl text-pen" data-testid="plan-total">{inr(total)}</p>
+          <p className="mt-1 text-sm text-slate-500">{inr(total * 1.18)} with GST</p>
+        </div>
+        <a href={signupHref(plan.key)} className="btn btn-pen mt-2 w-full" data-track="cta_trial_click">Start {offer.days}-day trial</a>
+      </div>
+    </div>
+  );
+}
+
+/** The plan cards on the pricing page, from the health dashboard (live, with the build's values first). */
+export function PlanCards() {
+  const offer = useTrialOffer();
+  const inr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
+  const period = planPeriod(offer.months);
+  const popular = offer.plans.length > 1 ? offer.plans[offer.plans.length - 1].key : null;
+  return (
+    <div className={`mx-auto grid max-w-3xl gap-6 ${offer.plans.length > 1 ? "md:grid-cols-2" : ""}`}>
+      {offer.plans.map((p, i) => (
+        <div key={p.key} className={p.key === popular ? "flex flex-col rounded-[1.25rem] border-2 border-pen bg-white p-7" : "card flex flex-col p-7"}>
+          <div className="flex items-center justify-between gap-2">
+            <h2 className="h-card text-xl text-ink">{p.name}</h2>
+            {p.key === popular && <span className="rounded-full bg-pen px-3 py-1 text-xs font-bold text-white">Most popular</span>}
+          </div>
+          <p className="mt-1 text-sm text-slate-500">{p.users === 1 ? "1 user" : `Up to ${p.users} users`}</p>
+          <p className="h-display mt-4 text-5xl text-ink">{inr(p.price_inr)}<span className="text-xl text-slate-500"> / {period}</span></p>
+          <p className="mt-1 text-sm font-semibold text-pen-700">{p.credits.toLocaleString("en-IN")} AI credits included</p>
+          <TickList
+            className="mt-6 flex-1"
+            items={[
+              `${p.credits.toLocaleString("en-IN")} pages checked, valid for a ${period}`,
+              `Extra credits ${inr(offer.extra)} each (1 credit = 1 page)`,
+              p.users === 1 ? "For one teacher" : `Shared by up to ${p.users} teachers`,
+              ...(i > 0 ? [`Everything in ${offer.plans[0].name}`] : ["Checked copies, reports and result emails"]),
+            ]}
+          />
+          <a href={signupHref(p.key)} className="btn btn-pen mt-8 w-full" rel="nofollow" data-track="cta_trial_click">Start {offer.days}-day trial</a>
+        </div>
+      ))}
+    </div>
   );
 }
 

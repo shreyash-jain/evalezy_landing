@@ -148,8 +148,9 @@ export default function Page() {
       <h3>Cost of evaluation</h3>
       <p>
         Manual checking costs teacher time, or evaluator fees if you pay external checkers. AI-assisted checking adds a
-        software fee but cuts the hours. As an example, Evalezy charges ₹1 per page checked: 100 copies of 8 pages is
-        800 pages, or ₹800 plus GST, plus the teacher’s review time.
+        software fee but cuts the hours. As an example, Evalezy uses 1 credit per page checked, with credits included in
+        every plan: 100 copies of 8 pages is 800 credits, plus the teacher’s review time (see{" "}
+        <Link href="/pricing/">pricing</Link>).
       </p>
 
       <h2 id="manual-advantages">Advantages of manual answer sheet checking</h2>

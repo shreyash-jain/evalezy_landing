@@ -74,9 +74,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <div className="ruled rounded-[1.75rem] border border-line p-8 pl-20 shadow-paper">
           <p className="text-sm font-semibold text-slate-500">Worked example</p>
           <p className="mt-2 text-lg text-ink first-letter:uppercase">{a.example.label}</p>
-          <p className="mt-6 text-sm text-slate-500">{a.example.copies.toLocaleString("en-IN")} copies × {a.example.pages} pages × ₹1</p>
-          <p className="h-display mt-1 text-5xl text-pen">₹{cost.toLocaleString("en-IN")}</p>
-          <p className="mt-2 text-sm text-slate-500">${(cost * 0.01).toLocaleString("en-US", { minimumFractionDigits: 2 })} outside India · excl. GST · failed copies free</p>
+          <p className="mt-6 text-sm text-slate-500">{a.example.copies.toLocaleString("en-IN")} copies × {a.example.pages} pages × 1 credit</p>
+          <p className="h-display mt-1 text-5xl text-pen">{cost.toLocaleString("en-IN")} <span className="text-2xl text-slate-500">credits</span></p>
+          <p className="mt-2 text-sm text-slate-500">Credits come with every plan · failed copies free</p>
           <Link href="/pricing/" className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-pen-700">Work out your own <ArrowRight className="h-4 w-4" /></Link>
         </div>
       </section>

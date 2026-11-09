@@ -29,7 +29,7 @@ export const PICKS: Pick[] = [
     name: "Evalezy",
     bestFor: "Checking a class's or an exam's handwritten answer sheets end to end",
     summary:
-      "Upload up to 200 scanned or phone-photographed copies at once. Evalezy reads each student's name and roll number and matches the copy to the class list, marks every answer against one marking scheme per question in half marks with a written reason, and returns the student's own copy checked in a handwriting-style red pen with the total circled. A teacher reviews, edits and releases. It documents 12 of the 14 capabilities in our research, the most of any tool, publishes its price (₹1 per page in India, $0.01 elsewhere; failed and unreadable copies free) and has a public Evaluation API with docs.",
+      "Upload up to 200 scanned or phone-photographed copies at once. Evalezy reads each student's name and roll number and matches the copy to the class list, marks every answer against one marking scheme per question in half marks with a written reason, and returns the student's own copy checked in a handwriting-style red pen with the total circled. A teacher reviews, edits and releases. It documents 12 of the 14 capabilities in our research, the most of any tool, publishes its prices (yearly plans with AI credits included, 1 credit per page; failed and unreadable copies free) and has a public Evaluation API with docs.",
     watch: [
       "Grades English answers only for now; Hindi and regional-language copies are refused and not charged",
       "No plagiarism or AI-writing checks",
@@ -165,7 +165,7 @@ export const BEST_FAQS: Faq[] = [
   },
   {
     q: "Is there a free AI copy checker?",
-    a: "For individual use, yes: AnswerWriting.com has a free tier for UPSC and PSC aspirants, CoGrader's free Starter plan includes handwritten essays, Gradescope's Basic plan is free (staff grade, no AI marking) and ZipGrade grades 100 bubble sheets a month free. For institutes, most tools quote a price. Evalezy has no free plan; it charges ₹1 per page checked, and failed, stopped and unreadable copies are free.",
+    a: "For individual use, yes: AnswerWriting.com has a free tier for UPSC and PSC aspirants, CoGrader's free Starter plan includes handwritten essays, Gradescope's Basic plan is free (staff grade, no AI marking) and ZipGrade grades 100 bubble sheets a month free. For institutes, most tools quote a price. Evalezy has no free plan, but offers a short free trial; its yearly plans include AI credits (1 credit per page), and failed, stopped and unreadable copies are free.",
   },
   {
     q: "Which AI answer sheet checking tools are made in India?",
@@ -177,6 +177,6 @@ export const BEST_FAQS: Faq[] = [
   },
   {
     q: "How much does AI answer sheet checking cost?",
-    a: "Few tools publish prices. Evalezy charges ₹1 per page checked ($0.01 outside India). CoGrader starts at $15 per teacher per month, UPSC answer-evaluation apps charge aspirants from about ₹299 a month, and ZipGrade costs $6.99 a year for multiple choice only. On-screen marking providers and most institutional AI tools quote per exam or per contract.",
+    a: "Few tools publish prices. Evalezy publishes yearly plans with AI credits included (1 credit checks 1 page). CoGrader starts at $15 per teacher per month, UPSC answer-evaluation apps charge aspirants from about ₹299 a month, and ZipGrade costs $6.99 a year for multiple choice only. On-screen marking providers and most institutional AI tools quote per exam or per contract.",
   },
 ];

@@ -288,8 +288,8 @@ export default function Page() {
         </p>
         <p>
           Marks arrive as a draft. In <Link href="/teacher-review/">teacher review</Link> you see each answer with its
-          marks, feedback and criteria breakdown, change anything you disagree with, and press Release Result. Pricing
-          is ₹1 per page checked (plus GST), and unreadable copies are not charged.
+          marks, feedback and criteria breakdown, change anything you disagree with, and press Release Result. Each page
+          checked uses 1 credit, credits come with every plan, and unreadable copies are not charged.
         </p>
       </WhereEvalezyFits>
 

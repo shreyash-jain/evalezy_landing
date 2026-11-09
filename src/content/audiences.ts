@@ -37,7 +37,7 @@ export const AUDIENCES: Audience[] = [
       { q: "Does it work for CBSE, ICSE and state-board papers?", a: "Yes. Evalezy marks against the questions and marking scheme you give it, so the board does not matter. Upload your paper, check the drafted scheme against your board's marking guidelines, and edit any criterion before you run the check." },
       { q: "Our teachers check in notebooks, not answer booklets. Will phone photos work?", a: "Yes. The sample copy on this site is a phone photo of a spiral notebook. Pages are straightened and cleaned before reading. Very dark, blurred or cut-off photos fail with a clear message and are not charged, so you can re-scan them." },
       { q: "Can students see marks before the teacher checks them?", a: "No. AI marks are a draft. Students see \"Results pending\" until a teacher presses Release Result, and that rule is enforced on the server, not just hidden in the app." },
-      { q: "What does it cost a school?", a: "₹1 per page checked. A section of 40 students writing an 8-page copy costs ₹320 for that paper. Failed and unreadable copies are free." },
+      { q: "What does it cost a school?", a: "Each page checked uses 1 credit, and credits come with every yearly plan (see the pricing page). A section of 40 students writing an 8-page copy uses 320 credits for that paper. Failed and unreadable copies are free." },
     ],
   },
   {
@@ -64,7 +64,7 @@ export const AUDIENCES: Audience[] = [
       "Test more often without hiring more checkers",
       "One marking standard across batches, centres and faculty",
       "Checked copies students and parents can read line by line",
-      "₹1 a page, so a 6-page test costs ₹6 a student",
+      "1 credit a page, so a 6-page test uses 6 credits a student",
     ],
     example: { copies: 300, pages: 6, label: "a 300-student weekly test, 6 pages a copy" },
     faqs: [

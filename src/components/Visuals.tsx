@@ -229,7 +229,7 @@ export function UploadDialog() {
         </ul>
         <div className="rounded-xl border border-line bg-paper px-3 py-2.5 text-sm">
           <p className="font-semibold text-ink">3 copies · 21 pages · ₹21</p>
-          <p className="text-xs text-slate-500">₹1 per page · names are read for free</p>
+          <p className="text-xs text-slate-500">1 credit per page · names are read for free</p>
         </div>
         <label className="flex items-center gap-2 text-sm text-slate-600">
           <span className="grid h-4 w-4 place-items-center rounded bg-pen text-white"><Tick className="h-3 w-3" color="#fff" /></span>

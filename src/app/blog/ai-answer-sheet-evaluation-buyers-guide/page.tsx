@@ -253,8 +253,8 @@ export default function Page() {
           teacher to pick the student.
         </p>
         <p>
-          <strong>Price:</strong> <Link href="/pricing/">₹1 per page checked</Link> ($0.01 outside India), plus GST in
-          India. Failed, cancelled and unreadable checks are free; a re-check is charged again.{" "}
+          <strong>Price:</strong> <Link href="/pricing/">yearly plans with AI credits included</Link>, 1 credit per
+          page checked, plus GST in India. Failed, cancelled and unreadable checks are free; a re-check is charged again.{" "}
           <strong>Data:</strong> see <Link href="/security/">how we handle answer sheets</Link>; Evalezy does not hold
           SOC 2 or ISO certification today. <strong>Overrides:</strong> a mark a teacher edits is never overwritten by a
           later AI run.

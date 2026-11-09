@@ -1,3 +1,5 @@
+import trialOffer from "@/content/trialOffer.json";
+
 /**
  * Site constants and the registry of hand-written pages. Data-driven pages
  * (audiences, comparisons, blog posts) live in src/content and are merged in
@@ -18,8 +20,37 @@ export const WHATSAPP_DISPLAY = "+91 99933 36616";
 export const SALES_EMAIL = "hello@evalezy.com";
 /** Booking page for "Book a demo". Empty = every CTA goes to the /demo/ form. */
 export const BOOKING_URL = "";
-/** Where existing customers sign in (Evalezy runs inside the Vacademy admin dashboard). */
-export const LOGIN_URL = "https://dash.vacademy.io/";
+/** Where existing customers sign in: the Evalezy web app (same accounts as the Vacademy admin dashboard). */
+export const LOGIN_URL = "https://evalezy.vacademy.io/login";
+/** Self sign-up: a {TRIAL_DAYS}-day trial without a card. Runs on the same host as LOGIN_URL. */
+export const SIGNUP_URL = "https://evalezy.vacademy.io/signup/start";
+/** Trial days and the AI credits each new sign-up gets, as set on the health dashboard (Products → Evalezy).
+ *  scripts/trial-offer.mjs refreshes the JSON before every build; useTrialOffer() updates key buttons live. */
+export const TRIAL_DAYS: number = trialOffer.trial_days;
+/** 1 credit checks 1 handwritten page. */
+export const TRIAL_CREDITS: number = trialOffer.demo_credits;
+export const OFFER_API = "https://backend-stage.vacademy.io/admin-core-service/public/product/v1/evalezy/offer";
+/** Evalezy app on the App Store (iPhone, live 7 Nov 2026). Android is in closed testing: no Play link yet. */
+export const APP_STORE_URL = "https://apps.apple.com/in/app/evalezy-ai-copy-checking/id6831890999";
+export interface Plan {
+  key: string;
+  name: string;
+  /** Price for one plan period, in rupees, before GST. */
+  price_inr: number;
+  /** AI credits included for the plan period; 1 credit checks 1 page. */
+  credits: number;
+  users: number;
+}
+/** Paid plans, plan length and extra-credit price: set on the health dashboard (Products → Evalezy → Pricing). */
+export const PLANS: Plan[] = trialOffer.plans;
+export const PLAN_MONTHS: number = trialOffer.plan_validity_months;
+export const EXTRA_CREDIT_INR: number = trialOffer.extra_credit_price_inr;
+/** "year" for 12 months, else "N months". */
+export const planPeriod = (months: number = PLAN_MONTHS) => (months === 12 ? "year" : months === 1 ? "month" : `${months} months`);
+export const cheapestPlan = (plans: Plan[] = PLANS) => plans.reduce((a, b) => (b.price_inr < a.price_inr ? b : a), plans[0]);
+export const signupHref = (plan?: string) =>
+  `${SIGNUP_URL}?product=evalezy&source=website${plan ? `&plan=${encodeURIComponent(plan)}` : ""}`;
+
 /** Evaluation API (live since 2 Oct 2026) and its developer docs (Mintlify). Facts: src/content/api.ts. */
 export const API_BASE = "https://api.evalezy.com/v1";
 export const DOCS_URL = "https://docs.evalezy.com";
@@ -45,7 +76,7 @@ export interface SitePage {
 
 export const PAGES: SitePage[] = [
   // Product
-  { path: "/copy-checking-software/", label: "Copy checking software", group: "product", title: "Copy Checking Software: Check Answer Copies Online with AI", description: "AI copy checking software for schools, coaching institutes and colleges. Upload scanned or phone-photographed answer copies; get each one checked in red pen. ₹1 per page." },
+  { path: "/copy-checking-software/", label: "Copy checking software", group: "product", title: "Copy Checking Software: Check Answer Copies Online with AI", description: "AI copy checking software for schools, coaching institutes and colleges. Upload scanned or phone-photographed answer copies; get each one checked in red pen. Free trial, then yearly plans with AI credits." },
   { path: "/how-it-works/", label: "How it works", group: "product", title: "How AI Answer Sheet Checking Works, Step by Step", description: "From question paper to released results: how Evalezy reads handwritten copies, matches students, marks every answer against one scheme and returns red-pen checked copies." },
   { path: "/checked-copy/", label: "Red-pen checked copy", group: "product", title: "AI-Checked Answer Copies That Look Teacher-Checked", description: "Evalezy returns the student's own copy with ticks, crosses, short notes, marks per question and the total circled, in a handwriting-style red pen. Not a score table." },
   { path: "/bulk-upload/", label: "Bulk upload & student matching", group: "product", title: "Bulk Answer Sheet Upload with Automatic Student Matching", description: "Upload up to 200 scanned answer sheets at once. Evalezy reads each student's name and roll number, matches the copy to your class list and never guesses." },
@@ -53,9 +84,9 @@ export const PAGES: SitePage[] = [
   { path: "/marking-scheme/", label: "AI marking scheme", group: "product", title: "AI Marking Scheme Generator, or Bring Your Own Rubric", description: "Evalezy drafts a marking scheme for every question, with criteria that add up to the marks. Edit it, replace it or add a model answer. One scheme for every student." },
   { path: "/teacher-review/", label: "Teacher review & release", group: "product", title: "Teacher Review: Approve AI Marks Before Students See Them", description: "AI marks land as a draft. Teachers see each answer, the feedback and the criteria, change any mark, then release results. Edited marks are never overwritten." },
   { path: "/typed-answers/", label: "Typed essays & long answers", group: "product", title: "AI Essay Grading for Online Long-Answer Questions", description: "Evalezy also grades essays, letters and emails typed in an online test, on format, content, organisation and language, with word limits and a teacher review." },
-  { path: "/app/", label: "Evalezy mobile app", group: "product", title: "Evalezy App: Check Answer Sheets on Your Phone", description: "The Evalezy app, launching soon: photograph each student's answer copy, check the whole class with AI and share the red-pen checked copies. ₹1 per page." },
+  { path: "/app/", label: "Evalezy mobile app", group: "product", title: "Evalezy App: Check Answer Sheets on Your Phone", description: "The Evalezy app is on the App Store for iPhone, Android coming soon: create the test from the paper, photograph each copy, check the class with AI, share checked copies." },
   { path: "/api/", label: "Evaluation API", group: "product", title: "Answer Sheet Evaluation API for Developers", description: "Grade handwritten copies and typed long answers from your own exam system: create an exam, upload PDFs, read question-wise marks and the checked copy. Full docs at docs.evalezy.com." },
-  { path: "/pricing/", label: "Pricing", group: "product", title: "Pricing: ₹1 per Page Checked ($0.01)", description: "Evalezy pricing is per page checked: ₹1 in India, $0.01 elsewhere. No subscription, no setup fee. Failed and unreadable copies are free. Same per-page price on the API." },
+  { path: "/pricing/", label: "Pricing", group: "product", title: `Pricing: Plans From ₹${cheapestPlan().price_inr.toLocaleString("en-IN")} a ${planPeriod()[0].toUpperCase()}${planPeriod().slice(1)}, AI Credits Included`, description: `Evalezy plans include AI credits: ${PLANS.map((p) => `${p.name} ₹${p.price_inr.toLocaleString("en-IN")} with ${p.credits.toLocaleString("en-IN")} credits for ${p.users === 1 ? "1 user" : `${p.users} users`}`).join(", ")}. 1 credit checks 1 page; extra credits ₹${EXTRA_CREDIT_INR}. Free ${TRIAL_DAYS}-day trial, no card.` },
   { path: "/side-by-side/", label: "AI vs teacher: one copy", group: "product", title: "AI vs Teacher: One Answer Copy, Checked Twice", description: "The same maths answer copy, checked by a teacher and by Evalezy. Drag across each page to compare. Evalezy caught 2 slips the teacher ticked; the teacher caught 5 it misread." },
   { path: "/sample/", label: "See a checked copy", group: "product", title: "Sample: A Real Answer Sheet Checked by Evalezy", description: "Look through a real 7-page Class IX Social Science answer copy checked by Evalezy: ticks, crosses, corrections, half marks, margin notes and a circled total of 38/80." },
   // Resources

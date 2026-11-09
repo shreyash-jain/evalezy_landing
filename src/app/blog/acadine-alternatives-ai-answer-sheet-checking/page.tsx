@@ -11,7 +11,7 @@ export default function Page() {
       takeaways={[
         "Acadine is an all-in-one platform for Indian coaching institutes and schools: AI answer-sheet evaluation plus AI question papers, OMR, online tests, analytics, institute management and a white-label app.",
         "If you only need handwritten copies checked, compare tools on five things: who releases the marks, what the student gets back, how copies are matched to students, which languages are supported and whether the price is published.",
-        "Evalezy keeps every AI mark as a draft until a teacher releases it, returns the student’s own copy checked in red pen, reads names and roll numbers to match copies, and charges a published ₹1 per page. It grades English answers only for now.",
+        "Evalezy keeps every AI mark as a draft until a teacher releases it, returns the student’s own copy checked in red pen, reads names and roll numbers to match copies, and publishes its prices. It grades English answers only for now.",
         "Acadine, Eklavvya and CrazyGoldFish document Indian-language answers; Acadine and Eklavvya do not publish prices.",
         "Whatever you choose, pilot it on 30–50 copies your teachers have already marked, and compare question by question.",
       ]}
@@ -31,7 +31,7 @@ export default function Page() {
         },
         {
           q: "Does Acadine publish its pricing?",
-          a: "No. As of 29 October 2026, Acadine’s website asks you to book a demo and lists no prices. Evalezy publishes its price: ₹1 per page checked in India, $0.01 elsewhere, with failed, stopped and unreadable copies free.",
+          a: "No. As of 29 October 2026, Acadine’s website asks you to book a demo and lists no prices. Evalezy publishes its prices: yearly plans with AI credits included (1 credit checks 1 page) and extra credits sold separately, with failed, stopped and unreadable copies free.",
         },
         {
           q: "Can teachers review AI marks before students see them?",
@@ -95,7 +95,7 @@ export default function Page() {
         caption="From each vendor’s public pages, October 2026. Full sources in our landscape research."
         head={["Tool", "Best for", "Teacher review before release", "Student’s copy marked up", "Indian-language answers", "Published price"]}
         rows={[
-          ["Evalezy", "Checking English handwritten copies end to end", "Yes: drafts until a teacher releases", "Yes, in red pen", "No, English only for now", "Yes: ₹1 / page"],
+          ["Evalezy", "Checking English handwritten copies end to end", "Yes: drafts until a teacher releases", "Yes, in red pen", "No, English only for now", "Yes: yearly plans with credits"],
           ["Acadine", "One suite for coaching: checking, papers, tests, analytics, app", "Not described (results publish automatically; students can challenge)", "Not described", "Yes (English, Hindi, Sanskrit)", "No"],
           ["Eklavvya", "University on-screen marking with AI, blind evaluation", "Yes: accept, override, moderate", "Not described", "Yes (8 languages)", "No"],
           ["CrazyGoldFish", "Evaluation infrastructure and APIs for platforms and programmes", "Yes: teacher is final", "Not described", "Yes (Hindi results reported)", "No"],
@@ -112,7 +112,7 @@ export default function Page() {
         Evalezy reads each student’s name and roll number from page one and matches the copy to your list, never
         guessing. Every answer is marked in half-mark steps with a reason, and the student’s own copy comes back{" "}
         <Link href="/checked-copy/">checked in red pen</Link> with the total circled. Marks are drafts until a teacher
-        releases them. Price: ₹1 per page; failed and unreadable copies are free. A public{" "}
+        releases them. Price: published yearly plans with AI credits (1 credit per page); failed and unreadable copies are free. A public{" "}
         <Link href="/api/">Evaluation API</Link> is documented at docs.evalezy.com.
       </p>
       <p><strong>Watch for:</strong> English answers only for now; diagrams are judged by their labels and written explanation; no plagiarism checks; no published accuracy figure.</p>
@@ -156,7 +156,7 @@ export default function Page() {
           ["Existing question paper", "Upload the PDF; it is read into questions", "Generate or build the paper in Acadine"],
           ["Languages", "English only for now", "English, Hindi, Sanskrit (22 languages claimed)"],
           ["Accuracy claim", "None published; one copy checked by teacher and AI published instead", "98%+ (“faculty benchmarked”)"],
-          ["Price", "₹1 per page, published", "Not published"],
+          ["Price", "Published: yearly plans with AI credits", "Not published"],
           ["API", "Public Evaluation API with docs", "Not documented"],
           ["Beyond checking", "Part of the Vacademy platform", "Question papers, OMR, CBT tests, analytics, LMS, white-label app"],
         ]}
@@ -169,7 +169,7 @@ export default function Page() {
         <p>
           Evalezy fits institutes that check English handwritten copies after every test and want teachers to stay in
           charge: <strong>AI does the first check, the teacher reviews and releases</strong>, and each student gets
-          their own copy back in red pen. You pay ₹1 per page, nothing for copies that fail.
+          their own copy back in red pen. Each page uses 1 credit from your plan, and copies that fail cost nothing.
         </p>
         <p>
           See it on a real copy: the <Link href="/sample/">Class IX Social Science sample</Link>, or the{" "}

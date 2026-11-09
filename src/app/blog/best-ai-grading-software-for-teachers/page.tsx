@@ -43,7 +43,7 @@ export default function Page() {
         },
         {
           q: "How much does AI grading software cost?",
-          a: "Pricing models vary: per page, per copy or student, per teacher seat, or a subscription. Evalezy charges ₹1 per page checked in India and $0.01 per page elsewhere (plus GST in India), with failed and unreadable copies free. For other tools, check their published prices or ask for a quote at your volume, and ask what is charged when a check fails or is repeated.",
+          a: "Pricing models vary: per page, per copy or student, per teacher seat, or a subscription. Evalezy publishes yearly plans with AI credits included (1 credit checks 1 page, plus GST in India), with failed and unreadable copies free. For other tools, check their published prices or ask for a quote at your volume, and ask what is charged when a check fails or is repeated.",
         },
         {
           q: "Is AI grading accurate enough for school examinations?",
@@ -203,8 +203,8 @@ export default function Page() {
         </p>
         <p>
           Marks stay a draft until a teacher reviews them and presses Release Result; students see nothing before that.
-          It is built and tested on English answer sheets. Pricing is ₹1 per page checked (plus GST), with no
-          subscription, and failed and unreadable copies are free. See a <Link href="/sample/">real checked copy</Link>.
+          It is built and tested on English answer sheets. Its yearly plans include AI credits (1 credit
+          checks 1 page), and failed and unreadable copies are free. See a <Link href="/sample/">real checked copy</Link>.
         </p>
       </WhereEvalezyFits>
 
