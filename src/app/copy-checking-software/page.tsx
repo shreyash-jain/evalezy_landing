@@ -4,6 +4,7 @@ import { PageShell, FeatureRow, pageMetadata } from "@/components/PageShell";
 import { CheckedCopyStack, ScoreTableVsCopy } from "@/components/Visuals";
 import { TickList } from "@/components/Pen";
 import { BEST_PATH } from "@/content/bestTools";
+import { EXTRA_CREDIT_INR, TRIAL_CREDITS, TRIAL_DAYS, cheapestPlan, planPeriod } from "@/lib/site";
 
 /*
  * Landing page for the head terms teachers type: "copy checking software", "copy checking app",
@@ -26,7 +27,7 @@ const VS = [
   { aspect: "Feedback on the copy", manual: "Depends on the teacher's time", software: "A tick, cross or note on every answer" },
   { aspect: "Who decides the final mark", manual: "The teacher", software: "The teacher. AI marks wait for release" },
   { aspect: "Diagrams and drawings", manual: "Fully judged", software: "Judged by labels and written explanation only" },
-  { aspect: "Cost", manual: "Teacher time, or a fee per copy to outside checkers", software: "₹1 per page checked" },
+  { aspect: "Cost", manual: "Teacher time, or a fee per copy to outside checkers", software: "1 credit per page; plans include credits" },
 ];
 
 export default function Page() {
@@ -35,7 +36,7 @@ export default function Page() {
       path={PATH}
       eyebrow="Copy checking software"
       h1="Copy checking software that checks answer sheets like a teacher."
-      lede="Evalezy is AI copy checking software for schools, coaching institutes and colleges. Upload a class's scanned or phone-photographed answer copies and get each one back checked in red pen, matched to the right student, ready for you to review. ₹1 per page."
+      lede="Evalezy is AI copy checking software for schools, coaching institutes and colleges. Upload a class's scanned or phone-photographed answer copies and get each one back checked in red pen, matched to the right student, ready for you to review. Start with a free trial."
       visual={<CheckedCopyStack />}
       faqs={[
         { q: "What is copy checking software?", a: "Software that marks students' handwritten answer copies. Evalezy reads each copy, finds every answer, marks it against the marking scheme for that question and writes the result back onto the student's pages in red pen, with the total circled. A teacher reviews and releases the marks." },
@@ -107,8 +108,8 @@ export default function Page() {
           <div>
             <h2 className="h-section text-ink">What it costs</h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
-              ₹1 per page checked in India, $0.01 elsewhere. No subscription, no setup fee, no per-teacher seats. A class of 40
-              copies of 8 pages each costs ₹320. Failed, stopped and unreadable copies are free, and reading names is free.
+              Plans from ₹{cheapestPlan().price_inr.toLocaleString("en-IN")} a {planPeriod()} with AI credits included; 1 credit checks 1 page and extra credits are ₹{EXTRA_CREDIT_INR} each. No setup fee, and a free {TRIAL_DAYS}-day trial with {TRIAL_CREDITS} AI credits, no card. A class of 40
+              copies of 8 pages each uses 320 credits. Failed, stopped and unreadable copies are free, and reading names is free.
             </p>
             <Link href="/pricing/" className="mt-6 inline-flex items-center gap-1 font-semibold text-pen-700">Full pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>

@@ -1,5 +1,5 @@
 import type { Faq } from "./types";
-import { SALES_EMAIL } from "@/lib/site";
+import { EXTRA_CREDIT_INR, PLANS, SALES_EMAIL, TRIAL_CREDITS, TRIAL_DAYS, planPeriod } from "@/lib/site";
 
 /** The /faq/ page, grouped. HOME_FAQS is the short list on the home page. Claims: docs/PRODUCT_FACTS.md. */
 export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
@@ -32,6 +32,10 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
   {
     title: "Teachers, students and results",
     faqs: [
+      { q: "Can we choose the handwriting and pen colour on the checked copy?", a: "Yes. Before checking, pick the AI's pen in Settings (dashboard: Settings → Assessment; app: Settings): handwriting (Teacher, Natural, Scrawled, Quick, Cursive or a classic print hand), ink (red, blue, green, black or any custom colour), how dark, and size. \"See how it will look\" draws a full sample page first. Every copy checked after you save uses that pen." },
+      { q: "Can the AI highlight spelling and grammar mistakes?", a: "Yes, for answers written in English. Switch on \"Highlight spelling and grammar errors\" and each error is underlined on the copy with its correction and listed in the answer's feedback. No marks are deducted for it." },
+      { q: "Can we fix the checked copy after changing marks?", a: "Yes. After you change marks, remarks or pen notes in review, press Update checked copy. The PDF is drawn again with your corrections; everything else stays where it was. You can keep the original pen or pick another for that copy." },
+      { q: "Is there a mobile app?", a: "Yes. The Evalezy app is on the App Store for iPhone; Android is coming soon. Create a test from the question paper, scan copies with the camera, check the whole class and share the checked copies as one zip." },
       { q: "Can teachers change the AI's marks?", a: "Yes, any mark on any question. The review screen shows the student's answer as read, the AI's feedback and the criteria breakdown. A mark a teacher edits is never overwritten, even if the copy is checked again." },
       { q: "When do students see their results?", a: "Only after a teacher presses Release Result. Until then students see \"Results pending\" and the marks are hidden on the server, not just in the app." },
       { q: "How do students get the checked copy?", a: "On release each student is emailed their checked copy as a PDF. If you have connected WhatsApp in Automations, you can send results there too." },
@@ -41,7 +45,8 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
   {
     title: "Pricing",
     faqs: [
-      { q: "How much does it cost?", a: "₹1 per page checked in India, $0.01 per page elsewhere. A 7-page copy costs ₹7. There is no subscription and no setup fee. Indian prices exclude GST." },
+      { q: "How much does it cost?", a: `${PLANS.map((p) => `${p.name} is ₹${p.price_inr.toLocaleString("en-IN")} a ${planPeriod()} for ${p.users === 1 ? "1 user" : `up to ${p.users} users`}, with ${p.credits.toLocaleString("en-IN")} AI credits`).join("; ")}. 1 credit checks 1 page, so a 7-page copy uses 7 credits. When the credits run out, extra credits are ₹${EXTRA_CREDIT_INR} each. There is no setup fee. Prices exclude 18% GST. The API has no plan fee: ₹1 a page.` },
+      { q: "Is there a free trial?", a: `Yes. ${TRIAL_DAYS} days, with no card needed, for 1 teacher and ${TRIAL_CREDITS} free AI credits (1 credit checks 1 handwritten page). Sign up with Google or your email. When the trial ends, checking stops and your reports stay available.` },
       { q: "What is not charged?", a: "Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free." },
       { q: "Is a re-check charged?", a: "Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept." },
       { q: "Is the API priced differently?", a: "Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing." },
@@ -80,6 +85,7 @@ export const HOME_FAQS: Faq[] = [
 
 export const PRICING_FAQS: Faq[] = [
   pick("How much does it cost?"),
+  pick("Is there a free trial?"),
   pick("What is not charged?"),
   pick("Is a re-check charged?"),
   pick("Is the API priced differently?"),

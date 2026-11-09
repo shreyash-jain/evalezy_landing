@@ -45,13 +45,13 @@
    "target": "schools, coaching institutes, UPSC/PSC programmes, colleges, exam bodies, edtech platforms (API)",
    "pricing": {
     "public_pricing": true,
-    "model": "per page",
+    "model": "yearly plan with credits",
     "entry_price": {
-     "amount": 1,
+     "amount": 5000,
      "currency": "INR",
-     "period": "page",
-     "plan_name": "Dashboard / API",
-     "notes": "$0.01 per page outside India; failed, stopped and unreadable copies free; excl. GST"
+     "period": "year",
+     "plan_name": "Starter",
+     "notes": "1 user, 100 AI credits (1 credit checks 1 page); Team Rs 20,000/year for 15 users with 2,000 credits; extra credits Rs 1 each; API Rs 1 a page with no plan; failed, stopped and unreadable copies free; excl. GST; 3-day free trial"
     },
     "free_plan": false
    },
@@ -129,7 +129,7 @@
     "capabilities.public_api": "https://docs.evalezy.com/",
     "capabilities.indian_languages": "https://docs.evalezy.com/platform/roadmap"
    },
-   "asOf": "2026-10-22"
+   "asOf": "2026-11-09"
   },
   {
    "name": "Eklavvya",

@@ -336,8 +336,8 @@ export default function Page() {
         <p>
           <strong>Built for daily batches.</strong> Upload up to 200 PDFs at a time, with names and roll numbers read from the
           page and matched to your aspirants, or check the answers aspirants upload themselves. A copy typically takes 1 to 8
-          minutes, first results arrive in about 10 minutes, and about 100 copies take 2 to 3 hours on current capacity. It
-          costs ₹1 per page checked, excluding GST, so a 4-page answer costs ₹4 (<Link href="/pricing/">pricing</Link>). More
+          minutes, first results arrive in about 10 minutes, and about 100 copies take 2 to 3 hours on current capacity. Each
+          page uses 1 credit, so a 4-page answer uses 4 credits; credits come with every plan (<Link href="/pricing/">pricing</Link>). More
           on the <Link href="/for/upsc-answer-writing/">UPSC answer-writing page</Link>.
         </p>
       </WhereEvalezyFits>

@@ -26,9 +26,9 @@ export default function Page() {
           <p>
             Marks matter to children and parents. An AI that publishes marks on its own is a liability. In Evalezy every mark is a draft, every deduction comes with a reason, unreadable copies are never guessed, and nothing reaches a student until a teacher releases it.
           </p>
-          <h2>Why ₹1 a page</h2>
+          <h2>Why credits by the page</h2>
           <p>
-            Pricing should be something a school can work out on the back of an exam paper. Pages are what teachers count, so that is what we charge for, and nothing when a check fails.
+            Pricing should be something a school can work out on the back of an exam paper. Pages are what teachers count, so one credit checks one page, plans include the credits, and a check that fails costs nothing.
           </p>
           <h2>The name</h2>
           <p>

@@ -4,7 +4,7 @@ import { PhoneMock } from "@/components/AppMock";
 import { AppScrollDemo } from "@/components/AppScrollDemo";
 import { TickList } from "@/components/Pen";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE } from "@/lib/site";
+import { SITE, APP_STORE_URL, signupHref, TRIAL_CREDITS, TRIAL_DAYS } from "@/lib/site";
 
 const PATH = "/app/";
 export const metadata = pageMetadata(PATH);
@@ -23,22 +23,24 @@ const COMPARE = [
   { k: "Copy matched to the student", ez: "Name and roll number read from page one", ac: "Not described", scan: "No, you rename files" },
   { k: "What comes back", ez: "The student’s own copy checked in red pen, as a zip", ac: "Notifications for grades, tests and announcements", scan: "The PDF you scanned" },
   { k: "Teacher review before students see marks", ez: "Yes, in the Evalezy dashboard", ac: "Results publish automatically (teacher guide)", scan: "Not applicable" },
-  { k: "Price", ez: "₹1 per page checked; failed copies free", ac: "Not published", scan: "Free or a subscription; checking is still by hand" },
+  { k: "Price", ez: "1 credit per page, from your plan’s credits; failed copies free", ac: "Not published", scan: "Free or a subscription; checking is still by hand" },
 ];
 
 export default function Page() {
   return (
     <PageShell
       path={PATH}
-      eyebrow="Evalezy app · Launching soon"
+      eyebrow="Evalezy app · Now on iPhone"
       h1="Check a whole class’s copies from your phone."
-      lede="No scanner, no laptop. Photograph each student’s copy, send the class for AI checking, and get every copy back checked in red pen, ready to share. Same login, same tests and the same ₹1 a page as the dashboard."
+      lede="No scanner, no laptop. Photograph each student’s copy, send the class for AI checking, and get every copy back checked in red pen, ready to share. Same login, same tests and the same credits as the dashboard. On the App Store for iPhone; Android coming soon."
       visual={<PhoneMock />}
-      secondary={{ href: "/blog/evalezy-app-check-answer-sheets-on-phone/", label: "Read how it works", track: "app_guide" }}
+      secondary={{ href: APP_STORE_URL, label: "Download on the App Store", track: "app_store" }}
       faqs={[
-        { q: "When can I download it?", a: "The Evalezy app is launching soon, on Android first. Book a demo or message us on WhatsApp and we will tell you the day it is in the store." },
-        { q: "Does it cost extra?", a: "No. The app uses your institute’s Evalezy account and credits: ₹1 per page checked in India, $0.01 elsewhere. Failed, stopped and unreadable copies are free." },
-        { q: "Where do I create the test and release results?", a: "In the Evalezy dashboard. Set up the test and question paper there, and review, edit and release marks there. The app is for getting copies in and checked copies out." },
+        { q: "Where can I download it?", a: "On the App Store for iPhone, as “Evalezy: AI Copy Checking”. Android is in testing on Google Play and coming soon. On any phone or computer you can also use the same app in the browser at evalezy.vacademy.io." },
+        { q: "Can I try it free?", a: `Yes. Start a ${TRIAL_DAYS}-day free trial from the app or the website: 1 teacher, ${TRIAL_CREDITS} free AI credits (1 credit = 1 page), no card. Sign up with Google on the web, or with your email and a one-time code.` },
+        { q: "Does it cost extra?", a: "No. The app uses your institute’s Evalezy plan and credits, the same as the dashboard: 1 credit per page checked. Failed, stopped and unreadable copies are free." },
+        { q: "Can I create the test in the app?", a: "Yes. Tap New, give the test a name and total marks, and add the question paper as a PDF or photos. Evalezy reads it into questions; you check them and switch on AI checking. Reviewing, editing and releasing marks happen in the Evalezy dashboard." },
+        { q: "Can I choose the pen the AI writes with?", a: "Yes. In the app’s Settings, pick the handwriting, ink colour, darkness and size, and whether remarks go on the copy or beside it. Every copy checked after you save uses that pen." },
         { q: "What if a copy has no name on it?", a: "It waits for you. Pick the student from the list and the copy is checked; nothing is filed under a guessed name." },
         { q: "Can our institute control who uses it?", a: "Yes. An institute admin can switch the app off, or turn camera scanning and file upload on or off separately." },
         { q: "Is there an app for students?", a: "The Evalezy app is for teachers and exam cells. Students receive their checked copy by email when you release results." },
@@ -49,9 +51,12 @@ export default function Page() {
           "@context": "https://schema.org",
           "@type": "MobileApplication",
           name: "Evalezy",
-          operatingSystem: "Android",
+          operatingSystem: "iOS",
+          installUrl: APP_STORE_URL,
+          downloadUrl: APP_STORE_URL,
+          offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
           applicationCategory: "EducationalApplication",
-          description: "Launching soon on Android. Scan students' handwritten answer copies with a phone camera, check the whole class with AI and download the checked copies.",
+          description: "AI copy checking on your phone: create the test from the question paper, scan students' handwritten answer copies with the camera, check the whole class with AI and download the checked copies. iPhone now, Android coming soon.",
           url: `${SITE}${PATH}`,
           publisher: { "@type": "Organization", name: "Evalezy", url: SITE },
         }}
@@ -63,6 +68,11 @@ export default function Page() {
         <div className="mt-6 lg:mt-0">
           <AppScrollDemo />
         </div>
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <a href={APP_STORE_URL} className="btn btn-ink" rel="noopener" data-track="app_store">Download on the App Store</a>
+          <a href={signupHref()} className="btn btn-outline" data-track="trial_app_page">Start {TRIAL_DAYS}-day free trial</a>
+        </div>
+        <p className="mt-3 text-sm text-slate-500">iPhone now. Android is in testing and coming soon.</p>
       </section>
 
       <section className="border-y border-line bg-white">
@@ -94,6 +104,7 @@ export default function Page() {
               "Half marks with a written reason on every answer",
               "The student’s own copy checked in red pen, total circled",
               "An email when the batch is done",
+              "The pen you chose in Settings: handwriting, ink colour and darkness",
               "Nothing reaches students until a teacher releases it",
             ]}
           />

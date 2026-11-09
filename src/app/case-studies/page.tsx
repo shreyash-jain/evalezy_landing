@@ -37,6 +37,21 @@ const STUDIES = [
       { k: "Pages", v: "7" },
     ],
   },
+  {
+    href: "/blog/case-study-one-answer-page-nine-pens/",
+    img: "/copy/pens/cursive-crop.webp",
+    alt: "A sample answer page checked in the Cursive handwriting: ticks, 2/4, 1/2 and 0/3, with remarks like formula missing",
+    w: 827,
+    h: 405,
+    tag: "Pen styles · Sample page",
+    title: "One answer page, checked in nine different pens",
+    body: "The same sample page drawn in every handwriting, ink colour and darkness you can pick before checking. What changes on the page, and what stays exactly the same: the marks.",
+    stats: [
+      { k: "Pens shown", v: "9" },
+      { k: "Total", v: "6/12" },
+      { k: "Ink colours", v: "4 + custom" },
+    ],
+  },
 ];
 
 const EXAMPLES = [
@@ -46,7 +61,7 @@ const EXAMPLES = [
   },
   {
     t: "A coaching institute, after every weekend test",
-    steps: ["Set the test once; the same scheme is used for every batch", "Scan copies at each centre (soon from the Evalezy app)", "Copies are matched to students by name and roll number", "Faculty review and edit marks, then release results"],
+    steps: ["Set the test once; the same scheme is used for every batch", "Scan copies at each centre with the Evalezy app", "Copies are matched to students by name and roll number", "Faculty review and edit marks, then release results"],
   },
   {
     t: "A UPSC answer-writing programme",
@@ -63,7 +78,7 @@ export default function Page() {
       lede="We do not publish accuracy percentages. We publish checked copies: every page, every mark and every mistake, so you can judge for yourself before you try it on your own students’ copies."
     >
       <section className="wrap py-16 md:py-24">
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {STUDIES.map((s) => (
             <Link key={s.href} href={s.href} className="card card-hover group flex flex-col overflow-hidden">
               <div className="border-b border-line bg-paper p-4">
@@ -87,7 +102,7 @@ export default function Page() {
           ))}
         </div>
         <p className="mt-6 text-sm text-slate-500">
-          Both copies are real and unedited. They are not customer results. Page-by-page views:{" "}
+          The two copies are real and unedited; the pen study uses a sample page drawn by Evalezy’s pen preview. None are customer results. Page-by-page views:{" "}
           <Link href="/side-by-side/" className="underline underline-offset-2 hover:text-ink">AI vs teacher</Link> ·{" "}
           <Link href="/sample/" className="underline underline-offset-2 hover:text-ink">sample checked copy</Link>.
         </p>

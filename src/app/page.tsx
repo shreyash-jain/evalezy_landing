@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, FileStack, ScanLine, Search, ShieldCheck, Sigma, Timer, UserRoundCheck } from "lucide-react";
-import { DOCS_URL, SITE, bookHref } from "@/lib/site";
+import { DOCS_URL, EXTRA_CREDIT_INR, PLANS, SITE, TRIAL_CREDITS, TRIAL_DAYS, bookHref, cheapestPlan, planPeriod } from "@/lib/site";
+
 import { AUDIENCES } from "@/content/audiences";
 import { HOME_FAQS } from "@/content/faqs";
 import { SNIPPETS } from "@/content/api";
@@ -9,11 +10,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { CtaBand, FaqList, Icon, SectionHeading } from "@/components/ui";
 import { PenCircle, PenUnderline, TickList } from "@/components/Pen";
 import { BulkCheckPanel, CheckedCopyStack, ReviewPanel, RubricCard, ScoreTableVsCopy, UploadDialog } from "@/components/Visuals";
-import { ApiTabs, CopyAnatomy, PriceCalculator } from "@/components/Interactive";
+import { ApiTabs, CopyAnatomy, PlanCalculator } from "@/components/Interactive";
 import { DemoForm } from "@/components/DemoForm";
 import { COPY, count } from "@/content/sideBySide";
 import { ClientMarquee } from "@/components/ClientLogos";
 import { PhoneMock } from "@/components/AppMock";
+
+const inrStr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE },
@@ -58,7 +61,7 @@ export default function Home() {
             <div>
             <Link href="/app/" className="inline-flex animate-rise items-center gap-2 rounded-full border border-pen/30 bg-white px-3 py-1 text-sm font-semibold text-pen-700 hover:border-pen">
               <span className="rounded-full bg-pen px-2 py-0.5 text-[0.7rem] font-bold uppercase tracking-wide text-white">New</span>
-              The Evalezy app is launching soon <ArrowRight className="h-3.5 w-3.5" />
+              The Evalezy app is now on iPhone <ArrowRight className="h-3.5 w-3.5" />
             </Link>
             </div>
             <p className="eyebrow mt-6 animate-rise">AI copy checking software</p>
@@ -79,8 +82,8 @@ export default function Home() {
             </div>
             <dl className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-line pt-6">
               <div>
-                <dt className="text-sm text-slate-500">Price</dt>
-                <dd className="h-card mt-1 text-2xl text-ink">₹1 <span className="text-base font-semibold text-slate-500">/ page</span></dd>
+                <dt className="text-sm text-slate-500">Free trial</dt>
+                <dd className="h-card mt-1 text-2xl text-ink">{TRIAL_CREDITS} <span className="text-base font-semibold text-slate-500">pages</span></dd>
               </div>
               <div>
                 <dt className="text-sm text-slate-500">One upload</dt>
@@ -138,6 +141,25 @@ export default function Home() {
           {" · "}
           <Link href="/best-ai-copy-checking-software/" className="font-semibold text-pen-700 underline underline-offset-4">Best AI copy checking software, compared</Link>
         </p>
+        <div className="mt-16 grid gap-8 rounded-3xl border border-line bg-white p-6 md:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <p className="eyebrow">New · Your pen, your choice</p>
+            <h3 className="h-section mt-3 text-3xl text-ink">Pick the handwriting and ink before checking.</h3>
+            <p className="mt-4 leading-relaxed text-slate-600">
+              Teacher, Natural, Cursive or a classic print hand. Red, blue, green, black or your own colour, light or dark.
+              Preview a full page, save once, and every copy comes back in that pen. Remarks can sit on the copy or beside it.
+            </p>
+            <Link href="/blog/choose-pen-handwriting-ai-checked-copy/" className="mt-6 inline-flex items-center gap-1 font-semibold text-pen-700">See all the pens <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {[["teacher-red", "Teacher, red"], ["cursive", "Cursive"], ["teacher-green", "Teacher, green"], ["teacher-blue-dark", "Teacher, dark blue"]].map(([k, label]) => (
+              <figure key={k} className="overflow-hidden rounded-xl border border-line bg-paper">
+                <img src={`/copy/pens/${k}-crop.webp`} alt={`Sample answer page checked in the ${label} pen`} width={827} height={405} loading="lazy" className="block w-full" />
+                <figcaption className="px-3 py-1.5 text-xs text-slate-500">{label}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ------------------------------------------------------------ HOW IT WORKS */}
@@ -328,7 +350,7 @@ export default function Home() {
                 ["Student gets their own copy back, checked", "Yes, in red pen, total circled", "Not described: scorecards and feedback", "Depends on the teacher's time"],
                 ["Copies matched to students by name and roll number", "Yes, never guessed", "Not described", "By hand"],
                 ["Same marking scheme for every copy", "Yes, one per question", "Yes, standard rubrics", "Drifts with fatigue"],
-                ["Published price", "₹1 per page; failed copies free", "No, book a demo", "Teacher hours"],
+                ["Published price", "Yes, yearly plans with credits; failed copies free", "No, book a demo", "Teacher hours"],
                 ["Public grading API", "Yes, docs.evalezy.com", "Not documented", "—"],
                 ["Hindi and regional-language answers", "Not yet: English only", "Yes: English, Hindi, Sanskrit", "Yes"],
                 ["Question papers, OMR, LMS and analytics in one suite", "No: Evalezy focuses on checking (part of Vacademy)", "Yes", "—"],
@@ -354,15 +376,15 @@ export default function Home() {
       <section className="relative overflow-hidden border-y border-line bg-white">
         <div className="wrap grid gap-12 py-20 md:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <p className="eyebrow">Evalezy app · Launching soon</p>
+            <p className="eyebrow">Evalezy app · Now on iPhone</p>
             <h2 className="h-section mt-3 text-ink">No scanner? Check the whole class from your phone.</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
               Photograph each student&apos;s copy, tap Next student, and send the class for checking. Every copy is matched
-              to its student and comes back checked in red pen, ready to share as one zip. Same login, same ₹1 a page.
+              to its student and comes back checked in red pen, ready to share as one zip. Same login, same credits.
             </p>
             <ol className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
-                ["Pick the test", "Set up once in the dashboard"],
+                ["Create the test", "Add the question paper, PDF or photos"],
                 ["Scan each copy", "Camera, or pick PDFs"],
                 ["Check them all", "Names read, students matched"],
                 ["Share checked copies", "One zip to WhatsApp, Drive or email"],
@@ -424,23 +446,23 @@ export default function Home() {
           <div>
             <p className="eyebrow">Pricing</p>
             <h2 className="h-section mt-3 text-ink">
-              <PenCircle>₹1</PenCircle> a page. That&apos;s it.
+              Plans from {inrStr(cheapestPlan().price_inr)} a {planPeriod()}, extra pages <PenCircle>₹{EXTRA_CREDIT_INR}</PenCircle>.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
-              $0.01 a page outside India. No subscription, no setup fee, no per-teacher seats. The same price on the API.
+              {PLANS.map((p) => `${p.name}: ${inrStr(p.price_inr)} a ${planPeriod()} with ${p.credits.toLocaleString("en-IN")} AI credits for ${p.users === 1 ? "1 user" : `up to ${p.users} users`}`).join(". ")}. 1 credit checks 1 page; extra credits ₹{EXTRA_CREDIT_INR} each. Try it free for {TRIAL_DAYS} days with {TRIAL_CREDITS} free AI credits, no card needed. API: ₹1 a page, no plan needed.
             </p>
             <TickList
               className="mt-6"
               items={[
                 "Question paper import, marking schemes, name matching and teacher review included",
                 "Failed, stopped and unreadable copies are not charged",
-                "A 7-page copy costs ₹7",
+                "A 7-page copy uses 7 credits",
                 "Volume plans for exam bodies and platforms",
               ]}
             />
             <Link href="/pricing/" className="mt-8 inline-flex items-center gap-1 font-semibold text-pen-700">Full pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
-          <PriceCalculator />
+          <PlanCalculator />
         </div>
       </section>
 
@@ -476,7 +498,7 @@ export default function Home() {
         </div>
       </section>
 
-      <CtaBand title="Give your teachers their evenings back." body="Upload tonight's pile, review it tomorrow. ₹1 a page, and nothing reaches students until a teacher says so." />
+      <CtaBand title="Give your teachers their evenings back." body="Upload tonight's pile, review it tomorrow. Nothing reaches students until a teacher says so." />
     </main>
   );
 }

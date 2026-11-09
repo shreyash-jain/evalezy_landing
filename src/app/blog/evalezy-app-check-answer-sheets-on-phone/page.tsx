@@ -1,5 +1,6 @@
 import { BlogShell, postMetadata, Callout, Steps, Table, WhereEvalezyFits } from "@/components/BlogShell";
 import Link from "next/link";
+import { APP_STORE_URL, TRIAL_DAYS, signupHref } from "@/lib/site";
 
 const SLUG = "evalezy-app-check-answer-sheets-on-phone";
 export const metadata = postMetadata(SLUG);
@@ -9,11 +10,11 @@ export default function Page() {
     <BlogShell
       slug={SLUG}
       takeaways={[
-        "The Evalezy app is launching soon. It puts Evalezy’s copy checking on a phone: no scanner, no laptop.",
-        "Four steps: pick the test, scan each student’s copy with the camera (or pick PDFs), check them all, and download the checked copies as one zip.",
+        "The Evalezy app is on the App Store for iPhone (Android coming soon). It puts Evalezy’s copy checking on a phone: no scanner, no laptop.",
+        "Four steps: create or pick the test, scan each student’s copy with the camera (or pick PDFs), check them all, and download the checked copies as one zip.",
         "Each copy’s photos become one PDF; Evalezy reads the student’s name, matches the copy and checks it, the same as in the dashboard.",
-        "Same login, same tests and the same price: ₹1 per page checked. Failed and unreadable copies are free.",
-        "Set the test up and review and release marks in the Evalezy dashboard; the app is for getting copies in and checked copies out.",
+        "Same login, same tests and the same credits as the dashboard: 1 credit per page checked. Failed and unreadable copies are free.",
+        "You can now create the test from the question paper and set the AI’s pen in the app; reviewing and releasing marks stays in the Evalezy dashboard.",
       ]}
       toc={[
         { id: "what", label: "What the app does" },
@@ -24,16 +25,16 @@ export default function Page() {
       ]}
       faqs={[
         {
-          q: "When is the Evalezy app available?",
-          a: "It is launching soon, on Android first. Book a demo or message us on WhatsApp and we will tell you as soon as it is in the store.",
+          q: "Where can I download the Evalezy app?",
+          a: "On the App Store for iPhone, as “Evalezy: AI Copy Checking”. Android is in testing on Google Play and coming soon; until then, Android users can use the same app in the browser at evalezy.vacademy.io.",
         },
         {
           q: "Does the app cost extra?",
-          a: "No. It uses the same account and credits as the dashboard: ₹1 per page checked in India, $0.01 elsewhere. Failed, stopped and unreadable copies are free.",
+          a: "No. It uses the same account, plan and credits as the dashboard: 1 credit per page checked. Failed, stopped and unreadable copies are free.",
         },
         {
           q: "Can I create a test or release results from the app?",
-          a: "Not yet. Create the test and upload the question paper in the dashboard first, and review and release marks there. The app is for adding copies, running the check and downloading the checked copies.",
+          a: "You can create a test: tap New, enter the name and total marks and add the question paper as a PDF or photos; it is read into questions for you to check. Reviewing, editing and releasing marks is done in the Evalezy dashboard.",
         },
         {
           q: "Can my institute turn the app off?",
@@ -50,10 +51,11 @@ export default function Page() {
         for that moment: a teacher takes photos of each student’s copy on their phone, sends the whole class for AI
         checking, and gets every copy back checked in red pen.
       </p>
-      <Callout title="Launching soon" tone="tip">
+      <Callout title="Now on iPhone" tone="tip">
         <p>
-          The Evalezy app is in its final stage before release, on Android first. Everything below describes how it
-          works today in our builds. <Link href="/demo/">Book a demo</Link> to try it on your own copies.
+          The Evalezy app is live on the <a href={APP_STORE_URL} rel="noopener">App Store</a> for iPhone. Android is in
+          testing and coming soon. Try it free for {TRIAL_DAYS} days with no card:{" "}
+          <a href={signupHref()}>start your trial</a>.
         </p>
       </Callout>
 
@@ -68,7 +70,7 @@ export default function Page() {
       <h2 id="how">How it works</h2>
       <Steps
         items={[
-          { title: "Pick the test", body: "Your tests appear in a list. Choose the one whose copies you have in front of you." },
+          { title: "Create or pick the test", body: "Your tests appear in a list. Choose one, or tap New: give it a name and total marks and add the question paper as a PDF or photos. Evalezy reads the paper into questions; you check them and switch on AI checking." },
           { title: "Add the copies", body: "Scan with the camera page by page, tapping Next student between copies. Or pick files: each PDF is one copy, and photos picked together make one copy." },
           { title: "Check them all", body: "Each copy’s photos become one PDF and the whole batch goes for AI checking. You see progress live, and pick the student yourself for any copy that could not be matched." },
           { title: "Download the checked copies", body: "All checked copies download as one zip. On a phone it opens the share sheet, so you can send it to WhatsApp, Drive or email. You also get an email when the batch is done." },
@@ -103,13 +105,15 @@ export default function Page() {
       <Table
         head={["Task", "Evalezy app", "Evalezy dashboard"]}
         rows={[
-          ["Create a test, upload the question paper, edit the marking scheme", "No (do it in the dashboard)", "Yes"],
+          ["Create a test from the question paper (PDF or photos)", "Yes", "Yes"],
+          ["Edit the marking scheme question by question", "Use the dashboard", "Yes"],
+          ["Choose the AI’s pen and where remarks go", "Yes, in Settings", "Yes, in Settings → Assessment"],
           ["Scan copies with the phone camera", "Yes", "Upload phone photos or PDFs"],
           ["Upload PDFs", "Yes", "Yes, up to 200 at a time"],
           ["Run the AI check, see progress, match students", "Yes", "Yes"],
           ["Review and edit marks, release results", "No (do it in the dashboard)", "Yes"],
           ["Download checked copies", "Yes, as one zip", "Yes"],
-          ["Price", "₹1 per page", "₹1 per page"],
+          ["Credits", "1 credit per page", "1 credit per page"],
         ]}
       />
 

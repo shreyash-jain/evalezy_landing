@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageShell, pageMetadata } from "@/components/PageShell";
-import { PriceCalculator } from "@/components/Interactive";
+import { PlanCalculator, PlanCards } from "@/components/Interactive";
 import { PenCircle, TickList } from "@/components/Pen";
 import { JsonLd } from "@/components/JsonLd";
 import { PRICING_FAQS } from "@/content/faqs";
-import { SITE, bookHref } from "@/lib/site";
+import { EXTRA_CREDIT_INR, PLANS, SITE, TRIAL_CREDITS, TRIAL_DAYS, cheapestPlan, planPeriod } from "@/lib/site";
 import { docsUrl } from "@/content/api";
 
 const PATH = "/pricing/";
@@ -18,6 +18,16 @@ const EXAMPLES = [
   { who: "UPSC daily answer (a month)", copies: 500 * 26, pages: 4 },
 ];
 
+const inr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
+
+
+const PAGE_CHARGES = [
+  ["Each page checked", "1 credit"],
+  ["Extra credits, after your plan's", `₹${EXTRA_CREDIT_INR} each`],
+  ["Failed or unreadable copies", "free"],
+  ["Checking a copy again", "1 credit a page"],
+];
+
 const INCLUDED = [
   "Question paper import",
   "AI-drafted marking schemes, editable",
@@ -25,7 +35,6 @@ const INCLUDED = [
   "The red-pen checked copy PDF",
   "Teacher review, edits and release",
   "Result emails to students with the checked copy",
-  "The same per-page price on the API",
 ];
 
 const FREE = ["Failed checks", "Stopped or cancelled checks", "Copies too blurred or blank to read", "Reading names in bulk uploads", "Teacher edits"];
@@ -35,17 +44,17 @@ export default function Page() {
     <PageShell
       path={PATH}
       eyebrow="Pricing"
-      h1={<>One price: <PenCircle>₹1</PenCircle> a page checked.</>}
-      lede="$0.01 a page outside India. No subscription, no setup fee, no seats. You pay for the pages Evalezy checks, and nothing for the ones it could not."
+      h1={<>Plans with AI credits included. Extra pages <PenCircle>₹{EXTRA_CREDIT_INR}</PenCircle> each.</>}
+      lede={`From ${inr(cheapestPlan().price_inr)} a ${planPeriod()}. Every plan includes AI credits (1 credit checks 1 page); after that, extra credits are ₹${EXTRA_CREDIT_INR} each. Try it free for ${TRIAL_DAYS} days with ${TRIAL_CREDITS} free AI credits, no card needed. Prices exclude 18% GST. No setup fee.`}
       secondary={null}
       visual={
         <div className="ruled mx-auto flex max-w-md items-center gap-6 rounded-[1.75rem] border border-line p-6 pl-16 shadow-paper">
-          <img src="/copy/page-1-sm.webp" alt="The 7-page sample copy" className="w-28 shrink-0 -rotate-3 rounded shadow-paper" width={560} height={747} />
+          <img src="/copy/page-1-sm.webp" alt="The 7-page sample copy" className="w-28 shrink-0 -rotate-3 rounded shadow-paper" width={560} height={746} />
           <div>
             <p className="text-sm text-slate-500">The sample copy on this site</p>
-            <p className="mt-1 font-mono text-sm text-slate-600">7 pages × ₹1</p>
-            <p className="h-display mt-1 text-5xl text-pen">₹7</p>
-            <p className="mt-2 text-sm text-slate-500">38 questions marked, every page annotated. $0.07 outside India.</p>
+            <p className="mt-1 font-mono text-sm text-slate-600">7 pages = 7 credits</p>
+            <p className="h-display mt-1 text-5xl text-pen">7</p>
+            <p className="mt-2 text-sm text-slate-500">38 questions marked, every page annotated.</p>
           </div>
         </div>
       }
@@ -57,68 +66,41 @@ export default function Page() {
           "@context": "https://schema.org",
           "@type": "Product",
           name: "Evalezy AI answer sheet checking",
-          description: "AI checking of handwritten answer sheets with a red-pen checked copy, priced per page checked.",
+          description: "AI checking of handwritten answer sheets with a red-pen checked copy: plans with AI credits included (1 credit checks 1 page), extra credits sold separately.",
           brand: { "@type": "Brand", name: "Evalezy" },
           url: `${SITE}${PATH}`,
           image: `${SITE}/og.png`,
-          offers: [
-            { "@type": "Offer", price: "1.00", priceCurrency: "INR", url: `${SITE}${PATH}`, availability: "https://schema.org/InStock", description: "Per page checked, excluding GST" },
-            { "@type": "Offer", price: "0.01", priceCurrency: "USD", url: `${SITE}${PATH}`, availability: "https://schema.org/InStock", description: "Per page checked" },
-          ],
+          offers: PLANS.map((p) => ({
+            "@type": "Offer",
+            name: p.name,
+            price: String(p.price_inr),
+            priceCurrency: "INR",
+            url: `${SITE}${PATH}`,
+            availability: "https://schema.org/InStock",
+            description: `${p.users === 1 ? "1 user" : `Up to ${p.users} users`}, ${p.credits} AI credits, for a ${planPeriod()}. Extra credits ₹${EXTRA_CREDIT_INR} each. Excludes GST.`,
+          })),
         }}
       />
-      <section className="wrap grid gap-6 py-16 md:py-20 lg:grid-cols-3">
-        <div className="card flex flex-col p-7">
-          <p className="eyebrow">Dashboard</p>
-          <p className="h-display mt-4 text-5xl text-ink">₹1<span className="text-xl text-slate-500"> / page</span></p>
-          <p className="mt-1 text-sm text-slate-500">$0.01 outside India · prepaid credits · excl. GST</p>
-          <p className="mt-5 leading-relaxed text-slate-600">For schools, coaching institutes and colleges checking copies in the Evalezy dashboard.</p>
-          <TickList className="mt-6 flex-1" items={INCLUDED.slice(0, 6)} />
-          <Link href={bookHref()} className="btn btn-pen mt-8 w-full" data-track="book_demo">Book a demo</Link>
-        </div>
-        <div className="flex flex-col rounded-[1.25rem] border-2 border-ink bg-ink p-7 text-white">
-          <p className="eyebrow eyebrow-dark">API</p>
-          <p className="h-display mt-4 text-5xl">₹1<span className="text-xl text-slate-400"> / page</span></p>
-          <p className="mt-1 text-sm text-slate-400">$0.01 outside India · 1 credit a page · quoted before grading</p>
-          <p className="mt-5 leading-relaxed text-slate-300">For edtech platforms, ERPs and exam systems grading handwritten copies or typed long answers from their own product.</p>
-          <TickList
-            dark
-            className="mt-6 flex-1"
-            items={[
-              "Exams, rubrics, candidates, PDF uploads and results",
-              "Typed tests: 1 credit per non-blank long answer; objective answers free",
-              "Question-wise marks, reasons, feedback and the checked copy PDF",
-              "Poll for results; teachers can review in the dashboard",
-              "Failed and cancelled copies: not charged",
-            ]}
-          />
-          <Link href="/demo/#api" className="btn btn-pen mt-8 w-full" data-track="request_api">Request API access</Link>
-          <a href={docsUrl("/platform/pricing")} className="mt-4 text-center text-sm font-semibold text-slate-300 underline decoration-white/30 underline-offset-4 hover:text-white" data-track="open_docs">API pricing in the docs</a>
-        </div>
-        <div className="card flex flex-col p-7">
-          <p className="eyebrow">Volume</p>
-          <p className="h-display mt-4 text-5xl text-ink">Custom</p>
-          <p className="mt-1 text-sm text-slate-500">For 1,00,000+ pages a month</p>
-          <p className="mt-5 leading-relaxed text-slate-600">For exam bodies, university-wide rollouts and large platforms that need capacity planned around an exam window.</p>
-          <TickList className="mt-6 flex-1" items={["Capacity planned for your exam dates", "Invoice billing", "A named contact during the evaluation window", "Help writing marking schemes"]} />
-          <Link href="/demo/" className="btn btn-outline mt-8 w-full" data-track="book_demo">Talk to us</Link>
-        </div>
+      <section className="wrap py-16 md:py-20">
+        <PlanCards />
+        <p className="mx-auto mt-6 max-w-3xl text-center text-slate-600">
+          More than {Math.max(...PLANS.map((p) => p.users))} teachers or 1,00,000+ pages a month? <strong className="text-ink">Enterprise</strong>: custom price.{" "}
+          <Link href="/demo/" className="font-semibold text-pen-700 underline" data-track="book_demo">Talk to us</Link>
+        </p>
       </section>
 
       <section className="border-y border-line bg-white">
         <div className="wrap py-16 md:py-20">
           <h2 className="h-section text-ink">Work out your cost</h2>
-          <p className="mt-3 max-w-2xl text-slate-600">Change the numbers to match your school or batch.</p>
-          <div className="mt-10"><PriceCalculator /></div>
+          <div className="mt-8"><PlanCalculator /></div>
           <div className="mt-10 overflow-x-auto rounded-2xl border border-line">
-            <table className="w-full min-w-[36rem] text-left">
+            <table className="w-full min-w-[32rem] text-left">
               <thead className="bg-paper-2 text-sm text-ink">
                 <tr>
                   <th className="px-5 py-3 font-semibold">Example</th>
                   <th className="px-5 py-3 font-semibold">Copies</th>
                   <th className="px-5 py-3 font-semibold">Pages each</th>
-                  <th className="px-5 py-3 font-semibold">Cost (India)</th>
-                  <th className="px-5 py-3 font-semibold">Cost (elsewhere)</th>
+                  <th className="px-5 py-3 font-semibold">Credits used</th>
                 </tr>
               </thead>
               <tbody>
@@ -127,20 +109,53 @@ export default function Page() {
                     <td className="px-5 py-3.5 text-slate-700">{e.who}</td>
                     <td className="px-5 py-3.5 font-mono text-sm">{e.copies.toLocaleString("en-IN")}</td>
                     <td className="px-5 py-3.5 font-mono text-sm">{e.pages}</td>
-                    <td className="px-5 py-3.5 font-mono text-sm font-semibold text-ink">₹{(e.copies * e.pages).toLocaleString("en-IN")}</td>
-                    <td className="px-5 py-3.5 font-mono text-sm text-slate-600">${(e.copies * e.pages * 0.01).toLocaleString("en-US", { minimumFractionDigits: 2 })}</td>
+                    <td className="px-5 py-3.5 font-mono text-sm font-semibold text-ink">{(e.copies * e.pages).toLocaleString("en-IN")}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-slate-500">Indian prices exclude GST.</p>
+          <p className="mt-3 text-xs text-slate-500">1 credit checks 1 page. Credits come with your plan; extra credits are ₹{EXTRA_CREDIT_INR} each. Prices exclude 18% GST.</p>
+        </div>
+      </section>
+
+      <section className="wrap grid gap-6 py-16 md:py-20 lg:grid-cols-2">
+        <div className="flex flex-col rounded-[1.25rem] border-2 border-ink bg-ink p-7 text-white">
+          <p className="eyebrow eyebrow-dark">API</p>
+          <p className="h-display mt-4 text-5xl">₹1<span className="text-xl text-slate-400"> / page</span></p>
+          <p className="mt-1 text-sm text-slate-400">No plan needed · $0.01 outside India · 1 credit a page</p>
+          <p className="mt-5 leading-relaxed text-slate-300">For edtech platforms, ERPs and exam systems grading handwritten copies or typed long answers.</p>
+          <TickList
+            dark
+            className="mt-6 flex-1"
+            items={[
+              "Exams, rubrics, candidates, PDF uploads and results",
+              "Typed tests: 1 credit per non-blank long answer; objective answers free",
+              "Question-wise marks, reasons, feedback and the checked copy PDF",
+              "Failed and cancelled copies: not charged",
+            ]}
+          />
+          <Link href="/demo/#api" className="btn btn-pen mt-8 w-full" data-track="request_api">Request API access</Link>
+          <a href={docsUrl("/platform/pricing")} className="mt-4 text-center text-sm font-semibold text-slate-300 underline decoration-white/30 underline-offset-4">API pricing details</a>
+        </div>
+        <div className="card flex flex-col p-7">
+          <p className="eyebrow">Charged per page</p>
+          <table className="mt-4 w-full text-left">
+            <tbody>
+              {PAGE_CHARGES.map(([what, price]) => (
+                <tr key={what} className="border-t border-line first:border-t-0">
+                  <td className="py-3 text-slate-700">{what}</td>
+                  <td className="py-3 text-right font-mono text-sm font-semibold text-ink">{price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
       <section className="wrap grid gap-10 py-16 md:py-20 lg:grid-cols-2">
         <div>
-          <h2 className="h-display text-3xl text-ink">Included in the page price</h2>
+          <h2 className="h-display text-3xl text-ink">Included in every plan</h2>
           <TickList className="mt-6" items={INCLUDED} />
         </div>
         <div>

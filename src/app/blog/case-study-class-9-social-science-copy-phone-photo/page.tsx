@@ -111,9 +111,9 @@ export default function Page() {
 
       <WhereEvalezyFits>
         <p>
-          Teachers <Link href="/bulk-upload/">upload a whole class’s copies at once</Link>, up to 200 PDFs, or will soon
+          Teachers <Link href="/bulk-upload/">upload a whole class’s copies at once</Link>, up to 200 PDFs, or
           scan them straight from the <Link href="/app/">Evalezy app</Link>. Each student gets their own copy{" "}
-          <Link href="/checked-copy/">checked in red pen</Link>, emailed when you release results. ₹1 per page; failed
+          <Link href="/checked-copy/">checked in red pen</Link>, emailed when you release results. 1 credit per page; failed
           and unreadable copies are free.
         </p>
         <p>

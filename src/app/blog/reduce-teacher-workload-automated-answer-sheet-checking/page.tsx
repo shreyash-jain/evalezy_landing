@@ -231,7 +231,7 @@ export default function Page() {
           Marks arrive as a draft. In <Link href="/teacher-review/">teacher review</Link> you change anything you
           disagree with and press Release Result; a mark you edit is never overwritten by a later AI run. You get a
           bell alert and an email when a batch is done. A copy usually takes 1–8 minutes, and 100 copies take about 2–3
-          hours on current capacity. Pricing is ₹1 per page checked (plus GST), and unreadable copies are not charged.
+          hours on current capacity. Each page checked uses 1 credit, credits come with every plan, and unreadable copies are not charged.
         </p>
       </WhereEvalezyFits>
 

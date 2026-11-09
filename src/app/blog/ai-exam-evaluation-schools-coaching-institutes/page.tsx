@@ -193,8 +193,8 @@ export default function Page() {
         <p>
           Marks stay a draft until a teacher reviews them in <Link href="/teacher-review/">teacher review</Link> and
           presses Release Result; students see nothing before that. A copy usually takes 1–8 minutes, and 100 copies take
-          about 2–3 hours on current capacity. Pricing is ₹1 per page checked (plus GST), and unreadable copies are not
-          charged.
+          about 2–3 hours on current capacity. Each page checked uses 1 credit, credits come with every plan, and
+          unreadable copies are not charged.
         </p>
       </WhereEvalezyFits>
 

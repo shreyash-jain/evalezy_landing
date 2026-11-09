@@ -1,0 +1,10 @@
+{
+  "trial_days": 3,
+  "demo_credits": 50,
+  "plans": [
+    { "key": "starter", "name": "Starter", "price_inr": 5000, "credits": 100, "users": 1 },
+    { "key": "team", "name": "Team", "price_inr": 20000, "credits": 2000, "users": 15 }
+  ],
+  "plan_validity_months": 12,
+  "extra_credit_price_inr": 1
+}

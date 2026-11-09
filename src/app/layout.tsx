@@ -5,7 +5,7 @@ import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Tracking } from "@/components/Tracking";
-import { COMPANY, DOCS_URL, SALES_EMAIL, SITE, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/site";
+import { COMPANY, DOCS_URL, SALES_EMAIL, SITE, SITE_NAME, WHATSAPP_NUMBER, PLANS, TRIAL_CREDITS, TRIAL_DAYS, EXTRA_CREDIT_INR, planPeriod } from "@/lib/site";
 
 /*
  * Fonts are self-hosted (src/fonts/*.woff2, latin + latin-ext + ₹ and maths symbols, cut from the Google Fonts
@@ -28,12 +28,12 @@ const mono = localFont({ src: "../fonts/jetbrains-mono-var.woff2", weight: "400 
 const GTM_ID = "GTM-5C4DDJ6W";
 
 const DESCRIPTION =
-  "Evalezy is AI copy checking software for handwritten answer sheets. It returns each student's copy checked in red pen: ticks, crosses, notes, marks per question and the total circled. Bulk upload, automatic student matching, teacher review. ₹1 per page.";
+  "Evalezy is AI copy checking software for handwritten answer sheets. It returns each student's copy checked in red pen: ticks, crosses, notes, marks per question and the total circled. Bulk upload, automatic student matching, teacher review. Free trial, then yearly plans with AI credits.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: { default: "Evalezy: AI Copy Checking Software for Handwritten Answer Sheets", template: "%s | Evalezy" },
-  description: "AI copy checking software for handwritten answer sheets. Get each student's copy back checked in red pen, matched to the student, ready for teacher review. ₹1 a page.",
+  description: "AI copy checking software for handwritten answer sheets. Get each student's copy back checked in red pen, matched to the student, ready for teacher review. Start with a free trial.",
   applicationName: SITE_NAME,
   manifest: "/site.webmanifest",
   keywords: [
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: "en_IN",
     title: "Evalezy: answer sheets checked by AI, in a teacher's red pen",
-    description: "Upload a class's handwritten copies. Get each one back checked in red pen, matched to the right student, ready for teacher review. ₹1 per page.",
+    description: "Upload a class's handwritten copies. Get each one back checked in red pen, matched to the right student, ready for teacher review. Start with a free trial.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "An answer sheet checked by Evalezy, with ticks, crosses and the total circled" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Evalezy: answer sheets checked by AI, in a teacher's red pen",
-    description: "Bulk upload handwritten copies, get them back checked in red pen. ₹1 per page.",
+    description: "Bulk upload handwritten copies, get them back checked in red pen. Free trial available.",
     images: ["/og.png"],
   },
   icons: {
@@ -126,7 +126,9 @@ const jsonLd = {
         "Evaluation API for developers",
       ],
       offers: [
-        { "@type": "Offer", name: "Per page checked (India)", price: "1", priceCurrency: "INR", description: "₹1 per answer-sheet page checked, excluding GST" },
+        { "@type": "Offer", name: "Free trial", price: "0", priceCurrency: "INR", description: `${TRIAL_DAYS}-day free trial, no card: 1 teacher, ${TRIAL_CREDITS} free AI credits (1 credit checks 1 page)` },
+        ...PLANS.map((p) => ({ "@type": "Offer", name: `${p.name} (${planPeriod()})`, price: String(p.price_inr), priceCurrency: "INR", description: `${p.users === 1 ? "1 user" : `Up to ${p.users} users`}, ${p.credits} AI credits included; extra credits ₹${EXTRA_CREDIT_INR} each; excluding GST` })),
+        { "@type": "Offer", name: "Extra credit (India)", price: String(EXTRA_CREDIT_INR), priceCurrency: "INR", description: "One extra AI credit (checks 1 answer-sheet page) after a plan\u2019s credits, excluding GST" },
         { "@type": "Offer", name: "Per page checked", price: "0.01", priceCurrency: "USD", description: "$0.01 per answer-sheet page checked" },
       ],
       publisher: { "@id": `${SITE}/#org` },

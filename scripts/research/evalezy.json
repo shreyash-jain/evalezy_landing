@@ -7,7 +7,7 @@
     "founded_year": 2026,
     "segment": "ai-copy-checking",
     "target_customers": "schools, coaching institutes, UPSC/PSC programmes, colleges, exam bodies, edtech platforms (API)",
-    "pricing": {"public_pricing": true, "model": "per page", "entry_price": {"amount": 1, "currency": "INR", "period": "page", "plan_name": "Dashboard / API", "notes": "$0.01 per page outside India; failed, stopped and unreadable copies free; excl. GST"}, "free_plan": false},
+    "pricing": {"public_pricing": true, "model": "yearly plan with credits", "entry_price": {"amount": 5000, "currency": "INR", "period": "year", "plan_name": "Starter", "notes": "1 user, 100 AI credits (1 credit checks 1 page); Team Rs 20,000/year for 15 users with 2,000 credits; extra credits Rs 1 each; API Rs 1 a page with no plan; failed, stopped and unreadable copies free; excl. GST; 3-day free trial"}, "free_plan": false},
     "capabilities": {
       "handwritten_reading": {"value": "yes", "evidence": "Reads scanned or phone-photographed handwritten copies (PDF)"},
       "subjective_ai_marking": {"value": "yes", "evidence": "Marks every answer against a marking scheme per question"},
@@ -28,6 +28,6 @@
     "notable_2025_2026": "Launched the Evaluation API (v1) on 2 October 2026.",
     "notable_source": "https://docs.evalezy.com/platform/changelog",
     "sources": {"homepage": "https://evalezy.com/", "pricing": "https://evalezy.com/pricing/", "capabilities": "https://evalezy.com/how-it-works/", "capabilities.public_api": "https://docs.evalezy.com/", "capabilities.indian_languages": "https://docs.evalezy.com/platform/roadmap"},
-    "as_of": "2026-10-22"
+    "as_of": "2026-11-09"
   }
 ]

@@ -13,7 +13,12 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
 |---|---|
 | Checks scanned, handwritten answer sheets (PDF) and returns marks per question plus a checked copy PDF | §1, §2 |
 | The checked copy has red-pen ticks, crosses, short notes, marks per question and the total circled at the top right of page 1 | §7 step 8; sample PDF |
-| Annotations are drawn in a handwriting style (Kalam font, per-glyph jitter, wobbly tick strokes) so the copy looks hand-checked | §7 step 8 |
+| Annotations are drawn in a handwriting style (per-glyph jitter, wobbly tick strokes, bent words on a sloping line) so the copy looks hand-checked | §7 step 8; platform #3679 (merged 4 Nov 2026) |
+| **Pen options (since 4 Nov 2026, #3679):** before checking, the institute picks the AI's pen in Settings (dashboard: Settings → Assessment; app: Settings): ink colour (red, blue, green, black, or any custom colour), how dark (light to dark slider), size (small, medium, large) and handwriting: Teacher (default), Natural, Scrawled, Quick, Cursive, or one of three classic faces (Kalam, Patrick Hand, Architects Daughter). "See how it will look" draws a full sample page with the chosen pen before you save. Every copy checked after saving uses that pen. Renders of each style: `public/copy/pens/` | `PenStylePicker.tsx`, `copyCheckReview.json penStyle`, `pen_preview.py` |
+| **Where remarks go:** "Inside the copy" (remarks written on the sheet next to the answer, default) or "Outside the copy" (marks stay on the sheet, remarks go in a Teacher comments panel beside it). Institute setting, also in the app's Settings | `assessmentCopyIntake.json placement` |
+| **Update checked copy:** after a teacher changes marks, remarks or pen notes in review, the copy is drawn again with the corrections (changed items replace the AI's, everything else stays). The teacher can keep the original pen or pick another, and switch remarks inside/outside, for that one copy. Do not claim it is free or charged (not verified) | `RegenerateCopyDialog.tsx`, `copyCheckReview.json redraw` |
+| **Instructions for the AI checker:** an institute-wide instruction text (e.g. "Follow the CBSE marking scheme. Letter writing: format 1, content 2, expression 2") used with the answer key and rubric for every copy | `assessmentCopyIntake.json aiSettings` |
+| **Spelling and grammar highlight (English answers):** optional; each error is underlined with its correction on the copy and listed in the answer's feedback; no marks are deducted for it | `aiSettings.language*`, `language_feedback.py` |
 | The same copy re-renders identically (pen seeded from the PDF) | §7 step 8 |
 | Phone photos of notebooks work: the sample is a phone photo of a spiral notebook; pages are deskewed, denoised and contrast-boosted | sample PDF; §7 step 1 |
 | Marks are given in 0.5 steps | §7 step 6 |
@@ -50,14 +55,27 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
 
 ## Pricing **(owner)**
 
-- **₹1 per page checked, or $0.01 per page** outside India. Owner instruction, 1 Oct 2026.
+- **Plans with AI credits included (owner, 9 Nov 2026).** Starter ₹5,000 a year: 1 user, 100 AI credits. Team
+  ₹20,000 a year: up to 15 users, 2,000 AI credits. 1 credit checks 1 handwritten page. A plan and its credits last
+  1 year. After the credits are used, extra credits are ₹1 each. No monthly option. Enterprise custom above 15 users or
+  1,00,000+ pages a month. No setup fee. The API stays ₹1 / $0.01 a page with no plan. All of these numbers (plans,
+  months, extra-credit price, trial days, trial credits) are set on the health dashboard (Products → Evalezy → Pricing
+  and Trial) and read by the site at build (`scripts/trial-offer.mjs` → `src/content/trialOffer.json`, llms.txt) and
+  live on the pricing cards, calculators and nav. Never hardcode them in copy; in old posts say "1 credit per page,
+  credits included in every plan" and link /pricing/. (Replaces "yearly fee + ₹1 per page", 4 Nov, and "no
+  subscription", 1 Oct.)
+  - Not enforced yet: user limits per plan, plan purchase online, plan expiry. Plans are sold by talking to us; the
+    site's plan buttons start the trial.
+- **Free trial: 3 days, no card, 1 teacher, 50 free AI credits (1 credit checks 1 handwritten page).** Owner, 9 Nov 2026. Days and credits are set on the health dashboard (Products → Evalezy: Trial days, Credits for each new sign-up); the site reads them at build (`scripts/trial-offer.mjs` → `src/content/trialOffer.json`) and the nav/calculator trial buttons read them live. Never hardcode either number in copy. Sign-up with Google, or email with OTP plus username and password.
+  After it ends uploads stop and reports stay for 30 days. Owner, 4 Nov 2026 (`Self_Signup_Flow_Plan`).
 - Everything else in the flow is included (question paper import, marking schemes, name reading and matching,
   teacher review, release emails). **(owner — confirm)**
 - Same rate on the API. **(owner)**
 - Prices exclude GST in India.
-- ⚠️ The live dashboard on 1 Oct 2026 still bills **1 credit + 0.2 credit per question per copy** (1 credit = ₹0.93),
-  not per page. Per-page billing exists only on branch `feat/copy-check-edit-and-per-page-credits`. The rate card
-  (`ai_tool_pricing.copy_check_evaluation`) must move to per-page before the site's price is what customers pay.
+- Dashboard and app bill **1 credit per page** of a handwritten copy since platform #3674 (merged 4 Nov 2026, V646);
+  a typed long answer is 1 credit. Before that the dashboard billed 1 credit + 0.2 per question per copy.
+- Yearly plans cannot be bought online yet (Phase 2): plan buttons start the free trial; credits are recharged in
+  the dashboard. Say "start free trial" / "talk to us", never "buy now".
 
 ## API (live since 2 Oct 2026, docs at https://docs.evalezy.com)
 
@@ -97,11 +115,15 @@ The Evaluation API is live (v1, changelog "2026-10-02 launch"). The docs are the
 **Dashboard vs API:** dashboard limits stay as above (200 PDFs per upload, 60 MB each, name matching, question-paper
 import). Don't apply API limits to dashboard claims, or the other way round.
 
-## Mobile app **(owner, 29 Oct 2026: launching soon)**
+## Mobile app
 
 The Evalezy app (`io.evalezy.app`) is the dashboard's copy-checking flow in a phone app. Source:
-`vacademy_platform/frontend-admin-dashboard/EVALEZY_APP.md`. Until it is in the stores, the site says **"launching
-soon"** and never links a store page. Platforms: **Android first; iOS to follow** **(owner — confirm)**.
+`vacademy_platform/frontend-admin-dashboard/EVALEZY_APP.md`.
+
+- **iPhone: live on the App Store since 7 Nov 2026** as "Evalezy: AI Copy Checking":
+  https://apps.apple.com/in/app/evalezy-ai-copy-checking/id6831890999 (iPhone only).
+- **Android: in closed testing on Google Play, not public yet.** Say "Android coming soon"; never link a Play page.
+- Web: the same app runs at https://evalezy.vacademy.io (sign in or start the free trial there).
 
 | Claim the site may make | Source |
 |---|---|
@@ -115,8 +137,13 @@ soon"** and never links a store page. Platforms: **Android first; iOS to follow*
 | The teacher gets an email when the batch is checked | Settings `notifyEmail` |
 | The institute admin can switch the app off, or switch camera scanning / file upload off separately | Settings `enabled`, `allowCamera`, `allowUpload` |
 
-Not in the app yet (never claim): creating an assessment or importing the question paper in the app (set it up in the
-dashboard first), reviewing and releasing marks in the app (do that in the dashboard), offline checking, a student app.
+| Create a test in the app: name, total marks and the question paper (PDF or photos); the paper is read into questions, the teacher reviews and enables AI checking (#3629, merged 3 Nov 2026) | `routes/evalezy/new.tsx` |
+| Evaluation settings inside the app: pen, where remarks go, instructions for the AI, spelling and grammar highlight; every check follows them (#3680) | `routes/evalezy/settings.tsx` |
+| AI credit balance in the header, a credits page with usage history; recharge on web and Android (hidden on iPhone) | `routes/evalezy/credits.tsx` |
+| Free trial sign-up from the app or the web: Continue with Google (web), or email OTP plus username and password | #3667, #3676 |
+
+Not in the app yet (never claim): reviewing and releasing marks in the app (do that in the dashboard), offline
+checking, a student app, push notifications (built, not shipped).
 
 ## Case studies
 
@@ -124,6 +151,11 @@ The site's case studies are only the two documented copies: the Class IX Social 
 maths side-by-side (`/side-by-side/`), plus workflows clearly labelled **"example"** (no customer, no results, no
 numbers of copies checked). A named or anonymous customer case study needs the owner to supply the institute, the
 numbers and their OK first (see "Customers" and "Never claim").
+
+**Pen styles demo (9 Nov 2026):** `public/copy/pens/*.webp` are real renders from the product's pen-preview
+renderer (`ai_service pen_preview.render_preview`, main d3cb3f573a). The page is the built-in **sample page**
+("Aarav Sharma", Class 8, 6/12): a demo page with demo remarks, not a real student or a real AI check. Always label
+it "sample page drawn by Evalezy's pen preview".
 
 ## Side-by-side copy **(owner, 2 Oct 2026)**
 
@@ -161,7 +193,6 @@ a one-sided claim, "AI beats teachers", or quoting only the 2 catches without th
 - SOC 2 / ISO certifications, on-premise deployment, or data residency guarantees.
 - Named Evalezy customers, testimonials, results or numbers of copies checked. None are supplied yet. (Vacademy's client
   logos may be shown, framed as in "Customers" above.)
-- A free trial or free pages. None is defined. **(owner — decide)**
 - Competitor facts that are not in the landscape research. Named-vendor pages (`/best-ai-copy-checking-software/`,
   `/compare/<vendor>/`) may state only what `src/app/research/data/landscape.json` records, with its source and the
   read date, and must say where the other tool is the better choice. Capability tables on those pages are generated
