@@ -8,7 +8,7 @@ export const PRODUCT_NAV = [
   { href: "/marking-scheme/", label: "AI marking scheme", desc: "Drafted for you, or bring your own." },
   { href: "/teacher-review/", label: "Teacher review & release", desc: "Nothing reaches students until you say so." },
   { href: "/typed-answers/", label: "Typed essays & long answers", desc: "Online long answers graded in seconds." },
-  { href: "/app/", label: "Mobile app (launching soon)", desc: "Scan copies with your phone, check the whole class." },
+  { href: "/app/", label: "Mobile app (iPhone)", desc: "Scan copies with your phone, check the whole class." },
 ];
 
 export const DEV_NAV = [

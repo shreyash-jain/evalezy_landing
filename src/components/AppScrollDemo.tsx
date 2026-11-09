@@ -13,7 +13,7 @@ const STEPS = [
     k: "Add the paper",
     t: "Add the question paper once.",
     b: "Upload the question paper PDF and it is read into questions with marks. Evalezy drafts a marking scheme per question that you can edit. Do it once per test; every copy is marked to the same scheme.",
-    note: "Today the paper is added in the Evalezy dashboard, with the same login.",
+    note: "Do it in the app (tap New) or in the Evalezy dashboard, with the same login.",
   },
   {
     k: "Add the copies",
