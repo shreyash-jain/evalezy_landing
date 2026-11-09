@@ -105,7 +105,7 @@ was created on 1 Oct 2026 to verify the audience. Delete it in Audience Manager.
 3. **Mailbox.** `hello@evalezy.com` is shown sitewide, and the API docs send developers there to get the API enabled for
    their institute. Create it, or change `SALES_EMAIL` in `src/lib/site.ts` (and ask for the docs to be changed too).
 4. **Booking link.** Set `BOOKING_URL` in `src/lib/site.ts` (empty = every "Book a demo" goes to `/demo/`).
-5. **Login link.** "Log in" points to `https://dash.vacademy.io/`. Confirm that is where Evalezy customers sign in.
+5. **Login link.** "Log in" points to `https://evalezy.vacademy.io/login` and trial buttons to `https://evalezy.vacademy.io/signup/start` (changed 9 Nov 2026).
    The API docs use the same dashboard: admins create API keys there (Settings → Integrations → API keys) and each API
    exam's `dashboard_url` links into it.
 6. **Sample copy.** The 7-page checked copy is a real student's notebook (no name or roll number appears on it). Confirm
