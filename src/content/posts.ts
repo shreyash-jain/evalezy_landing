@@ -2,6 +2,8 @@
  * Blog registry: drives /blog/, the sitemap, llms-full.txt and the "From the blog" block on
  * any page listed in a post's `pages`. Each post is src/app/blog/<slug>/page.tsx using BlogShell.
  */
+import { TRIAL_CREDITS, TRIAL_DAYS } from "@/lib/site";
+
 export interface Post {
   slug: string;
   /** The article's H1 and BlogPosting headline. */
@@ -19,6 +21,61 @@ export interface Post {
 }
 
 export const POSTS: Post[] = [
+  {
+    slug: "choose-pen-handwriting-ai-checked-copy",
+    title: "Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies",
+    seoTitle: "Choose the Handwriting and Ink on AI-Checked Copies",
+    description: "Pick the pen Evalezy writes with before checking: 8 handwritings, red, blue, green, black or custom ink, darkness and size, with a full-page preview.",
+    category: "AI checking",
+    published: "2026-11-09",
+    readMins: 7,
+    keywords: ["AI checked copy handwriting", "red pen AI correction", "change pen colour on checked answer sheet", "green pen answer sheet checking", "handwriting style AI copy checking", "AI answer sheet checking that looks hand-checked", "Evalezy pen settings"],
+    pages: ["/checked-copy/", "/teacher-review/", "/sample/", "/app/", "/copy-checking-software/", "/faq/"],
+  },
+  {
+    slug: "case-study-one-answer-page-nine-pens",
+    title: "Case Study: One Answer Page, Checked in Nine Different Pens",
+    seoTitle: "Case Study: One Answer Page in Nine AI Pen Styles",
+    description: "The same sample answer page drawn in nine Evalezy pens: what changes (handwriting, ink, darkness) and what does not (marks, ticks, remarks, the 6/12 total).",
+    category: "Case studies",
+    published: "2026-11-09",
+    readMins: 5,
+    keywords: ["AI copy checking case study", "AI checked copy handwriting styles", "red pen vs green pen checking", "AI answer sheet checking sample", "teacher-like handwriting AI", "checked copy pen colour"],
+    pages: ["/case-studies/", "/checked-copy/", "/sample/"],
+  },
+  {
+    slug: "correct-ai-checked-copy-before-release",
+    title: "How to Correct an AI-Checked Answer Copy Before Students See It",
+    seoTitle: "How to Correct an AI-Checked Copy Before Release",
+    description: "AI marks are a draft. How teachers review each answer, fix marks and remarks, update the checked copy PDF and release results only when they are right.",
+    category: "Assessment",
+    published: "2026-11-09",
+    readMins: 7,
+    keywords: ["review AI marks before release", "correct AI checked answer sheet", "teacher review AI grading", "edit AI marks", "update checked copy", "release results to students", "AI copy checking teacher control"],
+    pages: ["/teacher-review/", "/checked-copy/", "/how-it-works/", "/security/"],
+  },
+  {
+    slug: "grammar-spelling-highlight-english-answer-sheets",
+    title: "Highlight Spelling and Grammar Errors on English Answer Sheets with AI",
+    seoTitle: "AI Spelling and Grammar Check on English Answer Sheets",
+    description: "Evalezy underlines spelling and grammar errors on handwritten English copies with the correction, lists them in feedback and deducts no marks. How to set it up.",
+    category: "AI checking",
+    published: "2026-11-09",
+    readMins: 6,
+    keywords: ["grammar check on answer sheets", "spelling mistakes in answer sheets AI", "English answer sheet checking AI", "CBSE English copy checking", "AI feedback on English writing", "letter writing marking scheme", "handwritten English answer evaluation"],
+    pages: ["/checked-copy/", "/typed-answers/", "/marking-scheme/", "/for/schools/"],
+  },
+  {
+    slug: "ai-copy-checking-free-trial-first-day",
+    title: `Try AI Copy Checking Free: What to Do in Your ${TRIAL_DAYS}-Day Trial`,
+    seoTitle: "AI Copy Checking Free Trial: Your First Day Guide",
+    description: `Try Evalezy free for ${TRIAL_DAYS} days, no card: 1 teacher, ${TRIAL_CREDITS} AI credits. How to sign up, check one real test on day one and judge the results.`,
+    category: "Guides",
+    published: "2026-11-09",
+    readMins: 6,
+    keywords: ["AI copy checking free trial", "free AI answer sheet checker", "try AI grading free", "Evalezy free trial", "AI copy checking software free", "check answer sheets with AI free", "Evalezy sign up"],
+    pages: ["/pricing/", "/how-it-works/", "/app/", "/copy-checking-software/"],
+  },
   {
     slug: "acadine-alternatives-ai-answer-sheet-checking",
     title: "Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)",
@@ -56,7 +113,8 @@ export const POSTS: Post[] = [
     slug: "evalezy-app-check-answer-sheets-on-phone",
     title: "The Evalezy App: Scan and Check Answer Sheets From Your Phone",
     seoTitle: "How to Check Answer Sheets on Your Phone (Evalezy App)",
-    description: "The Evalezy app is launching soon: photograph each student's copy, run the AI check for the whole class and share the checked copies. Steps and use cases.",
+    description: "The Evalezy app, now on iPhone: create the test from the paper, photograph each student's copy, run the AI check for the whole class and share the checked copies.",
+    updated: "2026-11-09",
     category: "Guides",
     published: "2026-10-29",
     readMins: 6,
