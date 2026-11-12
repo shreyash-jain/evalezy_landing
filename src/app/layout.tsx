@@ -26,6 +26,8 @@ const mono = localFont({ src: "../fonts/jetbrains-mono-var.woff2", weight: "400 
 
 /** Same GTM container as vacademy.io, tutezy.ai and telleo.ai; configure Evalezy triggers there (README). */
 const GTM_ID = "GTM-5C4DDJ6W";
+/** GA4 stream read by the Vacademy admin Analytics dashboard. Loaded directly (not via GTM); shared with vacademy.io and telleo.ai. */
+const GA4_ID = "G-5PTM41JPLC";
 
 const DESCRIPTION =
   "Evalezy is AI copy checking software for handwritten answer sheets. It returns each student's copy checked in red pen: ticks, crosses, notes, marks per question and the total circled. Bulk upload, automatic student matching, teacher review. Free trial, then yearly plans with AI credits.";
@@ -153,6 +155,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </noscript>
           </>
         )}
+        <Script id="ga4-src" src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
+        <Script id="ga4-config" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');`}
+        </Script>
         <Tracking />
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-white">
           Skip to content
