@@ -48,8 +48,11 @@ export const EXTRA_CREDIT_INR: number = trialOffer.extra_credit_price_inr;
 /** "year" for 12 months, else "N months". */
 export const planPeriod = (months: number = PLAN_MONTHS) => (months === 12 ? "year" : months === 1 ? "month" : `${months} months`);
 export const cheapestPlan = (plans: Plan[] = PLANS) => plans.reduce((a, b) => (b.price_inr < a.price_inr ? b : a), plans[0]);
+/** Free trial sign-up (plan= only tells sign-up which plan interested them; it stays a trial). */
 export const signupHref = (plan?: string) =>
   `${SIGNUP_URL}?product=evalezy&source=website${plan ? `&plan=${encodeURIComponent(plan)}` : ""}`;
+/** "Buy <plan>": sign up (or log in) first, then the app opens that plan's checkout (buy=). */
+export const buyHref = (plan: string) => `${signupHref(plan)}&buy=${encodeURIComponent(plan)}`;
 
 /** Evaluation API (live since 2 Oct 2026) and its developer docs (Mintlify). Facts: src/content/api.ts. */
 export const API_BASE = "https://api.evalezy.com/v1";

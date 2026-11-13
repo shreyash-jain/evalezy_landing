@@ -47,6 +47,9 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
     faqs: [
       { q: "How much does it cost?", a: `${PLANS.map((p) => `${p.name} is ₹${p.price_inr.toLocaleString("en-IN")} a ${planPeriod()} for ${p.users === 1 ? "1 user" : `up to ${p.users} users`}, with ${p.credits.toLocaleString("en-IN")} AI credits`).join("; ")}. 1 credit checks 1 page, so a 7-page copy uses 7 credits. When the credits run out, extra credits are ₹${EXTRA_CREDIT_INR} each. There is no setup fee. Prices exclude 18% GST. The API has no plan fee: ₹1 a page.` },
       { q: "Is there a free trial?", a: `Yes. ${TRIAL_DAYS} days, with no card needed, for 1 teacher and ${TRIAL_CREDITS} free AI credits (1 credit checks 1 handwritten page). Sign up with Google or your email. When the trial ends, checking stops and your reports stay available.` },
+      { q: "What happens when the trial ends?", a: `Checking stops when the ${TRIAL_DAYS} days end. Nothing is deleted: your tests, checked copies and reports stay in your account, and you can buy a plan from the Credits page at any time to carry on.` },
+      { q: "Does my trial work carry over when I buy a plan?", a: "Yes. You buy the plan from the same account, so every test, checked copy and report from the trial stays where it is. The plan's credits are added as soon as the payment goes through." },
+      { q: "How are extra credits billed?", a: `Your plan's credits cover the whole ${planPeriod()}. If they run out, buy extra credits from the Credits page at ₹${EXTRA_CREDIT_INR} each (plus 18% GST), paid in advance. Nothing is charged automatically, and 1 credit still checks 1 page.` },
       { q: "What is not charged?", a: "Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free." },
       { q: "Is a re-check charged?", a: "Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept." },
       { q: "Is the API priced differently?", a: "Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing." },
@@ -86,6 +89,9 @@ export const HOME_FAQS: Faq[] = [
 export const PRICING_FAQS: Faq[] = [
   pick("How much does it cost?"),
   pick("Is there a free trial?"),
+  pick("What happens when the trial ends?"),
+  pick("Does my trial work carry over when I buy a plan?"),
+  pick("How are extra credits billed?"),
   pick("What is not charged?"),
   pick("Is a re-check charged?"),
   pick("Is the API priced differently?"),

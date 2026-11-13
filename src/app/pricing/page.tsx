@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageShell, pageMetadata } from "@/components/PageShell";
-import { PlanCalculator, PlanCards } from "@/components/Interactive";
+import { BuySteps, PlanCalculator, PlanCards } from "@/components/Interactive";
 import { PenCircle, TickList } from "@/components/Pen";
 import { JsonLd } from "@/components/JsonLd";
 import { PRICING_FAQS } from "@/content/faqs";
@@ -83,6 +83,7 @@ export default function Page() {
       />
       <section className="wrap py-16 md:py-20">
         <PlanCards />
+        <div className="mt-8"><BuySteps /></div>
         <p className="mx-auto mt-6 max-w-3xl text-center text-slate-600">
           More than {Math.max(...PLANS.map((p) => p.users))} teachers or 1,00,000+ pages a month? <strong className="text-ink">Enterprise</strong>: custom price.{" "}
           <Link href="/demo/" className="font-semibold text-pen-700 underline" data-track="book_demo">Talk to us</Link>
