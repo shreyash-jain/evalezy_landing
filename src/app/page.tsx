@@ -10,7 +10,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { CtaBand, FaqList, Icon, SectionHeading } from "@/components/ui";
 import { PenCircle, PenUnderline, TickList } from "@/components/Pen";
 import { BulkCheckPanel, CheckedCopyStack, ReviewPanel, RubricCard, ScoreTableVsCopy, UploadDialog } from "@/components/Visuals";
-import { ApiTabs, CopyAnatomy, PlanCalculator } from "@/components/Interactive";
+// PlanCalculator hidden 13 Nov 2026: the yearly maths confused buyers. Bring it back with the import and the JSX below.
+import { ApiTabs, CopyAnatomy } from "@/components/Interactive";
 import { DemoForm } from "@/components/DemoForm";
 import { COPY, count } from "@/content/sideBySide";
 import { ClientMarquee } from "@/components/ClientLogos";
@@ -442,8 +443,8 @@ export default function Home() {
 
       {/* ------------------------------------------------------------ PRICING */}
       <section className="border-y border-line bg-white" id="pricing">
-        <div className="wrap grid gap-12 py-20 md:py-28 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-          <div>
+        <div className="wrap py-20 md:py-28">
+          <div className="max-w-3xl">
             <p className="eyebrow">Pricing</p>
             <h2 className="h-section mt-3 text-ink">
               Plans from {inrStr(cheapestPlan().price_inr)} a {planPeriod()}, extra pages <PenCircle>₹{EXTRA_CREDIT_INR}</PenCircle>.
@@ -462,7 +463,7 @@ export default function Home() {
             />
             <Link href="/pricing/" className="mt-8 inline-flex items-center gap-1 font-semibold text-pen-700">Full pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
-          <PlanCalculator />
+          {/* <PlanCalculator /> hidden: see the import note at the top */}
         </div>
       </section>
 
