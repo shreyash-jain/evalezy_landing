@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageShell, pageMetadata } from "@/components/PageShell";
-import { BuySteps, PlanCalculator, PlanCards } from "@/components/Interactive";
+// PlanCalculator hidden 13 Nov 2026: the yearly maths confused buyers. Bring it back with the import and the JSX below.
+import { BuySteps, PlanCards } from "@/components/Interactive";
 import { PenCircle, TickList } from "@/components/Pen";
 import { JsonLd } from "@/components/JsonLd";
 import { PRICING_FAQS } from "@/content/faqs";
@@ -93,7 +94,7 @@ export default function Page() {
       <section className="border-y border-line bg-white">
         <div className="wrap py-16 md:py-20">
           <h2 className="h-section text-ink">Work out your cost</h2>
-          <div className="mt-8"><PlanCalculator /></div>
+          {/* <div className="mt-8"><PlanCalculator /></div> hidden: see the import note at the top */}
           <div className="mt-10 overflow-x-auto rounded-2xl border border-line">
             <table className="w-full min-w-[32rem] text-left">
               <thead className="bg-paper-2 text-sm text-ink">
