@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Check, Copy, Download, ExternalLink } from "lucide-react";
-import { PRICE_INR, PRICE_USD, planPeriod, signupHref } from "@/lib/site";
+import { PRICE_INR, PRICE_USD, buyHref, planPeriod, signupHref, type Plan } from "@/lib/site";
 import { useTrialOffer } from "./useTrialOffer";
 import { TickList } from "./Pen";
 import { track } from "@/lib/track";
@@ -206,26 +206,31 @@ function NumberField({ id, label, value, onChange, min = 1, max = 100000, suffix
   );
 }
 
-/** Total for one plan period on the pricing page: the plan that fits the team, plus credits beyond what it includes. */
+/** Total for one plan period on the pricing page: the cheapest plan for the team and the pages, plus credits beyond what it includes. */
 export function PlanCalculator() {
   const offer = useTrialOffer();
   const maxUsers = Math.max(...offer.plans.map((p) => p.users));
-  const [teachers, setTeachers] = useState(Math.min(5, maxUsers));
+  const [teachers, setTeachers] = useState(1);
   const [pages, setPages] = useState(300);
-  const byPrice = [...offer.plans].sort((a, b) => a.price_inr - b.price_inr);
-  const plan = byPrice.find((p) => p.users >= teachers) ?? byPrice[byPrice.length - 1];
+  // Plan credits cover the whole plan period, so a month's pages are counted for every month of it.
   const pagesPeriod = pages * offer.months;
-  const extraPages = Math.max(0, pagesPeriod - plan.credits);
-  const extraCost = extraPages * offer.extra;
-  const total = plan.price_inr + extraCost;
+  const quote = (p: Plan) => {
+    const extraPages = Math.max(0, pagesPeriod - p.credits);
+    return { plan: p, extraPages, extraCost: extraPages * offer.extra, total: p.price_inr + extraPages * offer.extra };
+  };
+  const fits = offer.plans.filter((p) => p.users >= teachers);
+  const pool = fits.length > 0 ? fits : offer.plans.filter((p) => p.users === maxUsers);
+  const { plan, extraPages, extraCost, total } = pool.map(quote).reduce((a, b) => (b.total < a.total ? b : a));
   const period = planPeriod(offer.months);
+  const perPeriod = offer.months === 1 ? "a month" : `a ${period}`;
   const inr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
+  const num = (n: number) => n.toLocaleString("en-IN");
   return (
     <div className="grid overflow-hidden rounded-[1.75rem] border border-line bg-white shadow-paper md:grid-cols-2">
       <div className="flex flex-col gap-6 p-6">
         <div>
           <p className="h-card text-lg text-ink">What will I pay?</p>
-          <p className="mt-1 text-sm text-slate-500">Move the sliders. The total updates as you go.</p>
+          <p className="mt-1 text-sm text-slate-500">Move the sliders. We pick the plan that costs you least.</p>
         </div>
         <label className="block">
           <span className="flex justify-between text-sm font-medium text-slate-700">
@@ -235,34 +240,102 @@ export function PlanCalculator() {
         </label>
         <label className="block">
           <span className="flex justify-between text-sm font-medium text-slate-700">
-            Pages checked a month <strong className="text-ink">{pages.toLocaleString("en-IN")} pages</strong>
+            Pages checked a month <strong className="text-ink">{num(pages)} pages</strong>
           </span>
           <input type="range" min={0} max={10000} step={50} value={pages} onChange={(e) => setPages(Number(e.target.value))} className="mt-2 w-full accent-pen" />
+          {offer.months > 1 && (
+            <span className="mt-2 block text-xs text-slate-500">
+              That is {num(pagesPeriod)} pages {perPeriod} ({num(pages)} × {offer.months} months). 1 page = 1 credit.
+            </span>
+          )}
         </label>
       </div>
       <div className="flex flex-col gap-3 border-t border-line bg-paper-2 p-6 md:border-l md:border-t-0">
         <p className="text-sm text-slate-600">Your plan: <strong className="text-ink">{plan.name}</strong> ({plan.users === 1 ? "1 user" : `up to ${plan.users} users`})</p>
-        <p className="flex justify-between text-sm text-slate-600"><span>{plan.name} plan, {plan.credits.toLocaleString("en-IN")} credits included</span><span>{inr(plan.price_inr)}</span></p>
-        <p className="flex justify-between text-sm text-slate-600"><span>{extraPages.toLocaleString("en-IN")} extra pages × {inr(offer.extra)}</span><span>{inr(extraCost)}</span></p>
+        <p className="flex justify-between gap-4 text-sm text-slate-600" data-testid="plan-pages">
+          <span>Pages {perPeriod}{offer.months > 1 ? ` (${num(pages)} × ${offer.months})` : ""}</span>
+          <span>{num(pagesPeriod)}</span>
+        </p>
+        <p className="flex justify-between gap-4 text-sm text-slate-600">
+          <span>{plan.name} plan, {num(plan.credits)} credits for the {period}</span>
+          <span>{inr(plan.price_inr)}</span>
+        </p>
+        <p className="flex justify-between gap-4 text-sm text-slate-600" data-testid="plan-extra">
+          {extraPages > 0 ? (
+            <>
+              <span>{num(extraPages)} extra pages ({num(pagesPeriod)} − {num(plan.credits)} included) × {rupees(offer.extra)}</span>
+              <span>{inr(extraCost)}</span>
+            </>
+          ) : (
+            <>
+              <span>Extra pages: none, the included credits cover it</span>
+              <span>{inr(0)}</span>
+            </>
+          )}
+        </p>
         <div className="mt-2 border-t border-line pt-3">
-          <p className="text-sm text-slate-500">Total per {period}</p>
+          <p className="text-sm text-slate-500">Total {perPeriod}</p>
           <p className="h-display text-4xl text-pen" data-testid="plan-total">{inr(total)}</p>
           <p className="mt-1 text-sm text-slate-500">{inr(total * 1.18)} with GST</p>
         </div>
-        <a href={signupHref(plan.key)} className="btn btn-pen mt-2 w-full" data-track="cta_trial_click">Start {offer.days}-day trial</a>
+        <a href={buyHref(plan.key)} className="btn btn-pen mt-2 w-full" rel="nofollow" data-track="cta_buy_click">Buy {plan.name}</a>
+        <a href={signupHref()} className="text-center text-sm font-semibold text-pen-700 underline" rel="nofollow" data-track="cta_trial_click">
+          Or try it free for {offer.days} days first
+        </a>
       </div>
     </div>
   );
 }
 
-/** The plan cards on the pricing page, from the health dashboard (live, with the build's values first). */
+/** ₹1 or ₹0.93: the extra-credit price can have paise (set on the health dashboard). */
+const rupees = (n: number) => (Number.isInteger(n) ? `₹${n.toLocaleString("en-IN")}` : `₹${n.toFixed(2)}`);
+
+const STEPS = ["Choose plan", "Create account", "Pay"];
+
+/** Choose plan → Create account → Pay, so a buyer knows a payment screen follows the sign-up. */
+export function BuySteps() {
+  return (
+    <ol className="mx-auto flex max-w-xl flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-slate-600" aria-label="How buying works">
+      {STEPS.map((s, i) => (
+        <li key={s} className="flex items-center gap-2">
+          <span className={`flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${i === 0 ? "bg-pen text-white" : "bg-white text-ink ring-1 ring-line"}`}>{i + 1}</span>
+          <span className={i === 0 ? "font-semibold text-ink" : undefined}>{s}</span>
+          {i < STEPS.length - 1 && <span aria-hidden className="text-slate-300">→</span>}
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/** Free trial plus the paid plans on the pricing page, from the health dashboard (live, with the build's values first). */
 export function PlanCards() {
   const offer = useTrialOffer();
   const inr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
   const period = planPeriod(offer.months);
   const popular = offer.plans.length > 1 ? offer.plans[offer.plans.length - 1].key : null;
+  const days = `${offer.days} day${offer.days === 1 ? "" : "s"}`;
   return (
-    <div className={`mx-auto grid max-w-3xl gap-6 ${offer.plans.length > 1 ? "md:grid-cols-2" : ""}`}>
+    <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
+      <div className="card flex flex-col p-7">
+        <div className="flex items-center justify-between gap-2">
+          <h2 className="h-card text-xl text-ink">Free Trial</h2>
+          <span className="rounded-full bg-paper-2 px-3 py-1 text-xs font-bold text-ink ring-1 ring-line">No card needed</span>
+        </div>
+        <p className="mt-1 text-sm text-slate-500">Try Evalezy before you pay</p>
+        <p className="h-display mt-4 text-5xl text-ink">₹0<span className="text-xl text-slate-500"> for {days}</span></p>
+        <p className="mt-1 text-sm font-semibold text-pen-700">{offer.credits.toLocaleString("en-IN")} AI credits to try</p>
+        <TickList
+          className="mt-6 flex-1"
+          items={[
+            `${offer.credits.toLocaleString("en-IN")} AI credits (1 credit = 1 page)`,
+            "For one teacher",
+            "Checked copies, reports and result emails",
+            `Credits are for the ${days} of the trial`,
+          ]}
+        />
+        <a href={signupHref()} className="btn btn-outline mt-8 w-full" rel="nofollow" data-track="cta_trial_click">Start free trial</a>
+        <p className="mt-3 text-center text-xs text-slate-500">Your work stays if you buy a plan later.</p>
+      </div>
       {offer.plans.map((p, i) => (
         <div key={p.key} className={p.key === popular ? "flex flex-col rounded-[1.25rem] border-2 border-pen bg-white p-7" : "card flex flex-col p-7"}>
           <div className="flex items-center justify-between gap-2">
@@ -276,12 +349,13 @@ export function PlanCards() {
             className="mt-6 flex-1"
             items={[
               `${p.credits.toLocaleString("en-IN")} pages checked, valid for a ${period}`,
-              `Extra credits ${inr(offer.extra)} each (1 credit = 1 page)`,
+              `Extra credits ${rupees(offer.extra)} each (1 credit = 1 page)`,
               p.users === 1 ? "For one teacher" : `Shared by up to ${p.users} teachers`,
               ...(i > 0 ? [`Everything in ${offer.plans[0].name}`] : ["Checked copies, reports and result emails"]),
             ]}
           />
-          <a href={signupHref(p.key)} className="btn btn-pen mt-8 w-full" rel="nofollow" data-track="cta_trial_click">Start {offer.days}-day trial</a>
+          <a href={buyHref(p.key)} className="btn btn-pen mt-8 w-full" rel="nofollow" data-track="cta_buy_click">Buy {p.name}</a>
+          <p className="mt-3 text-center text-xs text-slate-500">Create your account, then pay securely.</p>
         </div>
       ))}
     </div>
