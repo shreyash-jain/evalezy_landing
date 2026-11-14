@@ -13,10 +13,10 @@ import { SITE } from "@/lib/site";
 const TITLE = "Best AI Copy Checking Software in 2026: 10 Tools for Handwritten Answer Sheets";
 const URL = `${SITE}${BEST_PATH}`;
 const DESCRIPTION =
-  "The best AI copy checking and answer sheet evaluation software in 2026, one pick per job: schools, coaching, UPSC, universities, boards and edtech. Sourced capabilities and prices.";
+  "The best AI copy checking software in 2026, one pick per job: schools, coaching, UPSC, universities, boards and edtech. Sourced capabilities and prices.";
 
 export const metadata: Metadata = {
-  title: "Best AI Copy Checking Software in 2026 (Answer Sheets)",
+  title: "Best AI Copy Checking Software for 2026: 10 Tools",
   description: DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: { type: "article", url: URL, title: TITLE, description: DESCRIPTION, images: [{ url: "/og.png", width: 1200, height: 630, alt: TITLE }] },

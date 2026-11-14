@@ -10,7 +10,7 @@ export const COMPARISONS: Comparison[] = [
   {
     slug: "manual-checking",
     label: "Evalezy vs checking by hand",
-    title: "AI Copy Checking vs Manual Checking: An Honest Comparison",
+    title: "AI Copy Checking vs Manual Checking, Compared",
     description: "Where checking answer sheets by hand still wins, where AI copy checking with teacher review is better, and what changes for teachers, students and cost.",
     h1: "Evalezy vs checking copies by hand",
     lede: "Teachers are the best judges of an answer. They are also tired by copy 80. Here is what changes when AI does the first check and the teacher does the final one.",
@@ -83,8 +83,8 @@ export const COMPARISONS: Comparison[] = [
   {
     slug: "chatgpt",
     label: "Evalezy vs ChatGPT",
-    title: "Can ChatGPT Check Answer Sheets? Evalezy vs a General Chatbot",
-    description: "A general chatbot can read a photo of one answer. Checking a whole class needs one rubric for all, student matching, an annotated copy and teacher control. How they compare.",
+    title: "Can ChatGPT Check Answer Sheets? Evalezy vs ChatGPT",
+    description: "A chatbot can read a photo of one answer. Checking a class needs one rubric for all, student matching, an annotated copy and teacher control. Compared.",
     h1: "Evalezy vs pasting answer sheets into ChatGPT",
     lede: "A general-purpose chatbot can read a photo of an answer and suggest a mark. Checking a class of 40 copies is a different job. Here is what is missing, and what Evalezy adds.",
     them: "A general chatbot",
@@ -164,8 +164,8 @@ export const VENDOR_COMPARISONS: Comparison[] = [
   vendorComparison({
     vendor: "Eklavvya",
     slug: "eklavvya",
-    title: "Evalezy vs Eklavvya: AI Answer Sheet Checking Compared (2026)",
-    description: "Evalezy vs Eklavvya, capability by capability: handwriting, AI marking, Indian languages, student matching, the checked copy, pricing and APIs. Sourced, October 2026.",
+    title: "Evalezy vs Eklavvya: AI Answer Sheet Checking (2026)",
+    description: "Evalezy vs Eklavvya by capability: handwriting, AI marking, Indian languages, student matching, the checked copy, pricing and APIs. Sourced, October 2026.",
     h1: "Evalezy vs Eklavvya",
     lede: "Eklavvya brings AI evaluation into an on-screen marking platform built for universities and blind evaluation. Evalezy is AI copy checking built around the student's own copy, checked in red pen, with published plans. Here is what each documents publicly.",
     whenThem: [
@@ -225,8 +225,8 @@ export const VENDOR_COMPARISONS: Comparison[] = [
   vendorComparison({
     vendor: "Gradescope",
     slug: "gradescope",
-    title: "Evalezy vs Gradescope: AI Marking vs AI-Assisted Grading",
-    description: "Gradescope groups similar answers so staff grade faster; Evalezy marks every answer with AI and returns a red-pen copy. Capabilities, pricing and fit, compared from sources.",
+    title: "Evalezy vs Gradescope: AI Marking vs AI Grouping",
+    description: "Gradescope groups similar answers so staff grade faster; Evalezy marks every answer with AI and returns a red-pen copy. Capabilities, price and fit, sourced.",
     h1: "Evalezy vs Gradescope",
     lede: "Gradescope, from Turnitin, is the standard for university courses: staff grade scanned work on screen and AI groups similar answers. Evalezy marks every answer itself, writes the reason, and leaves the final word to the teacher. A Gradescope alternative for schools and coaching institutes, compared fairly.",
     whenThem: [
@@ -252,7 +252,7 @@ export const VENDOR_COMPARISONS: Comparison[] = [
   vendorComparison({
     vendor: "CoGrader",
     slug: "cograder",
-    title: "Evalezy vs CoGrader: Handwritten Answer Sheets vs Essays",
+    title: "Evalezy vs CoGrader: Answer Sheets vs Essays",
     description: "CoGrader drafts rubric feedback on US K-12 essays; Evalezy checks whole handwritten answer sheets question by question. Capabilities, pricing and fit, sourced.",
     h1: "Evalezy vs CoGrader",
     lede: "CoGrader is a US AI grading assistant for essays, including handwritten ones, priced per teacher. Evalezy checks whole multi-question answer sheets, maths included, and returns each copy checked in red pen, priced per page.",
@@ -279,8 +279,8 @@ export const VENDOR_COMPARISONS: Comparison[] = [
   vendorComparison({
     vendor: "CrazyGoldFish",
     slug: "crazygoldfish",
-    title: "Evalezy vs CrazyGoldFish: AI Evaluation Compared (2026)",
-    description: "CrazyGoldFish sells AI evaluation infrastructure and reports results on Hindi answers; Evalezy is a ready copy-checking product with a public API. Sourced comparison.",
+    title: "Evalezy vs CrazyGoldFish: AI Evaluation (2026)",
+    description: "CrazyGoldFish sells AI evaluation infrastructure and reports Hindi results; Evalezy is a ready copy-checking product with a public API. Sourced comparison.",
     h1: "Evalezy vs CrazyGoldFish",
     lede: "Both are Indian and both score handwritten subjective answers against rubrics. CrazyGoldFish sells evaluation infrastructure and APIs to platforms and programmes; Evalezy is a ready product for teachers, from bulk upload to the red-pen checked copy, with a public API too.",
     whenThem: [
@@ -304,7 +304,7 @@ export const VENDOR_COMPARISONS: Comparison[] = [
   vendorComparison({
     vendor: "Smart Paper",
     slug: "smart-paper",
-    title: "Evalezy vs Smart Paper: Checking Answer Sheets with AI",
+    title: "Evalezy vs Smart Paper: AI Answer Sheet Checking",
     description: "Smart Paper grades worksheets printed from its app; Evalezy checks existing answer copies on any paper and returns them checked in red pen. Sourced comparison.",
     h1: "Evalezy vs Smart Paper",
     lede: "Smart Paper digitises paper worksheets that teachers print from its app, and is used at state scale in Rajasthan. Evalezy checks the answer copies schools already have, on any paper, and returns them checked in red pen.",
@@ -328,8 +328,8 @@ export const VENDOR_COMPARISONS: Comparison[] = [
   vendorComparison({
     vendor: "AnswerWriting",
     slug: "answerwriting",
-    title: "Evalezy vs AnswerWriting.com for UPSC Answer Evaluation",
-    description: "AnswerWriting gives individual UPSC aspirants free AI feedback; Evalezy checks a whole test-series batch for an institute, with mentor review and red-pen copies.",
+    title: "Evalezy vs AnswerWriting for UPSC Answer Evaluation",
+    description: "AnswerWriting gives UPSC aspirants free AI feedback; Evalezy checks a whole test-series batch for an institute, with mentor review and red-pen copies.",
     h1: "Evalezy vs AnswerWriting.com",
     lede: "AnswerWriting.com gives individual UPSC and State PSC aspirants AI feedback on their own answers, with a free tier. Evalezy is for the institute running the answer-writing programme: a whole batch checked against your own scheme, reviewed by your mentors and returned in red pen.",
     whenThem: [

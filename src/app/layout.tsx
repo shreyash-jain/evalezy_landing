@@ -34,8 +34,8 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: { default: "Evalezy: AI Copy Checking Software for Handwritten Answer Sheets", template: "%s | Evalezy" },
-  description: "AI copy checking software for handwritten answer sheets. Get each student's copy back checked in red pen, matched to the student, ready for teacher review. Start with a free trial.",
+  title: { default: "Evalezy: AI Copy Checking for Handwritten Answer Sheets", template: "%s | Evalezy" },
+  description: "AI copy checking software for handwritten answer sheets: each student's copy back checked in red pen, matched to the right student, ready for teacher review.",
   applicationName: SITE_NAME,
   manifest: "/site.webmanifest",
   keywords: [
