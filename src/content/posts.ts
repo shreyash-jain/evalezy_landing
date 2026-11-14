@@ -22,6 +22,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "check-answer-sheets-with-chatgpt-vs-ai-copy-checker",
+    title: "Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works",
+    seoTitle: "ChatGPT vs AI Copy Checker for Answer Sheets (2026)",
+    description: "Can ChatGPT or Gemini check handwritten answer sheets? A prompt for fairer marks, where chatbots break for a whole class, and how AI copy checkers differ.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 8,
+    keywords: ["check answer sheets with ChatGPT", "ChatGPT for grading handwritten answers", "Gemini answer sheet checking", "ChatGPT prompt for checking answer sheets", "AI copy checker vs ChatGPT", "can ChatGPT check answer sheets", "AI grading for teachers"],
+    pages: ["/compare/", "/compare/chatgpt/", "/copy-checking-software/", "/marking-scheme/"],
+  },
+  {
     slug: "choose-pen-handwriting-ai-checked-copy",
     title: "Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies",
     seoTitle: "Choose the Handwriting and Ink on AI-Checked Copies",
