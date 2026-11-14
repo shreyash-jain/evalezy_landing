@@ -33,6 +33,17 @@ export const POSTS: Post[] = [
     pages: ["/compare/", "/compare/chatgpt/", "/copy-checking-software/", "/marking-scheme/"],
   },
   {
+    slug: "gradescope-alternatives-handwritten-answer-sheets",
+    title: "Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)",
+    seoTitle: "Gradescope Alternatives for Handwritten Exams (2026)",
+    description: "Gradescope groups answers so staff grade faster. Compare Evalezy, Crowdmark, Top Marks AI and EssayGrader on who marks, paper, checked copy and price.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 9,
+    keywords: ["Gradescope alternative", "Gradescope alternatives for schools", "Gradescope vs Evalezy", "Crowdmark vs Gradescope", "AI grading handwritten exams", "handwritten answer sheet grading software", "Gradescope India"],
+    pages: ["/compare/", "/compare/gradescope/", "/best-ai-copy-checking-software/", "/for/colleges-universities/"],
+  },
+  {
     slug: "choose-pen-handwriting-ai-checked-copy",
     title: "Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies",
     seoTitle: "Choose the Handwriting and Ink on AI-Checked Copies",
