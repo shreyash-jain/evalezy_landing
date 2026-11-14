@@ -52,7 +52,9 @@ export function BlogShell({
 }) {
   const p = findPost(slug);
   if (!p) throw new Error(`Unknown post ${slug}: add it to src/content/posts.ts`);
-  const related = POSTS.filter((x) => x.slug !== slug).slice(0, 3);
+  // Same-category posts first (newest first), then the newest others: keeps internal links topical.
+  const others = POSTS.filter((x) => x.slug !== slug);
+  const related = [...others.filter((x) => x.category === p?.category), ...others.filter((x) => x.category !== p?.category)].slice(0, 3);
   return (
     <main>
       <JsonLd
