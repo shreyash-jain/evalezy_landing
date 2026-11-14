@@ -157,7 +157,7 @@ export const PICKS: Pick[] = [
 export const BEST_FAQS: Faq[] = [
   {
     q: "What is the best AI copy checking software?",
-    a: "It depends on the job. For checking a class's or an exam's handwritten answer sheets in English, Evalezy documents the most of the job in our research (12 of 14 capabilities: reading handwriting, marking against a scheme with half marks and reasons, bulk upload, matching copies to students, a red-pen checked copy, teacher review, question paper import and a public API) at a published ₹1 per page. For answers in Hindi or another Indian language, Eklavvya documents eight languages. For university courses graded by staff, Gradescope. For US essays, CoGrader. For human marking at board scale, an on-screen marking vendor such as Coempt Onmark. Evalezy publishes this guide; every score links to its source.",
+    a: "It depends on the job. For checking a class's or an exam's handwritten answer sheets in English, Evalezy documents the most of the job in our research (12 of 14 capabilities: reading handwriting, marking against a scheme with half marks and reasons, bulk upload, matching copies to students, a red-pen checked copy, teacher review, question paper import and a public API) with published prices (yearly plans with AI credits, 1 credit per page). For answers in Hindi or another Indian language, Eklavvya documents eight languages. For university courses graded by staff, Gradescope. For US essays, CoGrader. For human marking at board scale, an on-screen marking vendor such as Coempt Onmark. Evalezy publishes this guide; every score links to its source.",
   },
   {
     q: "Can AI check handwritten answer sheets?",

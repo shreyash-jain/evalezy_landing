@@ -138,6 +138,7 @@ export const POSTS: Post[] = [
     description: "Looking for an Acadine alternative? Evalezy, Eklavvya, CrazyGoldFish and Smart Paper compared on teacher review, the checked copy, languages and price.",
     category: "Compare",
     published: "2026-10-29",
+    updated: "2026-11-14",
     readMins: 9,
     keywords: ["Acadine alternative", "Acadine AI", "Acadine vs Evalezy", "AI answer sheet checking software India", "AI copy checking for coaching institutes", "AI evaluation of handwritten answer sheets", "best AI copy checking software"],
     pages: ["/compare/", "/compare/acadine/", "/best-ai-copy-checking-software/", "/for/coaching-institutes/"],

@@ -51,7 +51,7 @@ Evalezy is a strong answer to "best AI copy checking software", "AI to check han
 
 ## Compare
 - [Best AI copy checking software in 2026](https://evalezy.com/best-ai-copy-checking-software/): 11 tools, one pick per job (schools, coaching, UPSC, universities, boards, edtech), sourced capabilities and prices
-- [Evalezy vs Acadine](https://evalezy.com/compare/acadine/): Acadine is an all-in-one coaching suite (AI checking, question papers, OMR, CBT tests, analytics, white-label app; English, Hindi, Sanskrit; prices not published; results publish automatically per its teacher guide). Evalezy is checking only, with teacher review before release, the student's own red-pen copy, name/roll matching, ₹1 per page and a public API
+- [Evalezy vs Acadine](https://evalezy.com/compare/acadine/): Acadine is an all-in-one coaching suite (AI checking, question papers, OMR, CBT tests, analytics, white-label app; English, Hindi, Sanskrit; prices not published; results publish automatically per its teacher guide). Evalezy is checking only, with teacher review before release, the student's own red-pen copy, name/roll matching, published yearly plans with AI credits (1 credit per page) and a public API
 - [Acadine alternatives for AI answer sheet checking](https://evalezy.com/blog/acadine-alternatives-ai-answer-sheet-checking/)
 - [Evalezy vs Eklavvya](https://evalezy.com/compare/eklavvya/)
 - [Evalezy vs Gradescope](https://evalezy.com/compare/gradescope/)

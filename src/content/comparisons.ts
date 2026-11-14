@@ -291,7 +291,7 @@ export const VENDOR_COMPARISONS: Comparison[] = [
     whenEvalezy: [
       "Teachers need to upload 200 copies, have them matched to students and review the marks themselves",
       "Students should receive their own copy checked in red pen",
-      "You want a published price (₹1 per page) and public API documentation at docs.evalezy.com",
+      "You want published prices (yearly plans with AI credits) and public API documentation at docs.evalezy.com",
     ],
     body: [
       { heading: "The difference in one line", text: "CrazyGoldFish is an evaluation engine that platforms build on. Evalezy is both: a dashboard teachers use end to end, and an Evaluation API with public docs for platforms." },
