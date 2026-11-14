@@ -54,6 +54,9 @@ export const cheapestPlan = (plans: Plan[] = PLANS) => plans.reduce((a, b) => (b
 export const signupHref = (plan?: string) =>
   `${SIGNUP_URL}?product=evalezy&source=website${plan ? `&plan=${encodeURIComponent(plan)}` : ""}`;
 /** "Buy <plan>": sign up (or log in) first, then the app opens that plan's checkout (buy=). */
+/** One-screen demo: name, email and phone, no code, straight into the app. Same host as LOGIN_URL. */
+export const DEMO_URL = "https://evalezy.vacademy.io/demo";
+export const demoHref = (source = "website") => `${DEMO_URL}?product=evalezy&source=${encodeURIComponent(source)}`;
 export const buyHref = (plan: string) => `${signupHref(plan)}&buy=${encodeURIComponent(plan)}`;
 
 /** Evaluation API (live since 2 Oct 2026) and its developer docs (Mintlify). Facts: src/content/api.ts. */

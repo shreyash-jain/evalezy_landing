@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Check, Copy, Download, ExternalLink } from "lucide-react";
-import { PRICE_INR, PRICE_USD, buyHref, planPeriod, signupHref, type Plan } from "@/lib/site";
+import { PRICE_INR, PRICE_USD, buyHref, demoHref, planPeriod, signupHref, type Plan } from "@/lib/site";
 import { useTrialOffer } from "./useTrialOffer";
 import { TickList } from "./Pen";
 import { track } from "@/lib/track";
@@ -337,6 +337,9 @@ export function PlanCards() {
         />
         <a href={signupHref()} className="btn btn-outline mt-8 w-full" rel="nofollow" data-track="cta_trial_click">Start free trial</a>
         <p className="mt-3 text-center text-xs text-slate-500">Your work stays if you buy a plan later.</p>
+        <a href={demoHref("pricing")} className="mt-2 text-center text-xs font-semibold text-pen-700 underline" rel="nofollow" data-track="cta_demo_click">
+          Or open an instant demo: just name, email and phone
+        </a>
       </div>
       {offer.plans.map((p, i) => (
         <div key={p.key} className={p.key === popular ? "flex flex-col rounded-[1.25rem] border-2 border-pen bg-white p-7" : "card flex flex-col p-7"}>

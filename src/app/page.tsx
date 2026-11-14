@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, FileStack, ScanLine, Search, ShieldCheck, Sigma, Timer, UserRoundCheck } from "lucide-react";
-import { DOCS_URL, EXTRA_CREDIT_INR, PLANS, SITE, TRIAL_CREDITS, TRIAL_DAYS, bookHref, cheapestPlan, planPeriod } from "@/lib/site";
+import { DOCS_URL, EXTRA_CREDIT_INR, PLANS, SITE, TRIAL_CREDITS, TRIAL_DAYS, bookHref, cheapestPlan, demoHref, planPeriod } from "@/lib/site";
 
 import { AUDIENCES } from "@/content/audiences";
 import { HOME_FAQS } from "@/content/faqs";
@@ -81,6 +81,14 @@ export default function Home() {
                 See a real checked copy
               </Link>
             </div>
+            <a
+              href={demoHref("hero")}
+              className="mt-4 inline-flex animate-lift items-center gap-1 text-sm font-semibold text-pen-700 underline underline-offset-4 [animation-delay:280ms]"
+              rel="nofollow"
+              data-track="cta_demo_click"
+            >
+              Or try an instant demo: just your name, email and phone <ArrowRight className="h-4 w-4" />
+            </a>
             <dl className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-line pt-6">
               <div>
                 <dt className="text-sm text-slate-500">Free trial</dt>
