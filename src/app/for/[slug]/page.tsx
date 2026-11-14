@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { AUDIENCES, findAudience } from "@/content/audiences";
-import { DOCS_URL, SITE } from "@/lib/site";
+import { DOCS_URL, OG_IMAGES, SITE } from "@/lib/site";
 import { TickList } from "@/components/Pen";
 import { BulkCheckPanel, ReviewPanel } from "@/components/Visuals";
 import { CodeBlock } from "@/components/Interactive";
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const a = findAudience(slug);
   if (!a) return {};
   const url = `${SITE}/for/${a.slug}/`;
-  return { title: a.title, description: a.description, alternates: { canonical: url }, openGraph: { url, title: a.title, description: a.description }, twitter: { title: a.title, description: a.description } };
+  return { title: a.title, description: a.description, alternates: { canonical: url }, openGraph: { url, title: a.title, description: a.description, images: OG_IMAGES }, twitter: { card: "summary_large_image", title: a.title, description: a.description, images: ["/og.png"] } };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

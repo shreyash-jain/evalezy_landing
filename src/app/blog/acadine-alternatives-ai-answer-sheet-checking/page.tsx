@@ -27,7 +27,7 @@ export default function Page() {
       faqs={[
         {
           q: "What is the best alternative to Acadine for checking answer sheets?",
-          a: "It depends on the job. For checking English handwritten copies end to end, with a teacher review before release and the student’s own copy returned in red pen, Evalezy documents the most of the 14 capabilities in our research and publishes its price (₹1 per page). For Indian-language answers inside a university on-screen marking workflow, Eklavvya. For evaluation APIs with reported Hindi results, CrazyGoldFish.",
+          a: "It depends on the job. For checking English handwritten copies end to end, with a teacher review before release and the student’s own copy returned in red pen, Evalezy documents the most of the 14 capabilities in our research and publishes its prices (yearly plans with AI credits, 1 credit per page). For Indian-language answers inside a university on-screen marking workflow, Eklavvya. For evaluation APIs with reported Hindi results, CrazyGoldFish.",
         },
         {
           q: "Does Acadine publish its pricing?",

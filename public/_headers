@@ -5,6 +5,12 @@
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 
+/copy/*
+  Cache-Control: public, max-age=2592000
+
+/clients/*
+  Cache-Control: public, max-age=2592000
+
 /llms.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600

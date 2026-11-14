@@ -1,11 +1,11 @@
 # Evalezy — full site text
 
-Generated 2026-11-09 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-11-14 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
 
-# Evalezy: AI Copy Checking Software for Handwritten Answer Sheets
+# Evalezy: AI Copy Checking for Handwritten Answer Sheets
 URL: https://evalezy.com/
 
 New The Evalezy app is now on iPhone
@@ -350,18 +350,6 @@ Starter: ₹5,000 a year with 100 AI credits for 1 user. Team: ₹20,000 a year 
 - A 7-page copy uses 7 credits
 - Volume plans for exam bodies and platforms
 Full pricing
-What will I pay?
-Move the sliders. The total updates as you go.
-
-Teachers 5 Pages checked a month 300 pages
-Your plan: Team (up to 15 users)
-Team plan, 2,000 credits included ₹20,000
-1,600 extra pages × ₹1 ₹1,600
-Total per year
-₹21,600
-₹25,488 with GST
-
-Start 3-day trial
 
 ## Questions teachers ask us
 More in the full FAQ .
@@ -414,7 +402,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Copy Checking Software: Check Answer Copies Online with AI | Evalezy
+# Copy Checking Software: Check Answer Copies with AI | Evalezy
 URL: https://evalezy.com/copy-checking-software/
 
 - Home
@@ -521,12 +509,12 @@ How accurate is AI copy checking? +
 We do not publish an accuracy percentage, because it depends on handwriting, scan quality and the marking scheme. Every mark comes with the answer as read and the reason, low-confidence questions are flagged, and nothing reaches students until a teacher releases it. When we checked one maths copy both ways, Evalezy caught 2 slips the teacher had ticked and the teacher caught 5 answers Evalezy misread.
 
 ## From the blog
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Compare
+OMR vs AI Answer Sheet Checking: Which Exams Need Which
 AI checking
 Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
-Guides
-Try AI Copy Checking Free: What to Do in Your 3-Day Trial
-AI checking
-How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -729,7 +717,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Bulk Answer Sheet Upload with Automatic Student Matching | Evalezy
+# Bulk Answer Sheet Upload and Student Matching | Evalezy
 URL: https://evalezy.com/bulk-upload/
 
 - Home
@@ -939,7 +927,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI Marking Scheme Generator, or Bring Your Own Rubric | Evalezy
+# AI Marking Scheme Generator or Your Own Rubric | Evalezy
 URL: https://evalezy.com/marking-scheme/
 
 - Home
@@ -1030,12 +1018,12 @@ When is the scheme created? +
 Once per question, the first time a copy of that assessment is checked, and then reused. Two copies starting at the same moment still get one scheme, not two.
 
 ## From the blog
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 AI checking
 Highlight Spelling and Grammar Errors on English Answer Sheets with AI
 AI checking
 Best AI Grading Software for Teachers: Features, Benefits, and How to Choose
-Assessment
-Maths Step Marking: How to Award Partial Credit Fairly
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -1045,7 +1033,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Teacher Review: Approve AI Marks Before Students See Them | Evalezy
+# Teacher Review: Approve AI Marks Before Release | Evalezy
 URL: https://evalezy.com/teacher-review/
 
 - Home
@@ -1583,7 +1571,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Pricing: Plans From ₹5,000 a Year, AI Credits Included | Evalezy
+# Pricing: From ₹5,000 a Year, AI Credits Included | Evalezy
 URL: https://evalezy.com/pricing/
 
 - Home
@@ -1599,6 +1587,18 @@ The 7-page sample copyThe sample copy on this site
 7
 38 questions marked, every page annotated.
 
+## Free Trial
+No card needed
+Try Evalezy before you pay
+₹0 for 3 days
+50 AI credits to try
+
+- 50 AI credits (1 credit = 1 page)
+- For one teacher
+- Checked copies, reports and result emails
+- Credits are for the 3 days of the trial
+Start free trial Your work stays if you buy a plan later.
+
 ## Starter
 
 1 user
@@ -1609,7 +1609,7 @@ The 7-page sample copyThe sample copy on this site
 - Extra credits ₹1 each (1 credit = 1 page)
 - For one teacher
 - Checked copies, reports and result emails
-Start 3-day trial
+Buy Starter Create your account, then pay securely.
 
 ## Team
 Most popular
@@ -1621,24 +1621,15 @@ Up to 15 users
 - Extra credits ₹1 each (1 credit = 1 page)
 - Shared by up to 15 teachers
 - Everything in Starter
-Start 3-day trial
+Buy Team Create your account, then pay securely.
+
+- 1 Choose plan →
+- 2 Create account →
+- 3 Pay
 
 More than 15 teachers or 1,00,000+ pages a month? Enterprise: custom price. Talk to us
 
 ## Work out your cost
-What will I pay?
-Move the sliders. The total updates as you go.
-
-Teachers 5 Pages checked a month 300 pages
-Your plan: Team (up to 15 users)
-Team plan, 2,000 credits included ₹20,000
-1,600 extra pages × ₹1 ₹1,600
-Total per year
-₹21,600
-₹25,488 with GST
-
-Start 3-day trial
-
 Example | Copies | Pages each | Credits used |
 
 One section, unit test | 40 | 4 | 160 |
@@ -1689,6 +1680,15 @@ Starter is ₹5,000 a year for 1 user, with 100 AI credits; Team is ₹20,000 a 
 
 Is there a free trial? +
 Yes. 3 days, with no card needed, for 1 teacher and 50 free AI credits (1 credit checks 1 handwritten page). Sign up with Google or your email. When the trial ends, checking stops and your reports stay available.
+
+What happens when the trial ends? +
+Checking stops when the 3 days end. Nothing is deleted: your tests, checked copies and reports stay in your account, and you can buy a plan from the Credits page at any time to carry on.
+
+Does my trial work carry over when I buy a plan? +
+Yes. You buy the plan from the same account, so every test, checked copy and report from the trial stays where it is. The plan's credits are added as soon as the payment goes through.
+
+How are extra credits billed? +
+Your plan's credits cover the whole year. If they run out, buy extra credits from the Credits page at ₹1 each (plus 18% GST), paid in advance. Nothing is charged automatically, and 1 credit still checks 1 page.
 
 What is not charged? +
 Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
@@ -1916,7 +1916,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Who Uses Evalezy: Schools, Coaching, Colleges, Boards | Evalezy
+# Who Uses Evalezy: Schools, Coaching, Colleges | Evalezy
 URL: https://evalezy.com/for/
 
 - Home
@@ -1939,12 +1939,12 @@ Read more
 
 ## UPSC & PSC answer writing
 Daily answer writing, with feedback on every answer.
-Run daily answer-writing practice at scale: AI checks handwritten mains answers against your rubric, leaves margin notes on the copy, and mentors review before release.
+Run daily answer-writing practice at scale: AI checks handwritten Mains answers against your rubric, writes margin notes, and mentors review before release.
 Read more
 
 ## Colleges & universities
 Internal assessments without the marking backlog.
-Internal assessments and semester scripts checked against a fixed rubric, with faculty review before release. Consistent marking across evaluators and departments.
+Internal assessments and semester scripts checked against a fixed rubric, with faculty review before release. Consistent marking across evaluators.
 Read more
 
 ## Exam bodies & large-scale tests
@@ -1954,7 +1954,7 @@ Read more
 
 ## Edtech platforms & developers
 Handwritten answer checking, as an API.
-Add AI answer checking to your app or ERP: create an exam, upload each answer sheet as a PDF or send typed answers, then read question-wise marks and the red-pen checked copy.
+Add AI answer checking to your app or ERP: upload each answer sheet as a PDF or send typed answers, then read question-wise marks and the red-pen copy.
 Read more
 
 ## See your own copies checked.
@@ -1965,7 +1965,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs Acadine, Eklavvya, Gradescope, ChatGPT and More | Evalezy
+# Evalezy vs Acadine, Eklavvya, Gradescope and More | Evalezy
 URL: https://evalezy.com/compare/
 
 - Home
@@ -1994,13 +1994,13 @@ On-screen marking digitises the checking; evaluators still read every answer. Ev
 Read the comparison
 
 ## Evalezy vs ChatGPT
-A general chatbot can read a photo of one answer. Checking a whole class needs one rubric for all, student matching, an annotated copy and teacher control. How they compare.
+A chatbot can read a photo of one answer. Checking a class needs one rubric for all, student matching, an annotated copy and teacher control. Compared.
 Read the comparison
 
 ## Compared with other tools
 
 ### Evalezy vs Eklavvya
-Evalezy vs Eklavvya, capability by capability: handwriting, AI marking, Indian languages, student matching, the checked copy, pricing and APIs. Sourced, October 2026.
+Evalezy vs Eklavvya by capability: handwriting, AI marking, Indian languages, student matching, the checked copy, pricing and APIs. Sourced, October 2026.
 Read the comparison
 
 ### Evalezy vs Acadine
@@ -2008,7 +2008,7 @@ Evalezy vs Acadine AI: handwritten copy checking, teacher review, the red-pen ch
 Read the comparison
 
 ### Evalezy vs Gradescope
-Gradescope groups similar answers so staff grade faster; Evalezy marks every answer with AI and returns a red-pen copy. Capabilities, pricing and fit, compared from sources.
+Gradescope groups similar answers so staff grade faster; Evalezy marks every answer with AI and returns a red-pen copy. Capabilities, price and fit, sourced.
 Read the comparison
 
 ### Evalezy vs CoGrader
@@ -2016,7 +2016,7 @@ CoGrader drafts rubric feedback on US K-12 essays; Evalezy checks whole handwrit
 Read the comparison
 
 ### Evalezy vs CrazyGoldFish
-CrazyGoldFish sells AI evaluation infrastructure and reports results on Hindi answers; Evalezy is a ready copy-checking product with a public API. Sourced comparison.
+CrazyGoldFish sells AI evaluation infrastructure and reports Hindi results; Evalezy is a ready copy-checking product with a public API. Sourced comparison.
 Read the comparison
 
 ### Evalezy vs Smart Paper
@@ -2024,14 +2024,16 @@ Smart Paper grades worksheets printed from its app; Evalezy checks existing answ
 Read the comparison
 
 ### Evalezy vs AnswerWriting
-AnswerWriting gives individual UPSC aspirants free AI feedback; Evalezy checks a whole test-series batch for an institute, with mentor review and red-pen copies.
+AnswerWriting gives UPSC aspirants free AI feedback; Evalezy checks a whole test-series batch for an institute, with mentor review and red-pen copies.
 Read the comparison
 
 ## From the blog
 Compare
-Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)
-AI checking
-Best AI Grading Software for Teachers: Features, Benefits, and How to Choose
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2160,6 +2162,31 @@ Blog
 Practical writing for teachers, exam heads and edtech builders on checking answer sheets, marking schemes, scanning and using AI without losing control.
 Book a demo
 
+Compare
+
+## UPSC AI Answer Evaluation Apps Compared: SuperKalam, AnswerWriting, PrepAiro, Likhit and More
+SuperKalam, AnswerWriting, PrepAiro, Likhit and CollectorBabu compared on price, criteria, Hindi and human review, and what test-series institutes need instead.
+14 Nov 2026 · 9 min read
+Compare
+
+## OMR vs AI Answer Sheet Checking: Which Exams Need Which
+OMR reads bubbles; AI checking reads handwritten answers with partial marks. What each can check, which exams need which, and how to run a mixed paper.
+14 Nov 2026 · 8 min read
+Compare
+
+## Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Eklavvya alternatives compared from public sources: Evalezy, Acadine, CrazyGoldFish, Coempt and MeritTrac on teacher review, checked copy, languages and price.
+14 Nov 2026 · 9 min read
+Compare
+
+## Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Gradescope groups answers so staff grade faster. Compare Evalezy, Crowdmark, Top Marks AI and EssayGrader on who marks, paper, checked copy and price.
+14 Nov 2026 · 9 min read
+Compare
+
+## Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Can ChatGPT or Gemini check handwritten answer sheets? A prompt for fairer marks, where chatbots break for a whole class, and how AI copy checkers differ.
+14 Nov 2026 · 8 min read
 Guides
 
 ## Try AI Copy Checking Free: What to Do in Your 3-Day Trial
@@ -2188,7 +2215,7 @@ Pick the pen Evalezy writes with before checking: 8 handwritings, red, blue, gre
 Guides
 
 ## The Evalezy App: Scan and Check Answer Sheets From Your Phone
-The Evalezy app, now on iPhone: create the test from the paper, photograph each student's copy, run the AI check for the whole class and share the checked copies.
+The Evalezy app, now on iPhone: create the test from the paper, photograph each copy, run the AI check for the whole class and share the checked copies.
 29 Oct 2026 · 6 min read
 Case studies
 
@@ -2203,7 +2230,7 @@ A real maths copy checked twice: the teacher gave 48/80, Evalezy 40/80. What eac
 Compare
 
 ## Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)
-Looking for an Acadine alternative? A sourced comparison of Evalezy, Eklavvya, CrazyGoldFish and Smart Paper on teacher review, the checked copy, languages and price.
+Looking for an Acadine alternative? Evalezy, Eklavvya, CrazyGoldFish and Smart Paper compared on teacher review, the checked copy, languages and price.
 29 Oct 2026 · 9 min read
 Guides
 
@@ -2213,7 +2240,7 @@ Discover how automated answer sheet checking can help teachers manage exam workl
 AI checking
 
 ## Best AI Grading Software for Teachers: Features, Benefits, and How to Choose
-Looking for AI grading software for teachers? Compare essential features, evaluation workflows, and selection criteria to find the right solution for your institution.
+Looking for AI grading software for teachers? The features, evaluation workflows and selection criteria to compare before you choose.
 26 Oct 2026 · 10 min read
 AI checking
 
@@ -2223,7 +2250,7 @@ Compare AI vs manual answer sheet checking to understand differences in grading 
 AI checking
 
 ## How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
-Discover how AI exam evaluation software helps schools and coaching institutes streamline answer sheet checking, improve feedback, and reduce manual grading workloads.
+How AI exam evaluation software helps schools and coaching institutes check answer sheets faster, give better feedback and cut manual grading.
 26 Oct 2026 · 9 min read
 Guides
 
@@ -2377,6 +2404,15 @@ Starter is ₹5,000 a year for 1 user, with 100 AI credits; Team is ₹20,000 a 
 Is there a free trial? +
 Yes. 3 days, with no card needed, for 1 teacher and 50 free AI credits (1 credit checks 1 handwritten page). Sign up with Google or your email. When the trial ends, checking stops and your reports stay available.
 
+What happens when the trial ends? +
+Checking stops when the 3 days end. Nothing is deleted: your tests, checked copies and reports stay in your account, and you can buy a plan from the Credits page at any time to carry on.
+
+Does my trial work carry over when I buy a plan? +
+Yes. You buy the plan from the same account, so every test, checked copy and report from the trial stays where it is. The plan's credits are added as soon as the payment goes through.
+
+How are extra credits billed? +
+Your plan's credits cover the whole year. If they run out, buy extra credits from the Credits page at ₹1 each (plus 18% GST), paid in advance. Nothing is charged automatically, and 1 credit still checks 1 page.
+
 What is not charged? +
 Failed checks, stopped checks and unreadable copies are free. Reading names and matching copies to students is free.
 
@@ -2467,7 +2503,7 @@ Book a demo See a real checked copy
 
 ---
 
-# About Evalezy | Evalezy
+# About Evalezy: AI Copy Checking by Vacademy | Evalezy
 URL: https://evalezy.com/about/
 
 - Home
@@ -2706,7 +2742,7 @@ If an institute uploaded your copy, please contact that institute. It controls t
 
 ---
 
-# AI Answer Sheet Checking for Schools (CBSE, ICSE, State Boards) | Evalezy
+# AI Answer Sheet Checking for Schools (CBSE, ICSE) | Evalezy
 URL: https://evalezy.com/for/schools/
 
 - Home
@@ -2805,12 +2841,12 @@ What does it cost a school? +
 Each page checked uses 1 credit, and credits come with every yearly plan (see the pricing page). A section of 40 students writing an 8-page copy uses 320 credits for that paper. Failed and unreadable copies are free.
 
 ## From the blog
+Compare
+OMR vs AI Answer Sheet Checking: Which Exams Need Which
 AI checking
 Highlight Spelling and Grammar Errors on English Answer Sheets with AI
 Case studies
 Case Study: A Class IX Social Science Copy, Photographed on a Phone and Checked by AI
-Guides
-The Evalezy App: Scan and Check Answer Sheets From Your Phone
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2820,7 +2856,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI Copy Checking for Coaching Institutes and Test Series | Evalezy
+# AI Copy Checking for Coaching Institutes | Evalezy
 URL: https://evalezy.com/for/coaching-institutes/
 
 - Home
@@ -2920,11 +2956,11 @@ Yes. In an online test set to manual evaluation, students upload their answer sh
 
 ## From the blog
 Compare
+OMR vs AI Answer Sheet Checking: Which Exams Need Which
+Compare
 Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)
 Guides
 The Evalezy App: Scan and Check Answer Sheets From Your Phone
-AI checking
-How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2934,7 +2970,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI Evaluation for UPSC Mains and State PSC Answer Writing | Evalezy
+# AI Evaluation for UPSC and PSC Answer Writing | Evalezy
 URL: https://evalezy.com/for/upsc-answer-writing/
 
 - Home
@@ -3030,6 +3066,8 @@ Can we keep our own evaluators in the loop? +
 Yes. Nothing reaches the aspirant until someone on your team presses Release Result. Any mark a mentor edits is kept, even if the copy is checked again.
 
 ## From the blog
+Compare
+UPSC AI Answer Evaluation Apps Compared: SuperKalam, AnswerWriting, PrepAiro, Likhit and More
 Guides
 UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)
 
@@ -3041,7 +3079,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI Answer Script Evaluation for Colleges and Universities | Evalezy
+# AI Answer Script Evaluation for Colleges | Evalezy
 URL: https://evalezy.com/for/colleges-universities/
 
 - Home
@@ -3125,12 +3163,12 @@ Can we export marks? +
 Marks are stored per question in the assessment and appear in its reports alongside the checked script. Talk to us about the exact export you need for your ERP.
 
 ## From the blog
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
 AI checking
 How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 Guides
 Answer Sheet Moderation: A Checklist Before Releasing Results
-Assessment
-On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -3140,7 +3178,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI-Assisted Evaluation for Exam Bodies and Large-Scale Tests | Evalezy
+# AI-Assisted Evaluation for Exam Bodies | Evalezy
 URL: https://evalezy.com/for/exam-boards/
 
 - Home
@@ -3237,7 +3275,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Handwritten Answer Evaluation API for Edtech Platforms | Evalezy
+# Answer Evaluation API for Edtech Platforms | Evalezy
 URL: https://evalezy.com/for/edtech-platforms/
 
 - Home
@@ -3347,7 +3385,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Best AI Copy Checking Software in 2026 (Answer Sheets) | Evalezy
+# Best AI Copy Checking Software for 2026: 10 Tools | Evalezy
 URL: https://evalezy.com/best-ai-copy-checking-software/
 
 - Home
@@ -3704,7 +3742,7 @@ Extramarks, SuperKalam, PrepAiro, CollectorBabu, Likhit, TCS iON, MeritTrac, Exc
 
 ## Frequently asked questions
 What is the best AI copy checking software? +
-It depends on the job. For checking a class's or an exam's handwritten answer sheets in English, Evalezy documents the most of the job in our research (12 of 14 capabilities: reading handwriting, marking against a scheme with half marks and reasons, bulk upload, matching copies to students, a red-pen checked copy, teacher review, question paper import and a public API) at a published ₹1 per page. For answers in Hindi or another Indian language, Eklavvya documents eight languages. For university courses graded by staff, Gradescope. For US essays, CoGrader. For human marking at board scale, an on-screen marking vendor such as Coempt Onmark. Evalezy publishes this guide; every score links to its source.
+It depends on the job. For checking a class's or an exam's handwritten answer sheets in English, Evalezy documents the most of the job in our research (12 of 14 capabilities: reading handwriting, marking against a scheme with half marks and reasons, bulk upload, matching copies to students, a red-pen checked copy, teacher review, question paper import and a public API) with published prices (yearly plans with AI credits, 1 credit per page). For answers in Hindi or another Indian language, Eklavvya documents eight languages. For university courses graded by staff, Gradescope. For US essays, CoGrader. For human marking at board scale, an on-screen marking vendor such as Coempt Onmark. Evalezy publishes this guide; every score links to its source.
 
 Can AI check handwritten answer sheets? +
 Yes. Current tools read handwriting from scans or phone photos with vision models and mark each answer against a marking scheme. The best results come from treating AI marks as a first check that a teacher reviews: almost every tool in our research builds in a teacher review step, and Evalezy keeps every mark as a draft until a teacher releases it.
@@ -3741,7 +3779,7 @@ More: all Evalezy research
 
 ---
 
-# AI Copy Checking vs Manual Checking: An Honest Comparison | Evalezy
+# AI Copy Checking vs Manual Checking, Compared | Evalezy
 URL: https://evalezy.com/compare/manual-checking/
 
 - Home
@@ -3883,6 +3921,8 @@ Can Evalezy work with our existing evaluation process? +
 Usually yes. Teams use Evalezy for the first evaluation and keep their own reviewers for the final mark. If your scripts already run through your own system, the Evaluation API takes each one as a PDF and returns marks per question with reasons, as drafts your reviewers finalize.
 
 ## From the blog
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
 Assessment
 On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 AI checking
@@ -3896,7 +3936,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Can ChatGPT Check Answer Sheets? Evalezy vs a General Chatbot | Evalezy
+# Can ChatGPT Check Answer Sheets? Evalezy vs ChatGPT | Evalezy
 URL: https://evalezy.com/compare/chatgpt/
 
 - Home
@@ -3955,6 +3995,8 @@ Which AI model does Evalezy use? +
 Evalezy runs a pipeline rather than one prompt: handwriting reading, answer location, an equation reader for unclear maths lines, per-question grading against a rubric, checks that marks add up, and annotation. The default models are chosen for handwriting reading and cost; the pipeline matters more than the model.
 
 ## From the blog
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 For developers
 Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy
 AI checking
@@ -3968,7 +4010,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs Eklavvya: AI Answer Sheet Checking Compared (2026) | Evalezy
+# Evalezy vs Eklavvya: AI Answer Sheet Checking (2026) | Evalezy
 URL: https://evalezy.com/compare/eklavvya/
 
 - Home
@@ -4045,6 +4087,10 @@ Evalezy publishes its prices: yearly plans with AI credits included (1 credit pe
 
 Can Evalezy check Hindi answer sheets like Eklavvya? +
 Not yet. Evalezy grades English answers only; Hindi and regional-language copies are refused and not charged. Students' names written in other scripts are still read and transliterated for matching. If most of your answers are in an Indian language, Eklavvya documents that today.
+
+## From the blog
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -4151,7 +4197,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs Gradescope: AI Marking vs AI-Assisted Grading | Evalezy
+# Evalezy vs Gradescope: AI Marking vs AI Grouping | Evalezy
 URL: https://evalezy.com/compare/gradescope/
 
 - Home
@@ -4223,6 +4269,10 @@ Best AI copy checking software 2026 Evalezy vs checking by hand Evalezy vs on-sc
 Is Evalezy a Gradescope alternative? +
 For schools, coaching institutes and test-series programmes checking handwritten copies, yes: Evalezy does the marking itself and returns a red-pen checked copy, with published yearly plans. For university courses where staff grade every question, with code similarity and LMS integration, Gradescope remains the more established choice.
 
+## From the blog
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
 
@@ -4231,7 +4281,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs CoGrader: Handwritten Answer Sheets vs Essays | Evalezy
+# Evalezy vs CoGrader: Answer Sheets vs Essays | Evalezy
 URL: https://evalezy.com/compare/cograder/
 
 - Home
@@ -4311,7 +4361,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs CrazyGoldFish: AI Evaluation Compared (2026) | Evalezy
+# Evalezy vs CrazyGoldFish: AI Evaluation (2026) | Evalezy
 URL: https://evalezy.com/compare/crazygoldfish/
 
 - Home
@@ -4355,7 +4405,7 @@ Sources:CrazyGoldFish: homepage CrazyGoldFish: scale full research
 
 - Teachers need to upload 200 copies, have them matched to students and review the marks themselves
 - Students should receive their own copy checked in red pen
-- You want a published price (₹1 per page) and public API documentation at docs.evalezy.com
+- You want published prices (yearly plans with AI credits) and public API documentation at docs.evalezy.com
 
 ## The difference in one line
 CrazyGoldFish is an evaluation engine that platforms build on. Evalezy is both: a dashboard teachers use end to end, and an Evaluation API with public docs for platforms.
@@ -4389,7 +4439,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs Smart Paper: Checking Answer Sheets with AI | Evalezy
+# Evalezy vs Smart Paper: AI Answer Sheet Checking | Evalezy
 URL: https://evalezy.com/compare/smart-paper/
 
 - Home
@@ -4464,7 +4514,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Evalezy vs AnswerWriting.com for UPSC Answer Evaluation | Evalezy
+# Evalezy vs AnswerWriting for UPSC Answer Evaluation | Evalezy
 URL: https://evalezy.com/compare/answerwriting/
 
 - Home
@@ -4533,6 +4583,10 @@ Best AI copy checking software 2026 Evalezy vs checking by hand Evalezy vs on-sc
 ## Frequently asked questions
 Can Evalezy evaluate UPSC Mains answers? +
 Yes, in English: GS and essay answers are marked against the scheme you set per question (or one Evalezy drafts), with half marks, a reason and feedback per answer, and the aspirant's own copy checked in red pen. Hindi-medium answers are not supported yet.
+
+## From the blog
+Compare
+UPSC AI Answer Evaluation Apps Compared: SuperKalam, AnswerWriting, PrepAiro, Likhit and More
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -4822,6 +4876,769 @@ More: all Evalezy research
 
 ---
 
+# ChatGPT vs AI Copy Checker for Answer Sheets (2026) | Evalezy
+URL: https://evalezy.com/blog/check-answer-sheets-with-chatgpt-vs-ai-copy-checker/
+
+- Home
+- / Blog
+- / Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Compare
+
+# Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Can ChatGPT or Gemini check handwritten answer sheets? A prompt for fairer marks, where chatbots break for a whole class, and how AI copy checkers differ.
+By the Evalezy team · 14 November 2026· 8 min read
+
+## Key takeaways
+
+- ChatGPT, Gemini and other chatbots can read a clear photo of one handwritten answer and suggest a mark against a model answer you give them.
+- They are useful for a second opinion, a draft marking scheme or student-friendly feedback on a single answer.
+- Checking a whole class breaks down on five things: the standard drifting between chats, totals that do not add up, guessed words, matching copies to students, and no marked copy to hand back.
+- AI copy checking software uses one marking scheme per question for every copy, refuses unreadable pages, matches each copy to a student and returns the student’s own page marked in red pen, with a teacher reviewing before release.
+- Test it yourself: put five already-marked copies through a chatbot twice in fresh chats and compare the marks with each other and with the teacher’s.
+
+Many teachers have tried it already: take a photo of a student’s answer, paste it into ChatGPT or Gemini, add “mark this out of 5” and get a mark with a reason in seconds. For one answer, that can be genuinely useful. For a class of 40 copies, each eight pages long, it turns into a different job. This guide shows how to get fairer marks from a chatbot, where it stops working, and how dedicated AI copy checking software differs.
+Who wrote this
+We make Evalezy , an AI copy checker, so we have a view. Everything we say about our own product is on our sample checked copy , and the test at the end of this article works just as well if you decide a chatbot is enough.
+
+## What a chatbot does well
+
+- Reading one clear answer. A well-lit photo of neat handwriting is usually read well enough to judge.
+- Marking against a scheme you give it. With the question, the marks and the points to look for, it can say which points the answer covers.
+- Drafting a marking scheme. Ask for the 3–5 points a 5-mark answer should contain, then edit them. See our guide to writing a marking scheme .
+- Writing feedback in simple words. Turning “lacks analysis” into two sentences a Class 8 student understands.
+- A second opinion. When you are unsure about a borderline answer, it is a quick sanity check.
+
+## A prompt that gives fairer marks
+Most poor results come from vague prompts. “Mark this out of 3” lets the chatbot invent its own standard. Give it the scheme, make it write out what it read before it marks, and tell it what to do when it cannot read something:
+You are checking one student's answer for a Class 10 Science test.
+
+Question 4 (3 marks): Why is the sky blue?
+
+Marking scheme (adds up to 3):
+1. Sunlight is made of many colours / wavelengths (1 mark)
+2. Air molecules scatter shorter (blue) wavelengths more (1 mark)
+3. The scattered blue light reaches our eyes from all directions (1 mark)
+
+Rules:
+- First write out exactly what the student wrote. If a word is unclear, write [unclear]. Never guess.
+- Then give marks for each point, in steps of 0.5, with one line saying why.
+- The total must not be more than 3.
+- If more than a third of the answer is unclear, say "Needs a teacher" and give no marks.
+
+The photo of the answer is attached.Why each part matters:
+
+- Transcribe first. You can see at once if it misread the handwriting, which is the most common cause of a wrong mark.
+- A scheme that adds up. Points with marks stop it from giving 3.5 out of 3 or marking on “overall quality”.
+- Half-mark steps. Matches how most Indian schools and boards mark.
+- A rule for unclear writing. Without it, a chatbot tends to fill gaps with what the student probably meant.
+
+## Where it breaks for a whole class
+
+### 1. The standard drifts from copy to copy
+Each new chat starts from scratch. Even with the same prompt pasted every time, wording and judgement can vary between conversations, and the 1st copy and the 40th may not be marked the same way. Within one long chat, earlier answers can colour later ones.
+
+### 2. Multi-page copies and answers out of order
+Real copies run to many pages, students answer Q7 before Q3, and some continue an answer on the last page. You end up cutting each copy into questions by hand before the chatbot sees it.
+
+### 3. Totals and maths
+Nothing forces the marks to add up to the question’s maximum, or the questions to add up to the paper. Maths working, with fractions, powers and signs, is where handwriting misreads cost the most.
+
+### 4. Which copy belongs to which student
+You type each student’s name, copy the marks into a register and keep track of who is done. For 40 students that is the slowest part.
+
+### 5. Nothing to hand back
+The output is text in a chat window. Students learn from seeing their own page marked: which line earned the tick, where the cross is, what the right answer was. A chatbot does not return that page.
+
+### 6. Student data
+Copies carry names, roll numbers and marks. Pasting them into a personal chatbot account puts them outside the school’s systems, and depending on the plan and settings, conversations may be kept or used to improve the service.
+
+## Chatbot vs AI copy checker at a glance
+Evalezy’s side is from its product facts; the chatbot side describes using a general chatbot by hand. | ChatGPT / Gemini by hand | AI copy checking software (Evalezy) |
+
+Marking scheme | Pasted into each chat; can drift | One scheme per question, created once and used for every student; editable by the teacher |
+Marks add up | Not enforced | Criteria rescaled to the question’s maximum; marks in 0.5 steps |
+How many copies | One photo or answer at a time | Up to 200 PDFs per upload, checked in the background |
+Long copies | Cut into questions by hand | Copies up to 40 pages read in full; answers found by content, even out of order |
+Unreadable writing | May guess | Low confidence re-asked and flagged; a mostly unreadable copy fails clearly and is not charged |
+Maths | Depends on the photo | Unclear maths lines get a second read by an equation reader |
+Matching to students | Typed by hand | Name and roll number read from page one and matched to your list; unsure matches wait for the teacher |
+What students get | Nothing, unless you copy the text out | Their own copy checked in red pen, total circled, emailed when you release |
+Who releases marks | Whoever copies them out | Marks are drafts until a teacher reviews and presses Release Result |
+Cost | Chatbot plan; your time | 1 credit per page from your plan; failed and unreadable copies free |
+
+The dedicated comparison is on Evalezy vs ChatGPT .
+
+## A 20-minute test you can run
+
+- Take five copies a teacher has already marked, from one test, with a mix of neat and messy handwriting.
+- Use the prompt above with your real marking scheme. Check each copy in a fresh chat.
+- Do it a second time, again in fresh chats.
+- Compare per question: did the two runs agree with each other? With the teacher? Where they differ, was it a misread word or a judgement call?
+- Time yourself, including cropping, pasting and copying marks into the register.
+Then run the same five copies through any AI copy checker and compare the same way, question by question. Our buyer’s guide lists what else to check.
+Where Evalezy fits
+Evalezy is built for the part a chatbot leaves to you: a whole test, checked to one scheme, matched to students and handed back as marked copies. Upload the question paper and the copies, review the marks per question with their reasons, edit what you disagree with and release. Each student gets their own copy back in red pen.
+Try it on one real test: start the 3-day free trial (50 free credits, no card), or see the sample checked copy first.
+
+Book a demo
+
+## Which one to use when
+Situation | Use |
+
+A second opinion on one borderline answer | A chatbot |
+Drafting a marking scheme or a model answer to edit | A chatbot (or Evalezy, which drafts a scheme per question) |
+Feedback wording for one student | A chatbot |
+A unit test for a whole section | AI copy checking software |
+Pre-boards, half-yearlies, coaching test series | AI copy checking software, with teacher review |
+Copies students should get back marked | AI copy checking software |
+
+## Frequently asked questions
+Can ChatGPT check handwritten answer sheets? +
+It can read a clear photo of a handwritten answer and suggest a mark if you give it the question, the marks and a marking scheme. It works best one answer at a time. For a full class it has no fixed marking scheme across chats, no student matching and no marked copy to return, so most teachers use it for second opinions rather than for checking every copy.
+
+Is ChatGPT or Gemini better for checking answer sheets? +
+Both read photos of handwriting, and which reads your students’ handwriting better depends on the handwriting, the subject and the photo. Try the same five copies in both with the same prompt. The bigger difference is not the chatbot but the workflow around it: one scheme for every copy, matching, review and a marked copy back.
+
+Is it safe to upload students’ answer sheets to ChatGPT? +
+Answer sheets carry names, roll numbers and marks. Depending on the plan and settings, chatbot conversations may be kept and used to improve the service, and copies pasted into a teacher’s personal account sit outside the school’s records. Check your school’s data policy first, or crop out names before uploading.
+
+Which AI model does Evalezy use? +
+Evalezy runs a pipeline rather than one prompt: it cleans each page, reads the handwriting, finds which page holds which answer, sends unclear maths lines to an equation reader, marks each question against its scheme in half-mark steps, checks the marks add up and then writes on the copy. The steps around the model matter as much as the model.
+
+Is there a free way to check a class of answer sheets with AI? +
+Evalezy has a 3-day free trial with 50 AI credits and no card; 1 credit checks 1 handwritten page, so you can check a real test before paying. A chatbot’s free plan can check single answers but limits how many images you can upload.
+
+On this page
+
+- What a chatbot does well
+- A prompt that gives fairer marks
+- Where it breaks for a whole class
+- Chatbot vs AI copy checker at a glance
+- A 20-minute test you can run
+- Which one to use when
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Read
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Read
+Compare
+OMR vs AI Answer Sheet Checking: Which Exams Need Which
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Gradescope Alternatives for Handwritten Exams (2026) | Evalezy
+URL: https://evalezy.com/blog/gradescope-alternatives-handwritten-answer-sheets/
+
+- Home
+- / Blog
+- / Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Compare
+
+# Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Gradescope groups answers so staff grade faster. Compare Evalezy, Crowdmark, Top Marks AI and EssayGrader on who marks, paper, checked copy and price.
+By the Evalezy team · 14 November 2026· 9 min read
+
+## Key takeaways
+
+- Gradescope (Turnitin) helps staff grade scanned work faster: AI groups similar short answers on fixed-template sheets, and people apply every mark.
+- Schools and coaching institutes usually look for an alternative because they want AI to do the first marking, check free-form copies or notebooks, or see a price without a sales call.
+- Evalezy marks every handwritten answer itself, with a reason, and returns the student’s own copy in red pen for a teacher to review and release.
+- Crowdmark is the closest like-for-like for human marking of maths exams; Top Marks AI and EssayGrader are AI essay markers for UK and US classrooms.
+- Gradescope is still the better fit for university courses graded by TAs, programming assignments and LMS integration.
+
+Gradescope is the name most teachers hear first when they look for a way to grade paper exams on a computer. It is excellent at what it was built for: university courses where instructors and TAs grade scanned work on screen. Schools and coaching institutes, especially in India, often want something different. This guide compares Gradescope with the alternatives that check handwritten answer sheets, using each vendor’s own public pages.
+How we compared
+Facts about other tools come from our evaluation landscape research , read in October 2026, which scores 38 tools on the same 14 capabilities. “Not documented” means we could not find it on the vendor’s pages, not that it is impossible. We make Evalezy, so check our claims on the sample copy .
+
+## What Gradescope does
+Gradescope is owned by Turnitin and used mainly by universities and colleges. Its public pages describe:
+
+- On-screen grading of scanned paper work, including handwritten answers and diagrams, with bulk scanning and a mobile app for student uploads.
+- Dynamic rubrics: build them in advance or while grading; a change applies to everything already graded.
+- AI-assisted answer grouping (Institutional plan): handwriting recognition groups similar short answers on fixed-template sheets, and staff grade each group.
+- AI roster matching (Institutional plan) and annotation tools; graded work goes back to students.
+- Programming assignments with code similarity checks, and LMS integration through LTI 1.3.
+- Pricing: a free Basic plan; Institutional by quote.
+
+## Why schools look for a Gradescope alternative
+
+- They want AI to mark, not only group. In Gradescope a person still applies every mark. Schools checking hundreds of copies after each test want a first mark to review.
+- Their students write on ordinary paper. Grouping works best on fixed-template answer sheets. School and coaching copies are free-form, often notebooks photographed on a phone.
+- Long answers, not just short ones. Board-pattern papers have 3, 5 and 8-mark answers that grouping does not cover.
+- A price they can see. Institutional features need a quote.
+- The copy back. Parents and students expect the marked copy, the way it comes back from a teacher.
+
+## Gradescope alternatives at a glance
+From each vendor’s public pages, October 2026 (Evalezy: November 2026). Full sources in our landscape research.Tool | Best for | Who marks | Free-form handwritten copies | Marked copy back | Published price |
+
+Gradescope | University courses graded by staff | Staff; AI groups similar short answers | Grouping needs fixed-template sheets | Yes, annotations | Basic free; Institutional by quote |
+Evalezy | Schools, coaching, UPSC test series | AI first, teacher reviews and releases | Yes, incl. phone photos of notebooks | Yes, in red pen | Yes: from ₹5,000 a year |
+Crowdmark | Human marking of maths exams | People; no AI marking of open answers | Uses its own QR-coded pages | Yes, annotations | Quote (a 2022 third-party figure: US$3.75 per student per course) |
+Top Marks AI | UK GCSE / A Level essays | AI, per subject and board | Essays from one PDF; per-student barcodes | Not documented | On request |
+EssayGrader | US K-12 and college essays | AI drafts, teacher adjusts | Scans handwritten essays | Not documented (feedback via LMS) | Free plan; Pro US$14.99/month |
+
+## The alternatives, one by one
+
+### 1. Evalezy: AI marks every answer, the teacher releases
+Evalezy checks handwritten answer sheets end to end. Upload the question paper and it is read into questions ; Evalezy drafts a marking scheme per question that you can edit, and uses it for every student. Upload up to 200 copies at once , scanned or photographed; Evalezy reads the name and roll number from page one and matches each copy to your list, asking you when it is unsure. Every answer is marked in half steps with a reason, even when students answer out of order, and the copy comes back checked in red pen with the total circled. Marks stay drafts until a teacher reviews and releases them.
+Price: plans from ₹5,000 a year with AI credits included (1 credit checks 1 page), extra credits ₹1 each; failed and unreadable copies are free. See pricing . Watch for: English answers only for now; diagrams are judged by labels and written explanation; no plagiarism checks; no LMS integration through LTI.
+
+### 2. Crowdmark: collaborative human marking
+Crowdmark, from Toronto, grew out of a maths contest and is built for people marking handwritten work together. Every page carries a QR code, cover pages can be matched to students automatically (in beta), and reusable comments carry points like rubric items. Crowdmark says it opposes automating marks for open-response questions, so it is the alternative for institutions that want humans to mark everything, faster. Its pricing page could not be read; a 2022 university page quotes US$3.75 per student per course.
+
+### 3. Top Marks AI: board-calibrated essay marking (UK)
+Top Marks AI marks typed and handwritten essays for UK GCSE, A Level, KS3, IB and IELTS with 400+ subject tools, each tied to an exam board’s mark scheme. Whole sets of handwritten essays go in as one PDF, routed by per-student, per-question barcodes, and it includes AI-writing detection. Maths marking and teacher review before release are not documented; pricing is on request.
+
+### 4. EssayGrader: AI essay feedback for US classrooms
+EssayGrader drafts criterion-by-criterion scores and comments on essays, typed or scanned by hand, using 800+ standards-aligned rubrics or your own. A whole class PDF is split into essays automatically, teachers adjust and share, and paid plans add plagiarism and AI-writing checks. It has a free plan and Pro at US$14.99 a month for 350 gradings. Maths and Indian languages are not documented.
+
+## Evalezy vs Gradescope
+Gradescope makes human grading faster; Evalezy does the first grading. In our research Evalezy documents 12 of the 14 checking capabilities and Gradescope 9 (partial support counted as half), but Gradescope’s strengths sit in staff grading, programming work and LMS integration, which our 14 do not weigh.
+| Evalezy | Gradescope |
+
+Who gives the first mark | AI, per question, with a reason | Staff; AI groups similar short answers to grade together |
+Long written answers | Marked by AI against the scheme | Graded by staff |
+Paper | Any copy or notebook, scanned or phone photo | Grouping needs fixed-template sheets |
+Matching to students | Name and roll number read from page one | AI roster matching (Institutional) |
+What students get | Their own copy in red pen, emailed on release | Annotated work returned in Gradescope |
+Programming assignments | No | Yes, with code similarity (Institutional) |
+LMS integration | Part of the Vacademy platform; public API | LTI 1.3 |
+Price | Published: from ₹5,000 a year | Basic free; Institutional by quote |
+
+The full sourced table is on Evalezy vs Gradescope .
+Where Evalezy fits
+Evalezy fits schools, coaching institutes and UPSC programmes that check hundreds of handwritten copies after every test and want a first mark to review rather than a faster way to mark by hand. The teacher stays in charge: nothing reaches students until it is released.
+See a real result: the maths copy checked by a teacher and by Evalezy , where each caught mistakes the other missed.
+
+Book a demo
+
+## How to choose
+
+- Decide who gives the first mark. If staff must mark everything, choose Gradescope or Crowdmark. If AI should draft and teachers review, choose an AI marker.
+- Look at your paper. Fixed templates suit Gradescope and Crowdmark; ordinary copies and notebooks need a free-form reader.
+- Check subjects. Essays only? Top Marks AI or EssayGrader. Maths and science working? Ask to see a marked maths copy.
+- Check your country’s marking. Half marks, board-style schemes and Indian names matter for Indian schools.
+- Pilot on copies already marked. 30–50 copies, compared question by question. Our buyer’s guide has a checklist.
+
+## Sources
+
+- Gradescope (Turnitin) product page (checked 22 October 2026)
+- Gradescope pricing (Basic and Institutional) (checked 22 October 2026)
+- University of Florida: Gradescope handwriting recognition (checked 22 October 2026)
+- Queen’s University CTL: Crowdmark (checked 22 October 2026)
+- University of Zurich: Crowdmark (pricing figure, 2022) (checked 22 October 2026)
+- Top Marks AI homepage (checked 22 October 2026)
+- EssayGrader pricing (checked 22 October 2026)
+
+## Frequently asked questions
+What is the best Gradescope alternative for schools? +
+For schools and coaching institutes checking handwritten copies after every test, a tool that does the first marking saves the most time. Evalezy marks every answer against a scheme per question, returns the student’s own copy checked in red pen and keeps the teacher in charge of release, with published plans. If you want people to apply every mark, Crowdmark is the closest alternative.
+
+Does Gradescope grade answers with AI? +
+Partly. On its Institutional plan, Gradescope’s AI-assisted grading groups similar short answers and multiple-choice responses so staff can grade a whole group at once. Staff still apply the marks. It does not write marks for long answers on its own.
+
+Is there a free Gradescope alternative? +
+Gradescope itself has a free Basic plan. EssayGrader has a free plan for essays. Evalezy has a 3-day free trial with 50 AI credits and no card; after that, plans start at ₹5,000 a year with AI credits included.
+
+Which Gradescope alternative works for maths answer sheets? +
+Crowdmark was built for human marking of handwritten maths exams. Evalezy marks maths working with AI: unclear lines get a second read by an equation reader, marks go in half steps, and a teacher reviews every mark before release. Top Marks AI and EssayGrader focus on essays; maths marking is not documented.
+
+Can Indian schools use Gradescope? +
+Yes, but it is built around university courses and fixed-template answer sheets, and Institutional pricing is by quote. Indian schools and coaching institutes often write on ordinary copies or notebooks, which is where a free-form copy checker fits better.
+
+On this page
+
+- What Gradescope does
+- Why schools look for an alternative
+- Gradescope alternatives at a glance
+- The alternatives, one by one
+- Evalezy vs Gradescope
+- How to choose
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Read
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Read
+Compare
+OMR vs AI Answer Sheet Checking: Which Exams Need Which
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Eklavvya Alternatives for AI Answer Sheet Checking | Evalezy
+URL: https://evalezy.com/blog/eklavvya-alternatives-ai-answer-sheet-evaluation/
+
+- Home
+- / Blog
+- / Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Compare
+
+# Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Eklavvya alternatives compared from public sources: Evalezy, Acadine, CrazyGoldFish, Coempt and MeritTrac on teacher review, checked copy, languages and price.
+By the Evalezy team · 14 November 2026· 9 min read
+
+## Key takeaways
+
+- Eklavvya adds AI scoring to an on-screen marking (OSM) platform: an LLM drafts a score per question and examiners accept, override or comment, with blind evaluation and eight Indian languages.
+- Alternatives split into two groups: AI-first checkers (Evalezy, Acadine, CrazyGoldFish) and human on-screen marking platforms (Coempt Onmark, MeritTrac TracMARKS).
+- Evalezy fits classroom and coaching tests: names and roll numbers read and matched, the student’s own copy returned in red pen, teacher review before release and published prices. It grades English only for now.
+- For Indian-language answers, Eklavvya, Acadine and CrazyGoldFish document support today; for board-scale human marking, Coempt and MeritTrac.
+- None of the alternatives except Evalezy publishes a price; Eklavvya’s AI evaluation is an Enterprise feature.
+
+Eklavvya is one of the best-known Indian names in digital evaluation, used by universities and exam bodies for on-screen marking and, more recently, AI-assisted scoring. It is built for large, formal exams. If your need is different, for example checking class tests or a coaching test series, or you want a price before a demo, this guide compares Eklavvya with the alternatives on what matters for checking handwritten answer sheets.
+How we compared
+Facts about other tools come from their public pages, read in October 2026 for our evaluation landscape research (38 tools, 14 capabilities). “Not described” means we could not find it, not that it cannot be done. We make Evalezy; check our claims on the sample copy .
+
+## What Eklavvya does
+Eklavvya (Splashgain Technology Solutions) serves universities, schools, coaching institutes and certification bodies. Its pages describe:
+
+- On-screen marking: a scanner role uploads booklets; the vendor claims 100,000+ answer sheets per session.
+- AI scoring: handwriting is OCR’d, then an LLM scores each answer against the model answer and gives a draft score per question, with “Why this score” reasoning.
+- Strictness modes: Easy, Default, Moderate and Strict.
+- Examiner control: accept, override or comment per question; moderators and re-evaluators with an audit trail of AI and human scores.
+- Blind evaluation: student identity masked under a QR or bar code.
+- Languages: Hindi, Marathi, Tamil, Telugu, Bengali, Kannada, Gujarati and Malayalam, with the model answer in the same language.
+- Pricing: not published; AI evaluation is an Enterprise feature. ISO 27001 and CERT-In are claimed.
+
+## Why institutes look for an Eklavvya alternative
+
+- Their tests are not university exams. A school unit test or coaching mock does not need scanner, examiner and moderator roles.
+- They want students matched, not masked. Class teachers want each copy matched to the student by the name and roll number on page one.
+- They want the copy back. Students and parents expect the marked page, not only a score.
+- They want a price first. Enterprise-only AI evaluation means a quote before a trial.
+- Or the opposite: a board or university that wants proven human OSM at scale, with no AI marks at all.
+
+## Eklavvya alternatives at a glance
+From each vendor’s public pages, October 2026 (Evalezy: November 2026).Tool | Type | Who marks | Student’s copy marked up | Indian-language answers | Published price |
+
+Eklavvya | OSM + AI scoring | AI drafts; examiners accept or override | Students can view scanned scripts; AI annotation not described | Yes (8 languages) | No |
+Evalezy | AI copy checker | AI first; teacher reviews and releases | Yes, in red pen | No, English only for now | Yes: from ₹5,000 a year |
+Acadine | Coaching suite with AI checking | AI; results publish automatically (teacher guide) | Not described | Yes (English, Hindi, Sanskrit) | No |
+CrazyGoldFish | Evaluation infrastructure and APIs | AI; teachers are the final authority | Not described | Yes (Hindi results reported) | No |
+Coempt Onmark | Human OSM | Examiners on screen | Yes, annotations | Not documented | No |
+MeritTrac TracMARKS | Human OSM | Evaluators on screen | Yes, annotations | Not documented | No |
+
+## The alternatives, one by one
+
+### 1. Evalezy: AI copy checking for class and coaching tests
+Evalezy checks handwritten copies end to end. Upload the question paper and it is read into questions; a marking scheme per question is drafted for you to edit and used for every copy. Upload up to 200 copies at once ; Evalezy reads each student’s name and roll number and matches the copy to your list, asking you when unsure. Every answer is marked in half steps with a reason, and the student’s own copy comes back checked in red pen . Marks stay drafts until a teacher reviews and releases them; each student is emailed their copy on release. A public Evaluation API is documented.
+Price: from ₹5,000 a year with AI credits included (1 credit per page), extra credits ₹1 each, failed and unreadable copies free. Watch for: English only for now; no blind evaluation or moderator roles; diagrams judged by labels and explanation.
+
+### 2. Acadine: a coaching suite with AI checking inside
+Acadine marks handwritten answer sheets step by step with partial credit, within 24 hours, and also sells AI question papers, OMR, online tests, analytics and a white-label app. It lists English, Hindi and Sanskrit for evaluation. Its teacher guide says results publish to students automatically, after which students can challenge a grade. Prices are not published. See Acadine alternatives .
+
+### 3. CrazyGoldFish: evaluation as infrastructure
+CrazyGoldFish sells AI evaluation to platforms, coaching networks and programmes through APIs, reports reliability results on Hindi handwritten answers across two states and seven subjects, and keeps teachers as the final authority. Bulk upload, student matching and annotated copies are not described; no public API docs were found. See Evalezy vs CrazyGoldFish .
+
+### 4. Coempt Onmark: human OSM at board scale
+Coempt, from Hyderabad, runs on-screen marking for boards and universities: answer books scanned without cutting, customisable schemes of evaluation, seed scripts, double marking and real-time examiner monitoring. It won CBSE’s on-screen marking contract for 2026 Class 12 evaluation. No AI marking is documented; examiners mark every script.
+
+### 5. MeritTrac TracMARKS: human OSM from a testing company
+MeritTrac, a Bengaluru testing company founded in 2000, offers TracMARKS for scanning and marking scripts on screen with annotation, evaluator monitoring and audit trails. No AI marking is documented.
+
+## Evalezy vs Eklavvya
+Eklavvya is an exam-hall system with AI added; Evalezy is a classroom checker built around AI. In our research Evalezy documents 12 of the 14 checking capabilities and Eklavvya 9 (partial support counted as half). Eklavvya is ahead on Indian languages and formal-exam controls.
+| Evalezy | Eklavvya |
+
+First mark | AI, against a scheme per question | AI draft against the model answer |
+Teacher control | Review, edit, then Release Result; edits never overwritten | Accept, override or comment; moderation and re-evaluation |
+Student identity | Name and roll number read and matched | Masked under QR/bar code for blind marking |
+What students get | Their own copy in red pen, emailed on release | View of the scanned evaluated script |
+Question paper | Upload the PDF; it is read into questions | Team helps upload the first paper at setup |
+Languages | English only for now | 8 Indian languages listed |
+API | Public Evaluation API with docs | REST, MCP, Make, n8n connectors; no public grading API docs found |
+Price | Published: from ₹5,000 a year | Not published; Enterprise feature |
+
+Full sourced table: Evalezy vs Eklavvya .
+Where Evalezy fits
+Evalezy fits schools and coaching institutes that check English handwritten copies after every test and want students to get their own copy back. AI does the first check; the teacher reviews and releases. Each page uses 1 credit, and copies that fail cost nothing.
+See it on a real copy: the Class IX Social Science sample .
+
+Book a demo
+
+## How to choose
+
+- Formal exam or classroom test? Blind marking, moderators and re-evaluation point to OSM (Eklavvya, Coempt, MeritTrac). Weekly tests point to an AI checker.
+- Language of the answers. Indian-language answers rule Evalezy out today.
+- AI marks or human marks? Some boards want people to mark everything; then pick human OSM.
+- What students receive. Ask every vendor for a checked copy, not a dashboard.
+- Price per copy at your volume, including scans that fail. Then pilot on 30–50 copies already marked; see our buyer’s guide and OSM vs AI evaluation .
+
+## Sources
+
+- Eklavvya: AI answer sheet checking (checked 22 October 2026)
+- Eklavvya help: OSM auto evaluation (checked 22 October 2026)
+- Eklavvya pricing page (checked 22 October 2026)
+- Acadine docs: Getting Started for Teachers (checked 29 October 2026)
+- CrazyGoldFish homepage (checked 22 October 2026)
+- Coempt Onmark (checked 22 October 2026)
+- Sakshi Post: Coempt and the CBSE on-screen marking contract (checked 22 October 2026)
+- MeritTrac TracMARKS (checked 22 October 2026)
+
+## Frequently asked questions
+What is the best alternative to Eklavvya? +
+It depends on your exams. For English handwritten copies from school or coaching tests, where students should get their own copy back marked, Evalezy. For Hindi and Sanskrit answers in a coaching suite, Acadine. For evaluation APIs with reported Hindi results, CrazyGoldFish. For university or board exams marked by human examiners on screen, Coempt Onmark or MeritTrac.
+
+Does Eklavvya publish its price? +
+No. As of October 2026, Eklavvya does not publish prices for AI answer sheet checking, which it describes as an Enterprise feature enabled per organisation plan. Evalezy publishes yearly plans with AI credits included.
+
+Is AI evaluation the same as on-screen marking? +
+No. On-screen marking (OSM) puts scanned scripts on a screen so human examiners can mark them; people still read every answer. AI evaluation gives a first mark per question for a person to check. Eklavvya combines both. Read more in our guide to on-screen marking vs AI evaluation.
+
+Which tools support Hindi and regional-language answer sheets? +
+Eklavvya lists Hindi, Marathi, Tamil, Telugu, Bengali, Kannada, Gujarati and Malayalam. Acadine lists English, Hindi and Sanskrit for evaluation. CrazyGoldFish reports results on Hindi handwritten answers. Evalezy grades English answers only for now; Hindi copies are refused and not charged.
+
+Can I keep blind evaluation with Evalezy? +
+Evalezy is built the other way round: it reads the student’s name and roll number to match each copy to the class list, so teachers see who wrote what. If masked identities are a hard requirement, as in many university exams, an OSM platform such as Eklavvya, Coempt or MeritTrac fits better.
+
+On this page
+
+- What Eklavvya does
+- Why institutes look for an alternative
+- Eklavvya alternatives at a glance
+- The alternatives, one by one
+- Evalezy vs Eklavvya
+- How to choose
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Read
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Read
+Compare
+OMR vs AI Answer Sheet Checking: Which Exams Need Which
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# OMR vs AI Answer Sheet Checking: Which to Use | Evalezy
+URL: https://evalezy.com/blog/omr-vs-ai-answer-sheet-checking/
+
+- Home
+- / Blog
+- / OMR vs AI Answer Sheet Checking: Which Exams Need Which
+Compare
+
+# OMR vs AI Answer Sheet Checking: Which Exams Need Which
+OMR reads bubbles; AI checking reads handwritten answers with partial marks. What each can check, which exams need which, and how to run a mixed paper.
+By the Evalezy team · 14 November 2026· 8 min read
+
+## Key takeaways
+
+- OMR software reads filled bubbles on a printed sheet and compares them with an answer key: fast and cheap, but only for multiple-choice and other objective questions.
+- AI answer sheet checking reads handwritten answers, marks them against a marking scheme with partial marks and reasons, and returns the marked copy; it takes minutes per copy and a teacher should review it.
+- JEE and NEET-pattern mocks suit OMR. Board-pattern school exams, descriptive coaching tests and UPSC Mains answer writing need AI checking or teachers.
+- Mixed papers can use both: OMR for the objective section and AI checking for the written answers, or one AI check for the whole written copy.
+- OMR errors come from stray marks and half-filled bubbles; AI errors come from misread handwriting. Both are why a review step matters.
+
+Most Indian schools and coaching institutes already use two ways of checking: OMR sheets for multiple-choice tests and teachers with red pens for everything else. AI answer sheet checking adds a third option for the written part. This guide explains what each one can and cannot check, which exams need which, and how to combine them on a mixed paper.
+
+## How OMR checking works
+OMR (optical mark recognition) reads marks in fixed positions on a pre-printed sheet. Students fill a bubble for each answer; a scanner or a phone app detects which bubbles are dark and compares them with the answer key.
+
+- What it checks: multiple choice, true/false, matching and numeric answers entered as bubbles.
+- What it cannot check: anything written: working, explanations, long answers.
+- Speed: seconds per sheet once scanned.
+- Output: scores, item analysis and question-wise statistics, not feedback.
+- Typical errors: stray marks, light or half-filled bubbles, two bubbles in one row, roll number bubbled wrongly.
+
+## How AI answer sheet checking works
+AI answer sheet checking reads handwriting on ordinary paper. In Evalezy, for example, you upload the question paper and the copies; for each question there is one marking scheme used for every student, and each answer is marked against it.
+
+- What it checks: short and long written answers, maths working, typed answers from online tests.
+- Paper: any copy or notebook, scanned or photographed on a phone; answers are found by content, even out of order.
+- Marks: half-mark steps, partial credit per criterion, with a reason.
+- Output: the student’s own copy marked in red pen, total circled, plus marks per question.
+- Speed: 1–8 minutes per copy; about 100 copies in 2–3 hours.
+- Typical errors: misread handwriting, especially digits and signs in maths; that is why marks stay drafts until a teacher reviews them.
+See what a checked copy looks like on our sample .
+
+## OMR vs AI checking, side by side
+| OMR checking | AI answer sheet checking |
+
+Question types | Objective only (bubbles) | Written answers: short, long, maths working; objective answers written in the copy |
+Paper | Pre-printed OMR sheet, filled correctly | Ordinary answer copy or notebook |
+Judgement | None: exact match with the key | Against a marking scheme, per criterion |
+Partial marks | No (negative marking possible) | Yes, in 0.5 steps with reasons |
+Feedback to students | Score and correct option | Ticks, crosses, notes and the total on their own copy |
+Speed | Seconds per sheet | 1–8 minutes per copy |
+Review needed | Spot-check flagged sheets | Teacher reviews every result before release |
+Cost driver | Sheets printed and scanned | Pages checked |
+
+## Which exam needs which
+Exam or test | Best fit | Why |
+
+JEE / NEET-pattern mocks | OMR | All objective, with negative marking; speed matters most |
+Olympiad and scholarship screening tests | OMR | Large numbers, objective questions |
+CBSE / ICSE / state board pattern school exams | AI checking + teacher review (or OMR for the MCQ section) | Most marks are in 2, 3 and 5-mark written answers |
+Coaching descriptive tests (Class 9–12) | AI checking | Step marking and written explanations |
+UPSC / PSC Mains answer writing | AI checking + mentor review | Long answers judged on structure, content and analysis |
+English writing (letters, essays) | AI checking | Format, content and expression; optional spelling and grammar highlight |
+Quick daily MCQ quizzes | OMR or an online quiz | No handwriting to read |
+
+## Mixed papers: using both
+Board-pattern papers often start with 20 one-mark objective questions and then move to written answers. Two ways to handle that:
+
+- Split the paper. Objective section on an OMR sheet, checked by OMR software; written section in the answer copy, checked by AI with teacher review. Add the two scores. Fastest for large exams, but it means two sheets per student and two sets of results to merge.
+- One copy, one check. Students write everything in the copy, including the option letter for each MCQ, and the whole copy is checked together. Our Class IX Social Science case study is a 38-question paper whose Section A has twenty 1-mark questions, checked in one pass with the longer answers.
+
+## Cost and time
+OMR is cheaper per sheet for objective tests; there is no reason to use AI for a pure bubble sheet. For written answers the comparison is with teacher time. A class of 40 copies of 8 pages is 320 pages; at the typical speeds above, AI checking runs in the background for a few hours while the teacher spends their time reviewing rather than reading every line. In Evalezy, 1 credit checks 1 handwritten page, and failed or unreadable copies are free; current plans are on the pricing page . See also how to check answer sheets faster .
+Where Evalezy fits
+Keep OMR for your objective tests. Use Evalezy for the part OMR cannot read: handwritten answers, marked against your scheme, returned as the student’s own copy in red pen, with the teacher reviewing before release. It works on phone photos too, through the Evalezy app .
+Try it on one written test: 3-day free trial , 50 credits, no card.
+
+Book a demo
+
+## Tools for each
+From vendors’ public pages, October 2026
+Examples from our evaluation landscape research , which covers OMR tools alongside AI checkers. Many Indian OMR vendors are not in it; compare them on scanner support, sheet design and price per sheet.
+
+### OMR and scan-to-score
+
+- ZipGrade: phone-camera scanning of bubble sheets for teachers; free for 100 papers a month, paid from US$6.99 a year (US price).
+- Akindi: multiple-choice assessments for universities, central or self-serve scanning on regular paper; annual licence by tests graded, with a 30-day free pilot.
+- Gradient (GradeCam): scan-to-score for US schools and districts from US$3.50 per student a year, packages from US$2,800.
+- Acadine: an Indian coaching suite that includes OMR scanning alongside AI answer-sheet evaluation.
+
+### AI checking of written answers
+Compared in our best AI copy checking software guide, with one pick per job.
+
+## Sources
+
+- ZipGrade pricing (checked 22 October 2026)
+- Akindi pricing (checked 22 October 2026)
+- Gradient (GradeCam) pricing (checked 22 October 2026)
+- Acadine homepage (checked 29 October 2026)
+
+## Frequently asked questions
+What is the difference between OMR and AI answer sheet checking? +
+OMR (optical mark recognition) detects which bubble is filled on a printed sheet and matches it to an answer key, so it only works for objective questions. AI answer sheet checking reads handwritten answers, judges them against a marking scheme, gives partial marks with reasons and writes the marks on the student’s copy.
+
+Can AI check subjective answers like OMR checks MCQs? +
+Yes, but differently. OMR is a direct match against a key and finishes in seconds. AI checking of subjective answers is a judgement against a marking scheme, takes 1–8 minutes a copy in Evalezy, and works best with a teacher reviewing the marks before release.
+
+Can Evalezy read OMR bubble sheets? +
+Evalezy is not an OMR scanner; it reads written answer copies. For bubble sheets, use OMR software. Objective questions written in the copy, such as one-word answers, are checked with the rest of the copy.
+
+Is OMR more accurate than AI checking? +
+They fail in different ways. A cleanly filled OMR sheet is read reliably, but stray marks, light pencil and half-filled bubbles cause errors. AI checking can misread handwriting, which is why Evalezy flags low-confidence reads, refuses mostly unreadable copies and keeps every mark as a draft for teacher review.
+
+Can I check OMR sheets with a mobile phone? +
+Yes. Phone apps such as ZipGrade scan bubble sheets with the camera. Evalezy’s phone app does the same job for written copies: photograph each student’s pages and run the AI check for the whole class.
+
+On this page
+
+- How OMR checking works
+- How AI answer sheet checking works
+- OMR vs AI checking, side by side
+- Which exam needs which
+- Mixed papers: using both
+- Cost and time
+- Tools for each
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Read
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Read
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# UPSC AI Answer Evaluation Apps Compared (2026) | Evalezy
+URL: https://evalezy.com/blog/upsc-ai-answer-evaluation-apps-compared/
+
+- Home
+- / Blog
+- / UPSC AI Answer Evaluation Apps Compared: SuperKalam, AnswerWriting, PrepAiro, Likhit and More
+Compare
+
+# UPSC AI Answer Evaluation Apps Compared: SuperKalam, AnswerWriting, PrepAiro, Likhit and More
+SuperKalam, AnswerWriting, PrepAiro, Likhit and CollectorBabu compared on price, criteria, Hindi and human review, and what test-series institutes need instead.
+By the Evalezy team · 14 November 2026· 9 min read
+
+## Key takeaways
+
+- UPSC answer evaluation tools come in two kinds: apps for individual aspirants (SuperKalam, AnswerWriting, PrepAiro, Likhit, CollectorBabu) and tools for institutes that check a whole test series (Evalezy).
+- Aspirant apps give fast feedback on one answer at a time against fixed criteria such as introduction, body, conclusion and structure, from free to about ₹1,200 a month.
+- Institutes need different things: their own marking scheme per question, hundreds of copies at once, matching to students, mentor review before release and a marked copy for each aspirant.
+- Hindi-medium answers: PrepAiro says it accepts Hindi; Evalezy grades English only for now.
+- Vendor accuracy claims are not comparable. Test any tool on answers a mentor has already marked.
+
+AI answer evaluation has become part of UPSC Mains preparation. Aspirants photograph an answer and get marks and comments in about a minute; test-series institutes wonder whether the same tools can check their batches. This guide compares the best-known AI answer evaluation apps for UPSC, and explains why institutes need a different kind of tool.
+How we compared
+Prices and features come from each app’s own pages, read on 22 October 2026 for our evaluation landscape research . Apps change prices often, and some show different prices on different pages; check before you pay. We make Evalezy, a tool for institutes, not an aspirant app.
+
+## Two kinds of tools
+
+- Aspirant apps are for one person practising daily. You upload an answer, the app scores it against its own fixed criteria and suggests improvements, often with a model answer.
+- Institute tools are for mentors checking a whole batch after a test: their own question paper, their own marking scheme, hundreds of copies, review before release and a checked copy for every aspirant.
+
+## The apps at a glance
+From each vendor’s public pages, 22 October 2026 (Evalezy: November 2026).Tool | For | Entry price | Criteria | Hindi answers | Human review |
+
+SuperKalam | Individual aspirants | ₹1,199/month; 6 months ₹5,499 | Fixed: relevance, structure, facts, depth, presentation | Not mentioned | Not described (an AI mentor) |
+AnswerWriting | Individual UPSC and State PSC aspirants | Free; Pro price not shown | Per exam; section scores | Not mentioned | Not described |
+PrepAiro | Individual aspirants | ₹999/year for AI evaluation | Estimated mark range and percentile | Yes, Hindi + English | Sold separately, ₹100–200 per answer |
+Likhit | Individual Mains aspirants | Free (3 a month); Pro ₹299/month | Fixed: intro, content, structure, conclusion (each /5) | Not mentioned | Not described |
+CollectorBabu | Aspirants wanting mentorship | ₹39,999 till next Mains (mentorship + evaluation) | Not described | Not mentioned | 1:1 mentorship included |
+Evalezy | Institutes and test-series programmes | From ₹5,000 a year, credits included | Your own scheme per question | No, English only for now | Yes: mentor reviews and releases |
+
+## The aspirant apps, one by one
+
+### SuperKalam
+A Y Combinator-backed app that evaluates handwritten GS, Ethics, Essay and Optional answers “in under 60 seconds”, with marks, comments on introduction, body and conclusion, the demand of the question and a model answer. Criteria are fixed (relevance, structure, facts and examples, depth, presentation). It claims 3,00,000+ aspirants. Pricing page: ₹1,199 a month auto-pay, ₹5,499 for six months, ₹7,499 for the Mains ’27 plan; other pages show different figures.
+
+### AnswerWriting
+Free AI evaluation for UPSC and 12 other exams: upload a photo or PDF, and the app scores structure, context, keywords and relevance, with section scores, a model answer and tips. It claims 100K+ aspirants and 98% consistency with human evaluators from internal benchmarks. A Pro plan exists; its price was not shown. See Evalezy vs AnswerWriting .
+
+### PrepAiro
+Photo upload through the app, an estimated mark with a conservative-to-optimistic range and a percentile, calibrated on 10,000+ human-evaluated answers. It states that Hindi and English answers are accepted. AI evaluation is included in ₹999 a year; human evaluation costs ₹100–200 per answer.
+
+### Likhit
+An overall score with four axes (introduction, content, structure, conclusion), each out of 5. Free for 3 evaluations a month up to 250 words; Pro at ₹299 a month adds line-level margin notes, rewrite suggestions and a summary.
+
+### CollectorBabu
+Mostly a mentorship programme: ₹39,999 till the next Mains for unlimited GS and Essay evaluation within 24 hours plus 1:1 mentorship (₹44,999 with Optional). A separate AI Answer Review service evaluates handwritten answers instantly; its standalone price was not shown.
+
+## What institutes need instead
+A test-series programme with 300 aspirants writing 20 answers each cannot run on an app built for one person. What changes:
+
+- Your own scheme. The institute’s model points per question, not an app’s generic intro-body-conclusion criteria. In Evalezy, a marking scheme is drafted per question, edited by the mentor and used for every aspirant.
+- The whole batch at once. Up to 200 copies per upload , each read for the aspirant’s name and roll number and matched to the batch list.
+- Mentor review before release. Marks land as drafts with a reason per criterion; mentors edit and release. A mentor’s edit is never overwritten by a later AI run.
+- The copy back. Each aspirant gets their own answer copy checked in red pen , by email when results are released.
+- Consistency across mentors. One scheme for every copy means the 1st and the 300th aspirant are judged the same way, whoever reviews them.
+Our guide to UPSC answer-writing evaluation at scale covers the mentor workflow and a daily cadence in detail.
+Where Evalezy fits
+Evalezy is for institutes and mentors running answer-writing programmes: AI does the first read against your scheme, mentors review and release, and every aspirant gets a checked copy. It grades English answers only for now. See the UPSC and PSC page .
+
+Book a demo
+
+## About accuracy claims
+AnswerWriting claims 98% consistency with human evaluators; PrepAiro says it is calibrated on 10,000+ human-evaluated answers. Neither number can be compared with another app’s, because the answers, examiners and method differ. Evalezy publishes no accuracy percentage; we published one copy checked by a teacher and by Evalezy instead, where each caught mistakes the other missed. The only fair test is your own answers.
+
+## How to choose
+
+### If you are an aspirant
+
+- Pick five answers a mentor has already marked.
+- Upload the same five to two or three apps.
+- Keep the app whose comments match the mentor’s and that you actually act on. Price matters less than daily use.
+- Writing in Hindi? Check Hindi support with a real answer first.
+
+### If you run a programme
+
+- Run one past test through the tool with your own marking scheme.
+- Have mentors review a sample and note where they changed marks and why.
+- Time the full cycle, from upload to aspirants receiving checked copies.
+
+## Sources
+
+- SuperKalam pricing (checked 22 October 2026)
+- SuperKalam llms.txt (evaluation features) (checked 22 October 2026)
+- AnswerWriting homepage (checked 22 October 2026)
+- PrepAiro: UPSC AI Mains evaluation (checked 22 October 2026)
+- Likhit pricing (checked 22 October 2026)
+- CollectorBabu pricing (checked 22 October 2026)
+
+## Frequently asked questions
+Which is the best AI app for UPSC answer evaluation? +
+For an individual aspirant, the best app is the one whose feedback you act on: compare SuperKalam, AnswerWriting, PrepAiro and Likhit on the same five answers. For an institute checking a test series, an aspirant app is the wrong tool; you need your own marking scheme, bulk upload, mentor review and a checked copy per aspirant, which is what Evalezy does.
+
+Can AI evaluate Hindi-medium UPSC answers? +
+Some apps say so: PrepAiro states that it accepts Hindi and English answers. SuperKalam, AnswerWriting and Likhit do not mention Hindi-medium evaluation on the pages we read. Evalezy grades English answers only for now; Hindi copies are refused and not charged.
+
+Is AI answer evaluation as good as a UPSC mentor? +
+Not on its own. AI is fast and consistent on structure, coverage of the question’s demand and missing points; a mentor judges depth, balance and examples better. Use AI for the first read and the mentor for the final word, which is how Evalezy works: AI marks are drafts until a mentor releases them.
+
+Can a coaching institute use aspirant apps for its test series? +
+Not easily. Aspirant apps are built for one person uploading one answer at a time, with the app’s fixed criteria. An institute needs to upload a whole batch, use its own marking scheme, match copies to aspirants, review marks and send each aspirant their checked copy.
+
+Is Evalezy for individual aspirants? +
+Evalezy is built for institutes and mentors who check many copies. Plans start at ₹5,000 a year with AI credits included, and there is a free trial. An individual aspirant who wants quick feedback on daily answers will usually find an aspirant app simpler.
+
+On this page
+
+- Two kinds of tools
+- The apps at a glance
+- The aspirant apps, one by one
+- What institutes need instead
+- About accuracy claims
+- How to choose
+See a copy checked in red pen
+A real 7-page answer sheet, checked by Evalezy.
+See the sample
+
+## Keep reading
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
+Read
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
+Read
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+Read
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
 # Choose the Handwriting and Ink on AI-Checked Copies | Evalezy
 URL: https://evalezy.com/blog/choose-pen-handwriting-ai-checked-copy/
 
@@ -4943,14 +5760,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
-Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
-Read
 AI checking
 Highlight Spelling and Grammar Errors on English Answer Sheets with AI
+Read
+AI checking
+How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
+Read
+AI checking
+AI vs Manual Answer Sheet Checking: Which Is Better for Modern Education?
 Read
 
 ## See your own copies checked.
@@ -5069,14 +5886,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Case studies
+Case Study: One Maths Answer Copy, Checked by a Teacher and by AI
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Case studies
+Case Study: A Class IX Social Science Copy, Photographed on a Phone and Checked by AI
 Read
-AI checking
-Highlight Spelling and Grammar Errors on English Answer Sheets with AI
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 Read
 
 ## See your own copies checked.
@@ -5198,14 +6015,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 Read
-AI checking
-Highlight Spelling and Grammar Errors on English Answer Sheets with AI
+Assessment
+How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
 Read
 
 ## See your own copies checked.
@@ -5216,7 +6033,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI Spelling and Grammar Check on English Answer Sheets | Evalezy
+# AI Grammar Check for English Answer Sheets | Evalezy
 URL: https://evalezy.com/blog/grammar-spelling-highlight-english-answer-sheets/
 
 - Home
@@ -5313,11 +6130,11 @@ See the sample
 AI checking
 Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+AI checking
+How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+AI checking
+AI vs Manual Answer Sheet Checking: Which Is Better for Modern Education?
 Read
 
 ## See your own copies checked.
@@ -5462,14 +6279,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Read
 
 ## See your own copies checked.
@@ -5489,8 +6306,8 @@ URL: https://evalezy.com/blog/acadine-alternatives-ai-answer-sheet-checking/
 Compare
 
 # Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)
-Looking for an Acadine alternative? A sourced comparison of Evalezy, Eklavvya, CrazyGoldFish and Smart Paper on teacher review, the checked copy, languages and price.
-By the Evalezy team · 29 October 2026· 9 min read
+Looking for an Acadine alternative? Evalezy, Eklavvya, CrazyGoldFish and Smart Paper compared on teacher review, the checked copy, languages and price.
+By the Evalezy team · Updated 14 November 2026· 9 min read
 
 ## Key takeaways
 
@@ -5590,7 +6407,7 @@ Take 30–50 copies your teachers have already marked, from two or three subject
 
 ## Frequently asked questions
 What is the best alternative to Acadine for checking answer sheets? +
-It depends on the job. For checking English handwritten copies end to end, with a teacher review before release and the student’s own copy returned in red pen, Evalezy documents the most of the 14 capabilities in our research and publishes its price (₹1 per page). For Indian-language answers inside a university on-screen marking workflow, Eklavvya. For evaluation APIs with reported Hindi results, CrazyGoldFish.
+It depends on the job. For checking English handwritten copies end to end, with a teacher review before release and the student’s own copy returned in red pen, Evalezy documents the most of the 14 capabilities in our research and publishes its prices (yearly plans with AI credits, 1 credit per page). For Indian-language answers inside a university on-screen marking workflow, Eklavvya. For evaluation APIs with reported Hindi results, CrazyGoldFish.
 
 Does Acadine publish its pricing? +
 No. As of 29 October 2026, Acadine’s website asks you to book a demo and lists no prices. Evalezy publishes its prices: yearly plans with AI credits included (1 credit checks 1 page) and extra credits sold separately, with failed, stopped and unreadable copies free.
@@ -5618,14 +6435,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
 Read
 
 ## See your own copies checked.
@@ -5752,14 +6569,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
-Read
 Case studies
 Case Study: One Answer Page, Checked in Nine Different Pens
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Case studies
+Case Study: A Class IX Social Science Copy, Photographed on a Phone and Checked by AI
+Read
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 Read
 
 ## See your own copies checked.
@@ -5863,14 +6680,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
-Read
 Case studies
 Case Study: One Answer Page, Checked in Nine Different Pens
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Case studies
+Case Study: One Maths Answer Copy, Checked by a Teacher and by AI
+Read
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 Read
 
 ## See your own copies checked.
@@ -5881,7 +6698,7 @@ Book a demo See a real checked copy
 
 ---
 
-# How to Check Answer Sheets on Your Phone (Evalezy App) | Evalezy
+# Check Answer Sheets on Your Phone: Evalezy App | Evalezy
 URL: https://evalezy.com/blog/evalezy-app-check-answer-sheets-on-phone/
 
 - Home
@@ -5890,7 +6707,7 @@ URL: https://evalezy.com/blog/evalezy-app-check-answer-sheets-on-phone/
 Guides
 
 # The Evalezy App: Scan and Check Answer Sheets From Your Phone
-The Evalezy app, now on iPhone: create the test from the paper, photograph each student's copy, run the AI check for the whole class and share the checked copies.
+The Evalezy app, now on iPhone: create the test from the paper, photograph each copy, run the AI check for the whole class and share the checked copies.
 By the Evalezy team · Updated 9 November 2026· 6 min read
 
 ## Key takeaways
@@ -5989,14 +6806,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Read
 
 ## See your own copies checked.
@@ -6007,7 +6824,7 @@ Book a demo See a real checked copy
 
 ---
 
-# How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes | Evalezy
+# AI Exam Evaluation for Schools & Coaching Institutes | Evalezy
 URL: https://evalezy.com/blog/ai-exam-evaluation-schools-coaching-institutes/
 
 - Home
@@ -6016,7 +6833,7 @@ URL: https://evalezy.com/blog/ai-exam-evaluation-schools-coaching-institutes/
 AI checking
 
 # How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
-Discover how AI exam evaluation software helps schools and coaching institutes streamline answer sheet checking, improve feedback, and reduce manual grading workloads.
+How AI exam evaluation software helps schools and coaching institutes check answer sheets faster, give better feedback and cut manual grading.
 By the Evalezy team · 26 October 2026· 9 min read
 
 ## Key takeaways
@@ -6153,11 +6970,11 @@ See the sample
 AI checking
 Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+AI checking
+Highlight Spelling and Grammar Errors on English Answer Sheets with AI
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+AI checking
+AI vs Manual Answer Sheet Checking: Which Is Better for Modern Education?
 Read
 
 ## See your own copies checked.
@@ -6330,11 +7147,11 @@ See the sample
 AI checking
 Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+AI checking
+Highlight Spelling and Grammar Errors on English Answer Sheets with AI
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+AI checking
+How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 Read
 
 ## See your own copies checked.
@@ -6345,7 +7162,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Best AI Grading Software for Teachers: Features, Benefits, and How to Choose | Evalezy
+# Best AI Grading Software for Teachers: How to Choose | Evalezy
 URL: https://evalezy.com/blog/best-ai-grading-software-for-teachers/
 
 - Home
@@ -6354,7 +7171,7 @@ URL: https://evalezy.com/blog/best-ai-grading-software-for-teachers/
 AI checking
 
 # Best AI Grading Software for Teachers: Features, Benefits, and How to Choose
-Looking for AI grading software for teachers? Compare essential features, evaluation workflows, and selection criteria to find the right solution for your institution.
+Looking for AI grading software for teachers? The features, evaluation workflows and selection criteria to compare before you choose.
 By the Evalezy team · 26 October 2026· 10 min read
 
 ## Key takeaways
@@ -6494,11 +7311,11 @@ See the sample
 AI checking
 Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+AI checking
+Highlight Spelling and Grammar Errors on English Answer Sheets with AI
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+AI checking
+How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 Read
 
 ## See your own copies checked.
@@ -6509,7 +7326,7 @@ Book a demo See a real checked copy
 
 ---
 
-# How to Reduce Teachers' Workload With Automated Answer Sheet Checking | Evalezy
+# Reduce Teacher Workload with Automated Checking | Evalezy
 URL: https://evalezy.com/blog/reduce-teacher-workload-automated-answer-sheet-checking/
 
 - Home
@@ -6672,14 +7489,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+Answer Sheet Moderation: A Checklist Before Releasing Results
 Read
 
 ## See your own copies checked.
@@ -6690,7 +7507,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Maths Step Marking: How to Award Partial Credit Fairly | Evalezy
+# Maths Step Marking: Awarding Partial Credit Fairly | Evalezy
 URL: https://evalezy.com/blog/maths-step-marking-partial-credit/
 
 - Home
@@ -6790,14 +7607,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
-Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
-Read
 Assessment
 How to Correct an AI-Checked Answer Copy Before Students See It
+Read
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
+Read
+Assessment
+How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
 Read
 
 ## See your own copies checked.
@@ -6808,7 +7625,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Answer Sheet Moderation: A Checklist Before Releasing Results | Evalezy
+# Answer Sheet Moderation Checklist Before Results | Evalezy
 URL: https://evalezy.com/blog/answer-sheet-moderation-checklist/
 
 - Home
@@ -6919,14 +7736,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
 
 ## See your own copies checked.
@@ -6937,7 +7754,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Feedback on Student Answer Sheets: Examples That Guide Revision | Evalezy
+# Feedback on Student Answer Sheets: Examples | Evalezy
 URL: https://evalezy.com/blog/feedback-on-student-answer-sheets/
 
 - Home
@@ -7039,14 +7856,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
 
 ## See your own copies checked.
@@ -7057,7 +7874,7 @@ Book a demo See a real checked copy
 
 ---
 
-# UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps) | Evalezy
+# UPSC Mains Answer Evaluation at Scale | Evalezy
 URL: https://evalezy.com/blog/upsc-answer-writing-evaluation-at-scale/
 
 - Home
@@ -7237,14 +8054,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
 
 ## See your own copies checked.
@@ -7255,7 +8072,7 @@ Book a demo See a real checked copy
 
 ---
 
-# Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy | Evalezy
+# Handwritten Answer Grading API: Build vs Buy | Evalezy
 URL: https://evalezy.com/blog/handwritten-answer-grading-api/
 
 - Home
@@ -7511,14 +8328,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Compare
+Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Compare
+Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Compare
+Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
 Read
 
 ## See your own copies checked.
@@ -7529,7 +8346,7 @@ Book a demo See a real checked copy
 
 ---
 
-# How to Scan Answer Sheets With a Phone: A Practical Guide for Schools | Evalezy
+# How to Scan Answer Sheets With a Phone | Evalezy
 URL: https://evalezy.com/blog/scan-answer-sheets-with-phone/
 
 - Home
@@ -7704,14 +8521,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
 
 ## See your own copies checked.
@@ -7722,7 +8539,7 @@ Book a demo See a real checked copy
 
 ---
 
-# On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know | Evalezy
+# On-Screen Marking (OSM) vs AI Evaluation | Evalezy
 URL: https://evalezy.com/blog/on-screen-marking-vs-ai-evaluation/
 
 - Home
@@ -7881,14 +8698,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
-Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
-Read
 Assessment
 How to Correct an AI-Checked Answer Copy Before Students See It
+Read
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+Read
+Assessment
+How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples
 Read
 
 ## See your own copies checked.
@@ -7899,7 +8716,7 @@ Book a demo See a real checked copy
 
 ---
 
-# How to Check 200 Answer Sheets Faster Without Losing Fairness | Evalezy
+# How to Check 200 Answer Sheets Faster, Fairly | Evalezy
 URL: https://evalezy.com/blog/how-to-check-answer-sheets-faster/
 
 - Home
@@ -8053,14 +8870,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
+Guides
+Try AI Copy Checking Free: What to Do in Your 3-Day Trial
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+Guides
+The Evalezy App: Scan and Check Answer Sheets From Your Phone
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+Guides
+How to Reduce Teachers' Workload With Automated Answer Sheet Checking
 Read
 
 ## See your own copies checked.
@@ -8071,7 +8888,7 @@ Book a demo See a real checked copy
 
 ---
 
-# AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask | Evalezy
+# AI Answer Sheet Evaluation: 12 Questions to Ask | Evalezy
 URL: https://evalezy.com/blog/ai-answer-sheet-evaluation-buyers-guide/
 
 - Home
@@ -8220,11 +9037,11 @@ See the sample
 AI checking
 Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
 Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
+AI checking
+Highlight Spelling and Grammar Errors on English Answer Sheets with AI
 Read
-Assessment
-How to Correct an AI-Checked Answer Copy Before Students See It
+AI checking
+How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes
 Read
 
 ## See your own copies checked.
@@ -8235,7 +9052,7 @@ Book a demo See a real checked copy
 
 ---
 
-# How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples | Evalezy
+# How to Write a Marking Scheme (With Examples) | Evalezy
 URL: https://evalezy.com/blog/how-to-write-a-marking-scheme/
 
 - Home
@@ -8410,14 +9227,14 @@ A real 7-page answer sheet, checked by Evalezy.
 See the sample
 
 ## Keep reading
-AI checking
-Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies
-Read
-Case studies
-Case Study: One Answer Page, Checked in Nine Different Pens
-Read
 Assessment
 How to Correct an AI-Checked Answer Copy Before Students See It
+Read
+Assessment
+Maths Step Marking: How to Award Partial Credit Fairly
+Read
+Assessment
+On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know
 Read
 
 ## See your own copies checked.

@@ -87,8 +87,8 @@ export default function Page() {
         <li><strong>Marks per question</strong> in the margin.</li>
       </ul>
       <figure className="my-6 space-y-2 rounded-2xl border border-line bg-white p-3">
-        <img src="/copy/crop-crosses.webp" alt="Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the margin" width={1400} height={357} loading="lazy" className="w-full rounded-lg border border-line" />
-        <img src="/copy/crop-long.webp" alt="A 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained" width={1400} height={434} loading="lazy" className="w-full rounded-lg border border-line" />
+        <img src="/copy/crop-crosses.webp" srcSet="/copy/crop-crosses-sm.webp 700w, /copy/crop-crosses.webp 1400w" sizes="(min-width: 768px) 720px, 92vw" alt="Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the margin" width={1400} height={357} loading="lazy" className="w-full rounded-lg border border-line" />
+        <img src="/copy/crop-long.webp" srcSet="/copy/crop-long-sm.webp 700w, /copy/crop-long.webp 1400w" sizes="(min-width: 768px) 720px, 92vw" alt="A 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained" width={1400} height={434} loading="lazy" className="w-full rounded-lg border border-line" />
         <figcaption className="px-1 text-sm text-slate-500">From the checked copy: crosses with the correct answer, and a 3-mark answer given 0.5/3 with the reason.</figcaption>
       </figure>
 

@@ -22,6 +22,61 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "check-answer-sheets-with-chatgpt-vs-ai-copy-checker",
+    title: "Checking Answer Sheets with ChatGPT or Gemini vs an AI Copy Checker: What Works",
+    seoTitle: "ChatGPT vs AI Copy Checker for Answer Sheets (2026)",
+    description: "Can ChatGPT or Gemini check handwritten answer sheets? A prompt for fairer marks, where chatbots break for a whole class, and how AI copy checkers differ.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 8,
+    keywords: ["check answer sheets with ChatGPT", "ChatGPT for grading handwritten answers", "Gemini answer sheet checking", "ChatGPT prompt for checking answer sheets", "AI copy checker vs ChatGPT", "can ChatGPT check answer sheets", "AI grading for teachers"],
+    pages: ["/compare/", "/compare/chatgpt/", "/copy-checking-software/", "/marking-scheme/"],
+  },
+  {
+    slug: "gradescope-alternatives-handwritten-answer-sheets",
+    title: "Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)",
+    seoTitle: "Gradescope Alternatives for Handwritten Exams (2026)",
+    description: "Gradescope groups answers so staff grade faster. Compare Evalezy, Crowdmark, Top Marks AI and EssayGrader on who marks, paper, checked copy and price.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 9,
+    keywords: ["Gradescope alternative", "Gradescope alternatives for schools", "Gradescope vs Evalezy", "Crowdmark vs Gradescope", "AI grading handwritten exams", "handwritten answer sheet grading software", "Gradescope India"],
+    pages: ["/compare/", "/compare/gradescope/", "/best-ai-copy-checking-software/", "/for/colleges-universities/"],
+  },
+  {
+    slug: "eklavvya-alternatives-ai-answer-sheet-evaluation",
+    title: "Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)",
+    seoTitle: "Eklavvya Alternatives for AI Answer Sheet Checking",
+    description: "Eklavvya alternatives compared from public sources: Evalezy, Acadine, CrazyGoldFish, Coempt and MeritTrac on teacher review, checked copy, languages and price.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 9,
+    keywords: ["Eklavvya alternative", "Eklavvya vs Evalezy", "Eklavvya OSM", "AI answer sheet evaluation India", "on-screen marking software India", "Coempt Onmark", "AI copy checking for schools"],
+    pages: ["/compare/", "/compare/eklavvya/", "/best-ai-copy-checking-software/", "/compare/on-screen-marking/"],
+  },
+  {
+    slug: "omr-vs-ai-answer-sheet-checking",
+    title: "OMR vs AI Answer Sheet Checking: Which Exams Need Which",
+    seoTitle: "OMR vs AI Answer Sheet Checking: Which to Use",
+    description: "OMR reads bubbles; AI checking reads handwritten answers with partial marks. What each can check, which exams need which, and how to run a mixed paper.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 8,
+    keywords: ["OMR vs AI checking", "OMR sheet checking software", "subjective answer checking software", "AI answer sheet checking", "OMR for subjective answers", "OMR checking app", "CBSE answer sheet checking"],
+    pages: ["/compare/", "/copy-checking-software/", "/for/schools/", "/for/coaching-institutes/"],
+  },
+  {
+    slug: "upsc-ai-answer-evaluation-apps-compared",
+    title: "UPSC AI Answer Evaluation Apps Compared: SuperKalam, AnswerWriting, PrepAiro, Likhit and More",
+    seoTitle: "UPSC AI Answer Evaluation Apps Compared (2026)",
+    description: "SuperKalam, AnswerWriting, PrepAiro, Likhit and CollectorBabu compared on price, criteria, Hindi and human review, and what test-series institutes need instead.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 9,
+    keywords: ["UPSC answer evaluation AI", "SuperKalam alternative", "AnswerWriting vs SuperKalam", "UPSC mains answer evaluation app", "AI answer writing evaluation UPSC", "Hindi medium UPSC answer evaluation", "UPSC test series answer checking"],
+    pages: ["/compare/", "/compare/answerwriting/", "/for/upsc-answer-writing/"],
+  },
+  {
     slug: "choose-pen-handwriting-ai-checked-copy",
     title: "Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies",
     seoTitle: "Choose the Handwriting and Ink on AI-Checked Copies",
@@ -57,7 +112,7 @@ export const POSTS: Post[] = [
   {
     slug: "grammar-spelling-highlight-english-answer-sheets",
     title: "Highlight Spelling and Grammar Errors on English Answer Sheets with AI",
-    seoTitle: "AI Spelling and Grammar Check on English Answer Sheets",
+    seoTitle: "AI Grammar Check for English Answer Sheets",
     description: "Evalezy underlines spelling and grammar errors on handwritten English copies with the correction, lists them in feedback and deducts no marks. How to set it up.",
     category: "AI checking",
     published: "2026-11-09",
@@ -80,9 +135,10 @@ export const POSTS: Post[] = [
     slug: "acadine-alternatives-ai-answer-sheet-checking",
     title: "Acadine Alternatives: AI Answer Sheet Checking Tools Compared (2026)",
     seoTitle: "Acadine Alternatives for AI Copy Checking (2026)",
-    description: "Looking for an Acadine alternative? A sourced comparison of Evalezy, Eklavvya, CrazyGoldFish and Smart Paper on teacher review, the checked copy, languages and price.",
+    description: "Looking for an Acadine alternative? Evalezy, Eklavvya, CrazyGoldFish and Smart Paper compared on teacher review, the checked copy, languages and price.",
     category: "Compare",
     published: "2026-10-29",
+    updated: "2026-11-14",
     readMins: 9,
     keywords: ["Acadine alternative", "Acadine AI", "Acadine vs Evalezy", "AI answer sheet checking software India", "AI copy checking for coaching institutes", "AI evaluation of handwritten answer sheets", "best AI copy checking software"],
     pages: ["/compare/", "/compare/acadine/", "/best-ai-copy-checking-software/", "/for/coaching-institutes/"],
@@ -112,8 +168,8 @@ export const POSTS: Post[] = [
   {
     slug: "evalezy-app-check-answer-sheets-on-phone",
     title: "The Evalezy App: Scan and Check Answer Sheets From Your Phone",
-    seoTitle: "How to Check Answer Sheets on Your Phone (Evalezy App)",
-    description: "The Evalezy app, now on iPhone: create the test from the paper, photograph each student's copy, run the AI check for the whole class and share the checked copies.",
+    seoTitle: "Check Answer Sheets on Your Phone: Evalezy App",
+    description: "The Evalezy app, now on iPhone: create the test from the paper, photograph each copy, run the AI check for the whole class and share the checked copies.",
     updated: "2026-11-09",
     category: "Guides",
     published: "2026-10-29",
@@ -124,7 +180,8 @@ export const POSTS: Post[] = [
   {
     slug: "ai-exam-evaluation-schools-coaching-institutes",
     title: "How AI Is Transforming Exam Evaluation in Schools and Coaching Institutes",
-    description: "Discover how AI exam evaluation software helps schools and coaching institutes streamline answer sheet checking, improve feedback, and reduce manual grading workloads.",
+    seoTitle: "AI Exam Evaluation for Schools & Coaching Institutes",
+    description: "How AI exam evaluation software helps schools and coaching institutes check answer sheets faster, give better feedback and cut manual grading.",
     category: "AI checking",
     published: "2026-10-26",
     readMins: 9,
@@ -145,7 +202,8 @@ export const POSTS: Post[] = [
   {
     slug: "best-ai-grading-software-for-teachers",
     title: "Best AI Grading Software for Teachers: Features, Benefits, and How to Choose",
-    description: "Looking for AI grading software for teachers? Compare essential features, evaluation workflows, and selection criteria to find the right solution for your institution.",
+    seoTitle: "Best AI Grading Software for Teachers: How to Choose",
+    description: "Looking for AI grading software for teachers? The features, evaluation workflows and selection criteria to compare before you choose.",
     category: "AI checking",
     published: "2026-10-26",
     readMins: 10,
@@ -155,6 +213,7 @@ export const POSTS: Post[] = [
   {
     slug: "reduce-teacher-workload-automated-answer-sheet-checking",
     title: "How to Reduce Teachers' Workload With Automated Answer Sheet Checking",
+    seoTitle: "Reduce Teacher Workload with Automated Checking",
     description: "Discover how automated answer sheet checking can help teachers manage exam workloads, streamline grading, and provide timely feedback to students.",
     category: "Guides",
     published: "2026-10-26",
@@ -165,6 +224,7 @@ export const POSTS: Post[] = [
   {
     slug: "maths-step-marking-partial-credit",
     title: "Maths Step Marking: How to Award Partial Credit Fairly",
+    seoTitle: "Maths Step Marking: Awarding Partial Credit Fairly",
     description: "A practical maths step-marking guide with a worked 4-mark example, follow-through rules, alternative methods and checks for AI-read handwritten answers.",
     category: "Assessment",
     published: "2026-10-10",
@@ -175,6 +235,7 @@ export const POSTS: Post[] = [
   {
     slug: "answer-sheet-moderation-checklist",
     title: "Answer Sheet Moderation: A Checklist Before Releasing Results",
+    seoTitle: "Answer Sheet Moderation Checklist Before Results",
     description: "Use this answer sheet moderation checklist to compare markers, record disagreements, check totals and review AI draft marks before releasing exam results.",
     category: "Guides",
     published: "2026-10-10",
@@ -185,6 +246,7 @@ export const POSTS: Post[] = [
   {
     slug: "feedback-on-student-answer-sheets",
     title: "Feedback on Student Answer Sheets: Examples That Guide Revision",
+    seoTitle: "Feedback on Student Answer Sheets: Examples",
     description: "Write useful feedback on student answer sheets with subject-specific comment examples, a simple response routine and a checklist for reviewing AI comments.",
     category: "Guides",
     published: "2026-10-10",
@@ -195,6 +257,7 @@ export const POSTS: Post[] = [
   {
     slug: "upsc-answer-writing-evaluation-at-scale",
     title: "UPSC Mains Answer Writing Evaluation at Scale (and Where AI Helps)",
+    seoTitle: "UPSC Mains Answer Evaluation at Scale",
     description: "How to run UPSC Mains answer writing evaluation at scale: a GS rubric, mentor workflow, daily cadence, and where an AI first evaluation helps or mentors judge.",
     category: "Guides",
     published: "2026-10-01",
@@ -205,6 +268,7 @@ export const POSTS: Post[] = [
   {
     slug: "handwritten-answer-grading-api",
     title: "Handwritten Answer Grading API: OCR, Vision Models, Build vs Buy",
+    seoTitle: "Handwritten Answer Grading API: Build vs Buy",
     description: "Why OCR fails on student handwriting, what a production grading pipeline needs, build vs buy, and how the Evalezy API grades uploaded PDF answer sheets.",
     category: "For developers",
     published: "2026-10-01",
@@ -216,6 +280,7 @@ export const POSTS: Post[] = [
   {
     slug: "scan-answer-sheets-with-phone",
     title: "How to Scan Answer Sheets With a Phone: A Practical Guide for Schools",
+    seoTitle: "How to Scan Answer Sheets With a Phone",
     description: "Scan answer sheets with a phone: which apps make PDFs, light and framing, spiral notebooks, one PDF per student, file names and a pre-upload checklist.",
     category: "Guides",
     published: "2026-10-01",
@@ -226,6 +291,7 @@ export const POSTS: Post[] = [
   {
     slug: "on-screen-marking-vs-ai-evaluation",
     title: "On-Screen Marking (OSM) vs AI Evaluation: What Exam Bodies Should Know",
+    seoTitle: "On-Screen Marking (OSM) vs AI Evaluation",
     description: "How on-screen marking works, how CBSE and universities in India use it, what it does not fix, and how an AI first evaluation with human review fits in.",
     category: "Assessment",
     published: "2026-10-01",
@@ -236,6 +302,7 @@ export const POSTS: Post[] = [
   {
     slug: "how-to-check-answer-sheets-faster",
     title: "How to Check 200 Answer Sheets Faster Without Losing Fairness",
+    seoTitle: "How to Check 200 Answer Sheets Faster, Fairly",
     description: "Practical copy checking tips for teachers: mark question by question, fix the scheme first, work in passes, moderate a sample and use feedback codes.",
     category: "Guides",
     published: "2026-10-01",
@@ -246,6 +313,7 @@ export const POSTS: Post[] = [
   {
     slug: "ai-answer-sheet-evaluation-buyers-guide",
     title: "AI Answer Sheet Evaluation: How It Works and 12 Questions to Ask",
+    seoTitle: "AI Answer Sheet Evaluation: 12 Questions to Ask",
     description: "How AI answer sheet evaluation reads handwriting and marks against a scheme, plus 12 questions to ask any AI copy checking vendor before you buy.",
     category: "AI checking",
     published: "2026-10-01",
@@ -256,6 +324,7 @@ export const POSTS: Post[] = [
   {
     slug: "how-to-write-a-marking-scheme",
     title: "How to Write a Marking Scheme (Rubric): 2, 3 and 5-Mark Examples",
+    seoTitle: "How to Write a Marking Scheme (With Examples)",
     description: "How to write a marking scheme for subjective answers: rules for criteria and half marks, with worked 2, 3 and 5-mark examples in the CBSE value-point style.",
     category: "Assessment",
     published: "2026-10-01",

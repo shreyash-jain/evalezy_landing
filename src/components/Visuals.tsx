@@ -23,7 +23,7 @@ export function CheckedCopyStack() {
       <div className="relative ml-[7%] aspect-[3/4] w-[78%] overflow-hidden rounded-md bg-white shadow-paper">
         <img
           src="/copy/page-1.webp"
-          srcSet="/copy/page-1-sm.webp 560w, /copy/page-1.webp 1200w"
+          srcSet="/copy/page-1-sm.webp 560w, /copy/page-1-md.webp 800w, /copy/page-1.webp 1200w"
           sizes="(min-width: 1024px) 420px, 78vw"
           alt="Page one of a Class IX Social Science answer copy checked by Evalezy: red ticks on correct answers, crosses with the correct answer written beside wrong ones, marks per question in the margin and the total 38/80 circled at the top"
           className="h-full w-full object-cover"
@@ -35,7 +35,7 @@ export function CheckedCopyStack() {
 
       {/* chip: matched student */}
       <div className="absolute -left-1 top-[18%] w-[14.5rem] animate-float rounded-2xl border border-line bg-white/95 p-3 shadow-paper backdrop-blur sm:-left-8">
-        <p className="text-[0.68rem] font-bold uppercase tracking-wider text-slate-400">Read from the sheet</p>
+        <p className="text-[0.68rem] font-bold uppercase tracking-wider text-slate-500">Read from the sheet</p>
         <div className="mt-1.5 flex items-center gap-2.5">
           <span className="grid h-8 w-8 place-items-center rounded-full bg-biro-50 text-biro"><UserRound className="h-4 w-4" /></span>
           <div className="min-w-0 text-sm">
@@ -85,7 +85,7 @@ export function ScoreTableVsCopy() {
   return (
     <div className="grid gap-5 md:grid-cols-[0.85fr_1.15fr] md:items-stretch">
       <figure className="flex flex-col rounded-2xl border border-line bg-white p-5">
-        <figcaption className="text-xs font-bold uppercase tracking-wider text-slate-400">What most AI graders return</figcaption>
+        <figcaption className="text-xs font-bold uppercase tracking-wider text-slate-500">What most AI graders return</figcaption>
         <table className="mt-4 w-full text-sm">
           <thead>
             <tr className="border-b border-line text-left text-slate-500">
@@ -111,8 +111,8 @@ export function ScoreTableVsCopy() {
           What Evalezy returns <span className="hand text-base normal-case tracking-normal text-pen">the copy itself</span>
         </figcaption>
         <div className="mt-3 space-y-2 px-3 pb-3">
-          <img src="/copy/crop-crosses.webp" alt="Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the margin" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={357} />
-          <img src="/copy/crop-long.webp" alt="A 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={434} />
+          <img src="/copy/crop-crosses.webp" srcSet="/copy/crop-crosses-sm.webp 700w, /copy/crop-crosses.webp 1400w" sizes="(min-width: 1024px) 560px, 90vw" alt="Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the margin" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={357} />
+          <img src="/copy/crop-long.webp" srcSet="/copy/crop-long-sm.webp 700w, /copy/crop-long.webp 1400w" sizes="(min-width: 1024px) 560px, 90vw" alt="A 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={434} />
         </div>
       </figure>
     </div>
@@ -162,7 +162,7 @@ export function BulkCheckPanel({ compact = false }: { compact?: boolean }) {
       <div className="mt-2 overflow-x-auto px-5 pb-5">
         <table className="w-full min-w-[34rem] text-left text-[0.8rem]">
           <thead>
-            <tr className="border-b border-line text-[0.68rem] uppercase tracking-wider text-slate-400">
+            <tr className="border-b border-line text-[0.68rem] uppercase tracking-wider text-slate-500">
               <th className="py-2.5 font-bold">File</th>
               <th className="py-2.5 font-bold">Read from the sheet</th>
               <th className="py-2.5 font-bold">Status</th>
@@ -173,9 +173,9 @@ export function BulkCheckPanel({ compact = false }: { compact?: boolean }) {
               <tr key={r.file} className={`border-b border-line/70 last:border-0 ${r.state === "nomatch" || r.state === "ambiguous" ? "bg-warn-50/50" : ""}`}>
                 <td className="py-2.5 pr-3">
                   <p className="flex items-center gap-1.5 whitespace-nowrap font-semibold text-ink"><FileText className="h-3.5 w-3.5 shrink-0 text-slate-400" /> {r.file}</p>
-                  <p className="text-slate-400">{r.pages} pages</p>
+                  <p className="text-slate-500">{r.pages} pages</p>
                 </td>
-                <td className={`py-2.5 pr-3 ${r.state === "nomatch" ? "text-slate-400" : "text-slate-600"}`}>
+                <td className={`py-2.5 pr-3 ${r.state === "nomatch" ? "text-slate-500" : "text-slate-600"}`}>
                   {r.read}
                   {r.state === "ambiguous" && <p className="text-warn">Two students match</p>}
                 </td>
@@ -279,7 +279,7 @@ export function RubricCard() {
         <span className="font-mono font-semibold text-ink">3 / 3</span>
       </div>
       <div className="border-t border-line px-5 py-3 text-sm">
-        <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Model answer (optional)</p>
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Model answer (optional)</p>
         <p className="mt-1 text-slate-600">Latitude, altitude, pressure and wind system, distance from the sea, ocean currents and relief features…</p>
       </div>
       <div className="flex items-center gap-2 border-t border-line px-5 py-3 text-xs text-slate-500">
@@ -302,7 +302,7 @@ export function ReviewPanel() {
           <p className="text-slate-500">Social Science · Half-Yearly Mock 4</p>
         </div>
         <div className="text-right">
-          <p className="h-card text-2xl text-ink">38.5<span className="text-base text-slate-400">/80</span></p>
+          <p className="h-card text-2xl text-ink">38.5<span className="text-base text-slate-500">/80</span></p>
           <p className="text-xs text-slate-500">38 of 38 questions</p>
         </div>
       </div>
@@ -312,9 +312,9 @@ export function ReviewPanel() {
             <p className="text-sm font-semibold text-ink">Q30 · Factors affecting climate</p>
             <span className="rounded-full bg-paper-2 px-2.5 py-0.5 font-mono text-xs font-semibold text-ink">0.5 / 3</span>
           </div>
-          <p className="mt-3 text-[0.7rem] font-bold uppercase tracking-wider text-slate-400">Student&apos;s answer, as read</p>
+          <p className="mt-3 text-[0.7rem] font-bold uppercase tracking-wider text-slate-500">Student&apos;s answer, as read</p>
           <p className="mt-1 hand text-[1.02rem] font-normal leading-snug text-biro">1. Temperature 2. Humidity 3. Precipitation 4. Atmospheric Pressure 5. Wind</p>
-          <p className="mt-3 text-[0.7rem] font-bold uppercase tracking-wider text-slate-400">Feedback</p>
+          <p className="mt-3 text-[0.7rem] font-bold uppercase tracking-wider text-slate-500">Feedback</p>
           <p className="mt-1 text-sm text-slate-700">Only weather elements listed; no factors of climate explained.</p>
           <div className="mt-3 flex gap-2">
             <span className="btn btn-outline !px-3 !py-1.5 text-xs"><Pencil className="h-3 w-3" /> Edit marks</span>
@@ -362,7 +362,7 @@ export function PaperImport() {
             <div key={i} className="h-1.5 rounded-full bg-slate-300/70" style={{ width: `${w}%` }} />
           ))}
         </div>
-        <p className="mt-4 text-[0.6rem] font-bold uppercase tracking-wider text-slate-400">question-paper.pdf</p>
+        <p className="mt-4 text-[0.6rem] font-bold uppercase tracking-wider text-slate-500">question-paper.pdf</p>
       </figure>
       <div className="flex justify-center text-pen sm:block">
         <svg viewBox="0 0 60 24" className="h-6 w-14 rotate-90 sm:rotate-0" aria-hidden>
@@ -379,7 +379,7 @@ export function PaperImport() {
           {qs.map((q) => (
             <li key={q.n} className="flex items-center justify-between gap-3 px-4 py-2.5">
               <span className="flex items-center gap-3">
-                <span className="w-12 shrink-0 font-mono text-xs text-slate-400">Q{q.n}</span>
+                <span className="w-12 shrink-0 font-mono text-xs text-slate-500">Q{q.n}</span>
                 <span className="text-slate-700">{q.t}</span>
               </span>
               <span className="shrink-0 font-mono text-xs font-semibold text-ink">{q.m}</span>
@@ -406,7 +406,7 @@ export function TypedAnswerMock() {
         <div className="rounded-xl border border-line bg-paper p-4 text-sm leading-relaxed text-slate-700">
           <p>Respected Ma&apos;am,</p>
           <p className="mt-2">I am writing to request permission to start a science club in our school. Many students in Class IX are interested in experiments beyond the syllabus…</p>
-          <p className="mt-2 text-xs text-slate-400">138 words</p>
+          <p className="mt-2 text-xs text-slate-500">138 words</p>
         </div>
         <div className="mt-4 grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
           {[["Format", "1 / 1"], ["Content", "1.5 / 2"], ["Organisation", "1 / 1"], ["Language", "0.5 / 1"]].map(([k, v]) => (

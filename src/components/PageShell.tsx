@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Faq } from "@/content/types";
-import { findPage, SITE, bookHref } from "@/lib/site";
+import { findPage, OG_IMAGES, SITE, bookHref } from "@/lib/site";
 import { POSTS, postPath } from "@/content/posts";
 import { Breadcrumbs, CtaBand, FaqList } from "./ui";
 import { JsonLd } from "./JsonLd";
@@ -16,8 +16,8 @@ export function pageMetadata(path: string): Metadata {
     title: p.title,
     description: p.description,
     alternates: { canonical: url },
-    openGraph: { url, title: p.title, description: p.description },
-    twitter: { title: p.title, description: p.description },
+    openGraph: { url, title: p.title, description: p.description, images: OG_IMAGES },
+    twitter: { card: "summary_large_image", title: p.title, description: p.description, images: ["/og.png"] },
   };
 }
 

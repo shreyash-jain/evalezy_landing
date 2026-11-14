@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Cross } from "@/components/Pen";
+
+/** A missing page must not be indexed or point its canonical at the homepage. */
+export const metadata: Metadata = {
+  title: "Page not found",
+  description: "This page could not be found on evalezy.com.",
+  robots: { index: false, follow: true },
+  alternates: { canonical: null },
+};
 
 export default function NotFound() {
   return (

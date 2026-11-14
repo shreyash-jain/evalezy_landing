@@ -81,6 +81,8 @@ export function CopyAnatomy() {
         <div className="relative overflow-hidden rounded-lg bg-white shadow-paper">
           <img
             src="/copy/page-1.webp"
+            srcSet="/copy/page-1-sm.webp 560w, /copy/page-1-md.webp 800w, /copy/page-1.webp 1200w"
+            sizes="(min-width: 1024px) 512px, 92vw"
             alt="Page one of the sample answer copy checked by Evalezy"
             className="block h-auto w-full"
             loading="lazy"
