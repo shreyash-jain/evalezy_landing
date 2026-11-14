@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageShell, pageMetadata } from "@/components/PageShell";
 import { POSTS, postPath } from "@/content/posts";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE } from "@/lib/site";
 
 const PATH = "/blog/";
 export const metadata = pageMetadata(PATH);
@@ -16,6 +18,23 @@ export default function Page() {
       lede="Practical writing for teachers, exam heads and edtech builders on checking answer sheets, marking schemes, scanning and using AI without losing control."
       secondary={null}
     >
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "@id": `${SITE}${PATH}#blog`,
+          name: "The Evalezy Blog",
+          url: `${SITE}${PATH}`,
+          publisher: { "@id": `${SITE}/#org` },
+          blogPost: posts.map((p) => ({
+            "@type": "BlogPosting",
+            headline: p.title,
+            url: `${SITE}${postPath(p.slug)}`,
+            datePublished: p.published,
+            dateModified: p.updated ?? p.published,
+          })),
+        }}
+      />
       <section className="wrap py-16 md:py-20">
         {posts.length === 0 ? (
           <p className="text-slate-600">First posts coming soon.</p>
