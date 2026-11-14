@@ -44,6 +44,17 @@ export const POSTS: Post[] = [
     pages: ["/compare/", "/compare/gradescope/", "/best-ai-copy-checking-software/", "/for/colleges-universities/"],
   },
   {
+    slug: "eklavvya-alternatives-ai-answer-sheet-evaluation",
+    title: "Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)",
+    seoTitle: "Eklavvya Alternatives for AI Answer Sheet Checking",
+    description: "Eklavvya alternatives compared from public sources: Evalezy, Acadine, CrazyGoldFish, Coempt and MeritTrac on teacher review, checked copy, languages and price.",
+    category: "Compare",
+    published: "2026-11-14",
+    readMins: 9,
+    keywords: ["Eklavvya alternative", "Eklavvya vs Evalezy", "Eklavvya OSM", "AI answer sheet evaluation India", "on-screen marking software India", "Coempt Onmark", "AI copy checking for schools"],
+    pages: ["/compare/", "/compare/eklavvya/", "/best-ai-copy-checking-software/", "/compare/on-screen-marking/"],
+  },
+  {
     slug: "choose-pen-handwriting-ai-checked-copy",
     title: "Choose the Pen Before Checking: Handwriting, Ink and Darkness on AI-Checked Copies",
     seoTitle: "Choose the Handwriting and Ink on AI-Checked Copies",
