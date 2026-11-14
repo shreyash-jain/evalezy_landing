@@ -278,12 +278,12 @@ export default function Home() {
             <div className="mt-6 grid max-w-md grid-cols-2 gap-3">
               <div className="rounded-2xl bg-[#eef7f0] p-4">
                 <p className="text-xs font-bold uppercase tracking-wider text-[#1f7a35]">Teacher</p>
-                <p className="h-card mt-1 text-3xl text-ink">{COPY.teacherTotal}<span className="text-lg text-slate-400">/{COPY.marks}</span></p>
+                <p className="h-card mt-1 text-3xl text-ink">{COPY.teacherTotal}<span className="text-lg text-slate-600">/{COPY.marks}</span></p>
                 <p className="text-sm text-slate-600">{COPY.teacherNotes} written notes</p>
               </div>
               <div className="rounded-2xl bg-pen-50 p-4">
                 <p className="text-xs font-bold uppercase tracking-wider text-pen-700">Evalezy</p>
-                <p className="h-card mt-1 text-3xl text-ink">{COPY.evalezyTotal}<span className="text-lg text-slate-400">/{COPY.marks}</span></p>
+                <p className="h-card mt-1 text-3xl text-ink">{COPY.evalezyTotal}<span className="text-lg text-slate-600">/{COPY.marks}</span></p>
                 <p className="text-sm text-slate-600">{COPY.evalezyNotes} written notes</p>
               </div>
             </div>

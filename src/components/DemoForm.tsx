@@ -128,7 +128,7 @@ export function DemoForm({ origin, defaultInterest = "dashboard", compact = fals
         </label>
       </div>
       <label className="block">
-        <span className={label}>Anything we should know? <span className="font-normal text-slate-400">(optional)</span></span>
+        <span className={label}>Anything we should know? <span className="font-normal text-slate-500">(optional)</span></span>
         <textarea name="message" rows={compact ? 2 : 3} className={`${input} mt-1.5`} placeholder="Subjects, board, class sizes, when your next exam is…" />
       </label>
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
