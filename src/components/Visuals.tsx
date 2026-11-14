@@ -23,7 +23,7 @@ export function CheckedCopyStack() {
       <div className="relative ml-[7%] aspect-[3/4] w-[78%] overflow-hidden rounded-md bg-white shadow-paper">
         <img
           src="/copy/page-1.webp"
-          srcSet="/copy/page-1-sm.webp 560w, /copy/page-1.webp 1200w"
+          srcSet="/copy/page-1-sm.webp 560w, /copy/page-1-md.webp 800w, /copy/page-1.webp 1200w"
           sizes="(min-width: 1024px) 420px, 78vw"
           alt="Page one of a Class IX Social Science answer copy checked by Evalezy: red ticks on correct answers, crosses with the correct answer written beside wrong ones, marks per question in the margin and the total 38/80 circled at the top"
           className="h-full w-full object-cover"
@@ -111,8 +111,8 @@ export function ScoreTableVsCopy() {
           What Evalezy returns <span className="hand text-base normal-case tracking-normal text-pen">the copy itself</span>
         </figcaption>
         <div className="mt-3 space-y-2 px-3 pb-3">
-          <img src="/copy/crop-crosses.webp" alt="Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the margin" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={357} />
-          <img src="/copy/crop-long.webp" alt="A 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={434} />
+          <img src="/copy/crop-crosses.webp" srcSet="/copy/crop-crosses-sm.webp 700w, /copy/crop-crosses.webp 1400w" sizes="(min-width: 1024px) 560px, 90vw" alt="Three answers marked wrong in red pen, each with the correct answer written beside it: latitude, lowest, Indus, and 0/1 in the margin" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={357} />
+          <img src="/copy/crop-long.webp" srcSet="/copy/crop-long-sm.webp 700w, /copy/crop-long.webp 1400w" sizes="(min-width: 1024px) 560px, 90vw" alt="A 3-mark answer listing weather elements, marked 0.5/3 with the note: Only weather elements listed; no factors of climate explained" className="w-full rounded-lg border border-line" loading="lazy" width={1400} height={434} />
         </div>
       </figure>
     </div>
