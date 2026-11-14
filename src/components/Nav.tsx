@@ -7,7 +7,7 @@ import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { Icon } from "./ui";
 import { AUDIENCE_NAV, COMPARE_NAV, DEV_NAV, PRODUCT_NAV, RESOURCE_NAV } from "@/lib/nav";
-import { DOCS_URL, LOGIN_URL, bookHref, signupHref } from "@/lib/site";
+import { DOCS_URL, LOGIN_URL, bookHref, demoHref, signupHref } from "@/lib/site";
 import { useTrialOffer } from "./useTrialOffer";
 
 type MenuKey = "product" | "solutions" | "resources" | null;
@@ -33,7 +33,7 @@ export function Nav() {
     document.body.style.overflow = mobile ? "hidden" : "";
   }, [mobile]);
 
-  const link = "rounded-full px-3 py-2 text-[0.93rem] font-semibold text-slate-700 transition hover:text-ink";
+  const link = "whitespace-nowrap rounded-full px-3 py-2 text-[0.93rem] font-semibold text-slate-700 transition hover:text-ink";
 
   const Trigger = ({ k, label }: { k: Exclude<MenuKey, null>; label: string }) => (
     <button
@@ -65,7 +65,7 @@ export function Nav() {
           </a>
         </div>
 
-        <nav aria-label="Main" className="hidden items-center gap-0.5 lg:flex">
+        <nav aria-label="Main" className="hidden items-center gap-0.5 xl:flex">
           <Trigger k="product" label="Product" />
           <Trigger k="solutions" label="Who it's for" />
           <Link href="/pricing/" className={link} onMouseEnter={() => setOpen(null)}>Pricing</Link>
@@ -74,17 +74,18 @@ export function Nav() {
           <Trigger k="resources" label="Resources" />
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-2 xl:flex">
           <a href={LOGIN_URL} className={link} rel="nofollow">Log in</a>
-          <Link href={bookHref()} className={link} data-track="book_demo">Book a demo</Link>
-          <a href={signupHref()} className="btn btn-pen !py-2.5" rel="nofollow" data-track="cta_trial_click">
+          <Link href={bookHref()} className={`${link} hidden 2xl:inline-flex`} data-track="book_demo">Book a demo</Link>
+          <a href={demoHref("nav")} className="btn btn-outline whitespace-nowrap !py-2.5" rel="nofollow" data-track="cta_demo_click">Try instant demo</a>
+          <a href={signupHref()} className="btn btn-pen whitespace-nowrap !py-2.5" rel="nofollow" data-track="cta_trial_click">
             Start {trial.days}-day trial
           </a>
         </div>
 
         <button
           type="button"
-          className="grid h-10 w-10 place-items-center rounded-full text-ink lg:hidden"
+          className="grid h-10 w-10 place-items-center rounded-full text-ink xl:hidden"
           aria-label={mobile ? "Close menu" : "Open menu"}
           aria-expanded={mobile}
           onClick={() => setMobile((m) => !m)}
@@ -95,7 +96,7 @@ export function Nav() {
 
       {/* Desktop mega menus */}
       {open && (
-        <div className="absolute inset-x-0 top-full hidden border-b border-line bg-white shadow-[0_30px_60px_-30px_rgba(15,26,58,0.35)] lg:block">
+        <div className="absolute inset-x-0 top-full hidden border-b border-line bg-white shadow-[0_30px_60px_-30px_rgba(15,26,58,0.35)] xl:block">
           <div className="wrap py-8">
             {open === "product" && (
               <div className="grid grid-cols-[1fr_1fr_19rem] gap-8">
@@ -166,7 +167,7 @@ export function Nav() {
 
       {/* Mobile drawer */}
       {mobile && (
-        <div className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-paper lg:hidden">
+        <div className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-paper xl:hidden">
           <div className="wrap space-y-6 py-6">
             <MobileGroup title="Product" open items={PRODUCT_NAV.map((p) => ({ href: p.href, label: p.label }))} />
             <MobileGroup title="Who it's for" items={AUDIENCE_NAV.map((a) => ({ href: `/for/${a.slug}/`, label: a.label }))} />
@@ -176,6 +177,7 @@ export function Nav() {
             />
             <div className="grid gap-3 pb-8">
               <a href={signupHref()} className="btn btn-pen btn-lg w-full" rel="nofollow" data-track="cta_trial_click">Start {trial.days}-day trial</a>
+              <a href={demoHref("nav")} className="btn btn-outline btn-lg w-full" rel="nofollow" data-track="cta_demo_click">Try instant demo</a>
               <Link href={bookHref()} className="btn btn-outline btn-lg w-full" data-track="book_demo">Book a demo</Link>
               <a href={LOGIN_URL} className="btn btn-outline btn-lg w-full" rel="nofollow">Log in</a>
             </div>
