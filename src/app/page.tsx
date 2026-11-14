@@ -60,20 +60,20 @@ export default function Home() {
         <div className="wrap relative grid gap-12 pb-16 pt-10 md:pt-16 lg:grid-cols-[1.08fr_1fr] lg:items-center lg:gap-8 lg:pb-24">
           <div>
             <div>
-            <Link href="/app/" className="inline-flex animate-rise items-center gap-2 rounded-full border border-pen/30 bg-white px-3 py-1 text-sm font-semibold text-pen-700 hover:border-pen">
+            <Link href="/app/" className="inline-flex animate-lift items-center gap-2 rounded-full border border-pen/30 bg-white px-3 py-1 text-sm font-semibold text-pen-700 hover:border-pen">
               <span className="rounded-full bg-pen px-2 py-0.5 text-[0.7rem] font-bold uppercase tracking-wide text-white">New</span>
               The Evalezy app is now on iPhone <ArrowRight className="h-3.5 w-3.5" />
             </Link>
             </div>
-            <p className="eyebrow mt-6 animate-rise">AI copy checking software</p>
-            <h1 className="h-display mt-4 animate-rise text-[2.7rem] text-ink [animation-delay:80ms] sm:text-6xl lg:text-[4.3rem]">
+            <p className="eyebrow mt-6 animate-lift">AI copy checking software</p>
+            <h1 className="h-display mt-4 animate-lift text-[2.7rem] text-ink [animation-delay:80ms] sm:text-6xl lg:text-[4.3rem]">
               Handwritten copies, checked by AI in a <PenUnderline>teacher&apos;s red pen.</PenUnderline>
             </h1>
-            <p className="mt-6 max-w-xl animate-rise text-lg leading-relaxed text-slate-600 [animation-delay:160ms] md:text-xl">
+            <p className="mt-6 max-w-xl animate-lift text-lg leading-relaxed text-slate-600 [animation-delay:160ms] md:text-xl">
               Upload a whole class&apos;s scanned answer sheets at once. Evalezy reads every student&apos;s name, marks each answer against
               one marking scheme, and hands back the student&apos;s own copy with ticks, crosses, notes and the total circled. You review and release.
             </p>
-            <div className="mt-8 flex animate-rise flex-col gap-3 [animation-delay:240ms] sm:flex-row">
+            <div className="mt-8 flex animate-lift flex-col gap-3 [animation-delay:240ms] sm:flex-row">
               <Link href={bookHref()} className="btn btn-pen btn-lg" data-track="book_demo">
                 Book a demo <ArrowRight className="h-4 w-4" />
               </Link>
