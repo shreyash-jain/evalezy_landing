@@ -189,7 +189,7 @@ export function Table({ head, rows, caption }: { head: string[]; rows: (string |
       <table className="!m-0 min-w-[36rem]">
         {caption && <caption className="px-4 pt-3 text-left text-sm text-slate-500">{caption}</caption>}
         <thead>
-          <tr>{head.map((h, i) => <th key={i}>{h}</th>)}</tr>
+          <tr>{head.map((h, i) => <th key={i} scope="col">{h}</th>)}</tr>
         </thead>
         <tbody>
           {rows.map((r, i) => (
