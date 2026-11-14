@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { PageShell } from "@/components/PageShell";
 import { COMPARISONS, VENDOR_COMPARISONS, findComparison } from "@/content/comparisons";
 import { BEST_PATH } from "@/content/bestTools";
-import { SITE } from "@/lib/site";
+import { OG_IMAGES, SITE } from "@/lib/site";
 import { TickList } from "@/components/Pen";
 import { ScoreTableVsCopy } from "@/components/Visuals";
 
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const c = findComparison(slug);
   if (!c) return {};
   const url = `${SITE}/compare/${c.slug}/`;
-  return { title: c.title, description: c.description, alternates: { canonical: url }, openGraph: { url, title: c.title, description: c.description }, twitter: { title: c.title, description: c.description } };
+  return { title: c.title, description: c.description, alternates: { canonical: url }, openGraph: { url, title: c.title, description: c.description, images: OG_IMAGES }, twitter: { card: "summary_large_image", title: c.title, description: c.description, images: ["/og.png"] } };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

@@ -7,6 +7,8 @@ import trialOffer from "@/content/trialOffer.json";
  */
 export const SITE = "https://evalezy.com";
 export const SITE_NAME = "Evalezy";
+/** Social card image for every page (a page-level openGraph replaces the layout's, so pass this explicitly). */
+export const OG_IMAGES = [{ url: "/og.png", width: 1200, height: 630, alt: "An answer sheet checked by Evalezy, with ticks, crosses and the total circled" }];
 export const COMPANY = "Vidyayatan Technologies LLP";
 export const TAGLINE = "AI answer-sheet checking that looks like a teacher's red pen.";
 
