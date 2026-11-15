@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-11-14 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-11-15 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -14,7 +14,7 @@ AI copy checking software
 # Handwritten copies, checked by AI in a teacher's red pen.
 Upload a whole class's scanned answer sheets at once. Evalezy reads every student's name, marks each answer against one marking scheme, and hands back the student's own copy with ticks, crosses, notes and the total circled. You review and release.
 Book a demo See a real checked copy
-Free trial50 pages
+Or try an instant demo: just your name, email and phone ▶ Watch the 2-minute video tutorial Free trial50 pages
 One upload200 copies
 Failed checksFree
 
@@ -538,7 +538,7 @@ Book a demo See a real checked copy
 Your part
 
 ## Set up once per paper
-
+▶ Prefer video? Watch each step in a short tutorial
 - 1. Create the assessment and upload the question paper
 The paper is read into questions with their marks, sections and printed numbers. Edit anything that needs it.
 More
@@ -1598,6 +1598,7 @@ Try Evalezy before you pay
 - Checked copies, reports and result emails
 - Credits are for the 3 days of the trial
 Start free trial Your work stays if you buy a plan later.
+Or open an instant demo: just name, email and phone
 
 ## Starter
 
@@ -2034,6 +2035,142 @@ Compare
 Gradescope Alternatives for Handwritten Answer Sheets: 4 Tools Compared (2026)
 Compare
 Eklavvya Alternatives: AI Answer Sheet Evaluation and On-Screen Marking Tools Compared (2026)
+
+## See your own copies checked.
+Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
+
+Book a demo See a real checked copy
+
+
+---
+
+# Evalezy Video Tutorials: Step-by-Step How-To Guide | Evalezy
+URL: https://evalezy.com/tutorials/
+
+- Home
+- / Video tutorials
+Video tutorials
+
+# Learn Evalezy in two minutes.
+Short videos with voice and captions for every step: sign up, create a test from the question paper, add the copies, check them with AI and download the checked copies. The same steps work on the website and in the iPhone app.
+Book a demo Start free trial
+
+The full flow
+
+## How to use Evalezy, start to finish
+
+- 1. Sign up at evalezy.com with your email and start the free trial.
+- 2. Tap New, type the test name and total marks, and add the question paper.
+- 3. The AI reads every question, its marks and the checking criteria. Edit anything.
+- 4. Scan the answer copies with your camera, or upload PDFs.
+- 5. Tap Check. The AI checks every copy and reads each student's name.
+- 6. Download all the checked copies as one ZIP.
+- 7. Set your pen, handwriting, comments and spelling check in Evaluation settings.
+
+Step by step
+
+## One short video for each step
+1. Sign up and start your free trial 2. Create a test from the question paper 3. Edit marks and checking criteria 4. Upload answer copies 5. Scan copies with your phone camera 6. Start the AI check and see the results 7. Download the checked copies 8. Change the pen colour and handwriting 9. Comments, instructions and spelling check
+Step 1
+
+### Sign up and start your free trial
+1:06 · Create your account in a minute. No card needed.
+
+- On evalezy.com, tap Start free trial.
+- Enter your work email and tap Email me a code.
+- Type the 6-digit code from your inbox and tap Verify email.
+- Add your name, phone and a password, then your institute, its type, how many teachers, city and state.
+- Tap Start trial. You land in the app with free AI credits (1 credit checks 1 page).
+
+Step 2
+
+### Create a test from the question paper
+0:49 · Upload the question paper once; the AI reads the questions and marks.
+
+- On the home screen, tap New.
+- Type the test name and the paper's total marks.
+- Take photos of the paper, or tap Upload PDF or photos (page 1 first).
+- Check the page order and tap Use this page. The credits for reading the paper are shown first.
+- Tap Create & read the paper. The questions are ready in a few minutes.
+
+Step 3
+
+### Edit marks and checking criteria
+0:55 · Tell the AI exactly what to look for in each answer.
+
+- Open your test and tap Question paper.
+- Each question shows its marks and its evaluation criteria.
+- To change a question's marks, tap Edit marks, type the marks and Save.
+- To change the criteria, tap Edit under Evaluation criteria.
+- Add or edit a point: its name, what to look for, and its marks. Tap Save criteria.
+
+Step 4
+
+### Upload answer copies
+0:48 · PDFs or photos from your phone or computer.
+
+- Open your test and scroll to Add copies.
+- Tap Upload files. Each PDF is one copy; photos picked together make one copy.
+- Remove a copy with the bin icon. Pages and credits are shown before you start.
+- Open Checking settings and add the subject and class / board.
+- Tap Check copies.
+
+Step 5
+
+### Scan copies with your phone camera
+0:44 · No scanner needed.
+
+- Open your test and tap Scan with camera.
+- Hold the page flat, fill the frame and tap the round button.
+- More pages in the same copy? Take another photo.
+- Tap Next student, then scan the next copy.
+- After the last copy, tap Done. Each copy is saved as a PDF.
+
+Step 6
+
+### Start the AI check and see the results
+0:39 · Watch every copy get checked, then open each result.
+
+- With your copies ready, tap Check copies.
+- The AI reads the handwriting, checks every answer against your criteria and gives marks.
+- Each student's name and roll number are read from the copy.
+- Tap Open or AI report for a student, or AI class report for the whole class.
+
+Step 7
+
+### Download the checked copies
+0:25 · Every checked copy in one ZIP, named by student.
+
+- When the check is done, open the results of your test.
+- Tap Download checked copies. The ZIP is saved to your phone or computer.
+- Inside: one checked PDF per student, named by the student. Share or print them.
+
+Step 8
+
+### Change the pen colour and handwriting
+1:04 · Make the checked copy look like your own.
+
+- Tap the menu (⋮) and open Evaluation settings.
+- Under Pen on the checked copy, pick the ink colour: red, blue, green, black or custom.
+- Use How dark to make the ink lighter or darker.
+- Pick a handwriting (Teacher, Natural, Scrawled, Quick, Cursive or Classic) and a size.
+- Tap See how it will look for a real sample page, then Save settings.
+
+Step 9
+
+### Comments, instructions and spelling check
+1:20 · Set how the AI checks every copy.
+
+- Open Evaluation settings from the menu.
+- Choose where comments go: inside the copy, or outside in a Teacher comments panel.
+- Write your own instructions for the AI checker, e.g. follow the CBSE marking scheme.
+- Turn on Highlight spelling and grammar errors: each mistake is underlined with its correction; no marks are cut.
+- Choose how copies are matched to students, set camera / upload / email options, and tap Save settings.
+
+## Stuck on a step?
+Message us on WhatsApp with a screenshot and we will walk you through it, or read the FAQ .
+
+WhatsApp us Start free trial
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
