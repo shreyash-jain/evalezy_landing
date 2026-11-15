@@ -72,6 +72,8 @@ export function Nav() {
           <Trigger k="product" label="Product" />
           <Trigger k="solutions" label="Who it's for" />
           <Link href="/pricing/" className={link} onMouseEnter={() => setOpen(null)}>Pricing</Link>
+          {/* 2xl only: below that the row is full; Resources lists Video tutorials first. */}
+          <Link href="/tutorials/" className={`${link} hidden 2xl:inline-flex`} onMouseEnter={() => setOpen(null)}>Tutorials</Link>
           <Link href="/api/" className={link} onMouseEnter={() => setOpen(null)}>API</Link>
           <a href={DOCS_URL} className={link} onMouseEnter={() => setOpen(null)} data-track="open_docs">Docs</a>
           <Trigger k="resources" label="Resources" />
@@ -186,6 +188,7 @@ export function Nav() {
               <a href={demoHref("nav")} className="btn btn-outline btn-lg w-full" rel="nofollow" data-track="cta_demo_click">Try instant demo</a>
               */}
               <Link href={bookHref()} className="btn btn-outline btn-lg w-full" data-track="book_demo">Book a demo</Link>
+              <Link href="/tutorials/" className="btn btn-outline btn-lg w-full" data-track="view_tutorials">▶ Video tutorials</Link>
               <a href={LOGIN_URL} className="btn btn-outline btn-lg w-full" rel="nofollow">Log in</a>
             </div>
           </div>

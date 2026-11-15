@@ -21,6 +21,7 @@ export const AUDIENCE_NAV = AUDIENCES.map((a) => ({ slug: a.slug, label: a.label
 export const COMPARE_NAV = [{ slug: "acadine", label: "Evalezy vs Acadine" }, ...COMPARISONS.map((c) => ({ slug: c.slug, label: c.label }))];
 
 export const RESOURCE_NAV = [
+  { href: "/tutorials/", label: "Video tutorials" },
   { href: "/how-it-works/", label: "How it works" },
   { href: "/sample/", label: "See a checked copy" },
   { href: "/side-by-side/", label: "AI vs teacher: one copy" },

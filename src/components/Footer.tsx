@@ -12,6 +12,7 @@ export function Footer() {
       links: [
         { href: "/copy-checking-software/", label: "Copy checking software" },
         { href: "/how-it-works/", label: "How it works" },
+        { href: "/tutorials/", label: "Video tutorials" },
         ...PRODUCT_NAV.map((p) => ({ href: p.href, label: p.label })),
         { href: "/pricing/", label: "Pricing" },
         { href: "/sample/", label: "See a checked copy" },
