@@ -89,6 +89,13 @@ export default function Home() {
             >
               Or try an instant demo: just your name, email and phone <ArrowRight className="h-4 w-4" />
             </a>
+            <Link
+              href="/tutorials/"
+              className="mt-3 flex w-fit animate-lift items-center gap-1 text-sm font-semibold text-ink underline underline-offset-4 [animation-delay:300ms]"
+              data-track="view_tutorials"
+            >
+              ▶ Watch the 2-minute video tutorial <ArrowRight className="h-4 w-4" />
+            </Link>
             <dl className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-line pt-6">
               <div>
                 <dt className="text-sm text-slate-500">Free trial</dt>

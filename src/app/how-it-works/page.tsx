@@ -51,6 +51,7 @@ export default function Page() {
       <section className="wrap py-16 md:py-24">
         <p className="eyebrow">Your part</p>
         <h2 className="h-section mt-3 max-w-3xl text-ink">Set up once per paper</h2>
+        <Link href="/tutorials/" className="mt-4 inline-flex items-center gap-1 font-semibold text-pen-700 underline underline-offset-4" data-track="view_tutorials">▶ Prefer video? Watch each step in a short tutorial <ArrowRight className="h-4 w-4" /></Link>
         <ol className="mt-10 grid gap-4 md:grid-cols-3">
           {SETUP.map((s, i) => (
             <li key={s.t} className="margin-line relative rounded-2xl border border-line p-6 pl-[4.25rem]">
