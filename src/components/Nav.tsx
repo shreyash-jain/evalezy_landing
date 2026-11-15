@@ -52,7 +52,9 @@ export function Nav() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ${
-        scrolled || open || mobile ? "border-b border-line bg-paper/92 backdrop-blur-md" : "bg-paper/0"
+        // No backdrop blur while the mobile drawer is open: backdrop-filter makes the header the containing
+        // block of the fixed drawer, which then collapses to the header's 64px and shows nothing.
+        mobile ? "border-b border-line bg-paper" : scrolled || open ? "border-b border-line bg-paper/92 backdrop-blur-md" : "bg-paper/0"
       }`}
       onMouseLeave={() => setOpen(null)}
     >
