@@ -7,7 +7,8 @@ import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { Icon } from "./ui";
 import { AUDIENCE_NAV, COMPARE_NAV, DEV_NAV, PRODUCT_NAV, RESOURCE_NAV } from "@/lib/nav";
-import { DOCS_URL, LOGIN_URL, bookHref, demoHref, signupHref } from "@/lib/site";
+// demoHref: add back to this import when the Try instant demo buttons below are restored.
+import { DOCS_URL, LOGIN_URL, bookHref, signupHref } from "@/lib/site";
 import { useTrialOffer } from "./useTrialOffer";
 
 type MenuKey = "product" | "solutions" | "resources" | null;
@@ -76,8 +77,10 @@ export function Nav() {
 
         <div className="hidden items-center gap-2 xl:flex">
           <a href={LOGIN_URL} className={link} rel="nofollow">Log in</a>
-          <Link href={bookHref()} className={`${link} hidden 2xl:inline-flex`} data-track="book_demo">Book a demo</Link>
+          <Link href={bookHref()} className={link} data-track="book_demo">Book a demo</Link>
+          {/* Try instant demo: hidden for now.
           <a href={demoHref("nav")} className="btn btn-outline whitespace-nowrap !py-2.5" rel="nofollow" data-track="cta_demo_click">Try instant demo</a>
+          */}
           <a href={signupHref()} className="btn btn-pen whitespace-nowrap !py-2.5" rel="nofollow" data-track="cta_trial_click">
             Start {trial.days}-day trial
           </a>
@@ -177,7 +180,9 @@ export function Nav() {
             />
             <div className="grid gap-3 pb-8">
               <a href={signupHref()} className="btn btn-pen btn-lg w-full" rel="nofollow" data-track="cta_trial_click">Start {trial.days}-day trial</a>
+              {/* Try instant demo: hidden for now.
               <a href={demoHref("nav")} className="btn btn-outline btn-lg w-full" rel="nofollow" data-track="cta_demo_click">Try instant demo</a>
+              */}
               <Link href={bookHref()} className="btn btn-outline btn-lg w-full" data-track="book_demo">Book a demo</Link>
               <a href={LOGIN_URL} className="btn btn-outline btn-lg w-full" rel="nofollow">Log in</a>
             </div>
