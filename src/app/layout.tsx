@@ -1,3 +1,4 @@
+import { DidacStrip, DidacStripScript } from "@/components/DidacStrip";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
@@ -140,11 +141,12 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={`${bricolage.variable} ${inter.variable} ${kalam.variable} ${mono.variable}`}>
+    <html lang="en-IN" suppressHydrationWarning className={`${bricolage.variable} ${inter.variable} ${kalam.variable} ${mono.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>
+        <DidacStripScript />
         {GTM_ID && (
           <>
             <Script id="gtm" strategy="afterInteractive">
@@ -163,6 +165,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-white">
           Skip to content
         </a>
+        {/* DIDAC India 2026 notice (25–27 Nov). Remove after the event. */}
+        <DidacStrip />
         <Nav />
         <div id="main" className="pt-16 md:pt-[4.5rem]">{children}</div>
         <Footer />

@@ -56,6 +56,7 @@ export function Nav() {
         // block of the fixed drawer, which then collapses to the header's 64px and shows nothing.
         mobile ? "border-b border-line bg-paper" : scrolled || open ? "border-b border-line bg-paper/92 backdrop-blur-md" : "bg-paper/0"
       }`}
+      style={{ top: "var(--didac-offset, 0px)" }}
       onMouseLeave={() => setOpen(null)}
     >
       <div className="wrap flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
@@ -174,7 +175,7 @@ export function Nav() {
 
       {/* Mobile drawer */}
       {mobile && (
-        <div className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-paper xl:hidden">
+        <div className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-paper xl:hidden" style={{ top: "calc(4rem + var(--didac-offset, 0px))" }}>
           <div className="wrap space-y-6 py-6">
             <MobileGroup title="Product" open items={PRODUCT_NAV.map((p) => ({ href: p.href, label: p.label }))} />
             <MobileGroup title="Who it's for" items={AUDIENCE_NAV.map((a) => ({ href: `/for/${a.slug}/`, label: a.label }))} />
