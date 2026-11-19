@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-11-15 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-11-19 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -46,10 +46,10 @@ Evalezy is built by the team behind Vacademy, the learning platform used by scho
 - Enark Uplift
 - Shiksha Nation
 - Dzumo
-
 - Agilore Global
 - Be Bright
 - Brahm Varchas
+
 - Dumbee
 - Elevate
 - HCCA
@@ -59,6 +59,13 @@ Evalezy is built by the team behind Vacademy, the learning platform used by scho
 - Smart AI Academy
 - Suchbliss
 - Vasco Maritime Career Institute
+- Mecademy
+- Parcham Classes
+- The EduMall
+- Prepper Gurukul
+- Yogyam Global Careers
+- Nrithya Gurukulam
+- Coach Up IAS
 
 Pause logos
 
@@ -2696,6 +2703,13 @@ Schools, online academies and training institutes across 5 countries run on Vaca
 - Smart AI Academy
 - Suchbliss
 - Vasco Maritime Career Institute
+- Mecademy
+- Parcham Classes
+- The EduMall
+- Prepper Gurukul
+- Yogyam Global Careers
+- Nrithya Gurukulam
+- Coach Up IAS
 
 ## See your own copies checked.
 Book a 20-minute demo. Bring a question paper and a few scanned answer sheets, and watch Evalezy check them in red pen.
@@ -2741,10 +2755,10 @@ Evalezy is built by the team behind Vacademy, the learning platform used by scho
 - Enark Uplift
 - Shiksha Nation
 - Dzumo
-
 - Agilore Global
 - Be Bright
 - Brahm Varchas
+
 - Dumbee
 - Elevate
 - HCCA
@@ -2754,6 +2768,13 @@ Evalezy is built by the team behind Vacademy, the learning platform used by scho
 - Smart AI Academy
 - Suchbliss
 - Vasco Maritime Career Institute
+- Mecademy
+- Parcham Classes
+- The EduMall
+- Prepper Gurukul
+- Yogyam Global Careers
+- Nrithya Gurukulam
+- Coach Up IAS
 
 Pause logos
 
