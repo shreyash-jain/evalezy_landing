@@ -39,6 +39,8 @@ export const CLIENTS: Client[] = [
   { src: "/clients/smart-ai-academy.webp", name: "Smart AI Academy", width: 130, height: 128 },
   { src: "/clients/suchbliss.webp", name: "Suchbliss", width: 276, height: 128 },
   { src: "/clients/vasco-maritime.webp", name: "Vasco Maritime Career Institute", width: 128, height: 128 },
+  // Added 2026-11-19, same set as the vacademy.io homepage.
+  { src: "/clients/mecademy.webp", name: "Mecademy", width: 474, height: 128 },
 ];
 
 /** The one sentence that frames the logos. vacademy.io's own line is "across 5 countries". */
