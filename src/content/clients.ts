@@ -44,6 +44,7 @@ export const CLIENTS: Client[] = [
   { src: "/clients/parcham-classes.webp", name: "Parcham Classes", width: 128, height: 128 },
   { src: "/clients/edumall.webp", name: "The EduMall", width: 412, height: 128 },
   { src: "/clients/prepper-gurukul.webp", name: "Prepper Gurukul", width: 140, height: 128 },
+  { src: "/clients/yogyam.webp", name: "Yogyam Global Careers", width: 148, height: 128 },
 ];
 
 /** The one sentence that frames the logos. vacademy.io's own line is "across 5 countries". */
