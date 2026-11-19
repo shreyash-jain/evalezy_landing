@@ -42,6 +42,7 @@ export const CLIENTS: Client[] = [
   // Added 2026-11-19, same set as the vacademy.io homepage.
   { src: "/clients/mecademy.webp", name: "Mecademy", width: 474, height: 128 },
   { src: "/clients/parcham-classes.webp", name: "Parcham Classes", width: 128, height: 128 },
+  { src: "/clients/edumall.webp", name: "The EduMall", width: 412, height: 128 },
 ];
 
 /** The one sentence that frames the logos. vacademy.io's own line is "across 5 countries". */
