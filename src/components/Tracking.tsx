@@ -5,8 +5,8 @@ import { captureUtm, tagAppLink, tagAppLinks, track } from "@/lib/track";
 
 /**
  * Mounted once in the root layout:
- * - remembers the visit's source (utm tags, else the referring site) and clears the tags from the URL,
- * - puts that source on every app sign-up/demo link, so the CRM lead shows "<source> / <campaign>",
+ * - remembers the visit's source (utm tags, else the referring site); the URL keeps the tags,
+ * - adds those utm tags to every app sign-up/demo link beside its source=, so the CRM lead keeps them,
  * - turns any click on an element with data-track="<event>" into a dataLayer event
  *   (CTAs: book_demo, request_api, whatsapp, view_sample, download_sample),
  * - listens for Calendly's postMessage and records a booking as `calendly_booked`.

@@ -4,7 +4,7 @@
  * is remembered for KEEP_MS and attached to every event, to the lead that reaches
  * the CRM, and to the app's sign-up and demo links.
  */
-import { DEFAULT_SOURCE, DEMO_URL, SIGNUP_URL } from "./site";
+import { DEMO_URL, SIGNUP_URL } from "./site";
 
 const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "ref"] as const;
 const STORE = "evalezy.utm";
@@ -47,10 +47,8 @@ function fromReferrer(): Utm | null {
 }
 
 /**
- * Runs once per page load. Tags in the URL win and replace an older source; then the
- * tags are removed from the address bar, so a copied or shared link stays plain and
- * does not credit the next visitor to this visit's source.
- * A visit without tags keeps the remembered source, else is credited to its referrer.
+ * Runs once per page load. Tags in the URL win and replace an older source; the URL keeps
+ * them. A visit without tags keeps the remembered source, else is credited to its referrer.
  */
 export function captureUtm(): Utm {
   if (typeof window === "undefined") return {};
@@ -63,12 +61,6 @@ export function captureUtm(): Utm {
     }
     if (Object.keys(found).length) {
       save({ ...found, landing: url.pathname });
-      for (const k of UTM_KEYS) url.searchParams.delete(k);
-      const clean = url.pathname + url.search + url.hash;
-      // Deferred: Next's router hooks history.replaceState in its own effect, which runs after
-      // this one. Called through that hook, the entry keeps the router's back/forward state and
-      // the router learns the new URL. Called earlier, Back to this page would show the old page.
-      window.setTimeout(() => window.history.replaceState(null, "", clean), 0);
       return getUtm();
     }
     const known = getUtm();
@@ -98,30 +90,38 @@ export function utmNote(): string {
   return bits.length ? `src: ${bits.join("/")}` : "";
 }
 
-/** What the app's sign-up records as the lead's Source: "<source> / <campaign>". Empty for a direct visit. */
-export function signupSource(): string {
+/** The utm tags an app link carries. */
+const LINK_UTM = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"] as const;
+type LinkUtm = Partial<Record<(typeof LINK_UTM)[number], string>>;
+
+/** The visit's utm tags for app links; a ?ref= visit counts as its utm_source. Empty for a direct visit. */
+export function appLinkUtm(): LinkUtm {
   const u = getUtm();
-  return [u.utm_source || u.ref, u.utm_campaign].filter(Boolean).join(" / ");
+  const out: LinkUtm = {};
+  for (const k of LINK_UTM) {
+    const v = k === "utm_source" ? u.utm_source || u.ref : u[k];
+    if (v) out[k] = v;
+  }
+  return out;
 }
 
 /**
- * Puts the visit's source on an app sign-up or demo link. The link's own source
- * (the button's spot) is kept after it: "<source> / <campaign> / <spot>".
- * Safe to call again on the same link.
+ * Adds the visit's utm tags (utm_source, utm_campaign, …) to an app sign-up or demo link.
+ * source= stays as the button set it (website, hero, nav): the sign-up keeps both, and the
+ * lead shows the tags in its UTM columns. Safe to call again on the same link.
  */
 export function tagAppLink(a: HTMLAnchorElement) {
   const href = a.getAttribute("href");
   if (!href || !(href.startsWith(SIGNUP_URL) || href.startsWith(DEMO_URL))) return;
-  let src = signupSource();
-  if (!src) return;
-  // The app's router reads a bare number or true/false as JSON, not as text, and rejects the page.
-  if (!/[a-z]/i.test(src) || /^(true|false|null)$/i.test(src)) src = `ref ${src}`;
+  const utm = appLinkUtm();
+  if (!Object.keys(utm).length) return;
   try {
     const url = new URL(href);
-    const spot = a.dataset.spot ?? (a.dataset.spot = url.searchParams.get("source") || "");
-    // The campaign travels inside source (the lead keeps only source). No separate campaign=,
-    // for the same router reason: a campaign like "2026" would be read as a number.
-    url.searchParams.set("source", spot && spot !== DEFAULT_SOURCE ? `${src} / ${spot}` : src);
+    for (const k of LINK_UTM) {
+      const v = utm[k];
+      if (v) url.searchParams.set(k, v);
+      else url.searchParams.delete(k);
+    }
     a.setAttribute("href", url.toString());
   } catch {
     /* leave the link as it is */
