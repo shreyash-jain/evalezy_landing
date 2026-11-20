@@ -90,9 +90,10 @@ tags. Nothing in the code names a channel or a campaign, so a new one needs no c
   has a redirect takes effect only after the next deploy, because the redirect answers before the 404 page.
 - **Any source without setup:** `evalezy.com/go/<source>/<campaign>` (or `evalezy.com/go/<source>`). `public/_redirects`
   sends it to the home page as `?utm_source=<source>&utm_campaign=<campaign>`.
-- `src/lib/track.ts` remembers the source for 30 days, removes the tags from the address bar and puts
-  `<source> / <campaign>` on every app sign-up and demo link (`source=`). The app's sign-up stores it in the
-  **Source** column of the product's sign-up lead list. The website form adds it to the lead summary as `src: …`.
+- `src/lib/track.ts` remembers the tags for 30 days (the address bar keeps them) and adds them to every app
+  sign-up and demo link as `utm_source`, `utm_campaign`, … beside its own `source=` (website, hero, nav). The app's
+  sign-up keeps both: the lead's **Source** column shows the page, and its UTM Source / Campaign columns show the
+  tags. The website form adds them to the lead summary as `src: …`.
 - A visit without tags is credited to the name of the referring site (`l.instagram.com` gives `instagram`). Apps that
   send no referrer, such as WhatsApp, show as a direct visit (`website`), so always share the tagged link there.
 
