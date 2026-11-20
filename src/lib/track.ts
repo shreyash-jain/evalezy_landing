@@ -47,10 +47,8 @@ function fromReferrer(): Utm | null {
 }
 
 /**
- * Runs once per page load. Tags in the URL win and replace an older source; then the
- * tags are removed from the address bar, so a copied or shared link stays plain and
- * does not credit the next visitor to this visit's source.
- * A visit without tags keeps the remembered source, else is credited to its referrer.
+ * Runs once per page load. Tags in the URL win and replace an older source; the URL keeps
+ * them. A visit without tags keeps the remembered source, else is credited to its referrer.
  */
 export function captureUtm(): Utm {
   if (typeof window === "undefined") return {};
@@ -63,12 +61,6 @@ export function captureUtm(): Utm {
     }
     if (Object.keys(found).length) {
       save({ ...found, landing: url.pathname });
-      for (const k of UTM_KEYS) url.searchParams.delete(k);
-      const clean = url.pathname + url.search + url.hash;
-      // Deferred: Next's router hooks history.replaceState in its own effect, which runs after
-      // this one. Called through that hook, the entry keeps the router's back/forward state and
-      // the router learns the new URL. Called earlier, Back to this page would show the old page.
-      window.setTimeout(() => window.history.replaceState(null, "", clean), 0);
       return getUtm();
     }
     const known = getUtm();
