@@ -8,6 +8,7 @@
     "build": "node scripts/trial-offer.mjs && next build && node scripts/short-links.mjs && node scripts/routes.mjs && node scripts/llms-full.mjs && rm out/_routes.json",
     "start": "npx serve out",
     "typecheck": "tsc --noEmit --incremental false",
+    "test": "node --test tests/*.test.ts",
     "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {

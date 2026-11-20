@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Cross } from "@/components/Pen";
+import { ShortLinkRedirect } from "@/components/ShortLinkRedirect";
 
 /** A missing page must not be indexed or point its canonical at the homepage. */
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <main className="wrap grid min-h-[60vh] place-items-center py-20 text-center">
+      <ShortLinkRedirect />
       <div>
         <Cross className="mx-auto h-14 w-14" />
         <p className="hand mt-4 text-3xl text-pen">0 / 1 · page not found</p>
