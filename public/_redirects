@@ -1,0 +1,10 @@
+# Tagged links for posts and messages (Cloudflare Pages redirects):
+#   evalezy.com/go/<source>/<campaign>   or   evalezy.com/go/<source>
+# Source and campaign are whatever the link says. No channel or campaign is named here,
+# so a new one needs no change. The visit lands on the home page; src/lib/track.ts keeps
+# the tags, clears them from the address bar and passes them to the app's sign-up.
+
+/go/:source/:campaign/   /?utm_source=:source&utm_campaign=:campaign   302
+/go/:source/:campaign    /?utm_source=:source&utm_campaign=:campaign   302
+/go/:source/             /?utm_source=:source                          302
+/go/:source              /?utm_source=:source                          302
