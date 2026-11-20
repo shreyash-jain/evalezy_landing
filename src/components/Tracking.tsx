@@ -5,7 +5,7 @@ import { captureUtm, track } from "@/lib/track";
 
 /**
  * Mounted once in the root layout:
- * - captures utm_* from the URL into sessionStorage,
+ * - remembers the visit's source (utm tags, else the referring site),
  * - turns any click on an element with data-track="<event>" into a dataLayer event
  *   (CTAs: book_demo, request_api, whatsapp, view_sample, download_sample),
  * - listens for Calendly's postMessage and records a booking as `calendly_booked`.
