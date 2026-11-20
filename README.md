@@ -79,11 +79,17 @@ The CRM de-duplicates by email per audience; a repeat visitor sees "Welcome back
 
 ### Where a lead came from (tagged links)
 
-In a post or message, link to `evalezy.com/go/<source>/<campaign>` (or `evalezy.com/go/<source>`) instead of the
-bare domain. The post shows only that short path, never utm tags. Source and campaign are whatever the link says:
-nothing in the code names a channel or a campaign, so a new one needs no change.
+In a post or message, use a short link instead of the bare domain. The post shows only the short path, never utm
+tags. Nothing in the code names a channel or a campaign, so a new one needs no code change.
 
-- `public/_redirects` sends the link to the home page as `?utm_source=<source>&utm_campaign=<campaign>`.
+- **Short links, like `evalezy.com/ig`:** made on the health dashboard (Products → Evalezy → Short links): a code,
+  its source and an optional campaign. `scripts/short-links.mjs` reads them from the offer API after each build and
+  adds a 302 to `out/_redirects` (a code that is already a page of the site is skipped). A link saved after the last
+  build works through the 404 page (`src/components/ShortLinkRedirect.tsx`) until the next deploy adds its redirect;
+  until then a WhatsApp or LinkedIn preview of it shows the 404 page's card. Changing or removing a link that already
+  has a redirect takes effect only after the next deploy, because the redirect answers before the 404 page.
+- **Any source without setup:** `evalezy.com/go/<source>/<campaign>` (or `evalezy.com/go/<source>`). `public/_redirects`
+  sends it to the home page as `?utm_source=<source>&utm_campaign=<campaign>`.
 - `src/lib/track.ts` remembers the source for 30 days, removes the tags from the address bar and puts
   `<source> / <campaign>` on every app sign-up and demo link (`source=`). The app's sign-up stores it in the
   **Source** column of the product's sign-up lead list. The website form adds it to the lead summary as `src: …`.
