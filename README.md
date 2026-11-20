@@ -77,6 +77,19 @@ The form posts from the browser to the Vacademy CRM audience `b4940a67-acc7-4c30
 interest (dashboard / API / both), pages per month, which form, UTM source and the message.
 The CRM de-duplicates by email per audience; a repeat visitor sees "Welcome back".
 
+### Where a lead came from (tagged links)
+
+In a post or message, link to `evalezy.com/go/<source>/<campaign>` (or `evalezy.com/go/<source>`) instead of the
+bare domain. The post shows only that short path, never utm tags. Source and campaign are whatever the link says:
+nothing in the code names a channel or a campaign, so a new one needs no change.
+
+- `public/_redirects` sends the link to the home page as `?utm_source=<source>&utm_campaign=<campaign>`.
+- `src/lib/track.ts` remembers the source for 30 days, removes the tags from the address bar and puts
+  `<source> / <campaign>` on every app sign-up and demo link (`source=`). The app's sign-up stores it in the
+  **Source** column of the product's sign-up lead list. The website form adds it to the lead summary as `src: …`.
+- A visit without tags is credited to the name of the referring site (`l.instagram.com` gives `instagram`). Apps that
+  send no referrer, such as WhatsApp, show as a direct visit (`website`), so always share the tagged link there.
+
 A test lead **"TEST evalezy.com form (delete me)"** (`evalezy-landing-test@example.com`, id `403e5606-d555-4a21-a3db-f8a22c9ba1ff`)
 was created on 1 Oct 2026 to verify the audience. Delete it in Audience Manager.
 

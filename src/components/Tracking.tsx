@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { captureUtm, track } from "@/lib/track";
+import { captureUtm, tagAppLink, tagAppLinks, track } from "@/lib/track";
 
 /**
  * Mounted once in the root layout:
- * - captures utm_* from the URL into sessionStorage,
+ * - remembers the visit's source (utm tags, else the referring site) and clears the tags from the URL,
+ * - puts that source on every app sign-up/demo link, so the CRM lead shows "<source> / <campaign>",
  * - turns any click on an element with data-track="<event>" into a dataLayer event
  *   (CTAs: book_demo, request_api, whatsapp, view_sample, download_sample),
  * - listens for Calendly's postMessage and records a booking as `calendly_booked`.
@@ -13,6 +14,13 @@ import { captureUtm, track } from "@/lib/track";
 export function Tracking() {
   useEffect(() => {
     captureUtm();
+    tagAppLinks();
+    // Links rendered or re-rendered later (mobile menu, plan picker) are tagged as they are used:
+    // pointerdown also covers middle-click, right-click "open in new tab" and a long press.
+    const onUse = (e: Event) => {
+      const a = (e.target as Element | null)?.closest?.("a[href]");
+      if (a) tagAppLink(a as HTMLAnchorElement);
+    };
     const onClick = (e: MouseEvent) => {
       const el = (e.target as HTMLElement | null)?.closest<HTMLElement>("[data-track]");
       if (!el) return;
@@ -24,9 +32,13 @@ export function Tracking() {
       if (ev === "calendly.event_scheduled") track("calendly_booked");
       else if (ev === "calendly.date_and_time_selected") track("calendly_slot_picked");
     };
+    document.addEventListener("pointerdown", onUse, true);
+    document.addEventListener("click", onUse, true);
     document.addEventListener("click", onClick);
     window.addEventListener("message", onMessage);
     return () => {
+      document.removeEventListener("pointerdown", onUse, true);
+      document.removeEventListener("click", onUse, true);
       document.removeEventListener("click", onClick);
       window.removeEventListener("message", onMessage);
     };
