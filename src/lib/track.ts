@@ -1,10 +1,10 @@
 /**
  * Analytics glue. Everything goes through GTM's dataLayer so triggers are
  * configured there, not here. A visit's source (utm tags, or the site that sent it)
- * is remembered for KEEP_MS and attached to every event and to the lead that
- * reaches the CRM.
+ * is remembered for KEEP_MS and attached to every event, to the lead that reaches
+ * the CRM, and to the app's sign-up and demo links.
  */
-import { DEMO_URL, SIGNUP_URL } from "./site";
+import { DEFAULT_SOURCE, DEMO_URL, SIGNUP_URL } from "./site";
 
 const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "ref"] as const;
 const STORE = "evalezy.utm";
@@ -96,6 +96,40 @@ export function utmNote(): string {
   const u = getUtm();
   const bits = [u.utm_source || u.ref, u.utm_medium, u.utm_campaign, u.utm_content].filter(Boolean);
   return bits.length ? `src: ${bits.join("/")}` : "";
+}
+
+/** What the app's sign-up records as the lead's Source: "<source> / <campaign>". Empty for a direct visit. */
+export function signupSource(): string {
+  const u = getUtm();
+  return [u.utm_source || u.ref, u.utm_campaign].filter(Boolean).join(" / ");
+}
+
+/**
+ * Puts the visit's source on an app sign-up or demo link. The link's own source
+ * (the button's spot) is kept after it: "<source> / <campaign> / <spot>".
+ * Safe to call again on the same link.
+ */
+export function tagAppLink(a: HTMLAnchorElement) {
+  const href = a.getAttribute("href");
+  if (!href || !(href.startsWith(SIGNUP_URL) || href.startsWith(DEMO_URL))) return;
+  let src = signupSource();
+  if (!src) return;
+  // The app's router reads a bare number or true/false as JSON, not as text, and rejects the page.
+  if (!/[a-z]/i.test(src) || /^(true|false|null)$/i.test(src)) src = `ref ${src}`;
+  try {
+    const url = new URL(href);
+    const spot = a.dataset.spot ?? (a.dataset.spot = url.searchParams.get("source") || "");
+    // The campaign travels inside source (the lead keeps only source). No separate campaign=,
+    // for the same router reason: a campaign like "2026" would be read as a number.
+    url.searchParams.set("source", spot && spot !== DEFAULT_SOURCE ? `${src} / ${spot}` : src);
+    a.setAttribute("href", url.toString());
+  } catch {
+    /* leave the link as it is */
+  }
+}
+
+export function tagAppLinks(root: ParentNode = document) {
+  root.querySelectorAll<HTMLAnchorElement>("a[href]").forEach(tagAppLink);
 }
 
 export function track(event: string, props: Record<string, unknown> = {}) {
