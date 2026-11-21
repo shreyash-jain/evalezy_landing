@@ -27,7 +27,7 @@ export function pageMetadata(path: string): Metadata {
  */
 export function PageShell({
   path, eyebrow, h1, lede, visual, faqs, faqTitle = "Frequently asked questions", children, hideCta = false,
-  secondary = { href: "/sample/", label: "See a real checked copy", track: "view_sample" }, crumbs, meta,
+  secondary = { href: "/sample/", label: "See a real checked copy", track: "view_sample" }, primary, crumbs, meta,
 }: {
   path: string;
   eyebrow: string;
@@ -39,6 +39,8 @@ export function PageShell({
   children: React.ReactNode;
   hideCta?: boolean;
   secondary?: { href: string; label: string; track: string } | null;
+  /** Replaces the default "Book a demo" button (e.g. a form further down the same page). */
+  primary?: { href: string; label: string; track: string };
   crumbs?: { label: string; href?: string }[];
   /** For data-driven pages not in PAGES (audiences, comparisons): their own URL, title and description. */
   meta?: { path: string; title: string; description: string };
@@ -69,7 +71,7 @@ export function PageShell({
             <h1 className="h-display mt-3 max-w-4xl text-[2.5rem] text-ink md:text-[3.4rem]">{h1}</h1>
             <div className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">{lede}</div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href={bookHref()} className="btn btn-pen btn-lg" data-track="book_demo">Book a demo <ArrowRight className="h-4 w-4" /></Link>
+              <Link href={primary?.href ?? bookHref()} className="btn btn-pen btn-lg" data-track={primary?.track ?? "book_demo"}>{primary?.label ?? "Book a demo"} <ArrowRight className="h-4 w-4" /></Link>
               {secondary &&
                 (/\.(pdf|png|webp)$/.test(secondary.href) ? (
                   <a href={secondary.href} className="btn btn-outline btn-lg" data-track={secondary.track} download>{secondary.label}</a>
