@@ -14,10 +14,11 @@ export function DemoForm({ origin, defaultInterest = "dashboard", compact = fals
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [dup, setDup] = useState(false);
   const [interest, setInterest] = useState<Interest>(defaultInterest);
-  // /demo/#api (from the API page and pricing) opens the form on API access.
+  // /demo/#api (from the API page and pricing) opens the form on API access; #onsite on the OnSite plan.
   useEffect(() => {
     const pick = () => {
       if (window.location.hash === "#api") setInterest("api");
+      if (window.location.hash === "#onsite") setInterest("onsite");
     };
     pick();
     window.addEventListener("hashchange", pick);
@@ -60,7 +61,9 @@ export function DemoForm({ origin, defaultInterest = "dashboard", compact = fals
         <p className="mx-auto mt-2 max-w-md text-slate-600">
           {interest === "api"
             ? "We usually reply within one working day with API access details."
-            : "We usually call or email within one working day to set up your demo. Keep a question paper and three or four scanned copies handy."}
+            : interest === "onsite"
+              ? "We usually call or email within one working day to set up your OnSite demo and confirm the printer and delivery for your school."
+              : "We usually call or email within one working day to set up your demo. Keep a question paper and three or four scanned copies handy."}
         </p>
         <a href={whatsappHref()} className="btn btn-outline mt-6" data-track="whatsapp" target="_blank" rel="noopener">
           Or WhatsApp us now: {WHATSAPP_DISPLAY}
@@ -76,8 +79,8 @@ export function DemoForm({ origin, defaultInterest = "dashboard", compact = fals
     <form onSubmit={onSubmit} className="space-y-4 rounded-2xl border border-line bg-white p-6 shadow-paper md:p-7" noValidate={false}>
       <fieldset>
         <legend className={label}>What are you looking for?</legend>
-        <div className="mt-2 grid grid-cols-3 gap-2">
-          {([["dashboard", "Check copies"], ["api", "API access"], ["both", "Both"]] as [Interest, string][]).map(([k, l]) => (
+        <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {([["dashboard", "Check copies"], ["api", "API access"], ["both", "Both"], ["onsite", "OnSite printer"]] as [Interest, string][]).map(([k, l]) => (
             <button
               key={k}
               type="button"
@@ -140,7 +143,7 @@ export function DemoForm({ origin, defaultInterest = "dashboard", compact = fals
       )}
       <button type="submit" disabled={state === "sending"} className="btn btn-pen btn-lg w-full disabled:opacity-70">
         {state === "sending" ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
-        {interest === "api" ? "Request API access" : "Book my demo"}
+        {interest === "api" ? "Request API access" : interest === "onsite" ? "Book my OnSite demo" : "Book my demo"}
         {state !== "sending" && <ArrowRight className="h-4 w-4" />}
       </button>
       <p className="text-center text-xs text-slate-500">We usually reply within one working day. Your details stay with us.</p>

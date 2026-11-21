@@ -22,7 +22,7 @@ const CRM_FIELD = {
   details: "d10da8cf-b178-4002-b0bb-a669417e6690",
 } as const;
 
-export type Interest = "dashboard" | "api" | "both";
+export type Interest = "dashboard" | "api" | "both" | "onsite";
 
 export interface DemoLead {
   name: string;
@@ -42,6 +42,7 @@ const INTEREST_LABEL: Record<Interest, string> = {
   dashboard: "Checking in the dashboard",
   api: "API access",
   both: "Dashboard + API",
+  onsite: "OnSite plan (printer)",
 };
 
 /** One readable line for the CRM, e.g. "Evalezy · API access · 5,000–20,000 pages/mo · src: google/cpc · …". */
