@@ -113,6 +113,7 @@ export function Nav() {
                     <li key={p.href}>
                       <Link href={p.href} className="block rounded-xl p-4 transition hover:bg-paper">
                         <span className="font-bold text-ink">{p.label}</span>
+                        {p.badge && <span className="ml-2 rounded-full bg-pen px-2 py-0.5 align-middle text-[0.65rem] font-bold uppercase tracking-wide text-white">{p.badge}</span>}
                         <span className="mt-1 block text-sm text-slate-500">{p.desc}</span>
                       </Link>
                     </li>

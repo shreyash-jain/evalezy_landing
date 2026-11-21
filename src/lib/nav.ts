@@ -9,6 +9,7 @@ export const PRODUCT_NAV = [
   { href: "/teacher-review/", label: "Teacher review & release", desc: "Nothing reaches students until you say so." },
   { href: "/typed-answers/", label: "Typed essays & long answers", desc: "Online long answers graded in seconds." },
   { href: "/app/", label: "Mobile app (iPhone)", desc: "Scan copies with your phone, check the whole class." },
+  { href: "/onsite/", label: "Evalezy OnSite", desc: "A printer at your school: scan copies in, print checked copies out.", badge: "New" },
 ];
 
 export const DEV_NAV = [
