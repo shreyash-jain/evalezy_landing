@@ -50,6 +50,18 @@ export const EXTRA_CREDIT_INR: number = trialOffer.extra_credit_price_inr;
 /** "year" for 12 months, else "N months". */
 export const planPeriod = (months: number = PLAN_MONTHS) => (months === 12 ? "year" : months === 1 ? "month" : `${months} months`);
 export const cheapestPlan = (plans: Plan[] = PLANS) => plans.reduce((a, b) => (b.price_inr < a.price_inr ? b : a), plans[0]);
+/**
+ * Evalezy OnSite (owner, 21 Nov 2026): an all-in-one printer (scan + print) for the school plus AI credits.
+ * Sold through a demo, not online, so it is NOT on the health dashboard's Pricing form: plans saved there get
+ * an online Buy button, and that checkout never asks for a delivery address. Facts: docs/PRODUCT_FACTS.md.
+ */
+export const ONSITE = {
+  name: "Evalezy OnSite",
+  price_inr: 40000,
+  credits: 5000,
+  /** The price includes online support. This much more adds on-site support: a member of our team at the school. */
+  onsite_support_inr: 10000,
+} as const;
 /** source= on app links when the visit has no known source (a direct visit). */
 export const DEFAULT_SOURCE = "website";
 /** Free trial sign-up (plan= only tells sign-up which plan interested them; it stays a trial). */
@@ -95,6 +107,7 @@ export const PAGES: SitePage[] = [
   { path: "/teacher-review/", label: "Teacher review & release", group: "product", title: "Teacher Review: Approve AI Marks Before Release", description: "AI marks land as a draft. Teachers see each answer, the feedback and the criteria, change any mark, then release results. Edited marks are never overwritten." },
   { path: "/typed-answers/", label: "Typed essays & long answers", group: "product", title: "AI Essay Grading for Online Long-Answer Questions", description: "Evalezy also grades essays, letters and emails typed in an online test, on format, content, organisation and language, with word limits and a teacher review." },
   { path: "/app/", label: "Evalezy mobile app", group: "product", title: "Evalezy App: Check Answer Sheets on Your Phone", description: "The Evalezy app, on iPhone now and Android soon: create the test from the paper, photograph each copy, check the class with AI and share the checked copies." },
+  { path: "/onsite/", label: "Evalezy OnSite", group: "product", title: "Evalezy OnSite: A Printer That Scans, AI Checks and Prints Copies", description: `Evalezy OnSite: ₹${ONSITE.price_inr.toLocaleString("en-IN")} + GST for an all-in-one printer at your school and ${ONSITE.credits.toLocaleString("en-IN")} AI credits. Scan answer sheets, Evalezy checks them, print the red-pen copies.` },
   { path: "/api/", label: "Evaluation API", group: "product", title: "Answer Sheet Evaluation API for Developers", description: "Grade handwritten copies and typed long answers from your own exam system: upload PDFs, read question-wise marks and the checked copy. Docs at docs.evalezy.com." },
   { path: "/pricing/", label: "Pricing", group: "product", title: `Pricing: From ₹${cheapestPlan().price_inr.toLocaleString("en-IN")} a ${planPeriod()[0].toUpperCase()}${planPeriod().slice(1)}, AI Credits Included`, description: `Evalezy plans include AI credits: ${PLANS.map((p) => `${p.name} ₹${p.price_inr.toLocaleString("en-IN")} with ${p.credits.toLocaleString("en-IN")} credits`).join(", ")}. 1 credit checks 1 page; extra credits ₹${EXTRA_CREDIT_INR}. Free ${TRIAL_DAYS}-day trial.` },
   { path: "/side-by-side/", label: "AI vs teacher: one copy", group: "product", title: "AI vs Teacher: One Answer Copy, Checked Twice", description: "One maths copy checked by a teacher and by Evalezy, page by page. Evalezy caught 2 slips the teacher ticked; the teacher caught 5 answers it misread." },
