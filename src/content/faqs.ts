@@ -1,5 +1,5 @@
 import type { Faq } from "./types";
-import { EXTRA_CREDIT_INR, PLANS, SALES_EMAIL, TRIAL_CREDITS, TRIAL_DAYS, planPeriod } from "@/lib/site";
+import { EXTRA_CREDIT_INR, ONSITE, PLANS, SALES_EMAIL, TRIAL_CREDITS, TRIAL_DAYS, planPeriod } from "@/lib/site";
 
 /** The /faq/ page, grouped. HOME_FAQS is the short list on the home page. Claims: docs/PRODUCT_FACTS.md. */
 export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
@@ -54,6 +54,7 @@ export const FAQ_GROUPS: { title: string; faqs: Faq[] }[] = [
       { q: "Is a re-check charged?", a: "Yes. Re-checking a copy runs a fresh check and replaces the marks, so it is billed again. Teacher edits are free and are kept." },
       { q: "Is the API priced differently?", a: "Not for handwritten copies: the API charges 1 credit per page of the PDF, blank pages included, the same ₹1 or $0.01 a page as the dashboard. Typed tests on the API are priced per answer: 1 credit per non-blank long answer, and objective answers are free. The price is fixed and quoted before grading; failed and cancelled copies are not charged, and re-evaluating a copy is charged again. Details at docs.evalezy.com/platform/pricing." },
       { q: "Do you offer volume pricing?", a: "For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window." },
+      { q: "Is there a plan with a printer?", a: `Yes: ${ONSITE.name}, ₹${ONSITE.price_inr.toLocaleString("en-IN")} plus GST. It comes with an all-in-one printer for your school and ${ONSITE.credits.toLocaleString("en-IN")} AI credits. Scan the copies on it, Evalezy checks them online, and you print the checked copies on the same printer. Online support is included; for ₹${ONSITE.onsite_support_inr.toLocaleString("en-IN")} more, a member of our team comes to your school and does it for you. Book a demo at evalezy.com/onsite.` },
     ],
   },
   {
@@ -96,4 +97,5 @@ export const PRICING_FAQS: Faq[] = [
   pick("Is a re-check charged?"),
   pick("Is the API priced differently?"),
   pick("Do you offer volume pricing?"),
+  pick("Is there a plan with a printer?"),
 ];

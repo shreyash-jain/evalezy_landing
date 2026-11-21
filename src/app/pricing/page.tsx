@@ -3,10 +3,11 @@ import { ArrowRight } from "lucide-react";
 import { PageShell, pageMetadata } from "@/components/PageShell";
 // PlanCalculator hidden 13 Nov 2026: the yearly maths confused buyers. Bring it back with the import and the JSX below.
 import { BuySteps, PlanCards } from "@/components/Interactive";
+import { OnsiteCard } from "@/components/Onsite";
 import { PenCircle, TickList } from "@/components/Pen";
 import { JsonLd } from "@/components/JsonLd";
 import { PRICING_FAQS } from "@/content/faqs";
-import { EXTRA_CREDIT_INR, PLANS, SITE, TRIAL_CREDITS, TRIAL_DAYS, cheapestPlan, planPeriod } from "@/lib/site";
+import { EXTRA_CREDIT_INR, ONSITE, PLANS, SITE, TRIAL_CREDITS, TRIAL_DAYS, cheapestPlan, planPeriod } from "@/lib/site";
 import { docsUrl } from "@/content/api";
 
 const PATH = "/pricing/";
@@ -71,20 +72,32 @@ export default function Page() {
           brand: { "@type": "Brand", name: "Evalezy" },
           url: `${SITE}${PATH}`,
           image: `${SITE}/og.png`,
-          offers: PLANS.map((p) => ({
-            "@type": "Offer",
-            name: p.name,
-            price: String(p.price_inr),
-            priceCurrency: "INR",
-            url: `${SITE}${PATH}`,
-            availability: "https://schema.org/InStock",
-            description: `${p.users === 1 ? "1 user" : `Up to ${p.users} users`}, ${p.credits} AI credits, for a ${planPeriod()}. Extra credits ₹${EXTRA_CREDIT_INR} each. Excludes GST.`,
-          })),
+          offers: [
+            ...PLANS.map((p) => ({
+              "@type": "Offer",
+              name: p.name,
+              price: String(p.price_inr),
+              priceCurrency: "INR",
+              url: `${SITE}${PATH}`,
+              availability: "https://schema.org/InStock",
+              description: `${p.users === 1 ? "1 user" : `Up to ${p.users} users`}, ${p.credits} AI credits, for a ${planPeriod()}. Extra credits ₹${EXTRA_CREDIT_INR} each. Excludes GST.`,
+            })),
+            {
+              "@type": "Offer",
+              name: ONSITE.name,
+              price: String(ONSITE.price_inr),
+              priceCurrency: "INR",
+              url: `${SITE}/onsite/`,
+              availability: "https://schema.org/InStock",
+              description: `An all-in-one printer for the school and ${ONSITE.credits} AI credits. Extra credits ₹${EXTRA_CREDIT_INR} each. Excludes GST.`,
+            },
+          ],
         }}
       />
       <section className="wrap py-16 md:py-20">
         <PlanCards />
         <div className="mt-8"><BuySteps /></div>
+        <OnsiteCard className="mt-10" />
         <p className="mx-auto mt-6 max-w-3xl text-center text-slate-600">
           More than {Math.max(...PLANS.map((p) => p.users))} teachers or 1,00,000+ pages a month? <strong className="text-ink">Enterprise</strong>: custom price.{" "}
           <Link href="/demo/" className="font-semibold text-pen-700 underline" data-track="book_demo">Talk to us</Link>
