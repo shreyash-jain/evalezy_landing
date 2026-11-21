@@ -77,6 +77,30 @@ Evalezy is the AI copy-checking engine of the Vacademy platform (Vidyayatan Tech
 - Yearly plans cannot be bought online yet (Phase 2): plan buttons start the free trial; credits are recharged in
   the dashboard. Say "start free trial" / "talk to us", never "buy now".
 
+## Evalezy OnSite **(owner, 21 Nov 2026)**
+
+- **What it is:** a plan with an all-in-one printer (it scans and prints) for the school plus **5,000 AI credits**
+  (1 credit checks 1 page), for **₹40,000 + GST**. Extra credits ₹1 each, as on every plan. Price and credits live in
+  `ONSITE` in `src/lib/site.ts`; page `/onsite/`.
+- **Support (owner, 21 Nov 2026):** the ₹40,000 includes **online support**. For **₹10,000 more (+ GST)** we add
+  **on-site support**: a member of our team at the school who does the scanning, checking and printing. Teachers still
+  review and release marks. `ONSITE.onsite_support_inr`.
+- **Sold through a demo, not online.** It is deliberately NOT on the health dashboard's Pricing form: plans saved there
+  get an online Buy button, and that checkout never asks for a delivery address. CTAs say "Book an OnSite demo".
+- **Flow the site may describe** (today's product): scan each student's copy to a PDF on the printer → upload the PDFs
+  in Evalezy (bulk upload, 200 at a time, 60 MB each) → name matching and AI checking → teacher review and release →
+  download the checked copies and print them on the same printer.
+- **Checking runs online,** as on every plan: an internet connection is needed. "OnSite" means the printer is at the
+  school. It is not on-premise software (see "Never claim").
+- **Pictures on /onsite/:** the hero printer photo (`public/onsite/printer.webp`) comes from the DIDAC standee
+  (`standee-evalezy-36x72in.pdf`) and is illustrative, not the model supplied. The in/out copies are the
+  /side-by-side/ maths copy, unchecked and checked by Evalezy, cropped above Q28 (the standee's checked render shows
+  missing-glyph boxes in the Q28 note). Never name a printer brand or model from the photo.
+- **Not decided yet (never claim until the owner sets them):** for on-site support, how many days or visits, for
+  how long and in which cities, and what online support covers (channels, hours, reply time); plan length, number of users, printer make/model,
+  warranty, who keeps the printer after the plan, delivery cities and time, installation or training, renewal price,
+  and scans going from the printer into Evalezy by themselves (no such link exists today).
+
 ## API (live since 2 Oct 2026, docs at https://docs.evalezy.com)
 
 The Evaluation API is live (v1, changelog "2026-10-02 launch"). The docs are the source of truth; a copy read on
