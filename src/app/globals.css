@@ -44,6 +44,13 @@
   --animate-pulse-dot: pulse-dot 1.6s ease-out infinite;
   --animate-marquee: marquee 90s linear infinite;
   --animate-marquee-rev: marquee 90s linear infinite reverse;
+  /* Evalezy OnSite printer (src/components/Onsite.tsx): one 8s loop of feed → scan → check → print. */
+  --animate-onsite-feed: onsite-feed 8s ease-in-out infinite;
+  --animate-onsite-s1: onsite-s1 8s linear infinite;
+  --animate-onsite-s2: onsite-s2 8s linear infinite;
+  --animate-onsite-s3: onsite-s3 8s linear infinite;
+  --animate-onsite-bar: onsite-bar 8s ease-in-out infinite;
+  --animate-onsite-out: onsite-out 8s ease-out infinite;
 
   @keyframes lift {
     from { transform: translateY(10px); }
@@ -69,6 +76,39 @@
   @keyframes pulse-dot {
     0% { transform: scale(0.8); opacity: 0.7; }
     100% { transform: scale(2.4); opacity: 0; }
+  }
+  /* The copy is pulled down behind the lid while the screen says "Scanning". */
+  @keyframes onsite-feed {
+    0% { transform: translateY(-0.75rem); opacity: 0; }
+    6% { transform: translateY(-0.75rem); opacity: 1; }
+    34% { transform: translateY(8rem); opacity: 1; }
+    38%, 100% { transform: translateY(8rem); opacity: 0; }
+  }
+  @keyframes onsite-s1 {
+    0%, 5% { opacity: 0; }
+    8%, 34% { opacity: 1; }
+    37%, 100% { opacity: 0; }
+  }
+  @keyframes onsite-s2 {
+    0%, 37% { opacity: 0; }
+    40%, 60% { opacity: 1; }
+    63%, 100% { opacity: 0; }
+  }
+  @keyframes onsite-s3 {
+    0%, 63% { opacity: 0; }
+    66%, 94% { opacity: 1; }
+    98%, 100% { opacity: 0; }
+  }
+  @keyframes onsite-bar {
+    0%, 37% { width: 0; }
+    60%, 100% { width: 100%; }
+  }
+  /* Out of the slot while the screen says "Printing", then a pause before the next copy. */
+  @keyframes onsite-out {
+    /* -115%: the copy's own shadow must also be inside the printer, or it shows under the slot. */
+    0%, 64% { transform: translateY(-115%); opacity: 1; }
+    86%, 93% { transform: translateY(0); opacity: 1; }
+    99%, 100% { transform: translateY(0); opacity: 0; }
   }
 }
 

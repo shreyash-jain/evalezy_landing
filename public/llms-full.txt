@@ -1,6 +1,6 @@
 # Evalezy — full site text
 
-Generated 2026-11-19 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
+Generated 2026-11-21 from https://evalezy.com. Short summary: https://evalezy.com/llms.txt
 
 
 ---
@@ -358,6 +358,20 @@ Starter: ₹5,000 a year with 100 AI credits for 1 user. Team: ₹20,000 a year 
 - Volume plans for exam bodies and platforms
 Full pricing
 
+### Evalezy OnSite
+New · Printer included
+Scanning and printing at your school
+₹40,000 + GST
+5,000 AI credits included
+On-site support: +₹10,000
+
+- An all-in-one printer (scan + print) for your school
+- 5,000 pages checked (1 credit = 1 page)
+- Scan the copies in, print the checked copies out
+- Online support included
+- Extra credits ₹1 each
+Book an OnSite demo How OnSite works
+
 ## Questions teachers ask us
 More in the full FAQ .
 
@@ -397,7 +411,7 @@ In 20 minutes we upload a question paper and a few of your scanned answer sheets
 - Set up your marking scheme together
 - Get a cost estimate for your volume
 
-What are you looking for?Check copies API access Both
+What are you looking for?Check copies API access Both OnSite printer
 Full name Work email Phone +91+1+44+971+65+61+977+880+94 Your role Choose onePrincipal / DirectorOwner / FounderExam controller / Academic headTeacher / FacultyDeveloper / ProductOtherSchool / institute Pages checked per month Not sure yetUnder 1,0001,000–5,0005,000–20,00020,000–1,00,000Over 1,00,000
 Anything we should know? (optional) Book my demo We usually reply within one working day. Your details stay with us.
 
@@ -1342,6 +1356,162 @@ Book a demo See a real checked copy
 
 ---
 
+# Evalezy OnSite: A Printer That Scans, AI Checks and Prints Copies | Evalezy
+URL: https://evalezy.com/onsite/
+
+- Home
+- / Evalezy OnSite
+New · Evalezy OnSite
+
+# Scan in. Checked copies out.
+Evalezy OnSite comes with an all-in-one printer for your school and 5,000 AI credits. Teachers scan the answer sheets on it, Evalezy checks every copy, and the red-pen checked copies print on the same machine. ₹40,000 + GST with online support, or ₹10,000 more and our team does it at your school.
+Book an OnSite demo See a real checked copy
+
+An all-in-one printer with an answer copy in its feeder and a page coming out
+In · Unchecked A student's maths answer copy before checking
+Out · Checked The same copy checked by Evalezy in red pen: ticks, a cross, 2.5/3 and a note
+The same real student copy, before and after.
+
+How it works
+
+## From the exam hall to a printed checked copy, in four steps.
+
+- 1
+Scan
+Scan each student's copy on the OnSite printer, one PDF per student.
+
+- 2
+Upload and check
+Upload the PDFs to Evalezy, up to 200 at a time. Each copy is matched to its student by name and roll number and checked against one marking scheme per question.
+
+- 3
+Review
+Marks land as a draft. A teacher looks through them, changes any mark and releases the results. Nothing reaches students before that.
+
+- 4
+Print
+Download the checked copies and print them on the same printer: the student's own copy with ticks, crosses, notes and the total circled.
+
+scan in ↓
+
+Q1. Democracy is rule
+by the people, who
+elect their leaders
+and can change them.
+Q2. (a) Monsoon…
+
+Evalezy checks it online
+Scanning the copy… Evalezy is checking… Printing checked copy
+
+Evalezy OnSite
+
+checked copy out
+
+The checking runs on Evalezy online, as on every plan, so you need an internet connection to upload the scans and download the checked copies. See a real checked copy .
+
+What you get
+
+## A printer and 5,000 pages of checking.
+
+- An all-in-one printer that scans and prints, for your school
+- 5,000 AI credits: 1 credit checks 1 page
+- Question paper import, AI marking schemes and name matching
+- Teacher review and release, and result emails with the checked copy
+- Online support from our team
+- Extra credits ₹1 each when you need more
+- Failed, stopped and unreadable copies are not charged
+₹40,000 + 18% GST
+On-site support: +₹10,000, our team member at your school.
+
+### How far 5,000 credits go
+Example | Copies × pages | Credits a test | Tests covered |
+
+One section, unit test | 40 × 4 | 160 | 31 |
+Four sections, half-yearly | 160 × 8 | 1,280 | 3 |
+Coaching weekly test | 300 × 6 | 1,800 | 2 |
+
+Examples, not customer figures. A 7-page copy uses 7 credits.
+
+Support
+
+## Run it yourself, or let our team run it at your school.
+Included
+
+### Online support
+₹40,000 + GST
+Your teachers scan, check and print. Our team helps online when they get stuck: setting up a test, scanning, checking or printing.
+
++₹10,000
+
+### On-site support
+₹50,000 + GST
+A member of our team comes to your school and does the work: scanning the copies, running the check and printing the checked copies. Your teachers review and release the marks.
+Ask about on-site support
+
+Why a printer
+
+## For schools that want copies scanned and printed in-house.
+One desk for the exam cell
+Copies are scanned and the checked copies printed on one machine in the staff room. No hunting for a scanner before results day.
+
+Paper back in students' hands
+Hand back the checked copy on paper, the way a teacher-checked copy comes back. Students also get it by email when you release results.
+
+The same Evalezy, more credits
+The same checking, teacher review and red-pen copy as every plan, with 5,000 AI credits to start. Teachers can still scan with the Evalezy phone app.
+
+### OnSite next to the other plans
+| Starter | Team | Evalezy OnSite |
+
+Price (before GST) | ₹5,000 a year | ₹20,000 a year | ₹40,000 |
+AI credits included | 100 | 2,000 | 5,000 |
+All-in-one printer at your school | No | No | Included |
+Our team at your school | No | No | +₹10,000 |
+Extra credits | ₹1 each | ₹1 each | ₹1 each |
+
+All plans: pricing .
+
+## OnSite questions
+What is Evalezy OnSite? +
+A plan that comes with an all-in-one printer for your school and 5,000 AI credits. Teachers scan the answer sheets on the printer, Evalezy checks them, and the checked copies are printed on the same printer. It costs ₹40,000 plus 18% GST, with online support. For ₹10,000 more, a member of our team comes to your school to do it for you.
+
+Does the checking happen on the printer, without internet? +
+No. The printer scans and prints at your school; the checking runs on Evalezy online, the same as on every plan, so you need an internet connection. Evalezy is not installed on your own servers.
+
+How many copies do the credits cover? +
+1 credit checks 1 page, so 5,000 credits check 5,000 pages. A half-yearly for four sections (160 copies of 8 pages) uses 1,280 credits. When the credits run out, extra credits are ₹1 each. Failed, stopped and unreadable copies are not charged.
+
+How do the scanned copies get into Evalezy? +
+Scan each student's copy as its own PDF and upload the PDFs in Evalezy, up to 200 at a time and up to 60 MB each. Evalezy reads the name and roll number on page one and matches each copy to your class list; a copy it cannot match waits for you to pick the student.
+
+Can teachers still use the phone app and the dashboard? +
+Yes. It is the same Evalezy account: scan on the printer or with the phone app, and review and release results in the dashboard. Every copy uses the same credits.
+
+Do marks reach students without a teacher? +
+No. AI marks are a draft. A teacher reviews them, changes any mark and presses Release. A mark a teacher edits is never overwritten by a later AI run.
+
+Can someone from your team do it for us? +
+Yes. For ₹10,000 more (plus GST), a member of our team comes to your school and does the work: scanning the copies, running the check and printing the checked copies. Without it, Evalezy OnSite comes with online support. We agree the days with you on the demo call.
+
+Which printer do we get, and how does it reach us? +
+We confirm the printer and its delivery to your school on the demo call. Book one below or WhatsApp us.
+
+Book an OnSite demo
+
+## See Evalezy check copies like yours.
+A short call: we check a few of your answer sheets in Evalezy and show you the checked copy you would print. Tell us how many copies you check, and we confirm the printer and delivery for your school.
+
+- Bring a question paper and 3–4 answer sheets if you can
+- See teacher review and how results are released
+- Get the OnSite details for your school
+
+What are you looking for?Check copies API access Both OnSite printer
+Full name Work email Phone +91+1+44+971+65+61+977+880+94 Your role Choose onePrincipal / DirectorOwner / FounderExam controller / Academic headTeacher / FacultyDeveloper / ProductOtherSchool / institute Pages checked per month Not sure yetUnder 1,0001,000–5,0005,000–20,00020,000–1,00,000Over 1,00,000
+Anything we should know? (optional) Book my OnSite demo We usually reply within one working day. Your details stay with us.
+
+
+---
+
 # Answer Sheet Evaluation API for Developers | Evalezy
 URL: https://evalezy.com/api/
 
@@ -1635,6 +1805,20 @@ Buy Team Create your account, then pay securely.
 - 2 Create account →
 - 3 Pay
 
+## Evalezy OnSite
+New · Printer included
+Scanning and printing at your school
+₹40,000 + GST
+5,000 AI credits included
+On-site support: +₹10,000
+
+- An all-in-one printer (scan + print) for your school
+- 5,000 pages checked (1 credit = 1 page)
+- Scan the copies in, print the checked copies out
+- Online support included
+- Extra credits ₹1 each
+Book an OnSite demo How OnSite works
+
 More than 15 teachers or 1,00,000+ pages a month? Enterprise: custom price. Talk to us
 
 ## Work out your cost
@@ -1709,6 +1893,9 @@ Not for handwritten copies: the API charges 1 credit per page of the PDF, blank 
 
 Do you offer volume pricing? +
 For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
+
+Is there a plan with a printer? +
+Yes: Evalezy OnSite, ₹40,000 plus GST. It comes with an all-in-one printer for your school and 5,000 AI credits. Scan the copies on it, Evalezy checks them online, and you print the checked copies on the same printer. Online support is included; for ₹10,000 more, a member of our team comes to your school and does it for you. Book a demo at evalezy.com/onsite.
 
 ## From the blog
 Guides
@@ -2569,6 +2756,9 @@ Not for handwritten copies: the API charges 1 credit per page of the PDF, blank 
 Do you offer volume pricing? +
 For large volumes (exam bodies, platforms) talk to us about capacity and pricing before your exam window.
 
+Is there a plan with a printer? +
+Yes: Evalezy OnSite, ₹40,000 plus GST. It comes with an all-in-one printer for your school and 5,000 AI credits. Scan the copies on it, Evalezy checks them online, and you print the checked copies on the same printer. Online support is included; for ₹10,000 more, a member of our team comes to your school and does it for you. Book a demo at evalezy.com/onsite.
+
 ## API and data
 Is there an API? +
 Yes. With the Evaluation API your own system creates an exam with its questions and rubrics, uploads each answer sheet as a PDF (or sends typed answers), and reads back question-wise marks, reasons, feedback and the checked copy. You poll for results (there are no webhooks yet), and marks stay drafts until you finalize them. We switch it on per institute: write to hello@evalezy.com or request access on the demo page. Full docs at docs.evalezy.com.
@@ -2737,7 +2927,7 @@ Choose “API access” in the form and tell us what you are building and your e
 Read the API docs
 WhatsApp +91 99933 36616 hello@evalezy.com
 
-What are you looking for?Check copies API access Both
+What are you looking for?Check copies API access Both OnSite printer
 Full name Work email Phone +91+1+44+971+65+61+977+880+94 Your role Choose onePrincipal / DirectorOwner / FounderExam controller / Academic headTeacher / FacultyDeveloper / ProductOtherSchool / institute Pages checked per month Not sure yetUnder 1,0001,000–5,0005,000–20,00020,000–1,00,000Over 1,00,000
 Anything we should know? (optional) Book my demo We usually reply within one working day. Your details stay with us.
 

@@ -16,6 +16,7 @@ import { DemoForm } from "@/components/DemoForm";
 import { COPY, count } from "@/content/sideBySide";
 import { ClientMarquee } from "@/components/ClientLogos";
 import { PhoneMock } from "@/components/AppMock";
+import { OnsiteCard } from "@/components/Onsite";
 
 const inrStr = (n: number) => `₹${Math.round(n).toLocaleString("en-IN")}`;
 
@@ -479,6 +480,7 @@ export default function Home() {
             <Link href="/pricing/" className="mt-8 inline-flex items-center gap-1 font-semibold text-pen-700">Full pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
           {/* <PlanCalculator /> hidden: see the import note at the top */}
+          <OnsiteCard as="h3" className="mt-12" />
         </div>
       </section>
 
